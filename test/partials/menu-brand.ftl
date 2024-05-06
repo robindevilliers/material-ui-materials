@@ -1,0 +1,1 @@
+<span class="navbar-brand ${classes}" style="${textualStyles} ${itemStyles}">${content}</span>

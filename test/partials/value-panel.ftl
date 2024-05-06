@@ -1,0 +1,1 @@
+<div id="value-panel-${id}-${key}" class="value-widget no-js-enabled ${classes}" style="${containerStyles}">${content}</div>

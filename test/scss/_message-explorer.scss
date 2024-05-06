@@ -1,0 +1,189 @@
+
+.message-explorer-widget {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  word-wrap: break-word;
+  background-color: $primary;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+
+  .input-group-text {
+    background-color: lavender;
+  }
+
+  button {
+    color: unset;
+    background-color: #fff;
+  }
+
+  .message-explorer-body {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    //flex: 100% 1 0;
+    background-color: #fff;
+    height: 600px;
+
+    .message-explorer-item-list {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      padding: 1em;
+      overflow-y: auto;
+      flex-shrink: 0;
+
+      .message-explorer-item-select {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0.25em;
+        padding: 0 16px;
+        text-transform: unset;
+        text-decoration: none;
+        letter-spacing: .5px;
+        font-size: 14px;
+        border-radius: 2px;
+        line-height: 36px;
+
+        &:hover {
+          background-color: $blue !important;
+          color: color-yiq($blue);
+        }
+
+        & > *:not(:first-child) {
+          margin-left: 1em;
+        }
+
+        &:nth-child(even) {
+          background-color: $opal;
+          color: color-yiq($opal);
+        }
+
+        &:nth-child(odd) {
+          background-color: $green;
+          color: color-yiq($green);
+        }
+      }
+    }
+
+    .message-explorer-item-detail {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      padding: 1em;
+      overflow-y: auto;
+
+      .message-explorer-item {
+        display: flex;
+        flex-direction: column;
+        text-transform: unset;
+        text-decoration: none;
+        text-align: center;
+        letter-spacing: .5px;
+        font-size: 14px;
+        outline: 0;
+        border: none;
+        border-radius: 2px;
+        line-height: 36px;
+        vertical-align: middle;
+        -webkit-tap-highlight-color: transparent;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.20);
+        max-width: unset;
+        padding: 16px;
+        margin: 0.5em 0;
+
+        &:nth-child(even) {
+          border: 5px $opal solid;
+          border-radius: 25px;
+        }
+
+        &:nth-child(odd) {
+          border: 5px $green solid;
+          border-radius: 25px;
+        }
+
+        .message-explorer-line {
+          display: flex;
+          justify-content: space-between;
+
+
+          .message-explorer-wizard-title {
+            font-size: 1.25em;
+            font-family: Georgia, Times, Times New Roman, serif;
+          }
+
+          .message-explorer-description {
+            margin: 0 1em;
+            letter-spacing: initial;
+            line-height: initial;
+          }
+
+          .message-explorer-workflow-title {
+            align-self: flex-end;
+          }
+
+          .message-explorer-workflow-description {
+            align-self: flex-end;
+          }
+
+          .message-explorer-principal {
+            align-self: flex-end;
+          }
+
+          & > *:first-child {
+            margin-right: 1em;
+          }
+        }
+
+        .message-explorer-form {
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: stretch;
+
+          button {
+            height: 100%;
+          }
+        }
+      }
+    }
+
+    .message-explorer-no-content {
+      display: flex;
+      flex-basis: 100%;
+      text-align: center;
+      opacity: 0.75;
+      font-style: italic;
+      font-size: 2em;
+      min-height: 80px;
+      justify-content: center;
+      align-items: center;
+      padding: 1em;
+    }
+  }
+
+  .message-explorer-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem 1.25rem;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.03);
+    border-top: 1px solid rgba(0, 0, 0, 0.125);
+  }
+
+  .message-explorer-footer:last-child {
+    border-radius: 0 0 calc(0.25rem - 1px) calc(0.25rem - 1px);
+  }
+
+  .message-explorer-button-line {
+    display: flex;
+    padding: 1em;
+    justify-content: flex-end;
+  }
+
+  .pagination {
+    margin-bottom: 0;
+  }
+}

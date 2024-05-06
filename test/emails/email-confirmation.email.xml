@@ -1,0 +1,18 @@
+<email defnVersion="v1" id="error" version="1">
+    <div plantainVersion="v1" orientation="COLUMN">
+        <div plantainVersion="v1" orientation="ROW" justifyContent="SPACE_AROUND">
+            <div plantainVersion="v1" orientation="COLUMN" justifyContent="SPACE_AROUND" alignItems="CENTER">
+                <title size="LARGE" plantainVersion="v1">Email Confirmation</title>
+                <paragraph plantainVersion="v1">
+                    Hello <script plantainVersion="v1" script="%profile% .title"/> <script plantainVersion="v1"
+             script="%profile% .firstName"/> <script plantainVersion="v1" script="%profile% .lastName"/>.
+                </paragraph>
+                <paragraph plantainVersion="v1">
+                    Please click on this
+                    <email-confirmation-link plantainVersion="v1" label="link"/>
+                    to complete your registration.
+                </paragraph>
+            </div>
+        </div>
+    </div>
+</email>

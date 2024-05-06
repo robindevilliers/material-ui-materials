@@ -1,0 +1,6 @@
+export const LexicalTokenType = {
+    OPEN_DIRECTIVE: 'OPEN_DIRECTIVE',
+    CLOSE_DIRECTIVE: 'CLOSE_DIRECTIVE',
+    TEXT: 'TEXT',
+    INTERPOLATION: 'INTERPOLATION',
+};

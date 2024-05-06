@@ -1,0 +1,111 @@
+<page id="test" version="1" active="false" released="false" group="admin" title="Style Guide - Portfolio Page"
+      description="test"
+      defnVersion="v1" orientation="COLUMN">
+    <div plantainVersion="v1" orientation="ROW">
+        <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" margin="0em 1em" padding="1em"
+             borderRadius="1em" plantainVersion="v1">
+            <tool-tip exposition="Image">
+                <image src="suzi.jpeg" alt="Suzi" title="Logo" plantainVersion="v1"/>
+            </tool-tip>
+            <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" margin="1em 0em" padding="1em"
+                 borderRadius="1em" plantainVersion="v1">
+
+                <tool-tip exposition="Title">
+                    <title size="LARGE" plantainVersion="v1">Suzi Florez</title>
+                </tool-tip>
+                <tool-tip exposition="Paragraph">
+                    <paragraph paragraphStyle="SUPPRESSED" width="250px" plantainVersion="v1">
+                        Neque porro quisquam est, qui dolorem ipsum quia dolor sit
+                        amet, consectetur.
+                    </paragraph>
+                </tool-tip>
+            </div>
+        </div>
+        <tool-tip exposition="Accordion">
+            <accordion flush="false" flavour="PRIMARY" singleActive="true" width="100%" plantainVersion="v1">
+                <accordion-item backgroundFlavour="PRIMARY" active="true" orientation="COLUMN">
+                    <accordion-item-header>
+                        Law Practice
+                    </accordion-item-header>
+                    <paragraph paragraphStyle="SUPPRESSED" plantainVersion="v1">
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                        laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                        beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+                        odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+                        sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+                        voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
+                        laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui
+                        in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat
+                        quo voluptas nulla pariatur?
+                    </paragraph>
+                </accordion-item>
+                <accordion-item backgroundFlavour="BLACK" active="false" orientation="COLUMN">
+                    <accordion-item-header>
+                        Qualifications
+                    </accordion-item-header>
+                    <title size="SMALLER" plantainVersion="v1">Voluptatem accusantium</title>
+                    <paragraph paragraphStyle="SUPPRESSED" width="250px" plantainVersion="v1">
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                        laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                        beatae vitae dicta sunt explicabo.
+                    </paragraph>
+                    <title size="SMALLER" plantainVersion="v1">Accusantium doloremque</title>
+                    <paragraph paragraphStyle="SUPPRESSED" width="250px" plantainVersion="v1">
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                        laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                        beatae vitae dicta sunt explicabo.
+                    </paragraph>
+                </accordion-item>
+                <accordion-item backgroundFlavour="WARNING" active="false" orientation="COLUMN">
+                    <accordion-item-header>
+                        Past Experience
+                    </accordion-item-header>
+                    <paragraph paragraphStyle="SUPPRESSED" width="250px" plantainVersion="v1">
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                        laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                        beatae vitae dicta sunt explicabo.
+                    </paragraph>
+                </accordion-item>
+                <accordion-item backgroundFlavour="INFO" active="false" orientation="COLUMN">
+                    <accordion-item-header>
+                        Contact Details
+                    </accordion-item-header>
+                    <tool-tip exposition="Table">
+                        <table plantainVersion="v1">
+                            <row>
+                                <cell>
+                                    <paragraph paragraphStyle="PLAIN" plantainVersion="v1">Landline</paragraph>
+                                </cell>
+                                <cell>
+                                    <paragraph paragraphStyle="PLAIN" plantainVersion="v1">(021) 000-0000</paragraph>
+                                </cell>
+                            </row>
+                            <row>
+                                <cell>
+                                    <paragraph paragraphStyle="PLAIN" plantainVersion="v1">Mobile Number</paragraph>
+                                </cell>
+                                <cell>
+                                    <paragraph paragraphStyle="PLAIN" plantainVersion="v1">(021) 078 000-0000
+                                    </paragraph>
+                                </cell>
+                            </row>
+                            <row>
+                                <cell>
+                                    <paragraph paragraphStyle="PLAIN" plantainVersion="v1">Correspondence Address
+                                    </paragraph>
+                                </cell>
+                                <cell>
+                                    <paragraph paragraphStyle="PLAIN" plantainVersion="v1">123A Artur Street, Clydes
+                                        Ville, 8001
+                                    </paragraph>
+                                </cell>
+                            </row>
+                        </table>
+                    </tool-tip>
+                </accordion-item>
+            </accordion>
+        </tool-tip>
+    </div>
+
+</page>

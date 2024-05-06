@@ -1,0 +1,19 @@
+<page defnVersion="v1" id="intro" title="Pick Case Principal" orientation="COLUMN">
+    <title size="LARGE" plantainVersion="v1">Pick Case Principal</title>
+    <div justifyContent="SPACE_BETWEEN" plantainVersion="v1">
+        <title size="SMALL" plantainVersion="v1">Workflow</title>
+        <paragraph plantainVersion="v1">
+            <script plantainVersion="v1" script=".name"/>
+        </paragraph>
+    </div>
+    <paragraph plantainVersion="v1">You are about to initiate a Workflow on behalf of one of your users. Please select
+        the user you wish to assign this case to as Case Principal.
+    </paragraph>
+    <well flavour="WARNING" margin="0 5em 1em 5em" plantainVersion="v1">
+        <paragraph plantainVersion="v1">The actual Workflow that will be executed will be the result the Workflow
+            Resolution Process. This Process takes into account the current user&apos;s groups in resolving which
+            Workflow he or she may initiate.
+        </paragraph>
+    </well>
+    <user-explorer plantainVersion="v1"/>
+</page>

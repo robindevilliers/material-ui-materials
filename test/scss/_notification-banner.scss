@@ -1,0 +1,36 @@
+
+.notification-banner {
+  min-height: 20px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+
+  .notification-banner-title-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+    & > * {
+      margin-bottom: unset;
+    }
+    i {
+      font-size: 1.5em;
+    }
+  }
+  .notification-banner-content {
+    background: white;
+    min-height: 2em;
+    color: black;
+    padding: 10px;
+  }
+}
+
+@each $color, $value in $theme-colors {
+  .notification-banner-#{$color} {
+    background: $value;
+    color: color-yiq($value);
+  }
+}

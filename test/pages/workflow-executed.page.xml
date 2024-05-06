@@ -1,0 +1,15 @@
+<page defnVersion="v1" id="intro" title="Workflow Executed" orientation="COLUMN">
+
+    <jumbotron plantainVersion="v1" orientation="COLUMN">
+        <title size="LARGE" fontFlavour="WHITE" plantainVersion="v1">Workflow Executed</title>
+
+        <paragraph plantainVersion="v1">The
+            <script plantainVersion="v1" script=".title"/>
+            workflow has been executed.
+        </paragraph>
+
+        <div justifyContent="END" plantainVersion="v1">
+            <close-workflow-executed-panel/>
+        </div>
+    </jumbotron>
+</page>

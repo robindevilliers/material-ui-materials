@@ -1,0 +1,33 @@
+.menu-widget {
+  align-self: stretch;
+
+  .menu-item-widget {
+    button {
+      outline: none;
+      box-shadow: none !important;
+    }
+  }
+
+  .navbar-nav {
+    flex-basis: 100%;
+    .dropdown-menu {
+      position: absolute;
+
+    }
+
+    .dropdown-item-no-content {
+      display: block;
+      width: 100%;
+      padding: 0.25rem 1.5rem;
+      clear: both;
+      font-weight: 400;
+      color: #212529;
+      text-align: inherit;
+      white-space: nowrap;
+      background-color: transparent;
+      border: 0;
+      font-style: italic;
+      color: gray;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+improve error handling as source mapping will not work.
+
+one of the style guide pages is different so I have an error in the binders somewhere.
+
+add unit tests for the renderingEngine.
+
+we need field validation in the ftl files.  There is a contract between the ftl and the renderer, and we want to
+express the contract when an error occurs.
+
+reference docs.
+
+remove preserveLink and use test store to substitute on click events.

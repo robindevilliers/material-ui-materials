@@ -1,0 +1,94 @@
+<page id="test" version="1" active="false" released="false" group="admin" title="Style Guide - Question Page"
+      description="test" defnVersion="v1" orientation="COLUMN">
+    <back-link plantainVersion="v1"/>
+    <progress-bar axis="HORIZONTAL" size="SMALL" flavour="PRIMARY" mileStoneStyle="BULLET" labelSide="FOLLOW"
+                  plantainVersion="v1">
+        <mile-stone condition="false" plantainVersion="v1" label="first"/>
+        <mile-stone condition="true" plantainVersion="v1" label="second"/>
+        <mile-stone condition="true" plantainVersion="v1" label="third"/>
+        <mile-stone condition="true" plantainVersion="v1" label="forth"/>
+        <mile-stone condition="false" plantainVersion="v1" label="fifth"/>
+    </progress-bar>
+    <div plantainVersion="v1" orientation="ROW">
+        <div orientation="COLUMN" alignItems="START" justifyContent="START" margin="0em 1em" padding="1em"
+             borderRadius="1em" plantainVersion="v1" width="70%">
+
+            <title size="MEDIUM" plantainVersion="v1">Voluptatem accusantium</title>
+
+            <inset-text flavour="PRIMARY" plantainVersion="v1">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+                voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore
+                magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam
+                corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure
+                reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui
+                dolorem eum fugiat quo voluptas nulla pariatur?
+            </inset-text>
+
+            <paragraph paragraphStyle="SUPPRESSED" plantainVersion="v1">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+                <br/>
+                <span paragraphStyle="SUPPRESSED" plantainVersion="v1">
+                    Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                    consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore
+                    magnam aliquam quaerat voluptatem.
+                </span>
+            </paragraph>
+            <tool-tip exposition="Enumeration Input">
+                <enumeration-input label="Incididunt ut labore" type="STRING" reference="colours" required="false"
+                                   cardinality="SINGLE_SELECT" style="RADIO_CHECKBOX" size="MEDIUM"
+                                   plantainVersion="v1">
+                    <value label="Totam rem aperiam" key="red" default="false" panel="true" plantainVersion="v1"
+                           orientation="COLUMN">
+                        <tool-tip exposition="Title">
+                            <title size="MEDIUM" plantainVersion="v1">Qui dolorem ipsum quia</title>
+                        </tool-tip>
+                        <tool-tip exposition="Textarea Input">
+                            <input label="Aspernatur aut odit" type="TEXTAREA" reference="red-text" required="false"
+                                   size="MEDIUM" plantainVersion="v1" cols="50" rows="5"/>
+                        </tool-tip>
+                    </value>
+                    <value label="Neque porro quisquam" key="blue" default="false" panel="true" plantainVersion="v1"
+                           orientation="COLUMN">
+                        <title size="MEDIUM" plantainVersion="v1">Quis autem vel eum iure</title>
+                        <tool-tip exposition="Date Input">
+                            <input label="Date Value" type="DATE" reference="date" required="false" size="MEDIUM"
+                                   plantainVersion="v1">
+                                <test-value text="1987-03-27"/>
+                                <test-value text="1978-03-24"/>
+                                <test-value text="2023-11-15"/>
+                                <test-value text="1980-03-20"/>
+                                <test-value text="1985-09-04"/>
+                            </input>
+                        </tool-tip>
+                    </value>
+                    <value label="Odit aut fugit" key="green" default="false" panel="false" plantainVersion="v1"
+                           orientation="COLUMN"/>
+                </enumeration-input>
+            </tool-tip>
+        </div>
+        <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" margin="0em 1em" padding="1em"
+             borderRadius="1em" plantainVersion="v1" width="30%">
+            <tool-tip exposition="Well">
+                <well flavour="WARNING" margin="5px" plantainVersion="v1">
+                    <paragraph plantainVersion="v1">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                        veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+                        voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                        voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                        consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore
+                        magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam
+                        corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure
+                        reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui
+                        dolorem eum fugiat quo voluptas nulla pariatur?
+                    </paragraph>
+                </well>
+            </tool-tip>
+        </div>
+    </div>
+
+</page>

@@ -1,0 +1,125 @@
+
+.tray-widget {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  word-wrap: break-word;
+  background-clip: border-box;
+  border: 5px #81b1cc solid;
+  background: #81b1cc;
+  border-radius: 25px;
+  padding: 5px;
+
+  .card-header {
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em 1em;
+    background-color: #e9ecef;
+  }
+
+  .tray-body {
+    overflow-y: auto;
+    max-height: 600px;
+
+    .tray-form {
+      margin: 0.25em 0;
+      border-radius: 10px;
+
+      form {
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+      }
+
+      &:nth-child(even) {
+        background-color: $opal;
+        color: color-yiq($opal);
+      }
+
+      &:nth-child(odd) {
+        background-color: $green;
+        color: color-yiq($green);
+      }
+    }
+
+    .tray-button {
+      padding: 1em;
+      background-color: inherit;
+      display: flex;
+      cursor: pointer;
+      transition: background-color .2s ease-out;
+      flex-direction: column;
+      text-transform: unset;
+
+      text-decoration: none;
+      text-align: center;
+      letter-spacing: .5px;
+      font-size: 14px;
+      outline: 0;
+      border: none;
+      border-radius: 2px;
+      line-height: 36px;
+      vertical-align: middle;
+      -webkit-tap-highlight-color: transparent;
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.20);
+      max-width: unset;
+
+      &:hover {
+        background-color: $blue !important;
+        color: color-yiq($blue);
+      }
+    }
+  }
+
+  .tray-line {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    .tray-wizard-title {
+      font-size: 1.25em;
+      font-family: Georgia, Times, Times New Roman, serif;
+    }
+
+    .tray-description {
+      margin: 0 1em;
+      letter-spacing: initial;
+      line-height: initial;
+    }
+
+    .tray-workflow-title {
+      align-self: flex-end;
+    }
+
+    .tray-workflow-description {
+      align-self: flex-end;
+    }
+
+    .tray-principal {
+      align-self: flex-end;
+    }
+
+    & > *:first-child {
+      margin-right: 1em;
+    }
+  }
+
+  .tray-button-line {
+    display: flex;
+    padding: 1em;
+    justify-content: flex-end;
+  }
+
+  .tray-no-content {
+    display: flex;
+    text-align: center;
+    opacity: 0.75;
+    font-style: italic;
+    font-size: 2em;
+    min-height: 80px;
+    justify-content: center;
+    align-items: center;
+  }
+}

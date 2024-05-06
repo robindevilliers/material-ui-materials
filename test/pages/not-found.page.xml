@@ -1,0 +1,13 @@
+<page defnVersion="v1" id="not-found" version="1" title="Not Found" description="The Not Found page." group="public">
+    <div plantainVersion="v1" orientation="COLUMN">
+        <div plantainVersion="v1" orientation="ROW" justifyContent="SPACE_AROUND">
+            <div plantainVersion="v1" orientation="COLUMN" justifyContent="SPACE_AROUND" alignItems="CENTER">
+                <title size="LARGE" plantainVersion="v1">Oops! Page not found.</title>
+                <paragraph plantainVersion="v1">
+                    Sorry. Something seems to have happened to the page you requested. Please contact your administrator
+                    if the problem persists.
+                </paragraph>
+            </div>
+        </div>
+    </div>
+</page>

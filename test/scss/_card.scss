@@ -1,0 +1,30 @@
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.link-card {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+
+  color: unset;
+  text-decoration: unset;
+  background-color: unset;
+
+  .card {
+    flex: 1 0 auto;
+  }
+}
+
+.link-card:hover {
+
+  filter: grayscale(80%) drop-shadow(2px 2px 5px gray);
+  color: unset;
+  text-decoration: unset;
+
+  .card {
+    background-color: #ddd !important;
+  }
+}
+

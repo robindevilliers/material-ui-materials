@@ -1,0 +1,335 @@
+<page id="test" version="1" active="false" released="false" group="admin" title="Style Guide - Landing Page"
+      description="test"
+      defnVersion="v1" orientation="COLUMN">
+    <fake-store>
+        <fake-user username="robindevilliers"
+                   groups=":public:authenticated:admin:"
+                   title="Mr"
+                   firstName="Robin"
+                   lastName="de Villiers"
+                   dateOfBirth="1980-01-01"
+                   email="robin@me.com"
+                   contactNumber="5585934"
+        />
+        <fake-user username="connordevilliers"
+                   groups=":public:authenticated:client:"
+                   title="Mr"
+                   firstName="Connor"
+                   lastName="de Villiers"
+                   dateOfBirth="2013-01-01"
+                   email="connor@me.com"
+                   contactNumber="0123576"
+        />
+        <fake-user username="leah"
+                   groups=":public:authenticated:staff:"
+                   title="Miss"
+                   firstName="Leah"
+                   lastName="de Villiers"
+                   dateOfBirth="2015-01-01"
+                   email="leah@me.com"
+                   contactNumber="9283646"
+        />
+        <fake-message
+            dateTime="2024-01-30T18:31:32Z"
+            kaseId="1"
+            wizardId="wizard-one:1"
+            workflowId="public:workflow-one:1"
+            group="public"
+            queue="main-user"
+            principal="robindevilliers"
+        />
+        <fake-message
+            dateTime="2024-01-30T18:32:32Z"
+            kaseId="2"
+            wizardId="wizard-one:2"
+            workflowId="public:workflow-two:1"
+            group="public"
+            queue="main-user"
+            principal="connordevilliers"
+        />
+        <fake-message
+            dateTime="2024-01-30T18:33:32Z"
+            kaseId="3"
+            wizardId="wizard-one:2"
+            workflowId="public:workflow-one:1"
+            group="public"
+            queue="main-user"
+            principal="connordevilliers"
+        />
+        <fake-message
+            dateTime="2024-01-30T18:35:47Z"
+            kaseId="5"
+            wizardId="wizard-one:2"
+            workflowId="public:workflow-two:1"
+            group="public"
+            queue="main-user"
+            principal="leah"
+        />
+        <fake-message
+            dateTime="2024-01-30T18:35:48Z"
+            kaseId="5"
+            wizardId="wizard-one:2"
+            workflowId="public:workflow-one:1"
+            group="public"
+            queue="main-user"
+            principal="leah"
+        />
+        <fake-wizard
+            name="wizard-one"
+            version="1"
+            title="Wizard One"
+            description="Lorem ipsum dolor sit amet."
+        />
+        <fake-wizard
+            name="wizard-one"
+            version="2"
+            title="Wizard One (2)"
+            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        />
+        <fake-workflow
+            group="public"
+            name="workflow-one"
+            version="1"
+            title="Workflow One"
+            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        />
+        <fake-workflow
+            group="public"
+            name="workflow-two"
+            version="1"
+            title="Workflow Two"
+            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        />
+        <fake-page
+            group="public"
+            name="one"
+            version="1"
+            title="Page One"
+            description="Page description"
+        />
+        <fake-page
+            group="public"
+            name="two"
+            version="1"
+            title="Page Two"
+            description="Page description"
+        />
+        <fake-page
+            group="public"
+            name="three"
+            version="1"
+            title="Page Three"
+            description="Page description"
+        />
+        <fake-queue
+            name="main-user"
+            title="Main User Queue"
+            description="Queue for presentation on home page for users tasks"
+        />
+        <fake-queue
+            name="processing"
+            title="Processing"
+            description="Queue for processing"
+        />
+
+        <div plantainVersion="v1" orientation="COLUMN">
+            <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" plantainVersion="v1"
+                 flexBasis="100%">
+                <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" plantainVersion="v1"
+                     flexBasis="100%" width="100%">
+                    <title size="LARGE" plantainVersion="v1">Login Panel</title>
+                    <paragraph plantainVersion="v1" flexBasis="500px">
+                        The Login Panel widget is used to present a login dialog on the page that allows the user to
+                        enter their credentials and perform the authentication process.
+                    </paragraph>
+                </div>
+                <login-panel plantainVersion="v1"/>
+            </div>
+            <horizontal-rule/>
+            <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" plantainVersion="v1"
+                 flexBasis="100%">
+
+                <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" plantainVersion="v1"
+                     flexBasis="100%" width="100%">
+                    <title size="LARGE" plantainVersion="v1">Registration Panel</title>
+                    <paragraph plantainVersion="v1" flexBasis="500px">
+                        The Registration Panel widget is used to present the registration panel which is the prescribed
+                        first step in registering a new user. All fields are required. The Registration panel can be
+                        followed by a registration wizard that can collect custom data required by the Client.
+                    </paragraph>
+                </div>
+                <register-panel plantainVersion="v1"/>
+            </div>
+            <horizontal-rule/>
+            <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" plantainVersion="v1"
+                 flexBasis="100%" width="100%">
+
+                <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" plantainVersion="v1"
+                     flexBasis="100%">
+                    <title size="LARGE" plantainVersion="v1">Reset Password Request Panel</title>
+                    <paragraph plantainVersion="v1" flexBasis="500px">
+                        The Reset Password Request panel presents a panel that accepts the email address of the current
+                        user, in order to reset their password.
+                    </paragraph>
+                </div>
+                <reset-password-request-panel plantainVersion="v1"/>
+            </div>
+            <horizontal-rule/>
+            <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" plantainVersion="v1"
+                 flexBasis="100%" width="100%">
+                <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" plantainVersion="v1"
+                     flexBasis="100%">
+                    <title size="LARGE" plantainVersion="v1">Reset Password Panel</title>
+                    <paragraph plantainVersion="v1" flexBasis="500px">
+                        The Reset Password Request panel presents a panel that accepts the email address of the current
+                        user, in order to reset their password.
+                    </paragraph>
+                </div>
+
+                <reset-password-panel plantainVersion="v1"/>
+            </div>
+        </div>
+
+        <horizontal-rule/>
+        <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" plantainVersion="v1"
+             flexBasis="100%">
+            <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" plantainVersion="v1"
+                 flexBasis="100%" width="100%">
+                <title size="LARGE" plantainVersion="v1">Workflow Initiate Button</title>
+                <paragraph plantainVersion="v1" flexBasis="500px">
+                    The Workflow Initiate Button will fire a workflow.
+                </paragraph>
+            </div>
+            <initiate-workflow-button workflow="workflow:1" size="MEDIUM" buttonFlavour="PRIMARY" plantainVersion="v1">
+                Fire Workflow
+            </initiate-workflow-button>
+        </div>
+        <horizontal-rule/>
+        <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" plantainVersion="v1"
+             flexBasis="100%">
+            <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" plantainVersion="v1"
+                 flexBasis="100%" width="100%">
+                <title size="LARGE" plantainVersion="v1">Menu</title>
+                <paragraph plantainVersion="v1" flexBasis="500px">
+                    The Menu widget displays a selection of workflows for user to execute.
+                </paragraph>
+            </div>
+            <menu axis="HORIZONTAL" plantainVersion="v1">
+                <menu-brand plantainVersion="v1">menu brand</menu-brand>
+                <menu-item type="workflow" workflow="workflow-one" flavour="DEFAULT" plantainVersion="v1">
+                    workflow 1
+                </menu-item>
+                <menu-item type="workflow" workflow="workflow-two" flavour="DEFAULT" plantainVersion="v1">
+                    workflow 2
+                </menu-item>
+                <menu-item type="workflow" workflow="workflow-three" flavour="DEFAULT" plantainVersion="v1">
+                    workflow 3
+                </menu-item>
+                <sub-menu flavour="DEFAULT" plantainVersion="v1">
+                    <sub-menu-label plantainVersion="v1">sub menu label</sub-menu-label>
+                    <menu-item type="page" page="one" flavour="DEFAULT">page 1</menu-item>
+                    <menu-item type="page" page="two" flavour="DEFAULT">page 2</menu-item>
+                    <menu-item type="workflow" workflow="workflow-four" flavour="DEFAULT" plantainVersion="v1">
+                        workflow 4
+                    </menu-item>
+                </sub-menu>
+                <menu-item type="page" page="three" flavour="DEFAULT" plantainVersion="v1">page 3</menu-item>
+            </menu>
+        </div>
+        <horizontal-rule/>
+        <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" plantainVersion="v1"
+             flexBasis="100%">
+            <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" plantainVersion="v1"
+                 flexBasis="100%" width="100%">
+                <title size="LARGE" plantainVersion="v1">Tray</title>
+                <paragraph plantainVersion="v1" flexBasis="500px">
+                    The Tray widget presents a list of tray entries that are in the specified queue and that belongs to
+                    a compatible group with the current user. This widget is intended to display a limited set of tray
+                    entries which is what you will find as a member of the public or a customer or case principal. This
+                    widget is intended to be customer facing.
+                </paragraph>
+            </div>
+            <tray queue="main-user" plantainVersion="v1">
+                <tray-header>In Tray</tray-header>
+            </tray>
+        </div>
+        <horizontal-rule/>
+        <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" plantainVersion="v1"
+             flexBasis="100%">
+            <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" plantainVersion="v1"
+                 flexBasis="100%" width="100%">
+                <title size="LARGE" plantainVersion="v1">Message Explorer</title>
+                <paragraph plantainVersion="v1" flexBasis="500px">
+                    The Message Explorer widget allows the user to search for and view any messages to which he or she
+                    has access. This widget is intended to be a powerful browser intended for members of staff.
+                    Multiple queues can be searched, and messages can be filtered by workflow, wizard and username.
+                </paragraph>
+            </div>
+            <message-explorer queue="main-user" plantainVersion="v1">
+            </message-explorer>
+        </div>
+        <horizontal-rule/>
+        <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" plantainVersion="v1"
+             flexBasis="100%">
+            <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" plantainVersion="v1"
+                 flexBasis="100%" width="100%">
+                <title size="LARGE" plantainVersion="v1">User Explorer</title>
+                <paragraph plantainVersion="v1" flexBasis="500px">
+                    The User Explorer widget allows the current user to search through the user accounts. This has a
+                    couple of purposes. The first is when a workflow is executed by staff, and they want to manually
+                    assign the case to a specific case principal. The second is when searching for a username to use as
+                    a filter for message searches.
+                </paragraph>
+            </div>
+            <user-explorer plantainVersion="v1"/>
+        </div>
+
+        <horizontal-rule/>
+        <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" plantainVersion="v1"
+             flexBasis="100%">
+            <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" plantainVersion="v1"
+                 flexBasis="100%" width="100%">
+                <title size="LARGE" plantainVersion="v1">Loop</title>
+                <paragraph plantainVersion="v1" flexBasis="500px">
+                    This section displays a list of groups. It uses the Loop Widget and if the page renders,
+                    proves that the artefacts are correctly setup for use of the same. You should see the values in the
+                    plantain substitutions file reproduced here in vertical orientation.
+                </paragraph>
+            </div>
+            <loop reference="%profile%.groups" plantainVersion="v1">
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    <script script="." plantainVersion="v1"/>
+                </paragraph>
+            </loop>
+        </div>
+        <horizontal-rule/>
+        <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" plantainVersion="v1"
+             flexBasis="100%">
+            <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" plantainVersion="v1"
+                 flexBasis="100%" width="100%">
+                <title size="LARGE" plantainVersion="v1">Switch</title>
+                <paragraph plantainVersion="v1" flexBasis="500px">
+                    This section renders a Switch Widget which will alternatively display panels depending on a Plantain
+                    expression. We can force the value of an expression using the plantain substitutions file.
+                </paragraph>
+            </div>
+            <switch plantainVersion="v1">
+                <def orientation="COLUMN">
+                    <paragraph paragraphStyle="PLAIN" plantainVersion="v1">default content</paragraph>
+                </def>
+                <if condition="%userdata% .alpha" plantainVersion="v1" orientation="COLUMN">
+                    <paragraph paragraphStyle="PLAIN" plantainVersion="v1">if content</paragraph>
+                </if>
+            </switch>
+            <switch plantainVersion="v1">
+                <def orientation="COLUMN">
+                    <paragraph paragraphStyle="PLAIN" plantainVersion="v1">default content</paragraph>
+                </def>
+                <if condition="%userdata% .beta" plantainVersion="v1" orientation="COLUMN">
+                    <paragraph paragraphStyle="PLAIN" plantainVersion="v1">if content</paragraph>
+                </if>
+            </switch>
+        </div>
+    </fake-store>
+</page>
+

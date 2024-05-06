@@ -1,0 +1,11 @@
+
+.scale-widget {
+  .scale-content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .scale-content > * {
+    flex: 1 0 auto;
+  }
+}

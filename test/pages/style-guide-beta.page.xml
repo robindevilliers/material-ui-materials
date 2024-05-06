@@ -1,0 +1,99 @@
+<page id="style-guide-sample-beta" version="1" active="false" released="false" group="public"
+      title="Style Guide - Beta" description="Style Guide Sample Beta Page" defnVersion="v1" orientation="COLUMN">
+    <fake-store>
+        <cookie-consent plantainVersion="v1"/>
+        <back-link plantainVersion="v1"/>
+        <title size="MEDIUM" plantainVersion="v1">Style Guide Sample Page Beta</title>
+        <div plantainVersion="v1">
+            <progress-bar axis="VERTICAL" size="MEDIUM" flavour="DEFAULT" mileStoneStyle="PERCENT" labelSide="FOLLOW"
+                          plantainVersion="v1">
+                <mile-stone condition="false" plantainVersion="v1" label="first"/>
+                <mile-stone condition="true" plantainVersion="v1" label="second"/>
+                <mile-stone condition="false" plantainVersion="v1" label="third"/>
+            </progress-bar>
+            <div justifyContent="SPACE_BETWEEN" plantainVersion="v1">
+                <div orientation="COLUMN" margin="0em 1em" plantainVersion="v1">
+                    <paragraph paragraphStyle="PLAIN" plantainVersion="v1">Welcome to the second page exhibit in our
+                        style guide gallery. As in the first page, on this page you can see an example of various
+                        specialized elements.
+                    </paragraph>
+                    <paragraph paragraphStyle="PLAIN" plantainVersion="v1">The first element to take note of is the
+                        Cookie Consent widget. How this widget presents itself depends on the implementation as defined
+                        within the Website Materials associated to this account. It may present as a banner across the
+                        top of the page, or as a floating panel in one of the corners or in some other way.
+                    </paragraph>
+                    <paragraph paragraphStyle="PLAIN" plantainVersion="v1">At the top of the page you can see an example
+                        of the BackLink. This link will evoke the browser&apos;s back button causing the browser to
+                        return to the previous page.
+                    </paragraph>
+                    <paragraph paragraphStyle="PLAIN" plantainVersion="v1">There should be a Progress Bar to the left of
+                        this paragraph. It should be in vertical format, and should not display any progress as there is
+                        no contextual data associated with a style guide page.
+                    </paragraph>
+                    <paragraph paragraphStyle="PLAIN" plantainVersion="v1">And, finally, to the right you should see the
+                        Carousel. There are two panels currently configured, and it should display indicators so that
+                        you can reach either panel using the mouse.
+                    </paragraph>
+                </div>
+                <carousel autoSlide="false" indicators="true" controls="false" height="333px" width="400px"
+                          flexShrink="0"
+                          plantainVersion="v1">
+                    <carousel-panel src="temp4.jpg" active="false" interval="5000" orientation="COLUMN">
+                        <paragraph paragraphStyle="PLAIN" plantainVersion="v1">This is a paragraph.</paragraph>
+                        <link type="internal" view="fixed/style-guide-main" openNewWindow="false"
+                              plantainVersion="v1">A Link
+                        </link>
+                    </carousel-panel>
+                    <carousel-panel src="temp1.jpg" active="false" orientation="COLUMN"/>
+                </carousel>
+            </div>
+
+        </div>
+        <div plantainVersion="v1">
+            <well flavour="DEFAULT" margin="5px" plantainVersion="v1">
+                <paragraph plantainVersion="v1">Default Well. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed
+                    do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </paragraph>
+            </well>
+            <well flavour="PRIMARY" margin="5px" plantainVersion="v1">
+                <paragraph plantainVersion="v1">Primary Well. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed
+                    do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </paragraph>
+            </well>
+            <well flavour="INFO" margin="5px" plantainVersion="v1">
+                <paragraph plantainVersion="v1">Info Well. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </paragraph>
+            </well>
+            <well flavour="WARNING" margin="5px" plantainVersion="v1">
+                <paragraph plantainVersion="v1">Warning Well. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed
+                    do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </paragraph>
+            </well>
+        </div>
+        <div plantainVersion="v1">
+            <well flavour="DANGER" margin="5px" plantainVersion="v1">
+                <paragraph plantainVersion="v1">Danger Well. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </paragraph>
+            </well>
+            <well flavour="SUCCESS" margin="5px" plantainVersion="v1">
+                <paragraph plantainVersion="v1">Success Well. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed
+                    do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </paragraph>
+            </well>
+            <well flavour="MUTED" margin="5px" plantainVersion="v1">
+                <paragraph plantainVersion="v1">Muted Well. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </paragraph>
+            </well>
+        </div>
+    </fake-store>
+</page>

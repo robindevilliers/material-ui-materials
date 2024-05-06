@@ -1,0 +1,192 @@
+<page id="style-guide-delta" version="1" active="false" released="false" group="public" title="Style Guide - Delta"
+      description="Style Guide - Reference Delta" defnVersion="v1" orientation="COLUMN">
+    <error-summary>
+        <validation-rule message="This is an error message" script="true" plantainVersion="v1">
+            <test-group id="rule"/>
+        </validation-rule>
+    </error-summary>
+    <title size="MEDIUM" plantainVersion="v1">Style Guide Sample Page Delta</title>
+    <paragraph paragraphStyle="PLAIN" plantainVersion="v1">Welcome to the third in our series of style guide pages. This
+        page will demonstrate the presentation of all the input controls. These are widgets that take user input in some
+        form.
+    </paragraph>
+    <div plantainVersion="v1">
+        <div orientation="COLUMN" plantainVersion="v1">
+            <paragraph paragraphStyle="PLAIN" plantainVersion="v1">This section demonstrates the basic input controls.
+                These controls are the mainstay of user input. You have simple text entry, multi line text entry, date
+                entry, date time entry and number. Finally you have the humble checkbox.
+            </paragraph>
+            <input label="Currency Value" type="CURRENCY" reference="currency" required="false" size="MEDIUM"
+                   plantainVersion="v1">
+                <test-value text="679.15"/>
+                <test-value text="1149.88"/>
+                <test-value text="496.12"/>
+                <test-value text="169.79"/>
+                <test-value text="1157.96"/>
+            </input>
+            <input label="Datetime Value" type="DATETIME" reference="datetime" required="false" size="MEDIUM"
+                   plantainVersion="v1">
+                <test-value text="2023-06-24T18:52:33.737Z"/>
+                <test-value text="2021-06-16T12:33:02.917Z"/>
+                <test-value text="2013-01-01T13:03:15.920Z"/>
+                <test-value text="1975-09-26T03:32:33.382Z"/>
+                <test-value text="2000-06-26T12:55:22.468Z"/>
+            </input>
+            <input label="Date Value" type="DATE" reference="date" required="false" size="MEDIUM" plantainVersion="v1">
+                <test-value text="1987-03-27"/>
+                <test-value text="1978-03-24"/>
+                <test-value text="2023-11-15"/>
+                <test-value text="1980-03-20"/>
+                <test-value text="1985-09-04"/>
+            </input>
+            <input label="Number Value" type="NUMBER" reference="number" required="false" size="MEDIUM"
+                   plantainVersion="v1">
+                <test-value text="-232"/>
+                <test-value text="50"/>
+                <test-value text="203"/>
+                <test-value text="96"/>
+                <test-value text="-215"/>
+            </input>
+            <input label="Multiline Text Value" type="TEXTAREA" reference="multitext" required="false" size="MEDIUM"
+                   plantainVersion="v1">
+                <test-value text="annoyed_snake"/>
+                <test-value text="bright_rat"/>
+                <test-value text="better_tiger"/>
+                <test-value text="dull_lion"/>
+                <test-value text="defiant_dog"/>
+            </input>
+            <input label="Text Value" type="INPUT" reference="text" required="false" size="MEDIUM" plantainVersion="v1">
+                <test-value text="bewildered_moose"/>
+                <test-value text="annoying_tiger"/>
+                <test-value text="annoying_cat"/>
+                <test-value text="colorful_eagle"/>
+                <test-value text="adventurous_bear"/>
+            </input>
+            <input label="Checkbox Value" type="CHECKBOX" reference="checkbox" required="false" size="MEDIUM"
+                   plantainVersion="v1">
+                <test-value text="true"/>
+                <test-value text="false"/>
+            </input>
+        </div>
+        <div orientation="COLUMN" margin="0em 1em" plantainVersion="v1">
+            <paragraph paragraphStyle="PLAIN" plantainVersion="v1">This column demonstrates the enumeration input
+                controls. These controls allow the user to select from a limited set of options. You have the radio and
+                checkbox lists and you have the single select dropdowns and multi select dropdowns.
+            </paragraph>
+            <enumeration-input label="Colours" type="STRING" reference="colours" required="false"
+                               cardinality="SINGLE_SELECT" style="RADIO_CHECKBOX" size="MEDIUM" plantainVersion="v1">
+                <value label="Red" key="red" default="false" panel="true" plantainVersion="v1" orientation="COLUMN">
+                    <title size="MEDIUM" plantainVersion="v1">Something Red</title>
+                    <input label="Explanation" type="INPUT" reference="red-text" required="false" size="MEDIUM"
+                           plantainVersion="v1"/>
+                </value>
+                <value label="Blue" key="blue" default="false" panel="true" plantainVersion="v1" orientation="COLUMN">
+                    <title size="MEDIUM" plantainVersion="v1">Something Blue</title>
+                    <input label="Explanation" type="INPUT" reference="blue-text" required="true" size="MEDIUM"
+                           plantainVersion="v1">
+                    </input>
+                </value>
+                <value label="Green" key="green" default="false" panel="false" plantainVersion="v1"
+                       orientation="COLUMN"/>
+            </enumeration-input>
+            <enumeration-input label="Sizes" type="STRING" reference="sizes" required="false"
+                               cardinality="MULTIPLE_SELECT" style="RADIO_CHECKBOX" size="MEDIUM" plantainVersion="v1">
+                <value label="Small" key="small" default="false" plantainVersion="v1"/>
+                <value label="Medium" key="medium" default="false" plantainVersion="v1"/>
+                <value label="Large" key="large" default="false" plantainVersion="v1"/>
+            </enumeration-input>
+            <enumeration-input label="Car" type="STRING" reference="car" required="false" cardinality="SINGLE_SELECT"
+                               style="POPOUT_SELECT" size="MEDIUM" plantainVersion="v1">
+                <value label="Maserati" key="maserati" default="false" plantainVersion="v1"/>
+                <value label="Ferrari" key="ferarri" default="false" plantainVersion="v1"/>
+                <value label="Mclaren" key="mclaren" default="false" plantainVersion="v1"/>
+            </enumeration-input>
+            <enumeration-input label="Sports" type="STRING" reference="sports" required="false"
+                               cardinality="MULTIPLE_SELECT" style="POPOUT_SELECT" size="MEDIUM" plantainVersion="v1">
+                <value label="Cricket" key="cricket" default="false" plantainVersion="v1"/>
+                <value label="Football" key="football" default="false" plantainVersion="v1"/>
+                <value label="Karate" key="karate" default="false" plantainVersion="v1"/>
+            </enumeration-input>
+        </div>
+        <div orientation="COLUMN" plantainVersion="v1">
+            <paragraph paragraphStyle="PLAIN" plantainVersion="v1">This section shows the different sizing options
+                available for inputs and checkboxes.
+            </paragraph>
+            <div orientation="COLUMN" plantainVersion="v1">
+                <input label="Small" type="INPUT" reference="small" required="false" size="SMALL" plantainVersion="v1"/>
+                <input label="Medium" type="INPUT" reference="medium" required="false" size="MEDIUM"
+                       plantainVersion="v1"/>
+                <input label="Large" type="INPUT" reference="large" required="false" size="LARGE" plantainVersion="v1"/>
+            </div>
+            <div orientation="COLUMN" plantainVersion="v1">
+                <input label="Small" type="CHECKBOX" reference="small2" required="false" size="SMALL"
+                       plantainVersion="v1">
+                    <test-value text="true"/>
+                    <test-value text="false"/>
+                </input>
+                <input label="Medium" type="CHECKBOX" reference="medium2" required="false" size="MEDIUM"
+                       plantainVersion="v1">
+                    <test-value text="true"/>
+                    <test-value text="false"/>
+                </input>
+                <input label="Large" type="CHECKBOX" reference="large2" required="false" size="LARGE"
+                       plantainVersion="v1">
+                    <test-value text="true"/>
+                    <test-value text="false"/>
+                </input>
+            </div>
+        </div>
+    </div>
+    <div orientation="COLUMN" plantainVersion="v1">
+        <paragraph paragraphStyle="PLAIN" plantainVersion="v1">This section demonstrates the specialized Scale controls.
+            These controls are really enumeration inputs that are pre-configured. These are especially useful in surveys
+            and the like. The user is asked to supply a value in a predefined set of values such as 1 to 10 or Yes vs
+            No.
+        </paragraph>
+        <scale label="Numerical" scaleType="NUMERICAL" reference="numerical" required="false" size="MEDIUM"
+               plantainVersion="v1">
+            <test-value text="1"/>
+            <test-value text="2"/>
+            <test-value text="3"/>
+            <test-value text="4"/>
+            <test-value text="5"/>
+            <test-value text="6"/>
+            <test-value text="7"/>
+            <test-value text="8"/>
+            <test-value text="9"/>
+            <test-value text="10"/>
+        </scale>
+        <scale label="Likert" scaleType="LIKERT" reference="likert" required="false" size="MEDIUM" plantainVersion="v1">
+            <test-value text="strongly-disagree"/>
+            <test-value text="disagree"/>
+            <test-value text="neutral"/>
+            <test-value text="agree"/>
+            <test-value text="strongly-agree"/>
+        </scale>
+        <scale label="Frequency" scaleType="FREQUENCY" reference="frequency" required="false" size="MEDIUM"
+               plantainVersion="v1">
+            <test-value text="very-often"/>
+            <test-value text="often"/>
+            <test-value text="sometimes"/>
+            <test-value text="rarely"/>
+            <test-value text="never"/>
+        </scale>
+        <scale label="Dichotomous" scaleType="DICHOTOMOUS" reference="dhicotomous" required="false" size="MEDIUM"
+               plantainVersion="v1">
+            <test-value text="yes"/>
+            <test-value text="no"/>
+        </scale>
+        <scale label="Boolean" scaleType="BOOLEAN" reference="boolean" required="false" size="MEDIUM"
+               plantainVersion="v1">
+            <test-value text="true"/>
+            <test-value text="false"/>
+        </scale>
+    </div>
+    <div justifyContent="SPACE_BETWEEN" alignItems="CENTER" plantainVersion="v1">
+        <button type="NEXT" size="SMALL" required="false" plantainVersion="v1">Submit small</button>
+        <button type="NEXT" size="MEDIUM" buttonFlavour="SUCCESS" required="false" plantainVersion="v1">Submit Medium
+        </button>
+        <button type="NEXT" size="LARGE" buttonFlavour="PRIMARY" required="false" plantainVersion="v1">Submit Large
+        </button>
+    </div>
+</page>

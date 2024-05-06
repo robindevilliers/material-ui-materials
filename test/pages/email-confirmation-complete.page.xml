@@ -1,0 +1,17 @@
+<page defnVersion="v1" id="emailConfirmationComplete" title="Email Confirmation Complete" group="public">
+    <div plantainVersion="v1" orientation="COLUMN" justifyContent="SPACE_AROUND" alignItems="STRETCH">
+        <div plantainVersion="v1" orientation="ROW" justifyContent="SPACE_AROUND" alignItems="CENTER" padding="1em">
+            <image plantainVersion="v1" src="logo.svg" width="200px" height="200px"
+                   margin="0 5em 2em 0"/>
+            <div plantainVersion="v1" orientation="COLUMN" justifyContent="SPACE_AROUND" alignItems="CENTER">
+                <title size="LARGE" plantainVersion="v1">Registration Complete</title>
+                <paragraph plantainVersion="v1">Thank you. Your email address has been confirmed. You will now be able
+                    to login.
+                </paragraph>
+                <paragraph plantainVersion="v1">Click <link plantainVersion="v1" view="index">here</link> to return to
+                    the login page.
+                </paragraph>
+            </div>
+        </div>
+    </div>
+</page>

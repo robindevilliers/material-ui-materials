@@ -1,0 +1,724 @@
+<page id="style-guide-main" version="1" active="false" released="false" group="public" title=""
+      description="Style Guide Main Page" defnVersion="v1" orientation="COLUMN">
+    <jumbotron orientation="COLUMN" plantainVersion="v1">
+        <div orientation="ROW" plantainVersion="v1">
+            <image src="logo.svg" title="Logo" imageHeight="210px" imageWidth="210px" borderRadius="1em"
+                   padding="0.5em" margin="0em 2em 1em" plantainVersion="v1" background="white"/>
+            <div orientation="COLUMN" plantainVersion="v1">
+                <title size="LARGE" fontFlavour="WHITE" plantainVersion="v1">
+                    Welcome to the Materials Toolkit
+                </title>
+                <paragraph plantainVersion="v1">
+                    This is the index page. It will provide links to the various pages required in the Materials
+                    Toolkit, and provide context.
+                </paragraph>
+            </div>
+        </div>
+    </jumbotron>
+    <paragraph paragraphStyle="SUPPRESSED">The Materials Toolkit allows web developers to develop the assets necessary
+        for Maximillian Workflows to render Pages, and Wizards on the platform.
+    </paragraph>
+    <paragraph paragraphStyle="SUPPRESSED">How does this work? Maximillian Workflows defines a semantic format for web
+        pages. Web pages are defined in page.xml files as XML. You can see them in the &apos;pages&apos; directory. When
+        the platform needs to render a HTML page, it will walk through the XML document and replace each element with
+        the HTML equivalent. Each HTML Partial is defined in a FTL (freemarker) file and they reside in the &apos;partials&apos;
+        directory.
+    </paragraph>
+    <paragraph paragraphStyle="SUPPRESSED">
+        The Semantic Page files allow us to offer a richer set of UI elements than normal HTML, and in a machine
+        read-able format. This allows us to create an editor over the Semantic Pages that allow users to define
+        business processes using pages that describe what the user wants rather than how the page looks. Web design is
+        separated from business process design, allowing users who are business people to more efficiently develop
+        their business processes while not worrying about presentation.
+    </paragraph>
+    <paragraph paragraphStyle="SUPPRESSED">
+        What is required to make this all work are the Partials (the FTL templates), and other HTML assets including
+        images and stylesheets. This is the purpose of the Materials Toolkit. Each organisation has their own set of
+        materials that defines how their website looks.
+    </paragraph>
+    <paragraph paragraphStyle="SUPPRESSED">
+        Additionally, there are predefined Pages. These pages are not defined in the Editor, and not available to change
+        by normal users. They are defined here in the materials. They are mandatory and allow the platform to perform
+        standard features. Displaying the generic error page is a good example. The standard error page is defined here
+        as &apos;error.page.xml&apos;. These are all listed below.
+    </paragraph>
+    <title size="LARGER" plantainVersion="v1">Style Guides</title>
+    <paragraph paragraphStyle="SUPPRESSED">
+        The Style Guide Pages are only used to render the templates so that you can see how they look. They are not
+        required by the Platform. Feel free to add and edit these pages. These pages can be reached on the Platform.
+    </paragraph>
+    <div plantainVersion="v1" alignItems="STRETCH" wrap="WRAP" border="1px solid black">
+        <card link="true" preserveLink="true" type="internal" view="style-guide-landing.html" openNewWindow="false"
+              flexBasis="260px" flexShrink="0" margin="0em 1em 1em 0em" plantainVersion="v1">
+            <image src="temp0.jpg" alt="Image of Suzi" title="Suzi Profile Picture" imageHeight="173px"
+                   imageWidth="260px" plantainVersion="v1"/>
+            <card-body orientation="COLUMN">
+                <title size="SMALLER" plantainVersion="v1">Landing Page</title>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The goal of the landing page is to sell a concise set of ideas to the general public. It focuses on
+                    impact rather than density.
+                </paragraph>
+            </card-body>
+        </card>
+        <card link="true" preserveLink="true" type="internal" view="style-guide-portfolio.html" openNewWindow="false"
+              flexBasis="260px" flexShrink="0" margin="0em 1em 1em 0em" plantainVersion="v1">
+            <image src="temp2.jpg" alt="Portfolio" title="Portfolio" imageHeight="173px"
+                   imageWidth="260px" plantainVersion="v1"/>
+            <card-body orientation="COLUMN">
+                <title size="SMALLER" plantainVersion="v1">Portfolio Page</title>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The portolio page is typical for professional websites where the goal is to present facts centered
+                    around specific persons or products.
+                </paragraph>
+            </card-body>
+        </card>
+        <card link="true" preserveLink="true" type="internal" view="style-guide-question.html" openNewWindow="false"
+              flexBasis="260px" flexShrink="0" margin="0em 1em 1em 0em" plantainVersion="v1">
+            <image src="temp7.jpg" alt="Question" title="Question" imageHeight="173px"
+                   imageWidth="260px" plantainVersion="v1"/>
+            <card-body orientation="COLUMN">
+                <title size="SMALLER" plantainVersion="v1">Question Page</title>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The portolio page is typical for professional websites where the goal is to present facts centered
+                    around specific persons or products.
+                </paragraph>
+            </card-body>
+        </card>
+        <card link="true" preserveLink="true" type="internal" view="style-guide-article.html" openNewWindow="false"
+              flexBasis="260px" flexShrink="0" margin="0em 1em 1em 0em" plantainVersion="v1">
+            <image src="temp1.jpg" alt="Page A" title="Page A" imageHeight="173px" imageWidth="260px"
+                   plantainVersion="v1"/>
+            <card-body orientation="COLUMN">
+                <title size="SMALLER" plantainVersion="v1">Article Page</title>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">This web page presents textual information in a
+                    high density format, common to news articles, blogs and reference materials.
+                </paragraph>
+            </card-body>
+        </card>
+
+        <card link="true" preserveLink="true" type="internal" view="style-guide-alpha.html" openNewWindow="false"
+              flexBasis="260px" flexShrink="0" margin="0em 1em 1em 0em" plantainVersion="v1">
+            <image src="temp4.jpg" alt="Reference Alpha" title="Reference Alpha" imageHeight="173px" imageWidth="260px"
+                   plantainVersion="v1"/>
+            <card-body orientation="COLUMN">
+                <title size="SMALLER" plantainVersion="v1">Reference Alpha</title>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">The Reference Alpha page presents a set of
+                    widgets outside any context.
+                </paragraph>
+            </card-body>
+        </card>
+        <card link="true" preserveLink="true" type="internal" view="style-guide-beta.html" openNewWindow="false"
+              flexBasis="260px" flexShrink="0" margin="0em 1em 1em 0em" plantainVersion="v1">
+            <image src="temp5.jpg" alt="Reference Beta" title="Reference Beta" imageHeight="173px" imageWidth="260px"
+                   plantainVersion="v1"/>
+            <card-body orientation="COLUMN">
+                <title size="SMALLER" plantainVersion="v1">Reference Beta</title>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">The Reference Beta page presents a set of
+                    widgets outside any context.
+                </paragraph>
+            </card-body>
+        </card>
+        <card link="true" preserveLink="true" type="internal" view="style-guide-delta.html" openNewWindow="false"
+              flexBasis="260px" flexShrink="0" margin="0em 1em 1em 0em" plantainVersion="v1">
+            <image src="temp6.jpg" alt="Reference Delta" title="Reference Delta" imageHeight="173px" imageWidth="260px"
+                   plantainVersion="v1"/>
+            <card-body orientation="COLUMN">
+                <title size="SMALLER" plantainVersion="v1">Reference Delta</title>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">The Reference Beta page presents a set of
+                    widgets outside any context.
+                </paragraph>
+            </card-body>
+        </card>
+        <card link="true" preserveLink="true" type="internal" view="style-guide-specials.html" openNewWindow="false"
+              flexBasis="260px" flexShrink="0" margin="0em 1em 1em 0em" plantainVersion="v1">
+            <image src="temp8.jpg" alt="Specials" title="Specials" imageHeight="173px" imageWidth="260px"
+                   plantainVersion="v1"/>
+            <card-body orientation="COLUMN">
+                <title size="SMALLER" plantainVersion="v1">Specials</title>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">This page contains the special widgets.
+                </paragraph>
+            </card-body>
+        </card>
+    </div>
+    <title size="LARGER" plantainVersion="v1">Special Purpose Pages</title>
+    <paragraph paragraphStyle="SUPPRESSED">
+        The Special Purpose Pages are required by the Platform and are presented in specific contexts for special
+        purposes. These are all listed out below.
+    </paragraph>
+    <div orientation="ROW" plantainVersion="v1">
+        <table plantainVersion="v1">
+            <row>
+                <column>Name</column>
+                <column>File</column>
+                <column>Description</column>
+            </row>
+            <row>
+                <cell>
+                    <link type="internal" preserveLink="true" view="error.html" openNewWindow="false"
+                          plantainVersion="v1">
+                        Error Page
+                    </link>
+                </cell>
+                <cell>
+                    error.page.xml
+                </cell>
+                <cell>
+                    <paragraph paragraphStyle="PLAIN" plantainVersion="v1">This is the standard error page that is
+                        presented whenever an unexpected error occurs.
+                    </paragraph>
+                </cell>
+            </row>
+            <row>
+                <cell>
+                    <link type="internal" preserveLink="true" view="not-found.html" openNewWindow="false"
+                          plantainVersion="v1">
+                        Not Found Page
+                    </link>
+                </cell>
+                <cell>
+                    not-found.page.xml
+                </cell>
+                <cell>
+                    <paragraph paragraphStyle="PLAIN" plantainVersion="v1">This is the standard page that is displayed
+                        when a URL is requested and no page is found. Bear in mind that this page is also returned when
+                        there is a page that exists, but the current user does not have authorisation to view the page.
+                    </paragraph>
+                </cell>
+            </row>
+            <row>
+                <cell>
+                    <link type="internal" preserveLink="true" view="unauthorized.html" openNewWindow="false"
+                          plantainVersion="v1">
+                        Unauthorized Page
+                    </link>
+                </cell>
+                <cell>
+                    unauthorized.page.xml
+                </cell>
+                <cell>
+                    <paragraph paragraphStyle="PLAIN" plantainVersion="v1">In most situations, whenever a user requests
+                        a Page that he is unauthorized to view, then the Page Resolution Process will not find a
+                        suitable page to present and the Not Found Page is served. In some very limited situations, the
+                        resolution process is not used, and in those situations, we present this page when the current
+                        user is unauthorized.
+                    </paragraph>
+                </cell>
+            </row>
+            <row>
+                <cell>
+                    <link type="internal" preserveLink="true" view="register.html" openNewWindow="false"
+                          plantainVersion="v1">
+                        Register Page
+                    </link>
+                </cell>
+                <cell>
+                    register.page.xml
+                </cell>
+                <cell>
+                    <paragraph paragraphStyle="PLAIN" plantainVersion="v1">This is the standard page that is displayed
+                        when a URL is requested and no page is found. Bear in mind that this page is also returned when
+                        there is a page that exists, but the current user does not have authorisation to view the page.
+                    </paragraph>
+                </cell>
+            </row>
+            <row>
+                <cell>
+                    <link type="internal" preserveLink="true" view="registration-complete.html" openNewWindow="false"
+                          plantainVersion="v1">
+                        Registration Complete Page
+                    </link>
+                </cell>
+                <cell>
+                    registration-complete.page.xml
+                </cell>
+                <cell>
+                    <paragraph paragraphStyle="PLAIN" plantainVersion="v1">This page is presented when a user finishes
+                        the registration process.
+                    </paragraph>
+                </cell>
+            </row>
+            <row>
+                <cell>
+                    <link type="internal" preserveLink="true" view="email-confirmation-complete.html"
+                          openNewWindow="false"
+                          plantainVersion="v1">
+                        Email Confirmation Complete Page
+                    </link>
+                </cell>
+                <cell>
+                    email-confirmation-complete.page.xml
+                </cell>
+                <cell>
+                    <paragraph paragraphStyle="PLAIN" plantainVersion="v1">This page is presented when a user clicks on
+                        the email confirmation link they will receive as a part of the registration process.
+                    </paragraph>
+                </cell>
+            </row>
+            <row>
+                <cell>
+                    <link type="internal" preserveLink="true" view="case-principal-picker.html"
+                          openNewWindow="false" plantainVersion="v1">
+                        Case Principal Picker Page
+                    </link>
+                </cell>
+                <cell>
+                    case-principal-picker.page.xml
+                </cell>
+                <cell>
+                    <paragraph paragraphStyle="PLAIN" plantainVersion="v1">Workflows can be arbitrarily assigned to
+                        users by the initiator of the Workflow. This setting is controlled by the definition of the
+                        Workflow and is used by Workflow process that are intended to be intiated by staff on behalf of
+                        the account&apos;s clients. When set, this page will present allowing the Staff member to select
+                        the Case Principal, the owner of the Workflow.
+                    </paragraph>
+                </cell>
+            </row>
+            <row>
+                <cell>
+                    <link type="internal" preserveLink="true" view="privacy.html"
+                          openNewWindow="false" plantainVersion="v1">
+                        Privacy Page
+                    </link>
+                </cell>
+                <cell>
+                    privacy.page.xml
+                </cell>
+                <cell>
+                    <paragraph paragraphStyle="PLAIN" plantainVersion="v1">This privacy page is not strictly speaking
+                        required by the platform. It is referenced by the login panel template. That panel will present
+                        a link that links to this page which outlines the account&apos;s privacy policy. You can
+                        introduce additional pages in the same way for arbitrary uses (subject to our terms and
+                        conditions of course).
+                    </paragraph>
+                </cell>
+            </row>
+            <row>
+                <cell>
+                    <link type="internal" preserveLink="true" view="reset-password.html"
+                          openNewWindow="false" plantainVersion="v1">
+                        Reset Password Page
+                    </link>
+                </cell>
+                <cell>
+                    reset-password.page.xml
+                </cell>
+                <cell>
+                    <paragraph paragraphStyle="PLAIN" plantainVersion="v1">This page presents the Reset Password Panel
+                        that allows users to request a password reset. This page is usually presented after the user has
+                        clicked on the password reset link they would have received in an email.
+                    </paragraph>
+                </cell>
+            </row>
+            <row>
+                <cell>
+                    <link type="internal" preserveLink="true" view="reset-password-complete.html"
+                          openNewWindow="false" plantainVersion="v1">
+                        Reset Password Complete Page
+                    </link>
+                </cell>
+                <cell>
+                    reset-password-complete.page.xml
+                </cell>
+                <cell>
+                    <paragraph paragraphStyle="PLAIN" plantainVersion="v1">This page presents a page that is presented
+                        once the user has performed a password reset.
+                    </paragraph>
+                </cell>
+            </row>
+            <row>
+                <cell>
+                    <link type="internal" preserveLink="true" view="reset-password-request.html"
+                          openNewWindow="false" plantainVersion="v1">
+                        Reset Password Request Page
+                    </link>
+                </cell>
+                <cell>
+                    reset-password-request.page.xml
+                </cell>
+                <cell>
+                    <paragraph paragraphStyle="PLAIN" plantainVersion="v1">This page presents the Reset Password Request
+                        Panel the user to specify a registered email address for the purposes of receiving a password
+                        reset email.
+                    </paragraph>
+                </cell>
+            </row>
+            <row>
+                <cell>
+                    <link type="internal" preserveLink="true" view="reset-password-request-complete.html"
+                          openNewWindow="false" plantainVersion="v1">
+                        Reset Password Request Complete Page
+                    </link>
+                </cell>
+                <cell>
+                    reset-password-request-complete.page.xml
+                </cell>
+                <cell>
+                    <paragraph paragraphStyle="PLAIN" plantainVersion="v1">This page presents after the user has
+                        submitted an email address for the purposes of password reset.
+                    </paragraph>
+                </cell>
+            </row>
+            <row>
+                <cell>
+                    <link type="internal" preserveLink="true" view="wizard-intro.html"
+                          openNewWindow="false" plantainVersion="v1">
+                        Wizard Intro Page
+                    </link>
+                </cell>
+                <cell>
+                    wizard-intro.page.xml
+                </cell>
+                <cell>
+                    <paragraph paragraphStyle="PLAIN" plantainVersion="v1">It is possible to
+                        configure within the Workflow a setting that will present to the user a Wizard Introduction
+                        Page. This page informs the user that the Wizard is about to be initiated. Depending on how the
+                        Wizard has been designed, you may wish to present this page or not.
+                    </paragraph>
+                </cell>
+            </row>
+            <row>
+                <cell>
+                    <link type="internal" preserveLink="true" view="wizard-outro.html"
+                          openNewWindow="false" plantainVersion="v1">
+                        Wizard Outro Page
+                    </link>
+                </cell>
+                <cell>
+                    wizard-outro.page.xml
+                </cell>
+                <cell>
+                    <paragraph paragraphStyle="PLAIN" plantainVersion="v1">Similarly to the Intro Page, it is possible
+                        to configure within the Workflow a setting that will present to the user a Wizard Outro Page.
+                        This page informs the user that the Wizard has been completed. Depending on how the Wizard has
+                        been designed, you may wish to present this page or not.
+                    </paragraph>
+                </cell>
+            </row>
+            <row>
+                <cell>
+                    <link type="internal" preserveLink="true" view="wizard-resume.html"
+                          openNewWindow="false" plantainVersion="v1">
+                        Wizard Resume Page
+                    </link>
+                </cell>
+                <cell>
+                    wizard-resume.page.xml
+                </cell>
+                <cell>
+                    <paragraph paragraphStyle="PLAIN" plantainVersion="v1">Often a user will commence an Wizard, and for
+                        whatever reason, not complete the wizard in one sitting. When this happens, the Platform records
+                        that the Wizard is inflight, and will present the Wizard to the user when he returns and
+                        authenticates. When he authenticates, we present this page to the user just prior to presenting
+                        the Wizard so as to give the user some context as to what is going on.
+                    </paragraph>
+                </cell>
+            </row>
+            <row>
+                <cell>
+                    <link type="internal" preserveLink="true" view="wizard-test-results.html"
+                          openNewWindow="false" plantainVersion="v1">
+                        Wizard Test Results Page
+                    </link>
+                </cell>
+                <cell>
+                    wizard-test-results.page.xml
+                </cell>
+                <cell>
+                    <paragraph paragraphStyle="PLAIN" plantainVersion="v1">The Wizard Test Results page is a special
+                        purpose page that presents the Wizard Test Results widget. This page is only presented by the
+                        Admin Console as a result of testing a Wizard.
+                    </paragraph>
+                </cell>
+            </row>
+
+            <row>
+                <cell>
+                    <link type="internal" preserveLink="true" view="workflow-confirm.html"
+                          openNewWindow="false" plantainVersion="v1">
+                        Workflow Confirm Page
+                    </link>
+                </cell>
+                <cell>
+                    workflow-confirm.page.xml
+                </cell>
+                <cell>
+                    <paragraph paragraphStyle="PLAIN" plantainVersion="v1">Whenever a Workflow is initiated by clicking
+                        on the Initiate Workflow Button, or Menu Item, then this page is presented. This page works as a
+                        confirmation page, to allow the user to cancel the previous action.
+                    </paragraph>
+                </cell>
+            </row>
+            <row>
+                <cell>
+                    <link type="internal" preserveLink="true" view="workflow-executed.html"
+                          openNewWindow="false" plantainVersion="v1">
+                        Workflow Executed Page
+                    </link>
+                </cell>
+                <cell>
+                    workflow-executed.page.xml
+                </cell>
+                <cell>
+                    <paragraph paragraphStyle="PLAIN" plantainVersion="v1">This page is presented immediately after a
+                        Workflow has been initiated. What actually happens after intiating a workflow depends on the
+                        Workflow&apos;s plan, but in some cases there would be no indication to the current user that
+                        anything has happened. This page gives some indication. It is also possible that the current
+                        user, the Case Principal, will have a Wizard to complete. In this case the Wizard will present
+                        after this page.
+                    </paragraph>
+                </cell>
+            </row>
+        </table>
+    </div>
+    <title size="LARGER" plantainVersion="v1">Widget/Partial Reference</title>
+    <paragraph paragraphStyle="SUPPRESSED">
+        This section lists out all the Widgets. A Widget is an XML element that you can include in a Page Definition
+        (page.xml file). Each Widget is backed by a Partial, which is a Freemarker Template. You can find the reference
+        for Freemarker
+        <link type="external" url="https://freemarker.apache.org/" openNewWindow="true" plantainVersion="v1">here</link>
+        . Not all directives are supported on the platform. The Materials Toolkit will warn you if you have used
+        something that is not supported.
+    </paragraph>
+    <list listStyle="BORDERED" flexBasis="14em" flexShrink="0" plantainVersion="v1">
+        <list-item>
+            <link view="reference.html#accordion" plantainVersion="v1">Accordion</link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#accordion-item" plantainVersion="v1">Accordion Item</link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#accordion-item-header" plantainVersion="v1">Accordion Item Header</link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#back-link" plantainVersion="v1">Back Link</link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#badge" plantainVersion="v1">Badge</link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#br" plantainVersion="v1">Br</link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#button" plantainVersion="v1">Button</link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#card" plantainVersion="v1">Card</link>
+        </list-item>
+
+        <list-item>
+            <link view="reference.html#card-body" plantainVersion="v1">Card Body</link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#card-footer" plantainVersion="v1">Card Footer</link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#card-header" plantainVersion="v1">Card Header</link>
+        </list-item>
+
+        <list-item>
+            <link view="reference.html#carousel" plantainVersion="v1">Carousel</link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#carousel-panel" plantainVersion="v1">Carousel Panel</link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#cell" plantainVersion="v1">Cell</link>
+        </list-item>
+
+        <list-item>
+            <link view="reference.html#close-workflow-executed-panel" plantainVersion="v1">
+                Close Workflow Executed Panel
+            </link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#column" plantainVersion="v1">Column</link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#confirm-workflow-panel" plantainVersion="v1">Confirm Workflow Panel
+            </link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#confirmation-panel" plantainVersion="v1">Confirmation Panel</link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#cookie-consent" plantainVersion="v1">Cookie Consent</link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#div" plantainVersion="v1">Div</link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#email" plantainVersion="v1">Email</link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#email-confirmation-link" plantainVersion="v1">
+                Email Confirmation Link
+            </link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#enumeration-input" plantainVersion="v1">Enumeration Input</link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#error-summary" plantainVersion="v1">Error Summary</link>
+        </list-item>
+
+        <list-item>
+            <link view="reference.html#exhibit" plantainVersion="v1">Exhibit</link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#exhibit-footer" plantainVersion="v1">Exhibit Footer</link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#exhibit-header" plantainVersion="v1">Exhibit Header</link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#form" plantainVersion="v1">Form</link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#horizontal-rule" plantainVersion="v1">Horizontal Rule</link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#icon" plantainVersion="v1">Icon</link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#image" plantainVersion="v1">Image</link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#initiate-workflow-button" plantainVersion="v1">
+                Initiate Workflow Button
+            </link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#input" plantainVersion="v1">Input</link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#inset-text" plantainVersion="v1">Inset Text</link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#jumbotron" plantainVersion="v1">Jumbotron</link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#link" plantainVersion="v1">Link</link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#list" plantainVersion="v1">List</link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#list-item" plantainVersion="v1">List Item</link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#login-panel" plantainVersion="v1">Login Panel</link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#loop" plantainVersion="v1">Loop</link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#menu" plantainVersion="v1">Menu</link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#menu-brand" plantainVersion="v1">Menu Brand</link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#menu-item" plantainVersion="v1">Menu Item</link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#message-explorer" plantainVersion="v1">Message Explorer</link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#mile-stone" plantainVersion="v1">Mile Stone</link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#notification-banner" plantainVersion="v1">Notification Banner</link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#option" plantainVersion="v1">Option</link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#options" plantainVersion="v1">Options</link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#page" plantainVersion="v1">Page</link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#paragraph" plantainVersion="v1">Paragraph</link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#password-reset-link" plantainVersion="v1">Password Reset Link</link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#progress-bar" plantainVersion="v1">Progress Bar</link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#question" plantainVersion="v1">Question</link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#register-panel" plantainVersion="v1">Register Panel</link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#reset-password-panel" plantainVersion="v1">Reset Password Panel</link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#reset-password-request-panel" plantainVersion="v1">Reset Password
+                Request Panel
+            </link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#row" plantainVersion="v1">Row</link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#scale" plantainVersion="v1">Scale</link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#script" plantainVersion="v1">Script</link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#span" plantainVersion="v1">Span</link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#sub-menu" plantainVersion="v1">Sub Menu</link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#sub-menu-label" plantainVersion="v1">Sub Menu Label</link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#switch" plantainVersion="v1">Switch</link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#table" plantainVersion="v1">Table</link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#title" plantainVersion="v1">Title</link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#tool-tip" plantainVersion="v1">Tool Tip</link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#tray" plantainVersion="v1">Tray</link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#tray-header" plantainVersion="v1">Tray Header</link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#user-explorer" plantainVersion="v1">User Explorer</link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#uuid" plantainVersion="v1">UUID</link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#validation-rule" plantainVersion="v1">Validation Rule</link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#value-panel" plantainVersion="v1">Value Panel</link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#warning" plantainVersion="v1">Warning</link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#well" plantainVersion="v1">Well</link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#wizard-test-results" plantainVersion="v1">Wizard Test Results</link>
+        </list-item>
+    </list>
+
+
+</page>

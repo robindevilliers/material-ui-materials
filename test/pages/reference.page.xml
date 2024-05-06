@@ -1,0 +1,952 @@
+<page id="style-guide-main" version="1" active="false" released="false" group="public" title=""
+      description="Style Guide Main Page" defnVersion="v1" orientation="COLUMN">
+
+
+    <title size="LARGEST" plantainVersion="v1">Reference</title>
+    <paragraph paragraphStyle="SUPPRESSED">
+        This section lists out all the Partials and the variables that are made available to them. The Partials are all
+        written using Freemarker. You can find the reference for Freemarker
+        <link type="external" url="https://freemarker.apache.org/" openNewWindow="true" plantainVersion="v1">here</link>
+        .
+    </paragraph>
+
+    <title id="flex-item" size="LARGER" plantainVersion="v1">Flex Item</title>
+
+    <paragraph paragraphStyle="PLAIN">
+        Many Widgets fall into the specific category of being a Flex Item. This kind of Widget describes a Widget
+        that will be composed within a Flex Container. The combination of Flex Items and Flex Containers allows for a
+        high degree of control over positioning of HTML elements within one another.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        These are the supported attributes that are applicable to Flex Item Widgets specified in Page Definition files.
+    </paragraph>
+
+    <table plantainVersion="v1">
+        <row>
+            <column>Attribute</column>
+            <column>Description</column>
+            <column>Permitted values/Examples</column>
+        </row>
+        <row>
+            <cell>alignSelf</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">The alignSelf attribute is translated into the
+                    HTML flex-box align-self attribute.
+                </paragraph>
+            </cell>
+            <cell>
+                AUTO, START, CENTER, END, STRETCH, BASELINE
+            </cell>
+        </row>
+        <row>
+            <cell>flexBasis</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">The flexBasis attribute is translated into the
+                    HTML flex-box flex-basis attribute.
+                </paragraph>
+            </cell>
+            <cell>
+                260px, 100%, auto etc
+            </cell>
+        </row>
+        <row>
+            <cell>height</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">The height attribute is translated into the HTML
+                    height attribute.
+                </paragraph>
+            </cell>
+            <cell>
+                260px, 100%, auto etc
+            </cell>
+        </row>
+        <row>
+            <cell>width</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">The width attribute is translated into the HTML
+                    width attribute.
+                </paragraph>
+            </cell>
+            <cell>
+                260px, 100%, auto etc
+            </cell>
+        </row>
+        <row>
+            <cell>flexGrow</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">The flexGrow attribute is translated into the
+                    flex-grow flexbox attribute.
+                </paragraph>
+            </cell>
+            <cell>
+                1, 2, 3
+            </cell>
+        </row>
+        <row>
+            <cell>flexShrink</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">The flexShrink attribute is translated into the
+                    flex-shrink flexbox attribute.
+                </paragraph>
+            </cell>
+            <cell>
+                1, 2, 3
+            </cell>
+        </row>
+        <row>
+            <cell>hiddenScript</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">The hiddenScript attribute is used to specify a
+                    Plantain Script that returns a boolean that indicates if the element should be hidden or not.
+                </paragraph>
+            </cell>
+            <cell>
+                true, false etc
+            </cell>
+        </row>
+        <row>
+            <cell>margin</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">The margin attribute is translated to the margin
+                    attribute in the HTML page.
+                </paragraph>
+            </cell>
+            <cell>
+                1em
+            </cell>
+        </row>
+        <row>
+            <cell>padding</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">The padding attribute is translated to the
+                    padding attribute in the HTML page.
+                </paragraph>
+            </cell>
+            <cell>
+                1em
+            </cell>
+        </row>
+        <row>
+            <cell>backgroundFlavour</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">The backgroundFlavour attribute is translated
+                    into a class that is applied to the element in the HTML. PRIMARY, for example, is translated into a
+                    'bg-primary' class. It&apos;s the responsibility of the web developer to make sure all of these
+                    classes are available for use: bg-default, bg-primary, bg-info, bg-warning, bg-danger,bg-success,
+                    bg-muted, bg-black and bg-white.
+                </paragraph>
+            </cell>
+            <cell>DEFAULT, PRIMARY, INFO, WARNING, DANGER, SUCCESS, MUTED, BLACK, WHITE</cell>
+        </row>
+        <row>
+            <cell>borderRadius</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">The borderRadius property will be translated to
+                    border-radius in the HTML.
+                </paragraph>
+            </cell>
+            <cell>1em</cell>
+        </row>
+    </table>
+
+    <title id="flex-container" size="LARGER" plantainVersion="v1">Flex Container</title>
+
+    <paragraph paragraphStyle="PLAIN">
+        Many Widgets compose or contain other Widgets and need to control how child Widgets are organised. These Widgets
+        are Flex Containers. Flex Containers are very probably translated into flex containers are per the HTML flexbox
+        standard.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        These are the supported attributes that are applicable to Flex Container Widgets specified in Page Definition
+        files.
+    </paragraph>
+
+    <table plantainVersion="v1">
+        <row>
+            <column>Attribute</column>
+            <column>Description</column>
+            <column>Permitted values/Examples</column>
+        </row>
+        <row>
+            <cell>orientation</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">The orientation property, translated as the
+                    flex-orientation property as per the flexbox specification, controls the axis in which children are
+                    presented.
+                </paragraph>
+            </cell>
+            <cell>ROW, COLUMN, ROW_REVERSE, COLUMN_REVERSE</cell>
+        </row>
+        <row>
+            <cell>justifyContent</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">As per the flexbox specification, the
+                    justifyContent property is translated as the justify-content css attribute.
+                </paragraph>
+            </cell>
+            <cell>START, CENTER, END, SPACE_BETWEEN, SPACE_AROUND, SPACE_EVENLY</cell>
+        </row>
+        <row>
+            <cell>alignItems</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">As per the flexbox specification, the
+                    alignItems property is translated as the align-items css attribute.
+                </paragraph>
+            </cell>
+            <cell>AUTO, START, CENTER, END, STRETCH, BASELINE</cell>
+        </row>
+        <row>
+            <cell>wrap</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">As per the flexbox specification, the
+                    wrap property is translated as the wrap css attribute.
+                </paragraph>
+            </cell>
+            <cell>NOWRAP, WRAP, WRAP_REVERSE</cell>
+        </row>
+        <row>
+            <cell>alignContent</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">As per the flexbox specification, the
+                    alignContent property is translated as the align-content css attribute.
+                </paragraph>
+            </cell>
+            <cell>AUTO, START, CENTER, END, STRETCH, BASELINE</cell>
+        </row>
+        <row>
+            <cell>padding</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">The padding property is translated as the padding
+                    property in HTML.
+                </paragraph>
+            </cell>
+            <cell>1em</cell>
+        </row>
+    </table>
+
+    <title id="textual" size="LARGER" plantainVersion="v1">Textual</title>
+
+    <paragraph paragraphStyle="PLAIN">
+        Many Widgets present text and as such have a common set of attributes that affect the styling of the text
+        within. These Widgets are collectively referred to as the Textuals. In addition to having presentation
+        attributes, Textuals also compose specific elements related to text. These are Span, Br and Script. These
+        elements are laid out in flowing order as you would expect text to be laid out in a paragraph. Elements are
+        wrapped when space is constrained.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        These are the supported attributes that are applicable to Textual Widgets specified in Page Definition files.
+    </paragraph>
+
+    <table plantainVersion="v1">
+        <row>
+            <column>Attribute</column>
+            <column>Description</column>
+            <column>Permitted values/Examples</column>
+        </row>
+        <row>
+            <cell>fontFlavour</cell>
+            <cell>The fontFlavour specifies the colouring of the font.</cell>
+            <cell>DEFAULT, PRIMARY, INFO, WARNING, DANGER, SUCCESS, MUTED, BLACK, WHITE</cell>
+        </row>
+        <row>
+            <cell>backgroundFlavour</cell>
+            <cell>The backgroundFlavour specifies the colouring of the background flavour.</cell>
+            <cell>DEFAULT, PRIMARY, INFO, WARNING, DANGER, SUCCESS, MUTED, BLACK, WHITE</cell>
+        </row>
+        <row>
+            <cell>font</cell>
+            <cell>The font attribute specifies one of a limited set of font faces. These names are translated into
+                font faces that are specified in the class mappings file (class-mappings.properties). The actual names
+                are font-title-primary, font-title-secondary, font-text-primary, font-text-secondary, font-exhibit,
+                font-primary and font-secondary.
+            </cell>
+            <cell>TITLE_PRIMARY, TITLE_SECONDARY, TEXT_PRIMARY, TEXT_SECONDARY, EXHIBIT, PRIMARY, SECONDARY</cell>
+        </row>
+        <row>
+            <cell>textAlign</cell>
+            <cell>The textAlign property is translated into the text-align property in HTML.</cell>
+            <cell>LEFT, CENTER, RIGHT, JUSTIFY, INHERIT</cell>
+        </row>
+        <row>
+            <cell>fontSize</cell>
+            <cell>The fontSize property specifies the font size.</cell>
+            <cell>2em</cell>
+        </row>
+        <row>
+            <cell>textDecoration</cell>
+            <cell>The textDecoration translates to the text-decoration css attribute.</cell>
+            <cell>OVERLINE, LINE_THROUGH, UNDERLINE, UNSET, INITIAL, INHERIT</cell>
+        </row>
+        <row>
+            <cell>fontStyle</cell>
+            <cell>The fontStyle translates to the font-style css attribute.</cell>
+            <cell>NORMAL, ITALIC, OBLIQUE, UNSET, INHERIT, INITIAL</cell>
+        </row>
+        <row>
+            <cell>fontWeight</cell>
+            <cell>The fontWeight translates to the font-weight css attribute.</cell>
+            <cell>NORMAL, BOLD, LIGHTER, BOLDER, INHERIT, INITIAL, UNSET</cell>
+        </row>
+    </table>
+
+    <title id="accordion" size="LARGER" plantainVersion="v1">Accordion</title>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Accordion Widget presents a collapsed stack of panels where each panel has a header that can be clicked to
+        expand the panel. Typically, there is an animation that expands or collapses the panel and hence the name.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Accordion can be viewed on the right hand side of the
+        <link type="internal" view="style-guide-portfolio.html" openNewWindow="true" plantainVersion="v1">
+            Style Guide Portfolio
+        </link>
+        page.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Widget has, in addition to being a Flex Item, the following attributes.
+    </paragraph>
+
+    <table plantainVersion="v1">
+        <row>
+            <column>Attribute</column>
+            <column>Description</column>
+            <column>Permitted values/Examples</column>
+        </row>
+        <row>
+            <cell>flush</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The flush property will specify that the Accordion should appear flush-to-the-page when presented.
+                    This typically means that the borders and background colors of the panels are suppressed.
+                </paragraph>
+            </cell>
+            <cell>
+                true, false
+            </cell>
+        </row>
+        <row>
+            <cell>singleActive</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The singleActive property specifies that only one panel should be expanded at a time.
+                </paragraph>
+            </cell>
+            <cell>
+                true, false
+            </cell>
+        </row>
+    </table>
+
+    <title id="accordion-item" size="LARGER" plantainVersion="v1">Accordion Item</title>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Accordion Item Widget presents a panel as a part of an Accordion Widget. This element must be the immediate
+        child of an Accordion element.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Accordion Item can be viewed on the right hand side of the
+        <link type="internal" view="style-guide-portfolio.html" openNewWindow="true" plantainVersion="v1">
+            Style Guide Portfolio
+        </link>
+        page.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Widget has, in addition to being a Flex Container, the following attributes.
+    </paragraph>
+
+    <table plantainVersion="v1">
+        <row>
+            <column>Attribute</column>
+            <column>Description</column>
+            <column>Permitted values/Examples</column>
+        </row>
+        <row>
+            <cell>active</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    This property specifies that this Accordion Item is active when the page is first presented.
+                </paragraph>
+            </cell>
+            <cell>
+                true, false
+            </cell>
+        </row>
+        <row>
+            <cell>backgroundFlavour</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The backgroundFlavour property specifies the background colour of the header of the Accordion Item.
+                </paragraph>
+            </cell>
+            <cell>DEFAULT, PRIMARY, INFO, WARNING, DANGER, SUCCESS, MUTED, BLACK, WHITE</cell>
+        </row>
+    </table>
+
+    <title id="accordion-item-header" size="LARGER" plantainVersion="v1">Accordion Item Header</title>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Accordion Item Header Widget specifies a header as a part of the Accordion Item. It is a mandatory child of
+        an Accordion Item.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Accordion Item Header Widget has, in addition to being a Textual, the following attributes.
+    </paragraph>
+
+    <table plantainVersion="v1">
+        <row>
+            <column>Attribute</column>
+            <column>Description</column>
+            <column>Permitted values/Examples</column>
+        </row>
+        <row>
+            <cell>active</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    This property specifies that this Accordion Item is active when the page is first presented.
+                </paragraph>
+            </cell>
+            <cell>
+                true, false
+            </cell>
+        </row>
+        <row>
+            <cell>backgroundFlavour</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The backgroundFlavour property specifies the background colour of the header of the Accordion Item.
+                </paragraph>
+            </cell>
+            <cell>DEFAULT, PRIMARY, INFO, WARNING, DANGER, SUCCESS, MUTED, BLACK, WHITE</cell>
+        </row>
+    </table>
+
+    <title id="back-link" size="LARGER" plantainVersion="v1">Back Link</title>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Back Link specifies a back-link on the page that will direct the browser to revert to the previous web page.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Back Link can be viewed at the top left of the
+        <link type="internal" view="style-guide-question.html" openNewWindow="true" plantainVersion="v1">
+            Style Guide Question
+        </link>
+        page.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Widget is a Flex Item. There are no additional properties.
+    </paragraph>
+
+    <title id="badge" size="LARGER" plantainVersion="v1">Badge</title>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Badge Widget specifies a Textual element intended to display a simple message as a number or a one-word
+        sentence. It is mean&apos;t to qualify some other element. Words like 'To do', or 'New' are appropriate.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Badge Widget can be viewed on the
+        <link type="internal" view="style-guide-alpha.html" openNewWindow="true" plantainVersion="v1">
+            Style Guide Alpha
+        </link>
+        page.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Badge Widget has, in addition to being a Textual, the following attributes.
+    </paragraph>
+
+    <table plantainVersion="v1">
+        <row>
+            <column>Attribute</column>
+            <column>Description</column>
+            <column>Permitted values/Examples</column>
+        </row>
+        <row>
+            <cell>size</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    This property specifies the size.
+                </paragraph>
+            </cell>
+            <cell>
+                LARGE, LARGER, MEDIUM, SMALLER, SMALL
+            </cell>
+        </row>
+        <row>
+            <cell>flavour</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The flavour property specifies the colouring of the Badge.
+                </paragraph>
+            </cell>
+            <cell>DEFAULT, PRIMARY, INFO, WARNING, DANGER, SUCCESS, MUTED, BLACK, WHITE</cell>
+        </row>
+    </table>
+
+    <title id="br" size="LARGER" plantainVersion="v1">Br</title>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Br Widget introduces a forced line break into a Textual element. This Widget is only valid when composed
+        within a Textual.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        There are no additional properties.
+    </paragraph>
+
+    <title id="button" size="LARGER" plantainVersion="v1">Button</title>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Button Widget specifies a button for presentation on a web page as a part of a Form. This element is only
+        valid within a Wizard. It should not be part of any predefined page. Buttons define the (submit) buttons on all
+        pages within a Wizard that direct the user forward in the journey.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Button Widget can be viewed on the
+        <link type="internal" view="style-guide-delta.html" openNewWindow="true" plantainVersion="v1">
+            Style Guide Delta
+        </link>
+        page.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Button Widget is both a Textual and a Flex Item. And has the following additional properties.
+    </paragraph>
+
+    <table plantainVersion="v1">
+        <row>
+            <column>Attribute</column>
+            <column>Description</column>
+            <column>Permitted values/Examples</column>
+        </row>
+        <row>
+            <cell>type</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The type of the Button. There are a number of types, and they are all defined and controlled by the
+                    Admin Console. From the perspective of the Materials, the Button Widget needs to be styled, but
+                    because it cannot be included in any predefined page, apart from the Style Guides, the actual
+                    meaning of the attribute is not required.
+                </paragraph>
+            </cell>
+            <cell>N/A</cell>
+        </row>
+        <row>
+            <cell>reference</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    Similar to type, the actual meaning of this is not required, by the Materials.
+                </paragraph>
+            </cell>
+            <cell>N/A</cell>
+        </row>
+        <row>
+            <cell>wizard</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    Similar to type, the actual meaning of this is not required, by the Materials.
+                </paragraph>
+            </cell>
+            <cell>N/A</cell>
+        </row>
+        <row>
+            <cell>size</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The size of the button.
+                </paragraph>
+            </cell>
+            <cell>
+                LARGE, MEDIUM, SMALL
+            </cell>
+        </row>
+        <row>
+            <cell>index</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    Similar to type, the actual meaning of this is not required, by the Materials.
+                </paragraph>
+            </cell>
+            <cell>N/A</cell>
+        </row>
+        <row>
+            <cell>buttonFlavour</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The colouring of the Button Widget.
+                </paragraph>
+            </cell>
+            <cell>DEFAULT, PRIMARY, INFO, WARNING, DANGER, SUCCESS, MUTED, BLACK, WHITE</cell>
+        </row>
+        <row>
+            <cell>disableScript</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    This attribute contains a Plantain script that will determine if the Button should appear disabled
+                    or not.
+                </paragraph>
+            </cell>
+            <cell>
+                true, false
+            </cell>
+        </row>
+        <row>
+            <cell>hiddenScript</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    This attribute contains a Plantain script that will determine if the Button should appear hidden
+                    or not.
+                </paragraph>
+            </cell>
+            <cell>
+                true, false
+            </cell>
+        </row>
+    </table>
+
+    <title id="card" size="LARGER" plantainVersion="v1">Card</title>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Card Widget specifies a Card; a common HTML presentational element that appears as a card on the page. It
+        can typically have a header, an image, a body and a footer section.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Card Widget can be viewed on the
+        <link type="internal" view="style-guide-alpha.html" openNewWindow="true" plantainVersion="v1">
+            Style Guide Alpha
+        </link>
+        page.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Card Widget has, in addition to being a Flex Item, the following attributes.
+    </paragraph>
+
+    <table plantainVersion="v1">
+        <row>
+            <column>Attribute</column>
+            <column>Description</column>
+            <column>Permitted values/Examples</column>
+        </row>
+        <row>
+            <cell>flavour</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The flavour property specifies the colouring of the Badge.
+                </paragraph>
+            </cell>
+            <cell>DEFAULT, PRIMARY, INFO, WARNING, DANGER, SUCCESS, MUTED, BLACK, WHITE</cell>
+        </row>
+
+        <row>
+            <cell>link</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The link boolean value indicates if this card behaves as a link or not. If this value is set to
+                    true, then the user can click anywhere on the card, and it will ink to another web page. You can see
+                    examples of this on the index page.
+                </paragraph>
+            </cell>
+            <cell>
+                true, false
+            </cell>
+        </row>
+
+        <row>
+            <cell>view</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The view property specifies which internal page to link to if the card is a link.
+                </paragraph>
+            </cell>
+            <cell>
+                index, home
+            </cell>
+        </row>
+        <row>
+            <cell>url</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The url property specifies an external url that this card will link to.
+                </paragraph>
+            </cell>
+            <cell>
+                http://www.google.com
+            </cell>
+        </row>
+        <row>
+            <cell>openNewWindow</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The openNewWindow property will specify if, when clicked, the browser will present the destination
+                    view or url in a separate window.
+                </paragraph>
+            </cell>
+            <cell>
+                true, false
+            </cell>
+        </row>
+    </table>
+
+    <title id="card-body" size="LARGER" plantainVersion="v1">Card Body</title>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Card Body Widget specifies the contents of the Card Body. This section of the Card&apos;s content will
+        present below the Card Header or Image (if any), and above the Card Footer.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Card Body Widget can be viewed on the
+        <link type="internal" view="style-guide-alpha.html" openNewWindow="true" plantainVersion="v1">
+            Style Guide Alpha
+        </link>
+        page.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Card Body Widget is a Flex Container.
+    </paragraph>
+
+    <title id="card-footer" size="LARGER" plantainVersion="v1">Card Footer</title>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Card Header Widget specifies the contents of the Card Footer.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Card Footer Widget can be viewed on the
+        <link type="internal" view="style-guide-alpha.html" openNewWindow="true" plantainVersion="v1">
+            Style Guide Alpha
+        </link>
+        page.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Card Footer Widget is a Flex Container.
+    </paragraph>
+
+    <title id="card-header" size="LARGER" plantainVersion="v1">Card Header</title>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Card Header Widget specifies the contents of the Card Header.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Card Header Widget can be viewed on the
+        <link type="internal" view="style-guide-alpha.html" openNewWindow="true" plantainVersion="v1">
+            Style Guide Alpha
+        </link>
+        page.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Card Header Widget is a Flex Container.
+    </paragraph>
+
+    <title id="carousel" size="LARGER" plantainVersion="v1">Carousel</title>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Carousel Widget specifies a widget that presents a number of panels. The user can navigate to the next or
+        previous panels using slide indicators. If the last panel is reached, then the user is returned to the first
+        panel when the appropriate slide indicator is selected.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Card Header Widget can be viewed on the
+        <link type="internal" view="style-guide-landing.html" openNewWindow="true" plantainVersion="v1">
+            Style Guide Landing
+        </link>
+        page.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Carousel Widget is a Flex Item, in addition to having the following properties.
+    </paragraph>
+
+    <table plantainVersion="v1">
+        <row>
+            <column>Attribute</column>
+            <column>Description</column>
+            <column>Permitted values/Examples</column>
+        </row>
+        <row>
+            <cell>autoSlide</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The autoSlide property indicates if the Carousel should automatically rotate the panels.
+                </paragraph>
+            </cell>
+            <cell>true, false</cell>
+        </row>
+        <row>
+            <cell>indicators</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The indicators property specifies if there should be a series of buttons in the panel that allows
+                    direct selection of the panels.
+                </paragraph>
+            </cell>
+            <cell>true, false</cell>
+        </row>
+        <row>
+            <cell>controls</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The controls property specifies if there should be a Select Next or Select Previous set of buttons
+                    present on the Carousel.
+                </paragraph>
+            </cell>
+            <cell>true, false</cell>
+        </row>
+    </table>
+
+    <title id="carousel-panel" size="LARGER" plantainVersion="v1">Carousel Panel</title>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Carousel Panel Widget specifies a panel within a Carousel. This widget is only valid as the immediate child
+        of a Carousel.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Card Header Widget can be viewed on the
+        <link type="internal" view="style-guide-landing.html" openNewWindow="true" plantainVersion="v1">
+            Style Guide Landing
+        </link>
+        page.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Carousel Panel Widget is a Flex Container, in addition to having the following properties.
+    </paragraph>
+
+    <table plantainVersion="v1">
+        <row>
+            <column>Attribute</column>
+            <column>Description</column>
+            <column>Permitted values/Examples</column>
+        </row>
+        <row>
+            <cell>src</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The src property specifies an image in the materials that will be presented as the background for
+                    the panel. This property is required.
+                </paragraph>
+            </cell>
+            <cell>
+                panel-3.jpg
+            </cell>
+        </row>
+        <row>
+            <cell>active</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    This property specifies if this panel is active when the Carousel first loads.
+                </paragraph>
+            </cell>
+            <cell>true, false</cell>
+        </row>
+        <row>
+            <cell>interval</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The interval property specifies the wait period for the specific panel, if autoSlide is set to true
+                    on the parent Carousel.
+                </paragraph>
+            </cell>
+            <cell>3000</cell>
+        </row>
+    </table>
+
+    <title id="cell" size="LARGER" plantainVersion="v1">Cell</title>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Cell Widget specifies a cell within a table. The Cell Widget must be the immediate child of a Row Widget.
+        When a Table Widget is specifies, it will immediately compose Row Widgets. The first Row Widget might contain
+        Column Widgets. All subsequent Rows must contain Cells. The Cell Widgets would then contain the actual content
+        of the table cells.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Cell Widget can be viewed on the
+        <link type="internal" view="style-guide-alpha.html" openNewWindow="true" plantainVersion="v1">
+            Style Guide Alpha
+        </link>
+        page as a part of a Table.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Cell Widget is a Flex Container.
+    </paragraph>
+
+    <title id="close-workflow-executed-panel" size="LARGER" plantainVersion="v1">Close Workflow Executed Panel</title>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Close Workflow Executed Panel Widget specifies that the panel of the same name should present. When a
+        Workflow is first initiated, the platform will present the Workflow Executed Page. This page should indicate
+        that the Workflow that has just executed, has executed. There must be a button on this page that tells the
+        platform to continue. That is the purpose of this widget.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Close Workflow Executed Panel Widget is a Flex Item.
+    </paragraph>
+
+    <title id="column" size="LARGER" plantainVersion="v1">Column</title>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Column Widget specifies a column header within a table. The Column Widget must only be the immediate child
+        of the first Row Widget within a Table. A Table does not need to have column headers.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Column Widget can be viewed on the
+        <link type="internal" view="style-guide-alpha.html" openNewWindow="true" plantainVersion="v1">
+            Style Guide Alpha
+        </link>
+        page as a part of a Table.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Column Widget is a Textual.
+    </paragraph>
+
+    <title id="confirm-workflow-panel" size="LARGER" plantainVersion="v1">Confirm Workflow Panel</title>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Confirm Workflow Panel Widget specifies that the panel of the same name should be presented. This panel
+        presents an Accept and a Cancel button. When a Workflow is first initiated by the user, the Workflow
+        Confirmation Page is presented. That page asks if the user is sure they wish to execute the Workflow. The user
+        then confirms or cancels by selecting the appropriate button. These buttons are presented by this widget.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Confirm Workflow Panel Widget is a Flex Item.
+    </paragraph>
+
+    <title id="confirmation-panel" size="LARGER" plantainVersion="v1">Confirmation Panel</title>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Confirmation Panel Widget is used in two phase authentication. This panel presents a challenge to the user
+        where he should enter a given number of letters at specific positions in a secret phrase. This widget belongs in
+        a specially named page called the Confirmation Page. This functionality is currently not active.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Confirmation Panel Widget is a Flex Item and Textual.
+    </paragraph>
+
+
+</page>

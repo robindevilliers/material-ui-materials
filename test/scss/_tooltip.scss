@@ -1,0 +1,43 @@
+
+.tool-tip-widget {
+  position: relative;
+
+  .tool-tip-icon {
+    right: -40px;
+    position: absolute;
+    padding: 0.25em;
+
+    border-radius: 0.25em;
+    background: gray;
+    cursor: pointer;
+    opacity: 20%;
+    z-index: 10;
+
+    i {
+      font-size: 1em;
+      color: white;
+    }
+
+    .tool-tip-exposition {
+      display: none;
+      opacity: 100%;
+      background: gray;
+      right: -5em;
+      margin: 1em;
+      padding: 0.5em;
+      min-width: 10em;
+      position: absolute;
+      color: white;
+      z-index: 10;
+      border-radius: 0.5em;
+      text-align: center;
+    }
+  }
+
+  .tool-tip-icon:hover {
+    opacity: 100%;
+    .tool-tip-exposition {
+      display: block;
+    }
+  }
+}

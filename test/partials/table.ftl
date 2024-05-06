@@ -1,0 +1,1 @@
+<table class="table ${classes}" style="${itemStyles}">${content}</table>

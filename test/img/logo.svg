@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg height="200" width="200" xmlns="http://www.w3.org/2000/svg" stroke="81B1CC" fill="none">
+
+    <rect x="10" y="10" width="180" height="180" rx="10" stroke="#81B1CC" stroke-width="10" />
+
+
+    <path d="M 25 100 C 25 25 45 25 45 150 C 45 25 65 25 65 150 C 65 25 85 25 85 120 C 85 155 105 155 105 100
+C 105 175 125 175 125 100 C 125 175 145 175 145 100 C 145 125 165 125 165 100 "
+          stroke="#81B1CC" stroke-width="10"/>
+</svg>

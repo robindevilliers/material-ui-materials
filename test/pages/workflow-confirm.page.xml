@@ -1,0 +1,15 @@
+<page defnVersion="v1" id="intro" title="Confirm Workflow" orientation="COLUMN">
+    <title size="LARGE" plantainVersion="v1">Confirm Workflow</title>
+    <paragraph plantainVersion="v1">You are about to execute the <script plantainVersion="v1" script=".title"/>. Are you sure
+        you wish to proceed?
+    </paragraph>
+
+    <div justifyContent="CENTER" plantainVersion="v1">
+        <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+            <script plantainVersion="v1" script=".description"/>
+        </paragraph>
+    </div>
+    <div justifyContent="END" plantainVersion="v1">
+        <confirm-workflow-panel/>
+    </div>
+</page>

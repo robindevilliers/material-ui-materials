@@ -1,0 +1,1 @@
+<a class="back-link-widget" href="javascript: history.back()"  onclick="${backLinkOnclick}">Go back</a>

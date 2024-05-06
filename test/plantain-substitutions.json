@@ -1,0 +1,80 @@
+{
+  "case-principal-picker.page.xml": {
+    ".name": {
+      "value": "Arthur Nother"
+    }
+  },
+  "style-guide-delta.page.xml": {
+    "true": {
+      "value": true
+    }
+  },
+  "style-guide-specials.page.xml": {
+    "%profile%.groups": {
+      "value": [
+        "public",
+        "authenticated",
+        "admin"
+      ]
+    },
+    "%userdata% .alpha": {
+      "value": true
+    }
+  },
+  "wizard-intro.page.xml": {
+    ".title": {
+      "value": "Wizard Title"
+    },
+    ".description": {
+      "value": "Wizard Description"
+    }
+  },
+  "wizard-resume.page.xml": {
+    ".title": {
+      "value": "Wizard Title"
+    },
+    ".description": {
+      "value": "Wizard Description"
+    }
+  },
+  "workflow-confirm.page.xml": {
+    ".title": {
+      "value": "Workflow Title"
+    },
+    ".description": {
+      "value": "Workflow Description 123"
+    }
+  },
+  "workflow-executed.page.xml": {
+    ".title": {
+      "value": "Workflow Title"
+    }
+  },
+  "email-confirmation.email.xml": {
+    "%profile% .username": {
+      "value": "User's username"
+    },
+    "%profile% .title": {
+      "value": "User's title"
+    },
+    "%profile% .lastName": {
+      "value": "User's last name"
+    },
+    "%profile% .firstName": {
+      "value": "User's first name"
+    }
+  },
+  "reset-password.email.xml": {
+    "%profile% .username": {
+      "value": "User's username"
+    }
+  },
+  "test-email.email.xml": {
+    "%profile% .username": {
+      "value": "User's username"
+    },
+    "%phrase%": {
+      "value": "1234567890"
+    }
+  }
+}

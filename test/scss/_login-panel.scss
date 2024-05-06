@@ -1,0 +1,13 @@
+
+.login-panel {
+  min-width: 350px;
+
+  .button-panel {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  button {
+    min-width: 100px;
+  }
+}

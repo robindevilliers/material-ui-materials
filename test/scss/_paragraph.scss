@@ -1,0 +1,20 @@
+
+.paragraph {
+  margin-top: 0;
+  margin-bottom: 1em;
+  border-radius: 0.25em;
+}
+
+.suppressed-paragraph {
+  opacity: 0.8;
+  font-size: 0.8rem;
+}
+
+.blockquote-paragraph {
+  font-size: .875em;
+  color: var(--gray);
+  word-wrap: break-word;
+  white-space: pre-line;
+  font-family: monospace;
+  line-height: 2em;
+}

@@ -1,0 +1,293 @@
+
+.progress-bar-widget {
+  display: grid;
+}
+
+.progress-bar-horizontal {
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+}
+
+.progress-bar-vertical {
+  grid-auto-flow: row;
+  grid-auto-rows: 1fr;
+}
+
+.progress-bar-horizontal .mile-stone::before {
+  content: "";
+  background: var(--gray-light);
+  position: absolute;
+  transform: translateY(-50%);
+  height: 4px;
+  z-index: -1;
+}
+
+.progress-bar-horizontal.progress-bar-label-side-follow.progress-bar-small .mile-stone::before {
+  top: 10px;
+}
+
+.progress-bar-horizontal.progress-bar-label-side-follow.progress-bar-medium .mile-stone::before {
+  top: 25px;
+}
+
+.progress-bar-horizontal.progress-bar-label-side-follow.progress-bar-large .mile-stone::before {
+  top: 50px;
+}
+
+.progress-bar-horizontal.progress-bar-label-side-precede.progress-bar-small .mile-stone::before {
+  bottom: 8px;
+}
+
+.progress-bar-horizontal.progress-bar-label-side-precede.progress-bar-medium .mile-stone::before {
+  bottom: 23px;
+}
+
+.progress-bar-horizontal.progress-bar-label-side-precede.progress-bar-large .mile-stone::before {
+  bottom: 48px;
+}
+
+
+.progress-bar-vertical .mile-stone::before {
+  content: "";
+  background: var(--gray-light);
+  position: absolute;
+  transform: translateX(-50%);
+  width: 4px;
+  z-index: -1;
+}
+
+.progress-bar-vertical.progress-bar-label-side-follow.progress-bar-small .mile-stone::before {
+  left: 10px;
+}
+
+.progress-bar-vertical.progress-bar-label-side-follow.progress-bar-medium .mile-stone::before {
+  left: 25px;
+}
+
+.progress-bar-vertical.progress-bar-label-side-follow.progress-bar-large .mile-stone::before {
+  left: 50px;
+}
+
+.progress-bar-vertical.progress-bar-label-side-precede.progress-bar-small .mile-stone::before {
+  right: 8px;
+}
+
+.progress-bar-vertical.progress-bar-label-side-precede.progress-bar-medium .mile-stone::before {
+  right: 23px;
+}
+
+.progress-bar-vertical.progress-bar-label-side-precede.progress-bar-large .mile-stone::before {
+  right: 48px;
+}
+
+.progress-bar-widget .mile-stone:not(:first-child) > .circle.active::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+}
+
+.progress-bar-widget.progress-bar-default .mile-stone:not(:first-child) > .circle.active::before {
+  background: var(--primary);
+}
+
+.progress-bar-widget.progress-bar-info .mile-stone:not(:first-child) > .circle.active::before {
+  background: var(--info);
+}
+
+.progress-bar-widget.progress-bar-warning .mile-stone:not(:first-child) > .circle.active::before {
+  background: var(--warning);
+}
+
+.progress-bar-widget.progress-bar-danger .mile-stone:not(:first-child) > .circle.active::before {
+  background: var(--danger);
+}
+
+.progress-bar-widget.progress-bar-success .mile-stone:not(:first-child) > .circle.active::before {
+  background: var(--success);
+}
+
+.progress-bar-widget.progress-bar-muted .mile-stone:not(:first-child) > .circle.active::before {
+  background: var(--secondary);
+}
+
+.progress-bar-horizontal .mile-stone:not(:first-child) > .circle.active::before {
+
+  transform: translateY(-50%);
+  height: 4px;
+  left: -50%;
+  width: 100%;
+}
+
+.progress-bar-horizontal.progress-bar-label-side-follow.progress-bar-small .mile-stone:not(:first-child) > .circle.active::before {
+  top: 10px;
+}
+
+.progress-bar-horizontal.progress-bar-label-side-follow.progress-bar-medium .mile-stone:not(:first-child) > .circle.active::before {
+  top: 25px;
+}
+
+.progress-bar-horizontal.progress-bar-label-side-follow.progress-bar-large .mile-stone:not(:first-child) > .circle.active::before {
+  top: 50px;
+}
+
+.progress-bar-horizontal.progress-bar-label-side-precede.progress-bar-small .mile-stone:not(:first-child) > .circle.active::before {
+  bottom: 8px;
+}
+
+.progress-bar-horizontal.progress-bar-label-side-precede.progress-bar-medium .mile-stone:not(:first-child) > .circle.active::before {
+  bottom: 23px;
+}
+
+.progress-bar-horizontal.progress-bar-label-side-precede.progress-bar-large .mile-stone:not(:first-child) > .circle.active::before {
+  bottom: 48px;
+}
+
+.progress-bar-vertical .mile-stone:not(:first-child) > .circle.active::before {
+  transform: translateX(-50%);
+  width: 4px;
+  top: -50%;
+  height: 100%;
+}
+
+.progress-bar-vertical.progress-bar-label-side-follow.progress-bar-small .mile-stone:not(:first-child) > .circle.active::before {
+  left: 10px;
+}
+
+.progress-bar-vertical.progress-bar-label-side-follow.progress-bar-medium .mile-stone:not(:first-child) > .circle.active::before {
+  left: 25px;
+}
+
+.progress-bar-vertical.progress-bar-label-side-follow.progress-bar-large .mile-stone:not(:first-child) > .circle.active::before {
+  left: 50px;
+}
+
+.progress-bar-vertical.progress-bar-label-side-precede.progress-bar-small .mile-stone:not(:first-child) > .circle.active::before {
+  right: 8px;
+}
+
+.progress-bar-vertical.progress-bar-label-side-precede.progress-bar-medium .mile-stone:not(:first-child) > .circle.active::before {
+  right: 23px;
+}
+
+.progress-bar-vertical.progress-bar-label-side-precede.progress-bar-large .mile-stone:not(:first-child) > .circle.active::before {
+  right: 48px;
+}
+
+.progress-bar-horizontal .mile-stone:not(:first-child):not(:last-child)::before {
+  left: 0;
+  width: 100%;
+}
+
+.progress-bar-vertical .mile-stone:not(:first-child):not(:last-child)::before {
+  top: 0;
+  height: 100%;
+}
+
+.progress-bar-horizontal .mile-stone:first-child::before {
+  left: 50%;
+  width: 50%;
+}
+
+.progress-bar-vertical .mile-stone:first-child::before {
+  top: 50%;
+  height: 50%;
+}
+
+.progress-bar-horizontal .mile-stone:last-child::before {
+  left: 0;
+  width: 50%;
+}
+
+.progress-bar-vertical .mile-stone:last-child::before {
+  top: 0;
+  height: 50%;
+}
+
+.progress-bar-horizontal .mile-stone {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.progress-bar-vertical .mile-stone {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.progress-bar-widget .label {
+  text-align: center;
+  width: 100%;
+  margin: 1em;
+}
+
+.progress-bar-widget .circle {
+  background: #fff;
+  color: var(--gray-light);
+  border-radius: 50%;
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid var(--gray-light);
+  transition: .4s ease;
+}
+
+.progress-bar-widget.progress-bar-small .circle {
+  height: 25px;
+  width: 25px;
+}
+
+.progress-bar-widget.progress-bar-medium .circle {
+  height: 50px;
+  width: 50px;
+}
+
+.progress-bar-widget.progress-bar-large .circle {
+  height: 100px;
+  width: 100px;
+}
+
+.progress-bar-widget.progress-bar-default .circle.active {
+  border-color: var(--primary);
+}
+
+.progress-bar-widget.progress-bar-primary .circle.active {
+  border-color: var(--primary);
+}
+
+.progress-bar-widget.progress-bar-info .circle.active {
+  border-color: var(--info);
+}
+
+.progress-bar-widget.progress-bar-danger .circle.active {
+  border-color: var(--danger);
+}
+
+.progress-bar-widget.progress-bar-warning .circle.active {
+  border-color: var(--warning);
+}
+
+.progress-bar-widget.progress-bar-success .circle.active {
+  border-color: var(--success);
+}
+
+.progress-bar-widget.progress-bar-muted .circle.active {
+  border-color: var(--secondary);
+}
+
+.progress-bar-small > .milestone-style-bullet > .circle.active {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='25' height='25'><circle cx='10' cy='10' r='8' fill='gray'/></svg>");
+}
+
+.progress-bar-medium > .milestone-style-bullet > .circle.active {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='50'><circle cx='22' cy='22' r='18' fill='gray'/></svg>");
+}
+
+.progress-bar-large > .milestone-style-bullet > .circle.active {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100'><circle cx='47' cy='47' r='44' fill='gray'/></svg>");
+}

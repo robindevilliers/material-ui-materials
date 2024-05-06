@@ -1,0 +1,9 @@
+.loop-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.loop-item > p {
+  margin: 1em;
+}

@@ -1,0 +1,29 @@
+<page defnVersion="v1" id="privacy" version="1" title="Privacy" description="The privacy page." group="public">
+    <div plantainVersion="v1" orientation="COLUMN">
+        <div plantainVersion="v1" orientation="ROW" justifyContent="SPACE_AROUND">
+            <div plantainVersion="v1" orientation="COLUMN" justifyContent="SPACE_AROUND" alignItems="CENTER">
+                <title size="MEDIUM" plantainVersion="v1">Privacy Policy</title>
+                <paragraph plantainVersion="v1">
+                    We use cookies to enable standard web technologies such as authentication. These cookies are the
+                    bare minimum needed in order to provide the functionality we provide. No action is possible on
+                    the site without the use of these cookies. We do not use these cookies in support of tracing for
+                    marketing purposes etc. We do not share any data with third parties.
+                </paragraph>
+                <back-link plantainVersion="v1"/>
+            </div>
+        </div>
+    </div>
+</page>
+
+    <!--
+        To comply with the regulations governing cookies under the GDPR and the ePrivacy Directive you must:
+                1. Receive users’ consent before you use any cookies except strictly necessary cookies.
+                2. Provide accurate and specific information about the data each cookie tracks and its purpose in plain
+                        language before consent is received.
+                3. Document and store consent received from users.
+                4. Allow users to access your service even if they refuse to allow the use of certain cookies
+                5. Make it as easy for users to withdraw their consent as it was for them to give their consent in the first place.
+
+        Blue-top do not currently support maintaining a user's choice over the use of elective cookies (such as tracking cookies),
+        so for now all such cookie usage should be prohibited, if targeted to the EU.  This feature is in the backlog.
+    -->

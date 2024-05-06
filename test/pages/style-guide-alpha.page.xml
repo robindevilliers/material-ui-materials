@@ -1,0 +1,163 @@
+<page id="style-guide-sample-alpha" version="1" active="false" released="false" group="public"
+      title="Style Guide - Alpha" description="Style Guide Sample Alpha Page" defnVersion="v1"
+      orientation="COLUMN">
+    <fake-store>
+        <title size="MEDIUM" plantainVersion="v1">Style Guide Sample Page Alpha</title>
+        <div justifyContent="SPACE_BETWEEN" plantainVersion="v1">
+            <div orientation="COLUMN" plantainVersion="v1">
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">Welcome to the first page exhibit in our style
+                    guide
+                    gallery. On this page you can see an example of various specialized elements. The first element you
+                    can
+                    see to your right. This is a Card, and it has a header, image, body and footer. All these child
+                    elements
+                    of the Card are optional.
+                </paragraph>
+                <accordion flush="false" singleActive="true" plantainVersion="v1">
+                    <accordion-item active="false" orientation="COLUMN">
+                        <accordion-item-header>
+                            Inset Text
+                        </accordion-item-header>
+                        <inset-text flavour="DEFAULT" plantainVersion="v1">
+                            <paragraph paragraphStyle="PLAIN" plantainVersion="v1">This is some text in a Default Inset
+                                Text element.
+                            </paragraph>
+                        </inset-text>
+                        <inset-text flavour="PRIMARY" plantainVersion="v1">
+                            <paragraph paragraphStyle="PLAIN" plantainVersion="v1">This is some text in a Primary Inset
+                                Text element.
+                            </paragraph>
+                        </inset-text>
+                        <inset-text flavour="INFO" plantainVersion="v1">
+                            <paragraph paragraphStyle="PLAIN" plantainVersion="v1">This is some text in a Info Inset
+                                Text element.
+                            </paragraph>
+                        </inset-text>
+                        <inset-text flavour="WARNING" plantainVersion="v1">
+                            <paragraph paragraphStyle="PLAIN" plantainVersion="v1">This is some text in a Warning Inset
+                                Text element.
+                            </paragraph>
+                        </inset-text>
+                        <inset-text flavour="DANGER" plantainVersion="v1">
+                            <paragraph paragraphStyle="PLAIN" plantainVersion="v1">This is some text in a Danger Inset
+                                Text
+                                element.
+                            </paragraph>
+                        </inset-text>
+                        <inset-text flavour="SUCCESS" plantainVersion="v1">
+                            <paragraph paragraphStyle="PLAIN" plantainVersion="v1">This is some text in a Success Inset
+                                Text element.
+                            </paragraph>
+                        </inset-text>
+                        <inset-text flavour="MUTED" plantainVersion="v1">
+                            <paragraph paragraphStyle="PLAIN" plantainVersion="v1">This is some text in a Muted Inset
+                                Text element.
+                            </paragraph>
+                        </inset-text>
+                    </accordion-item>
+                    <accordion-item active="false" orientation="COLUMN">
+                        <accordion-item-header>
+                            Warning
+                        </accordion-item-header>
+                        <warning plantainVersion="v1">
+                            <paragraph paragraphStyle="PLAIN" plantainVersion="v1">This is the text for the warning
+                                element.
+                            </paragraph>
+                        </warning>
+                    </accordion-item>
+                    <accordion-item active="false" orientation="COLUMN">
+                        <accordion-item-header>
+                            Table
+                        </accordion-item-header>
+                        <table plantainVersion="v1">
+                            <row>
+                                <column>Name</column>
+                                <column>Year</column>
+                            </row>
+                            <row>
+                                <cell>
+                                    <paragraph paragraphStyle="PLAIN" plantainVersion="v1">Avatar</paragraph>
+                                </cell>
+                                <cell>
+                                    <paragraph paragraphStyle="PLAIN" plantainVersion="v1">2003</paragraph>
+                                </cell>
+                            </row>
+                            <row>
+                                <cell>
+                                    <paragraph paragraphStyle="PLAIN" plantainVersion="v1">King Arthur</paragraph>
+                                </cell>
+                                <cell>
+                                    <paragraph paragraphStyle="PLAIN" plantainVersion="v1">1994</paragraph>
+                                </cell>
+                            </row>
+                        </table>
+                    </accordion-item>
+                    <accordion-item active="false" orientation="COLUMN">
+                        <accordion-item-header>
+                            Badges
+                        </accordion-item-header>
+                        <badge size="SMALL" flavour="DEFAULT" plantainVersion="v1">Default Small Badge</badge>
+                        <badge size="SMALLER" flavour="PRIMARY" plantainVersion="v1">Primary Smaller Badge</badge>
+                        <badge size="MEDIUM" flavour="INFO" plantainVersion="v1">Info Medium Badge</badge>
+                        <badge size="LARGER" flavour="WARNING" plantainVersion="v1">Warning Larger Badge</badge>
+                        <badge size="LARGER" flavour="DANGER" plantainVersion="v1">Danger Larger Badge</badge>
+                        <badge size="LARGE" flavour="SUCCESS" plantainVersion="v1">Success Large Badge</badge>
+                    </accordion-item>
+                </accordion>
+            </div>
+            <card flexBasis="300px" flexShrink="0" margin="0em 0em 0em 1em" plantainVersion="v1">
+                <image src="suzi.jpeg" alt="Image of Suzi" title="Suzi Profile Picture" imageHeight="200px"
+                       imageWidth="300px" plantainVersion="v1"/>
+                <card-header orientation="COLUMN">
+                    <title size="SMALLER" plantainVersion="v1">Senior Manager</title>
+                </card-header>
+                <card-body orientation="COLUMN">
+                    <title size="SMALLER" plantainVersion="v1">Suzi Cummins</title>
+                    <paragraph paragraphStyle="PLAIN" plantainVersion="v1">Our staff are highly skilled experts in their
+                        respective fields. We take pride in our professional reputation and expertise.
+                    </paragraph>
+                </card-body>
+                <card-footer orientation="COLUMN">
+                    <link type="internal" view="" openNewWindow="false"
+                          plantainVersion="v1">A Link
+                    </link>
+                </card-footer>
+            </card>
+            <div orientation="COLUMN" plantainVersion="v1" margin="0 1em">
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">Here we have a selection of icons of different
+                    flavours and
+                    sizes.
+                </paragraph>
+                <div plantainVersion="v1">
+                    <div orientation="COLUMN" margin="1em" plantainVersion="v1">
+                        <icon size="SMALL" flavour="DEFAULT" name="wrench" plantainVersion="v1"/>
+                        <icon size="SMALL" flavour="PRIMARY" name="wifi" plantainVersion="v1"/>
+                        <icon size="SMALL" flavour="INFO" name="chat-square" plantainVersion="v1"/>
+                        <icon size="SMALL" flavour="WARNING" name="cloud-check" plantainVersion="v1"/>
+                        <icon size="SMALL" flavour="DANGER" name="dice-6" plantainVersion="v1"/>
+                        <icon size="SMALL" flavour="SUCCESS" name="eye" plantainVersion="v1"/>
+                        <icon size="SMALL" flavour="MUTED" name="incognito" plantainVersion="v1"/>
+                    </div>
+                    <div orientation="COLUMN" margin="1em" plantainVersion="v1">
+                        <icon size="MEDIUM" flavour="DEFAULT" name="wrench" plantainVersion="v1"/>
+                        <icon size="MEDIUM" flavour="PRIMARY" name="wifi" plantainVersion="v1"/>
+                        <icon size="MEDIUM" flavour="INFO" name="chat-square" plantainVersion="v1"/>
+                        <icon size="MEDIUM" flavour="WARNING" name="cloud-check" plantainVersion="v1"/>
+                        <icon size="MEDIUM" flavour="DANGER" name="dice-6" plantainVersion="v1"/>
+                        <icon size="MEDIUM" flavour="SUCCESS" name="eye" plantainVersion="v1"/>
+                        <icon size="MEDIUM" flavour="MUTED" name="incognito" plantainVersion="v1"/>
+                    </div>
+                    <div orientation="COLUMN" margin="1em" plantainVersion="v1">
+                        <icon size="LARGE" flavour="DEFAULT" name="wrench" plantainVersion="v1"/>
+                        <icon size="LARGE" flavour="PRIMARY" name="wifi" plantainVersion="v1"/>
+                        <icon size="LARGE" flavour="INFO" name="chat-square" plantainVersion="v1"/>
+                        <icon size="LARGE" flavour="WARNING" name="cloud-check" plantainVersion="v1"/>
+                        <icon size="LARGE" flavour="DANGER" name="dice-6" plantainVersion="v1"/>
+                        <icon size="LARGE" flavour="SUCCESS" name="eye" plantainVersion="v1"/>
+                        <icon size="LARGE" flavour="MUTED" name="incognito" plantainVersion="v1"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </fake-store>
+</page>

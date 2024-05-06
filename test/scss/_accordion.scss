@@ -1,0 +1,66 @@
+
+.accordion {
+
+  .accordion-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* min-width: 0; */
+    /* word-wrap: break-word; */
+    /* background-color: #fff; */
+    /* background-clip: border-box; */
+    border: 1px solid rgba(0, 0, 0, 0.125);
+
+
+    .accordion-header {
+      font-family: Georgia, Times, Times New Roman, serif;
+      font-size: 2em;
+      line-height: 2em;
+      font-weight: 500;
+      //color: #81b1cc;
+      text-align: center;
+      vertical-align: middle;
+      cursor: pointer;
+      padding: 0.75rem 1.25rem;
+    }
+
+    .accordion-body {
+      background: white;
+      padding: 1em;
+      min-height: 100px;
+      color: black;
+    }
+  }
+
+  .accordion-item:first-child {
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+  }
+
+  .accordion-item:last-child {
+    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+
+    .accordion-body {
+      border-bottom-left-radius: 0.25rem;
+      border-bottom-right-radius: 0.25rem;
+    }
+  }
+
+  @each $color, $value in $theme-colors {
+    $r: red($value);
+    $g: green($value);
+    $b: blue($value);
+
+    $yiq: (($r * 299) + ($g * 587) + ($b * 114)) * .001;
+
+    .accordion-item.bg-#{$color} .accordion-header:hover {
+      background: theme-color-level($color, if($yiq >= $yiq-contrasted-threshold, 1, -3));
+    }
+  }
+}
+
+.accordion-widget .accordion-header button {
+  max-width: unset;
+  min-width: unset;
+}

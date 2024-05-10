@@ -5,7 +5,6 @@ import flexItemSupport from '../flex-item-support';
 import { flexContainerSupport } from '../flex-container-support';
 import { StringBuffer } from '../utilities/StringBuffer';
 import ClassManager from '../ClassManager';
-import { Substitutions } from '../Substitutions';
 import RenderingEngine from '../RenderingEngine';
 
 
@@ -21,7 +20,7 @@ export default class MenuBinder implements Renderer {
         const menuBrand = children.find(el => el.name === 'menu-brand');
         let menuBrandContent = menuBrand ? renderingEngine.renderElement(menuBrand, element) : "";
 
-        const menuItems = children.filter(el => el.name === 'menu-item');
+        const menuItems = children.filter(el => el.name === 'menu-item' || el.name === 'sub-menu');
 
         const content = new StringBuffer();
         for (const child of menuItems) {
@@ -42,7 +41,6 @@ export default class MenuBinder implements Renderer {
 
         const data: Record<string, any> = {};
         data.id = element.attributes.id;
-        data.content = renderingEngine.renderChildren(element);
         data.menuBrand = menuBrandContent;
         data.axis = element.attributes.axis || 'VERTICAL';
         data.content = content.toString();

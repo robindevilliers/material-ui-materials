@@ -593,24 +593,24 @@
             <cell>disableScript</cell>
             <cell>
                 <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
-                    This attribute contains a Plantain script that will determine if the Button should appear disabled
+                    This attribute contains a Plantain script that will determine if the Widget should appear disabled
                     or not.
                 </paragraph>
             </cell>
             <cell>
-                true, false
+                condition == true
             </cell>
         </row>
         <row>
             <cell>hiddenScript</cell>
             <cell>
                 <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
-                    This attribute contains a Plantain script that will determine if the Button should appear hidden
+                    This attribute contains a Plantain script that will determine if the Widget should appear hidden
                     or not.
                 </paragraph>
             </cell>
             <cell>
-                true, false
+                condition == true
             </cell>
         </row>
     </table>
@@ -946,6 +946,2134 @@
 
     <paragraph paragraphStyle="PLAIN">
         The Confirmation Panel Widget is a Flex Item and Textual.
+    </paragraph>
+
+    <title id="cookie-consent" size="LARGER" plantainVersion="v1">Cookie Consent</title>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Cookie Consent Widget will present a request to the user to agree to the presence of cookies on the browser.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Cookie Consent Widget can be viewed on the
+        <link type="internal" view="style-guide-beta.html" openNewWindow="true" plantainVersion="v1">
+            Style Guide Beta
+        </link>
+        page.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Cookie Consent Widget is a Flex Item.
+    </paragraph>
+
+    <title id="def" size="LARGER" plantainVersion="v1">Def</title>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Def Widget is short for &apos;default&apos;. It contains the default content for presentation when a Switch
+        Widget is specified. It will not present if any If Widget within the Swith evaluates to true.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Def Widget can be viewed on the
+        <link type="internal" view="style-guide-specials.html" openNewWindow="true" plantainVersion="v1">
+            Style Guide Specials
+        </link>
+        page.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Def Widget is a Flex Container.
+    </paragraph>
+
+    <title id="div" size="LARGER" plantainVersion="v1">Div</title>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Div Widget is short for &apos;division&apos;. It is intended to facilitate dividing the page up so that we
+        can apply structure to the page. Divs are ubiquitous and are present on all the style guides, however they are
+        not visible.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Div Widget is a Flex Item and Flex Container.
+    </paragraph>
+
+    <title id="email" size="LARGER" plantainVersion="v1">Email</title>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Email Widget is the root element for defining an email page.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Email Widget is a Flex Container.
+    </paragraph>
+
+    <title id="email-confirmation-link" size="LARGER" plantainVersion="v1">Email Confirmation Link</title>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Email Confirmation Link Widget is only used in the Email Confirmation Email that is one of the predefined
+        pages that must be defined. You can see the file in the &apos;emails&apos; directory. This widget will present a
+        link that allows for the confirmation of the email address to be verified as a part of the registration process.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Email Widget is a Flex Item in addition to the following properties.
+    </paragraph>
+
+    <table plantainVersion="v1">
+        <row>
+            <column>Attribute</column>
+            <column>Description</column>
+            <column>Permitted values/Examples</column>
+        </row>
+        <row>
+            <cell>label</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The text to display for the user to click on the link.
+                </paragraph>
+            </cell>
+            <cell>
+                here
+            </cell>
+        </row>
+    </table>
+
+    <title id="enumeration-input" size="LARGER" plantainVersion="v1">Enumeration Input</title>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Enumeration Input Widget will present either a select drop down or a series of checkboxes or radio buttons.
+        The values that can be selected are always predefined and hence the name. Multiple values or single values can
+        be selected. The Enumeration Input Widget is only valid within a Form as a part of a Wizard. The only exception
+        is as a part of the style guides.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Enumeration Input Widget can be viewed on the
+        <link type="internal" view="style-guide-delta.html" openNewWindow="true" plantainVersion="v1">
+            Style Guide Delta
+        </link>
+        page.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Email Widget is a Flex Item in addition to the following properties.
+    </paragraph>
+
+    <table plantainVersion="v1">
+        <row>
+            <column>Attribute</column>
+            <column>Description</column>
+            <column>Permitted values/Examples</column>
+        </row>
+        <row>
+            <cell>label</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The label to display on the form for presentation.
+                </paragraph>
+            </cell>
+            <cell>
+                Colours
+            </cell>
+        </row>
+        <row>
+            <cell>reference</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The reference attribute specifies the name of the key when this value is inserted into the JSON
+                    result as the Wizard is completed.
+                </paragraph>
+            </cell>
+            <cell>
+                colour
+            </cell>
+        </row>
+        <row>
+            <cell>type</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The type of value that this enumeration will offer. The values offered by the enumerarion must all
+                    be
+                    of the same type.
+                </paragraph>
+            </cell>
+            <cell>
+                STRING, BOOLEAN, NUMBER, DATE, DATETIME
+            </cell>
+        </row>
+        <row>
+            <cell>cardinality</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The cardinality specifies the number of values that may be selected from the available enumeration.
+                </paragraph>
+            </cell>
+            <cell>
+                MULTIPLE_SELECT, SINGLE_SELECT
+            </cell>
+        </row>
+        <row>
+            <cell>style</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The style attribute specifies if the presentation should be orientated around checkboxes and radio
+                    buttons, or whether a select input field should be used.
+                </paragraph>
+            </cell>
+            <cell>
+                RADIO_CHECKBOX, POPOUT_SELECT
+            </cell>
+        </row>
+        <row>
+            <cell>required</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The required attribute specifies if this input must have a value. If the value is required, then
+                    a validation error will present if no value is selected.
+                </paragraph>
+            </cell>
+            <cell>
+                true, false
+            </cell>
+        </row>
+        <row>
+            <cell>disableScript</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    This attribute contains a Plantain script that will determine if the Widget should appear disabled
+                    or not.
+                </paragraph>
+            </cell>
+            <cell>
+                condition == true
+            </cell>
+        </row>
+        <row>
+            <cell>size</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The size of the input field.
+                </paragraph>
+            </cell>
+            <cell>
+                LARGE, MEDIUM, SMALL
+            </cell>
+        </row>
+        <row>
+            <cell>hiddenScript</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    This attribute contains a Plantain script that will determine if the Widget should appear hidden
+                    or not.
+                </paragraph>
+            </cell>
+            <cell>
+                condition == true
+            </cell>
+        </row>
+    </table>
+
+    <title id="error-summary" size="LARGER" plantainVersion="v1">Error Summary</title>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Error Summary Widget will present a panel outlining all the errors that exist on the current Form. The Error
+        Summary should only ever be a child of a Form.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Enumeration Input Widget can be viewed on the
+        <link type="internal" view="style-guide-delta.html" openNewWindow="true" plantainVersion="v1">
+            Style Guide Delta
+        </link>
+        page.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Error Summary Widget is a Flex Item.
+    </paragraph>
+
+    <title id="form" size="LARGER" plantainVersion="v1">Form</title>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Form Widget is the root of any web page that is a part of a Wizard.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Form Widget does not have a visual component.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Form Widget is a Flex Container.
+    </paragraph>
+
+    <title id="horizontal-rule" size="LARGER" plantainVersion="v1">Horizontal Rule</title>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Horizontal Rule Widget presents a horizontal line across the page, that visually separates the content above
+        and below.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Horizontal Rule Widget can be viewed on the
+        <link type="internal" view="style-guide-specials.html" openNewWindow="true" plantainVersion="v1">
+            Style Guide Specials
+        </link>
+        page.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Horizontal Rule Widget has no properties.
+    </paragraph>
+
+    <title id="icon" size="LARGER" plantainVersion="v1">Icon</title>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Icon Widget presents an icon on the page. This very much depends on the implementation the developer
+        includes with the Materials.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Icon Widget can be viewed on the
+        <link type="internal" view="style-guide-landing.html" openNewWindow="true" plantainVersion="v1">
+            Style Guide Landing
+        </link>
+        page.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Form Widget is a Flex Item in addition to the following properties.
+    </paragraph>
+
+    <table plantainVersion="v1">
+        <row>
+            <column>Attribute</column>
+            <column>Description</column>
+            <column>Permitted values/Examples</column>
+        </row>
+        <row>
+            <cell>name</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The name of the icon to present. The meaning of the name will depend on the implementation of the
+                    icon system used. For example in Bootstrap, the name &apos;car-front-fill&apos; will present a car
+                    icon facing towards the viewer.
+                </paragraph>
+            </cell>
+            <cell>
+                car-front-fill
+            </cell>
+        </row>
+        <row>
+            <cell>size</cell>
+            <cell>The size attribute specifies the size of the Icon.</cell>
+            <cell>LARGE, MEDIUM, SMALL</cell>
+        </row>
+        <row>
+            <cell>flavour</cell>
+            <cell>The flavour attribute determines the colour of the icon.</cell>
+            <cell>DEFAULT, PRIMARY, INFO, WARNING, DANGER, SUCCESS, MUTED, BLACK, WHITE</cell>
+        </row>
+    </table>
+
+    <title id="if" size="LARGER" plantainVersion="v1">If</title>
+
+    <paragraph paragraphStyle="PLAIN">
+        The If Widget is composed within a Switch Widget. Its contents are conditionally rendered depending on the
+        associated Plantain Script and the current context.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The If Widget can be viewed on the
+        <link type="internal" view="style-guide-specials.html" openNewWindow="true" plantainVersion="v1">
+            Style Guide Specials
+        </link>
+        page.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The If Widget is a Flex Container and has the following properties.
+    </paragraph>
+
+    <table plantainVersion="v1">
+        <row>
+            <column>Attribute</column>
+            <column>Description</column>
+            <column>Permitted values/Examples</column>
+        </row>
+        <row>
+            <cell>condition</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The Plantain Script that will execute. It must evaluate to a boolean result.
+                </paragraph>
+            </cell>
+            <cell>
+                condition === true
+            </cell>
+        </row>
+    </table>
+
+    <title id="image" size="LARGER" plantainVersion="v1">Image</title>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Image Widget presents an image on the page.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Icon Widget can be viewed on the
+        <link type="internal" view="style-guide-landing.html" openNewWindow="true" plantainVersion="v1">
+            Style Guide Landing
+        </link>
+        page.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Form Widget is a Flex Item in addition to the following properties.
+    </paragraph>
+
+    <table plantainVersion="v1">
+        <row>
+            <column>Attribute</column>
+            <column>Description</column>
+            <column>Permitted values/Examples</column>
+        </row>
+        <row>
+            <cell>src</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The src attribute specifies the image that should be displayed. Only images from the Materials are
+                    allowed.
+                </paragraph>
+            </cell>
+            <cell>
+                logo.svg
+            </cell>
+        </row>
+        <row>
+            <cell>alt</cell>
+            <cell>The alt attribute translates to the alt property in HTML.</cell>
+            <cell>logo</cell>
+        </row>
+        <row>
+            <cell>imageHeight</cell>
+            <cell>The imageHeight property specifies the image height.</cell>
+            <cell>260px</cell>
+        </row>
+        <row>
+            <cell>imageWidth</cell>
+            <cell>The imageWidth property specifies the image width.</cell>
+            <cell>260px</cell>
+        </row>
+        <row>
+            <cell>border</cell>
+            <cell>The border property translates at the border attribute in HTML.</cell>
+            <cell>1rem solid black</cell>
+        </row>
+        <row>
+            <cell>borderRadius</cell>
+            <cell>The borderRadius property translates at the borderRadius attribute in HTML.</cell>
+            <cell>1em</cell>
+        </row>
+        <row>
+            <cell>objectFit</cell>
+            <cell>The objectFit property translates at the objectFit attribute in HTML.</cell>
+            <cell>fill, contain, cover, none, scale-down</cell>
+        </row>
+        <row>
+            <cell>objectPosition</cell>
+            <cell>The objectPosition property translates at the objectPosition attribute in HTML.</cell>
+            <cell>left top</cell>
+        </row>
+        <row>
+            <cell>opacity</cell>
+            <cell>The opacity property translates at the opacity attribute in HTML.</cell>
+            <cell>0.33</cell>
+        </row>
+        <row>
+            <cell>background</cell>
+            <cell>The background property translates at the background attribute in HTML.</cell>
+            <cell>green</cell>
+        </row>
+    </table>
+
+    <title id="initiate-workflow-button" size="LARGER" plantainVersion="v1">Initiate Workflow Button</title>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Initiate Workflow Button Widget presents a button on the page that will initiate a Workflow.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Initiate Workflow Button Widget can be viewed on the
+        <link type="internal" view="style-guide-specials.html" openNewWindow="true" plantainVersion="v1">
+            Style Guide Specials
+        </link>
+        page.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Initiate Workflow Button Widget is a Flex Item in addition to the following properties.
+    </paragraph>
+
+    <table plantainVersion="v1">
+        <row>
+            <column>Attribute</column>
+            <column>Description</column>
+            <column>Permitted values/Examples</column>
+        </row>
+        <row>
+            <cell>workflow</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The workflow attribute specifes the name of the workflow that should be initiated. The name
+                    comprises three parts in this format group:name:version.
+                </paragraph>
+            </cell>
+            <cell>
+                public:register:2
+            </cell>
+        </row>
+        <row>
+            <cell>showCasePrincipalPicker</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    Set the showCasePrincipalPicker attribute if the user should be presented with the Case Principal
+                    Picker Page after clicking this button. That page allows the current user to assign the initiated
+                    workflow to another user as the Case Principal.
+                </paragraph>
+            </cell>
+            <cell>
+                true, false
+            </cell>
+        </row>
+        <row>
+            <cell>size</cell>
+            <cell>The size attribute specifies the size of the button.</cell>
+            <cell>LARGE, MEDIUM, SMALL</cell>
+        </row>
+        <row>
+            <cell>buttonFlavour</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The colouring of the button.
+                </paragraph>
+            </cell>
+            <cell>DEFAULT, PRIMARY, INFO, WARNING, DANGER, SUCCESS, MUTED, BLACK, WHITE</cell>
+        </row>
+        <row>
+            <cell>disableScript</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    This attribute contains a Plantain script that will determine if the Widget should appear disabled
+                    or not.
+                </paragraph>
+            </cell>
+            <cell>
+                condition == true
+            </cell>
+        </row>
+    </table>
+
+    <title id="input" size="LARGER" plantainVersion="v1">Input</title>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Input Widget presents a input field that accepts data entry from the user.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Input Widget can be viewed on the
+        <link type="internal" view="style-guide-delta.html" openNewWindow="true" plantainVersion="v1">
+            Style Guide Delta
+        </link>
+        page.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Input Widget is a Flex Item in addition to the following properties.
+    </paragraph>
+
+    <table plantainVersion="v1">
+        <row>
+            <column>Attribute</column>
+            <column>Description</column>
+            <column>Permitted values/Examples</column>
+        </row>
+        <row>
+            <cell>label</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The label attribute specifies the text used to present to the user the purpose of the input field.
+                </paragraph>
+            </cell>
+            <cell>
+                Name
+            </cell>
+        </row>
+        <row>
+            <cell>reference</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The reference attribute specifies the name of the key used when the value is included in the
+                    resulting JSON document, that is the Wizard&apos;s output.
+                </paragraph>
+            </cell>
+            <cell>
+                name
+            </cell>
+        </row>
+        <row>
+            <cell>type</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The type attribute specifies the type of the data that will be collected. This affects how the Input
+                    Widget is presented and how validation is done.
+                </paragraph>
+            </cell>
+            <cell>
+                INPUT, TEXTAREA, CHECKBOX, NUMBER, DATE, DATETIME, CURRENCY
+            </cell>
+        </row>
+        <row>
+            <cell>value</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The value attribute specifies the initial value of the input.
+                </paragraph>
+            </cell>
+            <cell>
+                Robin
+            </cell>
+        </row>
+        <row>
+            <cell>validationPattern</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The validationPattern attribute specifies a regular expression for the purposes of validating the
+                    value of the input. This attribute only applies if the underlying data type is a string. The type
+                    for the input would have to be INPUT or TEXTAREA.
+                </paragraph>
+            </cell>
+            <cell>
+                ^[a-zA-Z0-9]+$
+            </cell>
+        </row>
+        <row>
+            <cell>min</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The min attribute specifies a minimum value that is valid for the current input value. This
+                    attribute only applies to numbers and dates and their variants.
+                </paragraph>
+            </cell>
+            <cell>
+                0, 1990-01-01
+            </cell>
+        </row>
+        <row>
+            <cell>max</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The max attribute specifies a maximum value that is valid for the current input value. This
+                    attribute only applies to numbers and dates and their variants.
+                </paragraph>
+            </cell>
+            <cell>
+                100, 2024-01-01
+            </cell>
+        </row>
+        <row>
+            <cell>cols</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The cols attribute specifies the number of columns for the text area. This property only applies to
+                    text area.
+                </paragraph>
+            </cell>
+            <cell>
+                8
+            </cell>
+        </row>
+        <row>
+            <cell>rows</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The rows attribute specifies the number of rows for the text area. This property only applies to
+                    text area.
+                </paragraph>
+            </cell>
+            <cell>
+                5
+            </cell>
+        </row>
+        <row>
+            <cell>size</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The size of the Input Widget.
+                </paragraph>
+            </cell>
+            <cell>
+                LARGE, MEDIUM, SMALL
+            </cell>
+        </row>
+        <row>
+            <cell>maxLength</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The maxLength of the value. This only applies to values that are strings. The Input Widget would
+                    have to have a type of INPUT or TEXTAREA.
+                </paragraph>
+            </cell>
+            <cell>
+                20
+            </cell>
+        </row>
+        <row>
+            <cell>maxLength</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The maxLength of the value. This only applies to values that are strings. The Input Widget would
+                    have to have a type of INPUT or TEXTAREA.
+                </paragraph>
+            </cell>
+            <cell>
+                20
+            </cell>
+        </row>
+        <row>
+            <cell>required</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The required attribute specifies if this input must have value. If the value is required, then
+                    a validation error will present if no value is supplied.
+                </paragraph>
+            </cell>
+            <cell>
+                true, false
+            </cell>
+        </row>
+        <row>
+            <cell>disableScript</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    This attribute contains a Plantain script that will determine if the Widget should appear disabled
+                    or not.
+                </paragraph>
+            </cell>
+            <cell>
+                condition == true
+            </cell>
+        </row>
+        <row>
+            <cell>hiddenScript</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    This attribute contains a Plantain script that will determine if the Widget should appear hidden
+                    or not.
+                </paragraph>
+            </cell>
+            <cell>
+                condition == true
+            </cell>
+        </row>
+    </table>
+
+    <title id="inset-text" size="LARGER" plantainVersion="v1">Inset Text</title>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Inset Text Input Widget presents a panel where the content presents in a highlighted fashion but is also
+        related to the current text on the page. This is as apposed to a Well Widget that includes content that is
+        intended to be more distinctly separated from the context on the current page.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Inset Text Widget can be viewed on the
+        <link type="internal" view="style-guide-alpha.html" openNewWindow="true" plantainVersion="v1">
+            Style Guide Alpha
+        </link>
+        page.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Inset Text Widget is a Flex Item and Flex Container in addition to the following properties.
+    </paragraph>
+
+    <table plantainVersion="v1">
+        <row>
+            <column>Attribute</column>
+            <column>Description</column>
+            <column>Permitted values/Examples</column>
+        </row>
+        <row>
+            <cell>flavour</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The flavour property specifies the colouring of the Inset Text.
+                </paragraph>
+            </cell>
+            <cell>DEFAULT, PRIMARY, INFO, WARNING, DANGER, SUCCESS, MUTED, BLACK, WHITE</cell>
+        </row>
+    </table>
+
+    <title id="jumbotron" size="LARGER" plantainVersion="v1">Jumbotron</title>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Jumbotron Widget presents a panel where the content presents in a very loud way that is intended to be the
+        feature item for a landing page.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Jumbotron Widget can be viewed on the
+        <link type="internal" view="style-guide-landing.html" openNewWindow="true" plantainVersion="v1">
+            Style Guide Landing
+        </link>
+        page.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Jumbotron Widget is a Flex Item and Flex Container.
+    </paragraph>
+
+    <title id="link" size="LARGER" plantainVersion="v1">Link</title>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Link Widget presents a link on the page.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Link Widget can be viewed on the
+        <link type="internal" view="style-guide-alpha.html" openNewWindow="true" plantainVersion="v1">
+            Style Guide Alpha
+        </link>
+        page.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Link Widget is a Flex Item and Textual in addition to the following properties.
+    </paragraph>
+
+    <table plantainVersion="v1">
+        <row>
+            <column>Attribute</column>
+            <column>Description</column>
+            <column>Permitted values/Examples</column>
+        </row>
+        <row>
+            <cell>type</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The type property specifies if the link is an internal or external link.
+                </paragraph>
+            </cell>
+            <cell>
+                internal, external
+            </cell>
+        </row>
+        <row>
+            <cell>view</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The view property specifies which internal page to link to. This property is only valid, if the link
+                    is an internal link.
+                </paragraph>
+            </cell>
+            <cell>
+                index, home
+            </cell>
+        </row>
+        <row>
+            <cell>url</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The url property specifies an external url that this link will link to.
+                </paragraph>
+            </cell>
+            <cell>
+                http://www.google.com
+            </cell>
+        </row>
+        <row>
+            <cell>openNewWindow</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The openNewWindow property will specify if, when clicked, the browser will present the destination
+                    view or url in a separate window.
+                </paragraph>
+            </cell>
+            <cell>
+                true, false
+            </cell>
+        </row>
+    </table>
+
+    <title id="list" size="LARGER" plantainVersion="v1">List</title>
+
+    <paragraph paragraphStyle="PLAIN">
+        The List Widget presents a list of items on the page.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The List Widget can be viewed on the
+        <link type="internal" view="style-guide-article.html" openNewWindow="true" plantainVersion="v1">
+            Style Guide Article
+        </link>
+        page.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The List Widget is a Flex Item in addition to the following properties.
+    </paragraph>
+
+    <table plantainVersion="v1">
+        <row>
+            <column>Attribute</column>
+            <column>Description</column>
+            <column>Permitted values/Examples</column>
+        </row>
+        <row>
+            <cell>listStyle</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The listStyle property specifies the style of the list.
+                </paragraph>
+            </cell>
+            <cell>
+                BULLET, BORDERED, NUMBERED
+            </cell>
+        </row>
+    </table>
+
+    <title id="list-item" size="LARGER" plantainVersion="v1">List Item</title>
+
+    <paragraph paragraphStyle="PLAIN">
+        The List Item Widget presents an item in a list on the page. The List Item is the only valid immediate child of
+        a List Widget.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The List Item Widget can be viewed on the
+        <link type="internal" view="style-guide-article.html" openNewWindow="true" plantainVersion="v1">
+            Style Guide Article
+        </link>
+        page.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The List Item Widget is a Flex Container.
+    </paragraph>
+
+    <title id="login-panel" size="LARGER" plantainVersion="v1">Login Panel</title>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Login Panel Widget presents the Login Panel. The Login Panel is a special component that specifies that the
+        page should present a login form for the user to enter his credentials in order to authenticate onto the
+        Platform.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Login Panel Widget can be viewed on the
+        <link type="internal" view="style-guide-specials.html" openNewWindow="true" plantainVersion="v1">
+            Style Guide Specials
+        </link>
+        page.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Login Panel Widget is a Flex Item.
+    </paragraph>
+
+    <title id="loop" size="LARGER" plantainVersion="v1">Loop</title>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Loop Widget is one of the flow control widgets. It has no visual component. It is used to specify that the
+        page should loop over some list structure in order to produce output. It is unlikely to be useful in the
+        predefined pages.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Loop Widget can be viewed on the
+        <link type="internal" view="style-guide-specials.html" openNewWindow="true" plantainVersion="v1">
+            Style Guide Specials
+        </link>
+        page.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Loop Widget has the following properties.
+    </paragraph>
+
+    <table plantainVersion="v1">
+        <row>
+            <column>Attribute</column>
+            <column>Description</column>
+            <column>Permitted values/Examples</column>
+        </row>
+        <row>
+            <cell>reference</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The reference property specifies a list as a data source form the current context. In Plantain
+                    terms, it specifies a Path.
+                </paragraph>
+            </cell>
+            <cell>
+                %PROFILE%.groups
+            </cell>
+        </row>
+    </table>
+
+    <title id="menu" size="LARGER" plantainVersion="v1">Menu</title>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Menu Widget is presents a menu or navigational panel on the page. It is used to present a large body of
+        links in a concise way to the user that can link to pages, or initiate workflows. The Menu Widget must only
+        contain Menu Brand, Sub Menu and Menu Item widgets.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Menu Widget can be viewed on the
+        <link type="internal" view="style-guide-specials.html" openNewWindow="true" plantainVersion="v1">
+            Style Guide Specials
+        </link>
+        page.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Menu Widget is a Flex Item in addition to the following properties.
+    </paragraph>
+
+    <table plantainVersion="v1">
+        <row>
+            <column>Attribute</column>
+            <column>Description</column>
+            <column>Permitted values/Examples</column>
+        </row>
+        <row>
+            <cell>axis</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The axis property specifies the orientation of the Menu Widget.
+                </paragraph>
+            </cell>
+            <cell>
+                HORIZONTAL, VERTICAL
+            </cell>
+        </row>
+    </table>
+
+    <title id="menu-brand" size="LARGER" plantainVersion="v1">Menu Brand</title>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Menu Brand Widget presents the branding part of the Menu. This is the textual part that presents at the top
+        left regardless of axis.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Menu Brand Widget can be viewed on the
+        <link type="internal" view="style-guide-specials.html" openNewWindow="true" plantainVersion="v1">
+            Style Guide Specials
+        </link>
+        page.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Menu Brand Widget is a Textual.
+    </paragraph>
+
+    <title id="menu-item" size="LARGER" plantainVersion="v1">Menu Item</title>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Menu Item Widget presents a menu item that presents a link within the Menu. The link can either be to a
+        page, or can initiate a workflow.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Menu Item Widget can be viewed on the
+        <link type="internal" view="style-guide-specials.html" openNewWindow="true" plantainVersion="v1">
+            Style Guide Specials
+        </link>
+        page.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Menu Item Widget is a Textual in addition to having the following properties.
+    </paragraph>
+
+    <table plantainVersion="v1">
+        <row>
+            <column>Attribute</column>
+            <column>Description</column>
+            <column>Permitted values/Examples</column>
+        </row>
+        <row>
+            <cell>type</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The type property specifies if the Menu Item will link to a Page, or initiate a Workflow.
+                </paragraph>
+            </cell>
+            <cell>
+                page, workflow
+            </cell>
+        </row>
+        <row>
+            <cell>page</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The page property specifies the Page that should be presented when clicked.
+                </paragraph>
+            </cell>
+            <cell>
+                home
+            </cell>
+        </row>
+        <row>
+            <cell>workflow</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The workflow property specifies the Workflow that should be initiated when clicked.
+                </paragraph>
+            </cell>
+            <cell>
+                requisition
+            </cell>
+        </row>
+        <row>
+            <cell>flavour</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The flavour property specifies the colouring of the link.
+                </paragraph>
+            </cell>
+            <cell>DEFAULT, PRIMARY, INFO, WARNING, DANGER, SUCCESS, MUTED, BLACK, WHITE</cell>
+        </row>
+        <row>
+            <cell>disableScript</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    This attribute contains a Plantain script that will determine if the Widget should appear disabled
+                    or not.
+                </paragraph>
+            </cell>
+            <cell>
+                condition == true
+            </cell>
+        </row>
+        <row>
+            <cell>hiddenScript</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    This attribute contains a Plantain script that will determine if the Widget should appear hidden
+                    or not.
+                </paragraph>
+            </cell>
+            <cell>
+                condition == true
+            </cell>
+        </row>
+    </table>
+
+    <title id="message-explorer" size="LARGER" plantainVersion="v1">Message Explorer</title>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Message Explorer Widget presents a complex dialog that allows for searching and exploring the messages
+        that reside in the queues on the Account. This widget is intended for members of staff where a high number of
+        messages needs to be filtered using complex search criteria.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Message Explorer Widget can be viewed on the
+        <link type="internal" view="style-guide-specials.html" openNewWindow="true" plantainVersion="v1">
+            Style Guide Specials
+        </link>
+        page.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Message Explorer Widget is a Flex Item in addition to having the following properties.
+    </paragraph>
+
+    <table plantainVersion="v1">
+        <row>
+            <column>Attribute</column>
+            <column>Description</column>
+            <column>Permitted values/Examples</column>
+        </row>
+        <row>
+            <cell>queue</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The queue property specifies the initial queue that the message explorer will retrieve messages for.
+                </paragraph>
+            </cell>
+            <cell>
+                processing
+            </cell>
+        </row>
+    </table>
+
+    <title id="mile-stone" size="LARGER" plantainVersion="v1">Mile Stone</title>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Mile Stone Widget specifies a mile-stone within the Progress Bar Widget. The mile-stone is the visual
+        element that marks a level of progress in the Progress Bar. It is the only valid child of a Progress Bar Widget.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Message Explorer Widget can be viewed on the
+        <link type="internal" view="style-guide-question.html" openNewWindow="true" plantainVersion="v1">
+            Style Guide Question
+        </link>
+        page.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Message Explorer Widget has the following properties.
+    </paragraph>
+
+    <table plantainVersion="v1">
+        <row>
+            <column>Attribute</column>
+            <column>Description</column>
+            <column>Permitted values/Examples</column>
+        </row>
+        <row>
+            <cell>label</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The text presented in association with the mile-stone.
+                </paragraph>
+            </cell>
+            <cell>
+                first, registration, halfway
+            </cell>
+        </row>
+        <row>
+            <cell>condition</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The condition property specifies a Plantain Script that will resolve to a boolean result. If true,
+                    then this milestone will be marked as active or complete.
+                </paragraph>
+            </cell>
+            <cell>
+                first, registration, halfway
+            </cell>
+        </row>
+    </table>
+
+    <title id="notification-banner" size="LARGER" plantainVersion="v1">Notification Banner</title>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Notification Banner Widget presents a banner on the page that is intended to notify the user of some detail.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Notification Banner Widget is a Flex Item and Flex Container and has the following properties.
+    </paragraph>
+
+    <table plantainVersion="v1">
+        <row>
+            <column>Attribute</column>
+            <column>Description</column>
+            <column>Permitted values/Examples</column>
+        </row>
+        <row>
+            <cell>title</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The text presented in association as a title on the Notification Banner Widget.
+                </paragraph>
+            </cell>
+            <cell>
+                Warning
+            </cell>
+        </row>
+        <row>
+            <cell>flavour</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The flavour property specifies the colouring of the Notification Banner.
+                </paragraph>
+            </cell>
+            <cell>DEFAULT, PRIMARY, INFO, WARNING, DANGER, SUCCESS, MUTED, BLACK, WHITE</cell>
+        </row>
+    </table>
+
+    <title id="page" size="LARGER" plantainVersion="v1">Page</title>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Page Widget is the root element of any Page.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Page Widget is a Flex Container and has the following properties.
+    </paragraph>
+
+    <table plantainVersion="v1">
+        <row>
+            <column>Attribute</column>
+            <column>Description</column>
+            <column>Permitted values/Examples</column>
+        </row>
+        <row>
+            <cell>title</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The title presented for the page. This forms the title as per the HTML spec, which affects the text
+                    presented for the browser, and the text shown in the page history.
+                </paragraph>
+            </cell>
+            <cell>
+                Welcome
+            </cell>
+        </row>
+    </table>
+
+    <title id="paragraph" size="LARGER" plantainVersion="v1">Paragraph</title>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Paragraph Widget is the most common and basic element that presents text on the page.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Paragraph Widget is a Flex Item and Textual has the following properties.
+    </paragraph>
+
+    <table plantainVersion="v1">
+        <row>
+            <column>Attribute</column>
+            <column>Description</column>
+            <column>Permitted values/Examples</column>
+        </row>
+        <row>
+            <cell>paragraphStyle</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The paragraphStyle specifies the type of style the paragraph will have and is demonstrated by the
+                    possible values the property may have.
+                </paragraph>
+            </cell>
+            <cell>
+                PLAIN, SUPPRESSED, BLOCKQUOTE
+            </cell>
+        </row>
+    </table>
+
+    <title id="password-reset-link" size="LARGER" plantainVersion="v1">Password Reset Link</title>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Password Reset Link Widget is used expressly in the Password Reset Email. When a user requests a password
+        reset, they are sent an email and within the email there will be a link. This widget specifies the inclusion and
+        location of the link.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Paragraph Widget is a Flex Item and Textual has the following properties.
+    </paragraph>
+
+    <table plantainVersion="v1">
+        <row>
+            <column>Attribute</column>
+            <column>Description</column>
+            <column>Permitted values/Examples</column>
+        </row>
+        <row>
+            <cell>label</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The label specifies the text that is shown in the email that presents as a link.
+                </paragraph>
+            </cell>
+            <cell>
+                PLAIN, SUPPRESSED, BLOCKQUOTE
+            </cell>
+        </row>
+    </table>
+
+    <title id="progress-bar" size="LARGER" plantainVersion="v1">Progress Bar</title>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Progress Bar Widget presents a progress bar on the page. The Progress Bar Widget must only include Mile
+        Stone Widgets as its children.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Progress Bar Widget can be viewed on the
+        <link type="internal" view="style-guide-question.html" openNewWindow="true" plantainVersion="v1">
+            Style Guide Question
+        </link>
+        page.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Paragraph Widget is a Flex Item has the following properties.
+    </paragraph>
+
+    <table plantainVersion="v1">
+        <row>
+            <column>Attribute</column>
+            <column>Description</column>
+            <column>Permitted values/Examples</column>
+        </row>
+        <row>
+            <cell>axis</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The axis specifies if the progress bar should be presented in vertical or horizontal form.
+                </paragraph>
+            </cell>
+            <cell>
+                HORIZONTAL, VERTICAL
+            </cell>
+        </row>
+        <row>
+            <cell>size</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The size attribute specifies the size of the Mile Stone Widgets.
+                </paragraph>
+            </cell>
+            <cell>
+                LARGE, MEDIUM, SMALL
+            </cell>
+        </row>
+        <row>
+            <cell>flavour</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The flavour attribute specifies the colouring of the Progress Bar.
+                </paragraph>
+            </cell>
+            <cell>DEFAULT, PRIMARY, INFO, WARNING, DANGER, SUCCESS, MUTED, BLACK, WHITE</cell>
+        </row>
+        <row>
+            <cell>milestoneStyle</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The milestoneStyle attribute specifies the styling of the Progress Bar. This property affects how
+                    the Mile Stones present their order.
+                </paragraph>
+            </cell>
+            <cell>PERCENT, NUMBERED, BULLET</cell>
+        </row>
+        <row>
+            <cell>labelSide</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The labelSide attribute specifies the side on which the labels are presented. This is affected by
+                    the axis of the Progress Bar. If the axis is horizontal, then a preceding label would be above, and
+                    a following label, below. If the axis is vertical, then the label precedes or is on the left hand
+                    side, and if following, the right hand side.
+                </paragraph>
+            </cell>
+            <cell>PRECEDE, FOLLOW</cell>
+        </row>
+    </table>
+
+    <title id="register-panel" size="LARGER" plantainVersion="v1">Register Panel</title>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Register Panel Widget will present the Registration Panel for the purposes of onboarding a new user to the
+        Platform.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Register Panel Widget can be viewed on the
+        <link type="internal" view="style-guide-specials.html" openNewWindow="true" plantainVersion="v1">
+            Style Guide Specials
+        </link>
+        page.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Register Panel Widget is a Flex Item.
+    </paragraph>
+
+    <title id="reset-password-panel" size="LARGER" plantainVersion="v1">Reset Password Panel</title>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Reset Password Panel Widget will present the Reset Password Panel. As a part of the password reset process,
+        the user will be sent an email with a link. When the user clicks on the link, he should be directed to the
+        predefined Reset Password Page that includes this widget. The user will then be asked to enter his new password
+        twice. This widget contains the form that implements this.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Reset Password Panel Widget can be viewed on the
+        <link type="internal" view="style-guide-specials.html" openNewWindow="true" plantainVersion="v1">
+            Style Guide Specials
+        </link>
+        page.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Reset Password Panel Widget is a Flex Item.
+    </paragraph>
+
+    <title id="reset-password-request-panel" size="LARGER" plantainVersion="v1">Reset Password Request Panel</title>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Reset Password Request Panel Widget will present the Reset Password Request Panel. As a part of the password
+        reset process, the user is asked to supply an email address for the purposes of being sent a password reset
+        link. This panel accepts the email address.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Reset Password Request Panel Widget can be viewed on the
+        <link type="internal" view="style-guide-specials.html" openNewWindow="true" plantainVersion="v1">
+            Style Guide Specials
+        </link>
+        page.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Reset Password Request Panel Request Widget is a Flex Item.
+    </paragraph>
+
+    <title id="row" size="LARGER" plantainVersion="v1">Row</title>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Row Widget specifies a row within a table. The Row is the only valid immediate child of a Table. The Row
+        Widget must only include either Cells or Columns.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Row Widget can be viewed on the
+        <link type="internal" view="style-guide-alpha.html" openNewWindow="true" plantainVersion="v1">
+            Style Guide Alpha
+        </link>
+        page as a part of a Table.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Row Widget has no properties.
+    </paragraph>
+
+    <title id="scale" size="LARGER" plantainVersion="v1">Scale</title>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Scale Widget will present a special purpose variant of the Enumeration Input Widget. Scales are really
+        Enumerations, but their values are predefined. They also present in special ways. If you need the user to enter
+        a value betwen 1 and 10, or to indicate how they feel from Very Bad to Very Good, then the Scale Widget fulfills
+        the need.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Scale Widget can be viewed on the
+        <link type="internal" view="style-guide-delta.html" openNewWindow="true" plantainVersion="v1">
+            Style Guide Delta
+        </link>
+        page.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Email Widget is a Flex Item in addition to the following properties.
+    </paragraph>
+
+    <table plantainVersion="v1">
+        <row>
+            <column>Attribute</column>
+            <column>Description</column>
+            <column>Permitted values/Examples</column>
+        </row>
+        <row>
+            <cell>label</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The label to display on the form for presentation.
+                </paragraph>
+            </cell>
+            <cell>
+                Colours
+            </cell>
+        </row>
+        <row>
+            <cell>reference</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The reference attribute specifies the name of the key when this value is inserted into the JSON
+                    result as the Wizard is completed.
+                </paragraph>
+            </cell>
+            <cell>
+                colour
+            </cell>
+        </row>
+        <row>
+            <cell>scaleType</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The style attribute specifies if the presentation should be orientated around checkboxes and radio
+                    buttons, or whether a select input field should be used.
+                </paragraph>
+            </cell>
+            <cell>
+                NUMERICAL, LIKERT, FREQUENCY, DICHOTOMOUS, BOOLEAN
+            </cell>
+        </row>
+        <row>
+            <cell>value</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The value attribute specifies if this initial value of the Scale Widget.
+                </paragraph>
+            </cell>
+            <cell>
+                true, false
+            </cell>
+        </row>
+        <row>
+            <cell>required</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The required attribute specifies if this input must have a value. If the value is required, then
+                    a validation error will present if no value is selected.
+                </paragraph>
+            </cell>
+            <cell>
+                true, false
+            </cell>
+        </row>
+        <row>
+            <cell>disableScript</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    This attribute contains a Plantain script that will determine if the Widget should appear disabled
+                    or not.
+                </paragraph>
+            </cell>
+            <cell>
+                condition == true
+            </cell>
+        </row>
+        <row>
+            <cell>hiddenScript</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    This attribute contains a Plantain script that will determine if the Widget should appear hidden
+                    or not.
+                </paragraph>
+            </cell>
+            <cell>
+                condition == true
+            </cell>
+        </row>
+        <row>
+            <cell>size</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The size of the input field.
+                </paragraph>
+            </cell>
+            <cell>
+                LARGE, MEDIUM, SMALL
+            </cell>
+        </row>
+    </table>
+
+    <title id="script" size="LARGER" plantainVersion="v1">Script</title>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Script Widget will execute a Plantain Script that will evaluate to a string value that will be output where
+        the Script tag is specified. The Script Widget is very useful in workflows to display values that users have
+        previously supplied. They are less useful, in the context of Pages since the only real values that are available
+        are from the %profile% and %userdata% variables and only if the current user is not anonymous.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Script Widget will only form part of a Textual element's content.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Script Widget has the following attributes.
+    </paragraph>
+
+    <table plantainVersion="v1">
+        <row>
+            <column>Attribute</column>
+            <column>Description</column>
+            <column>Permitted values/Examples</column>
+        </row>
+        <row>
+            <cell>script</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The Plantain Script.
+                </paragraph>
+            </cell>
+            <cell>
+                concat('Robin',' ','de Villiers')
+            </cell>
+        </row>
+    </table>
+
+    <title id="span" size="LARGER" plantainVersion="v1">Span</title>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Span Widget is a Textual element that can be composed within other Textuals. What this means practically, is
+        that it has the Textual attributes that affect font styling. A Span is distinct from a Paragraph, in that the
+        Span is not a Flex Item. It offers no information on how it should be positioned on a Page. Elements in Textuals
+        are laid out in flow orientation, meaning from left to right with text wrapping.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Script Widget will only form part of a Textual element's content.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Span element is a Textual.
+    </paragraph>
+
+    <title id="sub-menu" size="LARGER" plantainVersion="v1">Sub Menu</title>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Sub Menu Widget specifies that a Sub Menu should be presented within a Menu Widget. The Sub Menu should only
+        ever be the immediate child of a Menu Widget. The Sub Menu can compose Sub Menu Label Widgets and Menu Items.
+        Multiple levels of Sub Menu are not supported.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Sub Menu Widget can be viewed on the
+        <link type="internal" view="style-guide-specials.html" openNewWindow="true" plantainVersion="v1">
+            Style Guide Specials
+        </link>
+        page.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Sub Menu Widget has the following properties.
+    </paragraph>
+
+    <table plantainVersion="v1">
+        <row>
+            <column>Attribute</column>
+            <column>Description</column>
+            <column>Permitted values/Examples</column>
+        </row>
+        <row>
+            <cell>flavour</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The flavour attribute specifies the colouring of the Sub Menu.
+                </paragraph>
+            </cell>
+            <cell>DEFAULT, PRIMARY, INFO, WARNING, DANGER, SUCCESS, MUTED, BLACK, WHITE</cell>
+        </row>
+    </table>
+
+    <title id="sub-menu-label" size="LARGER" plantainVersion="v1">Sub Menu Label</title>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Sub Menu Label Widget specifies a label for a Sub Menu.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Sub Menu Label Widget can be viewed on the
+        <link type="internal" view="style-guide-specials.html" openNewWindow="true" plantainVersion="v1">
+            Style Guide Specials
+        </link>
+        page.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Sub Menu Label Widget is a Textual.
+    </paragraph>
+
+    <title id="switch" size="LARGER" plantainVersion="v1">Switch</title>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Switch Widget is one of the flow control widgets. It has no visual component. It is used to specify that
+        content should conditionally apply. The Switch Widget can only have either a Def Widget or an If Widget for
+        content. Only one Def Widget is allowed, and it is mandatory.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Switch Widget can be viewed on the
+        <link type="internal" view="style-guide-specials.html" openNewWindow="true" plantainVersion="v1">
+            Style Guide Specials
+        </link>
+        page.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Switch Widget has no properties.
+    </paragraph>
+
+    <title id="table" size="LARGER" plantainVersion="v1">Table</title>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Table Widget presents a table on the page. The only valid immediate child of a Table Widget is a Row Widget.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Table Widget can be viewed on the
+        <link type="internal" view="style-guide-portfolio.html" openNewWindow="true" plantainVersion="v1">
+            Style Guide Portfolio
+        </link>
+        page.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Table Widget is a Flex Item.
+    </paragraph>
+
+    <title id="title" size="LARGER" plantainVersion="v1">Title</title>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Title Widget presents a title on the page.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Title Widget can be viewed on the
+        <link type="internal" view="style-guide-alpha.html" openNewWindow="true" plantainVersion="v1">
+            Style Guide Alpha
+        </link>
+        page.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Title Widget is a Flex Item and Textual in addition to the following properties.
+    </paragraph>
+
+    <table plantainVersion="v1">
+        <row>
+            <column>Attribute</column>
+            <column>Description</column>
+            <column>Permitted values/Examples</column>
+        </row>
+        <row>
+            <cell>size</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The size attribute specifies the size or weight of the title.
+                </paragraph>
+            </cell>
+            <cell>LARGE, LARGER, MEDIUM, SMALLER, SMALL</cell>
+        </row>
+    </table>
+
+    <title id="tool-tip" size="LARGER" plantainVersion="v1">Tool Tip</title>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Tool Tip Widget is a special purpose widget that is meant to be used in the style guides only. It presents a
+        light bulb or similar icon near the wrapped element that will present some exposition when the mouse hovers over
+        the icon.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Tool Tip Widget is a Flex Item and Flex Container in addition to the following properties.
+    </paragraph>
+
+    <table plantainVersion="v1">
+        <row>
+            <column>Attribute</column>
+            <column>Description</column>
+            <column>Permitted values/Examples</column>
+        </row>
+        <row>
+            <cell>exposition</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The text to show when the mouse hovers over the icon.
+                </paragraph>
+            </cell>
+            <cell>This is a Jumbotron</cell>
+        </row>
+    </table>
+
+    <title id="tray" size="LARGER" plantainVersion="v1">Tray</title>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Tray Widget is a special widget that displays Messages that represent Wizards for the current user to
+        complete. When the Tray Widget is configured, a Queue is specified. When the Tray renders, the Platform will
+        retrieve the Messages from the Queue and filter the messages according to the Groups that the current user
+        possesses. The resulting Messages are displayed, and if the user clicks on one of them, the associated Wizard
+        will load. The Tray Widget is intended to be used for public consumption as opposed to the Message Explorer,
+        that does a similar job.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Tray Widget can be viewed on the
+        <link type="internal" view="style-guide-specials.html" openNewWindow="true" plantainVersion="v1">
+            Style Guide Specials
+        </link>
+        page.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Tray Widget is a Flex Item in addition to the following properties.
+    </paragraph>
+
+    <table plantainVersion="v1">
+        <row>
+            <column>Attribute</column>
+            <column>Description</column>
+            <column>Permitted values/Examples</column>
+        </row>
+        <row>
+            <cell>queue</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The queue from which to extract messages.
+                </paragraph>
+            </cell>
+            <cell>processing</cell>
+        </row>
+    </table>
+
+    <title id="tray-header" size="LARGER" plantainVersion="v1">Tray Header</title>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Tray Header Widget contains the header content for the Tray. The Tray Header must have an immediate Tray
+        Parent.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Tray Header Widget can be viewed on the
+        <link type="internal" view="style-guide-specials.html" openNewWindow="true" plantainVersion="v1">
+            Style Guide Specials
+        </link>
+        page.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Tray Header Widget is a Textual.
+    </paragraph>
+
+    <title id="user-explorer" size="LARGER" plantainVersion="v1">User Explorer</title>
+
+    <paragraph paragraphStyle="PLAIN">
+        The User Explorer Widget offers a widget that allows the current user to find other users within the Account.
+        This facility is specifically useful in two ways: The Case Principal Picker Page must include this widget and
+        allows a member of staff to assign a specific user to an initiated Workflow as Case Principal. The second
+        usage, is as a part of the Message Explorer. The Message Explorer Widget offers a mechanism to find a user's
+        username in order to filter messages by.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The User Explorer Widget can be viewed on the
+        <link type="internal" view="style-guide-specials.html" openNewWindow="true" plantainVersion="v1">
+            Style Guide Specials
+        </link>
+        page.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The User Explorer Widget is a Flex Item.
+    </paragraph>
+
+    <title id="uuid" size="LARGER" plantainVersion="v1">UUID</title>
+
+    <paragraph paragraphStyle="PLAIN">
+        The UUID Widget is a special widget that can be included in a Form. It has no visual component. What it does is
+        include a UUID in the Wizard Result data.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The UUID Widget has the following properties.
+    </paragraph>
+
+    <table plantainVersion="v1">
+        <row>
+            <column>Attribute</column>
+            <column>Description</column>
+            <column>Permitted values/Examples</column>
+        </row>
+        <row>
+            <cell>reference</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The reference attribute specifies the name of the key to use when including the UUID in the
+                    resulting data.
+                </paragraph>
+            </cell>
+            <cell>id</cell>
+        </row>
+    </table>
+
+    <title id="validation-rule" size="LARGER" plantainVersion="v1">Validation Rule</title>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Validation Rule Widget is a special purpose widget that applies an additional validation rule to the current
+        Form. The Validation Rule must have an Error Summary parent. It does not have a visual component, but may
+        generate a text message that is displayed in the Error Summary Widget. It is particularly useful when you have a
+        rule that applies to the interaction between multiple inputs, or an input and the current data context.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Validation Rule Widget can be viewed on the
+        <link type="internal" view="style-guide-delta.html" openNewWindow="true" plantainVersion="v1">
+            Style Guide Delta
+        </link>
+        page.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Validation Rule Widget is a Flex Item in addition to having the following properties.
+    </paragraph>
+
+    <table plantainVersion="v1">
+        <row>
+            <column>Attribute</column>
+            <column>Description</column>
+            <column>Permitted values/Examples</column>
+        </row>
+        <row>
+            <cell>script</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The script property specifies a Plantain Script that evaluates to a boolean result. If the rule
+                    evaluates to true, then the message is included.
+                </paragraph>
+            </cell>
+            <cell>condition == true</cell>
+        </row>
+    </table>
+
+    <title id="value" size="LARGER" plantainVersion="v1">Value</title>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Value Widget specifies a value for an Enumeration Input Widget. It is the only valid immediate child of an
+        Enumeration Input Widget.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Value Widget can be viewed on the
+        <link type="internal" view="style-guide-delta.html" openNewWindow="true" plantainVersion="v1">
+            Style Guide Delta
+        </link>
+        page.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Warning Widget is a Flex Container and has the following properties.
+    </paragraph>
+
+    <table plantainVersion="v1">
+        <row>
+            <column>Attribute</column>
+            <column>Description</column>
+            <column>Permitted values/Examples</column>
+        </row>
+        <row>
+            <cell>label</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The label of the option in the Enumeration.
+                </paragraph>
+            </cell>
+            <cell>Red</cell>
+        </row>
+        <row>
+            <cell>key</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The key is inserted into the Wizard Result when the value is selected from the Enumeration.
+                </paragraph>
+            </cell>
+            <cell>red</cell>
+        </row>
+        <row>
+            <cell>def</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The def property marks if this value is the default value for the Enumeration.
+                </paragraph>
+            </cell>
+            <cell>true, false</cell>
+        </row>
+        <row>
+            <cell>panel</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The panel property indicates if this value should have an associated panel or not. If the value is
+                    selected and this value is true, then the contents of the Value Widget will be rendered.
+                </paragraph>
+            </cell>
+            <cell>true, false</cell>
+        </row>
+        <row>
+            <cell>hiddenScript</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    This attribute contains a Plantain script that will determine if the Value Panel should appear
+                    hidden or not. The Value will still appear.
+                </paragraph>
+            </cell>
+            <cell>
+                condition == true
+            </cell>
+        </row>
+    </table>
+
+    <title id="warning" size="LARGER" plantainVersion="v1">Warning</title>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Warning Widget is a special purpose widget that behaves like a Div Widget. The difference is that the
+        Warning Widget displays an alert icon.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Warning Widget can be viewed on the
+        <link type="internal" view="style-guide-alpha.html" openNewWindow="true" plantainVersion="v1">
+            Style Guide Alpha
+        </link>
+        page.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Warning Widget is a Flex Item and Flex Container.
+    </paragraph>
+
+    <title id="well" size="LARGER" plantainVersion="v1">Well</title>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Well Widget presents a panel where the content presents in a highlighted fashion but is separated from the
+        content in the page somehow. This is opposed to the Inset Text Widget that is somehow related to the content.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Well Widget can be viewed on the
+        <link type="internal" view="style-guide-beta.html" openNewWindow="true" plantainVersion="v1">
+            Style Guide Beta
+        </link>
+        page.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Well Widget is a Flex Item and Flex Container in addition to the following properties.
+    </paragraph>
+
+    <table plantainVersion="v1">
+        <row>
+            <column>Attribute</column>
+            <column>Description</column>
+            <column>Permitted values/Examples</column>
+        </row>
+        <row>
+            <cell>flavour</cell>
+            <cell>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    The flavour property specifies the colouring of the Well.
+                </paragraph>
+            </cell>
+            <cell>DEFAULT, PRIMARY, INFO, WARNING, DANGER, SUCCESS, MUTED, BLACK, WHITE</cell>
+        </row>
+    </table>
+
+    <title id="wizard-test-results" size="LARGER" plantainVersion="v1">Wizard Test Results</title>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Wizard Test Results Widget renders a panel that presents the result of a Wizard Test. This Widget should
+        only be used in this specific case, and it belongs in the Wizard Test Results Page.
+    </paragraph>
+
+    <paragraph paragraphStyle="PLAIN">
+        The Well Widget can be viewed on the
+        <link type="internal" view="style-guide-beta.html" openNewWindow="true" plantainVersion="v1">
+            Style Guide Beta
+        </link>
+        page.
     </paragraph>
 
 

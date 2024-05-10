@@ -1,1 +1,0 @@
-<div class="well ${classes}" style="font-size: 2em; margin: 20px; ${styles}">${content}</div>

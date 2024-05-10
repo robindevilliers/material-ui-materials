@@ -14,7 +14,6 @@ export default class SubMenuBinder implements Renderer {
     }
 
     render(element: Element, classMappings: Properties, renderingEngine: RenderingEngine): string {
-
         const children = element.children.filter(el => isElement(el)).map(el => el as Element);
 
         let label, content = new StringBuffer();

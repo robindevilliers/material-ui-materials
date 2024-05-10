@@ -50,3 +50,5 @@ the assets whenever any change is detected.
 ```
 npm run watch
 ```
+
+This last command will setup a webserver that will serve the built assets on this url:  http://127.0.0.1:8000

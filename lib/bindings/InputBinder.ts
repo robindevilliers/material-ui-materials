@@ -27,7 +27,7 @@ export default class InputBinder implements Renderer {
         data.rows = element.attributes.rows;
         data.size = element.attributes.size;
         data.maxLength = element.attributes.maxLength;
-        data.currencySymbol = element.attributes.inputType === 'CURRENCY' ? '£' : null;
+        data.currencySymbol = element.attributes.type === 'CURRENCY' ? '£' : null;
         data.error = new Error("some error message");
 
         const classManager = new ClassManager(classMappings);

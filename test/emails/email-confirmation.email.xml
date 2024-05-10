@@ -1,4 +1,4 @@
-<email defnVersion="v1" id="error" version="1">
+<email defnVersion="v1" id="email-confirmation" version="1">
     <div plantainVersion="v1" orientation="COLUMN">
         <div plantainVersion="v1" orientation="ROW" justifyContent="SPACE_AROUND">
             <div plantainVersion="v1" orientation="COLUMN" justifyContent="SPACE_AROUND" alignItems="CENTER">

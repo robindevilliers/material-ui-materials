@@ -1,6 +1,6 @@
 import { ExpressionEngine } from './expression-engine';
 import { TemplateError } from './TemplateError';
-import { Errors, FieldError } from '../Errors';
+import { Errors, FieldError } from './Errors';
 
 describe('engine', () => {
 

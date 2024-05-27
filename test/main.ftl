@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link href="/public/css/main.css" rel="stylesheet">
+    <script src="/public/js/main.js"></script>
 </head>
 <body>
 
@@ -44,8 +45,5 @@
 <footer class="footer">
     <hr>
 </footer>
-
-<script src="/public/js/main.js"></script>
-
 </body>
 </html>

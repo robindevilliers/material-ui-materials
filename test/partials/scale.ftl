@@ -11,7 +11,7 @@
     <div class="scale-content">
         <#list values as val>
             <div class="form-check form-check-inline">
-                <input class="form-check-input ${sizeCls}" name="${reference}" value="${val.key}"
+                <input class="form-check-input ${sizeCls}" name="${name}" value="${val.key}"
                        <#if disabled??>disabled</#if> <#if value?? && value == val.key>checked</#if>
                        type="radio" id="${id}-${val.key}"/>
                 <label class="form-check-label ${sizeCls}" for="${id}-${val.key}">
@@ -21,6 +21,6 @@
         </#list>
     </div>
     <#if (error)??>
-        <span id="error-message-${reference}" class="form-text text-danger">${error}</span>
+        <span id="error-message-${name}" class="form-text text-danger">${error}</span>
     </#if>
 </div>

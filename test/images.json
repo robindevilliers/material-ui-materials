@@ -1,0 +1,39 @@
+[
+  {
+    "src": "logo.svg",
+    "title": "Logo",
+    "width": 320,
+    "height": 320
+  },
+  {
+    "src": "panel-1.jpg",
+    "title": "Panel 1",
+    "width": 1200,
+    "height": 750
+  },
+  {
+    "src": "panel-2.jpg",
+    "title": "Panel 2",
+    "width": 1200,
+    "height": 750
+  },
+  {
+    "src": "panel-3.jpg",
+    "title": "Panel 3",
+    "width": 1200,
+    "height": 750
+  },
+  {
+    "src": "temp0.jpg",
+    "title": "Panel 3",
+    "width": 278,
+    "height": 181
+  },
+  {
+    "src": "suzi.jpeg",
+    "alt": "Image of Suzi",
+    "title": "Suzi Profile Picture",
+    "width": 600,
+    "height": 400
+  }
+]

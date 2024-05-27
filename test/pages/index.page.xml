@@ -48,31 +48,31 @@
         required by the Platform. Feel free to add and edit these pages. These pages can be reached on the Platform.
     </paragraph>
     <div plantainVersion="v1" alignItems="STRETCH" wrap="WRAP" border="1px solid black">
-        <card link="true" preserveLink="true" type="internal" view="style-guide-landing.html" openNewWindow="false"
+        <card link="true" type="internal" view="style-guide-landing.html" openNewWindow="false"
               flexBasis="260px" flexShrink="0" margin="0em 1em 1em 0em" plantainVersion="v1">
             <image src="temp0.jpg" alt="Image of Suzi" title="Suzi Profile Picture" imageHeight="173px"
                    imageWidth="260px" plantainVersion="v1"/>
             <card-body orientation="COLUMN">
                 <title size="SMALLER" plantainVersion="v1">Landing Page</title>
                 <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
-                    The goal of the landing page is to sell a concise set of ideas to the general public. It focuses on
+                    The goal of the landing page is to sell a concise set of ideas to the public. It focuses on
                     impact rather than density.
                 </paragraph>
             </card-body>
         </card>
-        <card link="true" preserveLink="true" type="internal" view="style-guide-portfolio.html" openNewWindow="false"
+        <card link="true" type="internal" view="style-guide-portfolio.html" openNewWindow="false"
               flexBasis="260px" flexShrink="0" margin="0em 1em 1em 0em" plantainVersion="v1">
             <image src="temp2.jpg" alt="Portfolio" title="Portfolio" imageHeight="173px"
                    imageWidth="260px" plantainVersion="v1"/>
             <card-body orientation="COLUMN">
                 <title size="SMALLER" plantainVersion="v1">Portfolio Page</title>
                 <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
-                    The portolio page is typical for professional websites where the goal is to present facts centered
+                    The portfolio page is typical for professional websites where the goal is to present facts centered
                     around specific persons or products.
                 </paragraph>
             </card-body>
         </card>
-        <card link="true" preserveLink="true" type="internal" view="style-guide-question.html" openNewWindow="false"
+        <card link="true" type="internal" view="style-guide-question.html" openNewWindow="false"
               flexBasis="260px" flexShrink="0" margin="0em 1em 1em 0em" plantainVersion="v1">
             <image src="temp7.jpg" alt="Question" title="Question" imageHeight="173px"
                    imageWidth="260px" plantainVersion="v1"/>
@@ -84,19 +84,19 @@
                 </paragraph>
             </card-body>
         </card>
-        <card link="true" preserveLink="true" type="internal" view="style-guide-article.html" openNewWindow="false"
+        <card link="true" type="internal" view="style-guide-typography.html" openNewWindow="false"
               flexBasis="260px" flexShrink="0" margin="0em 1em 1em 0em" plantainVersion="v1">
             <image src="temp1.jpg" alt="Page A" title="Page A" imageHeight="173px" imageWidth="260px"
                    plantainVersion="v1"/>
             <card-body orientation="COLUMN">
-                <title size="SMALLER" plantainVersion="v1">Article Page</title>
-                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">This web page presents textual information in a
-                    high density format, common to news articles, blogs and reference materials.
+                <title size="SMALLER" plantainVersion="v1">Typography Page</title>
+                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">This web page presents all the fonts and
+                    paragraph styles used in the style guide.
                 </paragraph>
             </card-body>
         </card>
 
-        <card link="true" preserveLink="true" type="internal" view="style-guide-alpha.html" openNewWindow="false"
+        <card link="true" type="internal" view="style-guide-alpha.html" openNewWindow="false"
               flexBasis="260px" flexShrink="0" margin="0em 1em 1em 0em" plantainVersion="v1">
             <image src="temp4.jpg" alt="Reference Alpha" title="Reference Alpha" imageHeight="173px" imageWidth="260px"
                    plantainVersion="v1"/>
@@ -107,7 +107,7 @@
                 </paragraph>
             </card-body>
         </card>
-        <card link="true" preserveLink="true" type="internal" view="style-guide-beta.html" openNewWindow="false"
+        <card link="true" type="internal" view="style-guide-beta.html" openNewWindow="false"
               flexBasis="260px" flexShrink="0" margin="0em 1em 1em 0em" plantainVersion="v1">
             <image src="temp5.jpg" alt="Reference Beta" title="Reference Beta" imageHeight="173px" imageWidth="260px"
                    plantainVersion="v1"/>
@@ -118,7 +118,7 @@
                 </paragraph>
             </card-body>
         </card>
-        <card link="true" preserveLink="true" type="internal" view="style-guide-delta.html" openNewWindow="false"
+        <card link="true" type="internal" view="style-guide-delta.html" openNewWindow="false"
               flexBasis="260px" flexShrink="0" margin="0em 1em 1em 0em" plantainVersion="v1">
             <image src="temp6.jpg" alt="Reference Delta" title="Reference Delta" imageHeight="173px" imageWidth="260px"
                    plantainVersion="v1"/>
@@ -129,7 +129,7 @@
                 </paragraph>
             </card-body>
         </card>
-        <card link="true" preserveLink="true" type="internal" view="style-guide-specials.html" openNewWindow="false"
+        <card link="true" type="internal" view="style-guide-specials.html" openNewWindow="false"
               flexBasis="260px" flexShrink="0" margin="0em 1em 1em 0em" plantainVersion="v1">
             <image src="temp8.jpg" alt="Specials" title="Specials" imageHeight="173px" imageWidth="260px"
                    plantainVersion="v1"/>
@@ -154,7 +154,7 @@
             </row>
             <row>
                 <cell>
-                    <link type="internal" preserveLink="true" view="error.html" openNewWindow="false"
+                    <link type="internal" view="error.html" openNewWindow="false"
                           plantainVersion="v1">
                         Error Page
                     </link>
@@ -170,7 +170,7 @@
             </row>
             <row>
                 <cell>
-                    <link type="internal" preserveLink="true" view="not-found.html" openNewWindow="false"
+                    <link type="internal" view="not-found.html" openNewWindow="false"
                           plantainVersion="v1">
                         Not Found Page
                     </link>
@@ -187,7 +187,7 @@
             </row>
             <row>
                 <cell>
-                    <link type="internal" preserveLink="true" view="unauthorized.html" openNewWindow="false"
+                    <link type="internal" view="unauthorized.html" openNewWindow="false"
                           plantainVersion="v1">
                         Unauthorized Page
                     </link>
@@ -206,7 +206,7 @@
             </row>
             <row>
                 <cell>
-                    <link type="internal" preserveLink="true" view="register.html" openNewWindow="false"
+                    <link type="internal" view="register.html" openNewWindow="false"
                           plantainVersion="v1">
                         Register Page
                     </link>
@@ -223,7 +223,7 @@
             </row>
             <row>
                 <cell>
-                    <link type="internal" preserveLink="true" view="registration-complete.html" openNewWindow="false"
+                    <link type="internal" view="registration-complete.html" openNewWindow="false"
                           plantainVersion="v1">
                         Registration Complete Page
                     </link>
@@ -239,7 +239,7 @@
             </row>
             <row>
                 <cell>
-                    <link type="internal" preserveLink="true" view="email-confirmation-complete.html"
+                    <link type="internal" view="email-confirmation-complete.html"
                           openNewWindow="false"
                           plantainVersion="v1">
                         Email Confirmation Complete Page
@@ -256,7 +256,7 @@
             </row>
             <row>
                 <cell>
-                    <link type="internal" preserveLink="true" view="case-principal-picker.html"
+                    <link type="internal" view="case-principal-picker.html"
                           openNewWindow="false" plantainVersion="v1">
                         Case Principal Picker Page
                     </link>
@@ -275,7 +275,7 @@
             </row>
             <row>
                 <cell>
-                    <link type="internal" preserveLink="true" view="privacy.html"
+                    <link type="internal" view="privacy.html"
                           openNewWindow="false" plantainVersion="v1">
                         Privacy Page
                     </link>
@@ -294,7 +294,7 @@
             </row>
             <row>
                 <cell>
-                    <link type="internal" preserveLink="true" view="reset-password.html"
+                    <link type="internal" view="reset-password.html"
                           openNewWindow="false" plantainVersion="v1">
                         Reset Password Page
                     </link>
@@ -311,7 +311,7 @@
             </row>
             <row>
                 <cell>
-                    <link type="internal" preserveLink="true" view="reset-password-complete.html"
+                    <link type="internal" view="reset-password-complete.html"
                           openNewWindow="false" plantainVersion="v1">
                         Reset Password Complete Page
                     </link>
@@ -327,7 +327,7 @@
             </row>
             <row>
                 <cell>
-                    <link type="internal" preserveLink="true" view="reset-password-request.html"
+                    <link type="internal" view="reset-password-request.html"
                           openNewWindow="false" plantainVersion="v1">
                         Reset Password Request Page
                     </link>
@@ -344,7 +344,7 @@
             </row>
             <row>
                 <cell>
-                    <link type="internal" preserveLink="true" view="reset-password-request-complete.html"
+                    <link type="internal" view="reset-password-request-complete.html"
                           openNewWindow="false" plantainVersion="v1">
                         Reset Password Request Complete Page
                     </link>
@@ -360,7 +360,7 @@
             </row>
             <row>
                 <cell>
-                    <link type="internal" preserveLink="true" view="wizard-intro.html"
+                    <link type="internal" view="wizard-intro.html"
                           openNewWindow="false" plantainVersion="v1">
                         Wizard Intro Page
                     </link>
@@ -378,7 +378,7 @@
             </row>
             <row>
                 <cell>
-                    <link type="internal" preserveLink="true" view="wizard-outro.html"
+                    <link type="internal" view="wizard-outro.html"
                           openNewWindow="false" plantainVersion="v1">
                         Wizard Outro Page
                     </link>
@@ -396,7 +396,7 @@
             </row>
             <row>
                 <cell>
-                    <link type="internal" preserveLink="true" view="wizard-resume.html"
+                    <link type="internal" view="wizard-resume.html"
                           openNewWindow="false" plantainVersion="v1">
                         Wizard Resume Page
                     </link>
@@ -415,7 +415,7 @@
             </row>
             <row>
                 <cell>
-                    <link type="internal" preserveLink="true" view="wizard-test-results.html"
+                    <link type="internal" view="wizard-test-results.html"
                           openNewWindow="false" plantainVersion="v1">
                         Wizard Test Results Page
                     </link>
@@ -433,7 +433,7 @@
 
             <row>
                 <cell>
-                    <link type="internal" preserveLink="true" view="workflow-confirm.html"
+                    <link type="internal" view="workflow-confirm.html"
                           openNewWindow="false" plantainVersion="v1">
                         Workflow Confirm Page
                     </link>
@@ -450,7 +450,7 @@
             </row>
             <row>
                 <cell>
-                    <link type="internal" preserveLink="true" view="workflow-executed.html"
+                    <link type="internal" view="workflow-executed.html"
                           openNewWindow="false" plantainVersion="v1">
                         Workflow Executed Page
                     </link>

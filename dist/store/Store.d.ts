@@ -31,6 +31,7 @@ declare class Store {
     addWorkflow(workflow: Workflow): void;
     addPage(page: Page): void;
     addQueue(queue: Queue): void;
+    addGroup(group: Group): void;
 }
 declare const INSTANCE: Store;
 export default INSTANCE;

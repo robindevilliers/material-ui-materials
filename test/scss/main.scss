@@ -110,7 +110,7 @@ td {
 
 @font-face {
   font-family: BrushScriptStd;
-  src: url("../fonts/BrushScriptStd.otf") format("opentype"), url("../fonts/BRUSHSCI.TTF") format("truetype");
+  src: url("../public/fonts/BrushScriptStd.otf") format("opentype"), url("../public/fonts/BRUSHSCI.TTF") format("truetype");
 }
 
 @import "bg-white";
@@ -145,3 +145,4 @@ td {
 @import "login-panel";
 @import "reset-password-request-panel";
 @import "reset-password-panel";
+@import "register-panel";

@@ -6,12 +6,9 @@
         <div justifyContent="SPACE_BETWEEN" plantainVersion="v1">
             <div orientation="COLUMN" plantainVersion="v1">
                 <paragraph paragraphStyle="PLAIN" plantainVersion="v1">Welcome to the first page exhibit in our style
-                    guide
-                    gallery. On this page you can see an example of various specialized elements. The first element you
-                    can
-                    see to your right. This is a Card, and it has a header, image, body and footer. All these child
-                    elements
-                    of the Card are optional.
+                    guide gallery. On this page you can see an example of various specialized elements. The first
+                    element you can see to your right. This is a Card, and it has a header, image, body and footer. All
+                    these child elements of the Card are optional.
                 </paragraph>
                 <accordion flush="false" singleActive="true" plantainVersion="v1">
                     <accordion-item active="false" orientation="COLUMN">

@@ -1,1 +1,1 @@
-<span class="navbar-brand ${classes}" style="${textualStyles} ${itemStyles}">${content}</span>
+<span class="navbar-brand ${classes}" style="${textualStyles}">${content}</span>

@@ -1,16 +1,15 @@
 #! /usr/bin/env node
 'use strict';
 
-import { Element, parse } from './parser';
-
+import { Element, parse } from './xml-parser';
 import * as path from 'node:path';
 import * as fs from 'fs';
-import Properties from './properties';
-import { TemplateEngine } from './freemarker';
+import Properties from './rendering/Properties';
+import { TemplateEngine } from './freemarker/TemplateEngine';
 import Store from './store/Store';
 import format from 'html-format';
-import { PlantainSubstitutions, Substitutions } from './Substitutions';
-import RenderingEngine from './RenderingEngine';
+import { PlantainSubstitutions, Substitutions } from './rendering/Substitutions';
+import RenderingEngine from './rendering/RenderingEngine';
 import { FreemarkerError } from './freemarker/FreemarkerError';
 import commander = require('commander');
 
@@ -56,7 +55,7 @@ function processDirectory(dir: string, suffix: string, baseTemplate: string) {
 
             const dom = parse(fs.readFileSync(path.join(process.env.INIT_CWD!, options.dir, dir, file), 'utf8'));
 
-            const renderingEngine = new RenderingEngine(file, classMappings, substitutions, options.dir);
+            const renderingEngine = new RenderingEngine(classMappings, substitutions, options.dir);
 
             const body = renderingEngine.renderElement(dom.root as Element);
 

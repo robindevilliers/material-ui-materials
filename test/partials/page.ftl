@@ -1,1 +1,1 @@
-<div id="page-widget" style="${containerStyles}">${content}</div>
+<div class="page-widget" style="${containerStyles}">${content}</div>

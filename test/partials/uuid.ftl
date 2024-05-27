@@ -1,1 +1,1 @@
-<input id="${id}" type="hidden" name="${reference}" value="${value!}"/>
+<input id="${id}" type="hidden" name="${name}" value="${value!}"/>

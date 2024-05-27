@@ -4,12 +4,11 @@
         <div class="tray-body">
             <#list values as val>
                 <div class="tray-form">
-                    <form action="/workflow/continue-case/${val.wipId}" method="post"
+                    <form action="${val.action}" method="post"
                             enctype="application/x-www-form-urlencoded">
                         <input type="hidden" name="_csrf" value="${_csrf}">
-                        <button id="continue-${val.workflowId}-${val.wizardId}" onclick="${onclick}"
-                                class="tray-button"
-                                type="submit">
+                        <button id="continue-${val.workflowId}-${val.wizardId}" class="tray-button" type="submit"
+                                onclick="${testMode?string('alert(&quot;Tray item clicked&quot;); event.preventDefault();','')}">
                         <span class="tray-line">
                             <span class="tray-wizard-title">${val.wizardTitle}</span>
                             <span class="tray-date">${val.date}</span>

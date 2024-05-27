@@ -1,9 +1,7 @@
 <div id="${id}" class="message-explorer-widget ${classes}" style="${itemStyles}">
     <div class="card-header">
-        <form class="form-inline" method="get" action="#${bust}">
+        <form class="form-inline" method="get" action="${action}">
             <input type="hidden" name="bust" value="${bust}"/>
-
-
             <div class="input-group">
                 <div class="input-group-prepend">
                     <div class="input-group-text">Queue</div>
@@ -104,12 +102,12 @@
                         </div>
 
                         <form class="message-explorer-form"
-                                action="/workflow/continue-case/${val.wipId}"
+                                action="${val.action}"
                                 method="post" enctype="application/x-www-form-urlencoded">
                             <input type="hidden" name="_csrf" value="${_csrf}">
                             <span class="message-explorer-button-line">
                                     <button class="btn btn-primary" id="continue-${val.workflowId}-${val.wizardId}"
-                                            onclick="${onclick}" type="submit">
+                                            onclick="${testMode?string('alert(&quot;Open clicked&quot;); event.preventDefault();','')}" type="submit">
                                         Open
                                     </button>
                                 </span>
@@ -120,7 +118,7 @@
         </#if>
     </div>
     <div class="message-explorer-footer">
-        <form class="form-inline" method="get" action="#${bust}">
+        <form class="form-inline" method="get" action="${action}">
             <input type="hidden" name="mQueue" value="${queue}"/>
             <input type="hidden" name="mWorkflow" value="${workflow}"/>
             <input type="hidden" name="mWizard" value="${wizard}"/>
@@ -140,7 +138,7 @@
             </div>
         </form>
 
-        <form class="form-inline" method="get" action="#${bust}">
+        <form class="form-inline" method="get" action="${action}">
             <input type="hidden" name="mQueue" value="${queue}"/>
             <input type="hidden" name="mWorkflow" value="${workflow}"/>
             <input type="hidden" name="mWizard" value="${wizard}"/>

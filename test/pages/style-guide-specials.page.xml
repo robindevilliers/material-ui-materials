@@ -1,7 +1,7 @@
 <page id="test" version="1" active="false" released="false" group="admin" title="Style Guide - Landing Page"
       description="test"
       defnVersion="v1" orientation="COLUMN">
-    <fake-store>
+    <fake-store currentUser="robindevilliers">
         <fake-user username="robindevilliers"
                    groups=":public:authenticated:admin:"
                    title="Mr"
@@ -10,6 +10,8 @@
                    dateOfBirth="1980-01-01"
                    email="robin@me.com"
                    contactNumber="5585934"
+                   timezone="Europe/London"
+                   userData="{&quot;alpha&quot;: true, &quot;beta&quot;: false}"
         />
         <fake-user username="connordevilliers"
                    groups=":public:authenticated:client:"
@@ -19,6 +21,19 @@
                    dateOfBirth="2013-01-01"
                    email="connor@me.com"
                    contactNumber="0123576"
+                   timezone="Europe/London"
+                   userData="{&quot;alpha&quot;: true, &quot;beta&quot;: false}"
+        />
+        <fake-user username="rosedevilliers"
+                   groups=":public:authenticated:client:"
+                   title="Mrs"
+                   firstName="Rose"
+                   lastName="de Villiers"
+                   dateOfBirth="1911-01-2"
+                   email="rose@me.com"
+                   contactNumber="0123576"
+                   timezone="Europe/London"
+                   userData="{&quot;alpha&quot;: true, &quot;beta&quot;: false}"
         />
         <fake-user username="leah"
                    groups=":public:authenticated:staff:"
@@ -28,6 +43,8 @@
                    dateOfBirth="2015-01-01"
                    email="leah@me.com"
                    contactNumber="9283646"
+                   timezone="Europe/London"
+                   userData="{&quot;alpha&quot;: true, &quot;beta&quot;: false}"
         />
         <fake-message
             dateTime="2024-01-30T18:31:32Z"
@@ -128,8 +145,37 @@
         />
         <fake-queue
             name="processing"
-            title="Processing"
+            title="Processing Queue"
             description="Queue for processing"
+        />
+        <fake-group
+            name="public"
+            title="Public"
+            description="Public access."
+        />
+        <fake-group
+            name="authenticated"
+            title="Authenticated"
+            description="Authenticated."
+            has="public"
+        />
+        <fake-group
+            name="staff"
+            title="Staff"
+            description="Member of staff."
+            has="authenticated"
+        />
+        <fake-group
+            name="client"
+            title="Client"
+            description="Client."
+            has="authenticated"
+        />
+        <fake-group
+            name="admin"
+            title="Admin"
+            description="Admin."
+            has="staff"
         />
 
         <div plantainVersion="v1" orientation="COLUMN">
@@ -200,7 +246,8 @@
                     The Workflow Initiate Button will fire a workflow.
                 </paragraph>
             </div>
-            <initiate-workflow-button workflow="workflow:1" size="MEDIUM" buttonFlavour="PRIMARY" plantainVersion="v1">
+            <initiate-workflow-button workflow="workflow-one" size="MEDIUM" buttonFlavour="PRIMARY"
+                                      plantainVersion="v1">
                 Fire Workflow
             </initiate-workflow-button>
         </div>
@@ -262,7 +309,10 @@
                 <paragraph plantainVersion="v1" flexBasis="500px">
                     The Message Explorer widget allows the user to search for and view any messages to which he or she
                     has access. This widget is intended to be a powerful browser intended for members of staff.
-                    Multiple queues can be searched, and messages can be filtered by workflow, wizard and username.
+                    Multiple queues can be searched, and messages can be filtered by workflow, wizard and username. You
+                    can view the appearance of the Message Explorer, but its functionality is only going to work with a
+                    proper back-end server. Its highly recommended that you make sure this works when the materials are
+                    deployed.
                 </paragraph>
             </div>
             <message-explorer queue="main-user" plantainVersion="v1">
@@ -278,7 +328,9 @@
                     The User Explorer widget allows the current user to search through the user accounts. This has a
                     couple of purposes. The first is when a workflow is executed by staff, and they want to manually
                     assign the case to a specific case principal. The second is when searching for a username to use as
-                    a filter for message searches.
+                    a filter for message searches. Again, you can view the appearance of the User Explorer, but its
+                    functionality is only going to work with a property back-end server. Its highly recommended that you
+                    make sure this works when the materials are deployed.
                 </paragraph>
             </div>
             <user-explorer plantainVersion="v1"/>
@@ -329,6 +381,111 @@
                     <paragraph paragraphStyle="PLAIN" plantainVersion="v1">if content</paragraph>
                 </if>
             </switch>
+        </div>
+
+        <horizontal-rule/>
+
+        <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" plantainVersion="v1"
+             flexBasis="100%">
+            <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" plantainVersion="v1"
+                 flexBasis="100%" width="100%">
+                <title size="LARGE" plantainVersion="v1">Close Workflow Executed Panel</title>
+                <paragraph plantainVersion="v1" flexBasis="500px">
+                    This widget presents the panel that has the button that closes the Workflow Executed Page. When a
+                    workflow is first initiated, we present the user with the Confirm Workflow Page. If they confirm,
+                    then they are presented with the Workflow Executed Page. This page requires a button that will close
+                    the page down and present the user with whatever page they should be viewing next. This panel
+                    provides the facility.
+                </paragraph>
+            </div>
+            <jumbotron plantainVersion="v1" orientation="COLUMN">
+                <close-workflow-executed-panel plantainVersion="v1"/>
+            </jumbotron>
+        </div>
+
+        <horizontal-rule/>
+
+        <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" plantainVersion="v1"
+             flexBasis="100%">
+            <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" plantainVersion="v1"
+                 flexBasis="100%" width="100%">
+                <title size="LARGE" plantainVersion="v1">Confirm Workflow Panel</title>
+                <paragraph plantainVersion="v1" flexBasis="500px">
+                    This widget presents the panel that allows the user to confirm if they intended to execute a
+                    workflow or not. When a user initiates a workflow, we present the Workflow Confirm Page. This page
+                    presents confirm and cancel options to the user. This panel presents those buttons.
+                </paragraph>
+            </div>
+            <confirm-workflow-panel plantainVersion="v1"/>
+        </div>
+
+        <horizontal-rule/>
+
+        <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" plantainVersion="v1"
+             flexBasis="100%">
+            <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" plantainVersion="v1"
+                 flexBasis="100%" width="100%">
+                <title size="LARGE" plantainVersion="v1">Confirmation Panel</title>
+                <paragraph plantainVersion="v1" flexBasis="500px">
+                    The Confirmation Panel is used in Two Phase Authentication where the user is presented with a
+                    secondary challenge once first authenticating. This facility is not currently available.
+                </paragraph>
+            </div>
+            <confirmation-panel plantainVersion="v1"/>
+        </div>
+        <horizontal-rule/>
+
+        <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" plantainVersion="v1"
+             flexBasis="100%">
+            <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" plantainVersion="v1"
+                 flexBasis="100%" width="100%">
+                <title size="LARGE" plantainVersion="v1">Password Reset Link</title>
+                <paragraph plantainVersion="v1" flexBasis="500px">
+                    When a user forgets his password, he can request a password reset. He will be sent an email, and
+                    within the email is the Password Reset Link. This widget facilitates the link.
+                </paragraph>
+            </div>
+            <password-reset-link plantainVersion="v1" label="Reset Password"/>
+        </div>
+
+        <horizontal-rule/>
+
+        <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" plantainVersion="v1"
+             flexBasis="100%">
+            <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" plantainVersion="v1"
+                 flexBasis="100%" width="100%">
+                <title size="LARGE" plantainVersion="v1">Email Confirmation Link</title>
+                <paragraph plantainVersion="v1" flexBasis="500px">
+                    When a user first registers, he is required to confirm his email address. He will be sent an email,
+                    and will be required to click on a link within. This widget facilitates that link.
+                </paragraph>
+            </div>
+            <email-confirmation-link plantainVersion="v1" label="Confirm Email"/>
+        </div>
+
+        <horizontal-rule/>
+
+        <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" plantainVersion="v1"
+             flexBasis="100%">
+            <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" plantainVersion="v1"
+                 flexBasis="100%" width="100%">
+                <title size="LARGE" plantainVersion="v1">Card as Link</title>
+                <paragraph plantainVersion="v1" flexBasis="500px">
+                    Cards can be configured so that the entire Card is clickable, and will lead to another page.
+                </paragraph>
+            </div>
+            <card link="true" view="style-guide-landing.html"
+                  width="300px" flexShrink="0" margin="0em 0em 0em 1em" plantainVersion="v1">
+                <image src="temp0.jpg" alt="Image of Suzi" title="Suzi Profile Picture" imageHeight="200px"
+                       imageWidth="300px" plantainVersion="v1"/>
+                <card-body orientation="COLUMN">
+                    <title size="SMALLER" plantainVersion="v1">Lorem Ipsum</title>
+                    <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                        laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.
+                    </paragraph>
+                </card-body>
+            </card>
         </div>
     </fake-store>
 </page>

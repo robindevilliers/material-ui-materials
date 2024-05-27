@@ -1,14 +1,12 @@
-improve error handling as source mapping will not work.
-
-add unit tests for the renderingEngine.
-
-we need field validation in the ftl files.  There is a contract between the ftl and the renderer, and we want to
-express the contract when an error occurs.
-
-reference docs.
-
-remove preserveLink and use test store to substitute on click events.
 
 
+set with for columns in reference page.
 
-enumeration input has a flutter on load, due to javascript hiding.
+finish renaming binders to renderers
+
+class mapping is not documented.
+
+message explorer and user explorer are not working correctly.
+    1.  onclick and hte page refreshed and jumps to the top of the page.
+    2. input values for filters are not reproduced.
+    message explorer is not going to work without a back end.

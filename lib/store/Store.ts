@@ -91,6 +91,10 @@ class Store {
     addQueue(queue: Queue) {
         this.queues.push(queue);
     }
+
+    addGroup(group: Group) {
+        this.groups.push(group);
+    }
 }
 
 const INSTANCE = new Store();

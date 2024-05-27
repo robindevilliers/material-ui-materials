@@ -1,1 +1,1 @@
-<tr>${content}</tr>
+<tr id="${id}">${content}</tr>

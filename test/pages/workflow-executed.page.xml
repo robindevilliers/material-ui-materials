@@ -9,7 +9,7 @@
         </paragraph>
 
         <div justifyContent="END" plantainVersion="v1">
-            <close-workflow-executed-panel/>
+            <close-workflow-executed-panel plantainVersion="v1"/>
         </div>
     </jumbotron>
 </page>

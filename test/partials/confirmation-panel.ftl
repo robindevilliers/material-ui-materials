@@ -8,9 +8,11 @@
     </div>
     <div class="row">
         <div class="col s6">
-            <div class="card artefacts-panel card-content">
-                <div class="card-content">
-                    <div class="card-title">Your Artefacts</div>
+            <div class="card">
+                <div class="card-header">
+                    Your Artefacts
+                </div>
+                <div class="card-body">
                     <div class="row">
                         <div class="col s12">
                             <div class="card-image center-align">
@@ -28,73 +30,70 @@
             </div>
         </div>
         <div class="col s6">
-            <div class="card second-stage-entry-panel card-content">
-                <div class="card-content">
-                    <span class="card-title">2nd Stage Authentication</span>
-                    <form action="/authenticate-second-stage" method="post" enctype="application/x-www-form-urlencoded">
+            <form action="${action}" method="post" enctype="application/x-www-form-urlencoded">
+                <div class="card">
+                    <div class="card-header">
+                        2nd Stage Authentication
+                    </div>
+                    <div class="card-body">
                         <input type="hidden" name="_csrf" value="${_csrf}">
                         <div class="card-body">
                             <div class="row">
-                                <div class="col s12">
-                                    Character <span>${firstPasswordPhraseIndex}</span>:
-                                    <div class="input-field inline">
-                                        <input placeholder="?" id="firstCharacter" maxlength="1" type="password"
-                                                name="firstCharacter" style="text-align: right; ">
-                                        <#if errors?? && errors.hasFieldErrors('firstCharacter')>
-                                            <span class="helper-text red-text text-darken-2 error-text"
-                                                    data-error="wrong"
-                                                    data-success="right">${errors.getFieldError("firstCharacter").getDefaultMessage()}</span>
-                                        </#if>
-                                    </div>
+                                <div class="form-group col">
+                                    <label for="firstCharacter"
+                                            class="form-label">Character ${firstPasswordPhraseIndex}</label>
+                                    <input class="form-control" placeholder="?" id="firstCharacter" maxlength="1"
+                                            type="password" name="firstCharacter" style="text-align: right; ">
+                                    <#if errors.firstCharacter??>
+                                        <span class="form-text text-danger">${errors.firstCharacter}</span>
+                                    </#if>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col s12">
-                                    Character <span>${secondPasswordPhraseIndex}</span>:
-                                    <div class="input-field inline">
-                                        <input placeholder="?" id="secondCharacter" maxlength="1" type="password"
-                                                name="secondCharacter" style="text-align: right; ">
-                                        <#if errors?? && errors.hasFieldErrors('secondCharacter')>
-                                            <span class="helper-text red-text text-darken-2 error-text"
-                                                    data-error="wrong"
-                                                    data-success="right">${errors.getFieldError("secondCharacter").getDefaultMessage()}</span>
-                                        </#if>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col s12">Character <span>${thirdPasswordPhraseIndex}</span>:
-                                    <div class="input-field inline">
-                                        <input placeholder="?" id="thirdCharacter" maxlength="1"
-                                                type="password"
-                                                name="thirdCharacter" style="text-align: right; ">
-                                        <#if errors?? && errors.hasFieldErrors('thirdCharacter')>
-                                            <span class="helper-text red-text text-darken-2 error-text"
-                                                    data-error="wrong"
-                                                    data-success="right">${errors.getFieldError("thirdCharacter").getDefaultMessage()}</span>
-                                        </#if>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                                <div class="form-group col">
+                                    <label for="secondCharacter"
+                                            class="form-label">Character ${secondPasswordPhraseIndex}</label>
+                                    <input class="form-control" placeholder="?" id="secondCharacter" maxlength="1"
+                                            type="password"
+                                            name="secondCharacter" style="text-align: right; ">
+                                    <#if errors.secondCharacter??>
+                                        <span class="form-text text-danger">${errors.secondCharacter}</span>
+                                    </#if>
 
-                        <div class="card-action button-section">
-                            <button class="btn cyan waves-effect waves-light" type="submit"
-                                    onclick="${submitOnclick}"
-                                    name="authenticate">
-                                Authenticate<i class="material-icons right">send</i>
-                            </button>
-                            <button class="waves-effect waves-light btn amber lighten-1" type="submit" name="cancel"
-                                    onclick="${cancelOnclick}">
-                                Cancel
-                            </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col">
+                                    <label for="thirdCharacter"
+                                            class="form-label">Character ${thirdPasswordPhraseIndex}</label>
+                                    <input class="form-control" placeholder="?" id="thirdCharacter" maxlength="1"
+                                            type="password" name="thirdCharacter" style="text-align: right; ">
+                                    <#if errors.thirdCharacter??>
+                                        <span class="form-text text-danger">${errors.thirdCharacter}</span>
+                                    </#if>
+                                </div>
+                            </div>
                         </div>
-                        <#if errors?? && errors.hasGlobalErrors()>
-                            <span class="helper-text red-text text-darken-2 error-text">${errors.getGlobalError().getDefaultMessage()}</span>
+                    </div>
+                    <div class="card-footer">
+
+                        <button class="btn btn-primary" type="submit"
+                                name="register"
+                                onclick="${testMode?string('alert(&quot;Authenticate button clicked&quot;); event.preventDefault();','')}">
+                            Authenticate
+                        </button>
+
+                        <button class="btn btn-secondary" type="submit"
+                                name="cancel"
+                                onclick="${testMode?string('alert(&quot;Cancel button clicked&quot;); event.preventDefault();','')}">
+                            Cancel
+                        </button>
+                        <#if errors.global??>
+                            <span class="form-text text-danger">${errors.global}</span>
                         </#if>
-                    </form>
+                    </div>
                 </div>
-            </div>
+            </form>
         </div>
     </div>
 </div>

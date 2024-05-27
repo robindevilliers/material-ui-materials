@@ -1,1 +1,3 @@
-<div id="value-panel-${id}-${key}" class="value-widget no-js-enabled ${classes}" style="${containerStyles}">${content}</div>
+<div id="value-panel-${id}-${key}" class="value-panel-widget">
+    <div class="${classes}" style="${containerStyles}">${content}</div>
+</div>

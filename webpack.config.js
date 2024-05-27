@@ -1,10 +1,8 @@
-//webpack.config.js
 const path = require('path');
 
 module.exports = {
-    mode : "development",
-    // mode: "production",
-    devtool : "inline-source-map",
+    mode : "production",
+    devtool : "source-map",
     entry : {
         main : "./lib/index.ts",
     },

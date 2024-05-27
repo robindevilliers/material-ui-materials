@@ -1,6 +1,6 @@
 <div id="${id}" class="user-explorer-widget ${classes}" style="${itemStyles}">
     <div class="card-header">
-        <form class="form-inline" method="get" action="#${bust}">
+        <form class="form-inline" method="get" action="${action}">
             <input type="hidden" name="bust" value="${bust}"/>
             <#if messageExplorerMode>
                 <input type="hidden" name="mLookupUser" value=""/>
@@ -97,7 +97,7 @@
                                 <div class="user-explorer-form">
 
                                     <#if messageExplorerMode>
-                                        <form class="form-inline" method="get" action="#${bust}">
+                                        <form class="form-inline" method="get" action="${action}">
                                             <input type="hidden" name="bust" value="${bust}"/>
                                             <input type="hidden" name="mPrincipal" value="${val.username}"/>
                                             <input type="hidden" name="mQueue" value="${queue}"/>
@@ -112,31 +112,29 @@
                                             </div>
                                         </form>
                                     <#else >
-                                        <form class="form-inline" method="post" action="/workflow/initiate-as/${executeWorkflow}">
+                                        <form class="form-inline" method="post" action="${executeWorkflow}">
 
                                             <input type="hidden" name="_csrf" value="${_csrf}"/>
                                             <input type="hidden" name="username" value="${val.username}"/>
                                             <div class="btn-group" role="group">
                                                 <button type="submit" aria-label="Select" class="btn btn-primary"
-                                                        name="uSelect">
+                                                        name="uSelect"
+                                                        onclick="${testMode?string('alert(&quot;Select clicked&quot;); event.preventDefault();','')}">
                                                     Select
                                                 </button>
                                             </div>
                                         </form>
                                     </#if>
                                 </div>
-
                             </div>
                         </div>
-
-
                     </div>
                 </#list>
             </div>
         </#if>
     </div>
     <div class="user-explorer-footer">
-        <form class="form-inline" method="get" action="#${bust}">
+        <form class="form-inline" method="get" action="${action}">
             <input type="hidden" name="uUsername" value="${username}"/>
             <input type="hidden" name="uGroup" value="${group}"/>
             <input type="hidden" name="uFirstName" value="${firstName}"/>
@@ -163,7 +161,7 @@
             </div>
         </form>
         <#if messageExplorerMode>
-            <form class="form-inline" method="get" action="#${bust}">
+            <form class="form-inline" method="get" action="${action}">
                 <input type="hidden" name="bust" value="${bust}"/>
                 <input type="hidden" name="mQueue" value="${queue}"/>
                 <input type="hidden" name="mPrincipal" value="${principal}"/>

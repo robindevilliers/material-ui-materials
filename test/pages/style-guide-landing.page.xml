@@ -1,21 +1,21 @@
 <page id="test" version="1" active="false" released="false" group="admin" title="Style Guide - Landing Page"
       description="test"
       defnVersion="v1" orientation="COLUMN">
-    <div plantainVersion="v1" orientation="ROW">
+    <div v="v1" orientation="ROW">
         <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" margin="0em 1em" padding="1em"
-             borderRadius="1em" plantainVersion="v1">
+             borderRadius="1em" v="v1">
             <tool-tip exposition="Image">
                 <image src="logo.svg" alt="Logo" title="Logo" imageHeight="320px" imageWidth="320px"
-                       plantainVersion="v1"/>
+                       v="v1"/>
             </tool-tip>
             <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" margin="1em 0em" padding="1em"
-                 borderRadius="1em" plantainVersion="v1">
+                 borderRadius="1em" v="v1">
 
                 <tool-tip exposition="Title">
-                    <title size="LARGE" plantainVersion="v1">Turtles of Postmodernism</title>
+                    <title size="LARGE" v="v1">Turtles of Postmodernism</title>
                 </tool-tip>
                 <tool-tip exposition="Paragraph">
-                    <paragraph paragraphStyle="SUPPRESSED" width="250px" plantainVersion="v1">
+                    <paragraph paragraphStyle="SUPPRESSED" width="250px" v="v1">
                         Neque porro quisquam est, qui dolorem ipsum quia dolor sit
                         amet, consectetur.
                     </paragraph>
@@ -24,19 +24,19 @@
         </div>
         <tool-tip exposition="Carousel">
             <carousel autoSlide="false" indicators="true" controls="true" height="500px" width="800px" flexShrink="0"
-                      plantainVersion="v1" borderRadius="1em">
+                      v="v1" borderRadius="1em">
                 <carousel-panel src="panel-1.jpg" active="false" interval="5000" justifyContent="CENTER"
                                 orientation="COLUMN"
                                 alignItems="END">
                     <tool-tip exposition="Div">
                         <div orientation="COLUMN" alignSelf="END" margin="0em 10em 0em 0em" padding="1em"
                              backgroundFlavour="INFO"
-                             borderRadius="1em" plantainVersion="v1">
+                             borderRadius="1em" v="v1">
                             <tool-tip exposition="Title">
-                                <title size="LARGE" fontFlavour="BLACK" plantainVersion="v1">Eaves of Lettuce</title>
+                                <title size="LARGE" fontFlavour="BLACK" v="v1">Eaves of Lettuce</title>
                             </tool-tip>
                             <tool-tip exposition="Paragraph">
-                                <paragraph paragraphStyle="PLAIN" width="250px" plantainVersion="v1">
+                                <paragraph paragraphStyle="PLAIN" width="250px" v="v1">
                                     Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
                                     doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
                                     veritatis et quasi architecto beatae vitae dicta sunt explicabo.
@@ -49,11 +49,11 @@
                                 alignItems="CENTER">
                     <title size="LARGE" fontFlavour="BLACK" padding="0em 1em" backgroundFlavour="INFO"
                            borderRadius="0.25em"
-                           plantainVersion="v1">
+                           v="v1">
                         Opinions from Cheddar
                     </title>
                     <paragraph paragraphStyle="PLAIN" width="400px" backgroundFlavour="WHITE" borderRadius="1em"
-                               plantainVersion="v1">
+                               v="v1">
                         At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
                         deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non
                         provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et
@@ -62,10 +62,10 @@
                 </carousel-panel>
                 <carousel-panel src="panel-3.jpg" active="false" justifyContent="END" orientation="COLUMN"
                                 alignItems="START">
-                    <div margin="2em" padding="1em" backgroundFlavour="PRIMARY" plantainVersion="v1">
+                    <div margin="2em" padding="1em" backgroundFlavour="PRIMARY" v="v1">
                         <image src="temp0.jpg" imageHeight="181px" imageWidth="278px" borderRadius="5px"
-                               border="2px solid black" plantainVersion="v1"/>
-                        <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                               border="2px solid black" v="v1"/>
+                        <paragraph paragraphStyle="PLAIN" v="v1">
                             Harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis
                             est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus,
                             omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut
@@ -79,19 +79,19 @@
             </carousel>
         </tool-tip>
     </div>
-    <div plantainVersion="v1" orientation="ROW">
-        <div orientation="COLUMN" alignItems="CENTER" margin="0 0.5em" plantainVersion="v1">
+    <div v="v1" orientation="ROW">
+        <div orientation="COLUMN" alignItems="CENTER" margin="0 0.5em" v="v1">
             <tool-tip exposition="Icon">
-                <icon plantainVersion="v1" name="car-front-fill"/>
+                <icon v="v1" name="car-front-fill"/>
             </tool-tip>
             <tool-tip exposition="Title">
                 <title size="MEDIUM" fontFlavour="PRIMARY" padding="0em 1em"
-                       plantainVersion="v1">
+                       v="v1">
                     Lorem Ipsum
                 </title>
             </tool-tip>
             <tool-tip exposition="Paragraph">
-                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                <paragraph paragraphStyle="PLAIN" v="v1">
                     Harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est
                     eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis
                     voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis
@@ -101,18 +101,18 @@
                 </paragraph>
             </tool-tip>
         </div>
-        <div orientation="COLUMN" alignItems="CENTER" plantainVersion="v1">
+        <div orientation="COLUMN" alignItems="CENTER" v="v1">
             <tool-tip exposition="Icon">
-                <icon plantainVersion="v1" name="archive-fill"/>
+                <icon v="v1" name="archive-fill"/>
             </tool-tip>
             <tool-tip exposition="Title">
                 <title size="MEDIUM" fontFlavour="PRIMARY" padding="0em 1em"
-                       plantainVersion="v1">
+                       v="v1">
                     Lorem Ipsum
                 </title>
             </tool-tip>
             <tool-tip exposition="Paragraph">
-                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                <paragraph paragraphStyle="PLAIN" v="v1">
                     Harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est
                     eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis
                     voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis
@@ -122,18 +122,18 @@
                 </paragraph>
             </tool-tip>
         </div>
-        <div orientation="COLUMN" alignItems="CENTER" plantainVersion="v1">
+        <div orientation="COLUMN" alignItems="CENTER" v="v1">
             <tool-tip exposition="Icon">
-                <icon flavour="DEFAULT" name="clipboard-data-fill" plantainVersion="v1"/>
+                <icon flavour="DEFAULT" name="clipboard-data-fill" v="v1"/>
             </tool-tip>
             <tool-tip exposition="Title">
                 <title size="MEDIUM" fontFlavour="PRIMARY" padding="0em 1em"
-                       plantainVersion="v1">
+                       v="v1">
                     Lorem Ipsum
                 </title>
             </tool-tip>
             <tool-tip exposition="Paragraph">
-                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                <paragraph paragraphStyle="PLAIN" v="v1">
                     Harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est
                     eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis
                     voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis

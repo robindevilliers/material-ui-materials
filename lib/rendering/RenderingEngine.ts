@@ -2,7 +2,7 @@ import { Substitutions } from './Substitutions';
 import Properties from './Properties';
 import { Element, escapeString, isElement, isText } from '../xml-parser';
 import generateId from '../utilities/generate-id';
-import { findBinder } from './renderers';
+import { findRenderer } from './renderers';
 import { FreemarkerError } from '../freemarker/FreemarkerError';
 import fs from 'fs';
 import path from 'node:path';
@@ -20,12 +20,12 @@ export default class RenderingEngine {
             element.attributes.id = generateId();
         }
 
-        const binder = findBinder(element.name);
-        if (binder === undefined) {
+        const renderer = findRenderer(element.name);
+        if (renderer === undefined) {
             throw new FreemarkerError("No binding found for " + element.name);
         }
 
-        return binder.render(element, this.classMappings, this, this.substitutions, parent);
+        return renderer.render(element, this.classMappings, this, this.substitutions, parent);
     }
 
     renderChildren(element: Element) {

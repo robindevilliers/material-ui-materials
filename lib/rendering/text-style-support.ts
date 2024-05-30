@@ -6,6 +6,24 @@ export function textStyleSupport(data: Record<string, any>, classManager: ClassM
 
     const styles: Record<string, string> = {};
 
+    if (attributes.font) {
+        if (attributes.font === 'TITLE_PRIMARY') {
+            classManager.add("font-title-primary");
+        } else if (attributes.font === 'TITLE_SECONDARY') {
+            classManager.add("font-title-secondary");
+        } else if (attributes.font === 'TEXT_PRIMARY') {
+            classManager.add("font-text-primary");
+        } else if (attributes.font === 'TEXT_SECONDARY') {
+            classManager.add("font-text-secondary");
+        } else if (attributes.font === 'EXHIBIT') {
+            classManager.add("font-exhibit");
+        } else if (attributes.font === 'PRIMARY') {
+            classManager.add("font-primary");
+        } else if (attributes.font === 'SECONDARY') {
+            classManager.add("font-secondary");
+        }
+    }
+
     if (attributes.textAlign) {
         styles['text-align'] = attributes.textAign.toLowerCase();
     }

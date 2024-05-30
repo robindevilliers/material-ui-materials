@@ -6,6 +6,7 @@ import { textStyleSupport } from '../text-style-support';
 import ClassManager from '../ClassManager';
 import RenderingEngine from '../RenderingEngine';
 import Store from '../../store/Store';
+import { RenderError } from '../RenderError';
 
 export default class PasswordResetLinkRenderer implements Renderer {
     accept(name: string): boolean {
@@ -13,6 +14,10 @@ export default class PasswordResetLinkRenderer implements Renderer {
     }
 
     render(element: Element, classMappings: Properties, renderingEngine: RenderingEngine): string {
+
+        if (!element.attributes.v) {
+            throw new RenderError("Version attribute 'v' not configured against element: " + element.name);
+        }
 
         const data: Record<string, any> = {};
         data.id = element.attributes.id;

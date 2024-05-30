@@ -6,6 +6,7 @@ import ClassManager from '../ClassManager';
 import RenderingEngine from '../RenderingEngine';
 import generateId from '../../utilities/generate-id';
 import Store from '../../store/Store';
+import { RenderError } from '../RenderError';
 
 export default class LoginPanelRenderer implements Renderer {
     accept(name: string): boolean {
@@ -13,6 +14,10 @@ export default class LoginPanelRenderer implements Renderer {
     }
 
     render(element: Element, classMappings: Properties, renderingEngine: RenderingEngine): string {
+
+        if (!element.attributes.v) {
+            throw new RenderError("Version attribute 'v' not configured against element: " + element.name);
+        }
 
         const data: Record<string, any> = {};
 

@@ -1,10 +1,10 @@
 <form defnVersion="v1" id="intro" title="Outro" orientation="COLUMN">
-    <title size="LARGE" plantainVersion="v1">Finished</title>
-    <paragraph plantainVersion="v1">Thank you for completing the wizard. A member of staff will be in contact with you
+    <title size="LARGE" v="v1">Finished</title>
+    <paragraph v="v1">Thank you for completing the wizard. A member of staff will be in contact with you
         shortly.
     </paragraph>
-    <paragraph plantainVersion="v1">If you need to, please do not hesistate to contact us on 000-00-00-00-00. Or email
+    <paragraph v="v1">If you need to, please do not hesistate to contact us on 000-00-00-00-00. Or email
         us at xyz@maximillian.com.
     </paragraph>
-    <button plantainVersion="v1" type="NEXT" required="false">Complete</button>
+    <button v="v1" type="NEXT" required="false">Complete</button>
 </form>

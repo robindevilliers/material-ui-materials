@@ -5,6 +5,7 @@ import { Substitutions } from '../Substitutions';
 import RenderingEngine from '../RenderingEngine';
 import ClassManager from '../ClassManager';
 import flexItemSupport from '../flex-item-support';
+import { RenderError } from '../RenderError';
 
 export default class SwitchRenderer implements Renderer {
     accept(name: string): boolean {
@@ -12,6 +13,10 @@ export default class SwitchRenderer implements Renderer {
     }
 
     render(element: Element, classMappings: Properties, renderingEngine: RenderingEngine, substitutions: Substitutions): string {
+
+        if (!element.attributes.v) {
+            throw new RenderError("Version attribute 'v' not configured against element: " + element.name);
+        }
 
         const children = element.children.filter(el => isElement(el)).map(el => el as Element);
 

@@ -178,135 +178,135 @@
             has="staff"
         />
 
-        <div plantainVersion="v1" orientation="COLUMN">
-            <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" plantainVersion="v1"
+        <div v="v1" orientation="COLUMN">
+            <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
                  flexBasis="100%">
-                <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" plantainVersion="v1"
+                <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
                      flexBasis="100%" width="100%">
-                    <title size="LARGE" plantainVersion="v1">Login Panel</title>
-                    <paragraph plantainVersion="v1" flexBasis="500px">
+                    <title size="LARGE" v="v1">Login Panel</title>
+                    <paragraph v="v1" flexBasis="500px">
                         The Login Panel widget is used to present a login dialog on the page that allows the user to
                         enter their credentials and perform the authentication process.
                     </paragraph>
                 </div>
-                <login-panel plantainVersion="v1"/>
+                <login-panel v="v1"/>
             </div>
             <horizontal-rule/>
-            <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" plantainVersion="v1"
+            <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
                  flexBasis="100%">
 
-                <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" plantainVersion="v1"
+                <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
                      flexBasis="100%" width="100%">
-                    <title size="LARGE" plantainVersion="v1">Registration Panel</title>
-                    <paragraph plantainVersion="v1" flexBasis="500px">
+                    <title size="LARGE" v="v1">Registration Panel</title>
+                    <paragraph v="v1" flexBasis="500px">
                         The Registration Panel widget is used to present the registration panel which is the prescribed
                         first step in registering a new user. All fields are required. The Registration panel can be
                         followed by a registration wizard that can collect custom data required by the Client.
                     </paragraph>
                 </div>
-                <register-panel plantainVersion="v1"/>
+                <register-panel v="v1"/>
             </div>
             <horizontal-rule/>
-            <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" plantainVersion="v1"
+            <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
                  flexBasis="100%" width="100%">
 
-                <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" plantainVersion="v1"
+                <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
                      flexBasis="100%">
-                    <title size="LARGE" plantainVersion="v1">Reset Password Request Panel</title>
-                    <paragraph plantainVersion="v1" flexBasis="500px">
+                    <title size="LARGE" v="v1">Reset Password Request Panel</title>
+                    <paragraph v="v1" flexBasis="500px">
                         The Reset Password Request panel presents a panel that accepts the email address of the current
                         user, in order to reset their password.
                     </paragraph>
                 </div>
-                <reset-password-request-panel plantainVersion="v1"/>
+                <reset-password-request-panel v="v1"/>
             </div>
             <horizontal-rule/>
-            <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" plantainVersion="v1"
+            <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
                  flexBasis="100%" width="100%">
-                <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" plantainVersion="v1"
+                <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
                      flexBasis="100%">
-                    <title size="LARGE" plantainVersion="v1">Reset Password Panel</title>
-                    <paragraph plantainVersion="v1" flexBasis="500px">
+                    <title size="LARGE" v="v1">Reset Password Panel</title>
+                    <paragraph v="v1" flexBasis="500px">
                         The Reset Password Request panel presents a panel that accepts the email address of the current
                         user, in order to reset their password.
                     </paragraph>
                 </div>
 
-                <reset-password-panel plantainVersion="v1"/>
+                <reset-password-panel v="v1"/>
             </div>
         </div>
 
         <horizontal-rule/>
-        <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" plantainVersion="v1"
+        <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
              flexBasis="100%">
-            <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" plantainVersion="v1"
+            <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
                  flexBasis="100%" width="100%">
-                <title size="LARGE" plantainVersion="v1">Workflow Initiate Button</title>
-                <paragraph plantainVersion="v1" flexBasis="500px">
+                <title size="LARGE" v="v1">Workflow Initiate Button</title>
+                <paragraph v="v1" flexBasis="500px">
                     The Workflow Initiate Button will fire a workflow.
                 </paragraph>
             </div>
             <initiate-workflow-button workflow="workflow-one" size="MEDIUM" buttonFlavour="PRIMARY"
-                                      plantainVersion="v1">
+                                      v="v1">
                 Fire Workflow
             </initiate-workflow-button>
         </div>
         <horizontal-rule/>
-        <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" plantainVersion="v1"
+        <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
              flexBasis="100%">
-            <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" plantainVersion="v1"
+            <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
                  flexBasis="100%" width="100%">
-                <title size="LARGE" plantainVersion="v1">Menu</title>
-                <paragraph plantainVersion="v1" flexBasis="500px">
+                <title size="LARGE" v="v1">Menu</title>
+                <paragraph v="v1" flexBasis="500px">
                     The Menu widget displays a selection of workflows for user to execute.
                 </paragraph>
             </div>
-            <menu axis="HORIZONTAL" plantainVersion="v1">
-                <menu-brand plantainVersion="v1">menu brand</menu-brand>
-                <menu-item type="workflow" workflow="workflow-one" flavour="DEFAULT" plantainVersion="v1">
+            <menu axis="HORIZONTAL" v="v1">
+                <menu-brand v="v1">menu brand</menu-brand>
+                <menu-item type="workflow" workflow="workflow-one" flavour="DEFAULT" v="v1">
                     workflow 1
                 </menu-item>
-                <menu-item type="workflow" workflow="workflow-two" flavour="DEFAULT" plantainVersion="v1">
+                <menu-item type="workflow" workflow="workflow-two" flavour="DEFAULT" v="v1">
                     workflow 2
                 </menu-item>
-                <menu-item type="workflow" workflow="workflow-three" flavour="DEFAULT" plantainVersion="v1">
+                <menu-item type="workflow" workflow="workflow-three" flavour="DEFAULT" v="v1">
                     workflow 3
                 </menu-item>
-                <sub-menu flavour="DEFAULT" plantainVersion="v1">
-                    <sub-menu-label plantainVersion="v1">sub menu label</sub-menu-label>
+                <sub-menu flavour="DEFAULT" v="v1">
+                    <sub-menu-label v="v1">sub menu label</sub-menu-label>
                     <menu-item type="page" page="one" flavour="DEFAULT">page 1</menu-item>
                     <menu-item type="page" page="two" flavour="DEFAULT">page 2</menu-item>
-                    <menu-item type="workflow" workflow="workflow-four" flavour="DEFAULT" plantainVersion="v1">
+                    <menu-item type="workflow" workflow="workflow-four" flavour="DEFAULT" v="v1">
                         workflow 4
                     </menu-item>
                 </sub-menu>
-                <menu-item type="page" page="three" flavour="DEFAULT" plantainVersion="v1">page 3</menu-item>
+                <menu-item type="page" page="three" flavour="DEFAULT" v="v1">page 3</menu-item>
             </menu>
         </div>
         <horizontal-rule/>
-        <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" plantainVersion="v1"
+        <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
              flexBasis="100%">
-            <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" plantainVersion="v1"
+            <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
                  flexBasis="100%" width="100%">
-                <title size="LARGE" plantainVersion="v1">Tray</title>
-                <paragraph plantainVersion="v1" flexBasis="500px">
+                <title size="LARGE" v="v1">Tray</title>
+                <paragraph v="v1" flexBasis="500px">
                     The Tray widget presents a list of tray entries that are in the specified queue and that belongs to
                     a compatible group with the current user. This widget is intended to display a limited set of tray
                     entries which is what you will find as a member of the public or a customer or case principal. This
                     widget is intended to be customer facing.
                 </paragraph>
             </div>
-            <tray queue="main-user" plantainVersion="v1">
+            <tray queue="main-user" v="v1">
                 <tray-header>In Tray</tray-header>
             </tray>
         </div>
         <horizontal-rule/>
-        <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" plantainVersion="v1"
+        <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
              flexBasis="100%">
-            <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" plantainVersion="v1"
+            <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
                  flexBasis="100%" width="100%">
-                <title size="LARGE" plantainVersion="v1">Message Explorer</title>
-                <paragraph plantainVersion="v1" flexBasis="500px">
+                <title size="LARGE" v="v1">Message Explorer</title>
+                <paragraph v="v1" flexBasis="500px">
                     The Message Explorer widget allows the user to search for and view any messages to which he or she
                     has access. This widget is intended to be a powerful browser intended for members of staff.
                     Multiple queues can be searched, and messages can be filtered by workflow, wizard and username. You
@@ -315,16 +315,16 @@
                     deployed.
                 </paragraph>
             </div>
-            <message-explorer queue="main-user" plantainVersion="v1">
+            <message-explorer queue="main-user" v="v1">
             </message-explorer>
         </div>
         <horizontal-rule/>
-        <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" plantainVersion="v1"
+        <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
              flexBasis="100%">
-            <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" plantainVersion="v1"
+            <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
                  flexBasis="100%" width="100%">
-                <title size="LARGE" plantainVersion="v1">User Explorer</title>
-                <paragraph plantainVersion="v1" flexBasis="500px">
+                <title size="LARGE" v="v1">User Explorer</title>
+                <paragraph v="v1" flexBasis="500px">
                     The User Explorer widget allows the current user to search through the user accounts. This has a
                     couple of purposes. The first is when a workflow is executed by staff, and they want to manually
                     assign the case to a specific case principal. The second is when searching for a username to use as
@@ -333,64 +333,64 @@
                     make sure this works when the materials are deployed.
                 </paragraph>
             </div>
-            <user-explorer plantainVersion="v1"/>
+            <user-explorer v="v1"/>
         </div>
 
         <horizontal-rule/>
-        <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" plantainVersion="v1"
+        <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
              flexBasis="100%">
-            <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" plantainVersion="v1"
+            <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
                  flexBasis="100%" width="100%">
-                <title size="LARGE" plantainVersion="v1">Loop</title>
-                <paragraph plantainVersion="v1" flexBasis="500px">
+                <title size="LARGE" v="v1">Loop</title>
+                <paragraph v="v1" flexBasis="500px">
                     This section displays a list of groups. It uses the Loop Widget and if the page renders,
                     proves that the artefacts are correctly setup for use of the same. You should see the values in the
                     plantain substitutions file reproduced here in vertical orientation.
                 </paragraph>
             </div>
-            <loop reference="%profile%.groups" plantainVersion="v1">
-                <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
-                    <script script="." plantainVersion="v1"/>
+            <loop reference="%profile%.groups" v="v1">
+                <paragraph paragraphStyle="PLAIN" v="v1">
+                    <script script="." v="v1"/>
                 </paragraph>
             </loop>
         </div>
         <horizontal-rule/>
-        <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" plantainVersion="v1"
+        <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
              flexBasis="100%">
-            <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" plantainVersion="v1"
+            <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
                  flexBasis="100%" width="100%">
-                <title size="LARGE" plantainVersion="v1">Switch</title>
-                <paragraph plantainVersion="v1" flexBasis="500px">
+                <title size="LARGE" v="v1">Switch</title>
+                <paragraph v="v1" flexBasis="500px">
                     This section renders a Switch Widget which will alternatively display panels depending on a Plantain
                     expression. We can force the value of an expression using the plantain substitutions file.
                 </paragraph>
             </div>
-            <switch plantainVersion="v1">
+            <switch v="v1">
                 <def orientation="COLUMN">
-                    <paragraph paragraphStyle="PLAIN" plantainVersion="v1">default content</paragraph>
+                    <paragraph paragraphStyle="PLAIN" v="v1">default content</paragraph>
                 </def>
-                <if condition="%userdata% .alpha" plantainVersion="v1" orientation="COLUMN">
-                    <paragraph paragraphStyle="PLAIN" plantainVersion="v1">if content</paragraph>
+                <if condition="%userdata% .alpha" v="v1" orientation="COLUMN">
+                    <paragraph paragraphStyle="PLAIN" v="v1">if content</paragraph>
                 </if>
             </switch>
-            <switch plantainVersion="v1">
+            <switch v="v1">
                 <def orientation="COLUMN">
-                    <paragraph paragraphStyle="PLAIN" plantainVersion="v1">default content</paragraph>
+                    <paragraph paragraphStyle="PLAIN" v="v1">default content</paragraph>
                 </def>
-                <if condition="%userdata% .beta" plantainVersion="v1" orientation="COLUMN">
-                    <paragraph paragraphStyle="PLAIN" plantainVersion="v1">if content</paragraph>
+                <if condition="%userdata% .beta" v="v1" orientation="COLUMN">
+                    <paragraph paragraphStyle="PLAIN" v="v1">if content</paragraph>
                 </if>
             </switch>
         </div>
 
         <horizontal-rule/>
 
-        <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" plantainVersion="v1"
+        <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
              flexBasis="100%">
-            <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" plantainVersion="v1"
+            <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
                  flexBasis="100%" width="100%">
-                <title size="LARGE" plantainVersion="v1">Close Workflow Executed Panel</title>
-                <paragraph plantainVersion="v1" flexBasis="500px">
+                <title size="LARGE" v="v1">Close Workflow Executed Panel</title>
+                <paragraph v="v1" flexBasis="500px">
                     This widget presents the panel that has the button that closes the Workflow Executed Page. When a
                     workflow is first initiated, we present the user with the Confirm Workflow Page. If they confirm,
                     then they are presented with the Workflow Executed Page. This page requires a button that will close
@@ -398,89 +398,89 @@
                     provides the facility.
                 </paragraph>
             </div>
-            <jumbotron plantainVersion="v1" orientation="COLUMN">
-                <close-workflow-executed-panel plantainVersion="v1"/>
+            <jumbotron v="v1" orientation="COLUMN">
+                <close-workflow-executed-panel v="v1"/>
             </jumbotron>
         </div>
 
         <horizontal-rule/>
 
-        <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" plantainVersion="v1"
+        <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
              flexBasis="100%">
-            <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" plantainVersion="v1"
+            <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
                  flexBasis="100%" width="100%">
-                <title size="LARGE" plantainVersion="v1">Confirm Workflow Panel</title>
-                <paragraph plantainVersion="v1" flexBasis="500px">
+                <title size="LARGE" v="v1">Confirm Workflow Panel</title>
+                <paragraph v="v1" flexBasis="500px">
                     This widget presents the panel that allows the user to confirm if they intended to execute a
                     workflow or not. When a user initiates a workflow, we present the Workflow Confirm Page. This page
                     presents confirm and cancel options to the user. This panel presents those buttons.
                 </paragraph>
             </div>
-            <confirm-workflow-panel plantainVersion="v1"/>
+            <confirm-workflow-panel v="v1"/>
         </div>
 
         <horizontal-rule/>
 
-        <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" plantainVersion="v1"
+        <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
              flexBasis="100%">
-            <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" plantainVersion="v1"
+            <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
                  flexBasis="100%" width="100%">
-                <title size="LARGE" plantainVersion="v1">Confirmation Panel</title>
-                <paragraph plantainVersion="v1" flexBasis="500px">
+                <title size="LARGE" v="v1">Confirmation Panel</title>
+                <paragraph v="v1" flexBasis="500px">
                     The Confirmation Panel is used in Two Phase Authentication where the user is presented with a
                     secondary challenge once first authenticating. This facility is not currently available.
                 </paragraph>
             </div>
-            <confirmation-panel plantainVersion="v1"/>
+            <confirmation-panel v="v1"/>
         </div>
         <horizontal-rule/>
 
-        <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" plantainVersion="v1"
+        <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
              flexBasis="100%">
-            <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" plantainVersion="v1"
+            <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
                  flexBasis="100%" width="100%">
-                <title size="LARGE" plantainVersion="v1">Password Reset Link</title>
-                <paragraph plantainVersion="v1" flexBasis="500px">
+                <title size="LARGE" v="v1">Password Reset Link</title>
+                <paragraph v="v1" flexBasis="500px">
                     When a user forgets his password, he can request a password reset. He will be sent an email, and
                     within the email is the Password Reset Link. This widget facilitates the link.
                 </paragraph>
             </div>
-            <password-reset-link plantainVersion="v1" label="Reset Password"/>
+            <password-reset-link v="v1" label="Reset Password"/>
         </div>
 
         <horizontal-rule/>
 
-        <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" plantainVersion="v1"
+        <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
              flexBasis="100%">
-            <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" plantainVersion="v1"
+            <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
                  flexBasis="100%" width="100%">
-                <title size="LARGE" plantainVersion="v1">Email Confirmation Link</title>
-                <paragraph plantainVersion="v1" flexBasis="500px">
+                <title size="LARGE" v="v1">Email Confirmation Link</title>
+                <paragraph v="v1" flexBasis="500px">
                     When a user first registers, he is required to confirm his email address. He will be sent an email,
                     and will be required to click on a link within. This widget facilitates that link.
                 </paragraph>
             </div>
-            <email-confirmation-link plantainVersion="v1" label="Confirm Email"/>
+            <email-confirmation-link v="v1" label="Confirm Email"/>
         </div>
 
         <horizontal-rule/>
 
-        <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" plantainVersion="v1"
+        <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
              flexBasis="100%">
-            <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" plantainVersion="v1"
+            <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
                  flexBasis="100%" width="100%">
-                <title size="LARGE" plantainVersion="v1">Card as Link</title>
-                <paragraph plantainVersion="v1" flexBasis="500px">
+                <title size="LARGE" v="v1">Card as Link</title>
+                <paragraph v="v1" flexBasis="500px">
                     Cards can be configured so that the entire Card is clickable, and will lead to another page.
                 </paragraph>
             </div>
             <card link="true" view="style-guide-landing.html"
-                  width="300px" flexShrink="0" margin="0em 0em 0em 1em" plantainVersion="v1">
+                  width="300px" flexShrink="0" margin="0em 0em 0em 1em" v="v1">
                 <image src="temp0.jpg" alt="Image of Suzi" title="Suzi Profile Picture" imageHeight="200px"
-                       imageWidth="300px" plantainVersion="v1"/>
+                       imageWidth="300px" v="v1"/>
                 <card-body orientation="COLUMN">
-                    <title size="SMALLER" plantainVersion="v1">Lorem Ipsum</title>
-                    <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+                    <title size="SMALLER" v="v1">Lorem Ipsum</title>
+                    <paragraph paragraphStyle="PLAIN" v="v1">
                         Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
                         laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.
                     </paragraph>

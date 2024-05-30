@@ -17,6 +17,7 @@
             <form action="${action}" method="post" enctype="application/x-www-form-urlencoded"
                     class="menu-item-form">
                 <input type="hidden" name="_csrf" value="${_csrf}">
+                <input type="hidden" name="showCasePrincipalPicker" value="${showCasePrincipalPicker?string('true','false')}">
                 <button id="${id}" style="${textualStyles}" class="btn nav-link ${classes}"
                         <#if disabled??>disabled</#if>
                         onclick="${testMode?string('alert(&quot;Menu Item clicked&quot;); event.preventDefault();','')}">${content}</button>

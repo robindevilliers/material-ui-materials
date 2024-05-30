@@ -1,9 +1,9 @@
 <page defnVersion="v1" id="unauthorized" version="1" title="Not Found" description="The Not Found page." group="public">
-    <div plantainVersion="v1" orientation="COLUMN">
-        <div plantainVersion="v1" orientation="ROW" justifyContent="SPACE_AROUND">
-            <div plantainVersion="v1" orientation="COLUMN" justifyContent="SPACE_AROUND" alignItems="CENTER">
-                <title size="LARGE" plantainVersion="v1">Oops! Unauthorized.</title>
-                <paragraph plantainVersion="v1">
+    <div v="v1" orientation="COLUMN">
+        <div v="v1" orientation="ROW" justifyContent="SPACE_AROUND">
+            <div v="v1" orientation="COLUMN" justifyContent="SPACE_AROUND" alignItems="CENTER">
+                <title size="LARGE" v="v1">Oops! Unauthorized.</title>
+                <paragraph v="v1">
                     Sorry. You are not authorized to access the resource you requested.
                 </paragraph>
             </div>

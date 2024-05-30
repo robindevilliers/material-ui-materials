@@ -5,6 +5,7 @@ import flexItemSupport from '../flex-item-support';
 
 import ClassManager from '../ClassManager';
 import RenderingEngine from '../RenderingEngine';
+import { RenderError } from '../RenderError';
 
 export default class ProgressBarRenderer implements Renderer {
     accept(name: string): boolean {
@@ -12,6 +13,10 @@ export default class ProgressBarRenderer implements Renderer {
     }
 
     render(element: Element, classMappings: Properties, renderingEngine: RenderingEngine): string {
+
+        if (!element.attributes.v) {
+            throw new RenderError("Version attribute 'v' not configured against element: " + element.name);
+        }
 
         const milestones = element.children.filter(el => isElement(el))
             .map(el => el as Element)

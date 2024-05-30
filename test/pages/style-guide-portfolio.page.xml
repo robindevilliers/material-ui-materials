@@ -1,20 +1,20 @@
 <page id="test" version="1" active="false" released="false" group="admin" title="Style Guide - Portfolio Page"
       description="test"
       defnVersion="v1" orientation="COLUMN">
-    <div plantainVersion="v1" orientation="ROW">
+    <div v="v1" orientation="ROW">
         <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" margin="0em 1em" padding="1em"
-             borderRadius="1em" plantainVersion="v1">
+             borderRadius="1em" v="v1">
             <tool-tip exposition="Image">
-                <image src="suzi.jpeg" alt="Suzi" title="Logo" plantainVersion="v1"/>
+                <image src="suzi.jpeg" alt="Suzi" title="Logo" v="v1"/>
             </tool-tip>
             <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" margin="1em 0em" padding="1em"
-                 borderRadius="1em" plantainVersion="v1">
+                 borderRadius="1em" v="v1">
 
                 <tool-tip exposition="Title">
-                    <title size="LARGE" plantainVersion="v1">Suzi Florez</title>
+                    <title size="LARGE" v="v1">Suzi Florez</title>
                 </tool-tip>
                 <tool-tip exposition="Paragraph">
-                    <paragraph paragraphStyle="SUPPRESSED" width="250px" plantainVersion="v1">
+                    <paragraph paragraphStyle="SUPPRESSED" width="250px" v="v1">
                         Neque porro quisquam est, qui dolorem ipsum quia dolor sit
                         amet, consectetur.
                     </paragraph>
@@ -22,12 +22,12 @@
             </div>
         </div>
         <tool-tip exposition="Accordion">
-            <accordion flush="false" flavour="PRIMARY" singleActive="true" width="100%" plantainVersion="v1">
+            <accordion flush="false" flavour="PRIMARY" singleActive="true" width="100%" v="v1">
                 <accordion-item backgroundFlavour="PRIMARY" active="true" orientation="COLUMN">
                     <accordion-item-header>
                         Law Practice
                     </accordion-item-header>
-                    <paragraph paragraphStyle="SUPPRESSED" plantainVersion="v1">
+                    <paragraph paragraphStyle="SUPPRESSED" v="v1">
                         Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
                         laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
                         beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
@@ -44,14 +44,14 @@
                     <accordion-item-header>
                         Qualifications
                     </accordion-item-header>
-                    <title size="SMALLER" plantainVersion="v1">Voluptatem accusantium</title>
-                    <paragraph paragraphStyle="SUPPRESSED" width="250px" plantainVersion="v1">
+                    <title size="SMALLER" v="v1">Voluptatem accusantium</title>
+                    <paragraph paragraphStyle="SUPPRESSED" width="250px" v="v1">
                         Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
                         laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
                         beatae vitae dicta sunt explicabo.
                     </paragraph>
-                    <title size="SMALLER" plantainVersion="v1">Accusantium doloremque</title>
-                    <paragraph paragraphStyle="SUPPRESSED" width="250px" plantainVersion="v1">
+                    <title size="SMALLER" v="v1">Accusantium doloremque</title>
+                    <paragraph paragraphStyle="SUPPRESSED" width="250px" v="v1">
                         Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
                         laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
                         beatae vitae dicta sunt explicabo.
@@ -61,7 +61,7 @@
                     <accordion-item-header>
                         Past Experience
                     </accordion-item-header>
-                    <paragraph paragraphStyle="SUPPRESSED" width="250px" plantainVersion="v1">
+                    <paragraph paragraphStyle="SUPPRESSED" width="250px" v="v1">
                         Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
                         laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
                         beatae vitae dicta sunt explicabo.
@@ -72,31 +72,31 @@
                         Contact Details
                     </accordion-item-header>
                     <tool-tip exposition="Table">
-                        <table plantainVersion="v1">
+                        <table v="v1">
                             <row>
                                 <cell>
-                                    <paragraph paragraphStyle="PLAIN" plantainVersion="v1">Landline</paragraph>
+                                    <paragraph paragraphStyle="PLAIN" v="v1">Landline</paragraph>
                                 </cell>
                                 <cell>
-                                    <paragraph paragraphStyle="PLAIN" plantainVersion="v1">(021) 000-0000</paragraph>
+                                    <paragraph paragraphStyle="PLAIN" v="v1">(021) 000-0000</paragraph>
                                 </cell>
                             </row>
                             <row>
                                 <cell>
-                                    <paragraph paragraphStyle="PLAIN" plantainVersion="v1">Mobile Number</paragraph>
+                                    <paragraph paragraphStyle="PLAIN" v="v1">Mobile Number</paragraph>
                                 </cell>
                                 <cell>
-                                    <paragraph paragraphStyle="PLAIN" plantainVersion="v1">(021) 078 000-0000
+                                    <paragraph paragraphStyle="PLAIN" v="v1">(021) 078 000-0000
                                     </paragraph>
                                 </cell>
                             </row>
                             <row>
                                 <cell>
-                                    <paragraph paragraphStyle="PLAIN" plantainVersion="v1">Correspondence Address
+                                    <paragraph paragraphStyle="PLAIN" v="v1">Correspondence Address
                                     </paragraph>
                                 </cell>
                                 <cell>
-                                    <paragraph paragraphStyle="PLAIN" plantainVersion="v1">123A Artur Street, Clydes
+                                    <paragraph paragraphStyle="PLAIN" v="v1">123A Artur Street, Clydes
                                         Ville, 8001
                                     </paragraph>
                                 </cell>

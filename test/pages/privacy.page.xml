@@ -1,15 +1,15 @@
 <page defnVersion="v1" id="privacy" version="1" title="Privacy" description="The privacy page." group="public">
-    <div plantainVersion="v1" orientation="COLUMN">
-        <div plantainVersion="v1" orientation="ROW" justifyContent="SPACE_AROUND">
-            <div plantainVersion="v1" orientation="COLUMN" justifyContent="SPACE_AROUND" alignItems="CENTER">
-                <title size="MEDIUM" plantainVersion="v1">Privacy Policy</title>
-                <paragraph plantainVersion="v1">
+    <div v="v1" orientation="COLUMN">
+        <div v="v1" orientation="ROW" justifyContent="SPACE_AROUND">
+            <div v="v1" orientation="COLUMN" justifyContent="SPACE_AROUND" alignItems="CENTER">
+                <title size="MEDIUM" v="v1">Privacy Policy</title>
+                <paragraph v="v1">
                     We use cookies to enable standard web technologies such as authentication. These cookies are the
                     bare minimum needed in order to provide the functionality we provide. No action is possible on
                     the site without the use of these cookies. We do not use these cookies in support of tracing for
                     marketing purposes etc. We do not share any data with third parties.
                 </paragraph>
-                <back-link plantainVersion="v1"/>
+                <back-link v="v1"/>
             </div>
         </div>
     </div>

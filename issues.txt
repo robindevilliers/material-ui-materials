@@ -1,10 +1,7 @@
 
 
-set with for columns in reference page.
 
-finish renaming binders to renderers
-
-class mapping is not documented.
+set width for columns in reference page.
 
 message explorer and user explorer are not working correctly.
     1.  onclick and hte page refreshed and jumps to the top of the page.

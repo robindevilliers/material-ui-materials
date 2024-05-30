@@ -1,6 +1,6 @@
 <form defnVersion="v1" id="intro" title="Intro" orientation="COLUMN">
-    <title size="LARGE" plantainVersion="v1">Start Wizard</title>
-    <paragraph plantainVersion="v1">You are about to be presented with a form to complete. There will be a number of web
+    <title size="LARGE" v="v1">Start Wizard</title>
+    <paragraph v="v1">You are about to be presented with a form to complete. There will be a number of web
         pages requesting information from you. Please fill in the details accurately. Falsifying information can have
         very severe legal consequences. If, for whatever reason, you are unable to complete the wizard in one session,
         the current wizard will be presented to you when you login in again. The information you supply will be saved
@@ -8,20 +8,20 @@
         use the browser back and forward buttons to navigate between pages. We hope you have a great experience filling
         out the form. If you need help, please contact us.
     </paragraph>
-    <div justifyContent="SPACE_BETWEEN" plantainVersion="v1">
-        <title size="SMALL" plantainVersion="v1">Wizard</title>
-        <paragraph plantainVersion="v1">
-            <script plantainVersion="v1" script=".title"/>
+    <div justifyContent="SPACE_BETWEEN" v="v1">
+        <title size="SMALL" v="v1">Wizard</title>
+        <paragraph v="v1">
+            <script v="v1" script=".title"/>
         </paragraph>
     </div>
-    <div justifyContent="SPACE_BETWEEN" plantainVersion="v1">
-        <title size="SMALL" plantainVersion="v1">Description</title>
-        <paragraph plantainVersion="v1">
-            <script plantainVersion="v1" script=".description"/>
+    <div justifyContent="SPACE_BETWEEN" v="v1">
+        <title size="SMALL" v="v1">Description</title>
+        <paragraph v="v1">
+            <script v="v1" script=".description"/>
         </paragraph>
     </div>
-    <paragraph plantainVersion="v1">If you encounter any problems, please do not hesistate to contact us on
+    <paragraph v="v1">If you encounter any problems, please do not hesistate to contact us on
         000-00-00-00-00. Or email us at xyz@maximillian.com.
     </paragraph>
-    <button type="NEXT" required="false" plantainVersion="v1">Start</button>
+    <button type="NEXT" required="false" v="v1">Start</button>
 </form>

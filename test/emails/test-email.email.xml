@@ -1,13 +1,13 @@
 <email defnVersion="v1" id="test-email" version="1">
-    <div plantainVersion="v1" orientation="COLUMN">
-        <div plantainVersion="v1" orientation="ROW" justifyContent="SPACE_AROUND">
-            <div plantainVersion="v1" orientation="COLUMN" justifyContent="SPACE_AROUND" alignItems="CENTER">
-                <title size="LARGE" plantainVersion="v1">Test Email</title>
-                <paragraph plantainVersion="v1">
+    <div v="v1" orientation="COLUMN">
+        <div v="v1" orientation="ROW" justifyContent="SPACE_AROUND">
+            <div v="v1" orientation="COLUMN" justifyContent="SPACE_AROUND" alignItems="CENTER">
+                <title size="LARGE" v="v1">Test Email</title>
+                <paragraph v="v1">
                     This is a test email. The following paragraph will contain the phrase sent during the test request.
                 </paragraph>
-                <paragraph plantainVersion="v1">
-                    <script plantainVersion="v1" script="%phrase%"/>
+                <paragraph v="v1">
+                    <script v="v1" script="%phrase%"/>
                 </paragraph>
             </div>
         </div>

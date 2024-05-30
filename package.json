@@ -21,7 +21,7 @@
     "watch:css": "onchange \"test/scss\" -- npm run build:css",
     "watch:images": "onchange \"test/public/img\" -- npm run build:images",
     "watch:html": "onchange \"dist/materials-toolkit.js\" \"./test/pages\" \"./test/partials\" -- node ./dist/materials-toolkit.js --dir ./test --output ./www",
-    "watch:serve": "ws --directory www",
+    "watch:serve": "ws --directory www  --static.index main.html",
     "watch": "npm run build && run-p watch:*",
     "watch:js": "onchange \"test/public/js\" -- webpack --config webpack.test.config.js --mode=development"
   },

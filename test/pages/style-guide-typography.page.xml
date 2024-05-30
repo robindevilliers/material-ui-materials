@@ -2,31 +2,31 @@
       title="Style Guide - Typography Page"
       description="Style Guide Typography Page" defnVersion="v1" orientation="COLUMN">
 
-    <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+    <paragraph paragraphStyle="PLAIN" v="v1">
         This page presents the typographical styling for the style guide. You should pay attention to the intended
         purpose of the elements and how well they contrast with other elements on the page.
     </paragraph>
 
-    <div orientation="ROW" justifyContent="SPACE_BETWEEN">
-        <div orientation="COLUMN">
+    <div orientation="ROW" justifyContent="SPACE_BETWEEN" v="v1">
+        <div orientation="COLUMN" v="v1">
             <horizontal-rule/>
-            <title size="LARGEST" plantainVersion="v1">This is the Largest Title</title>
+            <title size="LARGEST" v="v1">This is the Largest Title</title>
             <horizontal-rule/>
-            <title size="LARGER" plantainVersion="v1">This is the Larger Title</title>
+            <title size="LARGER" v="v1">This is the Larger Title</title>
             <horizontal-rule/>
-            <title size="MEDIUM" plantainVersion="v1">This is the Medium Title</title>
+            <title size="MEDIUM" v="v1">This is the Medium Title</title>
             <horizontal-rule/>
-            <title size="SMALLER" plantainVersion="v1">This is the Smaller Title</title>
+            <title size="SMALLER" v="v1">This is the Smaller Title</title>
             <horizontal-rule/>
-            <title size="SMALL" plantainVersion="v1">This is the Smallest Title</title>
+            <title size="SMALL" v="v1">This is the Smallest Title</title>
             <horizontal-rule/>
         </div>
 
-        <div orientation="COLUMN" flexBasis="50%" justifyContent="START">
-            <paragraph>Presented here are the titles for the style guide. Keep in mind the following
+        <div orientation="COLUMN" flexBasis="50%" justifyContent="START" v="v1">
+            <paragraph v="v1">Presented here are the titles for the style guide. Keep in mind the following
                 criteria when evaluating the styles.
             </paragraph>
-            <list>
+            <list v="v1">
                 <list-item>Are larger titles actually larger than smaller titles?</list-item>
                 <list-item>Does the font choice fit the overall design and purrpose of the business?</list-item>
                 <list-item>Is the spacing above and below the title intended?</list-item>
@@ -37,22 +37,22 @@
     </div>
     <horizontal-rule/>
 
-    <div orientation="ROW" justifyContent="SPACE_BETWEEN">
-        <div orientation="COLUMN" flexBasis="50%">
-            <title size="LARGE" plantainVersion="v1">Of Cats and other Colours for Nonsensical Titles</title>
-            <paragraph paragraphStyle="SUPPRESSED" plantainVersion="v1">Lorem ipsum
+    <div orientation="ROW" justifyContent="SPACE_BETWEEN" v="v1">
+        <div orientation="COLUMN" flexBasis="50%" v="v1">
+            <title size="LARGE" v="v1">Of Cats and other Colours for Nonsensical Titles</title>
+            <paragraph paragraphStyle="SUPPRESSED" v="v1">Lorem ipsum
                 dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
                 aliqua.
             </paragraph>
-            <title size="MEDIUM" plantainVersion="v1">The standard Lorem Ipsum passage, used since the 1500s</title>
-            <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+            <title size="MEDIUM" v="v1">The standard Lorem Ipsum passage, used since the 1500s</title>
+            <paragraph paragraphStyle="PLAIN" v="v1">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
                 ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
                 fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
                 deserunt mollit anim id est laborum.
             </paragraph>
-            <paragraph paragraphStyle="BLOCKQUOTE" plantainVersion="v1">
+            <paragraph paragraphStyle="BLOCKQUOTE" v="v1">
                 Friends, Romans, countrymen, lend me your ears;
                 I come to bury Caesar, not to praise him.
                 The evil that men do lives after them;
@@ -61,7 +61,7 @@
                 Hath told you Caesar was ambitious:
             </paragraph>
 
-            <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+            <paragraph paragraphStyle="PLAIN" v="v1">
                 Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
                 dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia
                 dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore
@@ -69,12 +69,12 @@
             </paragraph>
 
         </div>
-        <div orientation="COLUMN" width="50%" justifyContent="START">
-            <paragraph>Here we present the title styling in association with a paragraph. There is a suppressed
+        <div orientation="COLUMN" width="50%" justifyContent="START" v="v1">
+            <paragraph v="v1">Here we present the title styling in association with a paragraph. There is a suppressed
                 paragraph that is intended to work as a hint, or lesser content in the wider page. We follow that with a
                 normal paragraph. Then a blockquote and then finish with a paragraph again.
             </paragraph>
-            <list>
+            <list v="v1">
                 <list-item>Is the paragraph text easy to read?</list-item>
                 <list-item>Does the paragraph font look good given the high density of textual information?</list-item>
                 <list-item>Is the suppressed paragraph actually suppressed?</list-item>
@@ -85,12 +85,12 @@
 
     <horizontal-rule/>
 
-    <div orientation="ROW" justifyContent="SPACE_BETWEEN">
-        <div orientation="COLUMN" flexBasis="50%">
+    <div orientation="ROW" justifyContent="SPACE_BETWEEN" v="v1">
+        <div orientation="COLUMN" flexBasis="50%" v="v1">
 
-            <title size="SMALLER" plantainVersion="v1">1914 translation by H. Rackham</title>
+            <title size="SMALLER" v="v1">1914 translation by H. Rackham</title>
 
-            <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+            <paragraph paragraphStyle="PLAIN" v="v1">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
                 ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
@@ -98,36 +98,37 @@
                 deserunt mollit anim id est laborum.
             </paragraph>
 
-            <inset-text flavour="PRIMARY" plantainVersion="v1">
+            <inset-text flavour="PRIMARY" v="v1">
                 Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse
                 quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
             </inset-text>
 
-            <title size="SMALLER" plantainVersion="v1">Section 1.10.33 of "de Finibus Bonorum et Malorum", written by
+            <title size="SMALLER" v="v1">Section 1.10.33 of "de Finibus Bonorum et Malorum", written by
                 Cicero in 45 BC
             </title>
 
-            <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+            <paragraph paragraphStyle="PLAIN" v="v1">
                 Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
                 dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia
                 dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore
                 et dolore magnam aliquam quaerat voluptatem.
             </paragraph>
 
-            <well flavour="WARNING" margin="5px" plantainVersion="v1">
-                <paragraph plantainVersion="v1">Default Well. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            <well flavour="WARNING" margin="5px" v="v1">
+                <paragraph v="v1">Default Well. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </paragraph>
             </well>
 
         </div>
-        <div orientation="COLUMN" width="50%" justifyContent="START">
-            <paragraph>Here we present some of the other stylistic elements that are intended to operate within large
+        <div orientation="COLUMN" width="50%" justifyContent="START" v="v1">
+            <paragraph v="v1">Here we present some of the other stylistic elements that are intended to operate within
+                large
                 bodies of text. The Inset Text element is intended to present textual information that is an aside to
                 the current textual content. It in someway relates, but is separate from. In contrast we end with a Well
                 element that separates content is a more absolute sense.
             </paragraph>
-            <list>
+            <list v="v1">
                 <list-item>How does the Inset Text element look?</list-item>
                 <list-item>How does the Well element look?</list-item>
             </list>
@@ -137,21 +138,20 @@
     <horizontal-rule/>
 
 
-    <div orientation="ROW" justifyContent="SPACE_BETWEEN">
-        <div orientation="COLUMN" flexBasis="50%">
-            <title size="SMALLER" plantainVersion="v1">Section 1.10.32 of "de Finibus Bonorum et Malorum", written by
-                Cicero
-                in 45 BC
+    <div orientation="ROW" justifyContent="SPACE_BETWEEN" v="v1">
+        <div orientation="COLUMN" flexBasis="50%" v="v1">
+            <title size="SMALLER" v="v1">Section 1.10.32 of "de Finibus Bonorum et Malorum", written by
+                Cicero in 45 BC
             </title>
 
-            <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+            <paragraph paragraphStyle="PLAIN" v="v1">
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
                 rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
                 explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
                 consequuntur magni.
             </paragraph>
 
-            <list listStyle="NUMBERED" plantainVersion="v1">
+            <list listStyle="NUMBERED" v="v1">
                 <list-item>5 golden bees</list-item>
                 <list-item>On the third day of Christmas, my true love sent to me Three french hens Two turtle doves and
                     A partridge in a pear tree
@@ -159,7 +159,7 @@
                 <list-item>A wheelbarrow</list-item>
             </list>
 
-            <paragraph paragraphStyle="PLAIN" plantainVersion="v1">
+            <paragraph paragraphStyle="PLAIN" v="v1">
                 Dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia
                 dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore
                 et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam
@@ -169,14 +169,13 @@
             </paragraph>
 
         </div>
-        <div orientation="COLUMN" width="50%" justifyContent="START">
-            <paragraph>In this example we represent a list of items within a body of text.
+        <div orientation="COLUMN" width="50%" justifyContent="START" v="v1">
+            <paragraph v="v1">In this example we represent a list of items within a body of text.
             </paragraph>
-            <list>
+            <list v="v1">
                 <list-item>How does the List look?</list-item>
                 <list-item>Is the spacing correct?</list-item>
                 <list-item>Does the extra long line break and wrap correctly?</list-item>
-
             </list>
         </div>
     </div>

@@ -1,118 +1,118 @@
 <page id="style-guide-main" version="1" active="false" released="false" group="public" title="Style Guide Main"
       description="Style Guide Main Page" defnVersion="v1" orientation="COLUMN">
-    <jumbotron orientation="COLUMN" plantainVersion="v1">
-        <div orientation="ROW" plantainVersion="v1">
+    <jumbotron orientation="COLUMN" v="v1">
+        <div orientation="ROW" v="v1">
             <image src="logo.svg" title="Logo" height="210px" width="210px" borderRadius="1em" padding="1em"
-                   border="1px solid black" margin="0em 2em 1em" plantainVersion="v1" background="white"/>
+                   border="1px solid black" margin="0em 2em 1em" v="v1" background="white"/>
 
-            <title size="LARGE" plantainVersion="v1">Welcome to the Style Guide</title>
+            <title size="LARGE" v="v1">Welcome to the Style Guide</title>
 
-            <list listStyle="BORDERED" flexBasis="14em" flexShrink="0" plantainVersion="v1">
+            <list listStyle="BORDERED" flexBasis="14em" flexShrink="0" v="v1">
                 <list-item>
                     <link type="internal" view="fixed/style-guide-alpha" openNewWindow="false"
-                          plantainVersion="v1">Sample Page Alpha
+                          v="v1">Sample Page Alpha
                     </link>
                 </list-item>
                 <list-item>
                     <link type="internal" view="fixed/style-guide-beta" openNewWindow="false"
-                          plantainVersion="v1">Sample Page Beta
+                          v="v1">Sample Page Beta
                     </link>
                 </list-item>
                 <list-item>
                     <link type="internal" view="fixed/style-guide-delta" openNewWindow="false"
-                          plantainVersion="v1">Sample Page Delta
+                          v="v1">Sample Page Delta
                     </link>
                 </list-item>
             </list>
         </div>
-        <div orientation="COLUMN" plantainVersion="v1">
-            <paragraph margin="0em 4em" plantainVersion="v1">The Style Guide will demonstrate the UX (user
+        <div orientation="COLUMN" v="v1">
+            <paragraph margin="0em 4em" v="v1">The Style Guide will demonstrate the UX (user
                 experience) elements that you can use to contstruct pages. It is particularly useful in determining if
                 the website materials are correctly setup.
             </paragraph>
-            <paragraph fontFlavour="INFO" fontStyle="ITALIC" margin="0em 4em" plantainVersion="v1">This element is the
+            <paragraph fontFlavour="INFO" fontStyle="ITALIC" margin="0em 4em" v="v1">This element is the
                 Jumbotron. The Jumbotron is a UX element that is intented to draw the attention. Its contents should
                 be loud and large. It is useful on welcoming pages and on confirmation pages.
             </paragraph>
         </div>
     </jumbotron>
-    <title margin="0em 0em 1em" plantainVersion="v1">Typography</title>
-    <div plantainVersion="v1">
-        <div orientation="COLUMN" plantainVersion="v1">
-            <title fontFlavour="DEFAULT" size="LARGE" plantainVersion="v1">This is a Large Title</title>
-            <title fontFlavour="PRIMARY" size="LARGER" plantainVersion="v1">This is a Larger Title</title>
-            <title fontFlavour="INFO" size="MEDIUM" plantainVersion="v1">This is a Medium Title</title>
-            <title fontFlavour="WARNING" size="SMALLER" plantainVersion="v1">This is a Smaller Title</title>
-            <title fontFlavour="DANGER" size="SMALL" plantainVersion="v1">This is a Small Title</title>
-            <title fontFlavour="SUCCESS" size="SMALL" plantainVersion="v1">This is a Small Title</title>
-            <title fontFlavour="MUTED" size="SMALL" plantainVersion="v1">This is a Small Title</title>
+    <title margin="0em 0em 1em" v="v1">Typography</title>
+    <div v="v1">
+        <div orientation="COLUMN" v="v1">
+            <title fontFlavour="DEFAULT" size="LARGE" v="v1">This is a Large Title</title>
+            <title fontFlavour="PRIMARY" size="LARGER" v="v1">This is a Larger Title</title>
+            <title fontFlavour="INFO" size="MEDIUM" v="v1">This is a Medium Title</title>
+            <title fontFlavour="WARNING" size="SMALLER" v="v1">This is a Smaller Title</title>
+            <title fontFlavour="DANGER" size="SMALL" v="v1">This is a Small Title</title>
+            <title fontFlavour="SUCCESS" size="SMALL" v="v1">This is a Small Title</title>
+            <title fontFlavour="MUTED" size="SMALL" v="v1">This is a Small Title</title>
         </div>
-        <div orientation="COLUMN" margin="0em 0em 0em 1em" plantainVersion="v1">
-            <paragraph fontFlavour="DEFAULT" plantainVersion="v1">This paragraph is in Default colour.</paragraph>
-            <paragraph fontFlavour="PRIMARY" plantainVersion="v1">This paragraph is in Primary colour.</paragraph>
-            <paragraph fontFlavour="INFO" plantainVersion="v1">This paragraph is in Info colour.</paragraph>
-            <paragraph fontFlavour="WARNING" plantainVersion="v1">This paragraph is in Warning colour.</paragraph>
-            <paragraph fontFlavour="DANGER" plantainVersion="v1">This paragraph is in Danger colour.</paragraph>
-            <paragraph fontFlavour="SUCCESS" plantainVersion="v1">This paragraph is in Success colour.</paragraph>
-            <paragraph fontFlavour="MUTED" plantainVersion="v1">This paragraph is in Muted colour.</paragraph>
+        <div orientation="COLUMN" margin="0em 0em 0em 1em" v="v1">
+            <paragraph fontFlavour="DEFAULT" v="v1">This paragraph is in Default colour.</paragraph>
+            <paragraph fontFlavour="PRIMARY" v="v1">This paragraph is in Primary colour.</paragraph>
+            <paragraph fontFlavour="INFO" v="v1">This paragraph is in Info colour.</paragraph>
+            <paragraph fontFlavour="WARNING" v="v1">This paragraph is in Warning colour.</paragraph>
+            <paragraph fontFlavour="DANGER" v="v1">This paragraph is in Danger colour.</paragraph>
+            <paragraph fontFlavour="SUCCESS" v="v1">This paragraph is in Success colour.</paragraph>
+            <paragraph fontFlavour="MUTED" v="v1">This paragraph is in Muted colour.</paragraph>
         </div>
-        <div orientation="COLUMN" margin="0em 0em 0em 1em" plantainVersion="v1">
-            <paragraph plantainVersion="v1">This is the Default font.</paragraph>
-            <paragraph font="TEXT_PRIMARY" plantainVersion="v1">This is the Text Primary font.</paragraph>
-            <paragraph font="TEXT_SECONDARY" plantainVersion="v1">This is the Text Secondary font.</paragraph>
-            <paragraph font="TITLE_PRIMARY" plantainVersion="v1">This is the Title Primary font.</paragraph>
-            <paragraph font="TITLE_SECONDARY" plantainVersion="v1">This is the Title Secondary font.</paragraph>
+        <div orientation="COLUMN" margin="0em 0em 0em 1em" v="v1">
+            <paragraph v="v1">This is the Default font.</paragraph>
+            <paragraph font="TEXT_PRIMARY" v="v1">This is the Text Primary font.</paragraph>
+            <paragraph font="TEXT_SECONDARY" v="v1">This is the Text Secondary font.</paragraph>
+            <paragraph font="TITLE_PRIMARY" v="v1">This is the Title Primary font.</paragraph>
+            <paragraph font="TITLE_SECONDARY" v="v1">This is the Title Secondary font.</paragraph>
         </div>
-        <div orientation="COLUMN" flexBasis="25%" margin="0em 0em 0em 1em" plantainVersion="v1">
-            <paragraph paragraphStyle="PLAIN" plantainVersion="v1">This is a plain paragraph of text. Lorem ipsum dolor
+        <div orientation="COLUMN" flexBasis="25%" margin="0em 0em 0em 1em" v="v1">
+            <paragraph paragraphStyle="PLAIN" v="v1">This is a plain paragraph of text. Lorem ipsum dolor
                 sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
                 aliqua.
             </paragraph>
-            <paragraph paragraphStyle="SUPPRESSED" plantainVersion="v1">This is a Suppressed paragraph. Lorem ipsum
+            <paragraph paragraphStyle="SUPPRESSED" v="v1">This is a Suppressed paragraph. Lorem ipsum
                 dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
                 aliqua.
             </paragraph>
-            <paragraph paragraphStyle="BLOCKQUOTE" plantainVersion="v1">This is a Blockquote paragraph. Lorem ipsum
+            <paragraph paragraphStyle="BLOCKQUOTE" v="v1">This is a Blockquote paragraph. Lorem ipsum
                 dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
                 aliqua.
             </paragraph>
         </div>
     </div>
-    <div plantainVersion="v1">
-        <well flavour="DEFAULT" margin="5px" plantainVersion="v1">
-            <paragraph plantainVersion="v1">Default Well. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+    <div v="v1">
+        <well flavour="DEFAULT" margin="5px" v="v1">
+            <paragraph v="v1">Default Well. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                 do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </paragraph>
         </well>
-        <well flavour="PRIMARY" margin="5px" plantainVersion="v1">
-            <paragraph plantainVersion="v1">Primary Well. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+        <well flavour="PRIMARY" margin="5px" v="v1">
+            <paragraph v="v1">Primary Well. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                 do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </paragraph>
         </well>
-        <well flavour="INFO" margin="5px" plantainVersion="v1">
-            <paragraph plantainVersion="v1">Info Well. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        <well flavour="INFO" margin="5px" v="v1">
+            <paragraph v="v1">Info Well. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </paragraph>
         </well>
-        <well flavour="WARNING" margin="5px" plantainVersion="v1">
-            <paragraph plantainVersion="v1">Warning Well. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+        <well flavour="WARNING" margin="5px" v="v1">
+            <paragraph v="v1">Warning Well. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                 do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </paragraph>
         </well>
     </div>
-    <div plantainVersion="v1">
-        <well flavour="DANGER" margin="5px" plantainVersion="v1">
-            <paragraph plantainVersion="v1">Danger Well. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+    <div v="v1">
+        <well flavour="DANGER" margin="5px" v="v1">
+            <paragraph v="v1">Danger Well. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </paragraph>
         </well>
-        <well flavour="SUCCESS" margin="5px" plantainVersion="v1">
-            <paragraph plantainVersion="v1">Success Well. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+        <well flavour="SUCCESS" margin="5px" v="v1">
+            <paragraph v="v1">Success Well. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                 do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </paragraph>
         </well>
-        <well flavour="MUTED" margin="5px" plantainVersion="v1">
-            <paragraph plantainVersion="v1">Muted Well. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        <well flavour="MUTED" margin="5px" v="v1">
+            <paragraph v="v1">Muted Well. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </paragraph>
         </well>

@@ -15,7 +15,6 @@ export default class ConfirmWorkflowPanelRenderer implements Renderer {
     render(element: Element, classMappings: Properties, renderingEngine: RenderingEngine): string {
 
         const data: Record<string, any> = {};
-
         data.id = element.attributes.id;
         data._csrf = generateId();
         data.workflow = "workflow:1";

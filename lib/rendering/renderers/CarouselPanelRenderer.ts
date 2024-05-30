@@ -21,7 +21,6 @@ export default class CarouselPanelRenderer implements Renderer {
         data.interval = element.attributes.interval;
         data.src = "/public/img/" + element.attributes.src;
         data.carouselId = parent?.attributes.id;
-        data.imageClasses = classMappings.get("carousel-image");
 
         const classManager = new ClassManager(classMappings);
         flexContainerSupport(data, classManager, element.attributes);

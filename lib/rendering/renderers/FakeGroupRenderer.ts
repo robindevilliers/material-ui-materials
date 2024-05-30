@@ -5,7 +5,7 @@ import RenderingEngine from '../RenderingEngine';
 import Store from '../../store/Store';
 import Group from '../../store/Group';
 
-export default class FakeGroupBinder implements Renderer {
+export default class FakeGroupRenderer implements Renderer {
     accept(name: string): boolean {
         return name === 'fake-group';
     }

@@ -1,23 +1,23 @@
 <form defnVersion="v1" id="intro" title="Resume" orientation="COLUMN">
-    <title size="LARGE" plantainVersion="v1">Resume Wizard</title>
-    <paragraph plantainVersion="v1">You are about to resume a wizard that you have already initiated. You will not be
+    <title size="LARGE" v="v1">Resume Wizard</title>
+    <paragraph v="v1">You are about to resume a wizard that you have already initiated. You will not be
         able to use the browser navigation buttons to go back through previous form submissions. We hope you have a
         great experience filling out the form. If you need help, please contact us.
     </paragraph>
-    <div plantainVersion="v1" justifyContent="SPACE_BETWEEN">
-        <title size="SMALL" plantainVersion="v1">Wizard</title>
-        <paragraph plantainVersion="v1">
-            <script plantainVersion="v1" script=".title"/>
+    <div v="v1" justifyContent="SPACE_BETWEEN">
+        <title size="SMALL" v="v1">Wizard</title>
+        <paragraph v="v1">
+            <script v="v1" script=".title"/>
         </paragraph>
     </div>
-    <div plantainVersion="v1" justifyContent="SPACE_BETWEEN">
-        <title size="SMALL" plantainVersion="v1">Description</title>
-        <paragraph plantainVersion="v1">
-            <script plantainVersion="v1" script=".description"/>
+    <div v="v1" justifyContent="SPACE_BETWEEN">
+        <title size="SMALL" v="v1">Description</title>
+        <paragraph v="v1">
+            <script v="v1" script=".description"/>
         </paragraph>
     </div>
-    <paragraph plantainVersion="v1">If you encounter any problems, please do not hesitate to contact us on
+    <paragraph v="v1">If you encounter any problems, please do not hesitate to contact us on
         000-00-00-00-00. Or email us at xyz@maximillian.com.
     </paragraph>
-    <button plantainVersion="v1" type="NEXT" required="false">Start</button>
+    <button v="v1" type="NEXT" required="false">Start</button>
 </form>

@@ -5,7 +5,7 @@ import RenderingEngine from '../RenderingEngine';
 import Queue from '../../store/Queue';
 import Store from '../../store/Store';
 
-export default class FakeQueueBinder implements Renderer {
+export default class FakeQueueRenderer implements Renderer {
     accept(name: string): boolean {
         return name === 'fake-queue';
     }

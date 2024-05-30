@@ -27,10 +27,10 @@ import CardFooterRenderer from './CardFooterRenderer';
 import CardRenderer from './CardRenderer';
 import IconRenderer from './IconRenderer';
 import ToolTipRenderer from './ToolTipRenderer';
-import ListItemBinder from './ListItemBinder';
+import ListItemRenderer from './ListItemRenderer';
 import ListRenderer from './ListRenderer';
 import CookieConsentRenderer from './CookieConsentRenderer';
-import FakeStoreBinderRenderer from './FakeStoreBinderRenderer';
+import FakeStoreRenderer from './FakeStoreRenderer';
 import ErrorSummaryRenderer from './ErrorSummaryRenderer';
 import InputRenderer from './InputRenderer';
 import EnumerationInputRenderer from './EnumerationInputRenderer';
@@ -54,13 +54,13 @@ import FakePageRenderer from './FakePageRenderer';
 import HorizontalRuleRenderer from './HorizontalRuleRenderer';
 import InitiateWorkflowButtonRenderer from './InitiateWorkflowButtonRenderer';
 import MenuRenderer from './MenuRenderer';
-import MenuBrandBinder from './MenuBrandBinder';
-import MenuItemBinder from './MenuItemBinder';
+import MenuBrandRenderer from './MenuBrandRenderer';
+import MenuItemRenderer from './MenuItemRenderer';
 import SubMenuRenderer from './SubMenuRenderer';
-import SubMenuLabelBinder from './SubMenuLabelBinder';
+import SubMenuLabelRenderer from './SubMenuLabelRenderer';
 import TrayRenderer from './TrayRenderer';
-import TrayHeaderBinder from './TrayHeaderBinder';
-import FakeQueueBinder from './FakeQueueRenderer';
+import TrayHeaderRenderer from './TrayHeaderRenderer';
+import FakeQueueRenderer from './FakeQueueRenderer';
 import MessageExplorerRenderer from './MessageExplorerRenderer';
 import NotificationBannerRenderer from './NotificationBannerRenderer';
 import EmailRenderer from './EmailRenderer';
@@ -70,10 +70,10 @@ import ConfirmationPanelRenderer from './ConfirmationPanelRenderer';
 import BrRenderer from './BrRenderer';
 import SpanRenderer from './SpanRenderer';
 import UuidRenderer from './UuidRenderer';
-import ScriptBinder from './ScriptRenderer';
+import ScriptRenderer from './ScriptRenderer';
 import LoopRenderer from './LoopRenderer';
 import SwitchRenderer from './SwitchRenderer';
-import FakeGroupBinder from './FakeGroupRenderer';
+import FakeGroupRenderer from './FakeGroupRenderer';
 
 const registry = [
     new TitleRenderer(),
@@ -105,10 +105,10 @@ const registry = [
     new CardRenderer(),
     new IconRenderer(),
     new ToolTipRenderer(),
-    new ListItemBinder(),
+    new ListItemRenderer(),
     new ListRenderer(),
     new CookieConsentRenderer(),
-    new FakeStoreBinderRenderer(),
+    new FakeStoreRenderer(),
     new ErrorSummaryRenderer(),
     new InputRenderer(),
     new EnumerationInputRenderer(),
@@ -128,18 +128,18 @@ const registry = [
     new FakeWizardRenderer(),
     new FakeWorkflowRenderer(),
     new FakePageRenderer(),
-    new FakeQueueBinder(),
-    new FakeGroupBinder(),
+    new FakeQueueRenderer(),
+    new FakeGroupRenderer(),
     new MileStoneRenderer(),
     new HorizontalRuleRenderer(),
     new InitiateWorkflowButtonRenderer(),
     new MenuRenderer(),
-    new MenuBrandBinder(),
-    new MenuItemBinder(),
+    new MenuBrandRenderer(),
+    new MenuItemRenderer(),
     new SubMenuRenderer(),
-    new SubMenuLabelBinder(),
+    new SubMenuLabelRenderer(),
     new TrayRenderer(),
-    new TrayHeaderBinder(),
+    new TrayHeaderRenderer(),
     new MessageExplorerRenderer(),
     new NotificationBannerRenderer(),
     new EmailRenderer(),
@@ -149,11 +149,11 @@ const registry = [
     new BrRenderer(),
     new SpanRenderer(),
     new UuidRenderer(),
-    new ScriptBinder(),
+    new ScriptRenderer(),
     new LoopRenderer(),
     new SwitchRenderer()
 ];
 
-export function findBinder(name: string) {
+export function findRenderer(name: string) {
     return registry.find(builtin => builtin.accept(name));
 }

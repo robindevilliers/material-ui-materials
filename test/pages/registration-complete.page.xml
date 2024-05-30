@@ -1,9 +1,9 @@
 <page defnVersion="v1" id="registration-complete" title="Registration Complete" group="public">
-    <div plantainVersion="v1" orientation="COLUMN">
-        <div plantainVersion="v1" orientation="ROW" justifyContent="SPACE_AROUND">
-            <div plantainVersion="v1" orientation="COLUMN" justifyContent="SPACE_AROUND" alignItems="CENTER">
-                <title size="LARGE" plantainVersion="v1">Thanks for registering.</title>
-                <paragraph plantainVersion="v1">
+    <div v="v1" orientation="COLUMN">
+        <div v="v1" orientation="ROW" justifyContent="SPACE_AROUND">
+            <div v="v1" orientation="COLUMN" justifyContent="SPACE_AROUND" alignItems="CENTER">
+                <title size="LARGE" v="v1">Thanks for registering.</title>
+                <paragraph v="v1">
                     Please look out for your confirmation email. This email will allow you to confirm your email
                     address. It is necessary to complete the confirmation process before you can access your account.
                 </paragraph>

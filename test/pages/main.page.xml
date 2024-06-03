@@ -707,6 +707,15 @@
         <list-item>
             <link view="reference.html#wizard-test-results" v="v1">Wizard Test Results</link>
         </list-item>
+        <list-item>
+            <link view="reference.html#wizard-intro-panel" v="v1">Wizard Intro Panel</link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#wizard-resume-panel" v="v1">Wizard Resume Panel</link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#wizard-outro-panel" v="v1">Wizard Outro Panel</link>
+        </list-item>
     </list>
 
     <title size="LARGER" v="v1">Icons</title>

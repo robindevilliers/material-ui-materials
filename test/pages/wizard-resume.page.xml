@@ -1,4 +1,4 @@
-<form defnVersion="v1" id="intro" title="Resume" orientation="COLUMN">
+<page defnVersion="v1" id="intro" title="Resume" orientation="COLUMN">
     <title size="LARGE" v="v1">Resume Wizard</title>
     <paragraph v="v1">You are about to resume a wizard that you have already initiated. You will not be
         able to use the browser navigation buttons to go back through previous form submissions. We hope you have a
@@ -19,5 +19,5 @@
     <paragraph v="v1">If you encounter any problems, please do not hesitate to contact us on
         000-00-00-00-00. Or email us at xyz@maximillian.com.
     </paragraph>
-    <button v="v1" type="NEXT" required="false">Start</button>
-</form>
+    <wizard-resume-panel/>
+</page>

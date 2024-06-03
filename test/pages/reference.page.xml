@@ -3,7 +3,7 @@
 
     <title size="LARGEST" v="v1">Reference</title>
 
-    <div v="v1">
+    <div v="v1" orientation="COLUMN">
         <title size="LARGER" v="v1">Overview</title>
 
         <paragraph v="v1">
@@ -53,7 +53,7 @@
             in the class-mappings.properties file.
         </paragraph>
     </div>
-    <div v="v1">
+    <div v="v1" orientation="COLUMN">
         <title size="LARGER" v="v1">Categories</title>
 
         <paragraph paragraphStyle="PLAIN" v="v1">
@@ -64,7 +64,7 @@
             these categories.
         </paragraph>
 
-        <div v="v1">
+        <div v="v1" orientation="COLUMN">
             <title id="flex-item" size="MEDIUM" v="v1">Flex Item</title>
 
             <paragraph paragraphStyle="PLAIN" v="v1">
@@ -215,7 +215,7 @@
             </table>
 
         </div>
-        <div v="v1">
+        <div v="v1" orientation="COLUMN">
 
             <title id="flex-container" size="MEDIUM" v="v1">Flex Container</title>
 
@@ -294,7 +294,7 @@
             </table>
 
         </div>
-        <div v="v1">
+        <div v="v1" orientation="COLUMN">
 
             <title id="textual" size="MEDIUM" v="v1">Textual</title>
 
@@ -414,7 +414,7 @@
         </div>
 
     </div>
-    <div v="v1">
+    <div v="v1" orientation="COLUMN">
 
         <title id="widgets" size="LARGER" v="v1">Widgets</title>
 
@@ -425,7 +425,7 @@
             available to the template for the widget for substitution.
         </paragraph>
 
-        <div v="v1">
+        <div v="v1" orientation="COLUMN">
             <title id="accordion" size="MEDIUM" v="v1">Accordion</title>
 
             <paragraph paragraphStyle="PLAIN" v="v1">
@@ -570,7 +570,7 @@
             </table>
 
         </div>
-        <div v="v1">
+        <div v="v1" orientation="COLUMN">
 
             <title id="accordion-item" size="MEDIUM" v="v1">Accordion Item</title>
 
@@ -726,7 +726,7 @@
                 </row>
             </table>
         </div>
-        <div v="v1">
+        <div v="v1" orientation="COLUMN">
             <title id="accordion-item-header" size="MEDIUM" v="v1">Accordion Item Header</title>
 
             <paragraph paragraphStyle="PLAIN" v="v1">
@@ -822,7 +822,7 @@
                 </row>
             </table>
         </div>
-        <div v="v1">
+        <div v="v1" orientation="COLUMN">
             <title id="back-link" size="MEDIUM" v="v1">Back Link</title>
 
             <paragraph paragraphStyle="PLAIN" v="v1">
@@ -886,7 +886,7 @@
                 </row>
             </table>
         </div>
-        <div v="v1">
+        <div v="v1" orientation="COLUMN">
             <title id="badge" size="MEDIUM" v="v1">Badge</title>
 
             <paragraph paragraphStyle="PLAIN" v="v1">
@@ -1028,7 +1028,7 @@
                 </row>
             </table>
         </div>
-        <div v="v1">
+        <div v="v1" orientation="COLUMN">
             <title id="br" size="MEDIUM" v="v1">Br</title>
 
             <paragraph paragraphStyle="PLAIN" v="v1">
@@ -1048,7 +1048,7 @@
                 The template for the widget is the br.ftl file.
             </paragraph>
         </div>
-        <div v="v1">
+        <div v="v1" orientation="COLUMN">
             <title id="button" size="MEDIUM" v="v1">Button</title>
 
             <paragraph paragraphStyle="PLAIN" v="v1">
@@ -1310,14 +1310,12 @@
                 </row>
             </table>
         </div>
-        <div v="v1">
+        <div v="v1" orientation="COLUMN">
             <title id="card" size="MEDIUM" v="v1">Card</title>
 
             <paragraph paragraphStyle="PLAIN" v="v1">
                 The Card Widget specifies a Card; a common HTML presentational element that appears as a card on the
-                page.
-                It
-                can typically have a header, an image, a body and a footer section.
+                page. It can typically have a header, an image, a body and a footer section.
             </paragraph>
 
             <paragraph paragraphStyle="PLAIN" v="v1">
@@ -1350,10 +1348,21 @@
                     <cell>DEFAULT, PRIMARY, INFO, WARNING, DANGER, SUCCESS, MUTED, BLACK, WHITE</cell>
                 </row>
                 <row>
-                    <cell>view</cell>
+                    <cell>type</cell>
                     <cell>
                         <paragraph paragraphStyle="PLAIN" v="v1">
-                            The view property specifies which internal page to link to if the card is a link.
+                            The type property specifies if the card is a link and to which type of resource.
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        none, page, workflow, url
+                    </cell>
+                </row>
+                <row>
+                    <cell>page</cell>
+                    <cell>
+                        <paragraph paragraphStyle="PLAIN" v="v1">
+                            The page property specifies which page to link to if the card type is set to &apos;page&apos;.
                         </paragraph>
                     </cell>
                     <cell>
@@ -1361,10 +1370,22 @@
                     </cell>
                 </row>
                 <row>
+                    <cell>workflow</cell>
+                    <cell>
+                        <paragraph paragraphStyle="PLAIN" v="v1">
+                            The workflow property specifies which workflow to initiate if the card type is set to &apos;workflow&apos;.
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        test-workflow
+                    </cell>
+                </row>
+                <row>
                     <cell>url</cell>
                     <cell>
                         <paragraph paragraphStyle="PLAIN" v="v1">
-                            The url property specifies an external url that this card will link to.
+                            The url property specifies which url the browser should be directed to if the type is set to
+                            &apos;url&apos;.
                         </paragraph>
                     </cell>
                     <cell>
@@ -1376,7 +1397,19 @@
                     <cell>
                         <paragraph paragraphStyle="PLAIN" v="v1">
                             The openNewWindow property will specify if, when clicked, the browser will present the
-                            destination view or url in a separate window.
+                            destination url in a separate window.
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        true, false
+                    </cell>
+                </row>
+                <row>
+                    <cell>showCasePrincipalPicker</cell>
+                    <cell>
+                        <paragraph paragraphStyle="PLAIN" v="v1">
+                            The showCasePrincipalPicker property specifies if the Show Case Principal Picker page should
+                            be presented when firing workflows. This is only relevant if the card type is set to &apos;workflow&apos;.
                         </paragraph>
                     </cell>
                     <cell>
@@ -1407,20 +1440,21 @@
                     <cell>string</cell>
                 </row>
                 <row>
-                    <cell>isLink</cell>
+                    <cell>type</cell>
                     <cell>
                         <paragraph paragraphStyle="PLAIN" v="v1">
-                            A boolean value indicating if the card should be clickable, and link to another page.
+                            The type token specifies what type of link the card should render as.
                         </paragraph>
                     </cell>
-                    <cell>boolean</cell>
+                    <cell>none, page, workflow, url</cell>
                 </row>
                 <row>
                     <cell>href</cell>
                     <cell>
                         <paragraph paragraphStyle="PLAIN" v="v1">
-                            The href property specifies the value for the href property if this Card is a link. If the
-                            href property is not present, then the Card is not a link.
+                            The href property specifies the value for the href property if this Card is a link to a page
+                            or url. If the href property is not present, then the Card is not a link and no enclosing
+                            anchor tag should be rendered.
                         </paragraph>
                     </cell>
                     <cell>
@@ -1444,6 +1478,43 @@
                         </paragraph>
                     </cell>
                     <cell>string</cell>
+                </row>
+                <row>
+                    <cell>action</cell>
+                    <cell>
+                        <paragraph paragraphStyle="PLAIN" v="v1">
+                            The action property specifies that the card should submit a form post to the specified url
+                            in the action token. This is typically to initiate a workflow. The form should include the
+                            _csrf token and showCasePrincipalPicker values has hidden inputs.
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        url
+                    </cell>
+                </row>
+                <row>
+                    <cell>_csrf</cell>
+                    <cell>
+                        <paragraph paragraphStyle="PLAIN" v="v1">
+                            The _csrf property specifies that the csrf token that should be used in the case of a form
+                            post.
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        string
+                    </cell>
+                </row>
+                <row>
+                    <cell>showCasePrincipalPicker</cell>
+                    <cell>
+                        <paragraph paragraphStyle="PLAIN" v="v1">
+                            The showCasePrincipalPicker property specifies if the workflow that is going to be initiated
+                            should have it&apos;s case principal assigned by using the picker or not.
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        boolean
+                    </cell>
                 </row>
                 <row>
                     <cell>classes</cell>
@@ -1528,7 +1599,7 @@
                 </row>
             </table>
         </div>
-        <div v="v1">
+        <div v="v1" orientation="COLUMN">
             <title id="card-body" size="MEDIUM" v="v1">Card Body</title>
 
             <paragraph paragraphStyle="PLAIN" v="v1">
@@ -1591,7 +1662,7 @@
                 </row>
             </table>
         </div>
-        <div v="v1">
+        <div v="v1" orientation="COLUMN">
             <title id="card-footer" size="MEDIUM" v="v1">Card Footer</title>
 
             <paragraph paragraphStyle="PLAIN" v="v1">
@@ -1653,7 +1724,7 @@
                 </row>
             </table>
         </div>
-        <div v="v1">
+        <div v="v1" orientation="COLUMN">
             <title id="card-header" size="MEDIUM" v="v1">Card Header</title>
 
             <paragraph paragraphStyle="PLAIN" v="v1">
@@ -1715,7 +1786,7 @@
                 </row>
             </table>
         </div>
-        <div v="v1">
+        <div v="v1" orientation="COLUMN">
             <title id="carousel" size="MEDIUM" v="v1">Carousel</title>
 
             <paragraph paragraphStyle="PLAIN" v="v1">
@@ -1878,7 +1949,7 @@
                 </row>
             </table>
         </div>
-        <div v="v1">
+        <div v="v1" orientation="COLUMN">
             <title id="carousel-panel" size="MEDIUM" v="v1">Carousel Panel</title>
 
             <paragraph paragraphStyle="PLAIN" v="v1">
@@ -2039,7 +2110,7 @@
                 </row>
             </table>
         </div>
-        <div v="v1">
+        <div v="v1" orientation="COLUMN">
             <title id="cell" size="MEDIUM" v="v1">Cell</title>
 
             <paragraph paragraphStyle="PLAIN" v="v1">
@@ -2115,7 +2186,7 @@
                 </row>
             </table>
         </div>
-        <div v="v1">
+        <div v="v1" orientation="COLUMN">
             <title id="close-workflow-executed-panel" size="MEDIUM" v="v1">Close Workflow Executed Panel</title>
 
             <paragraph paragraphStyle="PLAIN" v="v1">
@@ -2205,7 +2276,7 @@
                 </row>
             </table>
         </div>
-        <div v="v1">
+        <div v="v1" orientation="COLUMN">
             <title id="column" size="MEDIUM" v="v1">Column</title>
 
             <paragraph paragraphStyle="PLAIN" v="v1">
@@ -2279,7 +2350,7 @@
                 </row>
             </table>
         </div>
-        <div v="v1">
+        <div v="v1" orientation="COLUMN">
             <title id="confirm-workflow-panel" size="MEDIUM" v="v1">Confirm Workflow Panel</title>
 
             <paragraph paragraphStyle="PLAIN" v="v1">
@@ -2367,7 +2438,7 @@
                 </row>
             </table>
         </div>
-        <div v="v1">
+        <div v="v1" orientation="COLUMN">
             <title id="confirmation-panel" size="MEDIUM" v="v1">Confirmation Panel</title>
 
             <paragraph paragraphStyle="PLAIN" v="v1">
@@ -2454,7 +2525,7 @@
                 </row>
             </table>
         </div>
-        <div v="v1">
+        <div v="v1" orientation="COLUMN">
             <title id="cookie-consent" size="MEDIUM" v="v1">Cookie Consent</title>
 
             <paragraph paragraphStyle="PLAIN" v="v1">
@@ -2536,7 +2607,7 @@
                 </row>
             </table>
         </div>
-        <div v="v1">
+        <div v="v1" orientation="COLUMN">
             <title id="def" size="MEDIUM" v="v1">Def</title>
 
             <paragraph paragraphStyle="PLAIN" v="v1">
@@ -2565,7 +2636,7 @@
                 Switch if no If Widget resolves to true.
             </paragraph>
         </div>
-        <div v="v1">
+        <div v="v1" orientation="COLUMN">
             <title id="div" size="MEDIUM" v="v1">Div</title>
 
             <paragraph paragraphStyle="PLAIN" v="v1">
@@ -2641,7 +2712,7 @@
                 </row>
             </table>
         </div>
-        <div v="v1">
+        <div v="v1" orientation="COLUMN">
             <title id="email" size="MEDIUM" v="v1">Email</title>
 
             <paragraph paragraphStyle="PLAIN" v="v1">
@@ -2695,7 +2766,7 @@
                 </row>
             </table>
         </div>
-        <div v="v1">
+        <div v="v1" orientation="COLUMN">
             <title id="email-confirmation-link" size="MEDIUM" v="v1">Email Confirmation Link</title>
 
             <paragraph paragraphStyle="PLAIN" v="v1">
@@ -2787,7 +2858,7 @@
                 </row>
             </table>
         </div>
-        <div v="v1">
+        <div v="v1" orientation="COLUMN">
             <title id="enumeration-input" size="MEDIUM" v="v1">Enumeration Input</title>
 
             <paragraph paragraphStyle="PLAIN" v="v1">
@@ -3072,7 +3143,7 @@
                 </row>
             </table>
         </div>
-        <div v="v1">
+        <div v="v1" orientation="COLUMN">
             <title id="error-summary" size="MEDIUM" v="v1">Error Summary</title>
 
             <paragraph paragraphStyle="PLAIN" v="v1">
@@ -3148,7 +3219,7 @@
                 </row>
             </table>
         </div>
-        <div v="v1">
+        <div v="v1" orientation="COLUMN">
             <title id="form" size="MEDIUM" v="v1">Form</title>
 
             <paragraph paragraphStyle="PLAIN" v="v1">
@@ -3224,7 +3295,7 @@
                 </row>
             </table>
         </div>
-        <div v="v1">
+        <div v="v1" orientation="COLUMN">
             <title id="horizontal-rule" size="MEDIUM" v="v1">Horizontal Rule</title>
 
             <paragraph paragraphStyle="PLAIN" v="v1">
@@ -3252,7 +3323,7 @@
                 The template for the widget is the horizontal-rule.ftl file. There are no tokens.
             </paragraph>
         </div>
-        <div v="v1">
+        <div v="v1" orientation="COLUMN">
             <title id="icon" size="MEDIUM" v="v1">Icon</title>
 
             <paragraph paragraphStyle="PLAIN" v="v1">
@@ -3400,7 +3471,7 @@
                 </row>
             </table>
         </div>
-        <div v="v1">
+        <div v="v1" orientation="COLUMN">
 
             <title id="if" size="MEDIUM" v="v1">If</title>
 
@@ -3447,7 +3518,7 @@
                 Switch if its condition script resolves to true.
             </paragraph>
         </div>
-        <div v="v1">
+        <div v="v1" orientation="COLUMN">
             <title id="image" size="MEDIUM" v="v1">Image</title>
 
             <paragraph paragraphStyle="PLAIN" v="v1">
@@ -3592,7 +3663,7 @@
                 </row>
             </table>
         </div>
-        <div v="v1">
+        <div v="v1" orientation="COLUMN">
             <title id="initiate-workflow-button" size="MEDIUM" v="v1">Initiate Workflow Button</title>
 
             <paragraph paragraphStyle="PLAIN" v="v1">
@@ -3829,7 +3900,7 @@
                 </row>
             </table>
         </div>
-        <div v="v1">
+        <div v="v1" orientation="COLUMN">
             <title id="input" size="MEDIUM" v="v1">Input</title>
 
             <paragraph paragraphStyle="PLAIN" v="v1">
@@ -4186,7 +4257,7 @@
                 </row>
             </table>
         </div>
-        <div v="v1">
+        <div v="v1" orientation="COLUMN">
             <title id="inset-text" size="MEDIUM" v="v1">Inset Text</title>
 
             <paragraph paragraphStyle="PLAIN" v="v1">
@@ -4314,7 +4385,7 @@
                 </row>
             </table>
         </div>
-        <div v="v1">
+        <div v="v1" orientation="COLUMN">
             <title id="jumbotron" size="MEDIUM" v="v1">Jumbotron</title>
 
             <paragraph paragraphStyle="PLAIN" v="v1">
@@ -4398,7 +4469,7 @@
                 </row>
             </table>
         </div>
-        <div v="v1">
+        <div v="v1" orientation="COLUMN">
             <title id="link" size="MEDIUM" v="v1">Link</title>
 
             <paragraph paragraphStyle="PLAIN" v="v1">
@@ -4553,7 +4624,7 @@
                 </row>
             </table>
         </div>
-        <div v="v1">
+        <div v="v1" orientation="COLUMN">
             <title id="list" size="MEDIUM" v="v1">List</title>
 
             <paragraph paragraphStyle="PLAIN" v="v1">
@@ -4654,7 +4725,7 @@
                 </row>
             </table>
         </div>
-        <div v="v1">
+        <div v="v1" orientation="COLUMN">
             <title id="list-item" size="MEDIUM" v="v1">List Item</title>
 
             <paragraph paragraphStyle="PLAIN" v="v1">
@@ -4737,7 +4808,7 @@
                 </row>
             </table>
         </div>
-        <div v="v1">
+        <div v="v1" orientation="COLUMN">
             <title id="login-panel" size="MEDIUM" v="v1">Login Panel</title>
 
             <paragraph paragraphStyle="PLAIN" v="v1">
@@ -4850,7 +4921,7 @@
                 </row>
             </table>
         </div>
-        <div v="v1">
+        <div v="v1" orientation="COLUMN">
             <title id="loop" size="MEDIUM" v="v1">Loop</title>
 
             <paragraph paragraphStyle="PLAIN" v="v1">
@@ -4926,7 +4997,7 @@
                 </row>
             </table>
         </div>
-        <div v="v1">
+        <div v="v1" orientation="COLUMN">
             <title id="menu" size="MEDIUM" v="v1">Menu</title>
 
             <paragraph paragraphStyle="PLAIN" v="v1">
@@ -5036,7 +5107,7 @@
                 </row>
             </table>
         </div>
-        <div v="v1">
+        <div v="v1" orientation="COLUMN">
             <title id="menu-brand" size="MEDIUM" v="v1">Menu Brand</title>
 
             <paragraph paragraphStyle="PLAIN" v="v1">
@@ -5108,7 +5179,7 @@
                 </row>
             </table>
         </div>
-        <div v="v1">
+        <div v="v1" orientation="COLUMN">
             <title id="menu-item" size="MEDIUM" v="v1">Menu Item</title>
 
             <paragraph paragraphStyle="PLAIN" v="v1">
@@ -5345,7 +5416,7 @@
                 </row>
             </table>
         </div>
-        <div v="v1">
+        <div v="v1" orientation="COLUMN">
             <title id="message-explorer" size="MEDIUM" v="v1">Message Explorer</title>
 
             <paragraph paragraphStyle="PLAIN" v="v1">
@@ -5627,7 +5698,7 @@
                 </row>
             </table>
         </div>
-        <div v="v1">
+        <div v="v1" orientation="COLUMN">
             <title id="mile-stone" size="MEDIUM" v="v1">Mile Stone</title>
 
             <paragraph paragraphStyle="PLAIN" v="v1">
@@ -5789,7 +5860,7 @@
                 </row>
             </table>
         </div>
-        <div v="v1">
+        <div v="v1" orientation="COLUMN">
             <title id="notification-banner" size="MEDIUM" v="v1">Notification Banner</title>
 
             <paragraph paragraphStyle="PLAIN" v="v1">
@@ -5936,7 +6007,7 @@
                 </row>
             </table>
         </div>
-        <div v="v1">
+        <div v="v1" orientation="COLUMN">
             <title id="page" size="MEDIUM" v="v1">Page</title>
 
             <paragraph paragraphStyle="PLAIN" v="v1">
@@ -6008,7 +6079,7 @@
                 </row>
             </table>
         </div>
-        <div v="v1">
+        <div v="v1" orientation="COLUMN">
             <title id="paragraph" size="MEDIUM" v="v1">Paragraph</title>
 
             <paragraph paragraphStyle="PLAIN" v="v1">
@@ -6111,7 +6182,7 @@
                 </row>
             </table>
         </div>
-        <div v="v1">
+        <div v="v1" orientation="COLUMN">
             <title id="password-reset-link" size="MEDIUM" v="v1">Password Reset Link</title>
 
             <paragraph paragraphStyle="PLAIN" v="v1">
@@ -6206,7 +6277,7 @@
                 </row>
             </table>
         </div>
-        <div v="v1">
+        <div v="v1" orientation="COLUMN">
             <title id="progress-bar" size="MEDIUM" v="v1">Progress Bar</title>
 
             <paragraph paragraphStyle="PLAIN" v="v1">
@@ -6402,7 +6473,7 @@
                 </row>
             </table>
         </div>
-        <div v="v1">
+        <div v="v1" orientation="COLUMN">
             <title id="register-panel" size="MEDIUM" v="v1">Register Panel</title>
 
             <paragraph paragraphStyle="PLAIN" v="v1">
@@ -6617,7 +6688,7 @@
                 </row>
             </table>
         </div>
-        <div v="v1">
+        <div v="v1" orientation="COLUMN">
             <title id="reset-password-panel" size="MEDIUM" v="v1">Reset Password Panel</title>
 
             <paragraph paragraphStyle="PLAIN" v="v1">
@@ -6722,7 +6793,7 @@
                 </row>
             </table>
         </div>
-        <div v="v1">
+        <div v="v1" orientation="COLUMN">
             <title id="reset-password-request-panel" size="MEDIUM" v="v1">Reset Password Request Panel</title>
 
             <paragraph paragraphStyle="PLAIN" v="v1">
@@ -6834,7 +6905,7 @@
                 </row>
             </table>
         </div>
-        <div v="v1">
+        <div v="v1" orientation="COLUMN">
             <title id="row" size="MEDIUM" v="v1">Row</title>
 
             <paragraph paragraphStyle="PLAIN" v="v1">
@@ -6888,7 +6959,7 @@
                 </row>
             </table>
         </div>
-        <div v="v1">
+        <div v="v1" orientation="COLUMN">
             <title id="scale" size="MEDIUM" v="v1">Scale</title>
 
             <paragraph paragraphStyle="PLAIN" v="v1">
@@ -7127,7 +7198,7 @@
                 </row>
             </table>
         </div>
-        <div v="v1">
+        <div v="v1" orientation="COLUMN">
             <title id="script" size="MEDIUM" v="v1">Script</title>
 
             <paragraph paragraphStyle="PLAIN" v="v1">
@@ -7189,7 +7260,7 @@
                 </row>
             </table>
         </div>
-        <div v="v1">
+        <div v="v1" orientation="COLUMN">
             <title id="span" size="MEDIUM" v="v1">Span</title>
 
             <paragraph paragraphStyle="PLAIN" v="v1">
@@ -7260,7 +7331,7 @@
                 </row>
             </table>
         </div>
-        <div v="v1">
+        <div v="v1" orientation="COLUMN">
             <title id="sub-menu" size="MEDIUM" v="v1">Sub Menu</title>
 
             <paragraph paragraphStyle="PLAIN" v="v1">
@@ -7359,7 +7430,7 @@
                 </row>
             </table>
         </div>
-        <div v="v1">
+        <div v="v1" orientation="COLUMN">
             <title id="sub-menu-label" size="MEDIUM" v="v1">Sub Menu Label</title>
 
             <paragraph paragraphStyle="PLAIN" v="v1">
@@ -7455,7 +7526,7 @@
                 </row>
             </table>
         </div>
-        <div v="v1">
+        <div v="v1" orientation="COLUMN">
             <title id="switch" size="MEDIUM" v="v1">Switch</title>
 
             <paragraph paragraphStyle="PLAIN" v="v1">
@@ -7530,7 +7601,7 @@
                 </row>
             </table>
         </div>
-        <div v="v1">
+        <div v="v1" orientation="COLUMN">
             <title id="table" size="MEDIUM" v="v1">Table</title>
 
             <paragraph paragraphStyle="PLAIN" v="v1">
@@ -7602,7 +7673,7 @@
                 </row>
             </table>
         </div>
-        <div v="v1">
+        <div v="v1" orientation="COLUMN">
             <title id="title" size="MEDIUM" v="v1">Title</title>
 
             <paragraph paragraphStyle="PLAIN" v="v1">
@@ -7710,7 +7781,7 @@
                 </row>
             </table>
         </div>
-        <div v="v1">
+        <div v="v1" orientation="COLUMN">
             <title id="tool-tip" size="MEDIUM" v="v1">Tool Tip</title>
 
             <paragraph paragraphStyle="PLAIN" v="v1">
@@ -7803,7 +7874,7 @@
                 </row>
             </table>
         </div>
-        <div v="v1">
+        <div v="v1" orientation="COLUMN">
             <title id="tray" size="MEDIUM" v="v1">Tray</title>
 
             <paragraph paragraphStyle="PLAIN" v="v1">
@@ -7955,7 +8026,7 @@
                 </row>
             </table>
         </div>
-        <div v="v1">
+        <div v="v1" orientation="COLUMN">
             <title id="tray-header" size="MEDIUM" v="v1">Tray Header</title>
 
             <paragraph paragraphStyle="PLAIN" v="v1">
@@ -8020,7 +8091,7 @@
                 </row>
             </table>
         </div>
-        <div v="v1">
+        <div v="v1" orientation="COLUMN">
             <title id="user-explorer" size="MEDIUM" v="v1">User Explorer</title>
 
             <paragraph paragraphStyle="PLAIN" v="v1">
@@ -8288,7 +8359,7 @@
                 </row>
             </table>
         </div>
-        <div v="v1">
+        <div v="v1" orientation="COLUMN">
             <title id="uuid" size="MEDIUM" v="v1">UUID</title>
 
             <paragraph paragraphStyle="PLAIN" v="v1">
@@ -8361,7 +8432,7 @@
                 </row>
             </table>
         </div>
-        <div v="v1">
+        <div v="v1" orientation="COLUMN">
             <title id="validation-rule" size="MEDIUM" v="v1">Validation Rule</title>
 
             <paragraph paragraphStyle="PLAIN" v="v1">
@@ -8456,7 +8527,7 @@
                 </row>
             </table>
         </div>
-        <div v="v1">
+        <div v="v1" orientation="COLUMN">
             <title id="value" size="MEDIUM" v="v1">Value</title>
 
             <paragraph paragraphStyle="PLAIN" v="v1">
@@ -8598,7 +8669,7 @@
                 </row>
             </table>
         </div>
-        <div v="v1">
+        <div v="v1" orientation="COLUMN">
             <title id="warning" size="MEDIUM" v="v1">Warning</title>
 
             <paragraph paragraphStyle="PLAIN" v="v1">
@@ -8681,7 +8752,7 @@
                 </row>
             </table>
         </div>
-        <div v="v1">
+        <div v="v1" orientation="COLUMN">
             <title id="well" size="MEDIUM" v="v1">Well</title>
 
             <paragraph paragraphStyle="PLAIN" v="v1">
@@ -8806,7 +8877,7 @@
                 </row>
             </table>
         </div>
-        <div v="v1">
+        <div v="v1" orientation="COLUMN">
             <title id="wizard-test-results" size="MEDIUM" v="v1">Wizard Test Results</title>
 
             <paragraph paragraphStyle="PLAIN" v="v1">
@@ -8861,6 +8932,262 @@
                         </paragraph>
                     </cell>
                     <cell>html</cell>
+                </row>
+            </table>
+        </div>
+        <div v="v1" orientation="COLUMN">
+            <title id="wizard-intro-panel" size="MEDIUM" v="v1">Wizard Intro Panel</title>
+
+            <paragraph paragraphStyle="PLAIN" v="v1">
+                The Wizard Intro Panel Widget is a special purpose widget that must be defined within the Wizard Intro
+                Page. The panel presents the Start button that initiates the Wizard, when the Intro Page is configured.
+            </paragraph>
+
+            <title size="SMALLER" v="v1">Widget</title>
+
+            <paragraph paragraphStyle="PLAIN" v="v1">
+                The Wizard Intro Panel Widget is a Flex Item.
+            </paragraph>
+
+            <title size="SMALLER" v="v1">Template</title>
+
+            <paragraph paragraphStyle="PLAIN" v="v1">
+                The template for the widget is the wizard-intro-panel.ftl file. It takes the following tokens.
+            </paragraph>
+
+            <table v="v1">
+                <row>
+                    <column>Attribute</column>
+                    <column>Description</column>
+                    <column>Type</column>
+                </row>
+                <row>
+                    <cell>id</cell>
+                    <cell>
+                        <paragraph paragraphStyle="PLAIN" v="v1">
+                            A unique id for the widget.
+                        </paragraph>
+                    </cell>
+                    <cell>string</cell>
+                </row>
+                <row>
+                    <cell>_csrf</cell>
+                    <cell>
+                        <paragraph paragraphStyle="PLAIN" v="v1">
+                            The CSRF token for the form submit.
+                        </paragraph>
+                    </cell>
+                    <cell>string</cell>
+                </row>
+                <row>
+                    <cell>classes</cell>
+                    <cell>
+                        <paragraph paragraphStyle="PLAIN" v="v1">
+                            A list of classes that should be applied.
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        class list
+                    </cell>
+                </row>
+                <row>
+                    <cell>itemStyles</cell>
+                    <cell>
+                        <paragraph paragraphStyle="PLAIN" v="v1">
+                            The css styles that should be applied in order to support Flex Item definitions.
+                        </paragraph>
+                    </cell>
+                    <cell>css</cell>
+                </row>
+                <row>
+                    <cell>testMode</cell>
+                    <cell>
+                        <paragraph paragraphStyle="PLAIN" v="v1">
+                            The testMode token indicates if the widget should render in test mode, which typically
+                            disables any button or link clicks.
+                        </paragraph>
+                    </cell>
+                    <cell>boolean</cell>
+                </row>
+                <row>
+                    <cell>action</cell>
+                    <cell>
+                        <paragraph paragraphStyle="PLAIN" v="v1">
+                            The action token contains the url for the action attribute of the form.
+                        </paragraph>
+                    </cell>
+                    <cell>url</cell>
+                </row>
+            </table>
+        </div>
+        <div v="v1" orientation="COLUMN">
+            <title id="wizard-resume-panel" size="MEDIUM" v="v1">Wizard Resume Panel</title>
+
+            <paragraph paragraphStyle="PLAIN" v="v1">
+                The Wizard Resume Panel Widget is a special purpose widget that must be defined within the Wizard Resume
+                Page. Its is presented as an intro page when an inflight Wizard is found and presented to the user.
+            </paragraph>
+
+            <title size="SMALLER" v="v1">Widget</title>
+
+            <paragraph paragraphStyle="PLAIN" v="v1">
+                The Wizard Resume Panel Widget is a Flex Item.
+            </paragraph>
+
+            <title size="SMALLER" v="v1">Template</title>
+
+            <paragraph paragraphStyle="PLAIN" v="v1">
+                The template for the widget is the wizard-resume-panel.ftl file. It takes the following tokens.
+            </paragraph>
+
+            <table v="v1">
+                <row>
+                    <column>Attribute</column>
+                    <column>Description</column>
+                    <column>Type</column>
+                </row>
+                <row>
+                    <cell>id</cell>
+                    <cell>
+                        <paragraph paragraphStyle="PLAIN" v="v1">
+                            A unique id for the widget.
+                        </paragraph>
+                    </cell>
+                    <cell>string</cell>
+                </row>
+                <row>
+                    <cell>_csrf</cell>
+                    <cell>
+                        <paragraph paragraphStyle="PLAIN" v="v1">
+                            The CSRF token for the form submit.
+                        </paragraph>
+                    </cell>
+                    <cell>string</cell>
+                </row>
+                <row>
+                    <cell>classes</cell>
+                    <cell>
+                        <paragraph paragraphStyle="PLAIN" v="v1">
+                            A list of classes that should be applied.
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        class list
+                    </cell>
+                </row>
+                <row>
+                    <cell>itemStyles</cell>
+                    <cell>
+                        <paragraph paragraphStyle="PLAIN" v="v1">
+                            The css styles that should be applied in order to support Flex Item definitions.
+                        </paragraph>
+                    </cell>
+                    <cell>css</cell>
+                </row>
+                <row>
+                    <cell>testMode</cell>
+                    <cell>
+                        <paragraph paragraphStyle="PLAIN" v="v1">
+                            The testMode token indicates if the widget should render in test mode, which typically
+                            disables any button or link clicks.
+                        </paragraph>
+                    </cell>
+                    <cell>boolean</cell>
+                </row>
+                <row>
+                    <cell>action</cell>
+                    <cell>
+                        <paragraph paragraphStyle="PLAIN" v="v1">
+                            The action token contains the url for the action attribute of the form.
+                        </paragraph>
+                    </cell>
+                    <cell>url</cell>
+                </row>
+            </table>
+        </div>
+        <div v="v1" orientation="COLUMN">
+            <title id="confirm-workflow-panel" size="MEDIUM" v="v1">Wizard Outro Panel</title>
+
+            <paragraph paragraphStyle="PLAIN" v="v1">
+                The Wizard Outro Panel Widget is a special purpose widget that must be defined within the Wizard Outro
+                Page. The panel presents the Complete button that finalizes the Wizard, and lets the Platform present
+                the next page. The Outro Page is only presented when configured against the Wizard.
+            </paragraph>
+
+            <title size="SMALLER" v="v1">Widget</title>
+
+            <paragraph paragraphStyle="PLAIN" v="v1">
+                The Wizard Outro Panel Widget is a Flex Item.
+            </paragraph>
+
+            <title size="SMALLER" v="v1">Template</title>
+
+            <paragraph paragraphStyle="PLAIN" v="v1">
+                The template for the widget is the wizard-outro-panel.ftl file. It takes the following tokens.
+            </paragraph>
+
+            <table v="v1">
+                <row>
+                    <column>Attribute</column>
+                    <column>Description</column>
+                    <column>Type</column>
+                </row>
+                <row>
+                    <cell>id</cell>
+                    <cell>
+                        <paragraph paragraphStyle="PLAIN" v="v1">
+                            A unique id for the widget.
+                        </paragraph>
+                    </cell>
+                    <cell>string</cell>
+                </row>
+                <row>
+                    <cell>_csrf</cell>
+                    <cell>
+                        <paragraph paragraphStyle="PLAIN" v="v1">
+                            The CSRF token for the form submit.
+                        </paragraph>
+                    </cell>
+                    <cell>string</cell>
+                </row>
+                <row>
+                    <cell>classes</cell>
+                    <cell>
+                        <paragraph paragraphStyle="PLAIN" v="v1">
+                            A list of classes that should be applied.
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        class list
+                    </cell>
+                </row>
+                <row>
+                    <cell>itemStyles</cell>
+                    <cell>
+                        <paragraph paragraphStyle="PLAIN" v="v1">
+                            The css styles that should be applied in order to support Flex Item definitions.
+                        </paragraph>
+                    </cell>
+                    <cell>css</cell>
+                </row>
+                <row>
+                    <cell>testMode</cell>
+                    <cell>
+                        <paragraph paragraphStyle="PLAIN" v="v1">
+                            The testMode token indicates if the widget should render in test mode, which typically
+                            disables any button or link clicks.
+                        </paragraph>
+                    </cell>
+                    <cell>boolean</cell>
+                </row>
+                <row>
+                    <cell>action</cell>
+                    <cell>
+                        <paragraph paragraphStyle="PLAIN" v="v1">
+                            The action token contains the url for the action attribute of the form.
+                        </paragraph>
+                    </cell>
+                    <cell>url</cell>
                 </row>
             </table>
         </div>

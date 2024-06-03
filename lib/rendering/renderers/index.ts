@@ -74,6 +74,9 @@ import ScriptRenderer from './ScriptRenderer';
 import LoopRenderer from './LoopRenderer';
 import SwitchRenderer from './SwitchRenderer';
 import FakeGroupRenderer from './FakeGroupRenderer';
+import WizardIntroPanelRenderer from './WizardIntroPanelRenderer';
+import WizardOutroPanelRenderer from './WizardOutroPanelRenderer';
+import WizardResumePanelRenderer from './WizardResumePanelRenderer';
 
 const registry = [
     new TitleRenderer(),
@@ -151,7 +154,10 @@ const registry = [
     new UuidRenderer(),
     new ScriptRenderer(),
     new LoopRenderer(),
-    new SwitchRenderer()
+    new SwitchRenderer(),
+    new WizardIntroPanelRenderer(),
+    new WizardOutroPanelRenderer(),
+    new WizardResumePanelRenderer()
 ];
 
 export function findRenderer(name: string) {

@@ -1,4 +1,4 @@
-<form defnVersion="v1" id="intro" title="Intro" orientation="COLUMN">
+<page defnVersion="v1" id="intro" title="Intro" orientation="COLUMN">
     <title size="LARGE" v="v1">Start Wizard</title>
     <paragraph v="v1">You are about to be presented with a form to complete. There will be a number of web
         pages requesting information from you. Please fill in the details accurately. Falsifying information can have
@@ -23,5 +23,5 @@
     <paragraph v="v1">If you encounter any problems, please do not hesistate to contact us on
         000-00-00-00-00. Or email us at xyz@maximillian.com.
     </paragraph>
-    <button type="NEXT" required="false" v="v1">Start</button>
-</form>
+    <wizard-intro-panel/>
+</page>

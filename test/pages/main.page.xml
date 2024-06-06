@@ -560,7 +560,7 @@
             </link>
         </list-item>
         <list-item>
-            <link view="reference.html#enumeration-input" v="v1">Enumeration Input</link>
+            <link view="reference.html#enumeration" v="v1">Enumeration</link>
         </list-item>
         <list-item>
             <link view="reference.html#error-summary" v="v1">Error Summary</link>

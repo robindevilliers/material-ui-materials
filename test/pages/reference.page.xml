@@ -79,9 +79,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Permitted values/Examples</column>
+                    <column width="25%">Permitted values/Examples</column>
                 </row>
                 <row>
                     <cell>alignSelf</cell>
@@ -195,9 +195,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Name</column>
+                    <column width="20%">Name</column>
                     <column>Description</column>
-                    <column>Values</column>
+                    <column width="25%">Values</column>
                 </row>
                 <row>
                     <cell>Background Flavour</cell>
@@ -232,9 +232,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Permitted values/Examples</column>
+                    <column width="25%">Permitted values/Examples</column>
                 </row>
                 <row>
                     <cell>orientation</cell>
@@ -313,9 +313,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Permitted values/Examples</column>
+                    <column width="25%">Permitted values/Examples</column>
                 </row>
                 <row>
                     <cell>fontFlavour</cell>
@@ -367,9 +367,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Name</column>
+                    <column width="20%">Name</column>
                     <column>Description</column>
-                    <column>Values</column>
+                    <column width="25%">Values</column>
                 </row>
                 <row>
                     <cell>Background Flavour</cell>
@@ -450,9 +450,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Permitted values/Examples</column>
+                    <column width="25%">Permitted values/Examples</column>
                 </row>
                 <row>
                     <cell>flush</cell>
@@ -488,9 +488,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Type</column>
+                    <column width="25%">Type</column>
                 </row>
                 <row>
                     <cell>id</cell>
@@ -551,9 +551,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Name</column>
+                    <column width="20%">Name</column>
                     <column>Description</column>
-                    <column>Values</column>
+                    <column width="25%">Values</column>
                 </row>
                 <row>
                     <cell>Background Flavour</cell>
@@ -595,9 +595,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Permitted values/Examples</column>
+                    <column width="25%">Permitted values/Examples</column>
                 </row>
                 <row>
                     <cell>active</cell>
@@ -630,9 +630,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Type</column>
+                    <column width="25%">Type</column>
                 </row>
                 <row>
                     <cell>id</cell>
@@ -707,9 +707,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Name</column>
+                    <column width="20%">Name</column>
                     <column>Description</column>
-                    <column>Values</column>
+                    <column width="25%">Values</column>
                 </row>
                 <row>
                     <cell>Background Flavour</cell>
@@ -742,9 +742,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Permitted values/Examples</column>
+                    <column width="25%">Permitted values/Examples</column>
                 </row>
                 <row>
                     <cell>active</cell>
@@ -778,9 +778,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Type</column>
+                    <column width="25%">Type</column>
                 </row>
                 <row>
                     <cell>id</cell>
@@ -852,9 +852,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Type</column>
+                    <column width="25%">Type</column>
                 </row>
                 <row>
                     <cell>id</cell>
@@ -911,9 +911,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Permitted values/Examples</column>
+                    <column width="25%">Permitted values/Examples</column>
                 </row>
                 <row>
                     <cell>size</cell>
@@ -943,9 +943,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Type</column>
+                    <column width="25%">Type</column>
                 </row>
                 <row>
                     <cell>id</cell>
@@ -1009,9 +1009,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Name</column>
+                    <column width="20%">Name</column>
                     <column>Description</column>
-                    <column>Values</column>
+                    <column width="25%">Values</column>
                 </row>
                 <row>
                     <cell>Badge Flavour</cell>
@@ -1073,9 +1073,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Permitted values/Examples</column>
+                    <column width="25%">Permitted values/Examples</column>
                 </row>
                 <row>
                     <cell>type</cell>
@@ -1170,9 +1170,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Type</column>
+                    <column width="25%">Type</column>
                 </row>
                 <row>
                     <cell>id</cell>
@@ -1281,9 +1281,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Name</column>
+                    <column width="20%">Name</column>
                     <column>Description</column>
-                    <column>Values</column>
+                    <column width="25%">Values</column>
                 </row>
                 <row>
                     <cell>Button Flavour</cell>
@@ -1334,9 +1334,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Permitted values/Examples</column>
+                    <column width="25%">Permitted values/Examples</column>
                 </row>
                 <row>
                     <cell>flavour</cell>
@@ -1426,9 +1426,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Type</column>
+                    <column width="25%">Type</column>
                 </row>
                 <row>
                     <cell>id</cell>
@@ -1580,9 +1580,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Name</column>
+                    <column width="20%">Name</column>
                     <column>Description</column>
-                    <column>Values</column>
+                    <column width="25%">Values</column>
                 </row>
                 <row>
                     <cell>Card Flavour</cell>
@@ -1629,9 +1629,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Type</column>
+                    <column width="25%">Type</column>
                 </row>
                 <row>
                     <cell>id</cell>
@@ -1691,9 +1691,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Type</column>
+                    <column width="25%">Type</column>
                 </row>
                 <row>
                     <cell>id</cell>
@@ -1753,9 +1753,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Type</column>
+                    <column width="25%">Type</column>
                 </row>
                 <row>
                     <cell>id</cell>
@@ -1811,9 +1811,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Permitted values/Examples</column>
+                    <column width="25%">Permitted values/Examples</column>
                 </row>
                 <row>
                     <cell>autoSlide</cell>
@@ -1854,9 +1854,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Type</column>
+                    <column width="25%">Type</column>
                 </row>
                 <row>
                     <cell>id</cell>
@@ -1973,9 +1973,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Permitted values/Examples</column>
+                    <column width="25%">Permitted values/Examples</column>
                 </row>
                 <row>
                     <cell>src</cell>
@@ -2018,9 +2018,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Type</column>
+                    <column width="25%">Type</column>
                 </row>
                 <row>
                     <cell>id</cell>
@@ -2142,9 +2142,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Type</column>
+                    <column width="25%">Type</column>
                 </row>
                 <row>
                     <cell>id</cell>
@@ -2211,9 +2211,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Type</column>
+                    <column width="25%">Type</column>
                 </row>
                 <row>
                     <cell>id</cell>
@@ -2306,9 +2306,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Type</column>
+                    <column width="25%">Type</column>
                 </row>
                 <row>
                     <cell>id</cell>
@@ -2375,9 +2375,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Type</column>
+                    <column width="25%">Type</column>
                 </row>
                 <row>
                     <cell>id</cell>
@@ -2462,9 +2462,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Type</column>
+                    <column width="25%">Type</column>
                 </row>
                 <row>
                     <cell>id</cell>
@@ -2555,9 +2555,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Type</column>
+                    <column width="25%">Type</column>
                 </row>
                 <row>
                     <cell>id</cell>
@@ -2659,9 +2659,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Type</column>
+                    <column width="25%">Type</column>
                 </row>
                 <row>
                     <cell>id</cell>
@@ -2733,9 +2733,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Type</column>
+                    <column width="25%">Type</column>
                 </row>
                 <row>
                     <cell>id</cell>
@@ -2784,9 +2784,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Permitted values/Examples</column>
+                    <column width="25%">Permitted values/Examples</column>
                 </row>
                 <row>
                     <cell>label</cell>
@@ -2807,9 +2807,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Type</column>
+                    <column width="25%">Type</column>
                 </row>
                 <row>
                     <cell>id</cell>
@@ -2859,17 +2859,17 @@
             </table>
         </div>
         <div v="v1" orientation="COLUMN">
-            <title id="enumeration-input" size="MEDIUM" v="v1">Enumeration Input</title>
+            <title id="enumeration" size="MEDIUM" v="v1">Enumeration</title>
 
             <paragraph paragraphStyle="PLAIN" v="v1">
-                The Enumeration Input Widget will present either a select drop-down or a series of checkboxes or radio
+                The Enumeration widget will present either a select drop-down or a series of checkboxes or radio
                 buttons. The values that can be selected are always predefined and hence the name. Multiple values or
-                single values can be selected. The Enumeration Input Widget is only valid within a Form as a part of a
+                single values can be selected. The Enumeration widget is only valid within a Form as a part of a
                 Wizard. The only exception is as a part of the style guides.
             </paragraph>
 
             <paragraph paragraphStyle="PLAIN" v="v1">
-                The Enumeration Input Widget can be viewed on the
+                The Enumeration widget can be viewed on the
                 <link type="internal" view="style-guide-delta.html" openNewWindow="true" v="v1">
                     Style Guide Delta
                 </link>
@@ -2884,9 +2884,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Permitted values/Examples</column>
+                    <column width="25%">Permitted values/Examples</column>
                 </row>
                 <row>
                     <cell>label</cell>
@@ -2986,9 +2986,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Type</column>
+                    <column width="25%">Type</column>
                 </row>
                 <row>
                     <cell>id</cell>
@@ -3023,7 +3023,7 @@
                     <cell>value</cell>
                     <cell>
                         <paragraph paragraphStyle="PLAIN" v="v1">
-                            The value token holds the current value for the Enumeration Input.
+                            The value token holds the current value for the Enumeration.
                         </paragraph>
                     </cell>
                     <cell>string</cell>
@@ -3051,7 +3051,7 @@
                     <cell>name</cell>
                     <cell>
                         <paragraph paragraphStyle="PLAIN" v="v1">
-                            The name token specifies the name that the Enumeration Input should hold for the purposes of
+                            The name token specifies the name that the Enumeration should hold for the purposes of
                             inclusion into the results.
                         </paragraph>
                     </cell>
@@ -3115,7 +3115,7 @@
                     <cell>disabled</cell>
                     <cell>
                         <paragraph paragraphStyle="PLAIN" v="v1">
-                            The disabled token is a boolean value that specifies if the Enumeration Input should be
+                            The disabled token is a boolean value that specifies if the Enumeration should be
                             disabled or not.
                         </paragraph>
                     </cell>
@@ -3125,7 +3125,7 @@
                     <cell>panels</cell>
                     <cell>
                         <paragraph paragraphStyle="PLAIN" v="v1">
-                            The panels token is a boolean value that specifies if the Enumeration Input has panels or
+                            The panels token is a boolean value that specifies if the Enumeration has panels or
                             not.
                         </paragraph>
                     </cell>
@@ -3136,7 +3136,7 @@
                     <cell>
                         <paragraph paragraphStyle="PLAIN" v="v1">
                             The error token specifies an error message if there has been some validation error
-                            associated with the Enumeration Input.
+                            associated with the Enumeration.
                         </paragraph>
                     </cell>
                     <cell>string</cell>
@@ -3152,7 +3152,7 @@
             </paragraph>
 
             <paragraph paragraphStyle="PLAIN" v="v1">
-                The Enumeration Input Widget can be viewed on the
+                The Enumeration widget can be viewed on the
                 <link type="internal" view="style-guide-delta.html" openNewWindow="true" v="v1">
                     Style Guide Delta
                 </link>
@@ -3173,9 +3173,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Type</column>
+                    <column width="25%">Type</column>
                 </row>
                 <row>
                     <cell>id</cell>
@@ -3244,9 +3244,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Type</column>
+                    <column width="25%">Type</column>
                 </row>
                 <row>
                     <cell>id</cell>
@@ -3347,9 +3347,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Permitted values/Examples</column>
+                    <column width="25%">Permitted values/Examples</column>
                 </row>
                 <row>
                     <cell>name</cell>
@@ -3384,9 +3384,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Type</column>
+                    <column width="25%">Type</column>
                 </row>
                 <row>
                     <cell>id</cell>
@@ -3440,9 +3440,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Name</column>
+                    <column width="20%">Name</column>
                     <column>Description</column>
-                    <column>Values</column>
+                    <column width="25%">Values</column>
                 </row>
                 <row>
                     <cell>Icon Flavour</cell>
@@ -3496,9 +3496,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Permitted values/Examples</column>
+                    <column width="25%">Permitted values/Examples</column>
                 </row>
                 <row>
                     <cell>condition</cell>
@@ -3541,9 +3541,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Permitted values/Examples</column>
+                    <column width="25%">Permitted values/Examples</column>
                 </row>
                 <row>
                     <cell>src</cell>
@@ -3612,9 +3612,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Type</column>
+                    <column width="25%">Type</column>
                 </row>
                 <row>
                     <cell>id</cell>
@@ -3686,9 +3686,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Permitted values/Examples</column>
+                    <column width="25%">Permitted values/Examples</column>
                 </row>
                 <row>
                     <cell>workflow</cell>
@@ -3751,9 +3751,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Type</column>
+                    <column width="25%">Type</column>
                 </row>
                 <row>
                     <cell>id</cell>
@@ -3871,9 +3871,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Name</column>
+                    <column width="20%">Name</column>
                     <column>Description</column>
-                    <column>Values</column>
+                    <column width="25%">Values</column>
                 </row>
                 <row>
                     <cell>Button Flavour</cell>
@@ -3923,9 +3923,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Permitted values/Examples</column>
+                    <column width="25%">Permitted values/Examples</column>
                 </row>
                 <row>
                     <cell>label</cell>
@@ -4099,9 +4099,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Type</column>
+                    <column width="25%">Type</column>
                 </row>
                 <row>
                     <cell>id</cell>
@@ -4135,7 +4135,7 @@
                     <cell>value</cell>
                     <cell>
                         <paragraph paragraphStyle="PLAIN" v="v1">
-                            The value token holds the current value for the Enumeration Input.
+                            The value token holds the current value for the Enumeration.
                         </paragraph>
                     </cell>
                     <cell>string</cell>
@@ -4163,7 +4163,7 @@
                     <cell>name</cell>
                     <cell>
                         <paragraph paragraphStyle="PLAIN" v="v1">
-                            The name token specifies the name that the Enumeration Input should hold for the purposes of
+                            The name token specifies the name that the Enumeration should hold for the purposes of
                             inclusion into the results.
                         </paragraph>
                     </cell>
@@ -4250,7 +4250,7 @@
                     <cell>
                         <paragraph paragraphStyle="PLAIN" v="v1">
                             The error token specifies an error message if there has been some validation error
-                            associated with the Enumeration Input.
+                            associated with the Enumeration.
                         </paragraph>
                     </cell>
                     <cell>string</cell>
@@ -4282,9 +4282,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Permitted values/Examples</column>
+                    <column width="25%">Permitted values/Examples</column>
                 </row>
                 <row>
                     <cell>flavour</cell>
@@ -4305,9 +4305,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Type</column>
+                    <column width="25%">Type</column>
                 </row>
                 <row>
                     <cell>id</cell>
@@ -4365,9 +4365,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Name</column>
+                    <column width="20%">Name</column>
                     <column>Description</column>
-                    <column>Values</column>
+                    <column width="25%">Values</column>
                 </row>
                 <row>
                     <cell>Inset Text Flavour</cell>
@@ -4415,9 +4415,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Type</column>
+                    <column width="25%">Type</column>
                 </row>
                 <row>
                     <cell>id</cell>
@@ -4492,9 +4492,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Permitted values/Examples</column>
+                    <column width="25%">Permitted values/Examples</column>
                 </row>
                 <row>
                     <cell>type</cell>
@@ -4546,9 +4546,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Type</column>
+                    <column width="25%">Type</column>
                 </row>
                 <row>
                     <cell>id</cell>
@@ -4645,9 +4645,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Permitted values/Examples</column>
+                    <column width="25%">Permitted values/Examples</column>
                 </row>
                 <row>
                     <cell>listStyle</cell>
@@ -4670,9 +4670,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Type</column>
+                    <column width="25%">Type</column>
                 </row>
                 <row>
                     <cell>id</cell>
@@ -4753,9 +4753,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Type</column>
+                    <column width="25%">Type</column>
                 </row>
                 <row>
                     <cell>id</cell>
@@ -4839,9 +4839,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Type</column>
+                    <column width="25%">Type</column>
                 </row>
                 <row>
                     <cell>id</cell>
@@ -4946,9 +4946,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Permitted values/Examples</column>
+                    <column width="25%">Permitted values/Examples</column>
                 </row>
                 <row>
                     <cell>reference</cell>
@@ -4973,9 +4973,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Type</column>
+                    <column width="25%">Type</column>
                 </row>
                 <row>
                     <cell>id</cell>
@@ -5022,9 +5022,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Permitted values/Examples</column>
+                    <column width="25%">Permitted values/Examples</column>
                 </row>
                 <row>
                     <cell>axis</cell>
@@ -5045,9 +5045,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Type</column>
+                    <column width="25%">Type</column>
                 </row>
                 <row>
                     <cell>id</cell>
@@ -5137,9 +5137,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Type</column>
+                    <column width="25%">Type</column>
                 </row>
                 <row>
                     <cell>id</cell>
@@ -5203,9 +5203,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Permitted values/Examples</column>
+                    <column width="25%">Permitted values/Examples</column>
                 </row>
                 <row>
                     <cell>type</cell>
@@ -5278,9 +5278,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Type</column>
+                    <column width="25%">Type</column>
                 </row>
                 <row>
                     <cell>id</cell>
@@ -5397,9 +5397,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Name</column>
+                    <column width="20%">Name</column>
                     <column>Description</column>
-                    <column>Values</column>
+                    <column width="25%">Values</column>
                 </row>
                 <row>
                     <cell>Text Flavour</cell>
@@ -5441,9 +5441,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Permitted values/Examples</column>
+                    <column width="25%">Permitted values/Examples</column>
                 </row>
                 <row>
                     <cell>queue</cell>
@@ -5466,9 +5466,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Type</column>
+                    <column width="25%">Type</column>
                 </row>
                 <row>
                     <cell>id</cell>
@@ -5723,9 +5723,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Permitted values/Examples</column>
+                    <column width="25%">Permitted values/Examples</column>
                 </row>
                 <row>
                     <cell>label</cell>
@@ -5758,9 +5758,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Type</column>
+                    <column width="25%">Type</column>
                 </row>
                 <row>
                     <cell>id</cell>
@@ -5834,9 +5834,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Name</column>
+                    <column width="20%">Name</column>
                     <column>Description</column>
-                    <column>Values</column>
+                    <column width="25%">Values</column>
                 </row>
                 <row>
                     <cell>Mile Stone Style</cell>
@@ -5876,9 +5876,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Permitted values/Examples</column>
+                    <column width="25%">Permitted values/Examples</column>
                 </row>
                 <row>
                     <cell>title</cell>
@@ -5910,9 +5910,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Type</column>
+                    <column width="25%">Type</column>
                 </row>
                 <row>
                     <cell>id</cell>
@@ -5986,9 +5986,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Name</column>
+                    <column width="20%">Name</column>
                     <column>Description</column>
-                    <column>Values</column>
+                    <column width="25%">Values</column>
                 </row>
                 <row>
                     <cell>Notification Banner Flavour</cell>
@@ -6022,9 +6022,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Permitted values/Examples</column>
+                    <column width="25%">Permitted values/Examples</column>
                 </row>
                 <row>
                     <cell>title</cell>
@@ -6046,9 +6046,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Type</column>
+                    <column width="25%">Type</column>
                 </row>
                 <row>
                     <cell>id</cell>
@@ -6094,9 +6094,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Permitted values/Examples</column>
+                    <column width="25%">Permitted values/Examples</column>
                 </row>
                 <row>
                     <cell>paragraphStyle</cell>
@@ -6118,9 +6118,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Type</column>
+                    <column width="25%">Type</column>
                 </row>
                 <row>
                     <cell>id</cell>
@@ -6199,9 +6199,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Permitted values/Examples</column>
+                    <column width="25%">Permitted values/Examples</column>
                 </row>
                 <row>
                     <cell>label</cell>
@@ -6224,9 +6224,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Type</column>
+                    <column width="25%">Type</column>
                 </row>
                 <row>
                     <cell>id</cell>
@@ -6301,9 +6301,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Permitted values/Examples</column>
+                    <column width="25%">Permitted values/Examples</column>
                 </row>
                 <row>
                     <cell>axis</cell>
@@ -6364,9 +6364,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Type</column>
+                    <column width="25%">Type</column>
                 </row>
                 <row>
                     <cell>id</cell>
@@ -6433,9 +6433,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Name</column>
+                    <column width="20%">Name</column>
                     <column>Description</column>
-                    <column>Values</column>
+                    <column width="25%">Values</column>
                 </row>
                 <row>
                     <cell>Progress Bar Flavour</cell>
@@ -6503,9 +6503,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Type</column>
+                    <column width="25%">Type</column>
                 </row>
                 <row>
                     <cell>id</cell>
@@ -6720,9 +6720,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Type</column>
+                    <column width="25%">Type</column>
                 </row>
                 <row>
                     <cell>id</cell>
@@ -6824,9 +6824,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Type</column>
+                    <column width="25%">Type</column>
                 </row>
                 <row>
                     <cell>id</cell>
@@ -6935,9 +6935,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Type</column>
+                    <column width="25%">Type</column>
                 </row>
                 <row>
                     <cell>id</cell>
@@ -6963,7 +6963,7 @@
             <title id="scale" size="MEDIUM" v="v1">Scale</title>
 
             <paragraph paragraphStyle="PLAIN" v="v1">
-                The Scale Widget will present a special purpose variant of the Enumeration Input Widget. Scales are
+                The Scale Widget will present a special purpose variant of the Enumeration widget. Scales are
                 really Enumerations, but their values are predefined. They also present in special ways. If you need the
                 user to enter a value betwen 1 and 10, or to indicate how they feel from Very Bad to Very Good, then the
                 Scale Widget fulfills the need.
@@ -6985,9 +6985,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Permitted values/Examples</column>
+                    <column width="25%">Permitted values/Examples</column>
                 </row>
                 <row>
                     <cell>label</cell>
@@ -7077,9 +7077,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Type</column>
+                    <column width="25%">Type</column>
                 </row>
                 <row>
                     <cell>id</cell>
@@ -7112,7 +7112,7 @@
                     <cell>value</cell>
                     <cell>
                         <paragraph paragraphStyle="PLAIN" v="v1">
-                            The value token holds the current value for the Enumeration Input.
+                            The value token holds the current value for the Enumeration.
                         </paragraph>
                     </cell>
                     <cell>string</cell>
@@ -7180,7 +7180,7 @@
                     <cell>disabled</cell>
                     <cell>
                         <paragraph paragraphStyle="PLAIN" v="v1">
-                            The disabled token is a boolean value that specifies if the Enumeration Input should be
+                            The disabled token is a boolean value that specifies if the Enumeration should be
                             disabled or not.
                         </paragraph>
                     </cell>
@@ -7191,7 +7191,7 @@
                     <cell>
                         <paragraph paragraphStyle="PLAIN" v="v1">
                             The error token specifies an error message if there has been some validation error
-                            associated with the Enumeration Input.
+                            associated with the Enumeration.
                         </paragraph>
                     </cell>
                     <cell>string</cell>
@@ -7221,9 +7221,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Permitted values/Examples</column>
+                    <column width="25%">Permitted values/Examples</column>
                 </row>
                 <row>
                     <cell>script</cell>
@@ -7244,9 +7244,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Type</column>
+                    <column width="25%">Type</column>
                 </row>
                 <row>
                     <cell>text</cell>
@@ -7289,9 +7289,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Type</column>
+                    <column width="25%">Type</column>
                 </row>
                 <row>
                     <cell>id</cell>
@@ -7356,9 +7356,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Permitted values/Examples</column>
+                    <column width="25%">Permitted values/Examples</column>
                 </row>
                 <row>
                     <cell>flavour</cell>
@@ -7379,9 +7379,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Type</column>
+                    <column width="25%">Type</column>
                 </row>
                 <row>
                     <cell>id</cell>
@@ -7459,9 +7459,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Type</column>
+                    <column width="25%">Type</column>
                 </row>
                 <row>
                     <cell>id</cell>
@@ -7507,9 +7507,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Name</column>
+                    <column width="20%">Name</column>
                     <column>Description</column>
-                    <column>Values</column>
+                    <column width="25%">Values</column>
                 </row>
                 <row>
                     <cell>Text Flavour</cell>
@@ -7557,9 +7557,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Type</column>
+                    <column width="25%">Type</column>
                 </row>
                 <row>
                     <cell>id</cell>
@@ -7631,9 +7631,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Type</column>
+                    <column width="25%">Type</column>
                 </row>
                 <row>
                     <cell>id</cell>
@@ -7696,9 +7696,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Permitted values/Examples</column>
+                    <column width="25%">Permitted values/Examples</column>
                 </row>
                 <row>
                     <cell>size</cell>
@@ -7719,9 +7719,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Type</column>
+                    <column width="25%">Type</column>
                 </row>
                 <row>
                     <cell>id</cell>
@@ -7798,9 +7798,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Permitted values/Examples</column>
+                    <column width="25%">Permitted values/Examples</column>
                 </row>
                 <row>
                     <cell>exposition</cell>
@@ -7821,9 +7821,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Type</column>
+                    <column width="25%">Type</column>
                 </row>
                 <row>
                     <cell>id</cell>
@@ -7902,9 +7902,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Permitted values/Examples</column>
+                    <column width="25%">Permitted values/Examples</column>
                 </row>
                 <row>
                     <cell>queue</cell>
@@ -7925,9 +7925,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Type</column>
+                    <column width="25%">Type</column>
                 </row>
                 <row>
                     <cell>id</cell>
@@ -8056,9 +8056,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Type</column>
+                    <column width="25%">Type</column>
                 </row>
                 <row>
                     <cell>classes</cell>
@@ -8124,9 +8124,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Type</column>
+                    <column width="25%">Type</column>
                 </row>
                 <row>
                     <cell>id</cell>
@@ -8375,9 +8375,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Permitted values/Examples</column>
+                    <column width="25%">Permitted values/Examples</column>
                 </row>
                 <row>
                     <cell>reference</cell>
@@ -8399,9 +8399,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Type</column>
+                    <column width="25%">Type</column>
                 </row>
                 <row>
                     <cell>id</cell>
@@ -8459,9 +8459,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Permitted values/Examples</column>
+                    <column width="25%">Permitted values/Examples</column>
                 </row>
                 <row>
                     <cell>script</cell>
@@ -8483,9 +8483,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Type</column>
+                    <column width="25%">Type</column>
                 </row>
                 <row>
                     <cell>id</cell>
@@ -8531,8 +8531,8 @@
             <title id="value" size="MEDIUM" v="v1">Value</title>
 
             <paragraph paragraphStyle="PLAIN" v="v1">
-                The Value Widget specifies a value for an Enumeration Input Widget. It is the only valid immediate child
-                of an Enumeration Input Widget.
+                The Value Widget specifies a value for an Enumeration widget. It is the only valid immediate child
+                of an Enumeration widget.
             </paragraph>
 
             <paragraph paragraphStyle="PLAIN" v="v1">
@@ -8551,9 +8551,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Permitted values/Examples</column>
+                    <column width="25%">Permitted values/Examples</column>
                 </row>
                 <row>
                     <cell>label</cell>
@@ -8616,9 +8616,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Type</column>
+                    <column width="25%">Type</column>
                 </row>
                 <row>
                     <cell>id</cell>
@@ -8699,9 +8699,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Type</column>
+                    <column width="25%">Type</column>
                 </row>
                 <row>
                     <cell>id</cell>
@@ -8777,9 +8777,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Permitted values/Examples</column>
+                    <column width="25%">Permitted values/Examples</column>
                 </row>
                 <row>
                     <cell>flavour</cell>
@@ -8800,9 +8800,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Type</column>
+                    <column width="25%">Type</column>
                 </row>
                 <row>
                     <cell>id</cell>
@@ -8858,9 +8858,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Name</column>
+                    <column width="20%">Name</column>
                     <column>Description</column>
-                    <column>Values</column>
+                    <column width="25%">Values</column>
                 </row>
                 <row>
                     <cell>Well Flavour</cell>
@@ -8901,9 +8901,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Type</column>
+                    <column width="25%">Type</column>
                 </row>
                 <row>
                     <cell>id</cell>
@@ -8957,9 +8957,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Type</column>
+                    <column width="25%">Type</column>
                 </row>
                 <row>
                     <cell>id</cell>
@@ -9042,9 +9042,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Type</column>
+                    <column width="25%">Type</column>
                 </row>
                 <row>
                     <cell>id</cell>
@@ -9128,9 +9128,9 @@
 
             <table v="v1">
                 <row>
-                    <column>Attribute</column>
+                    <column width="20%">Attribute</column>
                     <column>Description</column>
-                    <column>Type</column>
+                    <column width="25%">Type</column>
                 </row>
                 <row>
                     <cell>id</cell>

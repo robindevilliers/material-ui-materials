@@ -7,6 +7,7 @@ import { Element, isElement, isText } from '../../xml-parser';
 import { StringBuffer } from '../../utilities/StringBuffer';
 import Store from '../../store/Store';
 import { RenderError } from '../RenderError';
+import generateId from '../../utilities/generate-id';
 
 export default class CardRenderer implements Renderer {
     accept(name: string): boolean {
@@ -21,17 +22,25 @@ export default class CardRenderer implements Renderer {
 
         const data: Record<string, any> = {};
         data.id = element.attributes.id;
+        data.type = element.attributes.type;
 
-        if (element.attributes.view){
+        if (element.attributes.type === 'page') {
             if (Store.isTestContext()) {
                 data.href = 'javascript:alert(&quot;link was clicked&quot;); event.preventDefault();';
             } else {
-                data.href = '/' + element.attributes.view;
+                data.href = '/' + element.attributes.page;
             }
+        } else if (element.attributes.type === 'url') {
+            data.href = element.attributes.url;
+        } else if (element.attributes.type === 'workflow') {
+            data._csrf = generateId();
+            data.action = "/workflow/initiate/" + element.attributes.workflow;
         }
 
         data.rel = '';
-        data.target = '';
+        if (element.attributes.openNewWindow === 'true') {
+            data.target = "_blank";
+        }
 
         const output = new StringBuffer();
         element.children.forEach(child => {
@@ -49,6 +58,7 @@ export default class CardRenderer implements Renderer {
                 }
             }
         });
+        data.showCasePrincipalPicker = element.attributes.showCasePrincipalPicker === "true";
 
         const classManager = new ClassManager(classMappings);
         classManager.append(element.attributes.flavour, 'card-', 'card-default');

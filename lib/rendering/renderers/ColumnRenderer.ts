@@ -15,6 +15,9 @@ export default class ColumnRenderer implements Renderer {
         const data: Record<string, any> = {};
         data.id = element.attributes.id;
         data.content = renderingEngine.renderChildren(element);
+        if (element.attributes.width) {
+            data.columnStyles = `width: ${element.attributes.width}; `
+        }
 
         const classManager = new ClassManager(classMappings);
         textStyleSupport(data, classManager, element.attributes, classMappings);

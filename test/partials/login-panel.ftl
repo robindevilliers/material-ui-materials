@@ -47,7 +47,7 @@
             <div class="row">
                 <div class="col s12">
                     <#if errors.global??>
-                        <span class="form-text text-danger">${errors.global}</span>
+                        <span class="login-error form-text text-danger">${errors.global}</span>
                     </#if>
                 </div>
             </div>

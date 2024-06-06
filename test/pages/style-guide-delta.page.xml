@@ -76,10 +76,10 @@
                 </input>
             </div>
             <div orientation="COLUMN" margin="0em 1em" v="v1">
-                <paragraph paragraphStyle="PLAIN" v="v1">This column demonstrates the enumeration input
-                    controls. These controls allow the user to select from a limited set of options. You have the radio
-                    and
-                    checkbox lists and you have the single select dropdowns and multi select dropdowns.
+                <paragraph paragraphStyle="PLAIN" v="v1">
+                    This column demonstrates the Enumeration controls. These controls allow the user to select from a
+                    limited set of options. You have the radio and checkbox lists and you have the single select
+                    dropdowns and multi select dropdowns.
                 </paragraph>
                 <enumeration-input label="Colours" type="STRING" reference="colours" required="false"
                                    cardinality="SINGLE_SELECT" style="RADIO_CHECKBOX" size="MEDIUM"
@@ -170,7 +170,7 @@
         <div orientation="COLUMN" v="v1">
             <paragraph paragraphStyle="PLAIN" v="v1">This section demonstrates the specialized Scale
                 controls.
-                These controls are really enumeration inputs that are pre-configured. These are especially useful in
+                These controls are really enumerations that are pre-configured. These are especially useful in
                 surveys
                 and the like. The user is asked to supply a value in a predefined set of values such as 1 to 10 or Yes
                 vs

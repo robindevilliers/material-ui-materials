@@ -38,7 +38,7 @@
                     magnam aliquam quaerat voluptatem.
                 </span>
             </paragraph>
-            <tool-tip exposition="Enumeration Input">
+            <tool-tip exposition="Enumeration">
                 <enumeration-input label="Incididunt ut labore" type="STRING" reference="colours" required="false"
                                    cardinality="SINGLE_SELECT" style="RADIO_CHECKBOX" size="MEDIUM"
                                    v="v1">

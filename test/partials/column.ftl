@@ -1,1 +1,1 @@
-<th class="${classes}" style="${textualStyles}">${content}</th>
+<th class="${classes}" style="${columnStyles} ${textualStyles}">${content}</th>

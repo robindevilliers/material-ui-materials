@@ -60,6 +60,6 @@ export default class EnumerationInputRenderer implements Renderer {
         flexItemSupport(data, classManager, element.attributes);
         data.classes = classManager.toString();
 
-        return renderingEngine.render('enumeration-input.ftl', data);
+        return renderingEngine.render('enumeration.ftl', data);
     }
 }

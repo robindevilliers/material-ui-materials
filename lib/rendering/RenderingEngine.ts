@@ -2,7 +2,7 @@ import { Substitutions } from './Substitutions';
 import Properties from './Properties';
 import { Element, escapeString, isElement, isText } from '../xml-parser';
 import generateId from '../utilities/generate-id';
-import { findBinder } from './renderer';
+import { findBinder } from './renderers';
 import { FreemarkerError } from '../freemarker/FreemarkerError';
 import fs from 'fs';
 import path from 'node:path';

@@ -1,5 +1,4 @@
 import { Renderer } from '../Renderer';
-
 import Properties from '../Properties';
 import { flexContainerSupport } from '../flex-container-support';
 import ClassManager from '../ClassManager';

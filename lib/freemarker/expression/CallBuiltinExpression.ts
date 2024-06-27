@@ -2,7 +2,7 @@ import { Expression } from '../Expression';
 import { TemplateError } from '../TemplateError';
 import { Literal, Reference, Value } from './Value';
 
-import * as Builtins from '../builtin';
+import * as Builtins from '../builtins';
 
 export class CallBuiltinExpression implements Expression {
 

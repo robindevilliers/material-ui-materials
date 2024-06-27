@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "clean": "rm -rf dist www",
-    "compile": "webpack --config webpack.config.js",
+    "compile": "webpack --config webpack.config.cjs",
     "test": "jest",
     "lint": "eslint --ext js,ts lib/",
     "css:scss": "node-sass --output-style compressed -o www/public/css test/scss",
@@ -12,7 +12,7 @@
     "css:lint": "stylelint test/scss/*.scss  --custom-syntax postcss-scss",
     "build:compile": "npm run compile",
     "build:css": "npm run css:lint && npm run css:scss && npm run css:autoprefixer; copyfiles -u 3 www/public/css/main.css test/public/css/",
-    "build:js": "webpack --config webpack.test.config.js --mode=production; copyfiles -u 3 www/public/js/main.js test/public/js/",
+    "build:js": "webpack --config webpack.test.config.cjs --mode=production; copyfiles -u 3 www/public/js/main.js test/public/js/",
     "build:images": "imagemin test/public/img/**/* --out-dir=www/public/img",
     "build:fonts": "copyfiles -u 2 test/public/fonts/* www/public/fonts/; copyfiles -u 4 node_modules/bootstrap-icons/font/fonts/* www/public/fonts/;",
     "build:html": "node --enable-source-maps ./dist/materials-toolkit.js --dir ./test --output ./www",

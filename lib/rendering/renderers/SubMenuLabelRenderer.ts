@@ -19,7 +19,7 @@ export default class SubMenuLabelRenderer implements Renderer {
 
         const classManager = new ClassManager(classMappings);
         classManager.append(element.attributes.flavour, 'text-', 'text-default');
-        textStyleSupport(data, classManager, element.attributes, classMappings);
+        textStyleSupport(data, element, classMappings);
         data.classes = classManager.toString();
 
         return renderingEngine.render('sub-menu-label.ftl', data);

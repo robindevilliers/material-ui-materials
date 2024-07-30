@@ -1,5 +1,5 @@
 import { Renderer } from '../Renderer';
-import { Element } from '../../xml-parser';
+import { Element, isElement } from '../../xml-parser';
 import { textStyleSupport } from '../text-style-support';
 import Properties from '../Properties';
 import flexItemSupport from '../flex-item-support';
@@ -23,7 +23,6 @@ export default class ButtonRenderer implements Renderer {
         data.id = element.attributes.id;
         data.size = element.attributes.size;
         data.disabled = null;
-        data.content = renderingEngine.renderChildren(element);
         data.name = "_NAME_";
         data.testMode = Store.isTestContext();
         data.runningWizardTest = false;
@@ -31,9 +30,10 @@ export default class ButtonRenderer implements Renderer {
         const classManager = new ClassManager(classMappings);
         classManager.append(element.attributes.size, 'btn-', '');
         classManager.append(element.attributes.buttonFlavour, 'btn-', 'btn-default');
-        textStyleSupport(data, classManager, element.attributes, classMappings);
+        textStyleSupport(data, element, classMappings);
         flexItemSupport(data, classManager, element.attributes);
         data.classes = classManager.toString();
+        data.content = renderingEngine.renderChildren(element.children.find(el => isElement(el) && (el as Element).name === 'textual')! as Element);
 
         return renderingEngine.render('button.ftl', data);
     }

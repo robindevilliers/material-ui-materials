@@ -1,18 +1,30 @@
 <page defnVersion="v1" id="intro" title="Pick Case Principal" orientation="COLUMN">
-    <title size="LARGE" v="v1">Pick Case Principal</title>
+    <title size="LARGE" v="v1">
+        <textual>Pick Case Principal</textual>
+    </title>
     <div justifyContent="SPACE_BETWEEN" v="v1">
-        <title size="SMALL" v="v1">Workflow</title>
+        <title size="SMALL" v="v1">
+            <textual>Workflow</textual>
+        </title>
         <paragraph v="v1">
-            <script v="v1" script=".name"/>
+            <textual>
+                <script v="v1" script=".name"/>
+            </textual>
         </paragraph>
     </div>
-    <paragraph v="v1">You are about to initiate a Workflow on behalf of one of your users. Please select
-        the user you wish to assign this case to as Case Principal.
+    <paragraph v="v1">
+        <textual>
+            You are about to initiate a Workflow on behalf of one of your users. Please select the user you wish to
+            assign this case to as Case Principal.
+        </textual>
     </paragraph>
     <well flavour="WARNING" margin="0 5em 1em 5em" v="v1">
-        <paragraph v="v1">The actual Workflow that will be executed will be the result the Workflow
-            Resolution Process. This Process takes into account the current user&apos;s groups in resolving which
-            Workflow he or she may initiate.
+        <paragraph v="v1">
+            <textual>
+                The actual Workflow that will be executed will be the result the Workflow
+                Resolution Process. This Process takes into account the current user&apos;s groups in resolving which
+                Workflow he or she may initiate.
+            </textual>
         </paragraph>
     </well>
     <user-explorer v="v1"/>

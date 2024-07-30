@@ -1,10 +1,14 @@
 import Properties from './Properties';
 import { StringBuffer } from '../utilities/StringBuffer';
 import ClassManager from './ClassManager';
+import { Element, isElement } from '../xml-parser';
+import { RenderError } from './RenderError';
 
-export function textStyleSupport(data: Record<string, any>, classManager: ClassManager, attributes: Record<string, string>, classMappings: Properties) {
+export function textStyle(data: Record<string, any>, attributes: Record<string, string>, classMappings: Properties) {
 
     const styles: Record<string, string> = {};
+
+    const classManager = new ClassManager(classMappings);
 
     if (attributes.font) {
         if (attributes.font === 'TITLE_PRIMARY') {
@@ -63,4 +67,16 @@ export function textStyleSupport(data: Record<string, any>, classManager: ClassM
     }
 
     data.textualStyles = buffer.toString();
+    data.textualClasses = classManager.toString();
+}
+
+export function textStyleSupport(data: Record<string, any>, element: Element, classMappings: Properties) {
+
+    const textual = element.children.find(child => isElement(child) && (child as Element).name === 'textual');
+
+    if (textual === undefined || !isElement(textual)) {
+        throw new RenderError("Textual composer element does not contain a textual element: " + element.name);
+    }
+
+    textStyle(data, element.attributes, classMappings);
 }

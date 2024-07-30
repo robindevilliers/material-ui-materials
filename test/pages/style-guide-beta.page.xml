@@ -3,7 +3,9 @@
     <fake-store>
         <cookie-consent v="v1"/>
         <back-link v="v1"/>
-        <title size="MEDIUM" v="v1">Style Guide Sample Page Beta</title>
+        <title size="MEDIUM" v="v1">
+            <textual>Style Guide Sample Page Beta</textual>
+        </title>
         <div v="v1">
             <progress-bar axis="VERTICAL" size="MEDIUM" flavour="DEFAULT" mileStoneStyle="PERCENT" labelSide="FOLLOW"
                           v="v1">
@@ -13,35 +15,44 @@
             </progress-bar>
             <div justifyContent="SPACE_BETWEEN" v="v1">
                 <div orientation="COLUMN" margin="0em 1em" v="v1">
-                    <paragraph paragraphStyle="PLAIN" v="v1">Welcome to the second page exhibit in our
-                        style guide gallery. As in the first page, on this page you can see an example of various
-                        specialized elements.
+                    <paragraph paragraphStyle="PLAIN" v="v1">
+                        <textual>Welcome to the second page exhibit in our style guide gallery. As in the first page, on
+                            this page you can see an example of various specialized elements.
+                        </textual>
                     </paragraph>
-                    <paragraph paragraphStyle="PLAIN" v="v1">The first element to take note of is the
-                        Cookie Consent widget. How this widget presents itself depends on the implementation as defined
-                        within the Website Materials associated to this account. It may present as a banner across the
-                        top of the page, or as a floating panel in one of the corners or in some other way.
+                    <paragraph paragraphStyle="PLAIN" v="v1">
+                        <textual>The first element to take note of is the Cookie Consent widget. How this widget
+                            presents itself depends on the implementation as defined within the Website Materials
+                            associated to this account. It may present as a banner across the top of the page, or as a
+                            floating panel in one of the corners or in some other way.
+                        </textual>
                     </paragraph>
-                    <paragraph paragraphStyle="PLAIN" v="v1">At the top of the page you can see an example
-                        of the BackLink. This link will evoke the browser&apos;s back button causing the browser to
-                        return to the previous page.
+                    <paragraph paragraphStyle="PLAIN" v="v1">
+                        <textual>At the top of the page you can see an example of the BackLink. This link will evoke the
+                            browser&apos;s back button causing the browser to return to the previous page.
+                        </textual>
                     </paragraph>
-                    <paragraph paragraphStyle="PLAIN" v="v1">There should be a Progress Bar to the left of
-                        this paragraph. It should be in vertical format, and should not display any progress as there is
-                        no contextual data associated with a style guide page.
+                    <paragraph paragraphStyle="PLAIN" v="v1">
+                        <textual>There should be a Progress Bar to the left of this paragraph. It should be in vertical
+                            format, and should not display any progress as there is no contextual data associated with a
+                            style guide page.
+                        </textual>
                     </paragraph>
-                    <paragraph paragraphStyle="PLAIN" v="v1">And, finally, to the right you should see the
-                        Carousel. There are two panels currently configured, and it should display indicators so that
-                        you can reach either panel using the mouse.
+                    <paragraph paragraphStyle="PLAIN" v="v1">
+                        <textual>And, finally, to the right you should see the Carousel. There are two panels currently
+                            configured, and it should display indicators so that you can reach either panel using the
+                            mouse.
+                        </textual>
                     </paragraph>
                 </div>
                 <carousel autoSlide="false" indicators="true" controls="false" height="333px" width="400px"
-                          flexShrink="0"
-                          v="v1">
+                          flexShrink="0" v="v1">
                     <carousel-panel src="temp4.jpg" active="false" interval="5000" orientation="COLUMN">
-                        <paragraph paragraphStyle="PLAIN" v="v1">This is a paragraph.</paragraph>
-                        <link type="internal" view="fixed/style-guide-main" openNewWindow="false"
-                              v="v1">A Link
+                        <paragraph paragraphStyle="PLAIN" v="v1">
+                            <textual>This is a paragraph.</textual>
+                        </paragraph>
+                        <link type="internal" view="fixed/style-guide-main" openNewWindow="false" v="v1">
+                            <textual>A Link</textual>
                         </link>
                     </carousel-panel>
                     <carousel-panel src="temp1.jpg" active="false" orientation="COLUMN"/>
@@ -51,47 +62,54 @@
         </div>
         <div v="v1">
             <well flavour="DEFAULT" margin="5px" v="v1">
-                <paragraph v="v1">Default Well. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed
-                    do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                <paragraph v="v1">
+                    <textual>Default Well. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.
+                    </textual>
                 </paragraph>
             </well>
             <well flavour="PRIMARY" margin="5px" v="v1">
-                <paragraph v="v1">Primary Well. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed
-                    do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                <paragraph v="v1">
+                    <textual>Primary Well. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.
+                    </textual>
                 </paragraph>
             </well>
             <well flavour="INFO" margin="5px" v="v1">
-                <paragraph v="v1">Info Well. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                <paragraph v="v1">
+                    <textual>Info Well. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua.
+                    </textual>
                 </paragraph>
             </well>
             <well flavour="WARNING" margin="5px" v="v1">
-                <paragraph v="v1">Warning Well. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed
-                    do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                <paragraph v="v1">
+                    <textual>Warning Well. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.
+                    </textual>
                 </paragraph>
             </well>
         </div>
         <div v="v1">
             <well flavour="DANGER" margin="5px" v="v1">
-                <paragraph v="v1">Danger Well. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                <paragraph v="v1">
+                    <textual>Danger Well. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua.
+                    </textual>
                 </paragraph>
             </well>
             <well flavour="SUCCESS" margin="5px" v="v1">
-                <paragraph v="v1">Success Well. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed
-                    do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                <paragraph v="v1">
+                    <textual>Success Well. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.
+                    </textual>
                 </paragraph>
             </well>
             <well flavour="MUTED" margin="5px" v="v1">
-                <paragraph v="v1">Muted Well. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                <paragraph v="v1">
+                    <textual>Muted Well. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua.
+                    </textual>
                 </paragraph>
             </well>
         </div>

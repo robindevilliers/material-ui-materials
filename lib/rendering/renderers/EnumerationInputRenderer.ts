@@ -6,6 +6,7 @@ import { Substitutions } from '../Substitutions';
 import RenderingEngine from '../RenderingEngine';
 import { Element, isElement } from '../../xml-parser';
 import { RenderError } from '../RenderError';
+import { textStyleSupport } from '../text-style-support';
 
 
 export default class EnumerationInputRenderer implements Renderer {
@@ -23,12 +24,12 @@ export default class EnumerationInputRenderer implements Renderer {
         data.id = element.attributes.id;
         data.value = "";
         data.disabled = null;
-        data.label = element.attributes.label;
         data.type = element.attributes.type;
         data.name = element.attributes.reference;
         data.size = element.attributes.size;
         data.style = element.attributes.style;
         data.cardinality = element.attributes.cardinality;
+        data.content = renderingEngine.renderChildren(element.children.find(el => isElement(el) && (el as Element).name === 'textual')! as Element);
 
         const values = element.children
             .filter(n => isElement(n))
@@ -57,6 +58,7 @@ export default class EnumerationInputRenderer implements Renderer {
         data.error = "Enumeration error message";
 
         const classManager = new ClassManager(classMappings);
+        textStyleSupport(data, element, classMappings);
         flexItemSupport(data, classManager, element.attributes);
         data.classes = classManager.toString();
 

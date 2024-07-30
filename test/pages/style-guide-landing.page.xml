@@ -12,12 +12,16 @@
                  borderRadius="1em" v="v1">
 
                 <tool-tip exposition="Title">
-                    <title size="LARGE" v="v1">Turtles of Postmodernism</title>
+                    <title size="LARGE" v="v1">
+                        <textual>Turtles of Postmodernism</textual>
+                    </title>
                 </tool-tip>
                 <tool-tip exposition="Paragraph">
                     <paragraph paragraphStyle="SUPPRESSED" width="250px" v="v1">
-                        Neque porro quisquam est, qui dolorem ipsum quia dolor sit
-                        amet, consectetur.
+                        <textual>
+                            Neque porro quisquam est, qui dolorem ipsum quia dolor sit
+                            amet, consectetur.
+                        </textual>
                     </paragraph>
                 </tool-tip>
             </div>
@@ -33,13 +37,17 @@
                              backgroundFlavour="INFO"
                              borderRadius="1em" v="v1">
                             <tool-tip exposition="Title">
-                                <title size="LARGE" fontFlavour="BLACK" v="v1">Eaves of Lettuce</title>
+                                <title size="LARGE" fontFlavour="BLACK" v="v1">
+                                    <textual>Eaves of Lettuce</textual>
+                                </title>
                             </tool-tip>
                             <tool-tip exposition="Paragraph">
                                 <paragraph paragraphStyle="PLAIN" width="250px" v="v1">
-                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                                    doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
-                                    veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                                    <textual>
+                                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                        doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                                        veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                                    </textual>
                                 </paragraph>
                             </tool-tip>
                         </div>
@@ -50,14 +58,18 @@
                     <title size="LARGE" fontFlavour="BLACK" padding="0em 1em" backgroundFlavour="INFO"
                            borderRadius="0.25em"
                            v="v1">
-                        Opinions from Cheddar
+                        <textual>
+                            Opinions from Cheddar
+                        </textual>
                     </title>
                     <paragraph paragraphStyle="PLAIN" width="400px" backgroundFlavour="WHITE" borderRadius="1em"
                                v="v1">
-                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
-                        deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non
-                        provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et
-                        dolorum fuga.
+                        <textual>
+                            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                            voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
+                            cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id
+                            est laborum et dolorum fuga.
+                        </textual>
                     </paragraph>
                 </carousel-panel>
                 <carousel-panel src="panel-3.jpg" active="false" justifyContent="END" orientation="COLUMN"
@@ -66,13 +78,15 @@
                         <image src="temp0.jpg" imageHeight="181px" imageWidth="278px" borderRadius="5px"
                                border="2px solid black" v="v1"/>
                         <paragraph paragraphStyle="PLAIN" v="v1">
-                            Harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis
-                            est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus,
-                            omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut
-                            officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et
-                            molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut
-                            reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores
-                            repellat.
+                            <textual>
+                                Harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta
+                                nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere
+                                possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem
+                                quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et
+                                voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur
+                                a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut
+                                perferendis doloribus asperiores repellat.
+                            </textual>
                         </paragraph>
                     </div>
                 </carousel-panel>
@@ -85,19 +99,20 @@
                 <icon v="v1" name="car-front-fill"/>
             </tool-tip>
             <tool-tip exposition="Title">
-                <title size="MEDIUM" fontFlavour="PRIMARY" padding="0em 1em"
-                       v="v1">
-                    Lorem Ipsum
+                <title size="MEDIUM" fontFlavour="PRIMARY" padding="0em 1em" v="v1">
+                    <textual>Lorem Ipsum</textual>
                 </title>
             </tool-tip>
             <tool-tip exposition="Paragraph">
                 <paragraph paragraphStyle="PLAIN" v="v1">
-                    Harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est
-                    eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis
-                    voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis
-                    debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae
-                    non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis
-                    voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+                    <textual>
+                        Harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est
+                        eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis
+                        voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis
+                        debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae
+                        non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis
+                        voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+                    </textual>
                 </paragraph>
             </tool-tip>
         </div>
@@ -106,19 +121,20 @@
                 <icon v="v1" name="archive-fill"/>
             </tool-tip>
             <tool-tip exposition="Title">
-                <title size="MEDIUM" fontFlavour="PRIMARY" padding="0em 1em"
-                       v="v1">
-                    Lorem Ipsum
+                <title size="MEDIUM" fontFlavour="PRIMARY" padding="0em 1em" v="v1">
+                    <textual>Lorem Ipsum</textual>
                 </title>
             </tool-tip>
             <tool-tip exposition="Paragraph">
                 <paragraph paragraphStyle="PLAIN" v="v1">
-                    Harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est
-                    eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis
-                    voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis
-                    debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae
-                    non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis
-                    voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+                    <textual>
+                        Harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est
+                        eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis
+                        voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis
+                        debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae
+                        non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis
+                        voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+                    </textual>
                 </paragraph>
             </tool-tip>
         </div>
@@ -127,19 +143,20 @@
                 <icon flavour="DEFAULT" name="clipboard-data-fill" v="v1"/>
             </tool-tip>
             <tool-tip exposition="Title">
-                <title size="MEDIUM" fontFlavour="PRIMARY" padding="0em 1em"
-                       v="v1">
-                    Lorem Ipsum
+                <title size="MEDIUM" fontFlavour="PRIMARY" padding="0em 1em" v="v1">
+                    <textual>Lorem Ipsum</textual>
                 </title>
             </tool-tip>
             <tool-tip exposition="Paragraph">
                 <paragraph paragraphStyle="PLAIN" v="v1">
-                    Harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est
-                    eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis
-                    voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis
-                    debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae
-                    non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis
-                    voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+                    <textual>
+                        Harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est
+                        eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis
+                        voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis
+                        debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae
+                        non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis
+                        voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+                    </textual>
                 </paragraph>
             </tool-tip>
         </div>

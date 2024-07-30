@@ -9,7 +9,7 @@
 <div class="input-widget form-group ${classes}" style="${itemStyles}">
 
     <#if type == "NUMBER">
-        <label class="form-label" for="${id}">${label}</label>
+        <label class="form-label ${textualClasses}" style="${textualStyles}" for="${id}">${content}</label>
         <div class="input-group">
             <input id="${id}" class="form-control ${sizeCls} validate ${classes}" type="number" name="${name}"
                     value="${value!}" <#if disabled??>disabled</#if>
@@ -22,7 +22,7 @@
         </#if>
     </#if>
     <#if type == "INPUT">
-        <label class="form-label" for="${id}">${label}</label>
+        <label class="form-label ${textualClasses}" style="${textualStyles}" for="${id}">${content}</label>
         <div class="input-group">
             <input id="${id}" class="form-control ${sizeCls} validate ${classes}" type="text"
                     <#if maxlength??>maxlength="${maxlength}"</#if> <#if disabled??>disabled</#if> name="${name}"
@@ -34,7 +34,7 @@
         </#if>
     </#if>
     <#if type == "TEXTAREA">
-        <label class="form-label" for="${id}">${label}</label>
+        <label class="form-label ${textualClasses}" style="${textualStyles}" for="${id}">${content}</label>
         <div class="input-group">
             <textarea id="${id}" class="form-control ${sizeCls} validate ${classes}" name="${name}"
                     <#if maxLength??>maxLength="${maxLength}"</#if>
@@ -48,7 +48,7 @@
         </#if>
     </#if>
     <#if type == "DATE">
-        <label class="form-label" for="${id}">${label}</label>
+        <label class="form-label ${textualClasses}" style="${textualStyles}" for="${id}">${content}</label>
         <div class="input-group">
             <input id="${id}" class="form-control ${sizeCls} validate ${classes}" type="text" maxlength="10"
                     name="${name}" value="${value!}" <#if disabled??>disabled</#if>
@@ -59,7 +59,7 @@
         </#if>
     </#if>
     <#if type == "DATETIME">
-        <label class="form-label" for="${id}">${label}</label>
+        <label class="form-label ${textualClasses}" style="${textualStyles}" for="${id}">${content}</label>
         <div class="input-group">
             <input id="${id}" class="form-control ${sizeCls} validate ${classes}" type="text" maxlength="16"
                     name="${name}" value="${value!}" <#if disabled??>disabled</#if>
@@ -70,7 +70,7 @@
         </#if>
     </#if>
     <#if type == "CURRENCY">
-        <label class="form-label" for="${id}">${label}</label>
+        <label class="form-label ${textualClasses}" style="${textualStyles}" for="${id}">${content}</label>
         <div class="input-group">
             <span class="input-group-text">${currencySymbol}</span>
             <input id="${id}" class="form-control ${sizeCls} validate ${classes}" type="number" step="0.01"
@@ -85,7 +85,7 @@
         <div class="form-check">
             <input class="form-check-input ${sizeCls}" type="checkbox" name="${name}" value="selected" id="${id}"
                     <#if value == 'selected'>checked</#if> <#if disabled??>disabled</#if> >
-            <label class="form-check-label ${sizeCls}" for="${id}">${label}</label>
+            <label class="form-check-label ${sizeCls} ${textualClasses}" style="${textualStyles}" for="${id}">${content}</label>
         </div>
         <#if (error)??>
             <span id="error-message-${name}" class="form-text text-danger">${error}</span>

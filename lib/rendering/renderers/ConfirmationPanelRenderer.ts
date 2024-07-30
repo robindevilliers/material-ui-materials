@@ -25,7 +25,6 @@ export default class ConfirmationPanelRenderer implements Renderer {
         data._csrf = generateId();
 
         const classManager = new ClassManager(classMappings);
-        textStyleSupport(data, classManager, element.attributes, classMappings);
         flexItemSupport(data, classManager, element.attributes);
         data.classes = classManager.toString();
         data.action = "/authenticate-second-stage";

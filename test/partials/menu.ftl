@@ -1,4 +1,4 @@
-<nav class="menu-widget navbar navbar-light bg-light ${classes}" style=" ${itemStyles}">
+<nav class="menu-widget navbar navbar-light ${classes} " style=" ${itemStyles}">
     ${menuBrand}
     <#if axis == "VERTICAL">
         <ul class="navbar-nav">

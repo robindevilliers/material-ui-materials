@@ -4,10 +4,14 @@
             <image v="v1" id="title-img" src="logo.svg" width="200px" height="200px"
                    margin="0 5em 2em 0"/>
             <div v="v1" orientation="COLUMN" justifyContent="SPACE_AROUND" alignItems="CENTER">
-                <title size="LARGE" v="v1">Registration</title>
-                <paragraph v="v1">Welcome to Maximillian Workflows. Please fill in the form below and our staff will be in
-                    touch to finalise your
-                    registration.
+                <title size="LARGE" v="v1">
+                    <textual>Registration</textual>
+                </title>
+                <paragraph v="v1">
+                    <textual>
+                        Welcome to Maximillian Workflows. Please fill in the form below and our staff will be in touch
+                        to finalise your registration.
+                    </textual>
                 </paragraph>
             </div>
         </div>

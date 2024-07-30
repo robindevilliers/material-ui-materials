@@ -1,5 +1,5 @@
 import { Renderer } from '../Renderer';
-import { Element } from '../../xml-parser';
+import { Element, isElement } from '../../xml-parser';
 import { textStyleSupport } from '../text-style-support';
 import Properties from '../Properties';
 import ClassManager from '../ClassManager';
@@ -21,7 +21,6 @@ export default class MenuItemRenderer implements Renderer {
         }
 
         const data: Record<string, any> = {};
-        data.content = renderingEngine.renderChildren(element);
         data.id = element.attributes.id;
         data._csrf = generateId();
         data.type = element.attributes.type;
@@ -33,9 +32,10 @@ export default class MenuItemRenderer implements Renderer {
 
         const classManager = new ClassManager(classMappings);
         classManager.append(element.attributes.flavour, 'text-', 'text-default');
-        textStyleSupport(data, classManager, element.attributes, classMappings);
+        textStyleSupport(data, element, classMappings);
         data.classes = classManager.toString();
         data.testMode = Store.isTestContext();
+        data.content = renderingEngine.renderChildren(element.children.find(el => isElement(el) && (el as Element).name === 'textual')! as Element);
 
         return renderingEngine.render('menu-item.ftl', data);
     }

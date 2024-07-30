@@ -1,1 +1,1 @@
-<span id="validation-rule-widget" class="validation-rule ${classes}" style="${textualStyles}">${content}</span>
+<span id="validation-rule-widget" class="validation-rule ${textualClasses}" style="${textualStyles}">${content}</span>

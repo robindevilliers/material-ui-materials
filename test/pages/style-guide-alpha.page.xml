@@ -2,103 +2,133 @@
       title="Style Guide - Alpha" description="Style Guide Sample Alpha Page" defnVersion="v1"
       orientation="COLUMN">
     <fake-store>
-        <title size="MEDIUM" v="v1">Style Guide Sample Page Alpha</title>
+        <title size="MEDIUM" v="v1">
+            <textual>
+                Style Guide Sample Page Alpha
+            </textual>
+        </title>
         <div justifyContent="SPACE_BETWEEN" v="v1">
             <div orientation="COLUMN" v="v1">
-                <paragraph paragraphStyle="PLAIN" v="v1">Welcome to the first page exhibit in our style
-                    guide gallery. On this page you can see an example of various specialized elements. The first
-                    element you can see to your right. This is a Card, and it has a header, image, body and footer. All
-                    these child elements of the Card are optional.
+                <paragraph paragraphStyle="PLAIN" v="v1">
+                    <textual>
+                        Welcome to the first page exhibit in our style
+                        guide gallery. On this page you can see an example of various specialized elements. The first
+                        element you can see to your right. This is a Card, and it has a header, image, body and footer.
+                        All these child elements of the Card are optional.
+                    </textual>
                 </paragraph>
                 <accordion flush="false" singleActive="true" v="v1">
                     <accordion-item active="false" orientation="COLUMN">
                         <accordion-item-header>
-                            Inset Text
+                            <textual>Inset Text</textual>
                         </accordion-item-header>
                         <inset-text flavour="DEFAULT" v="v1">
-                            <paragraph paragraphStyle="PLAIN" v="v1">This is some text in a Default Inset
-                                Text element.
+                            <paragraph paragraphStyle="PLAIN" v="v1">
+                                <textual>This is some text in a Default Inset Text element.</textual>
                             </paragraph>
                         </inset-text>
                         <inset-text flavour="PRIMARY" v="v1">
-                            <paragraph paragraphStyle="PLAIN" v="v1">This is some text in a Primary Inset
-                                Text element.
+                            <paragraph paragraphStyle="PLAIN" v="v1">
+                                <textual>This is some text in a Primary Inset Text element.</textual>
                             </paragraph>
                         </inset-text>
                         <inset-text flavour="INFO" v="v1">
-                            <paragraph paragraphStyle="PLAIN" v="v1">This is some text in a Info Inset
-                                Text element.
+                            <paragraph paragraphStyle="PLAIN" v="v1">
+                                <textual>This is some text in a Info Inset Text element.</textual>
                             </paragraph>
                         </inset-text>
                         <inset-text flavour="WARNING" v="v1">
-                            <paragraph paragraphStyle="PLAIN" v="v1">This is some text in a Warning Inset
-                                Text element.
+                            <paragraph paragraphStyle="PLAIN" v="v1">
+                                <textual>This is some text in a Warning Inset Text element.</textual>
                             </paragraph>
                         </inset-text>
                         <inset-text flavour="DANGER" v="v1">
-                            <paragraph paragraphStyle="PLAIN" v="v1">This is some text in a Danger Inset
-                                Text
-                                element.
+                            <paragraph paragraphStyle="PLAIN" v="v1">
+                                <textual>This is some text in a Danger Inset Text element.</textual>
                             </paragraph>
                         </inset-text>
                         <inset-text flavour="SUCCESS" v="v1">
-                            <paragraph paragraphStyle="PLAIN" v="v1">This is some text in a Success Inset
-                                Text element.
+                            <paragraph paragraphStyle="PLAIN" v="v1">
+                                <textual>This is some text in a Success Inset Text element.</textual>
                             </paragraph>
                         </inset-text>
                         <inset-text flavour="MUTED" v="v1">
-                            <paragraph paragraphStyle="PLAIN" v="v1">This is some text in a Muted Inset
-                                Text element.
+                            <paragraph paragraphStyle="PLAIN" v="v1">
+                                <textual>This is some text in a Muted Inset Text element.</textual>
                             </paragraph>
                         </inset-text>
                     </accordion-item>
                     <accordion-item active="false" orientation="COLUMN">
                         <accordion-item-header>
-                            Warning
+                            <textual>Warning</textual>
                         </accordion-item-header>
                         <warning v="v1">
-                            <paragraph paragraphStyle="PLAIN" v="v1">This is the text for the warning
-                                element.
+                            <paragraph paragraphStyle="PLAIN" v="v1">
+                                <textual>This is the text for the warning element.</textual>
                             </paragraph>
                         </warning>
                     </accordion-item>
                     <accordion-item active="false" orientation="COLUMN">
                         <accordion-item-header>
-                            Table
+                            <textual>Table</textual>
                         </accordion-item-header>
                         <table v="v1">
                             <row>
-                                <column>Name</column>
-                                <column>Year</column>
+                                <column>
+                                    <textual>Name</textual>
+                                </column>
+                                <column>
+                                    <textual>Year</textual>
+                                </column>
                             </row>
                             <row>
                                 <cell>
-                                    <paragraph paragraphStyle="PLAIN" v="v1">Avatar</paragraph>
+                                    <paragraph paragraphStyle="PLAIN" v="v1">
+                                        <textual>Avatar</textual>
+                                    </paragraph>
                                 </cell>
                                 <cell>
-                                    <paragraph paragraphStyle="PLAIN" v="v1">2003</paragraph>
+                                    <paragraph paragraphStyle="PLAIN" v="v1">
+                                        <textual>2003</textual>
+                                    </paragraph>
                                 </cell>
                             </row>
                             <row>
                                 <cell>
-                                    <paragraph paragraphStyle="PLAIN" v="v1">King Arthur</paragraph>
+                                    <paragraph paragraphStyle="PLAIN" v="v1">
+                                        <textual>King Arthur</textual>
+                                    </paragraph>
                                 </cell>
                                 <cell>
-                                    <paragraph paragraphStyle="PLAIN" v="v1">1994</paragraph>
+                                    <paragraph paragraphStyle="PLAIN" v="v1">
+                                        <textual>1994</textual>
+                                    </paragraph>
                                 </cell>
                             </row>
                         </table>
                     </accordion-item>
                     <accordion-item active="false" orientation="COLUMN">
                         <accordion-item-header>
-                            Badges
+                            <textual>Badges</textual>
                         </accordion-item-header>
-                        <badge size="SMALL" flavour="DEFAULT" v="v1">Default Small Badge</badge>
-                        <badge size="SMALLER" flavour="PRIMARY" v="v1">Primary Smaller Badge</badge>
-                        <badge size="MEDIUM" flavour="INFO" v="v1">Info Medium Badge</badge>
-                        <badge size="LARGER" flavour="WARNING" v="v1">Warning Larger Badge</badge>
-                        <badge size="LARGER" flavour="DANGER" v="v1">Danger Larger Badge</badge>
-                        <badge size="LARGE" flavour="SUCCESS" v="v1">Success Large Badge</badge>
+                        <badge size="SMALL" flavour="DEFAULT" v="v1">
+                            <textual>Default Small Badge</textual>
+                        </badge>
+                        <badge size="SMALLER" flavour="PRIMARY" v="v1">
+                            <textual>Primary Smaller Badge</textual>
+                        </badge>
+                        <badge size="MEDIUM" flavour="INFO" v="v1">
+                            <textual>Info Medium Badge</textual>
+                        </badge>
+                        <badge size="LARGER" flavour="WARNING" v="v1">
+                            <textual>Warning Larger Badge</textual>
+                        </badge>
+                        <badge size="LARGER" flavour="DANGER" v="v1">
+                            <textual>Danger Larger Badge</textual>
+                        </badge>
+                        <badge size="LARGE" flavour="SUCCESS" v="v1">
+                            <textual>Success Large Badge</textual>
+                        </badge>
                     </accordion-item>
                 </accordion>
             </div>
@@ -106,24 +136,30 @@
                 <image src="suzi.jpeg" alt="Image of Suzi" title="Suzi Profile Picture" imageHeight="200px"
                        imageWidth="300px" v="v1"/>
                 <card-header orientation="COLUMN">
-                    <title size="SMALLER" v="v1">Senior Manager</title>
+                    <title size="SMALLER" v="v1">
+                        <textual>Senior Manager</textual>
+                    </title>
                 </card-header>
                 <card-body orientation="COLUMN">
-                    <title size="SMALLER" v="v1">Suzi Cummins</title>
-                    <paragraph paragraphStyle="PLAIN" v="v1">Our staff are highly skilled experts in their
-                        respective fields. We take pride in our professional reputation and expertise.
+                    <title size="SMALLER" v="v1">
+                        <textual>Suzi Cummins</textual>
+                    </title>
+                    <paragraph paragraphStyle="PLAIN" v="v1">
+                        <textual>
+                            Our staff are highly skilled experts in their
+                            respective fields. We take pride in our professional reputation and expertise.
+                        </textual>
                     </paragraph>
                 </card-body>
                 <card-footer orientation="COLUMN">
-                    <link type="internal" view="" openNewWindow="false"
-                          v="v1">A Link
+                    <link type="internal" view="" openNewWindow="false" v="v1">
+                        <textual>A Link</textual>
                     </link>
                 </card-footer>
             </card>
             <div orientation="COLUMN" v="v1" margin="0 1em">
-                <paragraph paragraphStyle="PLAIN" v="v1">Here we have a selection of icons of different
-                    flavours and
-                    sizes.
+                <paragraph paragraphStyle="PLAIN" v="v1">
+                    <textual>Here we have a selection of icons of different flavours and sizes.</textual>
                 </paragraph>
                 <div v="v1">
                     <div orientation="COLUMN" margin="1em" v="v1">

@@ -1,5 +1,5 @@
 import { Renderer } from '../Renderer';
-import { Element } from '../../xml-parser';
+import { Element, isElement } from '../../xml-parser';
 import Properties from '../Properties';
 import flexItemSupport from '../flex-item-support';
 import ClassManager from '../ClassManager';
@@ -21,12 +21,12 @@ export default class ParagraphRenderer implements Renderer {
         const data: Record<string, any> = {};
 
         data.paragraphStyle = element.attributes.paragraphStyle || 'PLAIN';
-        data.content = renderingEngine.renderChildren(element);
 
         const classManager = new ClassManager(classMappings);
         flexItemSupport(data, classManager, element.attributes);
-        textStyleSupport(data, classManager, element.attributes, classMappings);
+        textStyleSupport(data, element, classMappings);
         data.classes = classManager.toString();
+        data.content = renderingEngine.renderChildren(element.children.find(el => isElement(el) && (el as Element).name === 'textual')! as Element);
 
         return renderingEngine.render('paragraph.ftl', data);
     }

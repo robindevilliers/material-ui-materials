@@ -2,12 +2,16 @@
     <div v="v1" orientation="COLUMN">
         <div v="v1" orientation="ROW" justifyContent="SPACE_AROUND">
             <div v="v1" orientation="COLUMN" justifyContent="SPACE_AROUND" alignItems="CENTER">
-                <title size="MEDIUM" v="v1">Privacy Policy</title>
+                <title size="MEDIUM" v="v1">
+                    <textual>Privacy Policy</textual>
+                </title>
                 <paragraph v="v1">
-                    We use cookies to enable standard web technologies such as authentication. These cookies are the
-                    bare minimum needed in order to provide the functionality we provide. No action is possible on
-                    the site without the use of these cookies. We do not use these cookies in support of tracing for
-                    marketing purposes etc. We do not share any data with third parties.
+                    <textual>
+                        We use cookies to enable standard web technologies such as authentication. These cookies are the
+                        bare minimum needed in order to provide the functionality we provide. No action is possible on
+                        the site without the use of these cookies. We do not use these cookies in support of tracing for
+                        marketing purposes etc. We do not share any data with third parties.
+                    </textual>
                 </paragraph>
                 <back-link v="v1"/>
             </div>

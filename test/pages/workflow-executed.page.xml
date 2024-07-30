@@ -1,11 +1,13 @@
 <page defnVersion="v1" id="intro" title="Workflow Executed" orientation="COLUMN">
 
     <jumbotron v="v1" orientation="COLUMN">
-        <title size="LARGE" fontFlavour="WHITE" v="v1">Workflow Executed</title>
+        <title size="LARGE" fontFlavour="WHITE" v="v1">
+            <textual>Workflow Executed</textual>
+        </title>
 
-        <paragraph v="v1">The
-            <script v="v1" script=".title"/>
-            workflow has been executed.
+        <paragraph v="v1">
+            <textual>The <script v="v1" script=".title"/> workflow has been executed.
+            </textual>
         </paragraph>
 
         <div justifyContent="END" v="v1">

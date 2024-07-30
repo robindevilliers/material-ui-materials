@@ -2,12 +2,19 @@
     <div v="v1" orientation="COLUMN">
         <div v="v1" orientation="ROW" justifyContent="SPACE_AROUND">
             <div v="v1" orientation="COLUMN" justifyContent="SPACE_AROUND" alignItems="CENTER">
-                <title size="LARGE" v="v1">Test Email</title>
+                <title size="LARGE" v="v1">
+                    <textual>Test Email</textual>
+                </title>
                 <paragraph v="v1">
-                    This is a test email. The following paragraph will contain the phrase sent during the test request.
+                    <textual>
+                        This is a test email. The following paragraph will contain the phrase sent during the test
+                        request.
+                    </textual>
                 </paragraph>
                 <paragraph v="v1">
-                    <script v="v1" script="%phrase%"/>
+                    <textual>
+                        <script v="v1" script="%phrase%"/>
+                    </textual>
                 </paragraph>
             </div>
         </div>

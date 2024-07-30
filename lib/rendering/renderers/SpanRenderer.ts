@@ -1,8 +1,7 @@
 import { Renderer } from '../Renderer';
 import { Element } from '../../xml-parser';
 import Properties from '../Properties';
-import { textStyleSupport } from '../text-style-support';
-import ClassManager from '../ClassManager';
+import { textStyle } from '../text-style-support';
 import RenderingEngine from '../RenderingEngine';
 
 export default class SpanRenderer implements Renderer {
@@ -17,9 +16,7 @@ export default class SpanRenderer implements Renderer {
         data.paragraphStyle = element.attributes.paragraphStyle || 'PLAIN';
         data.content = renderingEngine.renderChildren(element);
 
-        const classManager = new ClassManager(classMappings);
-        textStyleSupport(data, classManager, element.attributes, classMappings);
-        data.classes = classManager.toString();
+        textStyle(data, element.attributes, classMappings);
 
         return renderingEngine.render('span.ftl', data);
     }

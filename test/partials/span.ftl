@@ -1,1 +1,1 @@
-<span class="${classes}" style="${textualStyles}">${content}</span>
+<span id="${id}" class="${textualClasses}" style="${textualStyles}">${content}</span>

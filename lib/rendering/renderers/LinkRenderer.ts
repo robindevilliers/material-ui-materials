@@ -1,5 +1,5 @@
 import { Renderer } from '../Renderer';
-import { Element } from '../../xml-parser';
+import { Element, isElement } from '../../xml-parser';
 import Properties from '../Properties';
 import flexItemSupport from '../flex-item-support';
 import { textStyleSupport } from '../text-style-support';
@@ -21,13 +21,13 @@ export default class LinkRenderer implements Renderer {
 
         const data: Record<string, any> = {};
         data.id = element.attributes.id;
-        data.content = renderingEngine.renderChildren(element);
 
         const classManager = new ClassManager(classMappings);
         flexItemSupport(data, classManager, element.attributes);
-        textStyleSupport(data, classManager, element.attributes, classMappings);
+        textStyleSupport(data, element, classMappings);
         data.classes = classManager.toString();
         data.testMode = Store.isTestContext();
+        data.content = renderingEngine.renderChildren(element.children.find(el => isElement(el) && (el as Element).name === 'textual')! as Element);
 
         if (Store.isTestContext()) {
             data.href = 'javascript:alert(&quot;link was clicked&quot;); event.preventDefault();';

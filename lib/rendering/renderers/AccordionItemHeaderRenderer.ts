@@ -1,5 +1,5 @@
 import { Renderer } from '../Renderer';
-import { Element } from '../../xml-parser';
+import { Element, isElement } from '../../xml-parser';
 import { textStyleSupport } from '../text-style-support';
 import Properties from '../Properties';
 import ClassManager from '../ClassManager';
@@ -15,15 +15,12 @@ export default class AccordionItemHeaderRenderer implements Renderer {
 
         const data: Record<string, any> = {};
         data.id = parent!.attributes.id;
-
         data.active = parent?.attributes.active === "true";
-
         data.size = element.attributes.size;
-        data.content = renderingEngine.renderChildren(element);
-
         const classManager = new ClassManager(classMappings);
-        textStyleSupport(data, classManager, element.attributes, classMappings);
+        textStyleSupport(data, element, classMappings);
         data.classes = classManager.toString();
+        data.content = renderingEngine.renderChildren(element.children.find(el => isElement(el) && (el as Element).name === 'textual')! as Element);
 
         return renderingEngine.render('accordion-item-header.ftl', data);
     }

@@ -1,10 +1,11 @@
 import { Renderer } from '../Renderer';
-import { Element } from '../../xml-parser';
+import { Element, isElement } from '../../xml-parser';
 import Properties from '../Properties';
 import flexItemSupport from '../flex-item-support';
 import ClassManager from '../ClassManager';
 import RenderingEngine from '../RenderingEngine';
 import { RenderError } from '../RenderError';
+import { textStyleSupport } from '../text-style-support';
 
 export default class ScaleRenderer implements Renderer {
     accept(name: string): boolean {
@@ -62,16 +63,17 @@ export default class ScaleRenderer implements Renderer {
         const data: Record<string, any> = {};
         data.id = element.attributes.id;
         data.disabled = null;
-        data.label = element.attributes.label;
         data.scaleType = element.attributes.scaleType;
         data.name = element.attributes.reference;
         data.size = element.attributes.size;
         data.values = values;
         data.value = "";
         data.error = "Scale error message";
+        data.content = renderingEngine.renderChildren(element.children.find(el => isElement(el) && (el as Element).name === 'textual')! as Element);
 
         const classManager = new ClassManager(classMappings);
         flexItemSupport(data, classManager, element.attributes);
+        textStyleSupport(data, element, classMappings);
         data.classes = classManager.toString();
 
         return renderingEngine.render('scale.ftl', data);

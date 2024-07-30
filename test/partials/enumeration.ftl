@@ -9,7 +9,7 @@
 <div id="${id}" class="enumeration-widget form-group ${classes}" style="${itemStyles}">
     <#if style == "RADIO_CHECKBOX">
         <#if cardinality == "MULTIPLE_SELECT">
-            <label class="form-label">${label}</label>
+            <label for="${id}" class="form-label ${textualClasses}" style="${textualStyles}">${content}</label>
             <#list values as val>
                 <div class="form-check">
                     <input id="${id}-${val.key}"
@@ -31,7 +31,7 @@
                 <span id="error-message-${name}" class="form-text text-danger">${error}</span>
             </#if>
         <#elseif cardinality == "SINGLE_SELECT">
-            <label class="form-label">${label}</label>
+            <label for="${id}" class="form-label ${textualClasses}" style="${textualStyles}">${content}</label>
             <#list values as val>
                 <div class="form-check">
                     <input id="${id}-${val.key}"
@@ -63,7 +63,7 @@
             <#assign sizeCls = 'form-select-lg'>
         </#if>
         <#if cardinality == "MULTIPLE_SELECT">
-            <label class="form-label" for="${id}">${label}</label>
+            <label class="form-label ${textualClasses}" style="${textualStyles}" for="${id}">${content}</label>
             <select id="${id}" class="input-group ${sizeCls} form-control ${classes}" multiple name="${name}"
                     <#if disabled??>disabled</#if> >
                 <option value="" disabled>Choose your option</option>
@@ -80,7 +80,7 @@
             </#list>
 
         <#elseif cardinality == "SINGLE_SELECT">
-            <label class="form-label" for="${id}">${label}</label>
+            <label class="form-label ${textualClasses}" style="${textualStyles}" for="${id}">${content}</label>
             <select id="${id}" class="input-group ${sizeCls} form-control ${classes}" name="${name}"
                     <#if disabled??>disabled</#if>>
                 <option value="" disabled selected>Choose your option</option>

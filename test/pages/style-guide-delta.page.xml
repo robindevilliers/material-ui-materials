@@ -6,161 +6,190 @@
                 <test-group id="rule"/>
             </validation-rule>
         </error-summary>
-        <title size="MEDIUM" v="v1">Style Guide Sample Page Delta</title>
-        <paragraph paragraphStyle="PLAIN" v="v1">Welcome to the third in our series of style guide pages.
-            This
-            page will demonstrate the presentation of all the input controls. These are widgets that take user input in
-            some
-            form.
+        <title size="MEDIUM" v="v1">
+            <textual>Style Guide Sample Page Delta</textual>
+        </title>
+        <paragraph paragraphStyle="PLAIN" v="v1">
+            <textual>
+                Welcome to the third in our series of style guide pages. This page will demonstrate the presentation of
+                all the input controls. These are widgets that take user input in some form.
+            </textual>
         </paragraph>
         <div v="v1">
             <div orientation="COLUMN" v="v1">
-                <paragraph paragraphStyle="PLAIN" v="v1">This section demonstrates the basic input
-                    controls.
-                    These controls are the mainstay of user input. You have simple text entry, multi line text entry,
-                    date
-                    entry, date time entry and number. Finally you have the humble checkbox.
+                <paragraph paragraphStyle="PLAIN" v="v1">
+                    <textual>This section demonstrates the basic input controls. These controls are the mainstay of user
+                        input. You have simple text entry, multi line text entry, date entry, date time entry and
+                        number. Finally you have the humble checkbox.
+                    </textual>
                 </paragraph>
-                <input label="Currency Value" type="CURRENCY" reference="currency" required="false" size="MEDIUM"
-                       v="v1">
+                <input type="CURRENCY" reference="currency" required="false" size="MEDIUM" v="v1">
+                    <textual>Currency Value</textual>
                     <test-value text="679.15"/>
                     <test-value text="1149.88"/>
                     <test-value text="496.12"/>
                     <test-value text="169.79"/>
                     <test-value text="1157.96"/>
                 </input>
-                <input label="Datetime Value" type="DATETIME" reference="datetime" required="false" size="MEDIUM"
-                       v="v1">
+                <input type="DATETIME" reference="datetime" required="false" size="MEDIUM" v="v1">
+                    <textual>Datetime Value</textual>
                     <test-value text="2023-06-24T18:52:33.737Z"/>
                     <test-value text="2021-06-16T12:33:02.917Z"/>
                     <test-value text="2013-01-01T13:03:15.920Z"/>
                     <test-value text="1975-09-26T03:32:33.382Z"/>
                     <test-value text="2000-06-26T12:55:22.468Z"/>
                 </input>
-                <input label="Date Value" type="DATE" reference="date" required="false" size="MEDIUM"
-                       v="v1">
+                <input type="DATE" reference="date" required="false" size="MEDIUM" v="v1">
+                    <textual>Date Value</textual>
                     <test-value text="1987-03-27"/>
                     <test-value text="1978-03-24"/>
                     <test-value text="2023-11-15"/>
                     <test-value text="1980-03-20"/>
                     <test-value text="1985-09-04"/>
                 </input>
-                <input label="Number Value" type="NUMBER" reference="number" required="false" size="MEDIUM"
-                       v="v1">
+                <input type="NUMBER" reference="number" required="false" size="MEDIUM" v="v1">
+                    <textual>Number Value</textual>
                     <test-value text="-232"/>
                     <test-value text="50"/>
                     <test-value text="203"/>
                     <test-value text="96"/>
                     <test-value text="-215"/>
                 </input>
-                <input label="Multiline Text Value" type="TEXTAREA" reference="multitext" required="false" size="MEDIUM"
-                       v="v1">
+                <input type="TEXTAREA" reference="multitext" required="false" size="MEDIUM" v="v1">
+                    <textual>Multiline Text Value</textual>
                     <test-value text="annoyed_snake"/>
                     <test-value text="bright_rat"/>
                     <test-value text="better_tiger"/>
                     <test-value text="dull_lion"/>
                     <test-value text="defiant_dog"/>
                 </input>
-                <input label="Text Value" type="INPUT" reference="text" required="false" size="MEDIUM"
-                       v="v1">
+                <input type="INPUT" reference="text" required="false" size="MEDIUM" v="v1">
+                    <textual>Text Value</textual>
                     <test-value text="bewildered_moose"/>
                     <test-value text="annoying_tiger"/>
                     <test-value text="annoying_cat"/>
                     <test-value text="colorful_eagle"/>
                     <test-value text="adventurous_bear"/>
                 </input>
-                <input label="Checkbox Value" type="CHECKBOX" reference="checkbox" required="false" size="MEDIUM"
-                       v="v1">
+                <input type="CHECKBOX" reference="checkbox" required="false" size="MEDIUM" v="v1">
+                    <textual>Checkbox Value</textual>
                     <test-value text="true"/>
                     <test-value text="false"/>
                 </input>
             </div>
             <div orientation="COLUMN" margin="0em 1em" v="v1">
                 <paragraph paragraphStyle="PLAIN" v="v1">
-                    This column demonstrates the Enumeration controls. These controls allow the user to select from a
-                    limited set of options. You have the radio and checkbox lists and you have the single select
-                    dropdowns and multi select dropdowns.
+                    <textual>
+                        This column demonstrates the Enumeration controls. These controls allow the user to select from
+                        a limited set of options. You have the radio and checkbox lists and you have the single select
+                        dropdowns and multi select dropdowns.
+                    </textual>
                 </paragraph>
-                <enumeration-input label="Colours" type="STRING" reference="colours" required="false"
+                <enumeration-input type="STRING" reference="colours" required="false"
                                    cardinality="SINGLE_SELECT" style="RADIO_CHECKBOX" size="MEDIUM"
                                    v="v1">
+                    <textual>Colours</textual>
                     <value label="Red" key="red" default="false" panel="true" v="v1" orientation="COLUMN">
-                        <title size="MEDIUM" v="v1">Something Red</title>
-                        <input label="Explanation" type="INPUT" reference="red-text" required="false" size="MEDIUM"
-                               v="v1"/>
+                        <title size="MEDIUM" v="v1">
+                            <textual>Something Red</textual>
+                        </title>
+                        <input type="INPUT" reference="red-text" required="false" size="MEDIUM"
+                               v="v1">
+                            <textual>Explanation</textual>
+                        </input>
                     </value>
                     <value label="Blue" key="blue" default="false" panel="true" v="v1"
                            orientation="COLUMN">
-                        <title size="MEDIUM" v="v1">Something Blue</title>
-                        <input label="Explanation" type="INPUT" reference="blue-text" required="true" size="MEDIUM"
+                        <title size="MEDIUM" v="v1">
+                            <textual>Something Blue</textual>
+                        </title>
+                        <input type="INPUT" reference="blue-text" required="true" size="MEDIUM"
                                v="v1">
+                            <textual>Explanation</textual>
                         </input>
                     </value>
                     <value label="Green" key="green" default="false" panel="false" v="v1"
                            orientation="COLUMN"/>
                 </enumeration-input>
-                <enumeration-input label="Sizes" type="STRING" reference="sizes" required="false"
+                <enumeration-input type="STRING" reference="sizes" required="false"
                                    cardinality="MULTIPLE_SELECT" style="RADIO_CHECKBOX" size="MEDIUM"
                                    v="v1">
+                    <textual>Sizes</textual>
                     <value label="Small" key="small" default="false" v="v1" orientation="COLUMN">
-                        <title size="MEDIUM" v="v1">Something Small</title>
-                        <input label="Explanation" type="INPUT" reference="small-text" required="true" size="MEDIUM"
-                               v="v1">
+                        <title size="MEDIUM" v="v1">
+                            <textual>Something Small</textual>
+                        </title>
+                        <input type="INPUT" reference="small-text" required="true" size="MEDIUM" v="v1">
+                            <textual>Explanation</textual>
                         </input>
                     </value>
                     <value label="Medium" key="medium" default="false" v="v1"/>
                     <value label="Large" key="large" default="false" v="v1"/>
                 </enumeration-input>
-                <enumeration-input label="Car" type="STRING" reference="car" required="false"
+                <enumeration-input type="STRING" reference="car" required="false"
                                    cardinality="SINGLE_SELECT"
                                    style="POPOUT_SELECT" size="MEDIUM" v="v1">
+                    <textual>Car</textual>
                     <value label="Maserati" key="maserati" default="false" v="v1" orientation="COLUMN">
-                        <title size="MEDIUM" v="v1">Something Maseratti</title>
-                        <input label="Explanation" type="INPUT" reference="small-text" required="true" size="MEDIUM"
+                        <title size="MEDIUM" v="v1">
+                            <textual>Something Maseratti</textual>
+                        </title>
+                        <input type="INPUT" reference="small-text" required="true" size="MEDIUM"
                                v="v1">
+                            <textual>Explanation</textual>
                         </input>
                     </value>
                     <value label="Ferrari" key="ferarri" default="false" v="v1" orientation="COLUMN">
-                        <title size="MEDIUM" v="v1">Something Ferrari</title>
-                        <input label="Explanation" type="INPUT" reference="small-text" required="true" size="MEDIUM"
+                        <title size="MEDIUM" v="v1">
+                            <textual>Something Ferrari</textual>
+                        </title>
+                        <input type="INPUT" reference="small-text" required="true" size="MEDIUM"
                                v="v1">
+                            <textual>Explanation</textual>
                         </input>
                     </value>
                     <value label="Mclaren" key="mclaren" default="false" v="v1"/>
                 </enumeration-input>
-                <enumeration-input label="Sports" type="STRING" reference="sports" required="false"
+                <enumeration-input type="STRING" reference="sports" required="false"
                                    cardinality="MULTIPLE_SELECT" style="POPOUT_SELECT" size="MEDIUM"
                                    v="v1">
+                    <textual>Sports</textual>
                     <value label="Cricket" key="cricket" default="false" v="v1"/>
                     <value label="Football" key="football" default="false" v="v1"/>
                     <value label="Karate" key="karate" default="false" v="v1"/>
                 </enumeration-input>
             </div>
             <div orientation="COLUMN" v="v1">
-                <paragraph paragraphStyle="PLAIN" v="v1">This section shows the different sizing options
-                    available for inputs and checkboxes.
+                <paragraph paragraphStyle="PLAIN" v="v1">
+                    <textual>This section shows the different sizing options available for inputs and checkboxes.
+                    </textual>
                 </paragraph>
                 <div orientation="COLUMN" v="v1">
-                    <input label="Small" type="INPUT" reference="small" required="false" size="SMALL"
-                           v="v1"/>
-                    <input label="Medium" type="INPUT" reference="medium" required="false" size="MEDIUM"
-                           v="v1"/>
-                    <input label="Large" type="INPUT" reference="large" required="false" size="LARGE"
-                           v="v1"/>
+                    <input type="INPUT" reference="small" required="false" size="SMALL" v="v1">
+                        <textual>Small</textual>
+                    </input>
+                    <input type="INPUT" reference="medium" required="false" size="MEDIUM" v="v1">
+                        <textual>Medium</textual>
+                    </input>
+                    <input type="INPUT" reference="large" required="false" size="LARGE" v="v1">
+                        <textual>Large</textual>
+                    </input>
                 </div>
                 <div orientation="COLUMN" v="v1">
-                    <input label="Small" type="CHECKBOX" reference="small2" required="false" size="SMALL"
-                           v="v1">
+                    <input type="CHECKBOX" reference="small2" required="false" size="SMALL" v="v1">
+                        <textual>Small</textual>
                         <test-value text="true"/>
                         <test-value text="false"/>
                     </input>
-                    <input label="Medium" type="CHECKBOX" reference="medium2" required="false" size="MEDIUM"
+                    <input type="CHECKBOX" reference="medium2" required="false" size="MEDIUM"
                            v="v1">
+                        <textual>Medium</textual>
                         <test-value text="true"/>
                         <test-value text="false"/>
                     </input>
-                    <input label="Large" type="CHECKBOX" reference="large2" required="false" size="LARGE"
+                    <input type="CHECKBOX" reference="large2" required="false" size="LARGE"
                            v="v1">
+                        <textual>Large</textual>
                         <test-value text="true"/>
                         <test-value text="false"/>
                     </input>
@@ -168,16 +197,16 @@
             </div>
         </div>
         <div orientation="COLUMN" v="v1">
-            <paragraph paragraphStyle="PLAIN" v="v1">This section demonstrates the specialized Scale
-                controls.
-                These controls are really enumerations that are pre-configured. These are especially useful in
-                surveys
-                and the like. The user is asked to supply a value in a predefined set of values such as 1 to 10 or Yes
-                vs
-                No.
+            <paragraph paragraphStyle="PLAIN" v="v1">
+                <textual>
+                    This section demonstrates the specialized Scale controls. These controls are really enumerations
+                    that are pre-configured. These are especially useful in surveys and the like. The user is asked to
+                    supply a value in a predefined set of values such as 1 to 10 or Yes vs No.
+                </textual>
             </paragraph>
-            <scale label="Numerical" scaleType="NUMERICAL" reference="numerical" required="false" size="MEDIUM"
+            <scale scaleType="NUMERICAL" reference="numerical" required="false" size="MEDIUM"
                    v="v1">
+                <textual>Numerical</textual>
                 <test-value text="1"/>
                 <test-value text="2"/>
                 <test-value text="3"/>
@@ -189,39 +218,46 @@
                 <test-value text="9"/>
                 <test-value text="10"/>
             </scale>
-            <scale label="Likert" scaleType="LIKERT" reference="likert" required="false" size="MEDIUM"
+            <scale scaleType="LIKERT" reference="likert" required="false" size="MEDIUM"
                    v="v1">
+                <textual>Likert</textual>
                 <test-value text="strongly-disagree"/>
                 <test-value text="disagree"/>
                 <test-value text="neutral"/>
                 <test-value text="agree"/>
                 <test-value text="strongly-agree"/>
             </scale>
-            <scale label="Frequency" scaleType="FREQUENCY" reference="frequency" required="false" size="MEDIUM"
+            <scale scaleType="FREQUENCY" reference="frequency" required="false" size="MEDIUM"
                    v="v1">
+                <textual>Frequency</textual>
                 <test-value text="very-often"/>
                 <test-value text="often"/>
                 <test-value text="sometimes"/>
                 <test-value text="rarely"/>
                 <test-value text="never"/>
             </scale>
-            <scale label="Dichotomous" scaleType="DICHOTOMOUS" reference="dhicotomous" required="false" size="MEDIUM"
+            <scale scaleType="DICHOTOMOUS" reference="dhicotomous" required="false" size="MEDIUM"
                    v="v1">
+                <textual>Dichotomous</textual>
                 <test-value text="yes"/>
                 <test-value text="no"/>
             </scale>
-            <scale label="Boolean" scaleType="BOOLEAN" reference="boolean" required="false" size="MEDIUM"
+            <scale scaleType="BOOLEAN" reference="boolean" required="false" size="MEDIUM"
                    v="v1">
+                <textual>Boolean</textual>
                 <test-value text="true"/>
                 <test-value text="false"/>
             </scale>
         </div>
         <div justifyContent="SPACE_BETWEEN" alignItems="CENTER" v="v1">
-            <button type="NEXT" size="SMALL" required="false" v="v1">Submit small</button>
-            <button type="NEXT" size="MEDIUM" buttonFlavour="SUCCESS" required="false" v="v1">Submit
-                Medium
+            <button type="NEXT" size="SMALL" required="false" v="v1">
+                <textual>Submit small</textual>
             </button>
-            <button type="NEXT" size="LARGE" buttonFlavour="PRIMARY" required="false" v="v1">Submit Large
+            <button type="NEXT" size="MEDIUM" buttonFlavour="SUCCESS" required="false" v="v1">
+                <textual>Submit Medium</textual>
+            </button>
+            <button type="NEXT" size="LARGE" buttonFlavour="PRIMARY" required="false" v="v1">
+                <textual>Submit Large</textual>
             </button>
         </div>
     </fake-store>

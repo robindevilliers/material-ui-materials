@@ -6,184 +6,248 @@
                    padding="0.5em" margin="0em 2em 1em" v="v1" background="white"/>
             <div orientation="COLUMN" v="v1">
                 <title size="LARGE" fontFlavour="WHITE" v="v1">
-                    Welcome to the Materials Toolkit
+                    <textual>Welcome to the Materials Toolkit</textual>
                 </title>
                 <paragraph v="v1">
-                    This is the index page. It will provide links to the various pages required in the Materials
-                    Toolkit, and provide context.
+                    <textual>
+
+                        This is the index page. It will provide links to the various pages required in the Materials
+                        Toolkit, and provide context.
+
+                    </textual>
                 </paragraph>
             </div>
         </div>
     </jumbotron>
-    <paragraph v="v1">The Materials Toolkit allows web developers to develop
-        the assets necessary
-        for Maximillian Workflows to render Pages, and Wizards on the platform.
-    </paragraph>
-    <paragraph v="v1">How does this work? Maximillian Workflows defines a
-        semantic format for web
-        pages. Web pages are defined in page.xml files as XML. You can see them in the &apos;pages&apos; directory. When
-        the platform needs to render a HTML page, it will walk through the XML document and replace each element with
-        the HTML equivalent. Each HTML Partial is defined in a FTL (freemarker) file and they reside in the &apos;partials&apos;
-        directory.
+    <paragraph v="v1">
+        <textual>
+            The Materials Toolkit allows web developers to develop the assets necessary for Maximillian Workflows to
+            render Pages, and Wizards on the platform.
+
+        </textual>
     </paragraph>
     <paragraph v="v1">
-        The Semantic Page files allow us to offer a richer set of UI elements than normal HTML, and in a machine
-        read-able format. This allows us to create an editor over the Semantic Pages that allow users to define
-        business processes using pages that describe what the user wants rather than how the page looks. Web design is
-        separated from business process design, allowing users who are business people to more efficiently develop
-        their business processes while not worrying about presentation.
+        <textual>
+            How does this work? Maximillian Workflows defines a semantic format for web pages. Web pages are defined in
+            page.xml files as XML. You can see them in the &apos;pages&apos; directory. When the platform needs to
+            render a HTML page, it will walk through the XML document and replace each element with the HTML equivalent.
+            Each HTML Partial is defined in a FTL (freemarker) file and they reside in the &apos;partials&apos;
+            directory.
+        </textual>
     </paragraph>
     <paragraph v="v1">
-        What is required to make this all work are the Partials (the FTL templates), and other HTML assets including
-        images and stylesheets. This is the purpose of the Materials Toolkit. Each organisation has their own set of
-        materials that defines how their website looks.
+        <textual>
+            The Semantic Page files allow us to offer a richer set of UI elements than normal HTML, and in a machine
+            read-able format. This allows us to create an editor over the Semantic Pages that allow users to define
+            business processes using pages that describe what the user wants rather than how the page looks. Web design
+            is separated from business process design, allowing users who are business people to more efficiently
+            develop their business processes while not worrying about presentation.
+        </textual>
     </paragraph>
     <paragraph v="v1">
-        Additionally, there are predefined Pages. These pages are not defined in the Editor, and not available to change
-        by normal users. They are defined here in the materials. They are mandatory and allow the platform to perform
-        standard features. Displaying the generic error page is a good example. The standard error page is defined here
-        as &apos;error.page.xml&apos;. These are all listed below.
+        <textual>
+            What is required to make this all work are the Partials (the FTL templates), and other HTML assets including
+            images and stylesheets. This is the purpose of the Materials Toolkit. Each organisation has their own set of
+            materials that defines how their website looks.
+        </textual>
     </paragraph>
-    <title size="LARGER" v="v1">Style Guides</title>
     <paragraph v="v1">
-        The Style Guide Pages are only used to render the templates so that you can see how they look. They are not
-        required by the Platform. Feel free to add and edit these pages. These pages can be reached on the Platform.
+        <textual>
+            Additionally, there are predefined Pages. These pages are not defined in the Editor, and not available to
+            change by normal users. They are defined here in the materials. They are mandatory and allow the platform to
+            perform standard features. Displaying the generic error page is a good example. The standard error page is
+            defined here as &apos;error.page.xml&apos;. These are all listed below.
+        </textual>
+    </paragraph>
+    <title size="LARGER" v="v1">
+        <textual>Style Guides</textual>
+    </title>
+    <paragraph v="v1">
+        <textual>
+            The Style Guide Pages are only used to render the templates so that you can see how they look. They are not
+            required by the Platform. Feel free to add and edit these pages. These pages can be reached on the Platform.
+        </textual>
     </paragraph>
     <div v="v1" alignItems="STRETCH" wrap="WRAP" border="1px solid black">
-        <card link="true" type="internal" view="style-guide-landing.html" openNewWindow="false"
+        <card type="page" page="style-guide-landing.html" openNewWindow="false"
               flexBasis="260px" flexShrink="0" margin="0em 1em 1em 0em" v="v1">
             <image src="temp0.jpg" alt="Image of Suzi" title="Suzi Profile Picture" imageHeight="173px"
                    imageWidth="260px" v="v1"/>
             <card-body orientation="COLUMN">
-                <title size="SMALLER" v="v1">Landing Page</title>
+                <title size="SMALLER" v="v1">
+                    <textual>Landing Page</textual>
+                </title>
                 <paragraph paragraphStyle="PLAIN" v="v1">
-                    The goal of the landing page is to sell a concise set of ideas to the public. It focuses on
-                    impact rather than density.
+                    <textual>
+                        The goal of the landing page is to sell a concise set of ideas to the public. It focuses on
+                        impact rather than density.
+                    </textual>
                 </paragraph>
             </card-body>
         </card>
-        <card link="true" type="internal" view="style-guide-portfolio.html" openNewWindow="false"
+        <card type="page" page="style-guide-portfolio.html" openNewWindow="false"
               flexBasis="260px" flexShrink="0" margin="0em 1em 1em 0em" v="v1">
             <image src="temp2.jpg" alt="Portfolio" title="Portfolio" imageHeight="173px"
                    imageWidth="260px" v="v1"/>
             <card-body orientation="COLUMN">
-                <title size="SMALLER" v="v1">Portfolio Page</title>
+                <title size="SMALLER" v="v1">
+                    <textual>Portfolio Page</textual>
+                </title>
                 <paragraph paragraphStyle="PLAIN" v="v1">
-                    The portfolio page is typical for professional websites where the goal is to present facts centered
-                    around specific persons or products.
+                    <textual>
+                        The portfolio page is typical for professional websites where the goal is to present facts
+                        centered around specific persons or products.
+                    </textual>
                 </paragraph>
             </card-body>
         </card>
-        <card link="true" type="internal" view="style-guide-question.html" openNewWindow="false"
+        <card type="page" page="style-guide-question.html" openNewWindow="false"
               flexBasis="260px" flexShrink="0" margin="0em 1em 1em 0em" v="v1">
             <image src="temp7.jpg" alt="Question" title="Question" imageHeight="173px"
                    imageWidth="260px" v="v1"/>
             <card-body orientation="COLUMN">
-                <title size="SMALLER" v="v1">Question Page</title>
+                <title size="SMALLER" v="v1">
+                    <textual>Question Page</textual>
+                </title>
                 <paragraph paragraphStyle="PLAIN" v="v1">
-                    The portolio page is typical for professional websites where the goal is to present facts centered
-                    around specific persons or products.
+                    <textual>
+                        The portfolio page is typical for professional websites where the goal is to present facts
+                        centered around specific persons or products.
+                    </textual>
                 </paragraph>
             </card-body>
         </card>
-        <card link="true" type="internal" view="style-guide-typography.html" openNewWindow="false"
+        <card type="page" page="style-guide-typography.html" openNewWindow="false"
               flexBasis="260px" flexShrink="0" margin="0em 1em 1em 0em" v="v1">
             <image src="temp1.jpg" alt="Page A" title="Page A" imageHeight="173px" imageWidth="260px"
                    v="v1"/>
             <card-body orientation="COLUMN">
-                <title size="SMALLER" v="v1">Typography Page</title>
-                <paragraph paragraphStyle="PLAIN" v="v1">This web page presents all the fonts and
-                    paragraph styles used in the style guide.
+                <title size="SMALLER" v="v1">
+                    <textual>Typography Page</textual>
+                </title>
+                <paragraph paragraphStyle="PLAIN" v="v1">
+                    <textual>
+                        This web page presents all the fonts and paragraph styles used in the style guide.
+                    </textual>
                 </paragraph>
             </card-body>
         </card>
 
-        <card link="true" type="internal" view="style-guide-alpha.html" openNewWindow="false"
+        <card type="page" page="style-guide-alpha.html" openNewWindow="false"
               flexBasis="260px" flexShrink="0" margin="0em 1em 1em 0em" v="v1">
             <image src="temp4.jpg" alt="Reference Alpha" title="Reference Alpha" imageHeight="173px" imageWidth="260px"
                    v="v1"/>
             <card-body orientation="COLUMN">
-                <title size="SMALLER" v="v1">Reference Alpha</title>
-                <paragraph paragraphStyle="PLAIN" v="v1">The Reference Alpha page presents a set of
-                    widgets outside any context.
+                <title size="SMALLER" v="v1">
+                    <textual>Reference Alpha</textual>
+                </title>
+                <paragraph paragraphStyle="PLAIN" v="v1">
+                    <textual>The Reference Alpha page presents a set of widgets outside any context.
+                    </textual>
                 </paragraph>
             </card-body>
         </card>
-        <card link="true" type="internal" view="style-guide-beta.html" openNewWindow="false"
+        <card type="page" page="style-guide-beta.html" openNewWindow="false"
               flexBasis="260px" flexShrink="0" margin="0em 1em 1em 0em" v="v1">
             <image src="temp5.jpg" alt="Reference Beta" title="Reference Beta" imageHeight="173px" imageWidth="260px"
                    v="v1"/>
             <card-body orientation="COLUMN">
-                <title size="SMALLER" v="v1">Reference Beta</title>
-                <paragraph paragraphStyle="PLAIN" v="v1">The Reference Beta page presents a set of
-                    widgets outside any context.
+                <title size="SMALLER" v="v1">
+                    <textual>Reference Beta</textual>
+                </title>
+                <paragraph paragraphStyle="PLAIN" v="v1">
+                    <textual>The Reference Beta page presents a set of widgets outside any context.
+                    </textual>
                 </paragraph>
             </card-body>
         </card>
-        <card link="true" type="internal" view="style-guide-delta.html" openNewWindow="false"
+        <card type="page" page="style-guide-delta.html" openNewWindow="false"
               flexBasis="260px" flexShrink="0" margin="0em 1em 1em 0em" v="v1">
             <image src="temp6.jpg" alt="Reference Delta" title="Reference Delta" imageHeight="173px" imageWidth="260px"
                    v="v1"/>
             <card-body orientation="COLUMN">
-                <title size="SMALLER" v="v1">Reference Delta</title>
-                <paragraph paragraphStyle="PLAIN" v="v1">The Reference Beta page presents a set of
-                    widgets outside any context.
+                <title size="SMALLER" v="v1">
+                    <textual>Reference Delta</textual>
+                </title>
+                <paragraph paragraphStyle="PLAIN" v="v1">
+                    <textual>The Reference Beta page presents a set of widgets outside any context.</textual>
                 </paragraph>
             </card-body>
         </card>
-        <card link="true" type="internal" view="style-guide-specials.html" openNewWindow="false"
+        <card type="page" page="style-guide-specials.html" openNewWindow="false"
               flexBasis="260px" flexShrink="0" margin="0em 1em 1em 0em" v="v1">
             <image src="temp8.jpg" alt="Specials" title="Specials" imageHeight="173px" imageWidth="260px"
                    v="v1"/>
             <card-body orientation="COLUMN">
-                <title size="SMALLER" v="v1">Specials</title>
-                <paragraph paragraphStyle="PLAIN" v="v1">This page contains the special widgets.
+                <title size="SMALLER" v="v1">
+                    <textual>Specials</textual>
+                </title>
+                <paragraph paragraphStyle="PLAIN" v="v1">
+                    <textual>This page contains the special widgets.</textual>
                 </paragraph>
             </card-body>
         </card>
     </div>
-    <title size="LARGER" v="v1">Special Purpose Pages</title>
+    <title size="LARGER" v="v1">
+        <textual>Special Purpose Pages</textual>
+    </title>
     <paragraph v="v1">
-        The Special Purpose Pages are required by the Platform and are presented in specific contexts for special
-        purposes. These are all listed out below.
+        <textual>
+            The Special Purpose Pages are required by the Platform and are presented in specific contexts for special
+            purposes. These are all listed out below.
+        </textual>
     </paragraph>
     <div orientation="ROW" v="v1">
         <table v="v1">
             <row>
-                <column>Name</column>
-                <column>File</column>
-                <column>Description</column>
+                <column>
+                    <textual>Name</textual>
+                </column>
+                <column>
+                    <textual>File</textual>
+                </column>
+                <column>
+                    <textual>Description</textual>
+                </column>
             </row>
             <row>
                 <cell>
                     <link type="internal" view="error.html" openNewWindow="false"
                           v="v1">
-                        Error Page
+                        <textual>Error Page</textual>
                     </link>
                 </cell>
                 <cell>
-                    error.page.xml
+                    <paragraph paragraphStyle="PLAIN" v="v1">
+                        <textual>error.page.xml</textual>
+                    </paragraph>
                 </cell>
                 <cell>
-                    <paragraph paragraphStyle="PLAIN" v="v1">This is the standard error page that is
-                        presented whenever an unexpected error occurs.
+                    <paragraph paragraphStyle="PLAIN" v="v1">
+                        <textual>
+                            This is the standard error page that is presented whenever an unexpected error occurs.
+                        </textual>
                     </paragraph>
                 </cell>
             </row>
             <row>
                 <cell>
-                    <link type="internal" view="not-found.html" openNewWindow="false"
-                          v="v1">
-                        Not Found Page
+                    <link type="internal" view="not-found.html" openNewWindow="false" v="v1">
+                        <textual>Not Found Page</textual>
                     </link>
                 </cell>
                 <cell>
-                    not-found.page.xml
+                    <paragraph paragraphStyle="PLAIN" v="v1">
+                        <textual>not-found.page.xml</textual>
+                    </paragraph>
                 </cell>
                 <cell>
-                    <paragraph paragraphStyle="PLAIN" v="v1">This is the standard page that is displayed
-                        when a URL is requested and no page is found. Bear in mind that this page is also returned when
-                        there is a page that exists, but the current user does not have authorisation to view the page.
+                    <paragraph paragraphStyle="PLAIN" v="v1">
+                        <textual>
+                            This is the standard page that is displayed when a URL is requested and no page is found.
+                            Bear in mind that this page is also returned when there is a page that exists, but the
+                            current user does not have authorisation to view the page.
+                        </textual>
                     </paragraph>
                 </cell>
             </row>
@@ -191,18 +255,24 @@
                 <cell>
                     <link type="internal" view="unauthorized.html" openNewWindow="false"
                           v="v1">
-                        Unauthorized Page
+                        <textual>Unauthorized Page</textual>
                     </link>
                 </cell>
                 <cell>
-                    unauthorized.page.xml
+                    <paragraph paragraphStyle="PLAIN" v="v1">
+                        <textual>
+                            unauthorized.page.xml
+                        </textual>
+                    </paragraph>
                 </cell>
                 <cell>
-                    <paragraph paragraphStyle="PLAIN" v="v1">In most situations, whenever a user requests
-                        a Page that he is unauthorized to view, then the Page Resolution Process will not find a
-                        suitable page to present and the Not Found Page is served. In some very limited situations, the
-                        resolution process is not used, and in those situations, we present this page when the current
-                        user is unauthorized.
+                    <paragraph paragraphStyle="PLAIN" v="v1">
+                        <textual>
+                            In most situations, whenever a user requests a Page that he is unauthorized to view, then
+                            the Page Resolution Process will not find a suitable page to present and the Not Found Page
+                            is served. In some very limited situations, the resolution process is not used, and in those
+                            situations, we present this page when the current user is unauthorized.
+                        </textual>
                     </paragraph>
                 </cell>
             </row>
@@ -210,16 +280,23 @@
                 <cell>
                     <link type="internal" view="register.html" openNewWindow="false"
                           v="v1">
-                        Register Page
+                        <textual>Register Page</textual>
                     </link>
                 </cell>
                 <cell>
-                    register.page.xml
+                    <paragraph paragraphStyle="PLAIN" v="v1">
+                        <textual>
+                            register.page.xml
+                        </textual>
+                    </paragraph>
                 </cell>
                 <cell>
-                    <paragraph paragraphStyle="PLAIN" v="v1">This is the standard page that is displayed
-                        when a URL is requested and no page is found. Bear in mind that this page is also returned when
-                        there is a page that exists, but the current user does not have authorisation to view the page.
+                    <paragraph paragraphStyle="PLAIN" v="v1">
+                        <textual>
+                            This is the standard page that is displayed when a URL is requested and no page is found.
+                            Bear in mind that this page is also returned when there is a page that exists, but the
+                            current user does not have authorisation to view the page.
+                        </textual>
                     </paragraph>
                 </cell>
             </row>
@@ -227,544 +304,773 @@
                 <cell>
                     <link type="internal" view="registration-complete.html" openNewWindow="false"
                           v="v1">
-                        Registration Complete Page
+                        <textual>Registration Complete Page</textual>
                     </link>
                 </cell>
                 <cell>
-                    registration-complete.page.xml
+                    <paragraph paragraphStyle="PLAIN" v="v1">
+                        <textual>
+                            registration-complete.page.xml
+                        </textual>
+                    </paragraph>
                 </cell>
                 <cell>
-                    <paragraph paragraphStyle="PLAIN" v="v1">This page is presented when a user finishes
-                        the registration process.
+                    <paragraph paragraphStyle="PLAIN" v="v1">
+                        <textual>This page is presented when a user finishes
+                            the registration process.
+                        </textual>
                     </paragraph>
                 </cell>
             </row>
             <row>
                 <cell>
-                    <link type="internal" view="email-confirmation-complete.html"
-                          openNewWindow="false"
-                          v="v1">
-                        Email Confirmation Complete Page
+                    <link type="internal" view="email-confirmation-complete.html" openNewWindow="false" v="v1">
+                        <textual>Email Confirmation Complete Page</textual>
                     </link>
                 </cell>
                 <cell>
-                    email-confirmation-complete.page.xml
+                    <paragraph paragraphStyle="PLAIN" v="v1">
+                        <textual>
+                            email-confirmation-complete.page.xml
+                        </textual>
+                    </paragraph>
                 </cell>
                 <cell>
-                    <paragraph paragraphStyle="PLAIN" v="v1">This page is presented when a user clicks on
-                        the email confirmation link they will receive as a part of the registration process.
+                    <paragraph paragraphStyle="PLAIN" v="v1">
+                        <textual>
+                            This page is presented when a user clicks on
+                            the email confirmation link they will receive as a part of the registration process.
+                        </textual>
                     </paragraph>
                 </cell>
             </row>
             <row>
                 <cell>
-                    <link type="internal" view="case-principal-picker.html"
-                          openNewWindow="false" v="v1">
-                        Case Principal Picker Page
+                    <link type="internal" view="case-principal-picker.html" openNewWindow="false" v="v1">
+                        <textual>Case Principal Picker Page</textual>
                     </link>
                 </cell>
                 <cell>
-                    case-principal-picker.page.xml
+                    <paragraph paragraphStyle="PLAIN" v="v1">
+                        <textual>
+                            case-principal-picker.page.xml
+                        </textual>
+                    </paragraph>
                 </cell>
                 <cell>
-                    <paragraph paragraphStyle="PLAIN" v="v1">Workflows can be arbitrarily assigned to
-                        users by the initiator of the Workflow. This setting is controlled by the definition of the
-                        Workflow and is used by Workflow process that are intended to be intiated by staff on behalf of
-                        the account&apos;s clients. When set, this page will present allowing the Staff member to select
-                        the Case Principal, the owner of the Workflow.
+                    <paragraph paragraphStyle="PLAIN" v="v1">
+                        <textual>
+                            Workflows can be arbitrarily assigned to users by the initiator of the Workflow. This
+                            setting is controlled by the definition of the Workflow and is used by Workflow process that
+                            are intended to be intiated by staff on behalf of the account&apos;s clients. When set, this
+                            page will present allowing the Staff member to select the Case Principal, the owner of the
+                            Workflow.
+                        </textual>
                     </paragraph>
                 </cell>
             </row>
             <row>
                 <cell>
-                    <link type="internal" view="privacy.html"
-                          openNewWindow="false" v="v1">
-                        Privacy Page
+                    <link type="internal" view="privacy.html" openNewWindow="false" v="v1">
+                        <textual>Privacy Page</textual>
                     </link>
                 </cell>
                 <cell>
-                    privacy.page.xml
+                    <paragraph paragraphStyle="PLAIN" v="v1">
+                        <textual>
+                            privacy.page.xml
+                        </textual>
+                    </paragraph>
                 </cell>
                 <cell>
-                    <paragraph paragraphStyle="PLAIN" v="v1">This privacy page is not strictly speaking
-                        required by the platform. It is referenced by the login panel template. That panel will present
-                        a link that links to this page which outlines the account&apos;s privacy policy. You can
-                        introduce additional pages in the same way for arbitrary uses (subject to our terms and
-                        conditions of course).
+                    <paragraph paragraphStyle="PLAIN" v="v1">
+                        <textual>
+                            This privacy page is not strictly speaking required by the platform. It is referenced by the
+                            login panel template. That panel will present a link that links to this page which outlines
+                            the account&apos;s privacy policy. You can introduce additional pages in the same way for
+                            arbitrary uses (subject to our terms and conditions of course).
+                        </textual>
                     </paragraph>
                 </cell>
             </row>
             <row>
                 <cell>
-                    <link type="internal" view="reset-password.html"
-                          openNewWindow="false" v="v1">
-                        Reset Password Page
+                    <link type="internal" view="reset-password.html" openNewWindow="false" v="v1">
+                        <textual>Reset Password Page</textual>
                     </link>
                 </cell>
                 <cell>
-                    reset-password.page.xml
+                    <paragraph paragraphStyle="PLAIN" v="v1">
+                        <textual>
+                            reset-password.page.xml
+                        </textual>
+                    </paragraph>
                 </cell>
                 <cell>
-                    <paragraph paragraphStyle="PLAIN" v="v1">This page presents the Reset Password Panel
-                        that allows users to request a password reset. This page is usually presented after the user has
-                        clicked on the password reset link they would have received in an email.
+                    <paragraph paragraphStyle="PLAIN" v="v1">
+                        <textual>
+                            This page presents the Reset Password Panel that allows users to request a password reset.
+                            This page is usually presented after the user has clicked on the password reset link they
+                            would have received in an email.
+                        </textual>
                     </paragraph>
                 </cell>
             </row>
             <row>
                 <cell>
-                    <link type="internal" view="reset-password-complete.html"
-                          openNewWindow="false" v="v1">
-                        Reset Password Complete Page
+                    <link type="internal" view="reset-password-complete.html" openNewWindow="false" v="v1">
+                        <textual>Reset Password Complete Page</textual>
                     </link>
                 </cell>
                 <cell>
-                    reset-password-complete.page.xml
+                    <paragraph paragraphStyle="PLAIN" v="v1">
+                        <textual>
+                            reset-password-complete.page.xml
+                        </textual>
+                    </paragraph>
                 </cell>
                 <cell>
-                    <paragraph paragraphStyle="PLAIN" v="v1">This page presents a page that is presented
-                        once the user has performed a password reset.
+                    <paragraph paragraphStyle="PLAIN" v="v1">
+                        <textual>
+                            This page presents a page that is presented once the user has performed a password reset.
+                        </textual>
                     </paragraph>
                 </cell>
             </row>
             <row>
                 <cell>
-                    <link type="internal" view="reset-password-request.html"
-                          openNewWindow="false" v="v1">
-                        Reset Password Request Page
+                    <link type="internal" view="reset-password-request.html" openNewWindow="false" v="v1">
+                        <textual>Reset Password Request Page</textual>
                     </link>
                 </cell>
                 <cell>
-                    reset-password-request.page.xml
+                    <paragraph paragraphStyle="PLAIN" v="v1">
+                        <textual>
+                            reset-password-request.page.xml
+                        </textual>
+                    </paragraph>
                 </cell>
                 <cell>
-                    <paragraph paragraphStyle="PLAIN" v="v1">This page presents the Reset Password Request
-                        Panel the user to specify a registered email address for the purposes of receiving a password
-                        reset email.
+                    <paragraph paragraphStyle="PLAIN" v="v1">
+                        <textual>
+                            This page presents the Reset Password Request Panel the user to specify a registered email
+                            address for the purposes of receiving a password reset email.
+                        </textual>
                     </paragraph>
                 </cell>
             </row>
             <row>
                 <cell>
-                    <link type="internal" view="reset-password-request-complete.html"
-                          openNewWindow="false" v="v1">
-                        Reset Password Request Complete Page
+                    <link type="internal" view="reset-password-request-complete.html" openNewWindow="false" v="v1">
+                        <textual>Reset Password Request Complete Page</textual>
                     </link>
                 </cell>
                 <cell>
-                    reset-password-request-complete.page.xml
+                    <paragraph paragraphStyle="PLAIN" v="v1">
+                        <textual>
+                            reset-password-request-complete.page.xml
+                        </textual>
+                    </paragraph>
                 </cell>
                 <cell>
-                    <paragraph paragraphStyle="PLAIN" v="v1">This page presents after the user has
-                        submitted an email address for the purposes of password reset.
+                    <paragraph paragraphStyle="PLAIN" v="v1">
+                        <textual>
+                            This page presents after the user has submitted an email address for the purposes of
+                            password reset.
+                        </textual>
                     </paragraph>
                 </cell>
             </row>
             <row>
                 <cell>
-                    <link type="internal" view="wizard-intro.html"
-                          openNewWindow="false" v="v1">
-                        Wizard Intro Page
+                    <link type="internal" view="wizard-intro.html" openNewWindow="false" v="v1">
+                        <textual>Wizard Intro Page</textual>
                     </link>
                 </cell>
                 <cell>
-                    wizard-intro.page.xml
+                    <paragraph paragraphStyle="PLAIN" v="v1">
+                        <textual>wizard-intro.page.xml</textual>
+                    </paragraph>
                 </cell>
                 <cell>
-                    <paragraph paragraphStyle="PLAIN" v="v1">It is possible to
-                        configure within the Workflow a setting that will present to the user a Wizard Introduction
-                        Page. This page informs the user that the Wizard is about to be initiated. Depending on how the
-                        Wizard has been designed, you may wish to present this page or not.
+                    <paragraph paragraphStyle="PLAIN" v="v1">
+                        <textual>
+                            It is possible to configure within the Workflow a setting that will present to the user a
+                            Wizard Introduction Page. This page informs the user that the Wizard is about to be
+                            initiated. Depending on how the Wizard has been designed, you may wish to present this page
+                            or not.
+                        </textual>
                     </paragraph>
                 </cell>
             </row>
             <row>
                 <cell>
-                    <link type="internal" view="wizard-outro.html"
-                          openNewWindow="false" v="v1">
-                        Wizard Outro Page
+                    <link type="internal" view="wizard-outro.html" openNewWindow="false" v="v1">
+                        <textual>Wizard Outro Page</textual>
                     </link>
                 </cell>
                 <cell>
-                    wizard-outro.page.xml
+                    <paragraph paragraphStyle="PLAIN" v="v1">
+                        <textual>wizard-outro.page.xml</textual>
+                    </paragraph>
                 </cell>
                 <cell>
-                    <paragraph paragraphStyle="PLAIN" v="v1">Similarly to the Intro Page, it is possible
-                        to configure within the Workflow a setting that will present to the user a Wizard Outro Page.
-                        This page informs the user that the Wizard has been completed. Depending on how the Wizard has
-                        been designed, you may wish to present this page or not.
+                    <paragraph paragraphStyle="PLAIN" v="v1">
+                        <textual>
+                            Similarly to the Intro Page, it is possible to configure within the Workflow a setting that
+                            will present to the user a Wizard Outro Page. This page informs the user that the Wizard has
+                            been completed. Depending on how the Wizard has been designed, you may wish to present this
+                            page or not.
+                        </textual>
                     </paragraph>
                 </cell>
             </row>
             <row>
                 <cell>
-                    <link type="internal" view="wizard-resume.html"
-                          openNewWindow="false" v="v1">
-                        Wizard Resume Page
+                    <link type="internal" view="wizard-resume.html" openNewWindow="false" v="v1">
+                        <textual>Wizard Resume Page</textual>
                     </link>
                 </cell>
                 <cell>
-                    wizard-resume.page.xml
+                    <paragraph paragraphStyle="PLAIN" v="v1">
+                        <textual>wizard-resume.page.xml</textual>
+                    </paragraph>
                 </cell>
                 <cell>
-                    <paragraph paragraphStyle="PLAIN" v="v1">Often a user will commence an Wizard, and for
-                        whatever reason, not complete the wizard in one sitting. When this happens, the Platform records
-                        that the Wizard is inflight, and will present the Wizard to the user when he returns and
-                        authenticates. When he authenticates, we present this page to the user just prior to presenting
-                        the Wizard so as to give the user some context as to what is going on.
+                    <paragraph paragraphStyle="PLAIN" v="v1">
+                        <textual>
+                            Often a user will commence a wizard, and for whatever reason, not complete the wizard in
+                            one sitting. When this happens, the platform records that the wizard is inflight, and will
+                            present the wizard to the user when he returns and authenticates. When he authenticates, we
+                            present this page to the user just prior to presenting the wizard to give the user some
+                            context as to what is going on.
+                        </textual>
                     </paragraph>
                 </cell>
             </row>
             <row>
                 <cell>
-                    <link type="internal" view="wizard-test-results.html"
-                          openNewWindow="false" v="v1">
-                        Wizard Test Results Page
+                    <link type="internal" view="wizard-test-results.html" openNewWindow="false" v="v1">
+                        <textual>Wizard Test Results Page</textual>
                     </link>
                 </cell>
                 <cell>
-                    wizard-test-results.page.xml
+                    <paragraph paragraphStyle="PLAIN" v="v1">
+                        <textual>wizard-test-results.page.xml</textual>
+                    </paragraph>
                 </cell>
                 <cell>
-                    <paragraph paragraphStyle="PLAIN" v="v1">The Wizard Test Results page is a special
-                        purpose page that presents the Wizard Test Results widget. This page is only presented by the
-                        Admin Console as a result of testing a Wizard.
+                    <paragraph paragraphStyle="PLAIN" v="v1">
+                        <textual>
+                            The Wizard Test Results page is a special purpose page that presents the Wizard Test Results
+                            widget. This page is only presented by the Admin Console as a result of testing a Wizard.
+                        </textual>
                     </paragraph>
                 </cell>
             </row>
 
             <row>
                 <cell>
-                    <link type="internal" view="workflow-confirm.html"
-                          openNewWindow="false" v="v1">
-                        Workflow Confirm Page
+                    <link type="internal" view="workflow-confirm.html" openNewWindow="false" v="v1">
+                        <textual>Workflow Confirm Page</textual>
                     </link>
                 </cell>
                 <cell>
-                    workflow-confirm.page.xml
+                    <paragraph paragraphStyle="PLAIN" v="v1">
+                        <textual>workflow-confirm.page.xml</textual>
+                    </paragraph>
                 </cell>
                 <cell>
-                    <paragraph paragraphStyle="PLAIN" v="v1">Whenever a Workflow is initiated by clicking
-                        on the Initiate Workflow Button, or Menu Item, then this page is presented. This page works as a
-                        confirmation page, to allow the user to cancel the previous action.
+                    <paragraph paragraphStyle="PLAIN" v="v1">
+                        <textual>
+                            Whenever a Workflow is initiated by clicking on the Initiate Workflow Button, or Menu Item,
+                            then this page is presented. This page works as a confirmation page, to allow the user to
+                            cancel the previous action.
+                        </textual>
                     </paragraph>
                 </cell>
             </row>
             <row>
                 <cell>
-                    <link type="internal" view="workflow-executed.html"
-                          openNewWindow="false" v="v1">
-                        Workflow Executed Page
+                    <link type="internal" view="workflow-executed.html" openNewWindow="false" v="v1">
+                        <textual>Workflow Executed Page</textual>
                     </link>
                 </cell>
                 <cell>
-                    workflow-executed.page.xml
+                    <paragraph paragraphStyle="PLAIN" v="v1">
+                        <textual>workflow-executed.page.xml</textual>
+                    </paragraph>
                 </cell>
                 <cell>
-                    <paragraph paragraphStyle="PLAIN" v="v1">This page is presented immediately after a
-                        Workflow has been initiated. What actually happens after intiating a workflow depends on the
-                        Workflow&apos;s plan, but in some cases there would be no indication to the current user that
-                        anything has happened. This page gives some indication. It is also possible that the current
-                        user, the Case Principal, will have a Wizard to complete. In this case the Wizard will present
-                        after this page.
+                    <paragraph paragraphStyle="PLAIN" v="v1">
+                        <textual>
+                            This page is presented immediately after a Workflow has been initiated. What actually
+                            happens after intiating a workflow depends on the Workflow&apos;s plan, but in some cases
+                            there would be no indication to the current user that anything has happened. This page gives
+                            some indication. It is also possible that the current user, the Case Principal, will have a
+                            Wizard to complete. In this case the Wizard will present after this page.
+                        </textual>
                     </paragraph>
                 </cell>
             </row>
         </table>
     </div>
-    <title size="LARGER" v="v1">Widget/Partial Reference</title>
+    <title size="LARGER" v="v1">
+        <textual>Widget/Partial Reference</textual>
+    </title>
     <paragraph v="v1">
-        This section lists out all the Widgets. A Widget is an XML element that you can include in a Page Definition
-        (page.xml file). Each Widget is backed by a Partial, which is a Freemarker Template. You can find the reference
-        for Freemarker
-        <link type="external" url="https://freemarker.apache.org/" openNewWindow="true" v="v1">here</link>
-        . Not all directives are supported on the platform. The Materials Toolkit will warn you if you have used
-        something that is not supported.
+        <textual>
+            This section lists out all the Widgets. A Widget is an XML element that you can include in a Page Definition
+            (page.xml file). Each Widget is backed by a Partial, which is a Freemarker Template. You can find the
+            reference for Freemarker below . Not all directives are supported on the platform. The Materials Toolkit
+            will warn you if you have used something that is not supported.
+        </textual>
+        <link type="external" url="https://freemarker.apache.org/" openNewWindow="true" v="v1">
+            <textual>Freemarker</textual>
+        </link>
     </paragraph>
     <list listStyle="BULLET" flexBasis="14em" flexShrink="0" v="v1">
         <list-item>
-            <link view="reference.html#accordion" v="v1">Accordion</link>
+            <link view="reference.html#accordion" v="v1">
+                <textual>Accordion</textual>
+            </link>
         </list-item>
         <list-item>
-            <link view="reference.html#accordion-item" v="v1">Accordion Item</link>
+            <link view="reference.html#accordion-item" v="v1">
+                <textual>Accordion Item</textual>
+            </link>
         </list-item>
         <list-item>
-            <link view="reference.html#accordion-item-header" v="v1">Accordion Item Header</link>
+            <link view="reference.html#accordion-item-header" v="v1">
+                <textual>Accordion Item Header</textual>
+            </link>
         </list-item>
         <list-item>
-            <link view="reference.html#back-link" v="v1">Back Link</link>
+            <link view="reference.html#back-link" v="v1">
+                <textual>Back Link</textual>
+            </link>
         </list-item>
         <list-item>
-            <link view="reference.html#badge" v="v1">Badge</link>
+            <link view="reference.html#badge" v="v1">
+                <textual>Badge</textual>
+            </link>
         </list-item>
         <list-item>
-            <link view="reference.html#br" v="v1">Br</link>
+            <link view="reference.html#br" v="v1">
+                <textual>Br</textual>
+            </link>
         </list-item>
         <list-item>
-            <link view="reference.html#button" v="v1">Button</link>
+            <link view="reference.html#button" v="v1">
+                <textual>Button</textual>
+            </link>
         </list-item>
         <list-item>
-            <link view="reference.html#card" v="v1">Card</link>
-        </list-item>
-
-        <list-item>
-            <link view="reference.html#card-body" v="v1">Card Body</link>
+            <link view="reference.html#card" v="v1">
+                <textual>Card</textual>
+            </link>
         </list-item>
         <list-item>
-            <link view="reference.html#card-footer" v="v1">Card Footer</link>
+            <link view="reference.html#card-body" v="v1">
+                <textual>Card Body</textual>
+            </link>
         </list-item>
         <list-item>
-            <link view="reference.html#card-header" v="v1">Card Header</link>
-        </list-item>
-
-        <list-item>
-            <link view="reference.html#carousel" v="v1">Carousel</link>
+            <link view="reference.html#card-footer" v="v1">
+                <textual>Card Footer</textual>
+            </link>
         </list-item>
         <list-item>
-            <link view="reference.html#carousel-panel" v="v1">Carousel Panel</link>
+            <link view="reference.html#card-header" v="v1">
+                <textual>Card Header</textual>
+            </link>
         </list-item>
         <list-item>
-            <link view="reference.html#cell" v="v1">Cell</link>
+            <link view="reference.html#carousel" v="v1">
+                <textual>Carousel</textual>
+            </link>
         </list-item>
-
+        <list-item>
+            <link view="reference.html#carousel-panel" v="v1">
+                <textual>Carousel Panel</textual>
+            </link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#cell" v="v1">
+                <textual>Cell</textual>
+            </link>
+        </list-item>
         <list-item>
             <link view="reference.html#close-workflow-executed-panel" v="v1">
-                Close Workflow Executed Panel
+                <textual>Close Workflow Executed Panel</textual>
             </link>
         </list-item>
         <list-item>
-            <link view="reference.html#column" v="v1">Column</link>
-        </list-item>
-        <list-item>
-            <link view="reference.html#confirm-workflow-panel" v="v1">Confirm Workflow Panel
+            <link view="reference.html#column" v="v1">
+                <textual>Column</textual>
             </link>
         </list-item>
         <list-item>
-            <link view="reference.html#confirmation-panel" v="v1">Confirmation Panel</link>
+            <link view="reference.html#confirm-workflow-panel" v="v1">
+                <textual>Confirm Workflow Panel</textual>
+            </link>
         </list-item>
         <list-item>
-            <link view="reference.html#cookie-consent" v="v1">Cookie Consent</link>
+            <link view="reference.html#confirmation-panel" v="v1">
+                <textual>Confirmation Panel</textual>
+            </link>
         </list-item>
         <list-item>
-            <link view="reference.html#def" v="v1">Def</link>
+            <link view="reference.html#cookie-consent" v="v1">
+                <textual>Cookie Consent</textual>
+            </link>
         </list-item>
         <list-item>
-            <link view="reference.html#div" v="v1">Div</link>
+            <link view="reference.html#def" v="v1">
+                <textual>Def</textual>
+            </link>
         </list-item>
         <list-item>
-            <link view="reference.html#email" v="v1">Email</link>
+            <link view="reference.html#div" v="v1">
+                <textual>Div</textual>
+            </link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#email" v="v1">
+                <textual>Email</textual>
+            </link>
         </list-item>
         <list-item>
             <link view="reference.html#email-confirmation-link" v="v1">
-                Email Confirmation Link
+                <textual>Email Confirmation Link</textual>
             </link>
         </list-item>
         <list-item>
-            <link view="reference.html#enumeration" v="v1">Enumeration</link>
+            <link view="reference.html#enumeration" v="v1">
+                <textual>Enumeration</textual>
+            </link>
         </list-item>
         <list-item>
-            <link view="reference.html#error-summary" v="v1">Error Summary</link>
+            <link view="reference.html#error-summary" v="v1">
+                <textual>Error Summary</textual>
+            </link>
         </list-item>
         <list-item>
-            <link view="reference.html#form" v="v1">Form</link>
+            <link view="reference.html#form" v="v1">
+                <textual>Form</textual>
+            </link>
         </list-item>
         <list-item>
-            <link view="reference.html#horizontal-rule" v="v1">Horizontal Rule</link>
+            <link view="reference.html#horizontal-rule" v="v1">
+                <textual>Horizontal Rule</textual>
+            </link>
         </list-item>
         <list-item>
-            <link view="reference.html#icon" v="v1">Icon</link>
+            <link view="reference.html#icon" v="v1">
+                <textual>Icon</textual>
+            </link>
         </list-item>
         <list-item>
-            <link view="reference.html#if" v="v1">If</link>
+            <link view="reference.html#if" v="v1">
+                <textual>If</textual>
+            </link>
         </list-item>
         <list-item>
-            <link view="reference.html#image" v="v1">Image</link>
+            <link view="reference.html#image" v="v1">
+                <textual>Image</textual>
+            </link>
         </list-item>
         <list-item>
             <link view="reference.html#initiate-workflow-button" v="v1">
-                Initiate Workflow Button
+                <textual>Initiate Workflow Button</textual>
             </link>
         </list-item>
         <list-item>
-            <link view="reference.html#input" v="v1">Input</link>
-        </list-item>
-        <list-item>
-            <link view="reference.html#inset-text" v="v1">Inset Text</link>
-        </list-item>
-        <list-item>
-            <link view="reference.html#jumbotron" v="v1">Jumbotron</link>
-        </list-item>
-        <list-item>
-            <link view="reference.html#link" v="v1">Link</link>
-        </list-item>
-        <list-item>
-            <link view="reference.html#list" v="v1">List</link>
-        </list-item>
-        <list-item>
-            <link view="reference.html#list-item" v="v1">List Item</link>
-        </list-item>
-        <list-item>
-            <link view="reference.html#login-panel" v="v1">Login Panel</link>
-        </list-item>
-        <list-item>
-            <link view="reference.html#loop" v="v1">Loop</link>
-        </list-item>
-        <list-item>
-            <link view="reference.html#menu" v="v1">Menu</link>
-        </list-item>
-        <list-item>
-            <link view="reference.html#menu-brand" v="v1">Menu Brand</link>
-        </list-item>
-        <list-item>
-            <link view="reference.html#menu-item" v="v1">Menu Item</link>
-        </list-item>
-        <list-item>
-            <link view="reference.html#message-explorer" v="v1">Message Explorer</link>
-        </list-item>
-        <list-item>
-            <link view="reference.html#mile-stone" v="v1">Mile Stone</link>
-        </list-item>
-        <list-item>
-            <link view="reference.html#notification-banner" v="v1">Notification Banner</link>
-        </list-item>
-        <list-item>
-            <link view="reference.html#page" v="v1">Page</link>
-        </list-item>
-        <list-item>
-            <link view="reference.html#paragraph" v="v1">Paragraph</link>
-        </list-item>
-        <list-item>
-            <link view="reference.html#password-reset-link" v="v1">Password Reset Link</link>
-        </list-item>
-        <list-item>
-            <link view="reference.html#progress-bar" v="v1">Progress Bar</link>
-        </list-item>
-        <list-item>
-            <link view="reference.html#register-panel" v="v1">Register Panel</link>
-        </list-item>
-        <list-item>
-            <link view="reference.html#reset-password-panel" v="v1">Reset Password Panel</link>
-        </list-item>
-        <list-item>
-            <link view="reference.html#reset-password-request-panel" v="v1">Reset Password
-                Request Panel
+            <link view="reference.html#input" v="v1">
+                <textual>Input</textual>
             </link>
         </list-item>
         <list-item>
-            <link view="reference.html#row" v="v1">Row</link>
+            <link view="reference.html#inset-text" v="v1">
+                <textual>Inset Text</textual>
+            </link>
         </list-item>
         <list-item>
-            <link view="reference.html#scale" v="v1">Scale</link>
+            <link view="reference.html#jumbotron" v="v1">
+                <textual>Jumbotron</textual>
+            </link>
         </list-item>
         <list-item>
-            <link view="reference.html#script" v="v1">Script</link>
+            <link view="reference.html#link" v="v1">
+                <textual>Link</textual>
+            </link>
         </list-item>
         <list-item>
-            <link view="reference.html#span" v="v1">Span</link>
+            <link view="reference.html#list" v="v1">
+                <textual>List</textual>
+            </link>
         </list-item>
         <list-item>
-            <link view="reference.html#sub-menu" v="v1">Sub Menu</link>
+            <link view="reference.html#list-item" v="v1">
+                <textual>List Item</textual>
+            </link>
         </list-item>
         <list-item>
-            <link view="reference.html#sub-menu-label" v="v1">Sub Menu Label</link>
+            <link view="reference.html#login-panel" v="v1">
+                <textual>Login Panel</textual>
+            </link>
         </list-item>
         <list-item>
-            <link view="reference.html#switch" v="v1">Switch</link>
+            <link view="reference.html#loop" v="v1">
+                <textual>Loop</textual>
+            </link>
         </list-item>
         <list-item>
-            <link view="reference.html#table" v="v1">Table</link>
+            <link view="reference.html#menu" v="v1">
+                <textual>Menu</textual>
+            </link>
         </list-item>
         <list-item>
-            <link view="reference.html#title" v="v1">Title</link>
+            <link view="reference.html#menu-brand" v="v1">
+                <textual>Menu Brand</textual>
+            </link>
         </list-item>
         <list-item>
-            <link view="reference.html#tool-tip" v="v1">Tool Tip</link>
+            <link view="reference.html#menu-item" v="v1">
+                <textual>Menu Item</textual>
+            </link>
         </list-item>
         <list-item>
-            <link view="reference.html#tray" v="v1">Tray</link>
+            <link view="reference.html#message-explorer" v="v1">
+                <textual>Message Explorer</textual>
+            </link>
         </list-item>
         <list-item>
-            <link view="reference.html#tray-header" v="v1">Tray Header</link>
+            <link view="reference.html#mile-stone" v="v1">
+                <textual>Mile Stone</textual>
+            </link>
         </list-item>
         <list-item>
-            <link view="reference.html#user-explorer" v="v1">User Explorer</link>
+            <link view="reference.html#notification-banner" v="v1">
+                <textual>Notification Banner</textual>
+            </link>
         </list-item>
         <list-item>
-            <link view="reference.html#uuid" v="v1">UUID</link>
+            <link view="reference.html#page" v="v1">
+                <textual>Page</textual>
+            </link>
         </list-item>
         <list-item>
-            <link view="reference.html#validation-rule" v="v1">Validation Rule</link>
+            <link view="reference.html#paragraph" v="v1">
+                <textual>Paragraph</textual>
+            </link>
         </list-item>
         <list-item>
-            <link view="reference.html#value" v="v1">Value</link>
+            <link view="reference.html#password-reset-link" v="v1">
+                <textual>Password Reset Link</textual>
+            </link>
         </list-item>
         <list-item>
-            <link view="reference.html#warning" v="v1">Warning</link>
+            <link view="reference.html#progress-bar" v="v1">
+                <textual>Progress Bar</textual>
+            </link>
         </list-item>
         <list-item>
-            <link view="reference.html#well" v="v1">Well</link>
+            <link view="reference.html#register-panel" v="v1">
+                <textual>Register Panel</textual>
+            </link>
         </list-item>
         <list-item>
-            <link view="reference.html#wizard-test-results" v="v1">Wizard Test Results</link>
+            <link view="reference.html#reset-password-panel" v="v1">
+                <textual>Reset Password Panel</textual>
+            </link>
         </list-item>
         <list-item>
-            <link view="reference.html#wizard-intro-panel" v="v1">Wizard Intro Panel</link>
+            <link view="reference.html#reset-password-request-panel" v="v1">
+                <textual>Reset Password Request Panel</textual>
+            </link>
         </list-item>
         <list-item>
-            <link view="reference.html#wizard-resume-panel" v="v1">Wizard Resume Panel</link>
+            <link view="reference.html#row" v="v1">
+                <textual>Row</textual>
+            </link>
         </list-item>
         <list-item>
-            <link view="reference.html#wizard-outro-panel" v="v1">Wizard Outro Panel</link>
+            <link view="reference.html#scale" v="v1">
+                <textual>Scale</textual>
+            </link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#script" v="v1">
+                <textual>Script</textual>
+            </link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#span" v="v1">
+                <textual>Span</textual>
+            </link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#sub-menu" v="v1">
+                <textual>Sub Menu</textual>
+            </link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#sub-menu-label" v="v1">
+                <textual>Sub Menu Label</textual>
+            </link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#switch" v="v1">
+                <textual>Switch</textual>
+            </link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#table" v="v1">
+                <textual>Table</textual>
+            </link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#title" v="v1">
+                <textual>Title</textual>
+            </link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#tool-tip" v="v1">
+                <textual>Tool Tip</textual>
+            </link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#tray" v="v1">
+                <textual>Tray</textual>
+            </link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#tray-header" v="v1">
+                <textual>Tray Header</textual>
+            </link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#user-explorer" v="v1">
+                <textual>User Explorer</textual>
+            </link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#uuid" v="v1">
+                <textual>UUID</textual>
+            </link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#validation-rule" v="v1">
+                <textual>Validation Rule</textual>
+            </link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#value" v="v1">
+                <textual>Value</textual>
+            </link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#warning" v="v1">
+                <textual>Warning</textual>
+            </link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#well" v="v1">
+                <textual>Well</textual>
+            </link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#wizard-test-results" v="v1">
+                <textual>Wizard Test Results</textual>
+            </link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#wizard-intro-panel" v="v1">
+                <textual>Wizard Intro Panel</textual>
+            </link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#wizard-resume-panel" v="v1">
+                <textual>Wizard Resume Panel</textual>
+            </link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#wizard-outro-panel" v="v1">
+                <textual>Wizard Outro Panel</textual>
+            </link>
         </list-item>
     </list>
 
-    <title size="LARGER" v="v1">Icons</title>
+    <title size="LARGER" v="v1">
+        <textual>Icons</textual>
+    </title>
 
     <paragraph v="v1">
-        If you want to use Icons in your style pages, you need to enable them in the iconConfig.json file. Set enable to
-        true, and they will be available. An icon system will have to be included in the Materials in order for this to
-        work.
+        <textual>
+            If you want to use Icons in your style pages, you need to enable them in the iconConfig.json file. Set
+            enable to true, and they will be available. An icon system will have to be included in the Materials in
+            order for this to work.
+        </textual>
     </paragraph>
     <paragraph v="v1">
-        So how do Icons work? We are going to take Bootstrap Icons as an example. But you can use whatever icon system
-        you want. Bootstrap Icons can be found <link type="external" url="https://icons.getbootstrap.com/"
-                                                     openNewWindow="true" v="v1">
-        here</link>. When rendering an icon, the icon.ftl template is passed a name token. It's up to you to make that
-        name token work with whatever icon system you are using. When a user adds an Icon via the Admin Console he
-        provides the name.
+        <textual>
+            So how do Icons work? We are going to take Bootstrap Icons as an example. But you can use whatever icon
+            system you want. Bootstrap Icons can be found using the link below. When rendering an icon, the icon.ftl
+            template is passed a name token. It's up to you to make that name token work with whatever icon system you
+            are using. When a user adds an Icon via the Admin Console he provides the name.
+        </textual>
+        <link type="external" url="https://icons.getbootstrap.com/" openNewWindow="true" v="v1">
+            <textual>Bootstrap</textual>
+        </link>
     </paragraph>
     <paragraph v="v1">
-        In order for the user to understand what he must enter for the name property, there is a bit of html we present
-        to the user in the Admin Console that is supplied here in the Materials. This html is defined in the
-        iconHelp.html file.
+        <textual>
+            In order for the user to understand what he must enter for the name property, there is a bit of html we
+            present to the user in the Admin Console that is supplied here in the Materials. This html is defined in the
+            iconHelp.html file.
+        </textual>
     </paragraph>
 
-    <title size="LARGER" v="v1">Images</title>
+    <title size="LARGER" v="v1">
+        <textual>Images</textual>
+    </title>
 
     <paragraph v="v1">
-        All images that are available to the user are supplied via the Materials. There needs to be a list of images for
-        the Admin Console to know what to present to the user in the Image Editor. This list is the imges.json file.
+        <textual>
+            All images that are available to the user are supplied via the Materials. There needs to be a list of images
+            for the Admin Console to know what to present to the user in the Image Editor. This list is the imges.json
+            file.
+        </textual>
     </paragraph>
 
-    <title size="LARGER" v="v1">Emails</title>
+    <title size="LARGER" v="v1">
+        <textual>Emails</textual>
+    </title>
 
     <paragraph v="v1">
-        Emails are very similar to Pages. In the emails directory you will find email.xml files. These files are the
-        definitions for Emails that are predefined. Additional Emails can be added via the Admin Console. What is
-        necessary to understand from a Materials standpoint is how to correctly configure how
-        images are attached to emails during the email sending process. Emails, unlike web pages, mostly embed css and
-        images. This allows the email to be viewed offline. The email.properties file contains a list of attachments
-        which is a comma separated list of images that need to be embedded with each email.
+        <textual>
+            Emails are very similar to Pages. In the emails directory you will find email.xml files. These files are the
+            definitions for Emails that are predefined. Additional Emails can be added via the Admin Console. What is
+            necessary to understand from a Materials standpoint is how to correctly configure how images are attached to
+            emails during the email sending process. Emails, unlike web pages, mostly embed css and images. This allows
+            the email to be viewed offline. The email.properties file contains a list of attachments which is a comma
+            separated list of images that need to be embedded with each email.
+        </textual>
     </paragraph>
 
-    <title size="LARGER" v="v1">Plantain Substitutions</title>
+    <title size="LARGER" v="v1">
+        <textual>Plantain Substitutions</textual>
+    </title>
 
     <paragraph v="v1">
-        In order for the Materials Toolkit to work, it needs some system for handling Plantain Scripts. The Materials
-        Toolkit does not include a Plantain Engine. Instead, if the Materials Toolkit finds a script, it will look for a
-        result in the plantain-substitutions.json file. This makes better sense as it is a lot easier to test
-        conditions. You can see an example of this in the specials page where we demonstrate how the Switch Widget
-        works. You will see that the Plantain Scripts found for the condition attributes on the If Widgets can be found
-        in the substitutions file.
+        <textual>
+            In order for the Materials Toolkit to work, it needs some system for handling Plantain Scripts. The
+            Materials Toolkit does not include a Plantain Engine. Instead, if the Materials Toolkit finds a script, it
+            will look for a result in the plantain-substitutions.json file. This makes better sense as it is a lot
+            easier to test conditions. You can see an example of this in the specials page where we demonstrate how the
+            Switch Widget works. You will see that the Plantain Scripts found for the condition attributes on the If
+            Widgets can be found in the substitutions file.
+        </textual>
     </paragraph>
 </page>

@@ -1,4 +1,4 @@
-<div class="confirmation-panel" style="${itemStyles} ${textualStyles}">
+<div class="confirmation-panel" style="${itemStyles}">
     <div class="row">
         <div class="col grey-text">
             Hello ${user.firstName} ${user.lastName}. If this is your name and the artefacts below are the

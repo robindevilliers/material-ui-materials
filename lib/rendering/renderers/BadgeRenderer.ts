@@ -1,5 +1,5 @@
 import { Renderer } from '../Renderer';
-import { Element } from '../../xml-parser';
+import { Element, isElement } from '../../xml-parser';
 import { textStyleSupport } from '../text-style-support';
 import Properties from '../Properties';
 import flexItemSupport from '../flex-item-support';
@@ -21,13 +21,13 @@ export default class BadgeRenderer implements Renderer {
         const data: Record<string, any> = {};
         data.id = element.attributes.id;
         data.size = element.attributes.size;
-        data.content = renderingEngine.renderChildren(element);
 
         const classManager = new ClassManager(classMappings);
         classManager.append(element.attributes.flavour, 'badge-', 'badge-default');
-        textStyleSupport(data, classManager, element.attributes, classMappings);
+        textStyleSupport(data, element, classMappings);
         flexItemSupport(data, classManager, element.attributes);
         data.classes = classManager.toString();
+        data.content = renderingEngine.renderChildren(element.children.find(el => isElement(el) && (el as Element).name === 'textual')! as Element);
 
         return renderingEngine.render('badge.ftl', data);
     }

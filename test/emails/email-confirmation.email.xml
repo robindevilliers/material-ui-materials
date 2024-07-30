@@ -2,16 +2,20 @@
     <div v="v1" orientation="COLUMN">
         <div v="v1" orientation="ROW" justifyContent="SPACE_AROUND">
             <div v="v1" orientation="COLUMN" justifyContent="SPACE_AROUND" alignItems="CENTER">
-                <title size="LARGE" v="v1">Email Confirmation</title>
+                <title size="LARGE" v="v1">
+                    <textual>Email Confirmation</textual>
+                </title>
                 <paragraph v="v1">
-                    Hello <script v="v1" script="%profile% .title"/> <script v="v1"
-             script="%profile% .firstName"/> <script v="v1" script="%profile% .lastName"/>.
+                    <textual> Hello <script v="v1" script="%profile% .title"/> <script v="v1" script="%profile% .firstName"/> <script v="v1" script="%profile% .lastName"/>.</textual>
                 </paragraph>
                 <paragraph v="v1">
-                    Please click on this
-                    <email-confirmation-link v="v1" label="link"/>
-                    to complete your registration.
+                    <textual>
+                        Please click on the link below to complete your registration.
+                    </textual>
                 </paragraph>
+                <email-confirmation-link v="v1">
+                    <textual>Confirm</textual>
+                </email-confirmation-link>
             </div>
         </div>
     </div>

@@ -1,3 +1,3 @@
-<div class="card-header ${classes}" style="${textualStyles}">
+<div class="card-header ${textualClasses}" style="${textualStyles}">
     ${content}
 </div>

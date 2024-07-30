@@ -22,7 +22,7 @@ export default class RenderingEngine {
 
         const renderer = findRenderer(element.name);
         if (renderer === undefined) {
-            throw new FreemarkerError("No binding found for " + element.name);
+            throw new FreemarkerError("No renderer found for " + element.name);
         }
 
         return renderer.render(element, this.classMappings, this, this.substitutions, parent);

@@ -183,10 +183,14 @@
                  flexBasis="100%">
                 <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
                      flexBasis="100%" width="100%">
-                    <title size="LARGE" v="v1">Login Panel</title>
+                    <title size="LARGE" v="v1">
+                        <textual>Login Panel</textual>
+                    </title>
                     <paragraph v="v1" flexBasis="500px">
-                        The Login Panel widget is used to present a login dialog on the page that allows the user to
-                        enter their credentials and perform the authentication process.
+                        <textual>
+                            The Login Panel widget is used to present a login dialog on the page that allows the user to
+                            enter their credentials and perform the authentication process.
+                        </textual>
                     </paragraph>
                 </div>
                 <login-panel v="v1"/>
@@ -197,11 +201,16 @@
 
                 <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
                      flexBasis="100%" width="100%">
-                    <title size="LARGE" v="v1">Registration Panel</title>
+                    <title size="LARGE" v="v1">
+                        <textual>Registration Panel</textual>
+                    </title>
                     <paragraph v="v1" flexBasis="500px">
-                        The Registration Panel widget is used to present the registration panel which is the prescribed
-                        first step in registering a new user. All fields are required. The Registration panel can be
-                        followed by a registration wizard that can collect custom data required by the Client.
+                        <textual>
+                            The Registration Panel widget is used to present the registration panel which is the
+                            prescribed first step in registering a new user. All fields are required. The Registration
+                            panel can be followed by a registration wizard that can collect custom data required by the
+                            Client.
+                        </textual>
                     </paragraph>
                 </div>
                 <register-panel v="v1"/>
@@ -212,10 +221,14 @@
 
                 <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
                      flexBasis="100%">
-                    <title size="LARGE" v="v1">Reset Password Request Panel</title>
+                    <title size="LARGE" v="v1">
+                        <textual>Reset Password Request Panel</textual>
+                    </title>
                     <paragraph v="v1" flexBasis="500px">
-                        The Reset Password Request panel presents a panel that accepts the email address of the current
-                        user, in order to reset their password.
+                        <textual>
+                            The Reset Password Request panel presents a panel that accepts the email address of the
+                            current user, in order to reset their password.
+                        </textual>
                     </paragraph>
                 </div>
                 <reset-password-request-panel v="v1"/>
@@ -225,10 +238,14 @@
                  flexBasis="100%" width="100%">
                 <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
                      flexBasis="100%">
-                    <title size="LARGE" v="v1">Reset Password Panel</title>
+                    <title size="LARGE" v="v1">
+                        <textual>Reset Password Panel</textual>
+                    </title>
                     <paragraph v="v1" flexBasis="500px">
-                        The Reset Password Request panel presents a panel that accepts the email address of the current
-                        user, in order to reset their password.
+                        <textual>
+                            The Reset Password Request panel presents a panel that accepts the email address of the
+                            current user, in order to reset their password.
+                        </textual>
                     </paragraph>
                 </div>
 
@@ -241,14 +258,15 @@
              flexBasis="100%">
             <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
                  flexBasis="100%" width="100%">
-                <title size="LARGE" v="v1">Workflow Initiate Button</title>
+                <title size="LARGE" v="v1">
+                    <textual>Workflow Initiate Button</textual>
+                </title>
                 <paragraph v="v1" flexBasis="500px">
-                    The Workflow Initiate Button will fire a workflow.
+                    <textual>The Workflow Initiate Button will fire a workflow.</textual>
                 </paragraph>
             </div>
-            <initiate-workflow-button workflow="workflow-one" size="MEDIUM" buttonFlavour="PRIMARY"
-                                      v="v1">
-                Fire Workflow
+            <initiate-workflow-button workflow="workflow-one" size="MEDIUM" buttonFlavour="PRIMARY" v="v1">
+                <textual>Fire Workflow</textual>
             </initiate-workflow-button>
         </div>
         <horizontal-rule/>
@@ -256,31 +274,43 @@
              flexBasis="100%">
             <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
                  flexBasis="100%" width="100%">
-                <title size="LARGE" v="v1">Menu</title>
+                <title size="LARGE" v="v1">
+                    <textual>Menu</textual>
+                </title>
                 <paragraph v="v1" flexBasis="500px">
-                    The Menu widget displays a selection of workflows for user to execute.
+                    <textual>The Menu widget displays a selection of workflows for user to execute.</textual>
                 </paragraph>
             </div>
             <menu axis="HORIZONTAL" v="v1">
-                <menu-brand v="v1">menu brand</menu-brand>
+                <menu-brand v="v1">
+                    <textual>menu brand</textual>
+                </menu-brand>
                 <menu-item type="workflow" workflow="workflow-one" flavour="DEFAULT" v="v1">
-                    workflow 1
+                    <textual>workflow 1</textual>
                 </menu-item>
                 <menu-item type="workflow" workflow="workflow-two" flavour="DEFAULT" v="v1">
-                    workflow 2
+                    <textual>workflow 2</textual>
                 </menu-item>
                 <menu-item type="workflow" workflow="workflow-three" flavour="DEFAULT" v="v1">
-                    workflow 3
+                    <textual>workflow 3</textual>
                 </menu-item>
                 <sub-menu flavour="DEFAULT" v="v1">
-                    <sub-menu-label v="v1">sub menu label</sub-menu-label>
-                    <menu-item type="page" page="one" flavour="DEFAULT">page 1</menu-item>
-                    <menu-item type="page" page="two" flavour="DEFAULT">page 2</menu-item>
+                    <sub-menu-label v="v1">
+                        <textual>sub menu label</textual>
+                    </sub-menu-label>
+                    <menu-item type="page" page="one" flavour="DEFAULT">
+                        <textual>page 1</textual>
+                    </menu-item>
+                    <menu-item type="page" page="two" flavour="DEFAULT">
+                        <textual>page 2</textual>
+                    </menu-item>
                     <menu-item type="workflow" workflow="workflow-four" flavour="DEFAULT" v="v1">
-                        workflow 4
+                        <textual>workflow 4</textual>
                     </menu-item>
                 </sub-menu>
-                <menu-item type="page" page="three" flavour="DEFAULT" v="v1">page 3</menu-item>
+                <menu-item type="page" page="three" flavour="DEFAULT" v="v1">
+                    <textual>page 3</textual>
+                </menu-item>
             </menu>
         </div>
         <horizontal-rule/>
@@ -288,16 +318,22 @@
              flexBasis="100%">
             <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
                  flexBasis="100%" width="100%">
-                <title size="LARGE" v="v1">Tray</title>
+                <title size="LARGE" v="v1">
+                    <textual>Tray</textual>
+                </title>
                 <paragraph v="v1" flexBasis="500px">
-                    The Tray widget presents a list of tray entries that are in the specified queue and that belongs to
-                    a compatible group with the current user. This widget is intended to display a limited set of tray
-                    entries which is what you will find as a member of the public or a customer or case principal. This
-                    widget is intended to be customer facing.
+                    <textual>
+                        The Tray widget presents a list of tray entries that are in the specified queue and that belongs
+                        to a compatible group with the current user. This widget is intended to display a limited set of
+                        tray entries which is what you will find as a member of the public or a customer or case
+                        principal. This widget is intended to be customer facing.
+                    </textual>
                 </paragraph>
             </div>
             <tray queue="main-user" v="v1">
-                <tray-header>In Tray</tray-header>
+                <tray-header>
+                    <textual>In Tray</textual>
+                </tray-header>
             </tray>
         </div>
         <horizontal-rule/>
@@ -305,14 +341,18 @@
              flexBasis="100%">
             <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
                  flexBasis="100%" width="100%">
-                <title size="LARGE" v="v1">Message Explorer</title>
+                <title size="LARGE" v="v1">
+                    <textual>Message Explorer</textual>
+                </title>
                 <paragraph v="v1" flexBasis="500px">
-                    The Message Explorer widget allows the user to search for and view any messages to which he or she
-                    has access. This widget is intended to be a powerful browser intended for members of staff.
-                    Multiple queues can be searched, and messages can be filtered by workflow, wizard and username. You
-                    can view the appearance of the Message Explorer, but its functionality is only going to work with a
-                    proper back-end server. Its highly recommended that you make sure this works when the materials are
-                    deployed.
+                    <textual>
+                        The Message Explorer widget allows the user to search for and view any messages to which he or
+                        she has access. This widget is intended to be a powerful browser intended for members of staff.
+                        Multiple queues can be searched, and messages can be filtered by workflow, wizard and username.
+                        You can view the appearance of the Message Explorer, but its functionality is only going to work
+                        with a proper back-end server. Its highly recommended that you make sure this works when the
+                        materials are deployed.
+                    </textual>
                 </paragraph>
             </div>
             <message-explorer queue="main-user" v="v1">
@@ -323,14 +363,18 @@
              flexBasis="100%">
             <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
                  flexBasis="100%" width="100%">
-                <title size="LARGE" v="v1">User Explorer</title>
+                <title size="LARGE" v="v1">
+                    <textual>User Explorer</textual>
+                </title>
                 <paragraph v="v1" flexBasis="500px">
-                    The User Explorer widget allows the current user to search through the user accounts. This has a
-                    couple of purposes. The first is when a workflow is executed by staff, and they want to manually
-                    assign the case to a specific case principal. The second is when searching for a username to use as
-                    a filter for message searches. Again, you can view the appearance of the User Explorer, but its
-                    functionality is only going to work with a property back-end server. Its highly recommended that you
-                    make sure this works when the materials are deployed.
+                    <textual>
+                        The User Explorer widget allows the current user to search through the user accounts. This has a
+                        couple of purposes. The first is when a workflow is executed by staff, and they want to manually
+                        assign the case to a specific case principal. The second is when searching for a username to use
+                        as a filter for message searches. Again, you can view the appearance of the User Explorer, but
+                        its functionality is only going to work with a property back-end server. Its highly recommended
+                        that you make sure this works when the materials are deployed.
+                    </textual>
                 </paragraph>
             </div>
             <user-explorer v="v1"/>
@@ -341,16 +385,22 @@
              flexBasis="100%">
             <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
                  flexBasis="100%" width="100%">
-                <title size="LARGE" v="v1">Loop</title>
+                <title size="LARGE" v="v1">
+                    <textual>Loop</textual>
+                </title>
                 <paragraph v="v1" flexBasis="500px">
-                    This section displays a list of groups. It uses the Loop Widget and if the page renders,
-                    proves that the artefacts are correctly setup for use of the same. You should see the values in the
-                    plantain substitutions file reproduced here in vertical orientation.
+                    <textual>
+                        This section displays a list of groups. It uses the Loop Widget and if the page renders,
+                        proves that the artefacts are correctly setup for use of the same. You should see the values in
+                        the plantain substitutions file reproduced here in vertical orientation.
+                    </textual>
                 </paragraph>
             </div>
             <loop reference="%profile%.groups" v="v1">
                 <paragraph paragraphStyle="PLAIN" v="v1">
-                    <script script="." v="v1"/>
+                    <textual>
+                        <script script="." v="v1"/>
+                    </textual>
                 </paragraph>
             </loop>
         </div>
@@ -359,26 +409,39 @@
              flexBasis="100%">
             <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
                  flexBasis="100%" width="100%">
-                <title size="LARGE" v="v1">Switch</title>
+                <title size="LARGE" v="v1">
+                    <textual>Switch</textual>
+                </title>
                 <paragraph v="v1" flexBasis="500px">
-                    This section renders a Switch Widget which will alternatively display panels depending on a Plantain
-                    expression. We can force the value of an expression using the plantain substitutions file.
+                    <textual>
+                        This section renders a Switch Widget which will alternatively display panels depending on a
+                        Plantain expression. We can force the value of an expression using the plantain substitutions
+                        file.
+                    </textual>
                 </paragraph>
             </div>
             <switch v="v1">
                 <def orientation="COLUMN">
-                    <paragraph paragraphStyle="PLAIN" v="v1">default content</paragraph>
+                    <paragraph paragraphStyle="PLAIN" v="v1">
+                        <textual>default content</textual>
+                    </paragraph>
                 </def>
                 <if condition="%userdata% .alpha" v="v1" orientation="COLUMN">
-                    <paragraph paragraphStyle="PLAIN" v="v1">if content</paragraph>
+                    <paragraph paragraphStyle="PLAIN" v="v1">
+                        <textual>if content</textual>
+                    </paragraph>
                 </if>
             </switch>
             <switch v="v1">
                 <def orientation="COLUMN">
-                    <paragraph paragraphStyle="PLAIN" v="v1">default content</paragraph>
+                    <paragraph paragraphStyle="PLAIN" v="v1">
+                        <textual>default content</textual>
+                    </paragraph>
                 </def>
                 <if condition="%userdata% .beta" v="v1" orientation="COLUMN">
-                    <paragraph paragraphStyle="PLAIN" v="v1">if content</paragraph>
+                    <paragraph paragraphStyle="PLAIN" v="v1">
+                        <textual>if content</textual>
+                    </paragraph>
                 </if>
             </switch>
         </div>
@@ -389,13 +452,17 @@
              flexBasis="100%">
             <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
                  flexBasis="100%" width="100%">
-                <title size="LARGE" v="v1">Close Workflow Executed Panel</title>
+                <title size="LARGE" v="v1">
+                    <textual>Close Workflow Executed Panel</textual>
+                </title>
                 <paragraph v="v1" flexBasis="500px">
-                    This widget presents the panel that has the button that closes the Workflow Executed Page. When a
-                    workflow is first initiated, we present the user with the Confirm Workflow Page. If they confirm,
-                    then they are presented with the Workflow Executed Page. This page requires a button that will close
-                    the page down and present the user with whatever page they should be viewing next. This panel
-                    provides the facility.
+                    <textual>
+                        This widget presents the panel that has the button that closes the Workflow Executed Page. When
+                        a workflow is first initiated, we present the user with the Confirm Workflow Page. If they
+                        confirm, then they are presented with the Workflow Executed Page. This page requires a button
+                        that will close the page down and present the user with whatever page they should be viewing
+                        next. This panel provides the facility.
+                    </textual>
                 </paragraph>
             </div>
             <jumbotron v="v1" orientation="COLUMN">
@@ -405,15 +472,18 @@
 
         <horizontal-rule/>
 
-        <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
-             flexBasis="100%">
-            <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
-                 flexBasis="100%" width="100%">
-                <title size="LARGE" v="v1">Confirm Workflow Panel</title>
+        <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1" flexBasis="100%">
+            <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1" flexBasis="100%"
+                 width="100%">
+                <title size="LARGE" v="v1">
+                    <textual>Confirm Workflow Panel</textual>
+                </title>
                 <paragraph v="v1" flexBasis="500px">
-                    This widget presents the panel that allows the user to confirm if they intended to execute a
-                    workflow or not. When a user initiates a workflow, we present the Workflow Confirm Page. This page
-                    presents confirm and cancel options to the user. This panel presents those buttons.
+                    <textual>
+                        This widget presents the panel that allows the user to confirm if they intended to execute a
+                        workflow or not. When a user initiates a workflow, we present the Workflow Confirm Page. This
+                        page presents confirm and cancel options to the user. This panel presents those buttons.
+                    </textual>
                 </paragraph>
             </div>
             <confirm-workflow-panel v="v1"/>
@@ -425,10 +495,14 @@
              flexBasis="100%">
             <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
                  flexBasis="100%" width="100%">
-                <title size="LARGE" v="v1">Confirmation Panel</title>
+                <title size="LARGE" v="v1">
+                    <textual>Confirmation Panel</textual>
+                </title>
                 <paragraph v="v1" flexBasis="500px">
-                    The Confirmation Panel is used in Two Phase Authentication where the user is presented with a
-                    secondary challenge once first authenticating. This facility is not currently available.
+                    <textual>
+                        The Confirmation Panel is used in Two Phase Authentication where the user is presented with a
+                        secondary challenge once first authenticating. This facility is not currently available.
+                    </textual>
                 </paragraph>
             </div>
             <confirmation-panel v="v1"/>
@@ -439,13 +513,19 @@
              flexBasis="100%">
             <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
                  flexBasis="100%" width="100%">
-                <title size="LARGE" v="v1">Password Reset Link</title>
+                <title size="LARGE" v="v1">
+                    <textual>Password Reset Link</textual>
+                </title>
                 <paragraph v="v1" flexBasis="500px">
-                    When a user forgets his password, he can request a password reset. He will be sent an email, and
-                    within the email is the Password Reset Link. This widget facilitates the link.
+                    <textual>
+                        When a user forgets his password, he can request a password reset. He will be sent an email, and
+                        within the email is the Password Reset Link. This widget facilitates the link.
+                    </textual>
                 </paragraph>
             </div>
-            <password-reset-link v="v1" label="Reset Password"/>
+            <password-reset-link v="v1">
+                <textual>Reset Password</textual>
+            </password-reset-link>
         </div>
 
         <horizontal-rule/>
@@ -454,13 +534,19 @@
              flexBasis="100%">
             <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
                  flexBasis="100%" width="100%">
-                <title size="LARGE" v="v1">Email Confirmation Link</title>
+                <title size="LARGE" v="v1">
+                    <textual>Email Confirmation Link</textual>
+                </title>
                 <paragraph v="v1" flexBasis="500px">
-                    When a user first registers, he is required to confirm his email address. He will be sent an email,
-                    and will be required to click on a link within. This widget facilitates that link.
+                    <textual>
+                        When a user first registers, he is required to confirm his email address. He will be sent an
+                        email, and will be required to click on a link within. This widget facilitates that link.
+                    </textual>
                 </paragraph>
             </div>
-            <email-confirmation-link v="v1" label="Confirm Email"/>
+            <email-confirmation-link v="v1">
+                <textual>Confirm Email</textual>
+            </email-confirmation-link>
         </div>
 
         <horizontal-rule/>
@@ -469,20 +555,28 @@
              flexBasis="100%">
             <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
                  flexBasis="100%" width="100%">
-                <title size="LARGE" v="v1">Card as Link</title>
+                <title size="LARGE" v="v1">
+                    <textual>Card as Link</textual>
+                </title>
                 <paragraph v="v1" flexBasis="500px">
-                    Cards can be configured so that the entire Card is clickable, and will lead to another page.
+                    <textual>
+                        Cards can be configured so that the entire Card is clickable, and will lead to another page.
+                    </textual>
                 </paragraph>
             </div>
-            <card link="true" view="style-guide-landing.html"
+            <card type="page" page="style-guide-landing.html"
                   width="300px" flexShrink="0" margin="0em 0em 0em 1em" v="v1">
                 <image src="temp0.jpg" alt="Image of Suzi" title="Suzi Profile Picture" imageHeight="200px"
                        imageWidth="300px" v="v1"/>
                 <card-body orientation="COLUMN">
-                    <title size="SMALLER" v="v1">Lorem Ipsum</title>
+                    <title size="SMALLER" v="v1">
+                        <textual>Lorem Ipsum</textual>
+                    </title>
                     <paragraph paragraphStyle="PLAIN" v="v1">
-                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                        laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.
+                        <textual>
+                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.
+                        </textual>
                     </paragraph>
                 </card-body>
             </card>

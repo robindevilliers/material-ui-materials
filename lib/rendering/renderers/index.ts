@@ -77,6 +77,7 @@ import FakeGroupRenderer from './FakeGroupRenderer';
 import WizardIntroPanelRenderer from './WizardIntroPanelRenderer';
 import WizardOutroPanelRenderer from './WizardOutroPanelRenderer';
 import WizardResumePanelRenderer from './WizardResumePanelRenderer';
+import TextualRenderer from './TextualRenderer';
 
 const registry = [
     new TitleRenderer(),
@@ -157,7 +158,8 @@ const registry = [
     new SwitchRenderer(),
     new WizardIntroPanelRenderer(),
     new WizardOutroPanelRenderer(),
-    new WizardResumePanelRenderer()
+    new WizardResumePanelRenderer(),
+    new TextualRenderer()
 ];
 
 export function findRenderer(name: string) {

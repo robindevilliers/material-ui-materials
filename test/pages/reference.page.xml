@@ -17,28 +17,28 @@
         </paragraph>
         <paragraph v="v1">
             <textual>Then there are the predefined Pages that are included in the Materials. These are found in the
-                pages directory. If you have a look at these files you can see how the Page XML format composes Widgets
+                pages directory. If you have a look at these files you can see how the Page XML format composes widgets
                 into a structure that can be rendered as HTML. The Predefined Pages are not intended to be editable by
                 the users of the platform as they are, in many cases, crucial to the running of the Platform. The pages
                 directory also contains some predefined Pages that are the Style Guide. These pages are intend to
-                demonstrate how the Widgets will be rendered into HTML.
+                demonstrate how the widgets will be rendered into HTML.
             </textual>
         </paragraph>
         <paragraph v="v1">
-            <textual>Widgets are the individual elements that will make up a Page. Each Widget will direct the renderer
-                to produce a specific element on the web page. Some of these Widgets are very simple, such as Paragraph
-                and Div. Some Widgets are much more complex, as in the case of the Carousel and the Accordion. There are
-                special purpose Widgets that have specific functionality related to the Platform, such as the Login
+            <textual>Widgets are the individual elements that will make up a Page. Each widget will direct the renderer
+                to produce a specific element on the web page. Some of these widgets are very simple, such as Paragraph
+                and Div. Some widgets are much more complex, as in the case of the Carousel and the Accordion. There are
+                special purpose widgets that have specific functionality related to the Platform, such as the Login
                 Panel. When the Login Panel is included in a Page, then the renderer will produce the login panel on the
                 page, and the user viewing the page, can then authenticate. The Page XML standard provides a means for
-                the Admin Console to compose Widgets into Pages and provide a richer vocabulary of elements than
+                the Admin Console to compose widgets into Pages and provide a richer vocabulary of elements than
                 standard HTML.
             </textual>
         </paragraph>
         <paragraph v="v1">
-            <textual>There has to be a mechanism for how a Widget is converted into an HTML fragment so that an HTML
+            <textual>There has to be a mechanism for how a widget is converted into an HTML fragment so that an HTML
                 page can be rendered. Here we use a Template Engine to render HTML from templates. We call these
-                templates, Partials. Each Widget has a Partial that we store in the partials directory. The template for
+                templates, Partials. Each widget has a Partial that we store in the partials directory. The template for
                 the Paragraph Widget is the paragraph.ftl file. The platform takes the Widget XML definition and
                 produces tokens that is passes to the Template Engine for substitution into the resulting HTML. For
                 example, for Paragraph, one of the tokens is textualStyles. This token will contain a bit of text that
@@ -46,7 +46,7 @@
                 specified in the Page XML for the Paragraph Widget such as font size or font colour are produced as
                 inline CSS in the textualStyles token. This token is then included in the paragraph.ftl file in the
                 appropriate place to produce a style attribute value against the p tag. You can find the reference for
-                Freemarker below. We outline all the tokens available to the templates against each Widget in this
+                Freemarker below. We outline all the tokens available to the templates against each widget in this
                 document.
             </textual>
         </paragraph>
@@ -54,7 +54,7 @@
             <textual>Freemarker</textual>
         </link>
         <paragraph v="v1">
-            <textual>We also have a set of classes that are produced for each Widget. These classes will be included in
+            <textual>We also have a set of classes that are produced for each widget. These classes will be included in
                 the classes token available to the template. A typical class example is bg-primary. When a Paragraph is
                 configured with a flavour of Primary, this results in that class being produced for the Paragraph
                 template. Users of Bootstrap will find this class familiar. If you do not want to use Bootstrap, you can
@@ -68,10 +68,10 @@
             <textual>Categories</textual>
         </title>
         <paragraph v="v1">
-            <textual>This section outlines three categories that the rest of the Widgets fall into. Any Widget that that
+            <textual>This section outlines three categories that the rest of the widgets fall into. Any widget that that
                 falls within these categories has all the associated properties for that category. For example, a
                 Textual Widget will have all the properties that a Textual has. It will be explicitly stated in the
-                Widget&apos;s description which class the Widget possesses. It is perfectly possible for a Widget to
+                widget&apos;s description which class the widget possesses. It is perfectly possible for a widget to
                 have more than one of these categories.
             </textual>
         </paragraph>
@@ -80,8 +80,8 @@
                 <textual>Flex Item</textual>
             </title>
             <paragraph v="v1">
-                <textual>Many Widgets fall into the specific category of being a Flex Item. This kind of Widget
-                    describes a Widget that will be composed within a Flex Container. The combination of Flex Items and
+                <textual>Many widgets fall into the specific category of being a Flex Item. This kind of widget
+                    describes a widget that will be composed within a Flex Container. The combination of Flex Items and
                     Flex Containers allows for a high degree of control over positioning of HTML elements within one
                     another.
                 </textual>
@@ -487,19 +487,120 @@
             </table>
         </div>
         <div v="v1" orientation="COLUMN">
+            <title id="textual-container" size="MEDIUM" v="v1">
+                <textual>Textual Container</textual>
+            </title>
+            <paragraph v="v1">
+                <textual>Many Widgets present textual content where a number of textual elements are presented in flow
+                    layout, just as you would see in a paragraph of text. These elements are Textual Containers and have
+                    a Textual child. Every Textual Container must have a Textual child, and a Textual can only have a
+                    Textual Container parent.
+                </textual>
+            </paragraph>
+            <paragraph v="v1">
+                <textual>
+                    The Textual and Textual Container behave a little differently. The Textual does not have a
+                    template. It is expressed in the Page Definition, but it contributes classes and styles to its
+                    parent.
+                </textual>
+            </paragraph>
+
+
+            <title size="SMALLER" v="v1">
+                <textual>Template</textual>
+            </title>
+            <paragraph v="v1">
+                <textual>The template for the Accordion is the accordion.ftl file. It takes the following tokens.
+                </textual>
+            </paragraph>
+            <table v="v1">
+                <row>
+                    <column width="20%">
+                        <textual>Attribute</textual>
+                    </column>
+                    <column>
+                        <textual>Description</textual>
+                    </column>
+                    <column width="25%">
+                        <textual>Type</textual>
+                    </column>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>textualClasses</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>These are the classes produced from the Textual definition. They should be applied
+                                to the element that is going to render the textual content.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>class list</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>textualStyles</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>These are the styles that are produced from the Textual definition. They should be
+                                applied to the element that renders the textual content.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>css</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>content</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>The html content rendered from the content of the child Textual.</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>html</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+            </table>
+        </div>
+
+
+        <div v="v1" orientation="COLUMN">
             <title id="textual" size="MEDIUM" v="v1">
                 <textual>Textual</textual>
             </title>
             <paragraph v="v1">
-                <textual>Many Widgets present text and as such have a common set of attributes that affect the styling
-                    of the text within. These Widgets are collectively referred to as the Textuals. In addition to
+                <textual>Many widgets present text and have a common set of attributes that affect the styling
+                    of the text within. These widgets are collectively referred to as the Textuals. In addition to
                     having presentation attributes, Textuals also compose specific elements related to text. These are
                     Span, Br and Script. These elements are laid out in flowing order as you would expect text to be
                     laid out in a paragraph. Elements are wrapped when space is constrained.
                 </textual>
             </paragraph>
+            <title size="SMALLER" v="v1">
+                <textual>Widget</textual>
+            </title>
             <paragraph v="v1">
-                <textual>These are the supported attributes that are applicable to Textual Widgets specified in Page
+                <textual>These are the supported attributes that are applicable to Textual widgets specified in Page
                     Definition files.
                 </textual>
             </paragraph>
@@ -655,94 +756,17 @@
                     </cell>
                 </row>
             </table>
-            <paragraph v="v1">
-                <textual>The following classes are produced for Textual Widgets.</textual>
-            </paragraph>
-            <table v="v1">
-                <row>
-                    <column width="20%">
-                        <textual>Name</textual>
-                    </column>
-                    <column>
-                        <textual>Description</textual>
-                    </column>
-                    <column width="25%">
-                        <textual>Values</textual>
-                    </column>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>Background Flavour</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>Given that the background flavour has been configured on the Widget, one of these
-                                classes will be produced.
-                            </textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>bg-default, bg-primary, bg-secondary, bg-info, bg-warning, bg-danger, bg-success,
-                                bg-muted, bg-black, bg-white
-                            </textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>Text Flavour</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>Given that the text flavour has been configured on the Widget, one of these classes
-                                will be produced.
-                            </textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>text-default, text-primary, text-secondary, text-info, text-warning, text-danger,
-                                text-success, text-muted, text-black, text-white
-                            </textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>Font</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>The Font property on the widget is translated into the following classes for
-                                styling text with different fonts.
-                            </textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>font-title-primary, font-title-secondary, font-text-primary, font-text-secondary,
-                                font-exhibit, font-primary and font-secondary
-                            </textual>
-                        </paragraph>
-                    </cell>
-                </row>
-            </table>
         </div>
+
+
     </div>
     <div v="v1" orientation="COLUMN">
         <title id="widgets" size="LARGER" v="v1">
             <textual>Widgets</textual>
         </title>
         <paragraph v="v1">
-            <textual>Here we outline all the Widgets. Each widget has three components. There is the definition of the
-                Widget when it is included in Page XML. There are the CSS classes that the widget produces for inclusion
+            <textual>Here we outline all the widgets. Each widget has three components. There is the definition of the
+                widget when it is included in Page XML. There are the CSS classes that the widget produces for inclusion
                 into the Partial, the HTML template that is the result of the rendering system. And there are the tokens
                 that are available to the template for the widget for substitution.
             </textual>
@@ -764,7 +788,7 @@
                 <textual>Widget</textual>
             </title>
             <paragraph v="v1">
-                <textual>The Widget has, in addition to being a Flex Item, the following attributes.</textual>
+                <textual>The widget has, in addition to being a Flex Item, the following attributes.</textual>
             </paragraph>
             <table v="v1">
                 <row>
@@ -983,7 +1007,7 @@
                 <textual>Widget</textual>
             </title>
             <paragraph v="v1">
-                <textual>The Widget has, in addition to being a Flex Container, the following attributes.</textual>
+                <textual>The widget has, in addition to being a Flex Container, the following attributes.</textual>
             </paragraph>
             <table v="v1">
                 <row>
@@ -1201,7 +1225,7 @@
                     </cell>
                     <cell>
                         <paragraph v="v1">
-                            <textual>Given that the background flavour has been configured on the Widget, one of these
+                            <textual>Given that the background flavour has been configured on the widget, one of these
                                 classes will be produced.
                             </textual>
                         </paragraph>
@@ -1229,7 +1253,7 @@
                 <textual>Widget</textual>
             </title>
             <paragraph v="v1">
-                <textual>The Accordion Item Header Widget has, in addition to being a Textual, the following
+                <textual>The Accordion Item Header Widget has, in addition to being a Textual Container, the following
                     attributes.
                 </textual>
             </paragraph>
@@ -1341,24 +1365,6 @@
                 <row>
                     <cell>
                         <paragraph v="v1">
-                            <textual>textualStyles</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>The css styles that should be applied in order to support Textual definitions.
-                            </textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>css</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
                             <textual>active</textual>
                         </paragraph>
                     </cell>
@@ -1391,7 +1397,7 @@
                 <textual>Widget</textual>
             </title>
             <paragraph v="v1">
-                <textual>The Widget is a Flex Item. There are no additional properties.</textual>
+                <textual>The widget is a Flex Item. There are no additional properties.</textual>
             </paragraph>
             <title size="SMALLER" v="v1">
                 <textual>Template</textual>
@@ -1484,7 +1490,7 @@
                 <textual>Widget</textual>
             </title>
             <paragraph v="v1">
-                <textual>The Badge Widget has, in addition to being a Textual, the following attributes.</textual>
+                <textual>The Badge Widget has, in addition to being a Textual Container, the following attributes.</textual>
             </paragraph>
             <table v="v1">
                 <row>
@@ -1623,24 +1629,6 @@
                 <row>
                     <cell>
                         <paragraph v="v1">
-                            <textual>textualStyles</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>The css styles that should be applied in order to support Textual definitions.
-                            </textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>css</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
                             <textual>content</textual>
                         </paragraph>
                     </cell>
@@ -1679,7 +1667,7 @@
                     </cell>
                     <cell>
                         <paragraph v="v1">
-                            <textual>Given that the flavour has been configured on the Widget, one of these classes will
+                            <textual>Given that the flavour has been configured on the widget, one of these classes will
                                 be produced.
                             </textual>
                         </paragraph>
@@ -1699,7 +1687,7 @@
                 <textual>Br</textual>
             </title>
             <paragraph v="v1">
-                <textual>The Br Widget introduces a forced line break into a Textual element. This Widget is only valid
+                <textual>The Br Widget introduces a forced line break into a Textual element. This widget is only valid
                     when composed within a Textual.
                 </textual>
             </paragraph>
@@ -1733,7 +1721,7 @@
                 <textual>Widget</textual>
             </title>
             <paragraph v="v1">
-                <textual>The Button Widget is both a Textual and a Flex Item. And has the following additional
+                <textual>The Button Widget is both a Textual Container and a Flex Item. And has the following additional
                     properties.
                 </textual>
             </paragraph>
@@ -1866,7 +1854,7 @@
                     </cell>
                     <cell>
                         <paragraph v="v1">
-                            <textual>This attribute contains a Plantain script that will determine if the Widget should
+                            <textual>This attribute contains a Plantain script that will determine if the widget should
                                 appear disabled or not.
                             </textual>
                         </paragraph>
@@ -1885,7 +1873,7 @@
                     </cell>
                     <cell>
                         <paragraph v="v1">
-                            <textual>This attribute contains a Plantain script that will determine if the Widget should
+                            <textual>This attribute contains a Plantain script that will determine if the widget should
                                 appear hidden or not.
                             </textual>
                         </paragraph>
@@ -2008,24 +1996,6 @@
                 <row>
                     <cell>
                         <paragraph v="v1">
-                            <textual>textualStyles</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>The css styles that should be applied in order to support Textual definitions.
-                            </textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>css</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
                             <textual>content</textual>
                         </paragraph>
                     </cell>
@@ -2121,7 +2091,7 @@
                     </cell>
                     <cell>
                         <paragraph v="v1">
-                            <textual>Given that the flavour has been configured on the Widget, one of these classes will
+                            <textual>Given that the flavour has been configured on the widget, one of these classes will
                                 be produced.
                             </textual>
                         </paragraph>
@@ -2142,7 +2112,7 @@
                     </cell>
                     <cell>
                         <paragraph v="v1">
-                            <textual>Given that the size has been configured on the Widget, one of these classes will be
+                            <textual>Given that the size has been configured on the widget, one of these classes will be
                                 produced.
                             </textual>
                         </paragraph>
@@ -2606,7 +2576,7 @@
                     </cell>
                     <cell>
                         <paragraph v="v1">
-                            <textual>Given that the flavour has been configured on the Widget, one of these classes will
+                            <textual>Given that the flavour has been configured on the widget, one of these classes will
                                 be produced.
                             </textual>
                         </paragraph>
@@ -3707,7 +3677,7 @@
                 <textual>Widget</textual>
             </title>
             <paragraph v="v1">
-                <textual>The Column Widget is a Textual.</textual>
+                <textual>The Column Widget is a Textual Container.</textual>
             </paragraph>
             <title size="SMALLER" v="v1">
                 <textual>Template</textual>
@@ -3758,24 +3728,6 @@
                     <cell>
                         <paragraph v="v1">
                             <textual>class list</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>textualStyles</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>The css styles that should be applied in order to support Textual definitions.
-                            </textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>css</textual>
                         </paragraph>
                     </cell>
                 </row>
@@ -3958,7 +3910,7 @@
                 <textual>Widget</textual>
             </title>
             <paragraph v="v1">
-                <textual>The Confirmation Panel Widget is a Flex Item and Textual.</textual>
+                <textual>The Confirmation Panel Widget is a Flex Item and Textual Container.</textual>
             </paragraph>
             <title size="SMALLER" v="v1">
                 <textual>Template</textual>
@@ -4576,24 +4528,6 @@
                 <row>
                     <cell>
                         <paragraph v="v1">
-                            <textual>textualStyles</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>The css styles that should be applied in order to support Textual definitions.
-                            </textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>css</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
                             <textual>content</textual>
                         </paragraph>
                     </cell>
@@ -4762,7 +4696,7 @@
                     </cell>
                     <cell>
                         <paragraph v="v1">
-                            <textual>This attribute contains a Plantain script that will determine if the Widget should
+                            <textual>This attribute contains a Plantain script that will determine if the widget should
                                 appear disabled or not.
                             </textual>
                         </paragraph>
@@ -4798,7 +4732,7 @@
                     </cell>
                     <cell>
                         <paragraph v="v1">
-                            <textual>This attribute contains a Plantain script that will determine if the Widget should
+                            <textual>This attribute contains a Plantain script that will determine if the widget should
                                 appear hidden or not.
                             </textual>
                         </paragraph>
@@ -5376,7 +5310,7 @@
                 <textual>Widget</textual>
             </title>
             <paragraph v="v1">
-                <textual>The Form Widget is a Flex Item in addition to the following properties.</textual>
+                <textual>The Icon Widget is a Flex Item in addition to the following properties.</textual>
             </paragraph>
             <table v="v1">
                 <row>
@@ -5574,7 +5508,7 @@
                     </cell>
                     <cell>
                         <paragraph v="v1">
-                            <textual>Given that the flavour has been configured on the Widget, one of these classes will
+                            <textual>Given that the flavour has been configured on the widget, one of these classes will
                                 be produced.
                             </textual>
                         </paragraph>
@@ -5595,7 +5529,7 @@
                     </cell>
                     <cell>
                         <paragraph v="v1">
-                            <textual>Given that the size has been configured on the Widget, one of these classes will be
+                            <textual>Given that the size has been configured on the widget, one of these classes will be
                                 produced.
                             </textual>
                         </paragraph>
@@ -5674,13 +5608,13 @@
                 <textual>The Image Widget presents an image on the page.</textual>
             </paragraph>
             <paragraph v="v1">
-                <textual>The Icon Widget can be viewed on the Style Guide Landing page.</textual>
+                <textual>The Image Widget can be viewed on the Style Guide Landing page.</textual>
             </paragraph>
             <title size="SMALLER" v="v1">
                 <textual>Widget</textual>
             </title>
             <paragraph v="v1">
-                <textual>The Form Widget is a Flex Item in addition to the following properties.</textual>
+                <textual>The Image Widget is a Flex Item in addition to the following properties.</textual>
             </paragraph>
             <table v="v1">
                 <row>
@@ -6091,7 +6025,7 @@
                     </cell>
                     <cell>
                         <paragraph v="v1">
-                            <textual>This attribute contains a Plantain script that will determine if the Widget should
+                            <textual>This attribute contains a Plantain script that will determine if the widget should
                                 appear disabled or not.
                             </textual>
                         </paragraph>
@@ -6185,24 +6119,6 @@
                     <cell>
                         <paragraph v="v1">
                             <textual>The css styles that should be applied in order to support Flex Item definitions.
-                            </textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>css</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>textualStyles</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>The css styles that should be applied in order to support Textual definitions.
                             </textual>
                         </paragraph>
                     </cell>
@@ -6342,7 +6258,7 @@
                     </cell>
                     <cell>
                         <paragraph v="v1">
-                            <textual>Given that the flavour has been configured on the Widget, one of these classes will
+                            <textual>Given that the flavour has been configured on the widget, one of these classes will
                                 be produced.
                             </textual>
                         </paragraph>
@@ -6363,7 +6279,7 @@
                     </cell>
                     <cell>
                         <paragraph v="v1">
-                            <textual>Given that the size has been configured on the Widget, one of these classes will be
+                            <textual>Given that the size has been configured on the widget, one of these classes will be
                                 produced.
                             </textual>
                         </paragraph>
@@ -6656,7 +6572,7 @@
                     </cell>
                     <cell>
                         <paragraph v="v1">
-                            <textual>This attribute contains a Plantain script that will determine if the Widget should
+                            <textual>This attribute contains a Plantain script that will determine if the widget should
                                 appear disabled or not.
                             </textual>
                         </paragraph>
@@ -6675,7 +6591,7 @@
                     </cell>
                     <cell>
                         <paragraph v="v1">
-                            <textual>This attribute contains a Plantain script that will determine if the Widget should
+                            <textual>This attribute contains a Plantain script that will determine if the widget should
                                 appear hidden or not.
                             </textual>
                         </paragraph>
@@ -7182,7 +7098,7 @@
                     </cell>
                     <cell>
                         <paragraph v="v1">
-                            <textual>Given that the flavour has been configured on the Widget, one of these classes will
+                            <textual>Given that the flavour has been configured on the widget, one of these classes will
                                 be produced.
                             </textual>
                         </paragraph>
@@ -7340,7 +7256,7 @@
                 <textual>Widget</textual>
             </title>
             <paragraph v="v1">
-                <textual>The Link Widget is a Flex Item and Textual in addition to the following properties.</textual>
+                <textual>The Link Widget is a Flex Item and Textual Container in addition to the following properties.</textual>
             </paragraph>
             <table v="v1">
                 <row>
@@ -7539,24 +7455,6 @@
                     <cell>
                         <paragraph v="v1">
                             <textual>The css styles that should be applied in order to support Flex Item definitions.
-                            </textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>css</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>textualStyles</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>The css styles that should be applied in order to support Textual definitions.
                             </textual>
                         </paragraph>
                     </cell>
@@ -8347,7 +8245,7 @@
                 <textual>Widget</textual>
             </title>
             <paragraph v="v1">
-                <textual>The Menu Brand Widget is a Textual.</textual>
+                <textual>The Menu Brand Widget is a Textual Container.</textual>
             </paragraph>
             <title size="SMALLER" v="v1">
                 <textual>Template</textual>
@@ -8405,24 +8303,6 @@
                 <row>
                     <cell>
                         <paragraph v="v1">
-                            <textual>textualStyles</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>The css styles that should be applied in order to support Textual definitions.
-                            </textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>css</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
                             <textual>content</textual>
                         </paragraph>
                     </cell>
@@ -8455,7 +8335,7 @@
                 <textual>Widget</textual>
             </title>
             <paragraph v="v1">
-                <textual>The Menu Item Widget is a Textual in addition to having the following properties.</textual>
+                <textual>The Menu Item Widget is a Textual Container in addition to having the following properties.</textual>
             </paragraph>
             <table v="v1">
                 <row>
@@ -8550,7 +8430,7 @@
                     </cell>
                     <cell>
                         <paragraph v="v1">
-                            <textual>This attribute contains a Plantain script that will determine if the Widget should
+                            <textual>This attribute contains a Plantain script that will determine if the widget should
                                 appear disabled or not.
                             </textual>
                         </paragraph>
@@ -8569,7 +8449,7 @@
                     </cell>
                     <cell>
                         <paragraph v="v1">
-                            <textual>This attribute contains a Plantain script that will determine if the Widget should
+                            <textual>This attribute contains a Plantain script that will determine if the widget should
                                 appear hidden or not.
                             </textual>
                         </paragraph>
@@ -8746,24 +8626,6 @@
                 <row>
                     <cell>
                         <paragraph v="v1">
-                            <textual>textualStyles</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>The css styles that should be applied in order to support Textual definitions.
-                            </textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>css</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
                             <textual>content</textual>
                         </paragraph>
                     </cell>
@@ -8820,7 +8682,7 @@
                     </cell>
                     <cell>
                         <paragraph v="v1">
-                            <textual>Given that the text flavour has been configured on the Widget, one of these classes
+                            <textual>Given that the text flavour has been configured on the widget, one of these classes
                                 will be produced.
                             </textual>
                         </paragraph>
@@ -9290,13 +9152,13 @@
                 </textual>
             </paragraph>
             <paragraph v="v1">
-                <textual>The Message Explorer Widget can be viewed on the Style Guide Question page.</textual>
+                <textual>The Mile Stone Widget can be viewed on the Style Guide Question page.</textual>
             </paragraph>
             <title size="SMALLER" v="v1">
                 <textual>Widget</textual>
             </title>
             <paragraph v="v1">
-                <textual>The Message Explorer Widget has the following properties.</textual>
+                <textual>The Mile Stone Widget has the following properties.</textual>
             </paragraph>
             <table v="v1">
                 <row>
@@ -9531,7 +9393,7 @@
                     </cell>
                     <cell>
                         <paragraph v="v1">
-                            <textual>Given that the labelSide has been configured on the Widget, one of these classes
+                            <textual>Given that the labelSide has been configured on the widget, one of these classes
                                 will be produced.
                             </textual>
                         </paragraph>
@@ -9777,7 +9639,7 @@
                     </cell>
                     <cell>
                         <paragraph v="v1">
-                            <textual>Given that the flavour has been configured on the Widget, one of these classes will
+                            <textual>Given that the flavour has been configured on the widget, one of these classes will
                                 be produced.
                             </textual>
                         </paragraph>
@@ -9924,7 +9786,7 @@
                 <textual>Widget</textual>
             </title>
             <paragraph v="v1">
-                <textual>The Paragraph Widget is a Flex Item and Textual has the following properties.</textual>
+                <textual>The Paragraph Widget is a Flex Item and Textual Container has the following properties.</textual>
             </paragraph>
             <table v="v1">
                 <row>
@@ -10031,24 +9893,6 @@
                 <row>
                     <cell>
                         <paragraph v="v1">
-                            <textual>textualStyles</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>The css styles that should be applied in order to support Textual definitions.
-                            </textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>css</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
                             <textual>content</textual>
                         </paragraph>
                     </cell>
@@ -10096,7 +9940,8 @@
                 <textual>Widget</textual>
             </title>
             <paragraph v="v1">
-                <textual>The Paragraph Widget is a Flex Item and Textual has the following properties.</textual>
+                <textual>The Password Reset Link Widget is a Flex Item and Textual Container has the following properties.
+                </textual>
             </paragraph>
             <table v="v1">
                 <row>
@@ -10192,24 +10037,6 @@
                     <cell>
                         <paragraph v="v1">
                             <textual>The css styles that should be applied in order to support Flex Item definitions.
-                            </textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>css</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>textualStyles</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>The css styles that should be applied in order to support Textual definitions.
                             </textual>
                         </paragraph>
                     </cell>
@@ -10510,7 +10337,7 @@
                     </cell>
                     <cell>
                         <paragraph v="v1">
-                            <textual>Given that the flavour has been configured on the Widget, one of these classes will
+                            <textual>Given that the flavour has been configured on the widget, one of these classes will
                                 be produced.
                             </textual>
                         </paragraph>
@@ -10532,7 +10359,7 @@
                     </cell>
                     <cell>
                         <paragraph v="v1">
-                            <textual>Given that the axis has been configured on the Widget, one of these classes will be
+                            <textual>Given that the axis has been configured on the widget, one of these classes will be
                                 produced.
                             </textual>
                         </paragraph>
@@ -10551,7 +10378,7 @@
                     </cell>
                     <cell>
                         <paragraph v="v1">
-                            <textual>Given that the labelSide property has been configured on the Widget, one of these
+                            <textual>Given that the labelSide property has been configured on the widget, one of these
                                 classes will be produced.
                             </textual>
                         </paragraph>
@@ -11375,7 +11202,7 @@
                 <textual>Widget</textual>
             </title>
             <paragraph v="v1">
-                <textual>The Email Widget is a Flex Item in addition to the following properties.</textual>
+                <textual>The Scale Widget is a Flex Item in addition to the following properties.</textual>
             </paragraph>
             <table v="v1">
                 <row>
@@ -11488,7 +11315,7 @@
                     </cell>
                     <cell>
                         <paragraph v="v1">
-                            <textual>This attribute contains a Plantain script that will determine if the Widget should
+                            <textual>This attribute contains a Plantain script that will determine if the widget should
                                 appear disabled or not.
                             </textual>
                         </paragraph>
@@ -11507,7 +11334,7 @@
                     </cell>
                     <cell>
                         <paragraph v="v1">
-                            <textual>This attribute contains a Plantain script that will determine if the Widget should
+                            <textual>This attribute contains a Plantain script that will determine if the widget should
                                 appear hidden or not.
                             </textual>
                         </paragraph>
@@ -11867,7 +11694,7 @@
                 </textual>
             </paragraph>
             <paragraph v="v1">
-                <textual>The Script Widget will only form part of a Textual element's content.</textual>
+                <textual>The Span Widget will only form part of a Textual element's content.</textual>
             </paragraph>
             <title size="SMALLER" v="v1">
                 <textual>Widget</textual>
@@ -11907,41 +11734,6 @@
                     <cell>
                         <paragraph v="v1">
                             <textual>string</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>classes</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>A list of classes that should be applied.</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>class list</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>textualStyles</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>The css styles that should be applied in order to support Textual definitions.
-                            </textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>css</textual>
                         </paragraph>
                     </cell>
                 </row>
@@ -12132,7 +11924,7 @@
                 <textual>Widget</textual>
             </title>
             <paragraph v="v1">
-                <textual>The Sub Menu Label Widget is a Textual.</textual>
+                <textual>The Sub Menu Label Widget is a Textual Container.</textual>
             </paragraph>
             <title size="SMALLER" v="v1">
                 <textual>Template</textual>
@@ -12190,24 +11982,6 @@
                 <row>
                     <cell>
                         <paragraph v="v1">
-                            <textual>textualStyles</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>The css styles that should be applied in order to support Textual definitions.
-                            </textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>css</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
                             <textual>content</textual>
                         </paragraph>
                     </cell>
@@ -12246,7 +12020,7 @@
                     </cell>
                     <cell>
                         <paragraph v="v1">
-                            <textual>Given that the flavour has been configured on the Widget, one of these classes will
+                            <textual>Given that the flavour has been configured on the widget, one of these classes will
                                 be produced.
                             </textual>
                         </paragraph>
@@ -12490,7 +12264,7 @@
                 <textual>Widget</textual>
             </title>
             <paragraph v="v1">
-                <textual>The Title Widget is a Flex Item and Textual in addition to the following properties.</textual>
+                <textual>The Title Widget is a Flex Item and Textual Container in addition to the following properties.</textual>
             </paragraph>
             <table v="v1">
                 <row>
@@ -12583,24 +12357,6 @@
                     <cell>
                         <paragraph v="v1">
                             <textual>The css styles that should be applied in order to support Flex Item definitions.
-                            </textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>css</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>textualStyles</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>The css styles that should be applied in order to support Textual definitions.
                             </textual>
                         </paragraph>
                     </cell>
@@ -13042,7 +12798,7 @@
                 <textual>Widget</textual>
             </title>
             <paragraph v="v1">
-                <textual>The Tray Header Widget is a Textual.</textual>
+                <textual>The Tray Header Widget is a Textual Container.</textual>
             </paragraph>
             <title size="SMALLER" v="v1">
                 <textual>Template</textual>
@@ -13077,24 +12833,6 @@
                     <cell>
                         <paragraph v="v1">
                             <textual>class list</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>textualStyles</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>The css styles that should be applied in order to support Textual definitions.
-                            </textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>css</textual>
                         </paragraph>
                     </cell>
                 </row>
@@ -13691,7 +13429,8 @@
             </title>
             <paragraph v="v1">
                 <textual>The Validation Rule Widget is a special purpose widget that applies an additional validation
-                    rule to the current Form. The Validation Rule must have an Error Summary parent. It does not have a
+                    rule to the current Form. The Validation Rule must have an Error Summary or Input or Enumeration
+                    Input parent. It does not have a
                     visual component, but may generate a text message that is displayed in the Error Summary Widget. It
                     is particularly useful when you have a rule that applies to the interaction between multiple inputs,
                     or an input and the current data context.
@@ -13778,41 +13517,6 @@
                 <row>
                     <cell>
                         <paragraph v="v1">
-                            <textual>classes</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>A list of classes that should be applied.</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>class list</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>textualStyles</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>The css styles that should be applied in order to support Textual definitions.
-                            </textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>css</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
                             <textual>content</textual>
                         </paragraph>
                     </cell>
@@ -13845,7 +13549,7 @@
                 <textual>Widget</textual>
             </title>
             <paragraph v="v1">
-                <textual>The Warning Widget is a Flex Container and has the following properties.</textual>
+                <textual>The Value Widget is a Flex Container and has the following properties.</textual>
             </paragraph>
             <table v="v1">
                 <row>
@@ -14370,7 +14074,7 @@
                     </cell>
                     <cell>
                         <paragraph v="v1">
-                            <textual>Given that the flavour has been configured on the Widget, one of these classses
+                            <textual>Given that the flavour has been configured on the widget, one of these classses
                                 will be produced.
                             </textual>
                         </paragraph>
@@ -14391,7 +14095,7 @@
             </title>
             <paragraph v="v1">
                 <textual>The Wizard Test Results Widget renders a panel that presents the result of a Wizard Test. This
-                    Widget should only be used in this specific case, and it belongs in the Wizard Test Results Page.
+                    widget should only be used in this specific case, and it belongs in the Wizard Test Results Page.
                 </textual>
             </paragraph>
             <paragraph v="v1">

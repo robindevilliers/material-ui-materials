@@ -168,8 +168,23 @@
                 <input type="hidden" name="mWorkflow" value="${workflow}"/>
                 <input type="hidden" name="mWizard" value="${wizard}"/>
                 <div class="btn-group" role="group">
-                    <button type="submit" aria-label="Previous" class="btn btn-outline-primary" name="uCancel">
+                    <button type="submit" aria-label="Cancel" class="btn btn-outline-primary" name="uCancel">
                         Cancel lookup
+                    </button>
+                </div>
+            </form>
+        <#else>
+            <form class="form-inline" method="get" action="${action}">
+                <input type="hidden" name="uUsername" value="${username}"/>
+                <input type="hidden" name="uGroup" value="${group}"/>
+                <input type="hidden" name="uFirstName" value="${firstName}"/>
+                <input type="hidden" name="uLastName" value="${lastName}"/>
+                <input type="hidden" name="bust" value="${bust}"/>
+                <input type="hidden" name="uStartIndex" value="${(startIndex)!}"/>
+                <input type="hidden" name="uEndIndex" value="${(endIndex)!}"/>
+                <div class="btn-group" role="group">
+                    <button type="submit" aria-label="Previous" class="btn btn-outline-primary" name="uCancel">
+                        Cancel
                     </button>
                 </div>
             </form>

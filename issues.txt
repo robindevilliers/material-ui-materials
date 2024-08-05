@@ -1,6 +1,8 @@
 
 document config.properties
 
+document iconHelp.html.
+
 set width for columns in reference page.
 
 message explorer and user explorer are not working correctly.

@@ -1490,7 +1490,8 @@
                 <textual>Widget</textual>
             </title>
             <paragraph v="v1">
-                <textual>The Badge Widget has, in addition to being a Textual Container, the following attributes.</textual>
+                <textual>The Badge Widget has, in addition to being a Textual Container, the following attributes.
+                </textual>
             </paragraph>
             <table v="v1">
                 <row>
@@ -7256,7 +7257,8 @@
                 <textual>Widget</textual>
             </title>
             <paragraph v="v1">
-                <textual>The Link Widget is a Flex Item and Textual Container in addition to the following properties.</textual>
+                <textual>The Link Widget is a Flex Item and Textual Container in addition to the following properties.
+                </textual>
             </paragraph>
             <table v="v1">
                 <row>
@@ -8335,7 +8337,8 @@
                 <textual>Widget</textual>
             </title>
             <paragraph v="v1">
-                <textual>The Menu Item Widget is a Textual Container in addition to having the following properties.</textual>
+                <textual>The Menu Item Widget is a Textual Container in addition to having the following properties.
+                </textual>
             </paragraph>
             <table v="v1">
                 <row>
@@ -9786,7 +9789,8 @@
                 <textual>Widget</textual>
             </title>
             <paragraph v="v1">
-                <textual>The Paragraph Widget is a Flex Item and Textual Container has the following properties.</textual>
+                <textual>The Paragraph Widget is a Flex Item and Textual Container has the following properties.
+                </textual>
             </paragraph>
             <table v="v1">
                 <row>
@@ -9940,7 +9944,8 @@
                 <textual>Widget</textual>
             </title>
             <paragraph v="v1">
-                <textual>The Password Reset Link Widget is a Flex Item and Textual Container has the following properties.
+                <textual>The Password Reset Link Widget is a Flex Item and Textual Container has the following
+                    properties.
                 </textual>
             </paragraph>
             <table v="v1">
@@ -12264,7 +12269,9 @@
                 <textual>Widget</textual>
             </title>
             <paragraph v="v1">
-                <textual>The Title Widget is a Flex Item and Textual Container in addition to the following properties.</textual>
+                <textual>The Title Widget is a Flex Item and Textual Container in addition to the following
+                    properties.
+                </textual>
             </paragraph>
             <table v="v1">
                 <row>
@@ -14457,6 +14464,23 @@
                     <cell>
                         <paragraph v="v1">
                             <textual>url</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>allowAbandonWizard</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>This value indicates if the abandon button should be presented.</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>boolean</textual>
                         </paragraph>
                     </cell>
                 </row>

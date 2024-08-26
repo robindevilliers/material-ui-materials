@@ -23,6 +23,7 @@ export default class WizardResumePanelRenderer implements Renderer {
         data.classes = classManager.toString();
         data.action = "/wizard/resume/123";
         data.testMode = Store.isTestContext();
+        data.allowAbandonWizard = true;
 
         return renderingEngine.render('wizard-resume-panel.ftl', data);
     }

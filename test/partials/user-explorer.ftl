@@ -55,7 +55,8 @@
             </div>
             <div class="user-explorer-item-detail" id="${id}">
                 <#list values as val>
-                    <div id="${val.id}" class="user-explorer-item" data-display="flex" data-parent="#${id}">
+                    <div id="user-explorer-item-${val.username}" class="user-explorer-item " data-display="flex"
+                            data-parent="#${id}">
                         <div class="user-explorer-title">${val.username}</div>
                         <div class="user-explorer-content">
                             <div class="user-explorer-group">
@@ -118,7 +119,7 @@
                                             <input type="hidden" name="username" value="${val.username}"/>
                                             <div class="btn-group" role="group">
                                                 <button type="submit" aria-label="Select" class="btn btn-primary"
-                                                        name="uSelect"
+                                                        name="uSelect" id="select-button"
                                                         onclick="${testMode?string('alert(&quot;Select clicked&quot;); event.preventDefault();','')}">
                                                     Select
                                                 </button>

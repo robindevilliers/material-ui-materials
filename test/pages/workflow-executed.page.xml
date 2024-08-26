@@ -1,8 +1,8 @@
 <page defnVersion="v1" id="intro" title="Workflow Executed" orientation="COLUMN">
 
     <jumbotron v="v1" orientation="COLUMN">
-        <title size="LARGE" fontFlavour="WHITE" v="v1">
-            <textual>Workflow Executed</textual>
+        <title size="LARGE" v="v1">
+            <textual fontFlavour="WHITE" >Workflow Executed</textual>
         </title>
 
         <paragraph v="v1">

@@ -5,5 +5,11 @@
                 onclick="${testMode?string('alert(&quot;Confirm button clicked&quot;); event.preventDefault();','')}">
             Resume
         </button>
+        <#if allowAbandonWizard>
+            <button class="btn btn-danger" type="submit" name="abandon"
+                    onclick="${testMode?string('alert(&quot;Confirm button clicked&quot;); event.preventDefault();','')}">
+                Abandon
+            </button>
+        </#if>
     </form>
 </div>

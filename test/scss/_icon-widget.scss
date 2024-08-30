@@ -1,0 +1,44 @@
+
+.icon-widget {
+  margin: 4px;
+
+  &.icon-size-small {
+    font-size: 1.25em;
+  }
+
+  &.icon-size-medium {
+    font-size: 1.5em;
+  }
+
+  &.icon-size-large {
+    font-size: 2em;
+  }
+
+  &.icon-default {
+    color: var(--secondary);
+  }
+
+  &.icon-primary {
+    color: var(--primary);
+  }
+
+  &.icon-warning {
+    color: var(--warning);
+  }
+
+  &.icon-danger {
+    color: var(--danger);
+  }
+
+  &.icon-success {
+    color: var(--success);
+  }
+
+  &.icon-info {
+    color: var(--info);
+  }
+
+  &.icon-muted {
+    color: var(--gray-light);
+  }
+}

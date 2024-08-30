@@ -5,8 +5,7 @@
         <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" margin="0em 1em" padding="1em"
              borderRadius="1em" v="v1">
             <tool-tip exposition="Image">
-                <image src="logo.svg" alt="Logo" title="Logo" imageHeight="320px" imageWidth="320px"
-                       v="v1"/>
+                <image src="logo.svg" alt="Logo" title="Logo" height="320px" width="320px" v="v1"/>
             </tool-tip>
             <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" margin="1em 0em" padding="1em"
                  borderRadius="1em" v="v1">
@@ -75,7 +74,7 @@
                 <carousel-panel src="panel-3.jpg" active="false" justifyContent="END" orientation="COLUMN"
                                 alignItems="START">
                     <div margin="2em" padding="1em" backgroundFlavour="PRIMARY" v="v1">
-                        <image src="temp0.jpg" imageHeight="181px" imageWidth="278px" borderRadius="5px"
+                        <image src="temp0.jpg" height="181px" width="278px" borderRadius="5px"
                                border="2px solid black" v="v1"/>
                         <paragraph paragraphStyle="PLAIN" v="v1">
                             <textual>

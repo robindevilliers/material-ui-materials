@@ -2,7 +2,7 @@
       description="Style Guide Main Page" defnVersion="v1" orientation="COLUMN">
     <jumbotron orientation="COLUMN" v="v1">
         <div orientation="ROW" v="v1">
-            <image src="logo.svg" title="Logo" imageHeight="210px" imageWidth="210px" borderRadius="1em"
+            <image src="logo.svg" title="Logo" height="210px" width="210px" borderRadius="1em"
                    padding="0.5em" margin="0em 2em 1em" v="v1" background="white"/>
             <div orientation="COLUMN" v="v1">
                 <title size="LARGE" fontFlavour="WHITE" v="v1">
@@ -10,10 +10,8 @@
                 </title>
                 <paragraph v="v1">
                     <textual>
-
                         This is the index page. It will provide links to the various pages required in the Materials
                         Toolkit, and provide context.
-
                     </textual>
                 </paragraph>
             </div>
@@ -23,7 +21,6 @@
         <textual>
             The Materials Toolkit allows web developers to develop the assets necessary for Maximillian Workflows to
             render Pages, and Wizards on the platform.
-
         </textual>
     </paragraph>
     <paragraph v="v1">
@@ -70,9 +67,9 @@
     </paragraph>
     <div v="v1" alignItems="STRETCH" wrap="WRAP" border="1px solid black">
         <card type="page" page="style-guide-landing.html" openNewWindow="false"
-              flexBasis="260px" flexShrink="0" margin="0em 1em 1em 0em" v="v1">
-            <image src="temp0.jpg" alt="Image of Suzi" title="Suzi Profile Picture" imageHeight="173px"
-                   imageWidth="260px" v="v1"/>
+              flexBasis="240px" flexShrink="0" margin="0em 1em 1em 0em" v="v1">
+            <image src="temp0.jpg" alt="Image of Suzi" title="Suzi Profile Picture"
+                   width="240px" v="v1"/>
             <card-body orientation="COLUMN">
                 <title size="SMALLER" v="v1">
                     <textual>Landing Page</textual>
@@ -86,9 +83,9 @@
             </card-body>
         </card>
         <card type="page" page="style-guide-portfolio.html" openNewWindow="false"
-              flexBasis="260px" flexShrink="0" margin="0em 1em 1em 0em" v="v1">
-            <image src="temp2.jpg" alt="Portfolio" title="Portfolio" imageHeight="173px"
-                   imageWidth="260px" v="v1"/>
+              flexBasis="240px" flexShrink="0" margin="0em 1em 1em 0em" v="v1">
+            <image src="temp2.jpg" alt="Portfolio" title="Portfolio"
+                   width="240px" v="v1"/>
             <card-body orientation="COLUMN">
                 <title size="SMALLER" v="v1">
                     <textual>Portfolio Page</textual>
@@ -102,9 +99,9 @@
             </card-body>
         </card>
         <card type="page" page="style-guide-question.html" openNewWindow="false"
-              flexBasis="260px" flexShrink="0" margin="0em 1em 1em 0em" v="v1">
-            <image src="temp7.jpg" alt="Question" title="Question" imageHeight="173px"
-                   imageWidth="260px" v="v1"/>
+              flexBasis="240px" flexShrink="0" margin="0em 1em 1em 0em" v="v1">
+            <image src="temp7.jpg" alt="Question" title="Question"
+                   width="240px" v="v1"/>
             <card-body orientation="COLUMN">
                 <title size="SMALLER" v="v1">
                     <textual>Question Page</textual>
@@ -118,8 +115,8 @@
             </card-body>
         </card>
         <card type="page" page="style-guide-typography.html" openNewWindow="false"
-              flexBasis="260px" flexShrink="0" margin="0em 1em 1em 0em" v="v1">
-            <image src="temp1.jpg" alt="Page A" title="Page A" imageHeight="173px" imageWidth="260px"
+              flexBasis="240px" flexShrink="0" margin="0em 1em 1em 0em" v="v1">
+            <image src="temp1.jpg" alt="Page A" title="Page A" width="240px"
                    v="v1"/>
             <card-body orientation="COLUMN">
                 <title size="SMALLER" v="v1">
@@ -134,8 +131,8 @@
         </card>
 
         <card type="page" page="style-guide-alpha.html" openNewWindow="false"
-              flexBasis="260px" flexShrink="0" margin="0em 1em 1em 0em" v="v1">
-            <image src="temp4.jpg" alt="Reference Alpha" title="Reference Alpha" imageHeight="173px" imageWidth="260px"
+              flexBasis="240px" flexShrink="0" margin="0em 1em 1em 0em" v="v1">
+            <image src="temp4.jpg" alt="Reference Alpha" title="Reference Alpha" width="240px"
                    v="v1"/>
             <card-body orientation="COLUMN">
                 <title size="SMALLER" v="v1">
@@ -148,8 +145,8 @@
             </card-body>
         </card>
         <card type="page" page="style-guide-beta.html" openNewWindow="false"
-              flexBasis="260px" flexShrink="0" margin="0em 1em 1em 0em" v="v1">
-            <image src="temp5.jpg" alt="Reference Beta" title="Reference Beta" imageHeight="173px" imageWidth="260px"
+              flexBasis="240px" flexShrink="0" margin="0em 1em 1em 0em" v="v1">
+            <image src="temp5.jpg" alt="Reference Beta" title="Reference Beta" width="240px"
                    v="v1"/>
             <card-body orientation="COLUMN">
                 <title size="SMALLER" v="v1">
@@ -162,8 +159,8 @@
             </card-body>
         </card>
         <card type="page" page="style-guide-delta.html" openNewWindow="false"
-              flexBasis="260px" flexShrink="0" margin="0em 1em 1em 0em" v="v1">
-            <image src="temp6.jpg" alt="Reference Delta" title="Reference Delta" imageHeight="173px" imageWidth="260px"
+              flexBasis="240px" flexShrink="0" margin="0em 1em 1em 0em" v="v1">
+            <image src="temp6.jpg" alt="Reference Delta" title="Reference Delta" width="240px"
                    v="v1"/>
             <card-body orientation="COLUMN">
                 <title size="SMALLER" v="v1">
@@ -175,8 +172,8 @@
             </card-body>
         </card>
         <card type="page" page="style-guide-specials.html" openNewWindow="false"
-              flexBasis="260px" flexShrink="0" margin="0em 1em 1em 0em" v="v1">
-            <image src="temp8.jpg" alt="Specials" title="Specials" imageHeight="173px" imageWidth="260px"
+              flexBasis="240px" flexShrink="0" margin="0em 1em 1em 0em" v="v1">
+            <image src="temp8.jpg" alt="Specials" title="Specials" width="240px"
                    v="v1"/>
             <card-body orientation="COLUMN">
                 <title size="SMALLER" v="v1">

@@ -113,39 +113,56 @@ td {
   src: url("../public/fonts/BrushScriptStd.otf") format("opentype"), url("../public/fonts/BRUSHSCI.TTF") format("truetype");
 }
 
-@import "font";
+@media (max-width: 375.98px) {
+  .hide-xs-column {
+    display: none !important
+  }
+}
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-down($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    .hide#{$infix}-column {
+      display: none !important;
+    }
+  }
+}
+
+@import "accordion-widget";
+@import "back-link-widget";
+@import "badge-widget";
 @import "bg-white";
 @import "bg-black";
-@import "btn-default";
-@import "title";
-@import "paragraph";
-@import "inset-text";
-@import "accordion";
-@import "carousel";
-@import "cookie-consent";
-@import "progress-bar";
-@import "icon";
-@import "well";
-@import "notification-banner";
-@import "card";
 @import "branding";
-@import "tooltip";
-@import "input";
-@import "enumeration-input";
-@import "hr";
-@import "warning";
-@import "back-link";
+@import "btn-default";
+@import "card-widget";
+@import "carousel-widget";
+@import "cookie-consent-widget";
+@import "enumeration-input-widget";
+@import "font";
+@import "hr-widget";
+@import "icon-widget";
+@import "initiate-workflow-button";
+@import "input-widget";
+@import "inset-text-widget";
+@import "jumbotron-widget";
+@import "link-widget";
+@import "login-panel-widget";
+@import "loop-widget";
+@import "menu-widget";
+@import "message-explorer-widget";
+@import "notification-banner-widget";
 @import "page-widget";
-@import "tray";
-@import "message-explorer";
-@import "user-explorer";
-@import "menu";
-@import "scale";
-@import "loop";
-@import "jumbotron";
-@import "login-panel";
-@import "reset-password-request-panel";
-@import "reset-password-panel";
-@import "register-panel";
-@import "badge";
-@import "link";
+@import "paragraph-widget";
+@import "progress-bar-widget";
+@import "register-panel-widget";
+@import "reset-password-panel-widget";
+@import "reset-password-request-panel-widget";
+@import "scale-widget";
+@import "title-widget";
+@import "tooltip";
+@import "tray-widget";
+@import "user-explorer-widget";
+@import "warning-widget";
+@import "well-widget";

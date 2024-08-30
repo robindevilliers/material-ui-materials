@@ -1,5 +1,5 @@
 
-.message-explorer-widget {
+.user-explorer-widget {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -18,7 +18,7 @@
     background-color: #fff;
   }
 
-  .message-explorer-body {
+  .user-explorer-body {
     display: flex;
     flex-direction: row;
     align-items: stretch;
@@ -26,7 +26,7 @@
     background-color: #fff;
     height: 600px;
 
-    .message-explorer-item-list {
+    .user-explorer-item-list {
       display: flex;
       flex-direction: column;
       align-items: stretch;
@@ -34,11 +34,11 @@
       overflow-y: auto;
       flex-shrink: 0;
 
-      .message-explorer-item-select {
+      .user-explorer-item-select {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin: 0.25em;
+        margin: 4px;
         padding: 0 16px;
         text-transform: unset;
         text-decoration: none;
@@ -68,14 +68,14 @@
       }
     }
 
-    .message-explorer-item-detail {
+    .user-explorer-item-detail {
       display: flex;
       flex-direction: column;
       flex-grow: 1;
       padding: 1em;
       overflow-y: auto;
 
-      .message-explorer-item {
+      .user-explorer-item {
         display: flex;
         flex-direction: column;
         text-transform: unset;
@@ -97,60 +97,68 @@
         &:nth-child(even) {
           border: 5px $opal solid;
           border-radius: 25px;
+
+          .user-explorer-group:first-child {
+            border-right: 5px $opal solid;
+          }
         }
 
         &:nth-child(odd) {
           border: 5px $green solid;
           border-radius: 25px;
-        }
 
-        .message-explorer-line {
-          display: flex;
-          justify-content: space-between;
-
-
-          .message-explorer-wizard-title {
-            font-size: 1.25em;
-            font-family: Georgia, Times, Times New Roman, serif;
-          }
-
-          .message-explorer-description {
-            margin: 0 1em;
-            letter-spacing: initial;
-            line-height: initial;
-          }
-
-          .message-explorer-workflow-title {
-            align-self: flex-end;
-          }
-
-          .message-explorer-workflow-description {
-            align-self: flex-end;
-          }
-
-          .message-explorer-principal {
-            align-self: flex-end;
-          }
-
-          & > *:first-child {
-            margin-right: 1em;
+          .user-explorer-group:first-child {
+            border-right: 5px $green solid;
           }
         }
 
-        .message-explorer-form {
-          height: 100%;
-          display: flex;
-          flex-direction: column;
-          justify-content: stretch;
+        .user-explorer-title {
+          font-size: 2em;
+          font-family: Georgia, Times, Times New Roman, serif;
+          justify-items: center;
+          flex: 1 0 auto;
+        }
 
-          button {
-            height: 100%;
+        .user-explorer-content {
+          display: flex;
+
+          .user-explorer-group {
+            display: flex;
+            flex-direction: column;
+            flex: 1 0 50%;
+            padding: 1em;
+
+            .user-explorer-line {
+              display: flex;
+              justify-content: space-between;
+
+              .user-explorer-key {
+                align-self: flex-end;
+              }
+
+              .user-explorer-value {
+                align-self: flex-end;
+              }
+
+              & > *:first-child {
+                margin-right: 1em;
+              }
+            }
+
+            .user-explorer-form {
+              display: flex;
+              justify-content: flex-end;
+
+              button {
+                height: 100%;
+              }
+            }
           }
         }
       }
     }
 
-    .message-explorer-no-content {
+    .user-explorer-no-content {
       display: flex;
       flex-basis: 100%;
       text-align: center;
@@ -164,7 +172,7 @@
     }
   }
 
-  .message-explorer-footer {
+  .user-explorer-footer {
     display: flex;
     justify-content: space-between;
     padding: 0.75rem 1.25rem;
@@ -173,11 +181,11 @@
     border-top: 1px solid rgba(0, 0, 0, 0.125);
   }
 
-  .message-explorer-footer:last-child {
+  .user-explorer-footer:last-child {
     border-radius: 0 0 calc(0.25rem - 1px) calc(0.25rem - 1px);
   }
 
-  .message-explorer-button-line {
+  .user-explorer-button-line {
     display: flex;
     padding: 1em;
     justify-content: flex-end;

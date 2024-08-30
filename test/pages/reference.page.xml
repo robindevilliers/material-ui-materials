@@ -306,7 +306,383 @@
                         </paragraph>
                     </cell>
                 </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>columnWidth</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>
+                                The number of columns to occupy, intended to be across the horizontal axis. This is
+                                affected by the container&apos;s orientation.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>number (1 - 12)</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>columnWidthExtraSmall</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>
+                                The number of columns to occupy, intended to be across the horizontal axis. This is
+                                affected by the container&apos;s orientation. The size specifies under what screen size
+                                the property will apply. The setting applies at the indicated screen size or larger.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>number (1 - 12)</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>columnWidthSmall</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>
+                                The number of columns to occupy, intended to be across the horizontal axis. This is
+                                affected by the container&apos;s orientation. The size specifies under what screen size
+                                the property will apply. The setting applies at the indicated screen size or larger.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>number (1 - 12)</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>columnWidthMedium</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>
+                                The number of columns to occupy, intended to be across the horizontal axis. This is
+                                affected by the container&apos;s orientation. The size specifies under what screen size
+                                the property will apply. The setting applies at the indicated screen size or larger.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>number (1 - 12)</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>columnWidthLarge</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>
+                                The number of columns to occupy, intended to be across the horizontal axis. This is
+                                affected by the container&apos;s orientation. The size specifies under what screen size
+                                the property will apply. The setting applies at the indicated screen size or larger.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>number (1 - 12)</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>columnWidthExtraLarge</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>
+                                The number of columns to occupy, intended to be across the horizontal axis. This is
+                                affected by the container&apos;s orientation. The size specifies under what screen size
+                                the property will apply. The setting applies at the indicated screen size or larger.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>number (1 - 12)</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>offsetColumnWidth</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>
+                                The number of columns to leave empty to the left hand side.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>number (1 - 12)</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>offsetColumnWidthExtraSmall</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>
+                                The number of columns to leave empty to the left hand side. The size specifies under
+                                what screen size the property will apply. In this case, the setting applies at the
+                                specified screen size or larger.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>number (1 - 12)</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>offsetColumnWidthSmall</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>
+                                The number of columns to leave empty to the left hand side. The size specifies under
+                                what screen size the property will apply. In this case, the setting applies at the
+                                specified screen size or larger.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>number (1 - 12)</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>offsetColumnWidthMedium</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>
+                                The number of columns to leave empty to the left hand side. The size specifies under
+                                what screen size the property will apply. In this case, the setting applies at the
+                                specified screen size or larger.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>number (1 - 12)</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>offsetColumnWidthLarge</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>
+                                The number of columns to leave empty to the left hand side. The size specifies under
+                                what screen size the property will apply. In this case, the setting applies at the
+                                specified screen size or larger.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>number (1 - 12)</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>offsetColumnWidthExtraLarge</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>
+                                The number of columns to leave empty to the left hand side. The size specifies under
+                                what screen size the property will apply. In this case, the setting applies at the
+                                specified screen size or larger.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>number (1 - 12)</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>hideColumn</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>
+                                Specify if the item should be hidden. This property is specified in the context of
+                                a column.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>true, false</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>hideColumnExtraSmall</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>
+                                Specify if the item should be hidden. This property is specified in the context of
+                                a column. The size specifies under what screen size the property will apply. In this
+                                case, the setting applies at the specified screen size or smaller.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>true, false</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>hideColumnSmall</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>
+                                Specify if the item should be hidden. This property is specified in the context of
+                                a column. The size specifies under what screen size the property will apply. In this
+                                case, the setting applies at the specified screen size or smaller.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>true, false</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>hideColumnMedium</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>
+                                Specify if the item should be hidden. This property is specified in the context of
+                                a column. The size specifies under what screen size the property will apply. In this
+                                case, the setting applies at the specified screen size or smaller.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>true, false</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>hideColumnLarge</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>
+                                Specify if the item should be hidden. This property is specified in the context of
+                                a column. The size specifies under what screen size the property will apply. In this
+                                case, the setting applies at the specified screen size or smaller.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>true, false</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>hideColumnExtraLarge</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>
+                                Specify if the item should be hidden. This property is specified in the context of
+                                a column. The size specifies under what screen size the property will apply. In this
+                                case, the setting applies at the specified screen size or smaller.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>true, false</textual>
+                        </paragraph>
+                    </cell>
+                </row>
             </table>
+
             <paragraph v="v1">
                 <textual>The following classes are produced for Flex Item Widgets.</textual>
             </paragraph>
@@ -5662,40 +6038,6 @@
                     <cell>
                         <paragraph v="v1">
                             <textual>logo</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>imageHeight</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>The imageHeight property specifies the image height.</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>260px</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>imageWidth</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>The imageWidth property specifies the image width.</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>260px</textual>
                         </paragraph>
                     </cell>
                 </row>

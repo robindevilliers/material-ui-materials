@@ -1,6 +1,19 @@
-.card-body {
-  display: flex;
-  flex-direction: column;
+
+.card-widget {
+  margin: 4px;
+
+  .card-header {
+    background: lavender;
+  }
+
+  .card-footer {
+    background: lavender;
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .link-card {

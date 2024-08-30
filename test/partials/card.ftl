@@ -8,7 +8,7 @@
             href="${testMode?string('javascript:alert(&quot;Card clicked&quot;); event.preventDefault();',href)}"
     >
 </#if>
-<div id="${id!}" class="card ${classes}" <#if !href?? >style="${itemStyles}"</#if>
+<div id="${id!}" class="card-widget card ${classes}" <#if !href?? >style="${itemStyles}"</#if>
         <#if action??>onClick="${testMode?string('alert(&quot;Card clicked&quot;); event.preventDefault();','document.forms[&quot;${id}&quot;].submit();')}"</#if>
 >
     ${headerContent!}

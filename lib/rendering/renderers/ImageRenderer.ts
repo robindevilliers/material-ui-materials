@@ -25,13 +25,6 @@ export default class ImageRenderer implements Renderer {
 
 
         let imageStyles = '';
-        if ('imageHeight' in element.attributes) {
-            imageStyles += 'height: ' + element.attributes['imageHeight'] + '; ';
-        }
-
-        if ('imageWidth' in element.attributes) {
-            imageStyles += 'width: ' + element.attributes['imageWidth'] + '; ';
-        }
 
         if ('padding' in element.attributes) {
             imageStyles += 'padding: ' + element.attributes['padding'] + '; ';

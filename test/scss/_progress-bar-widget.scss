@@ -254,30 +254,37 @@
 
 .progress-bar-widget.progress-bar-default .circle.active {
   border-color: var(--primary);
+  color: var(--primary);
 }
 
 .progress-bar-widget.progress-bar-primary .circle.active {
   border-color: var(--primary);
+  color: var(--primary);
 }
 
 .progress-bar-widget.progress-bar-info .circle.active {
   border-color: var(--info);
+  color: var(--info);
 }
 
 .progress-bar-widget.progress-bar-danger .circle.active {
   border-color: var(--danger);
+  color: var(--danger);
 }
 
 .progress-bar-widget.progress-bar-warning .circle.active {
   border-color: var(--warning);
+  color: var(--warning);
 }
 
 .progress-bar-widget.progress-bar-success .circle.active {
   border-color: var(--success);
+  color: var(--success);
 }
 
 .progress-bar-widget.progress-bar-muted .circle.active {
   border-color: var(--secondary);
+  color: var(--secondary);
 }
 
 .progress-bar-small > .milestone-style-bullet > .circle.active {

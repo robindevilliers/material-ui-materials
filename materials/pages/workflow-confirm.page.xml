@@ -4,7 +4,7 @@
     </title>
     <paragraph v="v1">
         <textual>
-            You are about to execute the<script v="v1" script=".title"/>. Are you sure
+            You are about to execute the <script v="v1" script=".title"/>. Are you sure
             you wish to proceed?
         </textual>
     </paragraph>

@@ -1,5 +1,10 @@
 
 .scale-widget {
+
+  input {
+    min-width: 1.5em;
+  }
+
   .scale-content {
     display: flex;
     flex-wrap: wrap;

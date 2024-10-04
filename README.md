@@ -30,7 +30,7 @@ You must have npm installed.
 This command will download and install any dependencies. You only need to do this once.
 
 ```
-npm run install
+npm install
 ```
 
 ## Build

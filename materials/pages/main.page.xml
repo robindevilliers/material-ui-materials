@@ -190,7 +190,7 @@
     </title>
     <paragraph v="v1">
         <textual>
-            The Special Purpose Pages are required by the Platform and are presented in specific contexts for special
+            The special purpose pages are required by the Platform and are presented in specific contexts for special
             purposes. These are all listed out below.
         </textual>
     </paragraph>
@@ -606,6 +606,90 @@
                             there would be no indication to the current user that anything has happened. This page gives
                             some indication. It is also possible that the current user, the Case Principal, will have a
                             Wizard to complete. In this case the Wizard will present after this page.
+                        </textual>
+                    </paragraph>
+                </cell>
+            </row>
+        </table>
+    </div>
+
+    <title size="LARGER" v="v1">
+        <textual>Special Purpose Emails</textual>
+    </title>
+    <paragraph v="v1">
+        <textual>
+            The special purpose emails are required by the Platform and are sent as emails in specific contexts. These
+            are all listed out below.
+        </textual>
+    </paragraph>
+    <div orientation="ROW" v="v1">
+        <table v="v1">
+            <row>
+                <column>
+                    <textual>Name</textual>
+                </column>
+                <column>
+                    <textual>File</textual>
+                </column>
+                <column>
+                    <textual>Description</textual>
+                </column>
+            </row>
+            <row>
+                <cell>
+                    <link type="internal" view="test-email-email.html" openNewWindow="false"
+                          v="v1">
+                        <textual>Test Email</textual>
+                    </link>
+                </cell>
+                <cell>
+                    <paragraph paragraphStyle="PLAIN" v="v1">
+                        <textual>test-email.email.xml</textual>
+                    </paragraph>
+                </cell>
+                <cell>
+                    <paragraph paragraphStyle="PLAIN" v="v1">
+                        <textual>
+                            This is the standard email template used when the test email functionality is executed.
+                        </textual>
+                    </paragraph>
+                </cell>
+            </row>
+            <row>
+                <cell>
+                    <link type="internal" view="email-confirmation-email.html" openNewWindow="false" v="v1">
+                        <textual>Email Confirmation</textual>
+                    </link>
+                </cell>
+                <cell>
+                    <paragraph paragraphStyle="PLAIN" v="v1">
+                        <textual>email-confirmation.email.xml</textual>
+                    </paragraph>
+                </cell>
+                <cell>
+                    <paragraph paragraphStyle="PLAIN" v="v1">
+                        <textual>
+                            This is the standard email template when a user&apos;s email address is challenged during
+                            the registration process.
+                        </textual>
+                    </paragraph>
+                </cell>
+            </row>
+            <row>
+                <cell>
+                    <link type="internal" view="reset-password-email.html" openNewWindow="false" v="v1">
+                        <textual>Reset Password</textual>
+                    </link>
+                </cell>
+                <cell>
+                    <paragraph paragraphStyle="PLAIN" v="v1">
+                        <textual>reset-password.email.xml</textual>
+                    </paragraph>
+                </cell>
+                <cell>
+                    <paragraph paragraphStyle="PLAIN" v="v1">
+                        <textual>
+                            This is the email template when a user&apos;s requests a password reset.
                         </textual>
                     </paragraph>
                 </cell>

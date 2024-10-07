@@ -1,7 +1,7 @@
 <email defnVersion="v1" id="email-confirmation" version="1">
     <div v="v1" orientation="COLUMN">
         <div v="v1" orientation="ROW" justifyContent="SPACE_AROUND">
-            <div v="v1" orientation="COLUMN" justifyContent="SPACE_AROUND" alignItems="CENTER">
+            <div v="v1" orientation="COLUMN" justifyContent="SPACE_AROUND" alignItems="START">
                 <title size="LARGE" v="v1">
                     <textual>Email Confirmation</textual>
                 </title>

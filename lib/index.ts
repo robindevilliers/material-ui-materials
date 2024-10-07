@@ -33,7 +33,7 @@ const classMappings = new Properties(classMappingsData);
 
 const plantainSubstitutions = JSON.parse(fs.readFileSync(path.join(process.env.INIT_CWD!, options.dir, 'plantain-substitutions.json'), 'utf8')) as PlantainSubstitutions;
 
-function processDirectory(dir: string, suffix: string, baseTemplate: string) {
+function processDirectory(dir: string, suffix: string, baseTemplate: string, newSuffix: string) {
 
     fs.readdir(path.join(process.env.INIT_CWD!, options.dir, dir), function(err: NodeJS.ErrnoException | null, files: string[]) {
 
@@ -67,7 +67,7 @@ function processDirectory(dir: string, suffix: string, baseTemplate: string) {
                     title: (dom.root as Element).attributes.title,
                     authenticated: false
                 });
-                fs.writeFileSync(path.join(process.env.INIT_CWD!, options.output, file.replaceAll(suffix, ".html")), format(html));
+                fs.writeFileSync(path.join(process.env.INIT_CWD!, options.output, file.replaceAll(suffix, `${newSuffix}.html`)), format(html));
             } catch (err) {
                 throw new FreemarkerError(`Error processing ftl template 'main.ftl'`, err as Error);
             }
@@ -75,5 +75,5 @@ function processDirectory(dir: string, suffix: string, baseTemplate: string) {
     });
 }
 
-processDirectory('pages', ".page.xml", "main.ftl");
-processDirectory('emails', ".email.xml", "email.ftl");
+processDirectory('pages', ".page.xml", "main.ftl", "");
+processDirectory('emails', ".email.xml", "email.ftl","-email");

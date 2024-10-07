@@ -52,26 +52,26 @@
   },
   "email-confirmation.email.xml": {
     "%profile% .username": {
-      "value": "User's username"
+      "value": "salted_lion"
     },
     "%profile% .title": {
-      "value": "User's title"
+      "value": "sad_ape"
     },
     "%profile% .lastName": {
-      "value": "User's last name"
+      "value": "sunny_tick"
     },
     "%profile% .firstName": {
-      "value": "User's first name"
+      "value": "roasted_bear"
     }
   },
   "reset-password.email.xml": {
     "%profile% .username": {
-      "value": "User's username"
+      "value": "angry_tiger"
     }
   },
   "test-email.email.xml": {
     "%profile% .username": {
-      "value": "User's username"
+      "value": "angry_tiger"
     },
     "%phrase%": {
       "value": "1234567890"

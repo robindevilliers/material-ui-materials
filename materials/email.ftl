@@ -21,6 +21,22 @@
             align-items: stretch;
         }
 
+        .image-panel img {
+            /*height: 56px;*/
+            /*width: 56px;*/
+            margin-right: 1em;
+        }
+
+        .title-text {
+            font-family: Arial, sans-serif;
+            font-size: 2.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: unset;
+            color: #81b1cc !important;
+
+        }
 
         .header {
             display: flex;
@@ -28,24 +44,7 @@
             justify-content: flex-start;
             align-items: center;
             width: 100%;
-
-            img {
-                height: 3.5em;
-                margin-right: 1em;
-            }
-
-            .title-text {
-                font-family: Arial, sans-serif;
-                font-size: 2.5rem;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                margin: unset;
-                color: #81b1cc !important;
-
-            }
         }
-
 
         .content {
             display: flex;
@@ -77,7 +76,7 @@
 <div class="container">
     <div class="header">
         <div class="image-panel">
-            <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxzdmcgaGVpZ2h0PSIyMDAiIHdpZHRoPSIyMDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgc3Ryb2tlPSI4MUIxQ0MiIGZpbGw9Im5vbmUiPg0KDQogICAgPHJlY3QgeD0iMTAiIHk9IjEwIiB3aWR0aD0iMTgwIiBoZWlnaHQ9IjE4MCIgcng9IjEwIiBzdHJva2U9IiM4MUIxQ0MiIHN0cm9rZS13aWR0aD0iMTAiIC8+DQoNCg0KICAgIDxwYXRoIGQ9Ik0gMjUgMTAwIEMgMjUgMjUgNDUgMjUgNDUgMTUwIEMgNDUgMjUgNjUgMjUgNjUgMTUwIEMgNjUgMjUgODUgMjUgODUgMTIwIEMgODUgMTU1IDEwNSAxNTUgMTA1IDEwMA0KQyAxMDUgMTc1IDEyNSAxNzUgMTI1IDEwMCBDIDEyNSAxNzUgMTQ1IDE3NSAxNDUgMTAwIEMgMTQ1IDEyNSAxNjUgMTI1IDE2NSAxMDAgIg0KICAgICAgICAgIHN0cm9rZT0iIzgxQjFDQyIgc3Ryb2tlLXdpZHRoPSIxMCIvPg0KPC9zdmc+DQo="/>
+            <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB2aWV3Qm94PSIwIDAgMjAwIDIwMCIgaGVpZ2h0PSI1NiIgd2lkdGg9IjU2IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHN0cm9rZT0iODFCMUNDIiBmaWxsPSJub25lIj4KCiAgICA8cmVjdCB4PSIxMCIgeT0iMTAiIHdpZHRoPSIxODAiIGhlaWdodD0iMTgwIiByeD0iMTAiIHN0cm9rZT0iIzgxQjFDQyIgc3Ryb2tlLXdpZHRoPSIxMCIgLz4KCgogICAgPHBhdGggZD0iTSAyNSAxMDAgQyAyNSAyNSA0NSAyNSA0NSAxNTAgQyA0NSAyNSA2NSAyNSA2NSAxNTAgQyA2NSAyNSA4NSAyNSA4NSAxMjAgQyA4NSAxNTUgMTA1IDE1NSAxMDUgMTAwCkMgMTA1IDE3NSAxMjUgMTc1IDEyNSAxMDAgQyAxMjUgMTc1IDE0NSAxNzUgMTQ1IDEwMCBDIDE0NSAxMjUgMTY1IDEyNSAxNjUgMTAwICIKICAgICAgICAgIHN0cm9rZT0iIzgxQjFDQyIgc3Ryb2tlLXdpZHRoPSIxMCIvPgo8L3N2Zz4="/>
         </div>
         <div class="text-primary title-text">Maximillian Workflows</div>
     </div>

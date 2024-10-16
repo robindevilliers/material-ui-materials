@@ -5,10 +5,11 @@ import { Substitutions } from '../Substitutions';
 import RenderingEngine from '../RenderingEngine';
 import { StringBuffer } from '../../utilities/StringBuffer';
 import { RenderError } from '../RenderError';
+import generateId from "../../utilities/generate-id";
 
-export default class LoopRenderer implements Renderer {
+export default class PaginationRenderer implements Renderer {
     accept(name: string): boolean {
-        return name === 'loop';
+        return name === 'pagination';
     }
 
     render(element: Element, classMappings: Properties, renderingEngine: RenderingEngine, substitutions: Substitutions): string {
@@ -20,23 +21,27 @@ export default class LoopRenderer implements Renderer {
         const output = new StringBuffer();
 
         if (element.attributes.reference in substitutions) {
-            let val = substitutions[element.attributes.reference].value;
-            if (!Array.isArray(val)) {
-                throw new RenderError(`Expected array for substitution ${element.attributes.reference}`);
-            }
 
-            if (element.attributes.reverse) {
-                val = val.reverse();
-            }
-
-            for (const v of val) {
-                substitutions['.'] = { value: v };
-                output.append(renderingEngine.renderChildren(element));
-            }
+            output.append(renderingEngine.renderChildren(element));
         } else {
             throw new RenderError(`No substitution found for plantain expression ${element.attributes.reference}`);
         }
 
-        return output.toString();
+        let bust = generateId();
+        return renderingEngine.render('pagination.ftl', {
+            id: generateId(),
+            _csrf: generateId(),
+            bust: bust,
+            action: '#' + bust,
+            content: output.toString(),
+            truncated: true,
+            noContent: true,
+            pagination: true,
+            pageSize: 20,
+            currentPage: 2,
+            previousPage: 1,
+            nextPage: 3,
+            offeredPages: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        });
     }
 }

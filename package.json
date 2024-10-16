@@ -20,7 +20,7 @@
     "watch:compile": "onchange \"lib\" -- npm run compile",
     "watch:css": "onchange \"materials/scss\" -- npm run build:css",
     "watch:images": "onchange \"materials/public/img\" -- npm run build:images",
-    "watch:html": "onchange \"dist/materials-toolkit.js\" \"materials/pages\"  \"materials/emails\" \"materials/partials\" \"materials/*.ftl\" -- node ./dist/materials-toolkit.js --dir materials --output ./www",
+    "watch:html": "onchange \"dist/materials-toolkit.js\" \"materials/pages\"  \"materials/emails\" \"materials/partials\" \"materials/*.ftl\" \"materials/plantain-substitutions.json\" -- node ./dist/materials-toolkit.js --dir materials --output ./www",
     "watch:serve": "ws --directory www  --static.index main.html",
     "watch": "npm run build && run-p watch:*",
     "watch:js": "onchange \"materials/public/js\" -- webpack --config webpack.test.config.js --mode=development",

@@ -942,6 +942,11 @@
             </link>
         </list-item>
         <list-item>
+            <link view="reference.html#pagination" v="v1">
+                <textual>Pagination</textual>
+            </link>
+        </list-item>
+        <list-item>
             <link view="reference.html#paragraph" v="v1">
                 <textual>Paragraph</textual>
             </link>

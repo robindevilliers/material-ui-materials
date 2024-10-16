@@ -17,6 +17,15 @@
         "admin"
       ]
     },
+    "$": {
+      "value": [
+        "public",
+        "authenticated",
+        "admin",
+        "staff",
+        "client"
+      ]
+    },
     "%userdata% .alpha": {
       "value": true
     }

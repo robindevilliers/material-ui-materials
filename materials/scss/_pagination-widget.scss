@@ -1,0 +1,24 @@
+.pagination-widget {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+
+  .pagination-truncated {
+    display: flex;
+    justify-content: center;
+    color: $gray;
+    font-style: italic;
+  }
+
+  .pagination-no-content {
+    display: flex;
+    justify-content: center;
+    color: $gray;
+    font-style: italic;
+  }
+
+  .pagination {
+    margin-top: 1em;
+  }
+}

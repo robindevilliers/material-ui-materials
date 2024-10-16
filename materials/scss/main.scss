@@ -137,6 +137,13 @@ td {
   }
 }
 
+.truncated-content {
+  display: flex;
+  color: var(--danger);
+  justify-content: center;
+  align-items: center;
+}
+
 @import "accordion-widget";
 @import "back-link-widget";
 @import "badge-widget";
@@ -174,3 +181,5 @@ td {
 @import "user-explorer-widget";
 @import "warning-widget";
 @import "well-widget";
+@import "pagination-widget";
+@import "list-widget";

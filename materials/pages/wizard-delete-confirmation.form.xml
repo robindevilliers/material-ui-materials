@@ -1,0 +1,20 @@
+<form id="delete-confirmation-form" title="Confirm Delete" orientation="COLUMN" v="v1" defnVersion="v1">
+    <title size="LARGE" v="v1">
+        <textual>Delete Confirmation</textual>
+    </title>
+    <paragraph v="v1">
+        <textual>
+            Are you sure you wish to delete this record?
+        </textual>
+    </paragraph>
+    <div v="v1">
+        <button type="CANCEL_ARRAY_ITEM_DELETE" size="MEDIUM" buttonFlavour="DEFAULT" required="false"
+            margin="0.25em 1em" v="v1">
+            <textual>Cancel</textual>
+        </button>
+        <button type="CONFIRM_ARRAY_ITEM_DELETE" size="MEDIUM" buttonFlavour="DANGER" required="false"
+            margin="0.25em 1em" v="v1">
+            <textual>Delete</textual>
+        </button>
+    </div>
+</form>

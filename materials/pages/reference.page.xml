@@ -8340,58 +8340,40 @@
                         </paragraph>
                     </cell>
                 </row>
-            </table>
-            <title size="SMALLER" v="v1">
-                <textual>Template</textual>
-            </title>
-            <paragraph v="v1">
-                <textual>The template for the widget is the loop.ftl file. This template is rendered for each item in
-                    the Loop. It takes the following tokens.
-                </textual>
-            </paragraph>
-            <table v="v1">
-                <row>
-                    <column width="20%">
-                        <textual>Attribute</textual>
-                    </column>
-                    <column>
-                        <textual>Description</textual>
-                    </column>
-                    <column width="25%">
-                        <textual>Type</textual>
-                    </column>
-                </row>
                 <row>
                     <cell>
                         <paragraph v="v1">
-                            <textual>id</textual>
+                            <textual>reverse</textual>
                         </paragraph>
                     </cell>
                     <cell>
                         <paragraph v="v1">
-                            <textual>A unique id for each item.</textual>
+                            <textual>The reverse property indicates if the list should be reversed before presentation.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>boolean</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>filter</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>The filter property defines a plantain script used to filter the items of the loop.
+                                The filter script should return a boolean value.
+                            </textual>
                         </paragraph>
                     </cell>
                     <cell>
                         <paragraph v="v1">
                             <textual>string</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>content</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>The content token contains the content of the item.</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>html</textual>
                         </paragraph>
                     </cell>
                 </row>
@@ -10114,6 +10096,115 @@
                     <cell>
                         <paragraph v="v1">
                             <textual>html</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+            </table>
+        </div>
+        <div v="v1" orientation="COLUMN">
+            <title id="pagination" size="MEDIUM" v="v1">
+                <textual>Pagination</textual>
+            </title>
+            <paragraph v="v1">
+                <textual>The Pagination Widget paginates the referenced list. This means that it will group the
+                    referenced list into lists of page size. Then only a single page is pushed onto the stack for any
+                    enclosing Loop widgets to reference. The widget will also provide a panel of buttons that allow
+                    for selection of the page to display.
+                </textual>
+            </paragraph>
+            <paragraph v="v1">
+                <textual>The Pagination Widget can be viewed on the Style Guide Specials page.</textual>
+            </paragraph>
+            <title size="SMALLER" v="v1">
+                <textual>Widget</textual>
+            </title>
+            <paragraph v="v1">
+                <textual>The Pagination Widget has the following properties.</textual>
+            </paragraph>
+            <table v="v1">
+                <row>
+                    <column width="20%">
+                        <textual>Attribute</textual>
+                    </column>
+                    <column>
+                        <textual>Description</textual>
+                    </column>
+                    <column width="25%">
+                        <textual>Permitted values/Examples</textual>
+                    </column>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>reference</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>The reference property specifies a list as a data source form the current context.
+                                In Plantain terms, it specifies a Path.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>%PROFILE%.groups</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>reverse</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>The reverse property indicates if the list should be reversed before presentation.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>boolean</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>pageSize</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>The pageSize property indicates the size of each page. It defaults to 20.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>number</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>filter</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>The filter property defines a plantain script used to filter the items of the
+                                pagination.
+                                The filter script should return a boolean value.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>string</textual>
                         </paragraph>
                     </cell>
                 </row>

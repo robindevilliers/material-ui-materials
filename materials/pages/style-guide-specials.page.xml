@@ -396,13 +396,39 @@
                     </textual>
                 </paragraph>
             </div>
-            <loop reference="%profile%.groups" v="v1">
+            <loop reference="%profile%.groups" reverse="true" v="v1">
                 <paragraph paragraphStyle="PLAIN" v="v1">
                     <textual>
                         <script script="." v="v1"/>
                     </textual>
                 </paragraph>
             </loop>
+        </div>
+        <horizontal-rule/>
+        <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
+             flexBasis="100%">
+            <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
+                 flexBasis="100%" width="100%">
+                <title size="LARGE" v="v1">
+                    <textual>Pagination</textual>
+                </title>
+                <paragraph v="v1" flexBasis="500px">
+                    <textual>
+                        This section displays a list of groups. It uses the Pagination Widget and if the page renders,
+                        proves that the artefacts are correctly setup for use of the same. You should see the values in
+                        the plantain substitutions file reproduced here in vertical orientation.
+                    </textual>
+                </paragraph>
+            </div>
+            <pagination reference="%profile%.groups" reverse="true" v="v1">
+                <loop reference="$" v="v1">
+                    <paragraph paragraphStyle="PLAIN" v="v1">
+                        <textual>
+                            <script script="." v="v1"/>
+                        </textual>
+                    </paragraph>
+                </loop>
+            </pagination>
         </div>
         <horizontal-rule/>
         <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"

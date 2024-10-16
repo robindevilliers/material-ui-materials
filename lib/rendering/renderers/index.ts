@@ -78,6 +78,7 @@ import WizardIntroPanelRenderer from './WizardIntroPanelRenderer';
 import WizardOutroPanelRenderer from './WizardOutroPanelRenderer';
 import WizardResumePanelRenderer from './WizardResumePanelRenderer';
 import TextualRenderer from './TextualRenderer';
+import PaginationRenderer from "./PaginationRenderer";
 
 const registry = [
     new TitleRenderer(),
@@ -155,6 +156,7 @@ const registry = [
     new UuidRenderer(),
     new ScriptRenderer(),
     new LoopRenderer(),
+    new PaginationRenderer(),
     new SwitchRenderer(),
     new WizardIntroPanelRenderer(),
     new WizardOutroPanelRenderer(),

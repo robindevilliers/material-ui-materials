@@ -2,7 +2,6 @@
 .tray-widget {
   display: flex;
   flex-direction: column;
-  width: 100%;
   word-wrap: break-word;
   background-clip: border-box;
   border: 5px #81b1cc solid;
@@ -11,7 +10,7 @@
   padding: 5px;
   margin: 4px;
 
-  .card-header {
+  .header {
     border-radius: 10px;
     display: flex;
     justify-content: center;

@@ -1,9 +1,9 @@
 <page id="style-guide-main" version="1" active="false" released="false" group="public" title=""
-      description="Style Guide Main Page" defnVersion="v1" orientation="COLUMN">
+    description="Style Guide Main Page" defnVersion="v1" orientation="COLUMN">
     <jumbotron orientation="COLUMN" v="v1">
         <div orientation="ROW" v="v1">
             <image src="logo.svg" title="Logo" height="210px" width="210px" borderRadius="1em"
-                   padding="0.5em" margin="0em 2em 1em" v="v1" background="white"/>
+                padding="0.5em" margin="0em 2em 1em" v="v1" background="white"/>
             <div orientation="COLUMN" v="v1">
                 <title size="LARGE" fontFlavour="WHITE" v="v1">
                     <textual>Welcome to the Materials Toolkit</textual>
@@ -67,9 +67,9 @@
     </paragraph>
     <div v="v1" alignItems="STRETCH" wrap="WRAP" border="1px solid black">
         <card type="page" page="style-guide-landing.html" openNewWindow="false"
-              flexBasis="240px" flexShrink="0" margin="0em 1em 1em 0em" v="v1">
+            flexBasis="240px" flexShrink="0" margin="0em 1em 1em 0em" v="v1">
             <image src="temp0.jpg" alt="Image of Suzi" title="Suzi Profile Picture"
-                   width="240px" v="v1"/>
+                width="240px" v="v1"/>
             <card-body orientation="COLUMN">
                 <title size="SMALLER" v="v1">
                     <textual>Landing Page</textual>
@@ -83,9 +83,9 @@
             </card-body>
         </card>
         <card type="page" page="style-guide-portfolio.html" openNewWindow="false"
-              flexBasis="240px" flexShrink="0" margin="0em 1em 1em 0em" v="v1">
+            flexBasis="240px" flexShrink="0" margin="0em 1em 1em 0em" v="v1">
             <image src="temp2.jpg" alt="Portfolio" title="Portfolio"
-                   width="240px" v="v1"/>
+                width="240px" v="v1"/>
             <card-body orientation="COLUMN">
                 <title size="SMALLER" v="v1">
                     <textual>Portfolio Page</textual>
@@ -99,9 +99,9 @@
             </card-body>
         </card>
         <card type="page" page="style-guide-question.html" openNewWindow="false"
-              flexBasis="240px" flexShrink="0" margin="0em 1em 1em 0em" v="v1">
+            flexBasis="240px" flexShrink="0" margin="0em 1em 1em 0em" v="v1">
             <image src="temp7.jpg" alt="Question" title="Question"
-                   width="240px" v="v1"/>
+                width="240px" v="v1"/>
             <card-body orientation="COLUMN">
                 <title size="SMALLER" v="v1">
                     <textual>Question Page</textual>
@@ -115,9 +115,9 @@
             </card-body>
         </card>
         <card type="page" page="style-guide-typography.html" openNewWindow="false"
-              flexBasis="240px" flexShrink="0" margin="0em 1em 1em 0em" v="v1">
+            flexBasis="240px" flexShrink="0" margin="0em 1em 1em 0em" v="v1">
             <image src="temp1.jpg" alt="Page A" title="Page A" width="240px"
-                   v="v1"/>
+                v="v1"/>
             <card-body orientation="COLUMN">
                 <title size="SMALLER" v="v1">
                     <textual>Typography Page</textual>
@@ -131,9 +131,9 @@
         </card>
 
         <card type="page" page="style-guide-alpha.html" openNewWindow="false"
-              flexBasis="240px" flexShrink="0" margin="0em 1em 1em 0em" v="v1">
+            flexBasis="240px" flexShrink="0" margin="0em 1em 1em 0em" v="v1">
             <image src="temp4.jpg" alt="Reference Alpha" title="Reference Alpha" width="240px"
-                   v="v1"/>
+                v="v1"/>
             <card-body orientation="COLUMN">
                 <title size="SMALLER" v="v1">
                     <textual>Reference Alpha</textual>
@@ -145,9 +145,9 @@
             </card-body>
         </card>
         <card type="page" page="style-guide-beta.html" openNewWindow="false"
-              flexBasis="240px" flexShrink="0" margin="0em 1em 1em 0em" v="v1">
+            flexBasis="240px" flexShrink="0" margin="0em 1em 1em 0em" v="v1">
             <image src="temp5.jpg" alt="Reference Beta" title="Reference Beta" width="240px"
-                   v="v1"/>
+                v="v1"/>
             <card-body orientation="COLUMN">
                 <title size="SMALLER" v="v1">
                     <textual>Reference Beta</textual>
@@ -159,9 +159,9 @@
             </card-body>
         </card>
         <card type="page" page="style-guide-delta.html" openNewWindow="false"
-              flexBasis="240px" flexShrink="0" margin="0em 1em 1em 0em" v="v1">
+            flexBasis="240px" flexShrink="0" margin="0em 1em 1em 0em" v="v1">
             <image src="temp6.jpg" alt="Reference Delta" title="Reference Delta" width="240px"
-                   v="v1"/>
+                v="v1"/>
             <card-body orientation="COLUMN">
                 <title size="SMALLER" v="v1">
                     <textual>Reference Delta</textual>
@@ -172,9 +172,9 @@
             </card-body>
         </card>
         <card type="page" page="style-guide-specials.html" openNewWindow="false"
-              flexBasis="240px" flexShrink="0" margin="0em 1em 1em 0em" v="v1">
+            flexBasis="240px" flexShrink="0" margin="0em 1em 1em 0em" v="v1">
             <image src="temp8.jpg" alt="Specials" title="Specials" width="240px"
-                   v="v1"/>
+                v="v1"/>
             <card-body orientation="COLUMN">
                 <title size="SMALLER" v="v1">
                     <textual>Specials</textual>
@@ -210,7 +210,7 @@
             <row>
                 <cell>
                     <link type="internal" view="error.html" openNewWindow="false"
-                          v="v1">
+                        v="v1">
                         <textual>Error Page</textual>
                     </link>
                 </cell>
@@ -251,7 +251,7 @@
             <row>
                 <cell>
                     <link type="internal" view="unauthorized.html" openNewWindow="false"
-                          v="v1">
+                        v="v1">
                         <textual>Unauthorized Page</textual>
                     </link>
                 </cell>
@@ -276,7 +276,7 @@
             <row>
                 <cell>
                     <link type="internal" view="register.html" openNewWindow="false"
-                          v="v1">
+                        v="v1">
                         <textual>Register Page</textual>
                     </link>
                 </cell>
@@ -300,7 +300,7 @@
             <row>
                 <cell>
                     <link type="internal" view="registration-complete.html" openNewWindow="false"
-                          v="v1">
+                        v="v1">
                         <textual>Registration Complete Page</textual>
                     </link>
                 </cell>
@@ -638,7 +638,7 @@
             <row>
                 <cell>
                     <link type="internal" view="test-email-email.html" openNewWindow="false"
-                          v="v1">
+                        v="v1">
                         <textual>Test Email</textual>
                     </link>
                 </cell>
@@ -837,8 +837,18 @@
             </link>
         </list-item>
         <list-item>
+            <link view="reference.html#folder" v="v1">
+                <textual>Folder</textual>
+            </link>
+        </list-item>
+        <list-item>
             <link view="reference.html#form" v="v1">
                 <textual>Form</textual>
+            </link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#header" v="v1">
+                <textual>Header</textual>
             </link>
         </list-item>
         <list-item>
@@ -1029,11 +1039,6 @@
         <list-item>
             <link view="reference.html#tray" v="v1">
                 <textual>Tray</textual>
-            </link>
-        </list-item>
-        <list-item>
-            <link view="reference.html#tray-header" v="v1">
-                <textual>Tray Header</textual>
             </link>
         </list-item>
         <list-item>

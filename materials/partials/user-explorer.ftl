@@ -114,8 +114,8 @@
                                         </form>
                                     <#else >
                                         <form class="form-inline" method="post" action="${executeWorkflow}">
-
                                             <input type="hidden" name="_csrf" value="${_csrf}"/>
+                                            <input type="hidden" name="type" value="ACCEPT"/>
                                             <input type="hidden" name="username" value="${val.username}"/>
                                             <div class="btn-group" role="group">
                                                 <button type="submit" aria-label="Select" class="btn btn-primary"
@@ -175,16 +175,13 @@
                 </div>
             </form>
         <#else>
-            <form class="form-inline" method="get" action="${action}">
-                <input type="hidden" name="uUsername" value="${username}"/>
-                <input type="hidden" name="uGroup" value="${group}"/>
-                <input type="hidden" name="uFirstName" value="${firstName}"/>
-                <input type="hidden" name="uLastName" value="${lastName}"/>
-                <input type="hidden" name="bust" value="${bust}"/>
-                <input type="hidden" name="uStartIndex" value="${(startIndex)!}"/>
-                <input type="hidden" name="uEndIndex" value="${(endIndex)!}"/>
+            <form class="form-inline" method="post" action="${executeWorkflow}">
+                <input type="hidden" name="_csrf" value="${_csrf}"/>
+                <input type="hidden" name="type" value="CANCEL"/>
                 <div class="btn-group" role="group">
-                    <button type="submit" aria-label="Previous" class="btn btn-outline-primary" name="uCancel">
+                    <button type="submit" aria-label="Select" class="btn btn-outline-primary"
+                            name="cancel" id="cancel-button"
+                            onclick="${testMode?string('alert(&quot;Select clicked&quot;); event.preventDefault();','')}">
                         Cancel
                     </button>
                 </div>

@@ -1,12 +1,13 @@
 <div class="tray-widget card ${classes}" style="${itemStyles}">
     <div class="card-content">
-        ${trayHeader}
+        ${header}
         <div class="tray-body">
             <#list values as val>
                 <div class="tray-form">
                     <form action="${val.action}" method="post"
                             enctype="application/x-www-form-urlencoded">
                         <input type="hidden" name="_csrf" value="${_csrf}">
+                        <input type="hidden" name="payload" value="${val.payload}">
                         <button id="continue-${val.workflowId}-${val.wizardId}" class="tray-button" type="submit"
                                 onclick="${testMode?string('alert(&quot;Tray item clicked&quot;); event.preventDefault();','')}">
                         <span class="tray-line">

@@ -1,0 +1,42 @@
+
+.folder-widget {
+  display: flex;
+  flex-direction: column;
+  word-wrap: break-word;
+  background-clip: border-box;
+  border: 5px #81b1cc solid;
+  background: #81b1cc;
+  padding: 5px;
+  margin: 4px;
+
+  .header {
+    display: flex;
+    align-items: center;
+    padding: 0.5em 1em;
+
+    background-color: $green;
+    color: color-yiq($green);
+  }
+
+  .folder-content {
+    overflow-y: auto;
+    max-height: 600px;
+
+    .folder-item {
+      margin: 0.5em 0;
+      padding: 0.5em 1em;
+      background-color: #e9ecef;
+    }
+  }
+
+  .no-content {
+    display: flex;
+    text-align: center;
+    opacity: 0.75;
+    font-style: italic;
+    font-size: 2em;
+    min-height: 80px;
+    justify-content: center;
+    align-items: center;
+  }
+}

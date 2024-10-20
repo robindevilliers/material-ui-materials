@@ -42,7 +42,8 @@ export default class MessageExplorerRenderer implements Renderer {
                     principal: m.getPrincipal(),
                     group: m.getGroup(),
                     queue: m.getQueue(),
-                    action: '/' + m.getWipId()
+                    action: '/' + m.getWipId(),
+                    payload: ''
                 };
             }
         );

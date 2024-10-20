@@ -1,5 +1,5 @@
 <page id="style-guide-main" version="1" active="false" released="false" group="public" title=""
-      description="Style Guide Main Page" defnVersion="v1" orientation="COLUMN">
+    description="Style Guide Main Page" defnVersion="v1" orientation="COLUMN">
     <title size="LARGEST" v="v1">
         <textual>Reference</textual>
     </title>
@@ -5647,6 +5647,79 @@
             </table>
         </div>
         <div v="v1" orientation="COLUMN">
+            <title id="header" size="MEDIUM" v="v1">
+                <textual>Header</textual>
+            </title>
+            <paragraph v="v1">
+                <textual>The Header Widget contains the header content for the Tray or Folder. The Header must have an
+                    immediate Tray or Folder parent.
+                </textual>
+            </paragraph>
+            <paragraph v="v1">
+                <textual>The Header Widget can be viewed on the Style Guide Specials page.</textual>
+            </paragraph>
+            <title size="SMALLER" v="v1">
+                <textual>Widget</textual>
+            </title>
+            <paragraph v="v1">
+                <textual>The Header Widget is a Textual Container.</textual>
+            </paragraph>
+            <title size="SMALLER" v="v1">
+                <textual>Template</textual>
+            </title>
+            <paragraph v="v1">
+                <textual>The template for the widget is the header.ftl file. It takes the following tokens.
+                </textual>
+            </paragraph>
+            <table v="v1">
+                <row>
+                    <column width="20%">
+                        <textual>Attribute</textual>
+                    </column>
+                    <column>
+                        <textual>Description</textual>
+                    </column>
+                    <column width="25%">
+                        <textual>Type</textual>
+                    </column>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>classes</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>A list of classes that should be applied.</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>class list</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>content</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>The label for the link.</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>string</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+            </table>
+        </div>
+        <div v="v1" orientation="COLUMN">
             <title id="horizontal-rule" size="MEDIUM" v="v1">
                 <textual>Horizontal Rule</textual>
             </title>
@@ -9243,6 +9316,14 @@
                                 workflowDescription: string,
                                 <br/>
                                 principal: string,
+                                <br/>
+                                principalTitle: string,
+                                <br/>
+                                principalFirstName: string,
+                                <br/>
+                                principalLastName: string,
+                                <br/>
+                                principalDateOfBirth: string,
                                 <br/>
                                 group: string,
                                 <br/>
@@ -13176,6 +13257,14 @@
                                 <br/>
                                 principal: string,
                                 <br/>
+                                principalTitle: string,
+                                <br/>
+                                principalFirstName: string,
+                                <br/>
+                                principalLastName: string,
+                                <br/>
+                                principalDateOfBirth: string,
+                                <br/>
                                 action: string
                                 <br/>
                                 }&gt;
@@ -13217,79 +13306,6 @@
                     <cell>
                         <paragraph v="v1">
                             <textual>css</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-            </table>
-        </div>
-        <div v="v1" orientation="COLUMN">
-            <title id="tray-header" size="MEDIUM" v="v1">
-                <textual>Tray Header</textual>
-            </title>
-            <paragraph v="v1">
-                <textual>The Tray Header Widget contains the header content for the Tray. The Tray Header must have an
-                    immediate Tray parent.
-                </textual>
-            </paragraph>
-            <paragraph v="v1">
-                <textual>The Tray Header Widget can be viewed on the Style Guide Specials page.</textual>
-            </paragraph>
-            <title size="SMALLER" v="v1">
-                <textual>Widget</textual>
-            </title>
-            <paragraph v="v1">
-                <textual>The Tray Header Widget is a Textual Container.</textual>
-            </paragraph>
-            <title size="SMALLER" v="v1">
-                <textual>Template</textual>
-            </title>
-            <paragraph v="v1">
-                <textual>The template for the widget is the tray-header.ftl file. It takes the following tokens.
-                </textual>
-            </paragraph>
-            <table v="v1">
-                <row>
-                    <column width="20%">
-                        <textual>Attribute</textual>
-                    </column>
-                    <column>
-                        <textual>Description</textual>
-                    </column>
-                    <column width="25%">
-                        <textual>Type</textual>
-                    </column>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>classes</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>A list of classes that should be applied.</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>class list</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>content</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>The label for the link.</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>string</textual>
                         </paragraph>
                     </cell>
                 </row>

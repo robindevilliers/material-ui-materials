@@ -21,7 +21,7 @@ export default class TrayRenderer implements Renderer {
 
         const children = element.children.filter(el => isElement(el)).map(el => el as Element);
 
-        const trayHeader = children.find(el => el.name === "tray-header");
+        const header = children.find(el => el.name === "header");
 
         const values = Store.getMessages().map(m => {
 
@@ -43,6 +43,7 @@ export default class TrayRenderer implements Renderer {
                     date: m.getDateTime().substring(0, 10),
                     dateTime: m.getDateTime(),
                     principal: m.getPrincipal(),
+                    payload: ''
                 };
             }
         );
@@ -50,7 +51,7 @@ export default class TrayRenderer implements Renderer {
         const data: Record<string, any> = {};
         data.id = element.attributes.id;
         data._csrf = generateId();
-        data.trayHeader = trayHeader ? renderingEngine.renderElement(trayHeader, element) : "";
+        data.header = header ? renderingEngine.renderElement(header, element) : "";
         data.values = values;
 
         const classManager = new ClassManager(classMappings);

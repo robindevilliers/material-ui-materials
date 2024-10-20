@@ -1,50 +1,50 @@
 <page id="test" version="1" active="false" released="false" group="admin" title="Style Guide - Landing Page"
-      description="test"
-      defnVersion="v1" orientation="COLUMN">
+    description="test"
+    defnVersion="v1" orientation="COLUMN">
     <fake-store currentUser="robindevilliers">
         <fake-user username="robindevilliers"
-                   groups=":public:authenticated:admin:"
-                   title="Mr"
-                   firstName="Robin"
-                   lastName="de Villiers"
-                   dateOfBirth="1980-01-01"
-                   email="robin@me.com"
-                   contactNumber="5585934"
-                   timezone="Europe/London"
-                   userData="{&quot;alpha&quot;: true, &quot;beta&quot;: false}"
+            groups=":public:authenticated:admin:"
+            title="Mr"
+            firstName="Robin"
+            lastName="de Villiers"
+            dateOfBirth="1980-01-01"
+            email="robin@me.com"
+            contactNumber="5585934"
+            timezone="Europe/London"
+            userData="{&quot;alpha&quot;: true, &quot;beta&quot;: false}"
         />
         <fake-user username="connordevilliers"
-                   groups=":public:authenticated:client:"
-                   title="Mr"
-                   firstName="Connor"
-                   lastName="de Villiers"
-                   dateOfBirth="2013-01-01"
-                   email="connor@me.com"
-                   contactNumber="0123576"
-                   timezone="Europe/London"
-                   userData="{&quot;alpha&quot;: true, &quot;beta&quot;: false}"
+            groups=":public:authenticated:client:"
+            title="Mr"
+            firstName="Connor"
+            lastName="de Villiers"
+            dateOfBirth="2013-01-01"
+            email="connor@me.com"
+            contactNumber="0123576"
+            timezone="Europe/London"
+            userData="{&quot;alpha&quot;: true, &quot;beta&quot;: false}"
         />
         <fake-user username="rosedevilliers"
-                   groups=":public:authenticated:client:"
-                   title="Mrs"
-                   firstName="Rose"
-                   lastName="de Villiers"
-                   dateOfBirth="1911-01-2"
-                   email="rose@me.com"
-                   contactNumber="0123576"
-                   timezone="Europe/London"
-                   userData="{&quot;alpha&quot;: true, &quot;beta&quot;: false}"
+            groups=":public:authenticated:client:"
+            title="Mrs"
+            firstName="Rose"
+            lastName="de Villiers"
+            dateOfBirth="1911-01-2"
+            email="rose@me.com"
+            contactNumber="0123576"
+            timezone="Europe/London"
+            userData="{&quot;alpha&quot;: true, &quot;beta&quot;: false}"
         />
         <fake-user username="leah"
-                   groups=":public:authenticated:staff:"
-                   title="Miss"
-                   firstName="Leah"
-                   lastName="de Villiers"
-                   dateOfBirth="2015-01-01"
-                   email="leah@me.com"
-                   contactNumber="9283646"
-                   timezone="Europe/London"
-                   userData="{&quot;alpha&quot;: true, &quot;beta&quot;: false}"
+            groups=":public:authenticated:staff:"
+            title="Miss"
+            firstName="Leah"
+            lastName="de Villiers"
+            dateOfBirth="2015-01-01"
+            email="leah@me.com"
+            contactNumber="9283646"
+            timezone="Europe/London"
+            userData="{&quot;alpha&quot;: true, &quot;beta&quot;: false}"
         />
         <fake-message
             dateTime="2024-01-30T18:31:32Z"
@@ -180,9 +180,9 @@
 
         <div v="v1" orientation="COLUMN">
             <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
-                 flexBasis="100%">
+                flexBasis="100%">
                 <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
-                     flexBasis="100%" width="100%">
+                    flexBasis="100%" width="100%">
                     <title size="LARGE" v="v1">
                         <textual>Login Panel</textual>
                     </title>
@@ -197,10 +197,10 @@
             </div>
             <horizontal-rule/>
             <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
-                 flexBasis="100%">
+                flexBasis="100%">
 
                 <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
-                     flexBasis="100%" width="100%">
+                    flexBasis="100%" width="100%">
                     <title size="LARGE" v="v1">
                         <textual>Registration Panel</textual>
                     </title>
@@ -217,10 +217,10 @@
             </div>
             <horizontal-rule/>
             <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
-                 flexBasis="100%" width="100%">
+                flexBasis="100%" width="100%">
 
                 <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
-                     flexBasis="100%">
+                    flexBasis="100%">
                     <title size="LARGE" v="v1">
                         <textual>Reset Password Request Panel</textual>
                     </title>
@@ -235,9 +235,9 @@
             </div>
             <horizontal-rule/>
             <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
-                 flexBasis="100%" width="100%">
+                flexBasis="100%" width="100%">
                 <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
-                     flexBasis="100%">
+                    flexBasis="100%">
                     <title size="LARGE" v="v1">
                         <textual>Reset Password Panel</textual>
                     </title>
@@ -255,9 +255,9 @@
 
         <horizontal-rule/>
         <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
-             flexBasis="100%">
+            flexBasis="100%">
             <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
-                 flexBasis="100%" width="100%">
+                flexBasis="100%" width="100%">
                 <title size="LARGE" v="v1">
                     <textual>Workflow Initiate Button</textual>
                 </title>
@@ -265,15 +265,15 @@
                     <textual>The Workflow Initiate Button will fire a workflow.</textual>
                 </paragraph>
             </div>
-            <initiate-workflow-button workflow="workflow-one" size="MEDIUM" buttonFlavour="PRIMARY" v="v1">
+            <operation-button workflow="workflow-one" size="MEDIUM" buttonFlavour="PRIMARY" v="v1">
                 <textual>Fire Workflow</textual>
-            </initiate-workflow-button>
+            </operation-button>
         </div>
         <horizontal-rule/>
         <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
-             flexBasis="100%">
+            flexBasis="100%">
             <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
-                 flexBasis="100%" width="100%">
+                flexBasis="100%" width="100%">
                 <title size="LARGE" v="v1">
                     <textual>Menu</textual>
                 </title>
@@ -315,9 +315,9 @@
         </div>
         <horizontal-rule/>
         <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
-             flexBasis="100%">
+            flexBasis="100%">
             <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
-                 flexBasis="100%" width="100%">
+                flexBasis="100%" width="100%">
                 <title size="LARGE" v="v1">
                     <textual>Tray</textual>
                 </title>
@@ -331,16 +331,45 @@
                 </paragraph>
             </div>
             <tray queue="main-user" v="v1">
-                <tray-header>
+                <header>
                     <textual>In Tray</textual>
-                </tray-header>
+                </header>
             </tray>
         </div>
         <horizontal-rule/>
         <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
-             flexBasis="100%">
+            flexBasis="100%">
             <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
-                 flexBasis="100%" width="100%">
+                flexBasis="100%" width="100%">
+                <title size="LARGE" v="v1">
+                    <textual>Folder</textual>
+                </title>
+                <paragraph v="v1" flexBasis="500px">
+                    <textual>
+                        The Folder widget presents a list of entries that are in the specified queue and that belongs
+                        to a compatible group with the current user. This widget is intended to display the contents of
+                        a queue in a form that does not imply immediate execution, as a tray does.
+                    </textual>
+                </paragraph>
+            </div>
+            <folder queue="main-user" v="v1">
+                <header>
+                    <textual>My Folder</textual>
+                </header>
+                <div justifyContent="SPACE_BETWEEN" v="v1">
+                    <paragraph paragraphStyle="PLAIN" v="v1">
+                        <textual>
+                            Folder Item
+                        </textual>
+                    </paragraph>
+                </div>
+            </folder>
+        </div>
+        <horizontal-rule/>
+        <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
+            flexBasis="100%">
+            <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
+                flexBasis="100%" width="100%">
                 <title size="LARGE" v="v1">
                     <textual>Message Explorer</textual>
                 </title>
@@ -360,9 +389,9 @@
         </div>
         <horizontal-rule/>
         <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
-             flexBasis="100%">
+            flexBasis="100%">
             <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
-                 flexBasis="100%" width="100%">
+                flexBasis="100%" width="100%">
                 <title size="LARGE" v="v1">
                     <textual>User Explorer</textual>
                 </title>
@@ -382,9 +411,9 @@
 
         <horizontal-rule/>
         <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
-             flexBasis="100%">
+            flexBasis="100%">
             <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
-                 flexBasis="100%" width="100%">
+                flexBasis="100%" width="100%">
                 <title size="LARGE" v="v1">
                     <textual>Loop</textual>
                 </title>
@@ -406,9 +435,9 @@
         </div>
         <horizontal-rule/>
         <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
-             flexBasis="100%">
+            flexBasis="100%">
             <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
-                 flexBasis="100%" width="100%">
+                flexBasis="100%" width="100%">
                 <title size="LARGE" v="v1">
                     <textual>Pagination</textual>
                 </title>
@@ -432,9 +461,9 @@
         </div>
         <horizontal-rule/>
         <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
-             flexBasis="100%">
+            flexBasis="100%">
             <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
-                 flexBasis="100%" width="100%">
+                flexBasis="100%" width="100%">
                 <title size="LARGE" v="v1">
                     <textual>Switch</textual>
                 </title>
@@ -475,52 +504,9 @@
         <horizontal-rule/>
 
         <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
-             flexBasis="100%">
+            flexBasis="100%">
             <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
-                 flexBasis="100%" width="100%">
-                <title size="LARGE" v="v1">
-                    <textual>Close Workflow Executed Panel</textual>
-                </title>
-                <paragraph v="v1" flexBasis="500px">
-                    <textual>
-                        This widget presents the panel that has the button that closes the Workflow Executed Page. When
-                        a workflow is first initiated, we present the user with the Confirm Workflow Page. If they
-                        confirm, then they are presented with the Workflow Executed Page. This page requires a button
-                        that will close the page down and present the user with whatever page they should be viewing
-                        next. This panel provides the facility.
-                    </textual>
-                </paragraph>
-            </div>
-            <jumbotron v="v1" orientation="COLUMN">
-                <close-workflow-executed-panel v="v1"/>
-            </jumbotron>
-        </div>
-
-        <horizontal-rule/>
-
-        <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1" flexBasis="100%">
-            <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1" flexBasis="100%"
-                 width="100%">
-                <title size="LARGE" v="v1">
-                    <textual>Confirm Workflow Panel</textual>
-                </title>
-                <paragraph v="v1" flexBasis="500px">
-                    <textual>
-                        This widget presents the panel that allows the user to confirm if they intended to execute a
-                        workflow or not. When a user initiates a workflow, we present the Workflow Confirm Page. This
-                        page presents confirm and cancel options to the user. This panel presents those buttons.
-                    </textual>
-                </paragraph>
-            </div>
-            <confirm-workflow-panel v="v1"/>
-        </div>
-
-        <horizontal-rule/>
-
-        <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
-             flexBasis="100%">
-            <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
-                 flexBasis="100%" width="100%">
+                flexBasis="100%" width="100%">
                 <title size="LARGE" v="v1">
                     <textual>Confirmation Panel</textual>
                 </title>
@@ -536,9 +522,9 @@
         <horizontal-rule/>
 
         <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
-             flexBasis="100%">
+            flexBasis="100%">
             <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
-                 flexBasis="100%" width="100%">
+                flexBasis="100%" width="100%">
                 <title size="LARGE" v="v1">
                     <textual>Password Reset Link</textual>
                 </title>
@@ -557,9 +543,9 @@
         <horizontal-rule/>
 
         <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
-             flexBasis="100%">
+            flexBasis="100%">
             <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
-                 flexBasis="100%" width="100%">
+                flexBasis="100%" width="100%">
                 <title size="LARGE" v="v1">
                     <textual>Email Confirmation Link</textual>
                 </title>
@@ -578,9 +564,9 @@
         <horizontal-rule/>
 
         <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
-             flexBasis="100%">
+            flexBasis="100%">
             <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
-                 flexBasis="100%" width="100%">
+                flexBasis="100%" width="100%">
                 <title size="LARGE" v="v1">
                     <textual>Card as Link</textual>
                 </title>
@@ -591,9 +577,9 @@
                 </paragraph>
             </div>
             <card type="page" page="style-guide-landing.html"
-                  width="300px" flexShrink="0" margin="0em 0em 0em 1em" v="v1">
+                width="300px" flexShrink="0" margin="0em 0em 0em 1em" v="v1">
                 <image src="temp0.jpg" alt="Image of Suzi" title="Suzi Profile Picture" height="200px"
-                       width="300px" v="v1"/>
+                    width="300px" v="v1"/>
                 <card-body orientation="COLUMN">
                     <title size="SMALLER" v="v1">
                         <textual>Lorem Ipsum</textual>

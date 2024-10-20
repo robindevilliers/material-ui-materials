@@ -11,9 +11,9 @@ import RenderingEngine from '../RenderingEngine';
 import Store from '../../store/Store';
 import { RenderError } from '../RenderError';
 
-export default class InitiateWorkflowButtonRenderer implements Renderer {
+export default class OperationButtonRenderer implements Renderer {
     accept(name: string): boolean {
-        return name === 'initiate-workflow-button';
+        return name === 'operation-button';
     }
 
     render(element: Element, classMappings: Properties, renderingEngine: RenderingEngine, substitutions: Substitutions, parent: Element | undefined): string {
@@ -27,8 +27,10 @@ export default class InitiateWorkflowButtonRenderer implements Renderer {
         data._csrf = generateId();
         data.size = element.attributes.size;
         data.disabled = null;
-        data.showCasePrincipalPicker = element.attributes.showCasePrincipalPicker === "true";
-        data.action = "/workflow/initiate/" + element.attributes.workflow;
+        data.action = "/operation/" + generateId();
+        data.pageDocumentId = "test:test:1";
+        data.buttonId = "a1234";
+        data.payload = "";
 
         const classManager = new ClassManager(classMappings);
         classManager.append(element.attributes.buttonFlavour, 'btn-', 'btn-default');
@@ -39,6 +41,6 @@ export default class InitiateWorkflowButtonRenderer implements Renderer {
         data.testMode = Store.isTestContext();
         data.content = renderingEngine.renderChildren(element.children.find(el => isElement(el) && (el as Element).name === 'textual')! as Element);
 
-        return renderingEngine.render('initiate-workflow-button.ftl', data);
+        return renderingEngine.render('operation-button.ftl', data);
     }
 }

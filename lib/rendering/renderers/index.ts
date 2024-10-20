@@ -43,8 +43,6 @@ import CarouselPanelRenderer from './CarouselPanelRenderer';
 import ProgressBarRenderer from './ProgressBarRenderer';
 import FormRenderer from './FormRenderer';
 import WizardTestResultsRenderer from './WizardTestResultsRenderer';
-import ConfirmWorkflowPanelRenderer from './ConfirmWorkflowPanelRenderer';
-import CloseWorkflowExecutedPanelRenderer from './CloseWorkflowExecutedPanelRenderer';
 import FakeUserRenderer from './FakeUserRenderer';
 import FakeMessageRenderer from './FakeMessageRenderer';
 import FakeWizardRenderer from './FakeWizardRenderer';
@@ -52,14 +50,14 @@ import FakeWorkflowRenderer from './FakeWorkflowRenderer';
 import MileStoneRenderer from './MileStoneRenderer';
 import FakePageRenderer from './FakePageRenderer';
 import HorizontalRuleRenderer from './HorizontalRuleRenderer';
-import InitiateWorkflowButtonRenderer from './InitiateWorkflowButtonRenderer';
+import OperationButtonRenderer from './OperationButtonRenderer';
 import MenuRenderer from './MenuRenderer';
 import MenuBrandRenderer from './MenuBrandRenderer';
 import MenuItemRenderer from './MenuItemRenderer';
 import SubMenuRenderer from './SubMenuRenderer';
 import SubMenuLabelRenderer from './SubMenuLabelRenderer';
 import TrayRenderer from './TrayRenderer';
-import TrayHeaderRenderer from './TrayHeaderRenderer';
+import HeaderRenderer from './HeaderRenderer';
 import FakeQueueRenderer from './FakeQueueRenderer';
 import MessageExplorerRenderer from './MessageExplorerRenderer';
 import NotificationBannerRenderer from './NotificationBannerRenderer';
@@ -79,6 +77,8 @@ import WizardOutroPanelRenderer from './WizardOutroPanelRenderer';
 import WizardResumePanelRenderer from './WizardResumePanelRenderer';
 import TextualRenderer from './TextualRenderer';
 import PaginationRenderer from "./PaginationRenderer";
+import ContinueOperationButtonRenderer from "./ContinueOperationButtonRenderer";
+import FolderRenderer from "./FolderRenderer";
 
 const registry = [
     new TitleRenderer(),
@@ -126,8 +126,6 @@ const registry = [
     new ProgressBarRenderer(),
     new FormRenderer(),
     new WizardTestResultsRenderer(),
-    new ConfirmWorkflowPanelRenderer(),
-    new CloseWorkflowExecutedPanelRenderer(),
     new FakeUserRenderer(),
     new FakeMessageRenderer(),
     new FakeWizardRenderer(),
@@ -137,14 +135,14 @@ const registry = [
     new FakeGroupRenderer(),
     new MileStoneRenderer(),
     new HorizontalRuleRenderer(),
-    new InitiateWorkflowButtonRenderer(),
+    new OperationButtonRenderer(),
     new MenuRenderer(),
     new MenuBrandRenderer(),
     new MenuItemRenderer(),
     new SubMenuRenderer(),
     new SubMenuLabelRenderer(),
     new TrayRenderer(),
-    new TrayHeaderRenderer(),
+    new HeaderRenderer(),
     new MessageExplorerRenderer(),
     new NotificationBannerRenderer(),
     new EmailRenderer(),
@@ -161,7 +159,9 @@ const registry = [
     new WizardIntroPanelRenderer(),
     new WizardOutroPanelRenderer(),
     new WizardResumePanelRenderer(),
-    new TextualRenderer()
+    new TextualRenderer(),
+    new ContinueOperationButtonRenderer(),
+    new FolderRenderer()
 ];
 
 export function findRenderer(name: string) {

@@ -79,9 +79,19 @@
                         </div>
 
                         <span class="message-explorer-line">
-                                <span>Case Principal </span>
-                                <span>${val.principal}</span>
-                            </span>
+                            <span>Case Principal</span>
+                            <span>${val.principal}</span>
+                        </span>
+
+                        <span class="message-explorer-line">
+                            <span>Principal Name</span>
+                            <span>${val.principalTitle} ${val.principalFirstName} ${val.principalLastName}</span>
+                        </span>
+
+                        <span class="message-explorer-line">
+                            <span>Date of Birth</span>
+                            <span>${val.principalDateOfBirth}</span>
+                        </span>
 
                         <span class="message-explorer-line">
                                 <span>Case Id </span>
@@ -105,9 +115,11 @@
                                 action="${val.action}"
                                 method="post" enctype="application/x-www-form-urlencoded">
                             <input type="hidden" name="_csrf" value="${_csrf}">
+                            <input type="hidden" name="payload" value="${val.payload}">
                             <span class="message-explorer-button-line">
                                     <button class="btn btn-primary" id="continue-${val.workflowId}-${val.wizardId}"
-                                            onclick="${testMode?string('alert(&quot;Open clicked&quot;); event.preventDefault();','')}" type="submit">
+                                            onclick="${testMode?string('alert(&quot;Open clicked&quot;); event.preventDefault();','')}"
+                                            type="submit">
                                         Open
                                     </button>
                                 </span>

@@ -11,7 +11,9 @@
         </paragraph>
 
         <div justifyContent="END" v="v1">
-            <close-workflow-executed-panel v="v1"/>
+            <continue-operation-button type="ACCEPT" buttonFlavour="WHITE" margin="0.25em 0.5em" v="v1">
+                <textual>Close</textual>
+            </continue-operation-button>
         </div>
     </jumbotron>
 </page>

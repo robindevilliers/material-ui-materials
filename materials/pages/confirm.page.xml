@@ -1,21 +1,12 @@
 <page defnVersion="v1" id="intro" title="Confirm Workflow" orientation="COLUMN">
     <title size="LARGE" v="v1">
-        <textual>Confirm Workflow</textual>
+        <textual>Confirm Action</textual>
     </title>
     <paragraph v="v1">
         <textual>
-            You are about to execute the<script v="v1" script=".title"/>. Are you sure
-            you wish to proceed?
+            Are you sure you wish to proceed?
         </textual>
     </paragraph>
-
-    <div justifyContent="CENTER" v="v1">
-        <paragraph paragraphStyle="PLAIN" v="v1">
-            <textual>
-                <script v="v1" script=".description"/>
-            </textual>
-        </paragraph>
-    </div>
     <div justifyContent="END" v="v1">
         <continue-operation-button type="ACCEPT" buttonFlavour="PRIMARY" margin="0.25em 0.5em" v="v1">
             <textual>Confirm</textual>

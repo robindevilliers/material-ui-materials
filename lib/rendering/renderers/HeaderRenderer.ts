@@ -5,9 +5,9 @@ import Properties from '../Properties';
 import { Substitutions } from '../Substitutions';
 import RenderingEngine from '../RenderingEngine';
 
-export default class TrayHeaderRenderer implements Renderer {
+export default class HeaderRenderer implements Renderer {
     accept(name: string): boolean {
-        return name === 'tray-header';
+        return name === 'header';
     }
 
     render(element: Element, classMappings: Properties, renderingEngine: RenderingEngine, substitutions: Substitutions, parent: Element | undefined): string {
@@ -18,6 +18,6 @@ export default class TrayHeaderRenderer implements Renderer {
         textStyleSupport(data, element, classMappings);
         data.content = renderingEngine.renderChildren(element.children.find(el => isElement(el) && (el as Element).name === 'textual')! as Element);
 
-        return renderingEngine.render('tray-header.ftl', data);
+        return renderingEngine.render('header.ftl', data);
     }
 }

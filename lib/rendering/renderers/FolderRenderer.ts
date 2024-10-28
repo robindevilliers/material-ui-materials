@@ -49,6 +49,12 @@ export default class FolderRenderer implements Renderer {
         data.classes = classManager.toString();
         data.testMode = Store.isTestContext();
 
+        data.pageSize = 20;
+        data.currentPage = 2;
+        data.previousPage = 1;
+        data.nextPage = 3;
+        data.offeredPages = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
         return renderingEngine.render('folder.ftl', data);
     }
 }

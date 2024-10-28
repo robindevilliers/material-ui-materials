@@ -8,6 +8,8 @@
                             enctype="application/x-www-form-urlencoded">
                         <input type="hidden" name="_csrf" value="${_csrf}">
                         <input type="hidden" name="payload" value="${val.payload}">
+                        <input type="hidden" name="trayId" value="${trayId}">
+                        <input type="hidden" name="pageDocumentId" value="${pageDocumentId}">
                         <button id="continue-${val.workflowId}-${val.wizardId}" class="tray-button" type="submit"
                                 onclick="${testMode?string('alert(&quot;Tray item clicked&quot;); event.preventDefault();','')}">
                         <span class="tray-line">

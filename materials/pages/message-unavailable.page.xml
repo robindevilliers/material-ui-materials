@@ -1,0 +1,15 @@
+<page defnVersion="v1" id="intro" title="Confirm Workflow" orientation="COLUMN">
+    <title size="LARGE" v="v1">
+        <textual>Message Unavailable</textual>
+    </title>
+    <paragraph v="v1">
+        <textual>
+            This message is no longer in queue. Probably because some other process has consumed it.
+        </textual>
+    </paragraph>
+    <div justifyContent="END" v="v1">
+        <continue-operation-button type="CANCEL" buttonFlavour="DEFAULT" margin="0.25em 0.5em" v="v1">
+            <textual>Continue</textual>
+        </continue-operation-button>
+    </div>
+</page>

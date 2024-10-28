@@ -21,6 +21,8 @@
   .folder-content {
     overflow-y: auto;
     max-height: 600px;
+    margin-bottom: 0.5em;
+    flex: 1 0 auto;
 
     .folder-item {
       margin: 0.5em 0;

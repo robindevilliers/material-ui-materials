@@ -5524,6 +5524,362 @@
             </table>
         </div>
         <div v="v1" orientation="COLUMN">
+            <title id="folder" size="MEDIUM" v="v1">
+                <textual>Folder</textual>
+            </title>
+            <paragraph v="v1">
+                <textual>The Folder Widget presents the contents of a queue in a customisable form. The Folder is
+                    intended to be used by staff members who transfer messages or wizards into the folder from a
+                    clearing tray. The widget supports content in the same was as Div etc, and so the presenation of
+                    each item can be customised. Open and Transfer buttons can be added to the item panel.
+                </textual>
+            </paragraph>
+            <paragraph v="v1">
+                <textual>The Folder Widget can be viewed on the Style Guide Specials page.</textual>
+            </paragraph>
+            <title size="SMALLER" v="v1">
+                <textual>Widget</textual>
+            </title>
+            <paragraph v="v1">
+                <textual>The Folder Widget is a Flex Item in addition to the following properties.</textual>
+            </paragraph>
+            <table v="v1">
+                <row>
+                    <column width="20%">
+                        <textual>Attribute</textual>
+                    </column>
+                    <column>
+                        <textual>Description</textual>
+                    </column>
+                    <column width="25%">
+                        <textual>Permitted values/Examples</textual>
+                    </column>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>queue</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>The queue property specifies the queue that the Folder will
+                                retrieve messages for.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>processing</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>pageSize</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>The pageSize property indicates the size of each page. It defaults to 20.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>number</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+            </table>
+            <title size="SMALLER" v="v1">
+                <textual>Template</textual>
+            </title>
+            <paragraph v="v1">
+                <textual>The template for the widget is the folder.ftl file. It takes the following tokens.
+                </textual>
+            </paragraph>
+            <table v="v1">
+                <row>
+                    <column width="20%">
+                        <textual>Attribute</textual>
+                    </column>
+                    <column>
+                        <textual>Description</textual>
+                    </column>
+                    <column width="25%">
+                        <textual>Type</textual>
+                    </column>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>id</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>A unique id for the widget.</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>string</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>header</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>Specifies the header content.</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>html</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>_csrf</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>The CSRF token for the form submit.</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>string</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>bust</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>The bust token contains a unique id for each render of the message-explorer. This
+                                helps to prevent any caching issues that affect the render, and also impacts how the
+                                page maintains focus on the widget as it is refreshed.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>string</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>action</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>The action token contains the url for the action attribute for the form.</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>url</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>values</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>A list of strings that holds the content for all the values the folder should
+                                display for the current page.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>[html, html, html]</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>noContent</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>The noContent property indicates if the widget has any data to present or not.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>true, false</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>pageSize</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>The pageSize property indicates the size of each page.</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>number</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>currentPage</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>The currentPage property indicates the index of the currently selected page.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>number</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>previousPage</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>The previousPage property indicates the index of the previous page.</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>number</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>nextPage</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>The nextPage property indicates the index of the next page.</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>number</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>nextPage</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>The nextPage property indicates the index of the next page.</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>number</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>offeredPages</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>The offeredPages property is a list of page indexes that should be presented for
+                                pagination purposes.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>[1,2,3,4,5,6,7,8]</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>classes</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>A list of classes that should be applied.</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>class list</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>itemStyles</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>The css styles that should be applied in order to support Flex Item definitions.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>css</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+            </table>
+        </div>
+        <div v="v1" orientation="COLUMN">
             <title id="form" size="MEDIUM" v="v1">
                 <textual>Form</textual>
             </title>
@@ -10290,6 +10646,237 @@
                     </cell>
                 </row>
             </table>
+            <title size="SMALLER" v="v1">
+                <textual>Template</textual>
+            </title>
+            <paragraph v="v1">
+                <textual>The template for the widget is the pagination.ftl file. It takes the following tokens.
+                </textual>
+            </paragraph>
+            <table v="v1">
+                <row>
+                    <column width="20%">
+                        <textual>Attribute</textual>
+                    </column>
+                    <column>
+                        <textual>Description</textual>
+                    </column>
+                    <column width="25%">
+                        <textual>Type</textual>
+                    </column>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>id</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>A unique id for the widget.</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>string</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>_csrf</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>The CSRF token for the form submit.</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>string</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>bust</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>The bust token contains a unique id for each render of the message-explorer. This
+                                helps to prevent any caching issues that affect the render, and also impacts how the
+                                page maintains focus on the widget as it is refreshed.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>string</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>action</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>The action token contains the url for the action attribute for the form.</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>url</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>content</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>The html content for the pagination widget.</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>html</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>noContent</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>The noContent property indicates if the widget has any data to present or not.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>true, false</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>pageSize</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>The pageSize property indicates the size of each page.</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>number</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>currentPage</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>The currentPage property indicates the index of the currently selected page.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>number</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>previousPage</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>The previousPage property indicates the index of the previous page.</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>number</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>nextPage</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>The nextPage property indicates the index of the next page.</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>number</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>nextPage</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>The nextPage property indicates the index of the next page.</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>number</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>offeredPages</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>The offeredPages property is a list of page indexes that should be presented for
+                                pagination purposes.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>[1,2,3,4,5,6,7,8]</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+            </table>
         </div>
         <div v="v1" orientation="COLUMN">
             <title id="paragraph" size="MEDIUM" v="v1">
@@ -13309,6 +13896,41 @@
                         </paragraph>
                     </cell>
                 </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>trayId</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>The id of the tray widget.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>string</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>pageDocumentId</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>The id of the page that the widget is a part of.</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>string</textual>
+                        </paragraph>
+                    </cell>
+                </row>
             </table>
         </div>
         <div v="v1" orientation="COLUMN">
@@ -14627,452 +15249,6 @@
                     <cell>
                         <paragraph v="v1">
                             <textual>html</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-            </table>
-        </div>
-        <div v="v1" orientation="COLUMN">
-            <title id="wizard-intro-panel" size="MEDIUM" v="v1">
-                <textual>Wizard Intro Panel</textual>
-            </title>
-            <paragraph v="v1">
-                <textual>The Wizard Intro Panel Widget is a special purpose widget that must be defined within the
-                    Wizard Intro Page. The panel presents the Start button that initiates the Wizard, when the Intro
-                    Page is configured.
-                </textual>
-            </paragraph>
-            <title size="SMALLER" v="v1">
-                <textual>Widget</textual>
-            </title>
-            <paragraph v="v1">
-                <textual>The Wizard Intro Panel Widget is a Flex Item.</textual>
-            </paragraph>
-            <title size="SMALLER" v="v1">
-                <textual>Template</textual>
-            </title>
-            <paragraph v="v1">
-                <textual>The template for the widget is the wizard-intro-panel.ftl file. It takes the following
-                    tokens.
-                </textual>
-            </paragraph>
-            <table v="v1">
-                <row>
-                    <column width="20%">
-                        <textual>Attribute</textual>
-                    </column>
-                    <column>
-                        <textual>Description</textual>
-                    </column>
-                    <column width="25%">
-                        <textual>Type</textual>
-                    </column>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>id</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>A unique id for the widget.</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>string</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>_csrf</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>The CSRF token for the form submit.</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>string</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>classes</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>A list of classes that should be applied.</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>class list</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>itemStyles</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>The css styles that should be applied in order to support Flex Item definitions.
-                            </textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>css</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>testMode</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>The testMode token indicates if the widget should render in test mode, which
-                                typically disables any button or link clicks.
-                            </textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>boolean</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>action</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>The action token contains the url for the action attribute of the form.</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>url</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-            </table>
-        </div>
-        <div v="v1" orientation="COLUMN">
-            <title id="wizard-resume-panel" size="MEDIUM" v="v1">
-                <textual>Wizard Resume Panel</textual>
-            </title>
-            <paragraph v="v1">
-                <textual>The Wizard Resume Panel Widget is a special purpose widget that must be defined within the
-                    Wizard Resume Page. Its is presented as an intro page when an inflight Wizard is found and presented
-                    to the user.
-                </textual>
-            </paragraph>
-            <title size="SMALLER" v="v1">
-                <textual>Widget</textual>
-            </title>
-            <paragraph v="v1">
-                <textual>The Wizard Resume Panel Widget is a Flex Item.</textual>
-            </paragraph>
-            <title size="SMALLER" v="v1">
-                <textual>Template</textual>
-            </title>
-            <paragraph v="v1">
-                <textual>The template for the widget is the wizard-resume-panel.ftl file. It takes the following
-                    tokens.
-                </textual>
-            </paragraph>
-            <table v="v1">
-                <row>
-                    <column width="20%">
-                        <textual>Attribute</textual>
-                    </column>
-                    <column>
-                        <textual>Description</textual>
-                    </column>
-                    <column width="25%">
-                        <textual>Type</textual>
-                    </column>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>id</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>A unique id for the widget.</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>string</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>_csrf</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>The CSRF token for the form submit.</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>string</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>classes</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>A list of classes that should be applied.</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>class list</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>itemStyles</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>The css styles that should be applied in order to support Flex Item definitions.
-                            </textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>css</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>testMode</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>The testMode token indicates if the widget should render in test mode, which
-                                typically disables any button or link clicks.
-                            </textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>boolean</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>action</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>The action token contains the url for the action attribute of the form.</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>url</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>allowAbandonWizard</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>This value indicates if the abandon button should be presented.</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>boolean</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-            </table>
-        </div>
-        <div v="v1" orientation="COLUMN">
-            <title id="confirm-workflow-panel" size="MEDIUM" v="v1">
-                <textual>Wizard Outro Panel</textual>
-            </title>
-            <paragraph v="v1">
-                <textual>The Wizard Outro Panel Widget is a special purpose widget that must be defined within the
-                    Wizard Outro Page. The panel presents the Complete button that finalizes the Wizard, and lets the
-                    Platform present the next page. The Outro Page is only presented when configured against the Wizard.
-                </textual>
-            </paragraph>
-            <title size="SMALLER" v="v1">
-                <textual>Widget</textual>
-            </title>
-            <paragraph v="v1">
-                <textual>The Wizard Outro Panel Widget is a Flex Item.</textual>
-            </paragraph>
-            <title size="SMALLER" v="v1">
-                <textual>Template</textual>
-            </title>
-            <paragraph v="v1">
-                <textual>The template for the widget is the wizard-outro-panel.ftl file. It takes the following
-                    tokens.
-                </textual>
-            </paragraph>
-            <table v="v1">
-                <row>
-                    <column width="20%">
-                        <textual>Attribute</textual>
-                    </column>
-                    <column>
-                        <textual>Description</textual>
-                    </column>
-                    <column width="25%">
-                        <textual>Type</textual>
-                    </column>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>id</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>A unique id for the widget.</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>string</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>_csrf</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>The CSRF token for the form submit.</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>string</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>classes</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>A list of classes that should be applied.</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>class list</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>itemStyles</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>The css styles that should be applied in order to support Flex Item definitions.
-                            </textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>css</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>testMode</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>The testMode token indicates if the widget should render in test mode, which
-                                typically disables any button or link clicks.
-                            </textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>boolean</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>action</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>The action token contains the url for the action attribute of the form.</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>url</textual>
                         </paragraph>
                     </cell>
                 </row>

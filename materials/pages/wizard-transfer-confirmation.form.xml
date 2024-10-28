@@ -1,10 +1,10 @@
-<form id="delete-confirmation-form" title="Confirm Delete" orientation="COLUMN" v="v1" defnVersion="v1">
+<form id="transfer-confirmation-form" title="Confirm Transfer" orientation="COLUMN" v="v1" defnVersion="v1">
     <title size="LARGE" v="v1">
-        <textual>Delete Confirmation</textual>
+        <textual>Confirm Transfer</textual>
     </title>
     <paragraph v="v1">
         <textual>
-            Are you sure you wish to delete this record?
+            This action will transfer the message to a different queue. Do you wish to proceed?
         </textual>
     </paragraph>
     <div v="v1">
@@ -14,7 +14,7 @@
         </button>
         <button type="ACCEPT" size="MEDIUM" buttonFlavour="DANGER" required="false"
             margin="0.25em 1em" v="v1">
-            <textual>Delete</textual>
+            <textual>Accept</textual>
         </button>
     </div>
 </form>

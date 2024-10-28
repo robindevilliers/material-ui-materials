@@ -72,9 +72,6 @@ import ScriptRenderer from './ScriptRenderer';
 import LoopRenderer from './LoopRenderer';
 import SwitchRenderer from './SwitchRenderer';
 import FakeGroupRenderer from './FakeGroupRenderer';
-import WizardIntroPanelRenderer from './WizardIntroPanelRenderer';
-import WizardOutroPanelRenderer from './WizardOutroPanelRenderer';
-import WizardResumePanelRenderer from './WizardResumePanelRenderer';
 import TextualRenderer from './TextualRenderer';
 import PaginationRenderer from "./PaginationRenderer";
 import ContinueOperationButtonRenderer from "./ContinueOperationButtonRenderer";
@@ -156,9 +153,6 @@ const registry = [
     new LoopRenderer(),
     new PaginationRenderer(),
     new SwitchRenderer(),
-    new WizardIntroPanelRenderer(),
-    new WizardOutroPanelRenderer(),
-    new WizardResumePanelRenderer(),
     new TextualRenderer(),
     new ContinueOperationButtonRenderer(),
     new FolderRenderer()

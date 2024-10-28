@@ -480,73 +480,6 @@
             </row>
             <row>
                 <cell>
-                    <link type="internal" view="wizard-intro.html" openNewWindow="false" v="v1">
-                        <textual>Wizard Intro Page</textual>
-                    </link>
-                </cell>
-                <cell>
-                    <paragraph paragraphStyle="PLAIN" v="v1">
-                        <textual>wizard-intro.page.xml</textual>
-                    </paragraph>
-                </cell>
-                <cell>
-                    <paragraph paragraphStyle="PLAIN" v="v1">
-                        <textual>
-                            It is possible to configure within the Workflow a setting that will present to the user a
-                            Wizard Introduction Page. This page informs the user that the Wizard is about to be
-                            initiated. Depending on how the Wizard has been designed, you may wish to present this page
-                            or not.
-                        </textual>
-                    </paragraph>
-                </cell>
-            </row>
-            <row>
-                <cell>
-                    <link type="internal" view="wizard-outro.html" openNewWindow="false" v="v1">
-                        <textual>Wizard Outro Page</textual>
-                    </link>
-                </cell>
-                <cell>
-                    <paragraph paragraphStyle="PLAIN" v="v1">
-                        <textual>wizard-outro.page.xml</textual>
-                    </paragraph>
-                </cell>
-                <cell>
-                    <paragraph paragraphStyle="PLAIN" v="v1">
-                        <textual>
-                            Similarly to the Intro Page, it is possible to configure within the Workflow a setting that
-                            will present to the user a Wizard Outro Page. This page informs the user that the Wizard has
-                            been completed. Depending on how the Wizard has been designed, you may wish to present this
-                            page or not.
-                        </textual>
-                    </paragraph>
-                </cell>
-            </row>
-            <row>
-                <cell>
-                    <link type="internal" view="wizard-resume.html" openNewWindow="false" v="v1">
-                        <textual>Wizard Resume Page</textual>
-                    </link>
-                </cell>
-                <cell>
-                    <paragraph paragraphStyle="PLAIN" v="v1">
-                        <textual>wizard-resume.page.xml</textual>
-                    </paragraph>
-                </cell>
-                <cell>
-                    <paragraph paragraphStyle="PLAIN" v="v1">
-                        <textual>
-                            Often a user will commence a wizard, and for whatever reason, not complete the wizard in
-                            one sitting. When this happens, the platform records that the wizard is inflight, and will
-                            present the wizard to the user when he returns and authenticates. When he authenticates, we
-                            present this page to the user just prior to presenting the wizard to give the user some
-                            context as to what is going on.
-                        </textual>
-                    </paragraph>
-                </cell>
-            </row>
-            <row>
-                <cell>
                     <link type="internal" view="wizard-test-results.html" openNewWindow="false" v="v1">
                         <textual>Wizard Test Results Page</textual>
                     </link>
@@ -583,6 +516,46 @@
                             Whenever a Workflow is initiated by clicking on the Initiate Workflow Button, or Menu Item,
                             then this page is presented. This page works as a confirmation page, to allow the user to
                             cancel the previous action.
+                        </textual>
+                    </paragraph>
+                </cell>
+            </row>
+            <row>
+                <cell>
+                    <link type="internal" view="confirm.html" openNewWindow="false" v="v1">
+                        <textual>Confirm Page</textual>
+                    </link>
+                </cell>
+                <cell>
+                    <paragraph paragraphStyle="PLAIN" v="v1">
+                        <textual>workflow-confirm.page.xml</textual>
+                    </paragraph>
+                </cell>
+                <cell>
+                    <paragraph paragraphStyle="PLAIN" v="v1">
+                        <textual>
+                            Some operations require a confirmation page. This page will be presented as required.
+                        </textual>
+                    </paragraph>
+                </cell>
+            </row>
+            <row>
+                <cell>
+                    <link type="internal" view="message-unavailable.html" openNewWindow="false" v="v1">
+                        <textual>Message Unavailable Page</textual>
+                    </link>
+                </cell>
+                <cell>
+                    <paragraph paragraphStyle="PLAIN" v="v1">
+                        <textual>message-unavailable.page.xml</textual>
+                    </paragraph>
+                </cell>
+                <cell>
+                    <paragraph paragraphStyle="PLAIN" v="v1">
+                        <textual>
+                            When two or more users simultaneously click on a message in a Tray, or Folder, then one of
+                            them will continue the operation as normal, while the other will be presented with this
+                            page.
                         </textual>
                     </paragraph>
                 </cell>

@@ -11,7 +11,7 @@
     <#if type == "NUMBER">
         <label class="form-label ${textualClasses}" style="${textualStyles}" for="${id}">${content}</label>
         <div class="input-group">
-            <input id="${id}" class="form-control ${sizeCls} validate ${classes}" type="number" name="${name}"
+            <input id="${id}" class="form-control ${sizeCls} validate" type="number" name="${name}"
                     value="${value!}" <#if disabled??>disabled</#if>
                     <#if min??>min="${min}"</#if>
                     <#if max??>max="${max}"</#if>
@@ -24,7 +24,7 @@
     <#if type == "INPUT">
         <label class="form-label ${textualClasses}" style="${textualStyles}" for="${id}">${content}</label>
         <div class="input-group">
-            <input id="${id}" class="form-control ${sizeCls} validate ${classes}" type="text"
+            <input id="${id}" class="form-control ${sizeCls} validate" type="text"
                     <#if maxlength??>maxlength="${maxlength}"</#if> <#if disabled??>disabled</#if> name="${name}"
                     value="${value!}"
             />
@@ -36,7 +36,7 @@
     <#if type == "TEXTAREA">
         <label class="form-label ${textualClasses}" style="${textualStyles}" for="${id}">${content}</label>
         <div class="input-group">
-            <textarea id="${id}" class="form-control ${sizeCls} validate ${classes}" name="${name}"
+            <textarea id="${id}" class="form-control ${sizeCls} validate" name="${name}"
                     <#if maxLength??>maxLength="${maxLength}"</#if>
                     <#if cols??>cols="${cols}"</#if>
                     <#if rows??>rows="${rows}"</#if>
@@ -50,7 +50,7 @@
     <#if type == "DATE">
         <label class="form-label ${textualClasses}" style="${textualStyles}" for="${id}">${content}</label>
         <div class="input-group">
-            <input id="${id}" class="form-control ${sizeCls} validate ${classes}" type="text" maxlength="10"
+            <input id="${id}" class="form-control ${sizeCls} validate" type="text" maxlength="10"
                     name="${name}" value="${value!}" <#if disabled??>disabled</#if>
                     placeholder="yyyy-MM-dd"/>
         </div>
@@ -61,7 +61,7 @@
     <#if type == "DATETIME">
         <label class="form-label ${textualClasses}" style="${textualStyles}" for="${id}">${content}</label>
         <div class="input-group">
-            <input id="${id}" class="form-control ${sizeCls} validate ${classes}" type="text" maxlength="16"
+            <input id="${id}" class="form-control ${sizeCls} validate" type="text" maxlength="16"
                     name="${name}" value="${value!}" <#if disabled??>disabled</#if>
                     placeholder="yyyy-MM-dd HH:mm"/>
         </div>
@@ -73,7 +73,7 @@
         <label class="form-label ${textualClasses}" style="${textualStyles}" for="${id}">${content}</label>
         <div class="input-group">
             <span class="input-group-text">${currencySymbol}</span>
-            <input id="${id}" class="form-control ${sizeCls} validate ${classes}" type="number" step="0.01"
+            <input id="${id}" class="form-control ${sizeCls} validate" type="number" step="0.01"
                     name="${name}" value="${value!}" <#if disabled??>disabled</#if>
             />
         </div>

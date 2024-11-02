@@ -64,7 +64,7 @@
         </#if>
         <#if cardinality == "MULTIPLE_SELECT">
             <label class="form-label ${textualClasses}" style="${textualStyles}" for="${id}">${content}</label>
-            <select id="${id}" class="input-group ${sizeCls} form-control ${classes}" multiple name="${name}"
+            <select id="${id}" class="input-group ${sizeCls} form-control " multiple name="${name}"
                     <#if disabled??>disabled</#if> >
                 <option value="" disabled>Choose your option</option>
                 <#list values as val>
@@ -81,7 +81,7 @@
 
         <#elseif cardinality == "SINGLE_SELECT">
             <label class="form-label ${textualClasses}" style="${textualStyles}" for="${id}">${content}</label>
-            <select id="${id}" class="input-group ${sizeCls} form-control ${classes}" name="${name}"
+            <select id="${id}" class="input-group ${sizeCls} form-control" name="${name}"
                     <#if disabled??>disabled</#if>>
                 <option value="" disabled selected>Choose your option</option>
                 <#list values as val>

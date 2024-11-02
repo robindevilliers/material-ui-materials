@@ -9903,6 +9903,44 @@
                         </paragraph>
                     </cell>
                 </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>messageExplorerId</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>A unique identifier that identifies the Message Explorer widget within the page. It
+                                is necessary to include this id in the form submission when openiing the Wip.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>id</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>pageDocumentId</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>The id of the page that the Message Explorer is composed within. It is necessary to
+                                submit this id to the operations endpoint when opening the Wip.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>id</textual>
+                        </paragraph>
+                    </cell>
+                </row>
             </table>
         </div>
         <div v="v1" orientation="COLUMN">

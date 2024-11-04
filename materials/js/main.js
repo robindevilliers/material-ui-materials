@@ -15,30 +15,21 @@ import "bootstrap/js/dist/button.js";
 document.documentElement.className = "js-enabled"
 
 $(function () {
-    $(':radio').change(function () {
-        $(':radio[data-mw-blind][name=' + $(this).attr('name') + ']').each(function () {
-            $('#value-panel-' + $(this).attr('id')).animate({ height : 'hide' });
-        });
-        if ($(this).is("[data-mw-blind]")) {
-            if ($(this).is(":checked")) {
-                $('#value-panel-' + $(this).attr('id')).animate({ height : 'show' });
-            } else {
-                $('#value-panel-' + $(this).attr('id')).animate({ height : 'hide' });
-            }
-        }
-    });
 
-    $(':checkbox').change(function () {
-
+    $(':radio[data-mw-blind]').each(function () {
         if ($(this).is(":checked")) {
-            console.log('#value-panel-' + $(this).attr('id'))
-            $('#value-panel-' + $(this).attr('id')).animate({ height : 'show' });
-        } else {
-            $('#value-panel-' + $(this).attr('id')).animate({ height : 'hide' });
+            $('#value-panel-' + $(this).attr('id')).animate({height: 'show'});
         }
     });
 
-    $('select').change(function () {
+    $(':checkbox[data-mw-blind]').each(function () {
+        if ($(this).is(":checked")) {
+            $('#value-panel-' + $(this).attr('id')).animate({height: 'show'});
+        }
+    });
+
+    $('select').each(function () {
+
         let values = $(this).val();
         if (!Array.isArray(values)) {
             values = [values];
@@ -48,9 +39,48 @@ $(function () {
         $(this).find('option[data-mw-blind]').each(function () {
             const val = $(this).attr('value');
             if (values.includes(val)) {
-                $('#value-panel-' + id + '-' + $(this).data('mw-blind')).animate({ height : 'show' });
+                $('#value-panel-' + id + '-' + $(this).data('mw-blind')).animate({height: 'show'});
+            }
+        });
+    });
+
+    $(':radio').change(function () {
+        $(':radio[data-mw-blind][name=' + $(this).attr('name') + ']').each(function () {
+            $('#value-panel-' + $(this).attr('id')).animate({height: 'hide'});
+        });
+        if ($(this).is("[data-mw-blind]")) {
+            if ($(this).is(":checked")) {
+                $('#value-panel-' + $(this).attr('id')).animate({height: 'show'});
             } else {
-                $('#value-panel-' + id + '-' + $(this).data('mw-blind')).animate({ height : 'hide' });
+                $('#value-panel-' + $(this).attr('id')).animate({height: 'hide'});
+            }
+        }
+    });
+
+    $(':checkbox').change(function () {
+        if ($(this).is("[data-mw-blind]")) {
+            if ($(this).is(":checked")) {
+                $('#value-panel-' + $(this).attr('id')).animate({height: 'show'});
+            } else {
+                $('#value-panel-' + $(this).attr('id')).animate({height: 'hide'});
+            }
+        }
+    });
+
+    $('select').change(function () {
+
+        let values = $(this).val();
+        if (!Array.isArray(values)) {
+            values = [values];
+        }
+
+        const id = $(this).attr('id');
+        $(this).find('option[data-mw-blind]').each(function () {
+            const val = $(this).attr('value');
+            if (values.includes(val)) {
+                $('#value-panel-' + id + '-' + $(this).data('mw-blind')).animate({height: 'show'});
+            } else {
+                $('#value-panel-' + id + '-' + $(this).data('mw-blind')).animate({height: 'hide'});
             }
         });
     });

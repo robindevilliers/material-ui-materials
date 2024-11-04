@@ -1,8 +1,12 @@
 
-.enumeration-widget  {
+.enumeration-widget {
 
   input {
     min-width: 1.5em;
+  }
+
+  .value-panel-container {
+    display: flex;
   }
 }
 

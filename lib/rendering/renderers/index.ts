@@ -76,6 +76,7 @@ import TextualRenderer from './TextualRenderer';
 import PaginationRenderer from "./PaginationRenderer";
 import ContinueOperationButtonRenderer from "./ContinueOperationButtonRenderer";
 import FolderRenderer from "./FolderRenderer";
+import TimezoneSelectRenderer from "./TimezoneSelect";
 
 const registry = [
     new TitleRenderer(),
@@ -155,7 +156,8 @@ const registry = [
     new SwitchRenderer(),
     new TextualRenderer(),
     new ContinueOperationButtonRenderer(),
-    new FolderRenderer()
+    new FolderRenderer(),
+    new TimezoneSelectRenderer()
 ];
 
 export function findRenderer(name: string) {

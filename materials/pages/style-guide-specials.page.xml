@@ -593,6 +593,29 @@
                 </card-body>
             </card>
         </div>
+
+        <horizontal-rule/>
+
+        <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
+            flexBasis="100%">
+            <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
+                flexBasis="100%" width="100%">
+                <title size="LARGE" v="v1">
+                    <textual>Timezone Select</textual>
+                </title>
+                <paragraph v="v1" flexBasis="500px">
+                    <textual>
+                        Timezone Select offers timezones for selection.
+                    </textual>
+                </paragraph>
+            </div>
+            <div orientation="COLUMN" alignItems="FLEX_START" justifyContent="SPACE_BETWEEN" v="v1"
+                flexBasis="100%" width="70%">
+                <timezone-select reference="test2" required="false" size="MEDIUM" margin="0.25em 1em" v="v1">
+                    <textual>Timezone</textual>
+                </timezone-select>
+            </div>
+        </div>
     </fake-store>
 </page>
 

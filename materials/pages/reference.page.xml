@@ -4956,7 +4956,7 @@
                 <row>
                     <cell>
                         <paragraph v="v1">
-                            <textual>label</textual>
+                            <textual>content</textual>
                         </paragraph>
                     </cell>
                     <cell>
@@ -4967,6 +4967,44 @@
                     <cell>
                         <paragraph v="v1">
                             <textual>Colours</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>textualClasses</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>These are the classes produced from the Textual definition. They should be applied
+                                to the element that is going to render the textual content.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>class list</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>textualStyles</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>These are the styles that are produced from the Textual definition. They should be
+                                applied to the element that renders the textual content.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>css</textual>
                         </paragraph>
                     </cell>
                 </row>
@@ -5212,7 +5250,7 @@
                 <row>
                     <cell>
                         <paragraph v="v1">
-                            <textual>label</textual>
+                            <textual>content</textual>
                         </paragraph>
                     </cell>
                     <cell>
@@ -7467,12 +7505,50 @@
                 <row>
                     <cell>
                         <paragraph v="v1">
-                            <textual>label</textual>
+                            <textual>textualClasses</textual>
                         </paragraph>
                     </cell>
                     <cell>
                         <paragraph v="v1">
-                            <textual>The label token holds the label that should be presented as text in association
+                            <textual>These are the classes produced from the Textual definition. They should be applied
+                                to the element that is going to render the textual content.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>class list</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>textualStyles</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>These are the styles that are produced from the Textual definition. They should be
+                                applied to the element that renders the textual content.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>css</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>content</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>The content token holds the label that should be presented as text in association
                                 with the input.
                             </textual>
                         </paragraph>
@@ -12363,7 +12439,7 @@
                 <row>
                     <cell>
                         <paragraph v="v1">
-                            <textual>label</textual>
+                            <textual>content</textual>
                         </paragraph>
                     </cell>
                     <cell>
@@ -12374,6 +12450,44 @@
                     <cell>
                         <paragraph v="v1">
                             <textual>Colours</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>textualClasses</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>These are the classes produced from the Textual definition. They should be applied
+                                to the element that is going to render the textual content.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>class list</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>textualStyles</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>These are the styles that are produced from the Textual definition. They should be
+                                applied to the element that renders the textual content.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>css</textual>
                         </paragraph>
                     </cell>
                 </row>
@@ -13389,6 +13503,442 @@
                     <cell>
                         <paragraph v="v1">
                             <textual>html</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+            </table>
+        </div>
+        <div v="v1" orientation="COLUMN">
+            <title id="timezone-select" size="MEDIUM" v="v1">
+                <textual>Timezone Select</textual>
+            </title>
+            <paragraph v="v1">
+                <textual>The Timezone Select Widget presents a dropdown select that offers timezones for selection on
+                    the page.
+                </textual>
+            </paragraph>
+            <paragraph v="v1">
+                <textual>The Timezone Select Widget can be viewed on the Style Guide Specials page.</textual>
+            </paragraph>
+            <title size="SMALLER" v="v1">
+                <textual>Widget</textual>
+            </title>
+            <paragraph v="v1">
+                <textual>The Timezone Select Widget is a Flex Item and Textual Container in addition to the following
+                    properties.
+                </textual>
+            </paragraph>
+            <table v="v1">
+                <row>
+                    <column width="20%">
+                        <textual>Attribute</textual>
+                    </column>
+                    <column>
+                        <textual>Description</textual>
+                    </column>
+                    <column width="25%">
+                        <textual>Permitted values/Examples</textual>
+                    </column>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>label</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>The label attribute specifies the text used to present to the user the purpose of
+                                the field.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>Your Timezone</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>reference</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>The reference attribute specifies the name of the key used when the value is
+                                included in the resulting JSON document, that is the Wizard&apos;s output.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>name</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>value</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>The value attribute specifies the initial value of the input.</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>Europe/London</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>size</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>The size of the widget.</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>LARGE, MEDIUM, SMALL</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>required</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>The required attribute specifies if this input must have value. If the value is
+                                required, then a validation error will present if no value is supplied.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>true, false</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>disableScript</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>This attribute contains a Plantain script that will determine if the widget should
+                                appear disabled or not.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>script : boolean</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>hiddenScript</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>This attribute contains a Plantain script that will determine if the widget should
+                                appear hidden or not.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>script : boolean</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+            </table>
+            <title size="SMALLER" v="v1">
+                <textual>Template</textual>
+            </title>
+            <paragraph v="v1">
+                <textual>The template for the widget is the timezone-select.ftl file. It takes the following tokens.
+                </textual>
+            </paragraph>
+            <table v="v1">
+
+
+                entry("values", timezones)
+
+
+                <row>
+                    <column width="20%">
+                        <textual>Attribute</textual>
+                    </column>
+                    <column>
+                        <textual>Description</textual>
+                    </column>
+                    <column width="25%">
+                        <textual>Type</textual>
+                    </column>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>id</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>A id for the button. This must be included in order for some of the button
+                                functionality to work.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>string</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>classes</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>A list of classes that should be applied.</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>class list</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>itemStyles</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>The css styles that should be applied in order to support Flex Item definitions.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>css</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>value</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>The value token holds the current value for the Enumeration.</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>string</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>label</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>The label token holds the label that should be presented as text in association
+                                with the input.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>string</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>name</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>The name token specifies the name that the Enumeration should hold for the purposes
+                                of inclusion into the results.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>string</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>size</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>The size of the widget.</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>SMALL, MEDIUM, LARGE</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>disabled</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>The disabled token indicates if the button should be disabled or not.</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>boolean</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>error</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>The error token specifies an error message if there has been some validation error
+                                associated with the Enumeration.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>string</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>textualClasses</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>These are the classes produced from the Textual definition. They should be applied
+                                to the element that is going to render the textual content.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>class list</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>textualStyles</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>These are the styles that are produced from the Textual definition. They should be
+                                applied to the element that renders the textual content.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>css</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>content</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>The content of the widget which will be the label content.</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>html</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>values</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>The values token contains a list of values for population in the select. Each
+                                timezone has three properties. &apos;id&apos; is the timezone code, such as &apos;Europe/London&apos;.
+                                &apos;displayName&apos; is the name of the timezone as in &apos;Greenwich Mean Time&apos;.
+                                The &apos;offset&apos; property is the numerical offset as in &apos;+01:00&apos;.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>List&lt;{
+                                <br/>
+                                id : string,
+                                <br/>
+                                displayName: string,
+                                <br/>
+                                offset: string,
+                                <br/>
+                                }&gt;
+                                <br/>
+                            </textual>
                         </paragraph>
                     </cell>
                 </row>

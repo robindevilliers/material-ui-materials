@@ -1000,6 +1000,11 @@
             </link>
         </list-item>
         <list-item>
+            <link view="reference.html#timezone-select" v="v1">
+                <textual>Timezone Select</textual>
+            </link>
+        </list-item>
+        <list-item>
             <link view="reference.html#title" v="v1">
                 <textual>Title</textual>
             </link>

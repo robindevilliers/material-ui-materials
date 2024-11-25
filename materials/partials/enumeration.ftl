@@ -66,7 +66,7 @@
             <label class="form-label ${textualClasses}" style="${textualStyles}" for="${id}">${content}</label>
             <select id="${id}" class="input-group ${sizeCls} form-control " multiple name="${name}"
                     <#if disabled??>disabled</#if> >
-                <option value="" disabled>Choose your option</option>
+                <option value="" disabled>${prompt}</option>
                 <#list values as val>
                     <option <#if value?? && value?seq_contains(val.key)>selected</#if> value="${val.key}"
                             <#if val.panel?has_content>data-mw-blind="${val.key}"</#if> >${val.label}</option>
@@ -83,7 +83,7 @@
             <label class="form-label ${textualClasses}" style="${textualStyles}" for="${id}">${content}</label>
             <select id="${id}" class="input-group ${sizeCls} form-control" name="${name}"
                     <#if disabled??>disabled</#if>>
-                <option value="" disabled selected>Choose your option</option>
+                <option value="" disabled selected>${prompt}</option>
                 <#list values as val>
                     <option <#if value?? && value == val.key>selected</#if> value="${val.key}"
                             <#if val.panel?has_content>data-mw-blind="${val.key}"</#if> >${val.label}</option>

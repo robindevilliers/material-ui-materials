@@ -5158,6 +5158,25 @@
                         </paragraph>
                     </cell>
                 </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>prompt</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>The prompt attribute contains the text that should be rendered in any select drop
+                                down as the default option when no value is currently selected.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>string</textual>
+                        </paragraph>
+                    </cell>
+                </row>
             </table>
             <title size="SMALLER" v="v1">
                 <textual>Template</textual>
@@ -5445,6 +5464,25 @@
                     <cell>
                         <paragraph v="v1">
                             <textual>string</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>prompt</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>The prompt token contains the message that should be displayed in any select drop
+                                down as a prompt when the select has no current value..
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>Choose a value</textual>
                         </paragraph>
                     </cell>
                 </row>

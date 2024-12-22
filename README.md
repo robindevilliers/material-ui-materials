@@ -1,4 +1,4 @@
-# Material Toolkit 123
+# Material Toolkit
 
 The Materials Toolkit allows web developers to develop the assets necessary for Maximillian Workflows to render Pages,
 and Wizards on the platform.
@@ -105,3 +105,5 @@ This will add the original repo as a new remote and will rebase against it.
 This will do a rebase against the original materials toolkit and then replay all your subsequent changes on top.
 This is recommended as you will be prompted to consider your specific repo changes in respect of the materials HEAD
 version, which means you can ignore all the code changes that you don't care about within the toolkit.
+
+You will need to force push to the origin repo after doing this.

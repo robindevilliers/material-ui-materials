@@ -58,7 +58,7 @@ This last command will setup a webserver that will serve the built assets on thi
 The actual materials that are used by the platform are all in the materials directory.
 
 
-## Initial Setup.
+## Initial Setup
 
 Every toolkit repo is a clone of this repo:
 
@@ -92,7 +92,7 @@ What you will  end up with is a remote as so:
 
 And now you can make  whatever changes are necessary.
 
-## Updating Materials Toolkit code.
+## Updating Materials Toolkit code
 
 From time to time, you will  want to update the current repo against the original maximillian materials toolkit repo.
 

@@ -53,10 +53,27 @@ npm run watch
 
 This last command will setup a webserver that will serve the built assets on this url:  http://127.0.0.1:8000
 
-
-```
-    Materials
-```
+## Materials
 
 The actual materials that are used by the platform are all in the materials directory.
+
+## Updating Materials Toolkit code.
+
+Everyone toolkit repo is a clone of this repo:
+
+```
+    https://github.com/robindevilliers/materials-toolkit.git
+```
+
+It is recommended that every account clones this repo and updates the assets within. When it comes time to update
+the materials toolkit libraries, rebase against the original repo. This script will do this.
+
+```
+    ./rebase_materials.sh
+```
+
+This will do a rebase against the original materials toolkit and then replay all your subsequent changes on top.
+This is recommended as you will be prompted to consider your specific repo changes in respect of the materials HEAD
+version, which means you can ignore all the code changes that you don't care about within the toolkit.
+
 

@@ -57,23 +57,51 @@ This last command will setup a webserver that will serve the built assets on thi
 
 The actual materials that are used by the platform are all in the materials directory.
 
-## Updating Materials Toolkit code.
 
-Everyone toolkit repo is a clone of this repo:
+## Initial Setup.
+
+Every toolkit repo is a clone of this repo:
 
 ```
     https://github.com/robindevilliers/materials-toolkit.git
 ```
 
-It is recommended that every account clones this repo and updates the assets within. When it comes time to update
-the materials toolkit libraries, rebase against the original repo. This script will do this.
+So clone it.
+
+```
+    git clone https://github.com/robindevilliers/materials-toolkit.git
+```
+
+Then run the init_materials.sh script.  This script will remove the origin remote and push to a new repo
+that matches the name of the current directory.
+
+```
+    ./init_materials.sh
+```
+
+It is necessary to setup the repo in github beforehand.  When you do, do not specify any additional readme or licence
+files.  The repo  should be empty.
+
+What you will  end up with is a remote as so:
+
+```
+    $ git remote -v
+    origin  https://github.com/robindevilliers/abc-materials.git (fetch)
+    origin  https://github.com/robindevilliers/abc-materials.git (push)
+```
+
+And now you can make  whatever changes are necessary.
+
+## Updating Materials Toolkit code.
+
+From time to time, you will  want to update the current repo against the original maximillian materials toolkit repo.
 
 ```
     ./rebase_materials.sh
 ```
 
+This will add the original repo as a new remote and will rebase against it.
+
 This will do a rebase against the original materials toolkit and then replay all your subsequent changes on top.
 This is recommended as you will be prompted to consider your specific repo changes in respect of the materials HEAD
 version, which means you can ignore all the code changes that you don't care about within the toolkit.
-
-

@@ -1,15 +1,16 @@
 # Material Toolkit
 
-The Materials Toolkit allows web developers to develop the assets necessary for Maximillian Workflows to render Pages,
-and Wizards on the platform.
+The Materials Toolkit allow developers to develop the assets necessary for rendering a client's website on the
+Maximillian Workflows platform. The materials are where the client's web assets are defined.
 
-How does this work? Maximillian Workflows defines a semantic format for web
-pages. Web pages are defined in page.xml files as XML. You can see them in the &apos;pages&apos; directory. When
-the platform needs to render a HTML page, it will walk through the XML document and replace each element with
-the HTML equivalent. Each HTML Partial is defined in a FTL (freemarker) file and they reside in the &apos;partials&apos;
-directory.
+## How does this work?
 
-The Semantic Page files allow us to offer a richer set of UI elements than normal HTML, and in a machine
+A Page in the context of Maximillian Workflows is an XML document that describe the layout of a web page. You can see
+examples of this in the materials/pages directory. When rendering occurs, the elements within the Page file are replaced
+with actual HTML, as defined in the materials/partials directory. It's these Partials that are the primary output of  
+the client's materials.
+
+The semantic Page files allow us to offer a richer set of UI elements than normal HTML, and in a machine
 read-able format. This allows us to create an editor over the Semantic Pages that allow users to define
 business processes using pages that describe what the user wants rather than how the page looks. Web design is
 separated from business process design, allowing users who are business people to more efficiently develop
@@ -23,11 +24,74 @@ Additionally, there are predefined Pages. These pages are not defined in the Edi
 by normal users. They are defined here in the materials. They are mandatory and allow the platform to perform
 standard features. Displaying the generic error page is a good example.
 
+## Initial Setup
+
+Every client's materials repo is a clone of this repo:
+
+```
+    https://github.com/robindevilliers/materials-toolkit.git
+```
+
+It's easier to Fork the repo.  Then from time to time, you can follow  the usual procedures for updating the repo
+and updating the repo against the materials-toolkit.
+
+However, you cannot fork within the same account.  For this to occur, we follow a different procedure.
+
+The first thing you will want to do is create a repo on github. When you do, do not specify any additional
+readme or licence files. The repo should be empty.  For example:  
+
+```
+    abc-materials
+```
+
+Clone the materials-toolkit into a local directory of the same name as the new repo you just created.
+
+```
+    git clone https://github.com/robindevilliers/materials-toolkit.git abc-materials
+```
+
+Then run the init_materials.sh script. This script will remove the origin remote and push to a new repo
+that matches the name of the current directory. This will push the materials-toolkit into the new repo you just created.
+
+```
+    ./init_materials.sh
+```
+
+What you will end up with is a remote as so:
+
+```
+    $ git remote -v
+    origin  https://github.com/robindevilliers/abc-materials.git (fetch)
+    origin  https://github.com/robindevilliers/abc-materials.git (push)
+```
+
+And now you can make whatever changes are necessary.
+
+From time to time, you will want to update the current repo against the original materials toolkit repo.
+
+```
+    ./rebase_materials.sh
+```
+
+This will add the original repo as a new remote and will rebase against it.
+
+Remotes will look like this:
+
+```
+    $ git remote -v
+    max     https://github.com/robindevilliers/materials-toolkit.git (fetch)
+    max     https://github.com/robindevilliers/materials-toolkit.git (push)
+    origin  https://github.com/robindevilliers/abc-materials.git (fetch)
+    origin  https://github.com/robindevilliers/abc-materials.git (push)
+```
+
 ## Installation
+
+Once you have the repo cloned, you will  want to run up the toolkit.  First thing, install.
 
 You must have npm installed.
 
-This command will download and install any dependencies. You only need to do this once.
+This command will download and install any dependencies. 
 
 ```
 npm install
@@ -56,54 +120,3 @@ This last command will setup a webserver that will serve the built assets on thi
 ## Materials
 
 The actual materials that are used by the platform are all in the materials directory.
-
-
-## Initial Setup
-
-Every toolkit repo is a clone of this repo:
-
-```
-    https://github.com/robindevilliers/materials-toolkit.git
-```
-
-So clone it.
-
-```
-    git clone https://github.com/robindevilliers/materials-toolkit.git
-```
-
-Then run the init_materials.sh script.  This script will remove the origin remote and push to a new repo
-that matches the name of the current directory.
-
-```
-    ./init_materials.sh
-```
-
-It is necessary to setup the repo in github beforehand.  When you do, do not specify any additional readme or licence
-files.  The repo  should be empty.
-
-What you will  end up with is a remote as so:
-
-```
-    $ git remote -v
-    origin  https://github.com/robindevilliers/abc-materials.git (fetch)
-    origin  https://github.com/robindevilliers/abc-materials.git (push)
-```
-
-And now you can make  whatever changes are necessary.
-
-## Updating Materials Toolkit code
-
-From time to time, you will  want to update the current repo against the original maximillian materials toolkit repo.
-
-```
-    ./rebase_materials.sh
-```
-
-This will add the original repo as a new remote and will rebase against it.
-
-This will do a rebase against the original materials toolkit and then replay all your subsequent changes on top.
-This is recommended as you will be prompted to consider your specific repo changes in respect of the materials HEAD
-version, which means you can ignore all the code changes that you don't care about within the toolkit.
-
-You will need to force push to the origin repo after doing this.

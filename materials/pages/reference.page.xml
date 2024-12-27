@@ -4747,6 +4747,23 @@
                 <row>
                     <cell>
                         <paragraph v="v1">
+                            <textual>classes</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>A list of classes that should be applied.</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>class list</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
                             <textual>containerStyles</textual>
                         </paragraph>
                     </cell>
@@ -6003,6 +6020,23 @@
                     <cell>
                         <paragraph v="v1">
                             <textual>string</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>classes</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>A list of classes that should be applied.</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>class list</textual>
                         </paragraph>
                     </cell>
                 </row>
@@ -10649,6 +10683,23 @@
                     <cell>
                         <paragraph v="v1">
                             <textual>string</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>classes</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>A list of classes that should be applied.</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>class list</textual>
                         </paragraph>
                     </cell>
                 </row>

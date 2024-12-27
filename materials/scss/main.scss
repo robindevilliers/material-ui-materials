@@ -144,6 +144,11 @@ td {
   align-items: center;
 }
 
+//This class is used by the sizing attribute pane.
+.hide-column {
+  display: none !important;
+}
+
 @import "accordion-widget";
 @import "back-link-widget";
 @import "badge-widget";

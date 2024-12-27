@@ -1,1 +1,1 @@
-<div id="${id}" class="email-widget" style="${containerStyles}">${content}</div>
+<div id="${id}" class="email-widget ${classes}" style="${containerStyles}">${content}</div>

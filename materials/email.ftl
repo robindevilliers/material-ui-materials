@@ -8,6 +8,10 @@
             background-color: lavender;
         }
 
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+
         a {
             color: #81b1cc;
             text-decoration: none;

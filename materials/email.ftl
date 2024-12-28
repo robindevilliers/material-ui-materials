@@ -74,7 +74,7 @@
             width: 100%;
         }
 
-        .hr {
+        hr {
             border: 2px #81b1cc solid;
             width: 100%;
         }

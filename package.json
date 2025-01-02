@@ -14,7 +14,7 @@
     "build:css": "npm run css:lint && npm run css:scss && npm run css:autoprefixer && copyfiles -u 3 www/public/css/main.css materials/public/css/",
     "build:js": "webpack --config webpack.test.config.cjs --mode=production && copyfiles -u 3 www/public/js/main.js materials/public/js/",
     "build:images": "imagemin materials/public/img/**/* --out-dir=www/public/img",
-    "build:fonts": "copyfiles -u 2 materials/public/fonts/* www/public/fonts/ && copyfiles -u 4 node_modules/bootstrap-icons/font/fonts/* www/public/fonts/",
+    "build:fonts": "copyfiles -u 3 materials/public/fonts/* www/public/fonts/ && copyfiles -u 4 node_modules/bootstrap-icons/font/fonts/* www/public/fonts/",
     "build:html": "node --enable-source-maps ./dist/materials-toolkit.js --dir materials --output ./www",
     "build": "run-s build:*",
     "watch:compile": "onchange \"lib\" -- npm run compile",

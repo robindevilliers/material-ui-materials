@@ -39,6 +39,9 @@ export default class ToolTipRenderer implements Renderer {
         delete child.attributes.width;
         delete child.attributes.margin;
 
+        child.attributes.width = "100% ";
+        child.attributes.height = "100% ";
+
         const output = new StringBuffer();
         element.children.forEach(child => {
             if (isText(child)) {

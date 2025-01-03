@@ -4,8 +4,8 @@
   flex-direction: column;
   word-wrap: break-word;
   background-clip: border-box;
-  border: 5px #81b1cc solid;
-  background: #81b1cc;
+  border: 5px $primary solid;
+  background: $primary;
   padding: 5px;
   margin: 4px;
 
@@ -14,8 +14,8 @@
     align-items: center;
     padding: 0.5em 1em;
 
-    background-color: $green;
-    color: color-yiq($green);
+    background-color: $headerBackground;
+    color: color-yiq($headerBackground);
   }
 
   .folder-content {

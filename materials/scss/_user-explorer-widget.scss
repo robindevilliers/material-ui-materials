@@ -10,7 +10,7 @@
   border-radius: 0.25rem;
 
   .input-group-text {
-    background-color: lavender;
+    background-color: $headerBackground;
   }
 
   button {
@@ -57,13 +57,13 @@
         }
 
         &:nth-child(even) {
-          background-color: $opal;
-          color: color-yiq($opal);
+          background-color: $alternatingEven;
+          color: color-yiq($alternatingEven);
         }
 
         &:nth-child(odd) {
-          background-color: $green;
-          color: color-yiq($green);
+          background-color: $alternatingOdd;
+          color: color-yiq($alternatingOdd);
         }
       }
     }
@@ -95,11 +95,11 @@
         margin: 0.5em 0;
 
         &:nth-child(even) {
-          border: 5px $opal solid;
+          border: 5px $alternatingEven solid;
           border-radius: 25px;
 
           .user-explorer-group:first-child {
-            border-right: 5px $opal solid;
+            border-right: 5px $alternatingEven solid;
           }
         }
 

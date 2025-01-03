@@ -4,8 +4,8 @@
   flex-direction: column;
   word-wrap: break-word;
   background-clip: border-box;
-  border: 5px #81b1cc solid;
-  background: #81b1cc;
+  border: 5px $primary solid;
+  background: $primary;
   border-radius: 25px;
   padding: 5px;
   margin: 4px;
@@ -16,7 +16,8 @@
     justify-content: center;
     align-items: center;
     padding: 0.5em 1em;
-    background-color: #e9ecef;
+    background-color: $headerBackground;
+    color: color-yiq($headerBackground);
   }
 
   .tray-body {
@@ -34,13 +35,13 @@
       }
 
       &:nth-child(even) {
-        background-color: $opal;
-        color: color-yiq($opal);
+        background-color: $alternatingEven;
+        color: color-yiq($alternatingEven);
       }
 
       &:nth-child(odd) {
-        background-color: $green;
-        color: color-yiq($green);
+        background-color: $alternatingOdd;
+        color: color-yiq($alternatingOdd);
       }
     }
 
@@ -67,8 +68,8 @@
       max-width: unset;
 
       &:hover {
-        background-color: $blue !important;
-        color: color-yiq($blue);
+        background-color: $primary !important;
+        color: color-yiq($primary);
       }
     }
   }

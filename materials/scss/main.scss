@@ -9,6 +9,7 @@ $pastel-mint: #cef0cc;
 $green: #c1e1c1;
 $black: black;
 $white: white;
+$lavender: lavender;
 
 $font-title-primary: Georgia, cursive, serif;
 $font-title-secondary: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
@@ -17,6 +18,10 @@ $font-text-secondary: Lucida Grande, Lucida Sans Unicode, Lucida Sans, Geneva, V
 $font-exhibit: Georgia, Times, Times New Roman, serif;
 $font-primary: Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;
 $font-secondary: Impact, Haettenschweiler, Franklin Gothic Bold, Charcoal, Helvetica Inserat, Bitstream Vera Sans Bold, Arial Black, sans serif;
+
+$alternatingEven: $opal;
+$alternatingOdd: $green;
+$headerBackground: $lavender;
 
 $theme-colors: (
         "default": $gray,

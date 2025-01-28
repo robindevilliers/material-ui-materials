@@ -28,10 +28,11 @@
       margin: 0.5em 0;
       padding: 0.5em 1em;
       background-color: #e9ecef;
+      min-height: 3em;
     }
   }
 
-  .no-content {
+  .folder-no-content {
     display: flex;
     text-align: center;
     opacity: 0.75;

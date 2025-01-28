@@ -2,12 +2,12 @@
     <div class="folder-content">
         ${header}
         <#list values as val>
-            <div class="folder-item">
-                ${val}
+            <div id="folder-item-${val.workflowId}-${val.wizardId}"  class="folder-item">
+                ${val.html}
             </div>
         </#list>
         <#if !values?has_content>
-            <div id="no-content" class="no-content">No Content</div>
+            <div id="folder-no-content" class="folder-no-content">No Content</div>
         </#if>
     </div>
 

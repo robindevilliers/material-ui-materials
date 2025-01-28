@@ -35,7 +35,12 @@ export default class FolderRenderer implements Renderer {
                 }
             }
 
-            return buffer.toString();
+            return {
+                wipId: m.getWipId(),
+                wizardId: m.getWizardId(),
+                workflowId: m.getWorkflowId(),
+                html: buffer.toString()
+            };
         });
 
         const data: Record<string, any> = {};

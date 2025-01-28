@@ -780,6 +780,11 @@
             </link>
         </list-item>
         <list-item>
+            <link view="reference.html#continue-operation-button" v="v1">
+                <textual>Continue Operation Button</textual>
+            </link>
+        </list-item>
+        <list-item>
             <link view="reference.html#def" v="v1">
                 <textual>Def</textual>
             </link>
@@ -842,11 +847,6 @@
         <list-item>
             <link view="reference.html#image" v="v1">
                 <textual>Image</textual>
-            </link>
-        </list-item>
-        <list-item>
-            <link view="reference.html#initiate-workflow-button" v="v1">
-                <textual>Initiate Workflow Button</textual>
             </link>
         </list-item>
         <list-item>
@@ -917,6 +917,11 @@
         <list-item>
             <link view="reference.html#notification-banner" v="v1">
                 <textual>Notification Banner</textual>
+            </link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#operation-button" v="v1">
+                <textual>Operation Button</textual>
             </link>
         </list-item>
         <list-item>

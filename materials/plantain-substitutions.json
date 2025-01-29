@@ -28,6 +28,57 @@
     },
     "%userdata% .alpha": {
       "value": true
+    },
+    ".id": {
+      "value": "6e00fc9f-0dce-4cd4-adba-e57a4189a6d1"
+    },
+    ".wipId": {
+      "value": "6e00fc9f-0dce-4cd4-adba-e57a4189a6d1"
+    },
+    ".wizardId": {
+      "value": "6e00fc9f-0dce-4cd4-adba-e57a4189a6d1"
+    },
+    ".wizardTitle": {
+      "value": "Wizard Title"
+    },
+    ".wizardDescription": {
+      "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+    },
+    ".workflowId": {
+      "value": "6e00fc9f-0dce-4cd4-adba-e57a4189a6d1"
+    },
+    ".workflowTitle": {
+      "value": "Workflow Title"
+    },
+    ".workflowDescription": {
+      "value": "The Workflow Description"
+    },
+    ".date": {
+      "value": "1992-01-02"
+    },
+    ".dateTime": {
+      "value": "1992-01-02 16:00:03"
+    },
+    ".queue": {
+      "value": "processing"
+    },
+    ".group": {
+      "value": "authenticated"
+    },
+    ".principal": {
+      "value": "robindevilliers"
+    },
+    ".principalTitle": {
+      "value": "Mr"
+    },
+    ".principalFirstName": {
+      "value": "Robin"
+    },
+    ".principalLastName": {
+      "value": "de Villiers"
+    },
+    ".principalDateOfBirth": {
+      "value": "1992-02-04"
     }
   },
   "wizard-intro.page.xml": {

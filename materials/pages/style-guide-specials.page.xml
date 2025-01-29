@@ -356,12 +356,80 @@
                 <header>
                     <textual>My Folder</textual>
                 </header>
-                <div justifyContent="SPACE_BETWEEN" v="v1">
-                    <paragraph paragraphStyle="PLAIN" v="v1">
-                        <textual>
-                            Folder Item
-                        </textual>
-                    </paragraph>
+                <div justifyContent="SPACE_BETWEEN" orientation="COLUMN" v="v1">
+                    <div v="v1">
+                        <title size="MEDIUM" v="v1">
+                            <textual>
+                                <script script=".wizardTitle" v="v1"/>
+                            </textual>
+                        </title>
+                        <paragraph paragraphStyle="PLAIN" padding="1em 1em 1em 1em" v="v1">
+                            <textual>
+                                <script script=".wizardDescription" v="v1"/>
+                            </textual>
+                        </paragraph>
+                    </div>
+                    <div alignItems="STRETCH" justifyContent="SPACE_BETWEEN" v="v1">
+                        <div padding="1em 1em 1em 1em" orientation="COLUMN" v="v1">
+                            <paragraph paragraphStyle="PLAIN" v="v1">
+                                <textual>
+                                    <script script=".queue" v="v1"/>
+                                </textual>
+                            </paragraph>
+                            <paragraph paragraphStyle="PLAIN" v="v1">
+                                <textual>
+                                    <script script=".group" v="v1"/>
+                                </textual>
+                            </paragraph>
+                        </div>
+                        <div padding="1em 1em 1em 1em" orientation="COLUMN" v="v1">
+                            <paragraph paragraphStyle="PLAIN" v="v1">
+                                <textual>
+                                    <script script=".workflowTitle" v="v1"/>
+                                </textual>
+                            </paragraph>
+                            <paragraph paragraphStyle="PLAIN" v="v1">
+                                <textual>
+                                    <script script=".workflowDescription" v="v1"/>
+                                </textual>
+                            </paragraph>
+                        </div>
+                        <div padding="1em 1em 1em 1em" orientation="COLUMN" v="v1">
+
+                            <paragraph paragraphStyle="PLAIN" v="v1">
+                                <textual>
+                                    <script script=".principal" v="v1"/>
+                                </textual>
+                            </paragraph>
+                            <paragraph paragraphStyle="PLAIN" v="v1">
+                                <textual>
+                                    <script script=".principalTitle" v="v1"/>
+                                    <script script=".principalFirstName" v="v1"/>
+                                    <script script=".principalLastName" v="v1"/>
+                                </textual>
+                            </paragraph>
+                        </div>
+
+                    </div>
+                    <div padding="1em 1em 1em 1em" justifyContent="END" orientation="ROW" v="v1">
+                        <operation-button id="a1738098619157" type="OPEN_WIP_PAGE" size="MEDIUM" width="8em"
+                            buttonFlavour="PRIMARY" page="test-wip-page" margin="0.25em 1em" v="v1">
+                            <textual>Open Page</textual>
+                        </operation-button>
+                        <operation-button id="a1738098619158" type="OPEN_WIP" size="MEDIUM" width="8em"
+                            buttonFlavour="SECONDARY"
+                            page="test-wip-page" margin="0.25em 1em" v="v1">
+                            <textual>Open</textual>
+                        </operation-button>
+                        <operation-button id="a1738098619159" type="TRANSFER_WIP" size="MEDIUM" width="8em"
+                            buttonFlavour="WARNING" page="test-wip-page" margin="0.25em 1em" v="v1">
+                            <textual>Transfer</textual>
+                        </operation-button>
+                        <operation-button id="a1738098619151" type="ABANDON_WIP" size="MEDIUM" width="8em"
+                            buttonFlavour="DANGER" page="test-wip-page" margin="0.25em 1em" v="v1">
+                            <textual>Abandon</textual>
+                        </operation-button>
+                    </div>
                 </div>
             </folder>
         </div>

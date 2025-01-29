@@ -1,6 +1,6 @@
 <div id="${id!}" class="folder-widget  ${classes}" style="${itemStyles}">
+    ${header}
     <div class="folder-content">
-        ${header}
         <#list values as val>
             <div id="folder-item-${val.workflowId}-${val.wizardId}"  class="folder-item">
                 ${val.html}

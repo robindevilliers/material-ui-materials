@@ -15,9 +15,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 1.5em;
     padding: 0.5em 1em;
     background-color: $headerBackground;
     color: color-yiq($headerBackground);
+    border-bottom: 5px #81b1cc solid;
   }
 
   .tray-body {
@@ -25,7 +27,7 @@
     max-height: 600px;
 
     .tray-form {
-      margin: 0.25em 0;
+      margin: 0.5em 0.5em 0 0;
       border-radius: 10px;
 
       form {

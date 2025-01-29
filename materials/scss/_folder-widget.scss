@@ -8,11 +8,17 @@
   background: $primary;
   padding: 5px;
   margin: 4px;
+  border-radius: 0.5em;
+  flex: 1 0 auto;
+  align-self: stretch;
 
   .header {
     display: flex;
+    justify-content: center;
     align-items: center;
     padding: 0.5em 1em;
+    font-size: 1.5em;
+    border-bottom: 5px #81b1cc solid;
 
     background-color: $headerBackground;
     color: color-yiq($headerBackground);
@@ -25,11 +31,23 @@
     flex: 1 0 auto;
 
     .folder-item {
-      margin: 0.5em 0;
+      margin: 0.5em 0.5em 0 0;
       padding: 0.5em 1em;
       background-color: #e9ecef;
       min-height: 3em;
+
+      &:nth-child(even) {
+        background-color: $alternatingEven;
+        color: color-yiq($alternatingEven);
+      }
+
+      &:nth-child(odd) {
+        background-color: $alternatingOdd;
+        color: color-yiq($alternatingOdd);
+      }
     }
+
+
   }
 
   .folder-no-content {

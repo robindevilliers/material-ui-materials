@@ -5,7 +5,7 @@ import { Substitutions } from '../Substitutions';
 import RenderingEngine from '../RenderingEngine';
 import { RenderError } from '../RenderError';
 
-export default class SpanRenderer implements Renderer {
+export default class ScriptRenderer implements Renderer {
     accept(name: string): boolean {
         return name === 'script';
     }

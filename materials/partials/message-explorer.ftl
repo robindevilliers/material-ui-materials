@@ -119,7 +119,7 @@
                             <input type="hidden" name="messageExplorerId" value="${messageExplorerId}">
                             <input type="hidden" name="pageDocumentId" value="${pageDocumentId}">
                             <span class="message-explorer-button-line">
-                                    <button class="btn btn-primary" id="continue-${val.workflowId}-${val.wizardId}"
+                                    <button class="btn btn-primary" id="message-explorer-item-${val.workflowId}-${val.wizardId}"
                                             onclick="${testMode?string('alert(&quot;Open clicked&quot;); event.preventDefault();','')}"
                                             type="submit">
                                         Open

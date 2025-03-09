@@ -8,13 +8,13 @@
         </textual>
     </paragraph>
     <div v="v1">
-        <button type="CANCEL" size="MEDIUM" buttonFlavour="DEFAULT" required="false"
+        <cancel-button id="cancel-button" size="MEDIUM" buttonFlavour="DEFAULT" required="false"
             margin="0.25em 1em" v="v1">
             <textual>Cancel</textual>
-        </button>
-        <button type="ACCEPT" size="MEDIUM" buttonFlavour="DANGER" required="false"
+        </cancel-button>
+        <accept-button id="accept-button" size="MEDIUM" buttonFlavour="DANGER" required="false"
             margin="0.25em 1em" v="v1">
             <textual>Accept</textual>
-        </button>
+        </accept-button>
     </div>
 </form>

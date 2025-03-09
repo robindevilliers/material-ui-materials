@@ -1,0 +1,25 @@
+<page defnVersion="v1" id="payment-error" version="1" title="Payment Error" description="The Payment Error page."
+    group="public">
+    <div v="v1" orientation="COLUMN">
+        <div v="v1" orientation="ROW" justifyContent="SPACE_AROUND">
+            <div v="v1" orientation="COLUMN" justifyContent="SPACE_AROUND" alignItems="CENTER">
+                <title size="LARGE" v="v1">
+                    <textual>Payment Error.</textual>
+                </title>
+                <paragraph v="v1">
+                    <textual>
+                        Sorry. Something appears to have gone wrong with the payments gateway, please contact your
+                        administrator.
+                    </textual>
+                </paragraph>
+                <div justifyContent="CENTER" v="v1" id="payment-error-message">
+                    <paragraph paragraphStyle="PLAIN" v="v1">
+                        <textual>
+                            <script v="v1" script=".reason"/>
+                        </textual>
+                    </paragraph>
+                </div>
+            </div>
+        </div>
+    </div>
+</page>

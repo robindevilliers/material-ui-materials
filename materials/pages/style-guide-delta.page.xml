@@ -1,5 +1,5 @@
 <page id="style-guide-delta" version="1" active="false" released="false" group="public" title="Style Guide - Delta"
-      description="Style Guide - Reference Delta" defnVersion="v1" orientation="COLUMN">
+    description="Style Guide - Reference Delta" defnVersion="v1" orientation="COLUMN">
     <fake-store>
         <error-summary>
             <validation-rule message="This is an error message" script="true" v="v1">
@@ -86,34 +86,34 @@
                     </textual>
                 </paragraph>
                 <enumeration-input type="STRING" reference="colours" required="false"
-                                   cardinality="SINGLE_SELECT" style="RADIO_CHECKBOX" size="MEDIUM"
-                                   v="v1">
+                    cardinality="SINGLE_SELECT" style="RADIO_CHECKBOX" size="MEDIUM"
+                    v="v1">
                     <textual>Colours</textual>
                     <value label="Red" key="red" default="false" panel="true" v="v1" orientation="COLUMN">
                         <title size="MEDIUM" v="v1">
                             <textual>Something Red</textual>
                         </title>
                         <input type="INPUT" reference="red-text" required="false" size="MEDIUM"
-                               v="v1">
+                            v="v1">
                             <textual>Explanation</textual>
                         </input>
                     </value>
                     <value label="Blue" key="blue" default="false" panel="true" v="v1"
-                           orientation="COLUMN">
+                        orientation="COLUMN">
                         <title size="MEDIUM" v="v1">
                             <textual>Something Blue</textual>
                         </title>
                         <input type="INPUT" reference="blue-text" required="true" size="MEDIUM"
-                               v="v1">
+                            v="v1">
                             <textual>Explanation</textual>
                         </input>
                     </value>
                     <value label="Green" key="green" default="false" panel="false" v="v1"
-                           orientation="COLUMN"/>
+                        orientation="COLUMN"/>
                 </enumeration-input>
                 <enumeration-input type="STRING" reference="sizes" required="false"
-                                   cardinality="MULTIPLE_SELECT" style="RADIO_CHECKBOX" size="MEDIUM"
-                                   v="v1">
+                    cardinality="MULTIPLE_SELECT" style="RADIO_CHECKBOX" size="MEDIUM"
+                    v="v1">
                     <textual>Sizes</textual>
                     <value label="Small" key="small" default="false" v="v1" orientation="COLUMN">
                         <title size="MEDIUM" v="v1">
@@ -127,15 +127,15 @@
                     <value label="Large" key="large" default="false" v="v1"/>
                 </enumeration-input>
                 <enumeration-input type="STRING" reference="car" required="false"
-                                   cardinality="SINGLE_SELECT"
-                                   style="POPOUT_SELECT" size="MEDIUM" v="v1">
+                    cardinality="SINGLE_SELECT"
+                    style="POPOUT_SELECT" size="MEDIUM" v="v1">
                     <textual>Car</textual>
                     <value label="Maserati" key="maserati" default="false" v="v1" orientation="COLUMN">
                         <title size="MEDIUM" v="v1">
                             <textual>Something Maseratti</textual>
                         </title>
                         <input type="INPUT" reference="small-text" required="true" size="MEDIUM"
-                               v="v1">
+                            v="v1">
                             <textual>Explanation</textual>
                         </input>
                     </value>
@@ -144,15 +144,15 @@
                             <textual>Something Ferrari</textual>
                         </title>
                         <input type="INPUT" reference="small-text" required="true" size="MEDIUM"
-                               v="v1">
+                            v="v1">
                             <textual>Explanation</textual>
                         </input>
                     </value>
                     <value label="Mclaren" key="mclaren" default="false" v="v1"/>
                 </enumeration-input>
                 <enumeration-input type="STRING" reference="sports" required="false"
-                                   cardinality="MULTIPLE_SELECT" style="POPOUT_SELECT" size="MEDIUM"
-                                   v="v1">
+                    cardinality="MULTIPLE_SELECT" style="POPOUT_SELECT" size="MEDIUM"
+                    v="v1">
                     <textual>Sports</textual>
                     <value label="Cricket" key="cricket" default="false" v="v1"/>
                     <value label="Football" key="football" default="false" v="v1"/>
@@ -182,13 +182,13 @@
                         <test-value text="false"/>
                     </input>
                     <input type="CHECKBOX" reference="medium2" required="false" size="MEDIUM"
-                           v="v1">
+                        v="v1">
                         <textual>Medium</textual>
                         <test-value text="true"/>
                         <test-value text="false"/>
                     </input>
                     <input type="CHECKBOX" reference="large2" required="false" size="LARGE"
-                           v="v1">
+                        v="v1">
                         <textual>Large</textual>
                         <test-value text="true"/>
                         <test-value text="false"/>
@@ -205,7 +205,7 @@
                 </textual>
             </paragraph>
             <scale scaleType="NUMERICAL" reference="numerical" required="false" size="MEDIUM"
-                   v="v1">
+                v="v1">
                 <textual>Numerical</textual>
                 <test-value text="1"/>
                 <test-value text="2"/>
@@ -219,7 +219,7 @@
                 <test-value text="10"/>
             </scale>
             <scale scaleType="LIKERT" reference="likert" required="false" size="MEDIUM"
-                   v="v1">
+                v="v1">
                 <textual>Likert</textual>
                 <test-value text="strongly-disagree"/>
                 <test-value text="disagree"/>
@@ -228,7 +228,7 @@
                 <test-value text="strongly-agree"/>
             </scale>
             <scale scaleType="FREQUENCY" reference="frequency" required="false" size="MEDIUM"
-                   v="v1">
+                v="v1">
                 <textual>Frequency</textual>
                 <test-value text="very-often"/>
                 <test-value text="often"/>
@@ -237,28 +237,28 @@
                 <test-value text="never"/>
             </scale>
             <scale scaleType="DICHOTOMOUS" reference="dhicotomous" required="false" size="MEDIUM"
-                   v="v1">
+                v="v1">
                 <textual>Dichotomous</textual>
                 <test-value text="yes"/>
                 <test-value text="no"/>
             </scale>
             <scale scaleType="BOOLEAN" reference="boolean" required="false" size="MEDIUM"
-                   v="v1">
+                v="v1">
                 <textual>Boolean</textual>
                 <test-value text="true"/>
                 <test-value text="false"/>
             </scale>
         </div>
         <div justifyContent="SPACE_BETWEEN" alignItems="CENTER" v="v1">
-            <button type="NEXT" size="SMALL" required="false" v="v1">
+            <submit-button id="a123412342134" size="SMALL" required="false" v="v1">
                 <textual>Submit small</textual>
-            </button>
-            <button type="NEXT" size="MEDIUM" buttonFlavour="SUCCESS" required="false" v="v1">
+            </submit-button>
+            <submit-button id="a123412342154" size="MEDIUM" buttonFlavour="SUCCESS" required="false" v="v1">
                 <textual>Submit Medium</textual>
-            </button>
-            <button type="NEXT" size="LARGE" buttonFlavour="PRIMARY" required="false" v="v1">
+            </submit-button>
+            <submit-button id="a123414342134" size="LARGE" buttonFlavour="PRIMARY" required="false" v="v1">
                 <textual>Submit Large</textual>
-            </button>
+            </submit-button>
         </div>
     </fake-store>
 </page>

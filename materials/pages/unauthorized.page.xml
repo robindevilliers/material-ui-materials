@@ -1,3 +1,4 @@
+<?schema version="2"?>
 <page defnVersion="v1" id="unauthorized" version="1" title="Not Found" description="The Not Found page." group="public">
     <div v="v1" orientation="COLUMN">
         <div v="v1" orientation="ROW" justifyContent="SPACE_AROUND">

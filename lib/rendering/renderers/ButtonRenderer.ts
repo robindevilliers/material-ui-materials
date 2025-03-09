@@ -10,7 +10,18 @@ import { RenderError } from '../RenderError';
 
 export default class ButtonRenderer implements Renderer {
     accept(name: string): boolean {
-        return name === 'button';
+        return [
+            'submit-button',
+            'transfer-button',
+            'payment-button',
+            'save-button',
+            'array-append-button',
+            'array-item-replace-button',
+            'array-item-delete-button',
+            'merge-button',
+            'cancel-button',
+            'accept-button'
+        ].includes(name);
     }
 
     render(element: Element, classMappings: Properties, renderingEngine: RenderingEngine): string {
@@ -23,7 +34,7 @@ export default class ButtonRenderer implements Renderer {
         data.id = element.attributes.id;
         data.size = element.attributes.size;
         data.disabled = null;
-        data.name = "_NAME_";
+        data.name = "__button:";
         data.testMode = Store.isTestContext();
         data.runningWizardTest = false;
 

@@ -1,3 +1,4 @@
+<?schema version="2"?>
 <page defnVersion="v1" id="registration-complete" title="Registration Complete" group="public">
     <div v="v1" orientation="COLUMN">
         <div v="v1" orientation="ROW" justifyContent="SPACE_AROUND">

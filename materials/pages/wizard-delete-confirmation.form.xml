@@ -1,3 +1,4 @@
+<?schema version="2"?>
 <form id="delete-confirmation-form" title="Confirm Delete" orientation="COLUMN" v="v1" defnVersion="v1">
     <title size="LARGE" v="v1">
         <textual>Delete Confirmation</textual>

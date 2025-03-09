@@ -47,6 +47,11 @@ function processDirectory(dir: string, suffix: string, baseTemplate: string, new
                 return;
             }
 
+            const index = file.indexOf(suffix);
+            if (index === -1) {
+                return;
+            }
+
             Store.clear();
 
             console.log('processing ' + file);
@@ -54,6 +59,12 @@ function processDirectory(dir: string, suffix: string, baseTemplate: string, new
             const substitutions = plantainSubstitutions[file] || {} as Substitutions;
 
             const dom = parse(fs.readFileSync(path.join(process.env.INIT_CWD!, options.dir, dir, file), 'utf8'));
+
+            if (!dom.processing.schema || !dom.processing.schema.version || Number.isNaN(Number(dom.processing.schema.version))) {
+                console.log('WARNING - xml template does not specify a schema version (needed for maximillian template migration system) : ' +
+                    file);
+                return;
+            }
 
             const renderingEngine = new RenderingEngine(classMappings, substitutions, options.dir);
 
@@ -67,7 +78,8 @@ function processDirectory(dir: string, suffix: string, baseTemplate: string, new
                     title: (dom.root as Element).attributes.title,
                     authenticated: false
                 });
-                fs.writeFileSync(path.join(process.env.INIT_CWD!, options.output, file.replaceAll(suffix, `${newSuffix}.html`)), format(html));
+                const name = file.replaceAll(suffix, `${newSuffix}.html`);
+                fs.writeFileSync(path.join(process.env.INIT_CWD!, options.output, name), format(html));
             } catch (err) {
                 throw new FreemarkerError(`Error processing ftl template 'main.ftl'`, err as Error);
             }
@@ -76,4 +88,5 @@ function processDirectory(dir: string, suffix: string, baseTemplate: string, new
 }
 
 processDirectory('pages', ".page.xml", "main.ftl", "");
-processDirectory('emails', ".email.xml", "email.ftl","-email");
+processDirectory('pages', ".form.xml", "main.ftl", "");
+processDirectory('emails', ".email.xml", "email.ftl", "-email");

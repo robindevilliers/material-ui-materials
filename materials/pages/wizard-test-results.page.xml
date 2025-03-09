@@ -1,3 +1,4 @@
+<?schema version="2"?>
 <page defnVersion="v1" id="wizard-test-results" version="1" title="Wizard Test Results" description="Description"
       group="public"
       orientation="COLUMN">

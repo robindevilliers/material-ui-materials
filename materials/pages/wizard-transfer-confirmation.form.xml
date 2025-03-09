@@ -1,3 +1,4 @@
+<?schema version="2"?>
 <form id="transfer-confirmation-form" title="Confirm Transfer" orientation="COLUMN" v="v1" defnVersion="v1">
     <title size="LARGE" v="v1">
         <textual>Confirm Transfer</textual>

@@ -1,3 +1,4 @@
+<?schema version="2"?>
 <page id="style-guide-main" version="1" active="false" released="false" group="public" title=""
     description="Style Guide Main Page" defnVersion="v1" orientation="COLUMN">
     <jumbotron orientation="COLUMN" v="v1">
@@ -579,6 +580,46 @@
                             there would be no indication to the current user that anything has happened. This page gives
                             some indication. It is also possible that the current user, the Case Principal, will have a
                             Wizard to complete. In this case the Wizard will present after this page.
+                        </textual>
+                    </paragraph>
+                </cell>
+            </row>
+            <row>
+                <cell>
+                    <link type="internal" view="wizard-delete-confirmation.html" openNewWindow="false" v="v1">
+                        <textual>Wizard Delete Confirmation Form</textual>
+                    </link>
+                </cell>
+                <cell>
+                    <paragraph paragraphStyle="PLAIN" v="v1">
+                        <textual>wizard-delete-confirmation.form.xml</textual>
+                    </paragraph>
+                </cell>
+                <cell>
+                    <paragraph paragraphStyle="PLAIN" v="v1">
+                        <textual>
+                            This page is presented immediately when the Array Item Delete Button is clicked within a
+                            wizard.
+                        </textual>
+                    </paragraph>
+                </cell>
+            </row>
+            <row>
+                <cell>
+                    <link type="internal" view="wizard-transfer-confirmation.html" openNewWindow="false" v="v1">
+                        <textual>Wizard Transfer Confirmation Form</textual>
+                    </link>
+                </cell>
+                <cell>
+                    <paragraph paragraphStyle="PLAIN" v="v1">
+                        <textual>wizard-transfer-confirmation.form.xml</textual>
+                    </paragraph>
+                </cell>
+                <cell>
+                    <paragraph paragraphStyle="PLAIN" v="v1">
+                        <textual>
+                            This page is presented immediately when the Transfer Button is clicked within a
+                            wizard.
                         </textual>
                     </paragraph>
                 </cell>

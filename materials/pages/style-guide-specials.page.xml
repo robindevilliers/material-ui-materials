@@ -1,3 +1,4 @@
+<?schema version="2"?>
 <page id="test" version="1" active="false" released="false" group="admin" title="Style Guide - Landing Page"
     description="test"
     defnVersion="v1" orientation="COLUMN">

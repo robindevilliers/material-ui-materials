@@ -1,3 +1,4 @@
+<?schema version="2"?>
 <page defnVersion="v1" id="payment-error" version="1" title="Payment Error" description="The Payment Error page."
     group="public">
     <div v="v1" orientation="COLUMN">

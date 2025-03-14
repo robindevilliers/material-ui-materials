@@ -9,8 +9,8 @@
         </textual>
     </paragraph>
     <div justifyContent="END" v="v1">
-        <continue-operation-button type="CANCEL" buttonFlavour="DEFAULT" margin="0.25em 0.5em" v="v1">
+        <cancel-button id="cancel-button" buttonFlavour="DEFAULT" margin="0.25em 0.5em" v="v1">
             <textual>Continue</textual>
-        </continue-operation-button>
+        </cancel-button>
     </div>
 </page>

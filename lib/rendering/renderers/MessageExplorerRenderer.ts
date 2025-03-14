@@ -25,7 +25,8 @@ export default class MessageExplorerRenderer implements Renderer {
                 const wizard = Store.getWizards().find(w => w.getName() === wizardName && w.getVersion() === wizardVersion);
 
                 const [workflowGroup, workflowName, workflowVersion] = m.getWorkflowId().split(":");
-                const workflow = Store.getWorkflows().find(w => w.getGroup() === workflowGroup && w.getName() === workflowName && w.getVersion() === workflowVersion);
+                const workflow = Store.getWorkflows().find(w => w.getGroup() === workflowGroup && w.getName() === workflowName &&
+                    w.getVersion() === workflowVersion);
 
                 return {
                     id: generateId(),
@@ -52,6 +53,8 @@ export default class MessageExplorerRenderer implements Renderer {
         data.id = element.attributes.id;
         data._csrf = generateId();
         data.bust = generateId();
+        data.messageExplorerId = generateId();
+        data.source = "";
         data.values = values;
         data.wizard = "";
         data.queue = "";

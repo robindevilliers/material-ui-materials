@@ -69,13 +69,514 @@
             <textual>Categories</textual>
         </title>
         <paragraph v="v1">
-            <textual>This section outlines three categories that the rest of the widgets fall into. Any widget that that
+            <textual>This section outlines four categories that the rest of the widgets fall into. Any widget that
                 falls within these categories has all the associated properties for that category. For example, a
                 Textual Widget will have all the properties that a Textual has. It will be explicitly stated in the
                 widget&apos;s description which class the widget possesses. It is perfectly possible for a widget to
                 have more than one of these categories.
             </textual>
         </paragraph>
+
+        <div v="v1" orientation="COLUMN">
+            <title id="button" size="MEDIUM" v="v1">
+                <textual>Button</textual>
+            </title>
+            <paragraph v="v1">
+                <textual>
+                    All Buttons extend off the Button Widget template outlined here, in addition to adding some
+                    additional properties of their own. And they all use the button.ftl template included in the
+                    materials.
+                </textual>
+            </paragraph>
+            <title size="SMALLER" v="v1">
+                <textual>Widget</textual>
+            </title>
+            <paragraph v="v1">
+                <textual>The Button Widget is both a Textual Container and a Flex Item. And has the following additional
+                    properties.
+                </textual>
+            </paragraph>
+            <table v="v1">
+                <row>
+                    <column width="20%">
+                        <textual>Attribute</textual>
+                    </column>
+                    <column>
+                        <textual>Description</textual>
+                    </column>
+                    <column width="25%">
+                        <textual>Permitted values/Examples</textual>
+                    </column>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>id</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>The id of the button.</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>reference</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>size</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>The size of the button.</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>LARGE, MEDIUM, SMALL</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>buttonFlavour</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>The colouring of the Button Widget.</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>DEFAULT, PRIMARY, INFO, WARNING, DANGER, SUCCESS, MUTED, BLACK, WHITE</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>disableScript</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>This attribute contains a Plantain script that will determine if the widget should
+                                appear disabled or not.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>script : boolean</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>hiddenScript</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>This attribute contains a Plantain script that will determine if the widget should
+                                appear hidden or not.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>script : boolean</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+            </table>
+            <title size="SMALLER" v="v1">
+                <textual>Template</textual>
+            </title>
+            <paragraph v="v1">
+                <textual>The template for the widget is the button.ftl file. It takes the following tokens.</textual>
+            </paragraph>
+            <table v="v1">
+                <row>
+                    <column width="20%">
+                        <textual>Attribute</textual>
+                    </column>
+                    <column>
+                        <textual>Description</textual>
+                    </column>
+                    <column width="25%">
+                        <textual>Type</textual>
+                    </column>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>action</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>The action attribute contains the action of the form that must be rendered when
+                                the button is rendered as a form.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>string</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>classes</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>A list of classes that should be applied.</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>class list</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>content</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>The content of the widget.</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>html</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>disabled</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>The disabled token indicates if the button should be disabled or not.</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>boolean</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>formRequired</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>The formRequired value specifies if this button must be rendered as a form. The
+                                button template must support both form rendering and non-form rendering.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>boolean</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>id</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>An id for the button. This must be included in order for the button functionality
+                                to work.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>string</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>itemStyles</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>The css styles that should be applied in order to support Flex Item definitions.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>css</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>name</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>A name for the button. This must be included in order for the button functionality
+                                to work.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>string</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>payload</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>The payload value must be rendered as a hidden field when the button is rendered as
+                                a form.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>string</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>size</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>The size of the widget.</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>SMALL, MEDIUM, LARGE</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>source</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>The source value specifies the source definition that specified the button. This
+                                value must be supplied as a hidden field when the button is rendered as a form.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>string</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>testMode</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>The testMode token indicates if the widget should render in test mode, which
+                                typically disables any button or link clicks.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>boolean</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>textualClasses</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>The textualClasses value contains the classes that affect the textual
+                                representation of the button. These are the classes generated from the Textual
+                                attributes on the button.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>string</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>textualStyles</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>The textualStyles value contains the textual styles that affect the textual
+                                representation of the button. These are the styles generated from the Textual
+                                attributes on the button.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>string</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>type</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>The type value specifies what type of button this button is during render time.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>AbandonWipButton, AcceptButton, ArrayAppendButton,
+                                ArrayItemDeleteButton, ArrayItemReplaceButton, CancelButton, InitiateWorkflowButton,
+                                MergeButton, OpenWipButton, OpenWipPageButton, PaymentButton, SaveButton, SubmitButton,
+                                TransferWipButton
+                            </textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>_csrf</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>The _csrf property specifies that the csrf token that should be used when rendering
+                                the form for the button. This value must be supplied as a hidden field.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>string</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+            </table>
+            <paragraph v="v1">
+                <textual>The following classes are produced for the Button Widget.</textual>
+            </paragraph>
+            <table v="v1">
+                <row>
+                    <column width="20%">
+                        <textual>Name</textual>
+                    </column>
+                    <column>
+                        <textual>Description</textual>
+                    </column>
+                    <column width="25%">
+                        <textual>Values</textual>
+                    </column>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>Button Flavour</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>Given that the flavour has been configured on the widget, one of these classes will
+                                be produced.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>btn-default, btn-primary, btn-secondary, btn-info, btn-warning, btn-danger,
+                                btn-success, btn-muted, btn-black, btn-white
+                            </textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>Button Size</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>Given that the size has been configured on the widget, one of these classes will be
+                                produced.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>btn-large, btn-medium, btn-small</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+            </table>
+        </div>
         <div v="v1" orientation="COLUMN">
             <title id="flex-item" size="MEDIUM" v="v1">
                 <textual>Flex Item</textual>
@@ -959,8 +1460,6 @@
                 </row>
             </table>
         </div>
-
-
         <div v="v1" orientation="COLUMN">
             <title id="textual" size="MEDIUM" v="v1">
                 <textual>Textual</textual>
@@ -1134,8 +1633,6 @@
                 </row>
             </table>
         </div>
-
-
     </div>
     <div v="v1" orientation="COLUMN">
         <title id="widgets" size="LARGER" v="v1">
@@ -1148,6 +1645,39 @@
                 that are available to the template for the widget for substitution.
             </textual>
         </paragraph>
+        <div v="v1" orientation="COLUMN">
+            <title id="abandon-wip-button" size="MEDIUM" v="v1">
+                <textual>Abandon Wip Button</textual>
+            </title>
+            <paragraph v="v1">
+                <textual>The Abandon Wip Button is offered within a Wip Page, or Folder item, and it offers the feature
+                    of removing the current Wip from the queue. This essentially means it will no longer be presented to
+                    anyone for completion.
+                </textual>
+            </paragraph>
+            <title size="SMALLER" v="v1">
+                <textual>Widget</textual>
+            </title>
+            <paragraph v="v1">
+                <textual>The Abandon Wip Button Widget extends off the Button template.</textual>
+            </paragraph>
+        </div>
+        <div v="v1" orientation="COLUMN">
+            <title id="accept-button" size="MEDIUM" v="v1">
+                <textual>Accept Button</textual>
+            </title>
+            <paragraph v="v1">
+                <textual>The Accept Button is offered whenever a confirmation action is required as a part of some other
+                    operation.
+                </textual>
+            </paragraph>
+            <title size="SMALLER" v="v1">
+                <textual>Widget</textual>
+            </title>
+            <paragraph v="v1">
+                <textual>The Accept Button Widget extends off the Button template.</textual>
+            </paragraph>
+        </div>
         <div v="v1" orientation="COLUMN">
             <title id="accordion" size="MEDIUM" v="v1">
                 <textual>Accordion</textual>
@@ -1759,6 +2289,154 @@
             </table>
         </div>
         <div v="v1" orientation="COLUMN">
+            <title id="array-append-button" size="MEDIUM" v="v1">
+                <textual>Array Append Button</textual>
+            </title>
+            <paragraph v="v1">
+                <textual>The Array Append Button is offered whenever a confirmation action is required as a part of some
+                    other operation.
+                </textual>
+            </paragraph>
+            <title size="SMALLER" v="v1">
+                <textual>Widget</textual>
+            </title>
+            <paragraph v="v1">
+                <textual>The Array Append Button Widget extends off the Button template.</textual>
+            </paragraph>
+            <table v="v1">
+                <row>
+                    <column width="20%">
+                        <textual>Attribute</textual>
+                    </column>
+                    <column>
+                        <textual>Description</textual>
+                    </column>
+                    <column width="25%">
+                        <textual>Permitted values/Examples</textual>
+                    </column>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>reference</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>Specifies the reference or name used when including the array within the context of
+                                the current wizard.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>reference</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>required</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>Specifies if the referenced array must contain at least one item.</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>boolean</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>wizard</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>Specifies the sub wizard that is presented.</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>string</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+            </table>
+        </div>
+        <div v="v1" orientation="COLUMN">
+            <title id="array-item-delete-button" size="MEDIUM" v="v1">
+                <textual>Array Item Delete Button</textual>
+            </title>
+            <paragraph v="v1">
+                <textual>The Array Item Delete Button is offered whenever a confirmation action is required as a part of
+                    some other
+                    operation.
+                </textual>
+            </paragraph>
+            <title size="SMALLER" v="v1">
+                <textual>Widget</textual>
+            </title>
+            <paragraph v="v1">
+                <textual>The Array Item Delete Button Widget extends off the Button template.</textual>
+            </paragraph>
+        </div>
+        <div v="v1" orientation="COLUMN">
+            <title id="array-item-replace-button" size="MEDIUM" v="v1">
+                <textual>Array Item Replace Button</textual>
+            </title>
+            <paragraph v="v1">
+                <textual>The Array Item Replace Button is offered whenever a confirmation action is required as a part
+                    of some other
+                    operation.
+                </textual>
+            </paragraph>
+            <title size="SMALLER" v="v1">
+                <textual>Widget</textual>
+            </title>
+            <paragraph v="v1">
+                <textual>The Array Item Replace Button Widget extends off the Button template.</textual>
+            </paragraph>
+            <table v="v1">
+                <row>
+                    <column width="20%">
+                        <textual>Attribute</textual>
+                    </column>
+                    <column>
+                        <textual>Description</textual>
+                    </column>
+                    <column width="25%">
+                        <textual>Permitted values/Examples</textual>
+                    </column>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>wizard</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>Specifies the sub wizard that is presented.</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>string</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+            </table>
+        </div>
+        <div v="v1" orientation="COLUMN">
             <title id="back-link" size="MEDIUM" v="v1">
                 <textual>Back Link</textual>
             </title>
@@ -2083,425 +2761,20 @@
             </paragraph>
         </div>
         <div v="v1" orientation="COLUMN">
-            <title id="button" size="MEDIUM" v="v1">
-                <textual>Button</textual>
+            <title id="cancel-button" size="MEDIUM" v="v1">
+                <textual>Cancel Button</textual>
             </title>
             <paragraph v="v1">
-                <textual>The Button Widget specifies a button for presentation on a web page as a part of a Form. This
-                    element is only valid within a Wizard. It should not be part of any predefined page. Buttons define
-                    the (submit) buttons on all pages within a Wizard that direct the user forward in the journey.
+                <textual>The Cancel Button is offered whenever a cancel action is required as a part of some other
+                    operation.
                 </textual>
-            </paragraph>
-            <paragraph v="v1">
-                <textual>The Button Widget can be viewed on the Style Guide Delta page.</textual>
             </paragraph>
             <title size="SMALLER" v="v1">
                 <textual>Widget</textual>
             </title>
             <paragraph v="v1">
-                <textual>The Button Widget is both a Textual Container and a Flex Item. And has the following additional
-                    properties.
-                </textual>
+                <textual>The Cancel Button Widget extends off the Button template.</textual>
             </paragraph>
-            <table v="v1">
-                <row>
-                    <column width="20%">
-                        <textual>Attribute</textual>
-                    </column>
-                    <column>
-                        <textual>Description</textual>
-                    </column>
-                    <column width="25%">
-                        <textual>Permitted values/Examples</textual>
-                    </column>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>type</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>The type of the Button. There are a number of types, and they are all defined and
-                                controlled by the Admin Console. From the perspective of the Materials, the Button
-                                Widget needs to be styled, but because it cannot be included in any predefined page,
-                                apart from the Style Guides, the actual meaning of the attribute is not required.
-                            </textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>N/A</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>reference</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>Similar to type, the actual meaning of this is not required, by the Materials.
-                            </textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>N/A</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>wizard</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>Similar to type, the actual meaning of this is not required, by the Materials.
-                            </textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>N/A</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>size</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>The size of the button.</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>LARGE, MEDIUM, SMALL</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>index</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>Similar to type, the actual meaning of this is not required, by the Materials.
-                            </textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>N/A</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>buttonFlavour</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>The colouring of the Button Widget.</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>DEFAULT, PRIMARY, INFO, WARNING, DANGER, SUCCESS, MUTED, BLACK, WHITE</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>disableScript</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>This attribute contains a Plantain script that will determine if the widget should
-                                appear disabled or not.
-                            </textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>script : boolean</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>hiddenScript</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>This attribute contains a Plantain script that will determine if the widget should
-                                appear hidden or not.
-                            </textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>script : boolean</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-            </table>
-            <title size="SMALLER" v="v1">
-                <textual>Template</textual>
-            </title>
-            <paragraph v="v1">
-                <textual>The template for the widget is the button.ftl file. It takes the following tokens.</textual>
-            </paragraph>
-            <table v="v1">
-                <row>
-                    <column width="20%">
-                        <textual>Attribute</textual>
-                    </column>
-                    <column>
-                        <textual>Description</textual>
-                    </column>
-                    <column width="25%">
-                        <textual>Type</textual>
-                    </column>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>id</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>A id for the button. This must be included in order for some of the button
-                                functionality to work.
-                            </textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>string</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>name</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>A name for the button. This must be included in order for some of the button
-                                functionality to work.
-                            </textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>string</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>classes</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>A list of classes that should be applied.</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>class list</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>size</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>The size of the widget.</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>SMALL, MEDIUM, LARGE</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>itemStyles</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>The css styles that should be applied in order to support Flex Item definitions.
-                            </textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>css</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>content</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>The content of the widget.</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>html</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>testMode</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>The testMode token indicates if the widget should render in test mode, which
-                                typically disables any button or link clicks.
-                            </textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>boolean</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>runningWizardTest</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>The runningWizardTest token indicates if the widget is currently being rendered as
-                                a part of a Wizard test. This situation matters because when we are running a Page test,
-                                we want the button to be disabled, but when we run in Wizard test mode, we want the
-                                button to work.
-                            </textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>boolean</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>disabled</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>The disabled token indicates if the button should be disabled or not.</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>boolean</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-            </table>
-            <paragraph v="v1">
-                <textual>The following classes are produced for the Button Widget.</textual>
-            </paragraph>
-            <table v="v1">
-                <row>
-                    <column width="20%">
-                        <textual>Name</textual>
-                    </column>
-                    <column>
-                        <textual>Description</textual>
-                    </column>
-                    <column width="25%">
-                        <textual>Values</textual>
-                    </column>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>Button Flavour</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>Given that the flavour has been configured on the widget, one of these classes will
-                                be produced.
-                            </textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>btn-default, btn-primary, btn-secondary, btn-info, btn-warning, btn-danger,
-                                btn-success, btn-muted, btn-black, btn-white
-                            </textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>Button Size</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>Given that the size has been configured on the widget, one of these classes will be
-                                produced.
-                            </textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>btn-large, btn-medium, btn-small</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-            </table>
         </div>
         <div v="v1" orientation="COLUMN">
             <title id="card" size="MEDIUM" v="v1">
@@ -4540,399 +4813,6 @@
                     <cell>
                         <paragraph v="v1">
                             <textual>url</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-            </table>
-        </div>
-        <div v="v1" orientation="COLUMN">
-            <title id="continue-operation-button" size="MEDIUM" v="v1">
-                <textual>Continue Operation Button</textual>
-            </title>
-            <paragraph v="v1">
-                <textual>The Continue Operation Button is presented to the user of the admin console through its
-                    derivatives; the Accept Button and Cancel Button. These buttons are only presented in WIP pages.
-                    They are used to indicate default responses to a ongoing operation, such as Open Wip, Transfer Wip,
-                    or Resume etc.
-                </textual>
-            </paragraph>
-            <title size="SMALLER" v="v1">
-                <textual>Widget</textual>
-            </title>
-            <paragraph v="v1">
-                <textual>The Button Widget is both a Textual Container and a Flex Item. And has the following additional
-                    properties.
-                </textual>
-            </paragraph>
-            <table v="v1">
-                <row>
-                    <column width="20%">
-                        <textual>Attribute</textual>
-                    </column>
-                    <column>
-                        <textual>Description</textual>
-                    </column>
-                    <column width="25%">
-                        <textual>Permitted values/Examples</textual>
-                    </column>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>id</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>The id of the element.</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>accept-button, cancel-button</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>type</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>The type of the Continue Operation Button.</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>ACCEPT, CANCEL</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>size</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>The size of the button.</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>LARGE, MEDIUM, SMALL</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>buttonFlavour</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>The colouring of the Continue Operation Button.</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>DEFAULT, PRIMARY, INFO, WARNING, DANGER, SUCCESS, MUTED, BLACK, WHITE</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-            </table>
-            <title size="SMALLER" v="v1">
-                <textual>Template</textual>
-            </title>
-            <paragraph v="v1">
-                <textual>The template for the widget is the continue-operation-button.ftl file. It takes the following
-                    tokens.
-                </textual>
-            </paragraph>
-            <table v="v1">
-                <row>
-                    <column width="20%">
-                        <textual>Attribute</textual>
-                    </column>
-                    <column>
-                        <textual>Description</textual>
-                    </column>
-                    <column width="25%">
-                        <textual>Type</textual>
-                    </column>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>id</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>An id for the button. This must be included in order for some of the button
-                                functionality to work.
-                            </textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>string</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>name</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>A name for the button. This must be included in order for some of the button
-                                functionality to work.
-                            </textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>string</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>type</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>A type for the button. This must be included.</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>string</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>action</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>A action for the button form. This must be included.</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>string</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>_csrf</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>The token for csrf.</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>string</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>classes</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>A list of classes that should be applied.</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>class list</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>size</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>The size of the widget.</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>SMALL, MEDIUM, LARGE</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>itemStyles</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>The css styles that should be applied in order to support Flex Item definitions.
-                            </textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>css</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>content</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>The content of the widget.</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>html</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>testMode</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>The testMode token indicates if the widget should render in test mode, which
-                                typically disables any button or link clicks.
-                            </textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>boolean</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>textualClasses</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>These are the classes produced from the Textual definition. They should be applied
-                                to the element that is going to render the textual content.
-                            </textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>class list</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>textualStyles</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>These are the styles that are produced from the Textual definition. They should be
-                                applied to the element that renders the textual content.
-                            </textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>css</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-            </table>
-            <paragraph v="v1">
-                <textual>The following classes are produced for the Continue Operation Button.</textual>
-            </paragraph>
-            <table v="v1">
-                <row>
-                    <column width="20%">
-                        <textual>Name</textual>
-                    </column>
-                    <column>
-                        <textual>Description</textual>
-                    </column>
-                    <column width="25%">
-                        <textual>Values</textual>
-                    </column>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>Button Flavour</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>Given that the flavour has been configured on the widget, one of these classes will
-                                be produced.
-                            </textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>btn-default, btn-primary, btn-secondary, btn-info, btn-warning, btn-danger,
-                                btn-success, btn-muted, btn-black, btn-white
-                            </textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>Button Size</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>Given that the size has been configured on the widget, one of these classes will be
-                                produced.
-                            </textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>btn-large, btn-medium, btn-small</textual>
                         </paragraph>
                     </cell>
                 </row>
@@ -7195,6 +7075,72 @@
                 </row>
             </table>
         </div>
+        <div v="v1" orientation="COLUMN">
+            <title id="initiate-workflow-button" size="MEDIUM" v="v1">
+                <textual>Initiate Workflow Button</textual>
+            </title>
+            <paragraph v="v1">
+                <textual>The Initiate Workflow Button is offers the facility to initiate a workflow.
+                </textual>
+            </paragraph>
+            <title size="SMALLER" v="v1">
+                <textual>Widget</textual>
+            </title>
+            <paragraph v="v1">
+                <textual>The Initiate Workflow Button Widget extends off the Button template.</textual>
+            </paragraph>
+            <table v="v1">
+                <row>
+                    <column width="20%">
+                        <textual>Attribute</textual>
+                    </column>
+                    <column>
+                        <textual>Description</textual>
+                    </column>
+                    <column width="25%">
+                        <textual>Permitted values/Examples</textual>
+                    </column>
+                </row>
+
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>showCasePrincipalPicker</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>Specifies that the Show Case Principal Picker page should be presented in order to
+                                select the case principal when initiating the workflow.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>boolean</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>workflow</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>Specifies the Workflow to initiate.</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>boolean</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+            </table>
+        </div>
+
         <div v="v1" orientation="COLUMN">
             <title id="input" size="MEDIUM" v="v1">
                 <textual>Input</textual>
@@ -9622,6 +9568,93 @@
                 </row>
             </table>
         </div>
+
+
+        <div v="v1" orientation="COLUMN">
+            <title id="merge-button" size="MEDIUM" v="v1">
+                <textual>Merge Button</textual>
+            </title>
+            <paragraph v="v1">
+                <textual>The Merge Button will execute a sub wizard within the context of an existing wizard.
+                </textual>
+            </paragraph>
+            <title size="SMALLER" v="v1">
+                <textual>Widget</textual>
+            </title>
+            <paragraph v="v1">
+                <textual>The Merge Button Widget extends off the Button template.</textual>
+            </paragraph>
+            <table v="v1">
+                <row>
+                    <column width="20%">
+                        <textual>Attribute</textual>
+                    </column>
+                    <column>
+                        <textual>Description</textual>
+                    </column>
+                    <column width="25%">
+                        <textual>Permitted values/Examples</textual>
+                    </column>
+                </row>
+
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>reference</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>Specifies the reference or name used when including the result from the sub wizard
+                                within the context of the current wizard.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>reference</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>required</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>Specifies if the sub wizard must be supplied.</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>boolean</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>wizard</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>Specifies the sub wizard that is presented.</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>string</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+            </table>
+        </div>
+
         <div v="v1" orientation="COLUMN">
             <title id="message-explorer" size="MEDIUM" v="v1">
                 <textual>Message Explorer</textual>
@@ -10039,6 +10072,25 @@
                 <row>
                     <cell>
                         <paragraph v="v1">
+                            <textual>source</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>The source value should be included in the form as a hidden field. It indicates
+                                the source page that the Message Explorer is configured within.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>string</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
                             <textual>endIndex</textual>
                         </paragraph>
                     </cell>
@@ -10082,25 +10134,6 @@
                         <paragraph v="v1">
                             <textual>A unique identifier that identifies the Message Explorer widget within the page. It
                                 is necessary to include this id in the form submission when openiing the Wip.
-                            </textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>id</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>pageDocumentId</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>The id of the page that the Message Explorer is composed within. It is necessary to
-                                submit this id to the operations endpoint when opening the Wip.
                             </textual>
                         </paragraph>
                     </cell>
@@ -10627,26 +10660,37 @@
                 </row>
             </table>
         </div>
+
         <div v="v1" orientation="COLUMN">
-            <title id="operation-button" size="MEDIUM" v="v1">
-                <textual>Operation Button</textual>
+            <title id="open-wip-button" size="MEDIUM" v="v1">
+                <textual>Open Wip Button</textual>
             </title>
             <paragraph v="v1">
-                <textual>The Operation Button is presented to the user of the admin console through its
-                    derivatives; the Transfer Button, Open Wip Page Button, Open Wip Button, and Abandon Wip Button
-                    These buttons are presented in WIP pages and in Folder Items. The Transfer Button will transfer
-                    a Wip to a different queue. Open Wip Page will open a Wip Page. Open Wip will load the wizard.
-                    Abandon Wip will cancel the wizard, and put the Case into a non-conclusive state.
+                <textual>The Open Wip Button will open the Wip represented within a Tray, or Folder, or Wip Page, and
+                    present the wizard to the user.
                 </textual>
             </paragraph>
             <title size="SMALLER" v="v1">
                 <textual>Widget</textual>
             </title>
             <paragraph v="v1">
-                <textual>The Operation Button Widget is both a Textual Container and a Flex Item. And has the following
-                    additional
-                    properties.
+                <textual>The Open Wip Button Widget extends off the Button template.</textual>
+            </paragraph>
+        </div>
+        <div v="v1" orientation="COLUMN">
+            <title id="open-wip-page-button" size="MEDIUM" v="v1">
+                <textual>Open Wip Page Button</textual>
+            </title>
+            <paragraph v="v1">
+                <textual>The Open Wip Page Button will open the referenced Wip Page using the Wip referenced in a Tray,
+                    or Folder.
                 </textual>
+            </paragraph>
+            <title size="SMALLER" v="v1">
+                <textual>Widget</textual>
+            </title>
+            <paragraph v="v1">
+                <textual>The Open Wip Page Button Widget extends off the Button template.</textual>
             </paragraph>
             <table v="v1">
                 <row>
@@ -10663,481 +10707,18 @@
                 <row>
                     <cell>
                         <paragraph v="v1">
-                            <textual>id</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>The id of the element.</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>accept-button, cancel-button</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>type</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>The type of the Operation Button.</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>INITIATE_WORKFLOW, TRANSFER_WIP, OPEN_WIP, OPEN_WIP_PAGE, ABANDON_WIP</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>size</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>The size attribute specifies the size of the button.</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>LARGE, MEDIUM, SMALL</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>buttonFlavour</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>The colouring of the button.</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>DEFAULT, PRIMARY, INFO, WARNING, DANGER, SUCCESS, MUTED, BLACK, WHITE</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>workflow</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>The workflow attribute specifies the name of the workflow that should be initiated.
-                                The name comprises three parts in this format group:name:version. This is only
-                                applicable to the Initiate Workflow Button.
-                            </textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>public:register:2</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>showCasePrincipalPicker</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>Set the showCasePrincipalPicker attribute if the user should be presented with the
-                                Case Principal Picker Page after clicking this button. That page allows the current user
-                                to assign the initiated workflow to another user as the Case Principal. This is only
-                                applicable to the Initiate Workflow Button.
-                            </textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>true, false</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>queue</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>The queue attribute indicates the queue to transfer the Wip to. This is only
-                                applicable to the Transfer Button.
-                            </textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>processing</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>group</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>The group attribute indicates the group to transfer the Wip to. This is only
-                                applicable to the Transfer Button.
-                            </textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>authenticated</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-
-                <row>
-                    <cell>
-                        <paragraph v="v1">
                             <textual>page</textual>
                         </paragraph>
                     </cell>
                     <cell>
                         <paragraph v="v1">
-                            <textual>The page attribute indicates the Wip page to load. This is only
-                                applicable to the Open Wip Page Button.
+                            <textual>Specifies the page that is presented when the button is clicked.
                             </textual>
                         </paragraph>
                     </cell>
                     <cell>
                         <paragraph v="v1">
                             <textual>string</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-            </table>
-            <title size="SMALLER" v="v1">
-                <textual>Template</textual>
-            </title>
-            <paragraph v="v1">
-                <textual>The template for the widget is the operation-button.ftl file. It takes the following
-                    tokens.
-                </textual>
-            </paragraph>
-
-            <table v="v1">
-                <row>
-                    <column width="20%">
-                        <textual>Attribute</textual>
-                    </column>
-                    <column>
-                        <textual>Description</textual>
-                    </column>
-                    <column width="25%">
-                        <textual>Type</textual>
-                    </column>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>id</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>An id for the button. This must be included in order for some of the button
-                                functionality to work.
-                            </textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>string</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>action</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>A action for the button form. This must be included.</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>string</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>_csrf</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>The token for csrf.</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>string</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>classes</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>A list of classes that should be applied.</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>class list</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>size</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>The size of the widget.</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>SMALL, MEDIUM, LARGE</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>itemStyles</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>The css styles that should be applied in order to support Flex Item definitions.
-                            </textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>css</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>content</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>The content of the widget.</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>html</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>testMode</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>The testMode token indicates if the widget should render in test mode, which
-                                typically disables any button or link clicks.
-                            </textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>boolean</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>textualClasses</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>These are the classes produced from the Textual definition. They should be applied
-                                to the element that is going to render the textual content.
-                            </textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>class list</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>textualStyles</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>These are the styles that are produced from the Textual definition. They should be
-                                applied to the element that renders the textual content.
-                            </textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>css</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>pageDocumentId</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>This is the id of the page that contains the Operation Button, and is used to
-                                obtain the button&apos;s configuration values.
-                            </textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>css</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>buttonId</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>The buttonId is the id of the button within the Wip Page, so that the processor
-                                can find the button in order to retrieve config values.
-                            </textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>css</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>payload</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>The payload is a base64 encoded json document that contains whatever the button
-                                needs in order to process. It should always be included.
-                            </textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>css</textual>
-                        </paragraph>
-                    </cell>
-                </row>
-            </table>
-            <paragraph v="v1">
-                <textual>The following classes are produced for the Operation Button.</textual>
-            </paragraph>
-            <table v="v1">
-                <row>
-                    <column width="20%">
-                        <textual>Name</textual>
-                    </column>
-                    <column>
-                        <textual>Description</textual>
-                    </column>
-                    <column width="25%">
-                        <textual>Values</textual>
-                    </column>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>Button Flavour</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>Given that the flavour has been configured on the widget, one of these classes will
-                                be produced.
-                            </textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>btn-default, btn-primary, btn-secondary, btn-info, btn-warning, btn-danger,
-                                btn-success, btn-muted, btn-black, btn-white
-                            </textual>
-                        </paragraph>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>Button Size</textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>Given that the size has been configured on the widget, one of these classes will be
-                                produced.
-                            </textual>
-                        </paragraph>
-                    </cell>
-                    <cell>
-                        <paragraph v="v1">
-                            <textual>btn-large, btn-medium, btn-small</textual>
                         </paragraph>
                     </cell>
                 </row>
@@ -11911,6 +11492,123 @@
                 </row>
             </table>
         </div>
+
+
+        <div v="v1" orientation="COLUMN">
+            <title id="payment-button" size="MEDIUM" v="v1">
+                <textual>Payment Button</textual>
+            </title>
+            <paragraph v="v1">
+                <textual>The Payment Button will route the current wizard to the payment provider in order to setup a
+                    payment or direct debit mandate.
+                </textual>
+            </paragraph>
+            <title size="SMALLER" v="v1">
+                <textual>Widget</textual>
+            </title>
+            <paragraph v="v1">
+                <textual>The Payment Button Widget extends off the Button template.</textual>
+            </paragraph>
+            <table v="v1">
+                <row>
+                    <column width="20%">
+                        <textual>Attribute</textual>
+                    </column>
+                    <column>
+                        <textual>Description</textual>
+                    </column>
+                    <column width="25%">
+                        <textual>Permitted values/Examples</textual>
+                    </column>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>directDebitMandate</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>Specifies that the payment flow should setup a direct debit mandate.</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>boolean</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>immediatePayment</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>Specifies that the payment flow should execute an immediate payment.</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>boolean</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>paymentCurrency</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>Specifies the currency for the payment or direct debit mandate.</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>Three letter currency code: GBP, USD etc</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>paymentAmount</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>Specifies the amount in pence, or cents that should be taken.</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>number</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>paymentDescription</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>Specifies the description included in the payment flow for the payment.</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>string</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+            </table>
+        </div>
+
         <div v="v1" orientation="COLUMN">
             <title id="progress-bar" size="MEDIUM" v="v1">
                 <textual>Progress Bar</textual>
@@ -13029,6 +12727,25 @@
                 </row>
             </table>
         </div>
+
+        <div v="v1" orientation="COLUMN">
+            <title id="save-button" size="MEDIUM" v="v1">
+                <textual>Save Button</textual>
+            </title>
+            <paragraph v="v1">
+                <textual>The Save Button will submit the current form and then return to the current page rather than
+                    routing. This button is useful for validating the current page, and saving its contents so that
+                    a user can return later.
+                </textual>
+            </paragraph>
+            <title size="SMALLER" v="v1">
+                <textual>Widget</textual>
+            </title>
+            <paragraph v="v1">
+                <textual>The Save Button Widget extends off the Button template.</textual>
+            </paragraph>
+        </div>
+
         <div v="v1" orientation="COLUMN">
             <title id="scale" size="MEDIUM" v="v1">
                 <textual>Scale</textual>
@@ -13919,6 +13636,24 @@
                 </row>
             </table>
         </div>
+
+        <div v="v1" orientation="COLUMN">
+            <title id="submit-button" size="MEDIUM" v="v1">
+                <textual>Submit Button</textual>
+            </title>
+            <paragraph v="v1">
+                <textual>The Submit Button will submit the current form for validation and follow any routing rules. If
+                    no routing is required, the wizard will close.
+                </textual>
+            </paragraph>
+            <title size="SMALLER" v="v1">
+                <textual>Widget</textual>
+            </title>
+            <paragraph v="v1">
+                <textual>The Submit Button Widget extends off the Button template.</textual>
+            </paragraph>
+        </div>
+
         <div v="v1" orientation="COLUMN">
             <title id="switch" size="MEDIUM" v="v1">
                 <textual>Switch</textual>
@@ -14879,6 +14614,71 @@
                 </row>
             </table>
         </div>
+
+        <div v="v1" orientation="COLUMN">
+            <title id="transfer-wip-button" size="MEDIUM" v="v1">
+                <textual>Transfer Wip Button</textual>
+            </title>
+            <paragraph v="v1">
+                <textual>The Transfer Wip Button will move the current wip from the current queue into a another queue
+                    with the specified group.
+                </textual>
+            </paragraph>
+            <title size="SMALLER" v="v1">
+                <textual>Widget</textual>
+            </title>
+            <paragraph v="v1">
+                <textual>The Transfer Wip Button Widget extends off the Button template.</textual>
+            </paragraph>
+            <table v="v1">
+                <row>
+                    <column width="20%">
+                        <textual>Attribute</textual>
+                    </column>
+                    <column>
+                        <textual>Description</textual>
+                    </column>
+                    <column width="25%">
+                        <textual>Permitted values/Examples</textual>
+                    </column>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>group</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>Specifies the group used when transferring the current wip into the new queue.
+                            </textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>string</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>queue</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>Specifies the queue to transfer the wip to.</textual>
+                        </paragraph>
+                    </cell>
+                    <cell>
+                        <paragraph v="v1">
+                            <textual>string</textual>
+                        </paragraph>
+                    </cell>
+                </row>
+            </table>
+        </div>
         <div v="v1" orientation="COLUMN">
             <title id="tray" size="MEDIUM" v="v1">
                 <textual>Tray</textual>
@@ -15131,12 +14931,14 @@
                 <row>
                     <cell>
                         <paragraph v="v1">
-                            <textual>pageDocumentId</textual>
+                            <textual>source</textual>
                         </paragraph>
                     </cell>
                     <cell>
                         <paragraph v="v1">
-                            <textual>The id of the page that the widget is a part of.</textual>
+                            <textual>The source value should be included in the form as a hidden field. It indicates
+                                the source page that the Tray is configured within.
+                            </textual>
                         </paragraph>
                     </cell>
                     <cell>

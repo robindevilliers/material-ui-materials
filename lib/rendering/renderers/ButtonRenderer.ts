@@ -12,13 +12,16 @@ export default class ButtonRenderer implements Renderer {
     accept(name: string): boolean {
         return [
             'submit-button',
-            'transfer-button',
+            'transfer-wip-button',
+            'abandon-wip-button',
             'payment-button',
             'save-button',
             'array-append-button',
             'array-item-replace-button',
             'array-item-delete-button',
             'merge-button',
+            'open-wip-button',
+            'open-wip-page-button',
             'cancel-button',
             'accept-button'
         ].includes(name);

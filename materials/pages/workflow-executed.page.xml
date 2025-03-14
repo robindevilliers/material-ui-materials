@@ -3,7 +3,7 @@
 
     <jumbotron v="v1" orientation="COLUMN">
         <title size="LARGE" v="v1">
-            <textual fontFlavour="WHITE" >Workflow Executed</textual>
+            <textual fontFlavour="WHITE">Workflow Executed</textual>
         </title>
 
         <paragraph v="v1">
@@ -12,9 +12,9 @@
         </paragraph>
 
         <div justifyContent="END" v="v1">
-            <continue-operation-button type="ACCEPT" buttonFlavour="WHITE" margin="0.25em 0.5em" v="v1">
+            <accept-button id="accept-button" buttonFlavour="WHITE" margin="0.25em 0.5em" v="v1">
                 <textual>Close</textual>
-            </continue-operation-button>
+            </accept-button>
         </div>
     </jumbotron>
 </page>

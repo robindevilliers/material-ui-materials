@@ -36,7 +36,6 @@ import InputRenderer from './InputRenderer';
 import EnumerationInputRenderer from './EnumerationInputRenderer';
 import ValueRenderer from './ValueRenderer';
 import ScaleRenderer from './ScaleRenderer';
-import ButtonRenderer from './ButtonRenderer';
 import JumbotronRenderer from './JumbotronRenderer';
 import CarouselRenderer from './CarouselRenderer';
 import CarouselPanelRenderer from './CarouselPanelRenderer';
@@ -50,7 +49,6 @@ import FakeWorkflowRenderer from './FakeWorkflowRenderer';
 import MileStoneRenderer from './MileStoneRenderer';
 import FakePageRenderer from './FakePageRenderer';
 import HorizontalRuleRenderer from './HorizontalRuleRenderer';
-import OperationButtonRenderer from './OperationButtonRenderer';
 import MenuRenderer from './MenuRenderer';
 import MenuBrandRenderer from './MenuBrandRenderer';
 import MenuItemRenderer from './MenuItemRenderer';
@@ -74,9 +72,9 @@ import SwitchRenderer from './SwitchRenderer';
 import FakeGroupRenderer from './FakeGroupRenderer';
 import TextualRenderer from './TextualRenderer';
 import PaginationRenderer from "./PaginationRenderer";
-import ContinueOperationButtonRenderer from "./ContinueOperationButtonRenderer";
 import FolderRenderer from "./FolderRenderer";
 import TimezoneSelectRenderer from "./TimezoneSelect";
+import ButtonRenderer from "./ButtonRenderer";
 
 const registry = [
     new TitleRenderer(),
@@ -133,7 +131,6 @@ const registry = [
     new FakeGroupRenderer(),
     new MileStoneRenderer(),
     new HorizontalRuleRenderer(),
-    new OperationButtonRenderer(),
     new MenuRenderer(),
     new MenuBrandRenderer(),
     new MenuItemRenderer(),
@@ -155,7 +152,6 @@ const registry = [
     new PaginationRenderer(),
     new SwitchRenderer(),
     new TextualRenderer(),
-    new ContinueOperationButtonRenderer(),
     new FolderRenderer(),
     new TimezoneSelectRenderer()
 ];

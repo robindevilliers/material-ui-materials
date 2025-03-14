@@ -266,9 +266,9 @@
                     <textual>The Workflow Initiate Button will fire a workflow.</textual>
                 </paragraph>
             </div>
-            <operation-button workflow="workflow-one" size="MEDIUM" buttonFlavour="PRIMARY" v="v1">
+            <submit-button workflow="workflow-one" size="MEDIUM" buttonFlavour="PRIMARY" v="v1">
                 <textual>Fire Workflow</textual>
-            </operation-button>
+            </submit-button>
         </div>
         <horizontal-rule/>
         <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
@@ -413,23 +413,23 @@
 
                     </div>
                     <div padding="1em 1em 1em 1em" justifyContent="END" orientation="ROW" v="v1">
-                        <operation-button id="a1738098619157" type="OPEN_WIP_PAGE" size="MEDIUM" width="8em"
+                        <open-wip-button id="a1738098619157" type="OPEN_WIP_PAGE" size="MEDIUM" width="8em"
                             buttonFlavour="PRIMARY" page="test-wip-page" margin="0.25em 1em" v="v1">
                             <textual>Open Page</textual>
-                        </operation-button>
-                        <operation-button id="a1738098619158" type="OPEN_WIP" size="MEDIUM" width="8em"
+                        </open-wip-button>
+                        <open-wip-page-button id="a1738098619158" type="OPEN_WIP" size="MEDIUM" width="8em"
                             buttonFlavour="SECONDARY"
                             page="test-wip-page" margin="0.25em 1em" v="v1">
                             <textual>Open</textual>
-                        </operation-button>
-                        <operation-button id="a1738098619159" type="TRANSFER_WIP" size="MEDIUM" width="8em"
+                        </open-wip-page-button>
+                        <transfer-wip-button id="a1738098619159" type="TRANSFER_WIP" size="MEDIUM" width="8em"
                             buttonFlavour="WARNING" page="test-wip-page" margin="0.25em 1em" v="v1">
                             <textual>Transfer</textual>
-                        </operation-button>
-                        <operation-button id="a1738098619151" type="ABANDON_WIP" size="MEDIUM" width="8em"
+                        </transfer-wip-button>
+                        <abandon-wip-button id="a1738098619151" type="ABANDON_WIP" size="MEDIUM" width="8em"
                             buttonFlavour="DANGER" page="test-wip-page" margin="0.25em 1em" v="v1">
                             <textual>Abandon</textual>
-                        </operation-button>
+                        </abandon-wip-button>
                     </div>
                 </div>
             </folder>

@@ -115,7 +115,6 @@
                                     <#else >
                                         <form class="form-inline" method="post" action="${executeWorkflow}">
                                             <input type="hidden" name="_csrf" value="${_csrf}"/>
-                                            <input type="hidden" name="type" value="ACCEPT"/>
                                             <input type="hidden" name="username" value="${val.username}"/>
                                             <div class="btn-group" role="group">
                                                 <button type="submit" aria-label="Select" class="btn btn-primary"

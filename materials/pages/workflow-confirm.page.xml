@@ -18,11 +18,11 @@
         </paragraph>
     </div>
     <div justifyContent="END" v="v1">
-        <continue-operation-button type="ACCEPT" buttonFlavour="PRIMARY" margin="0.25em 0.5em" v="v1">
+        <accept-button id="accept-button" buttonFlavour="PRIMARY" margin="0.25em 0.5em" v="v1">
             <textual>Confirm</textual>
-        </continue-operation-button>
-        <continue-operation-button type="CANCEL" buttonFlavour="DEFAULT" margin="0.25em 0.5em" v="v1">
+        </accept-button>
+        <cancel-button id="cancel-button" buttonFlavour="DEFAULT" margin="0.25em 0.5em" v="v1">
             <textual>Cancel</textual>
-        </continue-operation-button>
+        </cancel-button>
     </div>
 </page>

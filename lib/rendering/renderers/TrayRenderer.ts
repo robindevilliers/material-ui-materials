@@ -53,6 +53,10 @@ export default class TrayRenderer implements Renderer {
         data._csrf = generateId();
         data.header = header ? renderingEngine.renderElement(header, element) : "";
         data.values = values;
+        data.trayId = generateId();
+        data.source = "";
+        data.action = "/operation/open-tray";
+        data.testMode = Store.isTestContext();
 
         const classManager = new ClassManager(classMappings);
         flexItemSupport(data, classManager, element.attributes);

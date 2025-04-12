@@ -1,6 +1,7 @@
 <form action="${action}" class="login-panel-widget login-panel" method="post"
         enctype="application/x-www-form-urlencoded" style="${itemStyles}">
     <input type="hidden" name="_csrf" value="${_csrf}">
+    <input type="hidden" name="_checkpoint" value="${_checkpoint}">
     <div class="card">
         <div class="card-header">
             Customer Login

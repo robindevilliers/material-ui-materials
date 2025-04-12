@@ -115,10 +115,12 @@
                                 action="${val.action}"
                                 method="post" enctype="application/x-www-form-urlencoded">
                             <input type="hidden" name="_csrf" value="${_csrf}">
+                            <input type="hidden" name="_checkpoint" value="${_checkpoint}">
                             <input type="hidden" name="payload" value="${val.payload}">
                             <input type="hidden" name="source" value="${source}">
                             <span class="message-explorer-button-line">
-                                    <button class="btn btn-primary" id="message-explorer-item-${val.workflowId}-${val.wizardId}"
+                                    <button class="btn btn-primary"
+                                            id="message-explorer-item-${val.workflowId}-${val.wizardId}"
                                             onclick="${testMode?string('alert(&quot;Open clicked&quot;); event.preventDefault();','')}"
                                             type="submit">
                                         Open

@@ -115,6 +115,7 @@
                                     <#else >
                                         <form class="form-inline" method="post" action="${executeWorkflow}">
                                             <input type="hidden" name="_csrf" value="${_csrf}"/>
+                                            <input type="hidden" name="_checkpoint" value="${_checkpoint}">
                                             <input type="hidden" name="username" value="${val.username}"/>
                                             <div class="btn-group" role="group">
                                                 <button type="submit" aria-label="Select" class="btn btn-primary"
@@ -176,6 +177,7 @@
         <#else>
             <form class="form-inline" method="post" action="${executeWorkflow}">
                 <input type="hidden" name="_csrf" value="${_csrf}"/>
+                <input type="hidden" name="_checkpoint" value="${_checkpoint}">
                 <input type="hidden" name="type" value="CANCEL"/>
                 <div class="btn-group" role="group">
                     <button type="submit" aria-label="Select" class="btn btn-outline-primary"

@@ -6,14 +6,14 @@
                 <title size="LARGE" v="v1">
                     <textual>Email Confirmation</textual>
                 </title>
-                <paragraph v="v1">
+                <text v="v1">
                     <textual> Hello <script v="v1" script="%profile% .title"/> <script v="v1" script="%profile% .firstName"/> <script v="v1" script="%profile% .lastName"/>.</textual>
-                </paragraph>
-                <paragraph v="v1">
+                </text>
+                <text v="v1">
                     <textual>
                         Please click on the link below to complete your registration.
                     </textual>
-                </paragraph>
+                </text>
                 <email-confirmation-link v="v1">
                     <textual>Confirm</textual>
                 </email-confirmation-link>

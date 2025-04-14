@@ -3,22 +3,24 @@
     <div v="v1" orientation="COLUMN" justifyContent="SPACE_AROUND" alignItems="STRETCH">
         <div v="v1" orientation="ROW" justifyContent="SPACE_AROUND" alignItems="CENTER" padding="1em">
             <image v="v1" src="logo.svg" width="200px" height="200px"
-                   margin="0 5em 2em 0"/>
+                margin="0 5em 2em 0"/>
             <div v="v1" orientation="COLUMN" justifyContent="SPACE_AROUND" alignItems="CENTER">
                 <title size="LARGE" v="v1">
                     <textual>Registration Complete</textual>
                 </title>
-                <paragraph v="v1">
+                <text v="v1">
                     <textual>
                         Thank you. Your email address has been confirmed. You will now be able
                         to login.
                     </textual>
-                </paragraph>
-                <paragraph v="v1">
+                </text>
+                <text v="v1">
                     <textual>Click on the link to return to the login page.</textual>
-                </paragraph>
+                </text>
                 <link v="v1" view="index">
-                    <textual>Login Page</textual>
+                    <text v="v1">
+                        <textual>Login Page</textual>
+                    </text>
                 </link>
             </div>
         </div>

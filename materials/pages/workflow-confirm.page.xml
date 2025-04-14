@@ -3,26 +3,30 @@
     <title size="LARGE" v="v1">
         <textual>Confirm Workflow</textual>
     </title>
-    <paragraph v="v1">
+    <text v="v1">
         <textual>
-            You are about to execute the <script v="v1" script=".title"/>. Are you sure
+            You are about to execute the<script v="v1" script=".title"/>. Are you sure
             you wish to proceed?
         </textual>
-    </paragraph>
+    </text>
 
     <div justifyContent="CENTER" v="v1">
-        <paragraph paragraphStyle="PLAIN" v="v1">
+        <text paragraphStyle="PLAIN" v="v1">
             <textual>
                 <script v="v1" script=".description"/>
             </textual>
-        </paragraph>
+        </text>
     </div>
     <div justifyContent="END" v="v1">
         <accept-button id="accept-button" buttonFlavour="PRIMARY" margin="0.25em 0.5em" v="v1">
-            <textual>Confirm</textual>
+            <text v="v1">
+                <textual>Confirm</textual>
+            </text>
         </accept-button>
         <cancel-button id="cancel-button" buttonFlavour="DEFAULT" margin="0.25em 0.5em" v="v1">
-            <textual>Cancel</textual>
+            <text v="v1">
+                <textual>Cancel</textual>
+            </text>
         </cancel-button>
     </div>
 </page>

@@ -6,17 +6,17 @@
                 <title size="LARGE" v="v1">
                     <textual>Test Email</textual>
                 </title>
-                <paragraph v="v1">
+                <text v="v1">
                     <textual>
                         This is a test email. The following paragraph will contain the phrase sent during the test
                         request.
                     </textual>
-                </paragraph>
-                <paragraph v="v1">
+                </text>
+                <text v="v1">
                     <textual>
                         <script v="v1" script="%phrase%"/>
                     </textual>
-                </paragraph>
+                </text>
             </div>
         </div>
     </div>

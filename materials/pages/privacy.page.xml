@@ -6,14 +6,14 @@
                 <title size="MEDIUM" v="v1">
                     <textual>Privacy Policy</textual>
                 </title>
-                <paragraph v="v1">
+                <text v="v1">
                     <textual>
                         We use cookies to enable standard web technologies such as authentication. These cookies are the
                         bare minimum needed in order to provide the functionality we provide. No action is possible on
                         the site without the use of these cookies. We do not use these cookies in support of tracing for
                         marketing purposes etc. We do not share any data with third parties.
                     </textual>
-                </paragraph>
+                </text>
                 <back-link v="v1"/>
             </div>
         </div>

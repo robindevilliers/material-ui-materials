@@ -1,5 +1,5 @@
 import TitleRenderer from './TitleRenderer';
-import ParagraphRenderer from './ParagraphRenderer';
+import TextRenderer from './TextRenderer';
 import DivRenderer from './DivRenderer';
 import LoginPanelRenderer from './LoginPanelRenderer';
 import PageRenderer from './PageRenderer';
@@ -78,7 +78,7 @@ import ButtonRenderer from "./ButtonRenderer";
 
 const registry = [
     new TitleRenderer(),
-    new ParagraphRenderer(),
+    new TextRenderer(),
     new DivRenderer(),
     new LoginPanelRenderer(),
     new WellRenderer(),

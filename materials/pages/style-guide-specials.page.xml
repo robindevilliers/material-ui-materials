@@ -187,12 +187,12 @@
                     <title size="LARGE" v="v1">
                         <textual>Login Panel</textual>
                     </title>
-                    <paragraph v="v1" flexBasis="500px">
+                    <text v="v1" flexBasis="500px">
                         <textual>
                             The Login Panel widget is used to present a login dialog on the page that allows the user to
                             enter their credentials and perform the authentication process.
                         </textual>
-                    </paragraph>
+                    </text>
                 </div>
                 <login-panel v="v1"/>
             </div>
@@ -205,14 +205,14 @@
                     <title size="LARGE" v="v1">
                         <textual>Registration Panel</textual>
                     </title>
-                    <paragraph v="v1" flexBasis="500px">
+                    <text v="v1" flexBasis="500px">
                         <textual>
                             The Registration Panel widget is used to present the registration panel which is the
                             prescribed first step in registering a new user. All fields are required. The Registration
                             panel can be followed by a registration wizard that can collect custom data required by the
                             Client.
                         </textual>
-                    </paragraph>
+                    </text>
                 </div>
                 <register-panel v="v1"/>
             </div>
@@ -225,12 +225,12 @@
                     <title size="LARGE" v="v1">
                         <textual>Reset Password Request Panel</textual>
                     </title>
-                    <paragraph v="v1" flexBasis="500px">
+                    <text v="v1" flexBasis="500px">
                         <textual>
                             The Reset Password Request panel presents a panel that accepts the email address of the
                             current user, in order to reset their password.
                         </textual>
-                    </paragraph>
+                    </text>
                 </div>
                 <reset-password-request-panel v="v1"/>
             </div>
@@ -242,12 +242,12 @@
                     <title size="LARGE" v="v1">
                         <textual>Reset Password Panel</textual>
                     </title>
-                    <paragraph v="v1" flexBasis="500px">
+                    <text v="v1" flexBasis="500px">
                         <textual>
                             The Reset Password Request panel presents a panel that accepts the email address of the
                             current user, in order to reset their password.
                         </textual>
-                    </paragraph>
+                    </text>
                 </div>
 
                 <reset-password-panel v="v1"/>
@@ -262,13 +262,25 @@
                 <title size="LARGE" v="v1">
                     <textual>Workflow Initiate Button</textual>
                 </title>
-                <paragraph v="v1" flexBasis="500px">
+                <text v="v1" flexBasis="500px">
                     <textual>The Workflow Initiate Button will fire a workflow.</textual>
-                </paragraph>
+                </text>
             </div>
             <submit-button workflow="workflow-one" size="MEDIUM" buttonFlavour="PRIMARY" v="v1">
-                <textual>Fire Workflow</textual>
+                <text v="v1">
+                    <textual>Fire Workflow</textual>
+                </text>
             </submit-button>
+
+            <submit-button workflow="workflow-one" size="MEDIUM" buttonFlavour="PRIMARY" v="v1">
+                <icon flavour="PRIMARY" name="clipboard-data-fill" v="v1"/>
+            </submit-button>
+
+            <submit-button workflow="workflow-one" size="MEDIUM" buttonFlavour="PRIMARY" v="v1">
+                <image src="suzi.jpeg" alt="Image of Suzi" title="Suzi Profile Picture" height="200px" width="300px"
+                    v="v1"/>
+            </submit-button>
+
         </div>
         <horizontal-rule/>
         <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
@@ -278,9 +290,9 @@
                 <title size="LARGE" v="v1">
                     <textual>Menu</textual>
                 </title>
-                <paragraph v="v1" flexBasis="500px">
+                <text v="v1" flexBasis="500px">
                     <textual>The Menu widget displays a selection of workflows for user to execute.</textual>
-                </paragraph>
+                </text>
             </div>
             <menu axis="HORIZONTAL" v="v1">
                 <menu-brand v="v1">
@@ -322,14 +334,14 @@
                 <title size="LARGE" v="v1">
                     <textual>Tray</textual>
                 </title>
-                <paragraph v="v1" flexBasis="500px">
+                <text v="v1" flexBasis="500px">
                     <textual>
                         The Tray widget presents a list of tray entries that are in the specified queue and that belongs
                         to a compatible group with the current user. This widget is intended to display a limited set of
                         tray entries which is what you will find as a member of the public or a customer or case
                         principal. This widget is intended to be customer facing.
                     </textual>
-                </paragraph>
+                </text>
             </div>
             <tray queue="main-user" v="v1">
                 <header>
@@ -345,13 +357,13 @@
                 <title size="LARGE" v="v1">
                     <textual>Folder</textual>
                 </title>
-                <paragraph v="v1" flexBasis="500px">
+                <text v="v1" flexBasis="500px">
                     <textual>
                         The Folder widget presents a list of entries that are in the specified queue and that belongs
                         to a compatible group with the current user. This widget is intended to display the contents of
                         a queue in a form that does not imply immediate execution, as a tray does.
                     </textual>
-                </paragraph>
+                </text>
             </div>
             <folder queue="main-user" v="v1">
                 <header>
@@ -364,71 +376,78 @@
                                 <script script=".wizardTitle" v="v1"/>
                             </textual>
                         </title>
-                        <paragraph paragraphStyle="PLAIN" padding="1em 1em 1em 1em" v="v1">
+                        <text paragraphStyle="PLAIN" padding="1em 1em 1em 1em" v="v1">
                             <textual>
                                 <script script=".wizardDescription" v="v1"/>
                             </textual>
-                        </paragraph>
+                        </text>
                     </div>
                     <div alignItems="STRETCH" justifyContent="SPACE_BETWEEN" v="v1">
                         <div padding="1em 1em 1em 1em" orientation="COLUMN" v="v1">
-                            <paragraph paragraphStyle="PLAIN" v="v1">
+                            <text paragraphStyle="PLAIN" v="v1">
                                 <textual>
                                     <script script=".queue" v="v1"/>
                                 </textual>
-                            </paragraph>
-                            <paragraph paragraphStyle="PLAIN" v="v1">
+                            </text>
+                            <text paragraphStyle="PLAIN" v="v1">
                                 <textual>
                                     <script script=".group" v="v1"/>
                                 </textual>
-                            </paragraph>
+                            </text>
                         </div>
                         <div padding="1em 1em 1em 1em" orientation="COLUMN" v="v1">
-                            <paragraph paragraphStyle="PLAIN" v="v1">
+                            <text paragraphStyle="PLAIN" v="v1">
                                 <textual>
                                     <script script=".workflowTitle" v="v1"/>
                                 </textual>
-                            </paragraph>
-                            <paragraph paragraphStyle="PLAIN" v="v1">
+                            </text>
+                            <text paragraphStyle="PLAIN" v="v1">
                                 <textual>
                                     <script script=".workflowDescription" v="v1"/>
                                 </textual>
-                            </paragraph>
+                            </text>
                         </div>
                         <div padding="1em 1em 1em 1em" orientation="COLUMN" v="v1">
 
-                            <paragraph paragraphStyle="PLAIN" v="v1">
+                            <text paragraphStyle="PLAIN" v="v1">
                                 <textual>
                                     <script script=".principal" v="v1"/>
                                 </textual>
-                            </paragraph>
-                            <paragraph paragraphStyle="PLAIN" v="v1">
+                            </text>
+                            <text paragraphStyle="PLAIN" v="v1">
                                 <textual>
                                     <script script=".principalTitle" v="v1"/>
                                     <script script=".principalFirstName" v="v1"/>
                                     <script script=".principalLastName" v="v1"/>
                                 </textual>
-                            </paragraph>
+                            </text>
                         </div>
 
                     </div>
                     <div padding="1em 1em 1em 1em" justifyContent="END" orientation="ROW" v="v1">
                         <open-wip-button id="a1738098619157" type="OPEN_WIP_PAGE" size="MEDIUM" width="8em"
                             buttonFlavour="PRIMARY" page="test-wip-page" margin="0.25em 1em" v="v1">
-                            <textual>Open Page</textual>
+                            <text v="v1">
+                                <textual>Open Page</textual>
+                            </text>
                         </open-wip-button>
                         <open-wip-page-button id="a1738098619158" type="OPEN_WIP" size="MEDIUM" width="8em"
-                            buttonFlavour="SECONDARY"
-                            page="test-wip-page" margin="0.25em 1em" v="v1">
-                            <textual>Open</textual>
+                            buttonFlavour="SECONDARY" page="test-wip-page" margin="0.25em 1em" v="v1">
+                            <text v="v1">
+                                <textual>Open</textual>
+                            </text>
                         </open-wip-page-button>
                         <transfer-wip-button id="a1738098619159" type="TRANSFER_WIP" size="MEDIUM" width="8em"
                             buttonFlavour="WARNING" page="test-wip-page" margin="0.25em 1em" v="v1">
-                            <textual>Transfer</textual>
+                            <text v="v1">
+                                <textual>Transfer</textual>
+                            </text>
                         </transfer-wip-button>
                         <abandon-wip-button id="a1738098619151" type="ABANDON_WIP" size="MEDIUM" width="8em"
                             buttonFlavour="DANGER" page="test-wip-page" margin="0.25em 1em" v="v1">
-                            <textual>Abandon</textual>
+                            <text v="v1">
+                                <textual>Abandon</textual>
+                            </text>
                         </abandon-wip-button>
                     </div>
                 </div>
@@ -442,7 +461,7 @@
                 <title size="LARGE" v="v1">
                     <textual>Message Explorer</textual>
                 </title>
-                <paragraph v="v1" flexBasis="500px">
+                <text v="v1" flexBasis="500px">
                     <textual>
                         The Message Explorer widget allows the user to search for and view any messages to which he or
                         she has access. This widget is intended to be a powerful browser intended for members of staff.
@@ -451,7 +470,7 @@
                         with a proper back-end server. Its highly recommended that you make sure this works when the
                         materials are deployed.
                     </textual>
-                </paragraph>
+                </text>
             </div>
             <message-explorer queue="main-user" v="v1">
             </message-explorer>
@@ -464,7 +483,7 @@
                 <title size="LARGE" v="v1">
                     <textual>User Explorer</textual>
                 </title>
-                <paragraph v="v1" flexBasis="500px">
+                <text v="v1" flexBasis="500px">
                     <textual>
                         The User Explorer widget allows the current user to search through the user accounts. This has a
                         couple of purposes. The first is when a workflow is executed by staff, and they want to manually
@@ -473,7 +492,7 @@
                         its functionality is only going to work with a property back-end server. Its highly recommended
                         that you make sure this works when the materials are deployed.
                     </textual>
-                </paragraph>
+                </text>
             </div>
             <user-explorer v="v1"/>
         </div>
@@ -486,20 +505,20 @@
                 <title size="LARGE" v="v1">
                     <textual>Loop</textual>
                 </title>
-                <paragraph v="v1" flexBasis="500px">
+                <text v="v1" flexBasis="500px">
                     <textual>
                         This section displays a list of groups. It uses the Loop Widget and if the page renders,
                         proves that the artefacts are correctly setup for use of the same. You should see the values in
                         the plantain substitutions file reproduced here in vertical orientation.
                     </textual>
-                </paragraph>
+                </text>
             </div>
             <loop reference="%profile%.groups" reverse="true" v="v1">
-                <paragraph paragraphStyle="PLAIN" v="v1">
+                <text paragraphStyle="PLAIN" v="v1">
                     <textual>
                         <script script="." v="v1"/>
                     </textual>
-                </paragraph>
+                </text>
             </loop>
         </div>
         <horizontal-rule/>
@@ -510,21 +529,21 @@
                 <title size="LARGE" v="v1">
                     <textual>Pagination</textual>
                 </title>
-                <paragraph v="v1" flexBasis="500px">
+                <text v="v1" flexBasis="500px">
                     <textual>
                         This section displays a list of groups. It uses the Pagination Widget and if the page renders,
                         proves that the artefacts are correctly setup for use of the same. You should see the values in
                         the plantain substitutions file reproduced here in vertical orientation.
                     </textual>
-                </paragraph>
+                </text>
             </div>
             <pagination reference="%profile%.groups" reverse="true" v="v1">
                 <loop reference="$" v="v1">
-                    <paragraph paragraphStyle="PLAIN" v="v1">
+                    <text paragraphStyle="PLAIN" v="v1">
                         <textual>
                             <script script="." v="v1"/>
                         </textual>
-                    </paragraph>
+                    </text>
                 </loop>
             </pagination>
         </div>
@@ -536,36 +555,36 @@
                 <title size="LARGE" v="v1">
                     <textual>Switch</textual>
                 </title>
-                <paragraph v="v1" flexBasis="500px">
+                <text v="v1" flexBasis="500px">
                     <textual>
                         This section renders a Switch Widget which will alternatively display panels depending on a
                         Plantain expression. We can force the value of an expression using the plantain substitutions
                         file.
                     </textual>
-                </paragraph>
+                </text>
             </div>
             <switch v="v1">
                 <def orientation="COLUMN">
-                    <paragraph paragraphStyle="PLAIN" v="v1">
+                    <text paragraphStyle="PLAIN" v="v1">
                         <textual>default content</textual>
-                    </paragraph>
+                    </text>
                 </def>
                 <if condition="%userdata% .alpha" v="v1" orientation="COLUMN">
-                    <paragraph paragraphStyle="PLAIN" v="v1">
+                    <text paragraphStyle="PLAIN" v="v1">
                         <textual>if content</textual>
-                    </paragraph>
+                    </text>
                 </if>
             </switch>
             <switch v="v1">
                 <def orientation="COLUMN">
-                    <paragraph paragraphStyle="PLAIN" v="v1">
+                    <text paragraphStyle="PLAIN" v="v1">
                         <textual>default content</textual>
-                    </paragraph>
+                    </text>
                 </def>
                 <if condition="%userdata% .beta" v="v1" orientation="COLUMN">
-                    <paragraph paragraphStyle="PLAIN" v="v1">
+                    <text paragraphStyle="PLAIN" v="v1">
                         <textual>if content</textual>
-                    </paragraph>
+                    </text>
                 </if>
             </switch>
         </div>
@@ -579,12 +598,12 @@
                 <title size="LARGE" v="v1">
                     <textual>Confirmation Panel</textual>
                 </title>
-                <paragraph v="v1" flexBasis="500px">
+                <text v="v1" flexBasis="500px">
                     <textual>
                         The Confirmation Panel is used in Two Phase Authentication where the user is presented with a
                         secondary challenge once first authenticating. This facility is not currently available.
                     </textual>
-                </paragraph>
+                </text>
             </div>
             <confirmation-panel v="v1"/>
         </div>
@@ -597,12 +616,12 @@
                 <title size="LARGE" v="v1">
                     <textual>Password Reset Link</textual>
                 </title>
-                <paragraph v="v1" flexBasis="500px">
+                <text v="v1" flexBasis="500px">
                     <textual>
                         When a user forgets his password, he can request a password reset. He will be sent an email, and
                         within the email is the Password Reset Link. This widget facilitates the link.
                     </textual>
-                </paragraph>
+                </text>
             </div>
             <password-reset-link v="v1">
                 <textual>Reset Password</textual>
@@ -618,12 +637,12 @@
                 <title size="LARGE" v="v1">
                     <textual>Email Confirmation Link</textual>
                 </title>
-                <paragraph v="v1" flexBasis="500px">
+                <text v="v1" flexBasis="500px">
                     <textual>
                         When a user first registers, he is required to confirm his email address. He will be sent an
                         email, and will be required to click on a link within. This widget facilitates that link.
                     </textual>
-                </paragraph>
+                </text>
             </div>
             <email-confirmation-link v="v1">
                 <textual>Confirm Email</textual>
@@ -639,11 +658,11 @@
                 <title size="LARGE" v="v1">
                     <textual>Card as Link</textual>
                 </title>
-                <paragraph v="v1" flexBasis="500px">
+                <text v="v1" flexBasis="500px">
                     <textual>
                         Cards can be configured so that the entire Card is clickable, and will lead to another page.
                     </textual>
-                </paragraph>
+                </text>
             </div>
             <card type="page" page="style-guide-landing.html"
                 width="300px" flexShrink="0" margin="0em 0em 0em 1em" v="v1">
@@ -653,12 +672,12 @@
                     <title size="SMALLER" v="v1">
                         <textual>Lorem Ipsum</textual>
                     </title>
-                    <paragraph paragraphStyle="PLAIN" v="v1">
+                    <text paragraphStyle="PLAIN" v="v1">
                         <textual>
                             Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
                             laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.
                         </textual>
-                    </paragraph>
+                    </text>
                 </card-body>
             </card>
         </div>
@@ -672,11 +691,11 @@
                 <title size="LARGE" v="v1">
                     <textual>Timezone Select</textual>
                 </title>
-                <paragraph v="v1" flexBasis="500px">
+                <text v="v1" flexBasis="500px">
                     <textual>
                         Timezone Select offers timezones for selection.
                     </textual>
-                </paragraph>
+                </text>
             </div>
             <div orientation="COLUMN" alignItems="FLEX_START" justifyContent="SPACE_BETWEEN" v="v1"
                 flexBasis="100%" width="70%">

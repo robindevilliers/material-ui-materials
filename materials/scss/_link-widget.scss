@@ -1,3 +1,33 @@
 .link-widget {
   width: fit-content;
+
+  & > * {
+    margin: unset !important;
+  }
+
+  .card-widget {
+    flex: 1 0 auto;
+  }
+
+  &:has(.card-widget, .icon-widget, .image-widget) {
+    display: flex;
+    flex-direction: column;
+    color: unset;
+    text-decoration: unset;
+
+    &:hover {
+      .icon-widget {
+        filter: brightness(85%);
+      }
+
+      .image-widget {
+        filter: grayscale(30%) drop-shadow(2px 2px 5px gray);
+      }
+
+      .card-widget {
+        filter: grayscale(80%) drop-shadow(2px 2px 5px gray);
+        background-color: #ddd !important;
+      }
+    }
+  }
 }

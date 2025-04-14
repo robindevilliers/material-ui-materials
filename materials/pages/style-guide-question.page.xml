@@ -19,7 +19,7 @@
             </title>
 
             <inset-text flavour="PRIMARY" v="v1">
-                <paragraph v="v1">
+                <text v="v1">
                     <textual>
                         Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                         accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
@@ -32,10 +32,10 @@
                         reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui
                         dolorem eum fugiat quo voluptas nulla pariatur?
                     </textual>
-                </paragraph>
+                </text>
             </inset-text>
 
-            <paragraph paragraphStyle="SUPPRESSED" v="v1">
+            <text paragraphStyle="SUPPRESSED" v="v1">
                 <textual>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua.
@@ -46,7 +46,7 @@
                         voluptatem.
                     </span>
                 </textual>
-            </paragraph>
+            </text>
             <tool-tip exposition="Enumeration">
                 <enumeration-input type="STRING" reference="colours" required="false"
                                    cardinality="SINGLE_SELECT" style="RADIO_CHECKBOX" size="MEDIUM"
@@ -91,7 +91,7 @@
              borderRadius="1em" v="v1" width="30%">
             <tool-tip exposition="Well">
                 <well flavour="WARNING" margin="5px" v="v1">
-                    <paragraph v="v1">
+                    <text v="v1">
                         <textual>
                             Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                             accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
@@ -104,7 +104,7 @@
                             consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
                             molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
                         </textual>
-                    </paragraph>
+                    </text>
                 </well>
             </tool-tip>
         </div>

@@ -6,12 +6,12 @@
                 <title size="LARGE" v="v1">
                     <textual>Oops! Page not found.</textual>
                 </title>
-                <paragraph v="v1">
+                <text v="v1">
                     <textual>
                         Sorry. Something seems to have happened to the page you requested. Please contact your
                         administrator if the problem persists.
                     </textual>
-                </paragraph>
+                </text>
             </div>
         </div>
     </div>

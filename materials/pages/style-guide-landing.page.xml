@@ -17,12 +17,12 @@
                     </title>
                 </tool-tip>
                 <tool-tip exposition="Paragraph">
-                    <paragraph paragraphStyle="SUPPRESSED" width="250px" v="v1">
+                    <text paragraphStyle="SUPPRESSED" width="250px" v="v1">
                         <textual>
                             Neque porro quisquam est, qui dolorem ipsum quia dolor sit
                             amet, consectetur.
                         </textual>
-                    </paragraph>
+                    </text>
                 </tool-tip>
             </div>
         </div>
@@ -42,13 +42,13 @@
                                 </title>
                             </tool-tip>
                             <tool-tip exposition="Paragraph">
-                                <paragraph paragraphStyle="PLAIN" width="250px" v="v1">
+                                <text paragraphStyle="PLAIN" width="250px" v="v1">
                                     <textual>
                                         Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
                                         doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
                                         veritatis et quasi architecto beatae vitae dicta sunt explicabo.
                                     </textual>
-                                </paragraph>
+                                </text>
                             </tool-tip>
                         </div>
                     </tool-tip>
@@ -62,7 +62,7 @@
                             Opinions from Cheddar
                         </textual>
                     </title>
-                    <paragraph paragraphStyle="PLAIN" width="400px" backgroundFlavour="WHITE" borderRadius="1em"
+                    <text paragraphStyle="PLAIN" width="400px" backgroundFlavour="WHITE" borderRadius="1em"
                                v="v1">
                         <textual>
                             At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
@@ -70,14 +70,14 @@
                             cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id
                             est laborum et dolorum fuga.
                         </textual>
-                    </paragraph>
+                    </text>
                 </carousel-panel>
                 <carousel-panel src="panel-3.jpg" active="false" justifyContent="END" orientation="COLUMN"
                                 alignItems="START">
                     <div margin="2em" padding="1em" backgroundFlavour="PRIMARY" v="v1">
                         <image src="temp0.jpg" height="181px" width="278px" borderRadius="5px"
                                border="2px solid black" v="v1"/>
-                        <paragraph paragraphStyle="PLAIN" v="v1">
+                        <text paragraphStyle="PLAIN" v="v1">
                             <textual>
                                 Harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta
                                 nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere
@@ -87,7 +87,7 @@
                                 a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut
                                 perferendis doloribus asperiores repellat.
                             </textual>
-                        </paragraph>
+                        </text>
                     </div>
                 </carousel-panel>
             </carousel>
@@ -104,7 +104,7 @@
                 </title>
             </tool-tip>
             <tool-tip exposition="Paragraph">
-                <paragraph paragraphStyle="PLAIN" v="v1">
+                <text paragraphStyle="PLAIN" v="v1">
                     <textual>
                         Harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est
                         eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis
@@ -113,7 +113,7 @@
                         non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis
                         voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
                     </textual>
-                </paragraph>
+                </text>
             </tool-tip>
         </div>
         <div orientation="COLUMN" alignItems="CENTER" v="v1">
@@ -126,7 +126,7 @@
                 </title>
             </tool-tip>
             <tool-tip exposition="Paragraph">
-                <paragraph paragraphStyle="PLAIN" v="v1">
+                <text paragraphStyle="PLAIN" v="v1">
                     <textual>
                         Harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est
                         eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis
@@ -135,7 +135,7 @@
                         non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis
                         voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
                     </textual>
-                </paragraph>
+                </text>
             </tool-tip>
         </div>
         <div orientation="COLUMN" alignItems="CENTER" v="v1">
@@ -148,7 +148,7 @@
                 </title>
             </tool-tip>
             <tool-tip exposition="Paragraph">
-                <paragraph paragraphStyle="PLAIN" v="v1">
+                <text paragraphStyle="PLAIN" v="v1">
                     <textual>
                         Harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est
                         eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis
@@ -157,7 +157,7 @@
                         non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis
                         voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
                     </textual>
-                </paragraph>
+                </text>
             </tool-tip>
         </div>
     </div>

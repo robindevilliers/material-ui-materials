@@ -10,53 +10,53 @@
         </title>
         <div justifyContent="SPACE_BETWEEN" v="v1">
             <div orientation="COLUMN" v="v1">
-                <paragraph paragraphStyle="PLAIN" v="v1">
+                <text paragraphStyle="PLAIN" v="v1">
                     <textual>
                         Welcome to the first page exhibit in our style
                         guide gallery. On this page you can see an example of various specialized elements. The first
                         element you can see to your right. This is a Card, and it has a header, image, body and footer.
                         All these child elements of the Card are optional.
                     </textual>
-                </paragraph>
+                </text>
                 <accordion flush="false" singleActive="true" v="v1">
                     <accordion-item active="false" orientation="COLUMN">
                         <accordion-item-header>
                             <textual>Inset Text</textual>
                         </accordion-item-header>
                         <inset-text flavour="DEFAULT" v="v1">
-                            <paragraph paragraphStyle="PLAIN" v="v1">
+                            <text paragraphStyle="PLAIN" v="v1">
                                 <textual>This is some text in a Default Inset Text element.</textual>
-                            </paragraph>
+                            </text>
                         </inset-text>
                         <inset-text flavour="PRIMARY" v="v1">
-                            <paragraph paragraphStyle="PLAIN" v="v1">
+                            <text paragraphStyle="PLAIN" v="v1">
                                 <textual>This is some text in a Primary Inset Text element.</textual>
-                            </paragraph>
+                            </text>
                         </inset-text>
                         <inset-text flavour="INFO" v="v1">
-                            <paragraph paragraphStyle="PLAIN" v="v1">
+                            <text paragraphStyle="PLAIN" v="v1">
                                 <textual>This is some text in a Info Inset Text element.</textual>
-                            </paragraph>
+                            </text>
                         </inset-text>
                         <inset-text flavour="WARNING" v="v1">
-                            <paragraph paragraphStyle="PLAIN" v="v1">
+                            <text paragraphStyle="PLAIN" v="v1">
                                 <textual>This is some text in a Warning Inset Text element.</textual>
-                            </paragraph>
+                            </text>
                         </inset-text>
                         <inset-text flavour="DANGER" v="v1">
-                            <paragraph paragraphStyle="PLAIN" v="v1">
+                            <text paragraphStyle="PLAIN" v="v1">
                                 <textual>This is some text in a Danger Inset Text element.</textual>
-                            </paragraph>
+                            </text>
                         </inset-text>
                         <inset-text flavour="SUCCESS" v="v1">
-                            <paragraph paragraphStyle="PLAIN" v="v1">
+                            <text paragraphStyle="PLAIN" v="v1">
                                 <textual>This is some text in a Success Inset Text element.</textual>
-                            </paragraph>
+                            </text>
                         </inset-text>
                         <inset-text flavour="MUTED" v="v1">
-                            <paragraph paragraphStyle="PLAIN" v="v1">
+                            <text paragraphStyle="PLAIN" v="v1">
                                 <textual>This is some text in a Muted Inset Text element.</textual>
-                            </paragraph>
+                            </text>
                         </inset-text>
                     </accordion-item>
                     <accordion-item active="false" orientation="COLUMN">
@@ -64,9 +64,9 @@
                             <textual>Warning</textual>
                         </accordion-item-header>
                         <warning v="v1">
-                            <paragraph paragraphStyle="PLAIN" v="v1">
+                            <text paragraphStyle="PLAIN" v="v1">
                                 <textual>This is the text for the warning element.</textual>
-                            </paragraph>
+                            </text>
                         </warning>
                     </accordion-item>
                     <accordion-item active="false" orientation="COLUMN">
@@ -84,26 +84,26 @@
                             </row>
                             <row>
                                 <cell>
-                                    <paragraph paragraphStyle="PLAIN" v="v1">
+                                    <text paragraphStyle="PLAIN" v="v1">
                                         <textual>Avatar</textual>
-                                    </paragraph>
+                                    </text>
                                 </cell>
                                 <cell>
-                                    <paragraph paragraphStyle="PLAIN" v="v1">
+                                    <text paragraphStyle="PLAIN" v="v1">
                                         <textual>2003</textual>
-                                    </paragraph>
+                                    </text>
                                 </cell>
                             </row>
                             <row>
                                 <cell>
-                                    <paragraph paragraphStyle="PLAIN" v="v1">
+                                    <text paragraphStyle="PLAIN" v="v1">
                                         <textual>King Arthur</textual>
-                                    </paragraph>
+                                    </text>
                                 </cell>
                                 <cell>
-                                    <paragraph paragraphStyle="PLAIN" v="v1">
+                                    <text paragraphStyle="PLAIN" v="v1">
                                         <textual>1994</textual>
-                                    </paragraph>
+                                    </text>
                                 </cell>
                             </row>
                         </table>
@@ -145,12 +145,12 @@
                     <title size="SMALLER" v="v1">
                         <textual>Suzi Cummins</textual>
                     </title>
-                    <paragraph paragraphStyle="PLAIN" v="v1">
+                    <text paragraphStyle="PLAIN" v="v1">
                         <textual>
                             Our staff are highly skilled experts in their
                             respective fields. We take pride in our professional reputation and expertise.
                         </textual>
-                    </paragraph>
+                    </text>
                 </card-body>
                 <card-footer orientation="COLUMN">
                     <link type="internal" view="" openNewWindow="false" v="v1">
@@ -159,9 +159,9 @@
                 </card-footer>
             </card>
             <div orientation="COLUMN" v="v1" margin="0 1em">
-                <paragraph paragraphStyle="PLAIN" v="v1">
+                <text paragraphStyle="PLAIN" v="v1">
                     <textual>Here we have a selection of icons of different flavours and sizes.</textual>
-                </paragraph>
+                </text>
                 <div v="v1">
                     <div orientation="COLUMN" margin="1em" v="v1">
                         <icon size="SMALL" flavour="DEFAULT" name="wrench" v="v1"/>

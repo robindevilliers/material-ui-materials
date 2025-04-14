@@ -7,18 +7,18 @@
                 <title size="LARGE" v="v1">
                     <textual>Payment Error.</textual>
                 </title>
-                <paragraph v="v1">
+                <text v="v1">
                     <textual>
                         Sorry. Something appears to have gone wrong with the payments gateway, please contact your
                         administrator.
                     </textual>
-                </paragraph>
+                </text>
                 <div justifyContent="CENTER" v="v1" id="payment-error-message">
-                    <paragraph paragraphStyle="PLAIN" v="v1">
+                    <text paragraphStyle="PLAIN" v="v1">
                         <textual>
                             <script v="v1" script=".reason"/>
                         </textual>
-                    </paragraph>
+                    </text>
                 </div>
             </div>
         </div>

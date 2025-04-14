@@ -6,11 +6,11 @@
                 <title size="LARGE" v="v1">
                     <textual>Oops! Unauthorized.</textual>
                 </title>
-                <paragraph v="v1">
+                <text v="v1">
                     <textual>
                         Sorry. You are not authorized to access the resource you requested.
                     </textual>
-                </paragraph>
+                </text>
             </div>
         </div>
     </div>

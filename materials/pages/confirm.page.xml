@@ -3,17 +3,21 @@
     <title size="LARGE" v="v1">
         <textual>Confirm Action</textual>
     </title>
-    <paragraph v="v1">
+    <text v="v1">
         <textual>
             Are you sure you wish to proceed?
         </textual>
-    </paragraph>
+    </text>
     <div justifyContent="END" v="v1">
         <accept-button id="accept-button" buttonFlavour="PRIMARY" margin="0.25em 0.5em" v="v1">
-            <textual>Confirm</textual>
+            <text v="v1">
+                <textual>Confirm</textual>
+            </text>
         </accept-button>
         <cancel-button id="cancel-button" buttonFlavour="DEFAULT" margin="0.25em 0.5em" v="v1">
-            <textual>Cancel</textual>
+            <text v="v1">
+                <textual>Cancel</textual>
+            </text>
         </cancel-button>
     </div>
 </page>

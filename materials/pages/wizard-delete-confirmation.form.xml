@@ -3,19 +3,23 @@
     <title size="LARGE" v="v1">
         <textual>Delete Confirmation</textual>
     </title>
-    <paragraph v="v1">
+    <text v="v1">
         <textual>
             Are you sure you wish to delete this record?
         </textual>
-    </paragraph>
+    </text>
     <div v="v1">
         <cancel-button id="cancel-button" size="MEDIUM" buttonFlavour="DEFAULT" required="false"
             margin="0.25em 1em" v="v1">
-            <textual>Cancel</textual>
+            <text v="v1">
+                <textual>Cancel</textual>
+            </text>
         </cancel-button>
         <accept-button id="accept-button" size="MEDIUM" buttonFlavour="DANGER" required="false"
             margin="0.25em 1em" v="v1">
-            <textual>Delete</textual>
+            <text v="v1">
+                <textual>Delete</textual>
+            </text>
         </accept-button>
     </div>
 </form>

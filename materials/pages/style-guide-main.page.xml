@@ -29,19 +29,19 @@
             </list>
         </div>
         <div orientation="COLUMN" v="v1">
-            <paragraph margin="0em 4em" v="v1">
+            <text margin="0em 4em" v="v1">
                 <textual>
                     The Style Guide will demonstrate the UX (user experience) elements that you can use to contstruct
                     pages. It is particularly useful in determining if the website materials are correctly setup.
                 </textual>
-            </paragraph>
-            <paragraph fontFlavour="INFO" fontStyle="ITALIC" margin="0em 4em" v="v1">
+            </text>
+            <text fontFlavour="INFO" fontStyle="ITALIC" margin="0em 4em" v="v1">
                 <textual>
                     This element is the
                     Jumbotron. The Jumbotron is a UX element that is intented to draw the attention. Its contents should
                     be loud and large. It is useful on welcoming pages and on confirmation pages.
                 </textual>
-            </paragraph>
+            </text>
         </div>
     </jumbotron>
     <title margin="0em 0em 1em" v="v1">
@@ -72,119 +72,119 @@
             </title>
         </div>
         <div orientation="COLUMN" margin="0em 0em 0em 1em" v="v1">
-            <paragraph fontFlavour="DEFAULT" v="v1">
+            <text fontFlavour="DEFAULT" v="v1">
                 <textual>This paragraph is in Default colour.</textual>
-            </paragraph>
-            <paragraph fontFlavour="PRIMARY" v="v1">
+            </text>
+            <text fontFlavour="PRIMARY" v="v1">
                 <textual>This paragraph is in Primary colour.</textual>
-            </paragraph>
-            <paragraph fontFlavour="INFO" v="v1">
+            </text>
+            <text fontFlavour="INFO" v="v1">
                 <textual>This paragraph is in Info colour.</textual>
-            </paragraph>
-            <paragraph fontFlavour="WARNING" v="v1">
+            </text>
+            <text fontFlavour="WARNING" v="v1">
                 <textual>This paragraph is in Warning colour.</textual>
-            </paragraph>
-            <paragraph fontFlavour="DANGER" v="v1">
+            </text>
+            <text fontFlavour="DANGER" v="v1">
                 <textual>This paragraph is in Danger colour.</textual>
-            </paragraph>
-            <paragraph fontFlavour="SUCCESS" v="v1">
+            </text>
+            <text fontFlavour="SUCCESS" v="v1">
                 <textual>This paragraph is in Success colour.</textual>
-            </paragraph>
-            <paragraph fontFlavour="MUTED" v="v1">
+            </text>
+            <text fontFlavour="MUTED" v="v1">
                 <textual>This paragraph is in Muted colour.</textual>
-            </paragraph>
+            </text>
         </div>
         <div orientation="COLUMN" margin="0em 0em 0em 1em" v="v1">
-            <paragraph v="v1">
+            <text v="v1">
                 <textual>This is the Default font.</textual>
-            </paragraph>
-            <paragraph font="TEXT_PRIMARY" v="v1">
+            </text>
+            <text font="TEXT_PRIMARY" v="v1">
                 <textual>This is the Text Primary font.</textual>
-            </paragraph>
-            <paragraph font="TEXT_SECONDARY" v="v1">
+            </text>
+            <text font="TEXT_SECONDARY" v="v1">
                 <textual>This is the Text Secondary font.</textual>
-            </paragraph>
-            <paragraph font="TITLE_PRIMARY" v="v1">
+            </text>
+            <text font="TITLE_PRIMARY" v="v1">
                 <textual>This is the Title Primary font.</textual>
-            </paragraph>
-            <paragraph font="TITLE_SECONDARY" v="v1">
+            </text>
+            <text font="TITLE_SECONDARY" v="v1">
                 <textual>This is the Title Secondary font.</textual>
-            </paragraph>
+            </text>
         </div>
         <div orientation="COLUMN" flexBasis="25%" margin="0em 0em 0em 1em" v="v1">
-            <paragraph paragraphStyle="PLAIN" v="v1">
+            <text paragraphStyle="PLAIN" v="v1">
                 <textual>This is a plain paragraph of text. Lorem ipsum dolor
                     sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua.
                 </textual>
-            </paragraph>
-            <paragraph paragraphStyle="SUPPRESSED" v="v1">
+            </text>
+            <text paragraphStyle="SUPPRESSED" v="v1">
                 <textual>This is a Suppressed paragraph. Lorem ipsum
                     dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                     magna
                     aliqua.
                 </textual>
-            </paragraph>
-            <paragraph paragraphStyle="BLOCKQUOTE" v="v1">
+            </text>
+            <text paragraphStyle="BLOCKQUOTE" v="v1">
                 <textual>This is a Blockquote paragraph. Lorem ipsum
                     dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                     magna
                     aliqua.
                 </textual>
-            </paragraph>
+            </text>
         </div>
     </div>
     <div v="v1">
         <well flavour="DEFAULT" margin="5px" v="v1">
-            <paragraph v="v1">
+            <text v="v1">
                 <textual>Default Well. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </textual>
-            </paragraph>
+            </text>
         </well>
         <well flavour="PRIMARY" margin="5px" v="v1">
-            <paragraph v="v1">
+            <text v="v1">
                 <textual>Primary Well. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </textual>
-            </paragraph>
+            </text>
         </well>
         <well flavour="INFO" margin="5px" v="v1">
-            <paragraph v="v1">
+            <text v="v1">
                 <textual>Info Well. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                     eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </textual>
-            </paragraph>
+            </text>
         </well>
         <well flavour="WARNING" margin="5px" v="v1">
-            <paragraph v="v1">
+            <text v="v1">
                 <textual>Warning Well. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </textual>
-            </paragraph>
+            </text>
         </well>
     </div>
     <div v="v1">
         <well flavour="DANGER" margin="5px" v="v1">
-            <paragraph v="v1">
+            <text v="v1">
                 <textual>Danger Well. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                     eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </textual>
-            </paragraph>
+            </text>
         </well>
         <well flavour="SUCCESS" margin="5px" v="v1">
-            <paragraph v="v1">
+            <text v="v1">
                 <textual>Success Well. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </textual>
-            </paragraph>
+            </text>
         </well>
         <well flavour="MUTED" margin="5px" v="v1">
-            <paragraph v="v1">
+            <text v="v1">
                 <textual>Muted Well. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                     eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </textual>
-            </paragraph>
+            </text>
         </well>
     </div>
 </page>

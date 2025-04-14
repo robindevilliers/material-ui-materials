@@ -10,20 +10,20 @@
         <title size="MEDIUM" v="v1">
             <textual>Style Guide Sample Page Delta</textual>
         </title>
-        <paragraph paragraphStyle="PLAIN" v="v1">
+        <text paragraphStyle="PLAIN" v="v1">
             <textual>
                 Welcome to the third in our series of style guide pages. This page will demonstrate the presentation of
                 all the input controls. These are widgets that take user input in some form.
             </textual>
-        </paragraph>
+        </text>
         <div v="v1">
             <div orientation="COLUMN" v="v1">
-                <paragraph paragraphStyle="PLAIN" v="v1">
+                <text paragraphStyle="PLAIN" v="v1">
                     <textual>This section demonstrates the basic input controls. These controls are the mainstay of user
                         input. You have simple text entry, multi line text entry, date entry, date time entry and
                         number. Finally you have the humble checkbox.
                     </textual>
-                </paragraph>
+                </text>
                 <input type="CURRENCY" reference="currency" required="false" size="MEDIUM" v="v1">
                     <textual>Currency Value</textual>
                     <test-value text="679.15"/>
@@ -79,13 +79,13 @@
                 </input>
             </div>
             <div orientation="COLUMN" margin="0em 1em" v="v1">
-                <paragraph paragraphStyle="PLAIN" v="v1">
+                <text paragraphStyle="PLAIN" v="v1">
                     <textual>
                         This column demonstrates the Enumeration controls. These controls allow the user to select from
                         a limited set of options. You have the radio and checkbox lists and you have the single select
                         dropdowns and multi select dropdowns.
                     </textual>
-                </paragraph>
+                </text>
                 <enumeration-input type="STRING" reference="colours" required="false"
                     cardinality="SINGLE_SELECT" style="RADIO_CHECKBOX" size="MEDIUM"
                     v="v1">
@@ -161,10 +161,10 @@
                 </enumeration-input>
             </div>
             <div orientation="COLUMN" v="v1">
-                <paragraph paragraphStyle="PLAIN" v="v1">
+                <text paragraphStyle="PLAIN" v="v1">
                     <textual>This section shows the different sizing options available for inputs and checkboxes.
                     </textual>
-                </paragraph>
+                </text>
                 <div orientation="COLUMN" v="v1">
                     <input type="INPUT" reference="small" required="false" size="SMALL" v="v1">
                         <textual>Small</textual>
@@ -198,13 +198,13 @@
             </div>
         </div>
         <div orientation="COLUMN" v="v1">
-            <paragraph paragraphStyle="PLAIN" v="v1">
+            <text paragraphStyle="PLAIN" v="v1">
                 <textual>
                     This section demonstrates the specialized Scale controls. These controls are really enumerations
                     that are pre-configured. These are especially useful in surveys and the like. The user is asked to
                     supply a value in a predefined set of values such as 1 to 10 or Yes vs No.
                 </textual>
-            </paragraph>
+            </text>
             <scale scaleType="NUMERICAL" reference="numerical" required="false" size="MEDIUM"
                 v="v1">
                 <textual>Numerical</textual>
@@ -252,13 +252,19 @@
         </div>
         <div justifyContent="SPACE_BETWEEN" alignItems="CENTER" v="v1">
             <submit-button id="a123412342134" size="SMALL" required="false" v="v1">
-                <textual>Submit small</textual>
+                <text v="v1">
+                    <textual>Submit Small</textual>
+                </text>
             </submit-button>
             <submit-button id="a123412342154" size="MEDIUM" buttonFlavour="SUCCESS" required="false" v="v1">
-                <textual>Submit Medium</textual>
+                <text v="v1">
+                    <textual>Submit Medium</textual>
+                </text>
             </submit-button>
             <submit-button id="a123414342134" size="LARGE" buttonFlavour="PRIMARY" required="false" v="v1">
-                <textual>Submit Large</textual>
+                <text v="v1">
+                    <textual>Submit Large</textual>
+                </text>
             </submit-button>
         </div>
     </fake-store>

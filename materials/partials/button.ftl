@@ -6,8 +6,8 @@
     <input type="hidden" name="source" value="${source}">
     <input type="hidden" name="payload" value="${payload}">
 </#if>
-<button id="${id}" type="submit" name="${name}" class="button-widget btn ${classes} ${textualClasses}"
-        style="<#if !formRequired>${itemStyles}</#if> ${textualStyles}"
+<button id="${id}" type="submit" name="${name}" class="button-widget <#if representation == 'text'>btn  ${classes}</#if>"
+        style="<#if !formRequired>${itemStyles}</#if>"
         onclick="${testMode?string('alert(&quot;Buton clicked&quot;); event.preventDefault();','')}"
         <#if disabled??>disabled</#if>
 >

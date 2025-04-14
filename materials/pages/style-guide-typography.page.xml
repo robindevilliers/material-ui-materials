@@ -3,12 +3,12 @@
       title="Style Guide - Typography Page"
       description="Style Guide Typography Page" defnVersion="v1" orientation="COLUMN">
 
-    <paragraph paragraphStyle="PLAIN" v="v1">
+    <text paragraphStyle="PLAIN" v="v1">
         <textual>
             This page presents the typographical styling for the style guide. You should pay attention to the intended
             purpose of the elements and how well they contrast with other elements on the page.
         </textual>
-    </paragraph>
+    </text>
 
     <div orientation="ROW" justifyContent="SPACE_BETWEEN" v="v1">
         <div orientation="COLUMN" v="v1">
@@ -36,32 +36,32 @@
         </div>
 
         <div orientation="COLUMN" flexBasis="50%" justifyContent="START" v="v1">
-            <paragraph v="v1">
+            <text v="v1">
                 <textual>
                     Presented here are the titles for the style guide. Keep in mind the following
                     criteria when evaluating the styles.
                 </textual>
-            </paragraph>
+            </text>
             <list v="v1">
                 <list-item>
-                    <paragraph v="v1">
+                    <text v="v1">
                         <textual>Are larger titles actually larger than smaller titles?</textual>
-                    </paragraph>
+                    </text>
                 </list-item>
                 <list-item>
-                    <paragraph v="v1">
+                    <text v="v1">
                         <textual>Does the font choice fit the overall design and purrpose of the business?</textual>
-                    </paragraph>
+                    </text>
                 </list-item>
                 <list-item>
-                    <paragraph v="v1">
+                    <text v="v1">
                         <textual>Is the spacing above and below the title intended?</textual>
-                    </paragraph>
+                    </text>
                 </list-item>
                 <list-item>
-                    <paragraph v="v1">
+                    <text v="v1">
                         <textual>Are the fonts more expressive than textual?</textual>
-                    </paragraph>
+                    </text>
                 </list-item>
             </list>
         </div>
@@ -74,15 +74,15 @@
             <title size="LARGE" v="v1">
                 <textual>Of Cats and other Colours for Nonsensical Titles</textual>
             </title>
-            <paragraph paragraphStyle="SUPPRESSED" v="v1">
+            <text paragraphStyle="SUPPRESSED" v="v1">
                 <textual>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                     labore et dolore magna aliqua.
                 </textual>
-            </paragraph>
+            </text>
             <title size="MEDIUM" v="v1">
                 <textual>The standard Lorem Ipsum passage, used since the 1500s</textual>
             </title>
-            <paragraph paragraphStyle="PLAIN" v="v1">
+            <text paragraphStyle="PLAIN" v="v1">
                 <textual>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -90,8 +90,8 @@
                     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
                     culpa qui officia deserunt mollit anim id est laborum.
                 </textual>
-            </paragraph>
-            <paragraph paragraphStyle="BLOCKQUOTE" v="v1">
+            </text>
+            <text paragraphStyle="BLOCKQUOTE" v="v1">
                 <textual>
                     Friends, Romans, countrymen, lend me your ears;
                     I come to bury Caesar, not to praise him.
@@ -100,48 +100,48 @@
                     So let it be with Caesar. The noble Brutus
                     Hath told you Caesar was ambitious:
                 </textual>
-            </paragraph>
+            </text>
 
-            <paragraph paragraphStyle="PLAIN" v="v1">
+            <text paragraphStyle="PLAIN" v="v1">
                 <textual>
                     Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
                     magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum
                     quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut
                     labore et dolore magnam aliquam quaerat voluptatem.
                 </textual>
-            </paragraph>
+            </text>
 
         </div>
         <div orientation="COLUMN" width="50%" justifyContent="START" v="v1">
-            <paragraph v="v1">
+            <text v="v1">
                 <textual>
                     Here we present the title styling in association with a paragraph. There is a suppressed
                     paragraph that is intended to work as a hint, or lesser content in the wider page. We follow that
                     with a normal paragraph. Then a blockquote and then finish with a paragraph again.
                 </textual>
-            </paragraph>
+            </text>
             <list v="v1">
                 <list-item>
-                    <paragraph v="v1">
+                    <text v="v1">
                         <textual>Is the paragraph text easy to read?</textual>
-                    </paragraph>
+                    </text>
                 </list-item>
                 <list-item>
-                    <paragraph v="v1">
+                    <text v="v1">
                         <textual>Does the paragraph font look good given the high density of textual information?
                         </textual>
-                    </paragraph>
+                    </text>
                 </list-item>
                 <list-item>
-                    <paragraph v="v1">
+                    <text v="v1">
                         <textual>Is the suppressed paragraph actually suppressed?</textual>
-                    </paragraph>
+                    </text>
                 </list-item>
                 <list-item>
-                    <paragraph v="v1">
+                    <text v="v1">
                         <textual>Is the blockquoted paragraph preserving whitespace, and look like a block quote?
                         </textual>
-                    </paragraph>
+                    </text>
                 </list-item>
             </list>
         </div>
@@ -156,7 +156,7 @@
                 <textual>1914 translation by H. Rackham</textual>
             </title>
 
-            <paragraph paragraphStyle="PLAIN" v="v1">
+            <text paragraphStyle="PLAIN" v="v1">
                 <textual>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -164,7 +164,7 @@
                     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
                     culpa qui officia deserunt mollit anim id est laborum.
                 </textual>
-            </paragraph>
+            </text>
 
             <inset-text flavour="PRIMARY" v="v1">
                 <textual>
@@ -177,44 +177,44 @@
                 <textual>Section 1.10.33 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC</textual>
             </title>
 
-            <paragraph paragraphStyle="PLAIN" v="v1">
+            <text paragraphStyle="PLAIN" v="v1">
                 <textual>
                     Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
                     magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum
                     quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut
                     labore et dolore magnam aliquam quaerat voluptatem.
                 </textual>
-            </paragraph>
+            </text>
 
             <well flavour="WARNING" margin="5px" v="v1">
-                <paragraph v="v1">
+                <text v="v1">
                     <textual>
                         Default Well. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </textual>
-                </paragraph>
+                </text>
             </well>
 
         </div>
         <div orientation="COLUMN" width="50%" justifyContent="START" v="v1">
-            <paragraph v="v1">
+            <text v="v1">
                 <textual>
                     Here we present some of the other stylistic elements that are intended to operate within large
                     bodies of text. The Inset Text element is intended to present textual information that is an aside
                     to the current textual content. It in someway relates, but is separate from. In contrast we end with
                     a Well element that separates content is a more absolute sense.
                 </textual>
-            </paragraph>
+            </text>
             <list v="v1">
                 <list-item>
-                    <paragraph v="v1">
+                    <text v="v1">
                         <textual>How does the Inset Text element look?</textual>
-                    </paragraph>
+                    </text>
                 </list-item>
                 <list-item>
-                    <paragraph v="v1">
+                    <text v="v1">
                         <textual>How does the Well element look?</textual>
-                    </paragraph>
+                    </text>
                 </list-item>
             </list>
         </div>
@@ -231,37 +231,37 @@
                 </textual>
             </title>
 
-            <paragraph paragraphStyle="PLAIN" v="v1">
+            <text paragraphStyle="PLAIN" v="v1">
                 <textual>
                     Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
                     totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
                     dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
                     sed quia consequuntur magni.
                 </textual>
-            </paragraph>
+            </text>
 
             <list listStyle="NUMBERED" v="v1">
                 <list-item>
-                    <paragraph v="v1">
+                    <text v="v1">
                         <textual>5 golden bees</textual>
-                    </paragraph>
+                    </text>
                 </list-item>
                 <list-item>
-                    <paragraph v="v1">
+                    <text v="v1">
                         <textual>
                             On the third day of Christmas, my true love sent to me Three french hens Two
                             turtle doves and A partridge in a pear tree
                         </textual>
-                    </paragraph>
+                    </text>
                 </list-item>
                 <list-item>
-                    <paragraph v="v1">
+                    <text v="v1">
                         <textual>A wheelbarrow</textual>
-                    </paragraph>
+                    </text>
                 </list-item>
             </list>
 
-            <paragraph paragraphStyle="PLAIN" v="v1">
+            <text paragraphStyle="PLAIN" v="v1">
                 <textual>
                     Dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia
                     dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut
@@ -270,28 +270,28 @@
                     autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
                     vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
                 </textual>
-            </paragraph>
+            </text>
 
         </div>
         <div orientation="COLUMN" width="50%" justifyContent="START" v="v1">
-            <paragraph v="v1">
+            <text v="v1">
                 <textual>In this example we represent a list of items within a body of text.</textual>
-            </paragraph>
+            </text>
             <list v="v1">
                 <list-item>
-                    <paragraph v="v1">
+                    <text v="v1">
                         <textual>How does the List look?</textual>
-                    </paragraph>
+                    </text>
                 </list-item>
                 <list-item>
-                    <paragraph v="v1">
+                    <text v="v1">
                         <textual>Is the spacing correct?</textual>
-                    </paragraph>
+                    </text>
                 </list-item>
                 <list-item>
-                    <paragraph v="v1">
+                    <text v="v1">
                         <textual>Does the extra long line break and wrap correctly?</textual>
-                    </paragraph>
+                    </text>
                 </list-item>
             </list>
         </div>

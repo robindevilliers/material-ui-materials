@@ -1,6 +1,5 @@
 import { Renderer } from '../Renderer';
-import { Element, isElement } from '../../xml-parser';
-import { textStyleSupport } from '../text-style-support';
+import { Element, isText } from '../../xml-parser';
 import Properties from '../Properties';
 import flexItemSupport from '../flex-item-support';
 import ClassManager from '../ClassManager';
@@ -44,10 +43,13 @@ export default class ButtonRenderer implements Renderer {
         const classManager = new ClassManager(classMappings);
         classManager.append(element.attributes.size, 'btn-', '');
         classManager.append(element.attributes.buttonFlavour, 'btn-', 'btn-default');
-        textStyleSupport(data, element, classMappings);
         flexItemSupport(data, classManager, element.attributes);
         data.classes = classManager.toString();
-        data.content = renderingEngine.renderChildren(element.children.find(el => isElement(el) && (el as Element).name === 'textual')! as Element);
+
+        const child = element.children.filter(c => !isText(c))[0] as Element;
+        data.representation = child.name;
+
+        data.content = data.content = renderingEngine.renderChildren(element);
 
         return renderingEngine.render('button.ftl', data);
     }

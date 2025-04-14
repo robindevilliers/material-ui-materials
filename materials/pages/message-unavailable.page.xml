@@ -3,14 +3,16 @@
     <title size="LARGE" v="v1">
         <textual>Message Unavailable</textual>
     </title>
-    <paragraph v="v1">
+    <text v="v1">
         <textual>
             This message is no longer in queue. Probably because some other process has consumed it.
         </textual>
-    </paragraph>
+    </text>
     <div justifyContent="END" v="v1">
         <cancel-button id="cancel-button" buttonFlavour="DEFAULT" margin="0.25em 0.5em" v="v1">
-            <textual>Continue</textual>
+            <text v="v1">
+                <textual>Continue</textual>
+            </text>
         </cancel-button>
     </div>
 </page>

@@ -9,22 +9,22 @@
                 <title size="LARGE" fontFlavour="WHITE" v="v1">
                     <textual>Welcome to the Materials Toolkit</textual>
                 </title>
-                <paragraph v="v1">
+                <text v="v1">
                     <textual>
                         This is the index page. It will provide links to the various pages required in the Materials
                         Toolkit, and provide context.
                     </textual>
-                </paragraph>
+                </text>
             </div>
         </div>
     </jumbotron>
-    <paragraph v="v1">
+    <text v="v1">
         <textual>
             The Materials Toolkit allows web developers to develop the assets necessary for Maximillian Workflows to
             render Pages, and Wizards on the platform.
         </textual>
-    </paragraph>
-    <paragraph v="v1">
+    </text>
+    <text v="v1">
         <textual>
             How does this work? Maximillian Workflows defines a semantic format for web pages. Web pages are defined in
             page.xml files as XML. You can see them in the &apos;pages&apos; directory. When the platform needs to
@@ -32,8 +32,8 @@
             Each HTML Partial is defined in a FTL (freemarker) file and they reside in the &apos;partials&apos;
             directory.
         </textual>
-    </paragraph>
-    <paragraph v="v1">
+    </text>
+    <text v="v1">
         <textual>
             The Semantic Page files allow us to offer a richer set of UI elements than normal HTML, and in a machine
             read-able format. This allows us to create an editor over the Semantic Pages that allow users to define
@@ -41,160 +41,175 @@
             is separated from business process design, allowing users who are business people to more efficiently
             develop their business processes while not worrying about presentation.
         </textual>
-    </paragraph>
-    <paragraph v="v1">
+    </text>
+    <text v="v1">
         <textual>
             What is required to make this all work are the Partials (the FTL templates), and other HTML assets including
             images and stylesheets. This is the purpose of the Materials Toolkit. Each organisation has their own set of
             materials that defines how their website looks.
         </textual>
-    </paragraph>
-    <paragraph v="v1">
+    </text>
+    <text v="v1">
         <textual>
             Additionally, there are predefined Pages. These pages are not defined in the Editor, and not available to
             change by normal users. They are defined here in the materials. They are mandatory and allow the platform to
             perform standard features. Displaying the generic error page is a good example. The standard error page is
             defined here as &apos;error.page.xml&apos;. These are all listed below.
         </textual>
-    </paragraph>
+    </text>
     <title size="LARGER" v="v1">
         <textual>Style Guides</textual>
     </title>
-    <paragraph v="v1">
+    <text v="v1">
         <textual>
             The Style Guide Pages are only used to render the templates so that you can see how they look. They are not
             required by the Platform. Feel free to add and edit these pages. These pages can be reached on the Platform.
         </textual>
-    </paragraph>
+    </text>
     <div v="v1" alignItems="STRETCH" wrap="WRAP" border="1px solid black">
-        <card type="page" page="style-guide-landing.html" openNewWindow="false"
+        <link type="internal" view="style-guide-landing.html" openNewWindow="false"
             flexBasis="240px" flexShrink="0" margin="0em 1em 1em 0em" v="v1">
-            <image src="temp0.jpg" alt="Image of Suzi" title="Suzi Profile Picture"
-                width="240px" v="v1"/>
-            <card-body orientation="COLUMN">
-                <title size="SMALLER" v="v1">
-                    <textual>Landing Page</textual>
-                </title>
-                <paragraph paragraphStyle="PLAIN" v="v1">
-                    <textual>
-                        The goal of the landing page is to sell a concise set of ideas to the public. It focuses on
-                        impact rather than density.
-                    </textual>
-                </paragraph>
-            </card-body>
-        </card>
-        <card type="page" page="style-guide-portfolio.html" openNewWindow="false"
+            <card v="v1">
+                <image src="temp0.jpg" alt="Image of Suzi" title="Suzi Profile Picture"
+                    width="240px" v="v1"/>
+                <card-body orientation="COLUMN">
+                    <title size="SMALLER" v="v1">
+                        <textual>Landing Page</textual>
+                    </title>
+                    <text paragraphStyle="PLAIN" v="v1">
+                        <textual>
+                            The goal of the landing page is to sell a concise set of ideas to the public. It focuses on
+                            impact rather than density.
+                        </textual>
+                    </text>
+                </card-body>
+            </card>
+        </link>
+        <link type="internal" view="style-guide-portfolio.html" openNewWindow="false"
             flexBasis="240px" flexShrink="0" margin="0em 1em 1em 0em" v="v1">
-            <image src="temp2.jpg" alt="Portfolio" title="Portfolio"
-                width="240px" v="v1"/>
-            <card-body orientation="COLUMN">
-                <title size="SMALLER" v="v1">
-                    <textual>Portfolio Page</textual>
-                </title>
-                <paragraph paragraphStyle="PLAIN" v="v1">
-                    <textual>
-                        The portfolio page is typical for professional websites where the goal is to present facts
-                        centered around specific persons or products.
-                    </textual>
-                </paragraph>
-            </card-body>
-        </card>
-        <card type="page" page="style-guide-question.html" openNewWindow="false"
+            <card v="v1">
+                <image src="temp2.jpg" alt="Portfolio" title="Portfolio"
+                    width="240px" v="v1"/>
+                <card-body orientation="COLUMN">
+                    <title size="SMALLER" v="v1">
+                        <textual>Portfolio Page</textual>
+                    </title>
+                    <text paragraphStyle="PLAIN" v="v1">
+                        <textual>
+                            The portfolio page is typical for professional websites where the goal is to present facts
+                            centered around specific persons or products.
+                        </textual>
+                    </text>
+                </card-body>
+            </card>
+        </link>
+        <link type="internal" view="style-guide-question.html" openNewWindow="false"
             flexBasis="240px" flexShrink="0" margin="0em 1em 1em 0em" v="v1">
-            <image src="temp7.jpg" alt="Question" title="Question"
-                width="240px" v="v1"/>
-            <card-body orientation="COLUMN">
-                <title size="SMALLER" v="v1">
-                    <textual>Question Page</textual>
-                </title>
-                <paragraph paragraphStyle="PLAIN" v="v1">
-                    <textual>
-                        The portfolio page is typical for professional websites where the goal is to present facts
-                        centered around specific persons or products.
-                    </textual>
-                </paragraph>
-            </card-body>
-        </card>
-        <card type="page" page="style-guide-typography.html" openNewWindow="false"
+            <card v="v1">
+                <image src="temp7.jpg" alt="Question" title="Question"
+                    width="240px" v="v1"/>
+                <card-body orientation="COLUMN">
+                    <title size="SMALLER" v="v1">
+                        <textual>Question Page</textual>
+                    </title>
+                    <text paragraphStyle="PLAIN" v="v1">
+                        <textual>
+                            The portfolio page is typical for professional websites where the goal is to present facts
+                            centered around specific persons or products.
+                        </textual>
+                    </text>
+                </card-body>
+            </card>
+        </link>
+        <link type="internal" view="style-guide-typography.html" openNewWindow="false"
             flexBasis="240px" flexShrink="0" margin="0em 1em 1em 0em" v="v1">
-            <image src="temp1.jpg" alt="Page A" title="Page A" width="240px"
-                v="v1"/>
-            <card-body orientation="COLUMN">
-                <title size="SMALLER" v="v1">
-                    <textual>Typography Page</textual>
-                </title>
-                <paragraph paragraphStyle="PLAIN" v="v1">
-                    <textual>
-                        This web page presents all the fonts and paragraph styles used in the style guide.
-                    </textual>
-                </paragraph>
-            </card-body>
-        </card>
-
-        <card type="page" page="style-guide-alpha.html" openNewWindow="false"
+            <card v="v1">
+                <image src="temp1.jpg" alt="Page A" title="Page A" width="240px"
+                    v="v1"/>
+                <card-body orientation="COLUMN">
+                    <title size="SMALLER" v="v1">
+                        <textual>Typography Page</textual>
+                    </title>
+                    <text paragraphStyle="PLAIN" v="v1">
+                        <textual>
+                            This web page presents all the fonts and paragraph styles used in the style guide.
+                        </textual>
+                    </text>
+                </card-body>
+            </card>
+        </link>
+        <link type="internal" view="style-guide-alpha.html" openNewWindow="false"
             flexBasis="240px" flexShrink="0" margin="0em 1em 1em 0em" v="v1">
-            <image src="temp4.jpg" alt="Reference Alpha" title="Reference Alpha" width="240px"
-                v="v1"/>
-            <card-body orientation="COLUMN">
-                <title size="SMALLER" v="v1">
-                    <textual>Reference Alpha</textual>
-                </title>
-                <paragraph paragraphStyle="PLAIN" v="v1">
-                    <textual>The Reference Alpha page presents a set of widgets outside any context.
-                    </textual>
-                </paragraph>
-            </card-body>
-        </card>
-        <card type="page" page="style-guide-beta.html" openNewWindow="false"
+            <card v="v1">
+                <image src="temp4.jpg" alt="Reference Alpha" title="Reference Alpha" width="240px"
+                    v="v1"/>
+                <card-body orientation="COLUMN">
+                    <title size="SMALLER" v="v1">
+                        <textual>Reference Alpha</textual>
+                    </title>
+                    <text paragraphStyle="PLAIN" v="v1">
+                        <textual>The Reference Alpha page presents a set of widgets outside any context.
+                        </textual>
+                    </text>
+                </card-body>
+            </card>
+        </link>
+        <link type="internal" view="style-guide-beta.html" openNewWindow="false"
             flexBasis="240px" flexShrink="0" margin="0em 1em 1em 0em" v="v1">
-            <image src="temp5.jpg" alt="Reference Beta" title="Reference Beta" width="240px"
-                v="v1"/>
-            <card-body orientation="COLUMN">
-                <title size="SMALLER" v="v1">
-                    <textual>Reference Beta</textual>
-                </title>
-                <paragraph paragraphStyle="PLAIN" v="v1">
-                    <textual>The Reference Beta page presents a set of widgets outside any context.
-                    </textual>
-                </paragraph>
-            </card-body>
-        </card>
-        <card type="page" page="style-guide-delta.html" openNewWindow="false"
+            <card v="v1">
+                <image src="temp5.jpg" alt="Reference Beta" title="Reference Beta" width="240px"
+                    v="v1"/>
+                <card-body orientation="COLUMN">
+                    <title size="SMALLER" v="v1">
+                        <textual>Reference Beta</textual>
+                    </title>
+                    <text paragraphStyle="PLAIN" v="v1">
+                        <textual>The Reference Beta page presents a set of widgets outside any context.
+                        </textual>
+                    </text>
+                </card-body>
+            </card>
+        </link>
+        <link type="internal" view="style-guide-delta.html" openNewWindow="false"
             flexBasis="240px" flexShrink="0" margin="0em 1em 1em 0em" v="v1">
-            <image src="temp6.jpg" alt="Reference Delta" title="Reference Delta" width="240px"
-                v="v1"/>
-            <card-body orientation="COLUMN">
-                <title size="SMALLER" v="v1">
-                    <textual>Reference Delta</textual>
-                </title>
-                <paragraph paragraphStyle="PLAIN" v="v1">
-                    <textual>The Reference Beta page presents a set of widgets outside any context.</textual>
-                </paragraph>
-            </card-body>
-        </card>
-        <card type="page" page="style-guide-specials.html" openNewWindow="false"
+            <card v="v1">
+                <image src="temp6.jpg" alt="Reference Delta" title="Reference Delta" width="240px"
+                    v="v1"/>
+                <card-body orientation="COLUMN">
+                    <title size="SMALLER" v="v1">
+                        <textual>Reference Delta</textual>
+                    </title>
+                    <text paragraphStyle="PLAIN" v="v1">
+                        <textual>The Reference Beta page presents a set of widgets outside any context.</textual>
+                    </text>
+                </card-body>
+            </card>
+        </link>
+        <link type="internal" view="style-guide-specials.html" openNewWindow="false"
             flexBasis="240px" flexShrink="0" margin="0em 1em 1em 0em" v="v1">
-            <image src="temp8.jpg" alt="Specials" title="Specials" width="240px"
-                v="v1"/>
-            <card-body orientation="COLUMN">
-                <title size="SMALLER" v="v1">
-                    <textual>Specials</textual>
-                </title>
-                <paragraph paragraphStyle="PLAIN" v="v1">
-                    <textual>This page contains the special widgets.</textual>
-                </paragraph>
-            </card-body>
-        </card>
+            <card v="v1">
+                <image src="temp8.jpg" alt="Specials" title="Specials" width="240px"
+                    v="v1"/>
+                <card-body orientation="COLUMN">
+                    <title size="SMALLER" v="v1">
+                        <textual>Specials</textual>
+                    </title>
+                    <text paragraphStyle="PLAIN" v="v1">
+                        <textual>This page contains the special widgets.</textual>
+                    </text>
+                </card-body>
+            </card>
+        </link>
     </div>
     <title size="LARGER" v="v1">
         <textual>Special Purpose Pages</textual>
     </title>
-    <paragraph v="v1">
+    <text v="v1">
         <textual>
             The special purpose pages are required by the Platform and are presented in specific contexts for special
             purposes. These are all listed out below.
         </textual>
-    </paragraph>
+    </text>
     <div orientation="ROW" v="v1">
         <table v="v1">
             <row>
@@ -216,16 +231,16 @@
                     </link>
                 </cell>
                 <cell>
-                    <paragraph paragraphStyle="PLAIN" v="v1">
+                    <text paragraphStyle="PLAIN" v="v1">
                         <textual>error.page.xml</textual>
-                    </paragraph>
+                    </text>
                 </cell>
                 <cell>
-                    <paragraph paragraphStyle="PLAIN" v="v1">
+                    <text paragraphStyle="PLAIN" v="v1">
                         <textual>
                             This is the standard error page that is presented whenever an unexpected error occurs.
                         </textual>
-                    </paragraph>
+                    </text>
                 </cell>
             </row>
             <row>
@@ -235,18 +250,18 @@
                     </link>
                 </cell>
                 <cell>
-                    <paragraph paragraphStyle="PLAIN" v="v1">
+                    <text paragraphStyle="PLAIN" v="v1">
                         <textual>not-found.page.xml</textual>
-                    </paragraph>
+                    </text>
                 </cell>
                 <cell>
-                    <paragraph paragraphStyle="PLAIN" v="v1">
+                    <text paragraphStyle="PLAIN" v="v1">
                         <textual>
                             This is the standard page that is displayed when a URL is requested and no page is found.
                             Bear in mind that this page is also returned when there is a page that exists, but the
                             current user does not have authorisation to view the page.
                         </textual>
-                    </paragraph>
+                    </text>
                 </cell>
             </row>
             <row>
@@ -257,21 +272,21 @@
                     </link>
                 </cell>
                 <cell>
-                    <paragraph paragraphStyle="PLAIN" v="v1">
+                    <text paragraphStyle="PLAIN" v="v1">
                         <textual>
                             unauthorized.page.xml
                         </textual>
-                    </paragraph>
+                    </text>
                 </cell>
                 <cell>
-                    <paragraph paragraphStyle="PLAIN" v="v1">
+                    <text paragraphStyle="PLAIN" v="v1">
                         <textual>
                             In most situations, whenever a user requests a Page that he is unauthorized to view, then
                             the Page Resolution Process will not find a suitable page to present and the Not Found Page
                             is served. In some very limited situations, the resolution process is not used, and in those
                             situations, we present this page when the current user is unauthorized.
                         </textual>
-                    </paragraph>
+                    </text>
                 </cell>
             </row>
             <row>
@@ -282,20 +297,20 @@
                     </link>
                 </cell>
                 <cell>
-                    <paragraph paragraphStyle="PLAIN" v="v1">
+                    <text paragraphStyle="PLAIN" v="v1">
                         <textual>
                             register.page.xml
                         </textual>
-                    </paragraph>
+                    </text>
                 </cell>
                 <cell>
-                    <paragraph paragraphStyle="PLAIN" v="v1">
+                    <text paragraphStyle="PLAIN" v="v1">
                         <textual>
                             This is the standard page that is displayed when a URL is requested and no page is found.
                             Bear in mind that this page is also returned when there is a page that exists, but the
                             current user does not have authorisation to view the page.
                         </textual>
-                    </paragraph>
+                    </text>
                 </cell>
             </row>
             <row>
@@ -306,18 +321,18 @@
                     </link>
                 </cell>
                 <cell>
-                    <paragraph paragraphStyle="PLAIN" v="v1">
+                    <text paragraphStyle="PLAIN" v="v1">
                         <textual>
                             registration-complete.page.xml
                         </textual>
-                    </paragraph>
+                    </text>
                 </cell>
                 <cell>
-                    <paragraph paragraphStyle="PLAIN" v="v1">
+                    <text paragraphStyle="PLAIN" v="v1">
                         <textual>This page is presented when a user finishes
                             the registration process.
                         </textual>
-                    </paragraph>
+                    </text>
                 </cell>
             </row>
             <row>
@@ -327,19 +342,19 @@
                     </link>
                 </cell>
                 <cell>
-                    <paragraph paragraphStyle="PLAIN" v="v1">
+                    <text paragraphStyle="PLAIN" v="v1">
                         <textual>
                             email-confirmation-complete.page.xml
                         </textual>
-                    </paragraph>
+                    </text>
                 </cell>
                 <cell>
-                    <paragraph paragraphStyle="PLAIN" v="v1">
+                    <text paragraphStyle="PLAIN" v="v1">
                         <textual>
                             This page is presented when a user clicks on
                             the email confirmation link they will receive as a part of the registration process.
                         </textual>
-                    </paragraph>
+                    </text>
                 </cell>
             </row>
             <row>
@@ -349,14 +364,14 @@
                     </link>
                 </cell>
                 <cell>
-                    <paragraph paragraphStyle="PLAIN" v="v1">
+                    <text paragraphStyle="PLAIN" v="v1">
                         <textual>
                             case-principal-picker.page.xml
                         </textual>
-                    </paragraph>
+                    </text>
                 </cell>
                 <cell>
-                    <paragraph paragraphStyle="PLAIN" v="v1">
+                    <text paragraphStyle="PLAIN" v="v1">
                         <textual>
                             Workflows can be arbitrarily assigned to users by the initiator of the Workflow. This
                             setting is controlled by the definition of the Workflow and is used by Workflow process that
@@ -364,7 +379,7 @@
                             page will present allowing the Staff member to select the Case Principal, the owner of the
                             Workflow.
                         </textual>
-                    </paragraph>
+                    </text>
                 </cell>
             </row>
             <row>
@@ -374,21 +389,21 @@
                     </link>
                 </cell>
                 <cell>
-                    <paragraph paragraphStyle="PLAIN" v="v1">
+                    <text paragraphStyle="PLAIN" v="v1">
                         <textual>
                             privacy.page.xml
                         </textual>
-                    </paragraph>
+                    </text>
                 </cell>
                 <cell>
-                    <paragraph paragraphStyle="PLAIN" v="v1">
+                    <text paragraphStyle="PLAIN" v="v1">
                         <textual>
                             This privacy page is not strictly speaking required by the platform. It is referenced by the
                             login panel template. That panel will present a link that links to this page which outlines
                             the account&apos;s privacy policy. You can introduce additional pages in the same way for
                             arbitrary uses (subject to our terms and conditions of course).
                         </textual>
-                    </paragraph>
+                    </text>
                 </cell>
             </row>
             <row>
@@ -398,20 +413,20 @@
                     </link>
                 </cell>
                 <cell>
-                    <paragraph paragraphStyle="PLAIN" v="v1">
+                    <text paragraphStyle="PLAIN" v="v1">
                         <textual>
                             reset-password.page.xml
                         </textual>
-                    </paragraph>
+                    </text>
                 </cell>
                 <cell>
-                    <paragraph paragraphStyle="PLAIN" v="v1">
+                    <text paragraphStyle="PLAIN" v="v1">
                         <textual>
                             This page presents the Reset Password Panel that allows users to request a password reset.
                             This page is usually presented after the user has clicked on the password reset link they
                             would have received in an email.
                         </textual>
-                    </paragraph>
+                    </text>
                 </cell>
             </row>
             <row>
@@ -421,18 +436,18 @@
                     </link>
                 </cell>
                 <cell>
-                    <paragraph paragraphStyle="PLAIN" v="v1">
+                    <text paragraphStyle="PLAIN" v="v1">
                         <textual>
                             reset-password-complete.page.xml
                         </textual>
-                    </paragraph>
+                    </text>
                 </cell>
                 <cell>
-                    <paragraph paragraphStyle="PLAIN" v="v1">
+                    <text paragraphStyle="PLAIN" v="v1">
                         <textual>
                             This page presents a page that is presented once the user has performed a password reset.
                         </textual>
-                    </paragraph>
+                    </text>
                 </cell>
             </row>
             <row>
@@ -442,19 +457,19 @@
                     </link>
                 </cell>
                 <cell>
-                    <paragraph paragraphStyle="PLAIN" v="v1">
+                    <text paragraphStyle="PLAIN" v="v1">
                         <textual>
                             reset-password-request.page.xml
                         </textual>
-                    </paragraph>
+                    </text>
                 </cell>
                 <cell>
-                    <paragraph paragraphStyle="PLAIN" v="v1">
+                    <text paragraphStyle="PLAIN" v="v1">
                         <textual>
                             This page presents the Reset Password Request Panel the user to specify a registered email
                             address for the purposes of receiving a password reset email.
                         </textual>
-                    </paragraph>
+                    </text>
                 </cell>
             </row>
             <row>
@@ -464,19 +479,19 @@
                     </link>
                 </cell>
                 <cell>
-                    <paragraph paragraphStyle="PLAIN" v="v1">
+                    <text paragraphStyle="PLAIN" v="v1">
                         <textual>
                             reset-password-request-complete.page.xml
                         </textual>
-                    </paragraph>
+                    </text>
                 </cell>
                 <cell>
-                    <paragraph paragraphStyle="PLAIN" v="v1">
+                    <text paragraphStyle="PLAIN" v="v1">
                         <textual>
                             This page presents after the user has submitted an email address for the purposes of
                             password reset.
                         </textual>
-                    </paragraph>
+                    </text>
                 </cell>
             </row>
             <row>
@@ -486,17 +501,17 @@
                     </link>
                 </cell>
                 <cell>
-                    <paragraph paragraphStyle="PLAIN" v="v1">
+                    <text paragraphStyle="PLAIN" v="v1">
                         <textual>wizard-test-results.page.xml</textual>
-                    </paragraph>
+                    </text>
                 </cell>
                 <cell>
-                    <paragraph paragraphStyle="PLAIN" v="v1">
+                    <text paragraphStyle="PLAIN" v="v1">
                         <textual>
                             The Wizard Test Results page is a special purpose page that presents the Wizard Test Results
                             widget. This page is only presented by the Admin Console as a result of testing a Wizard.
                         </textual>
-                    </paragraph>
+                    </text>
                 </cell>
             </row>
 
@@ -507,18 +522,18 @@
                     </link>
                 </cell>
                 <cell>
-                    <paragraph paragraphStyle="PLAIN" v="v1">
+                    <text paragraphStyle="PLAIN" v="v1">
                         <textual>workflow-confirm.page.xml</textual>
-                    </paragraph>
+                    </text>
                 </cell>
                 <cell>
-                    <paragraph paragraphStyle="PLAIN" v="v1">
+                    <text paragraphStyle="PLAIN" v="v1">
                         <textual>
                             Whenever a Workflow is initiated by clicking on the Initiate Workflow Button, or Menu Item,
                             then this page is presented. This page works as a confirmation page, to allow the user to
                             cancel the previous action.
                         </textual>
-                    </paragraph>
+                    </text>
                 </cell>
             </row>
             <row>
@@ -528,16 +543,16 @@
                     </link>
                 </cell>
                 <cell>
-                    <paragraph paragraphStyle="PLAIN" v="v1">
+                    <text paragraphStyle="PLAIN" v="v1">
                         <textual>workflow-confirm.page.xml</textual>
-                    </paragraph>
+                    </text>
                 </cell>
                 <cell>
-                    <paragraph paragraphStyle="PLAIN" v="v1">
+                    <text paragraphStyle="PLAIN" v="v1">
                         <textual>
                             Some operations require a confirmation page. This page will be presented as required.
                         </textual>
-                    </paragraph>
+                    </text>
                 </cell>
             </row>
             <row>
@@ -547,18 +562,18 @@
                     </link>
                 </cell>
                 <cell>
-                    <paragraph paragraphStyle="PLAIN" v="v1">
+                    <text paragraphStyle="PLAIN" v="v1">
                         <textual>message-unavailable.page.xml</textual>
-                    </paragraph>
+                    </text>
                 </cell>
                 <cell>
-                    <paragraph paragraphStyle="PLAIN" v="v1">
+                    <text paragraphStyle="PLAIN" v="v1">
                         <textual>
                             When two or more users simultaneously click on a message in a Tray, or Folder, then one of
                             them will continue the operation as normal, while the other will be presented with this
                             page.
                         </textual>
-                    </paragraph>
+                    </text>
                 </cell>
             </row>
             <row>
@@ -568,12 +583,12 @@
                     </link>
                 </cell>
                 <cell>
-                    <paragraph paragraphStyle="PLAIN" v="v1">
+                    <text paragraphStyle="PLAIN" v="v1">
                         <textual>workflow-executed.page.xml</textual>
-                    </paragraph>
+                    </text>
                 </cell>
                 <cell>
-                    <paragraph paragraphStyle="PLAIN" v="v1">
+                    <text paragraphStyle="PLAIN" v="v1">
                         <textual>
                             This page is presented immediately after a Workflow has been initiated. What actually
                             happens after intiating a workflow depends on the Workflow&apos;s plan, but in some cases
@@ -581,7 +596,7 @@
                             some indication. It is also possible that the current user, the Case Principal, will have a
                             Wizard to complete. In this case the Wizard will present after this page.
                         </textual>
-                    </paragraph>
+                    </text>
                 </cell>
             </row>
             <row>
@@ -591,17 +606,17 @@
                     </link>
                 </cell>
                 <cell>
-                    <paragraph paragraphStyle="PLAIN" v="v1">
+                    <text paragraphStyle="PLAIN" v="v1">
                         <textual>wizard-delete-confirmation.form.xml</textual>
-                    </paragraph>
+                    </text>
                 </cell>
                 <cell>
-                    <paragraph paragraphStyle="PLAIN" v="v1">
+                    <text paragraphStyle="PLAIN" v="v1">
                         <textual>
                             This page is presented immediately when the Array Item Delete Button is clicked within a
                             wizard.
                         </textual>
-                    </paragraph>
+                    </text>
                 </cell>
             </row>
             <row>
@@ -611,17 +626,17 @@
                     </link>
                 </cell>
                 <cell>
-                    <paragraph paragraphStyle="PLAIN" v="v1">
+                    <text paragraphStyle="PLAIN" v="v1">
                         <textual>wizard-transfer-confirmation.form.xml</textual>
-                    </paragraph>
+                    </text>
                 </cell>
                 <cell>
-                    <paragraph paragraphStyle="PLAIN" v="v1">
+                    <text paragraphStyle="PLAIN" v="v1">
                         <textual>
                             This page is presented immediately when the Transfer Button is clicked within a
                             wizard.
                         </textual>
-                    </paragraph>
+                    </text>
                 </cell>
             </row>
         </table>
@@ -630,12 +645,12 @@
     <title size="LARGER" v="v1">
         <textual>Special Purpose Emails</textual>
     </title>
-    <paragraph v="v1">
+    <text v="v1">
         <textual>
             The special purpose emails are required by the Platform and are sent as emails in specific contexts. These
             are all listed out below.
         </textual>
-    </paragraph>
+    </text>
     <div orientation="ROW" v="v1">
         <table v="v1">
             <row>
@@ -657,16 +672,16 @@
                     </link>
                 </cell>
                 <cell>
-                    <paragraph paragraphStyle="PLAIN" v="v1">
+                    <text paragraphStyle="PLAIN" v="v1">
                         <textual>test-email.email.xml</textual>
-                    </paragraph>
+                    </text>
                 </cell>
                 <cell>
-                    <paragraph paragraphStyle="PLAIN" v="v1">
+                    <text paragraphStyle="PLAIN" v="v1">
                         <textual>
                             This is the standard email template used when the test email functionality is executed.
                         </textual>
-                    </paragraph>
+                    </text>
                 </cell>
             </row>
             <row>
@@ -676,17 +691,17 @@
                     </link>
                 </cell>
                 <cell>
-                    <paragraph paragraphStyle="PLAIN" v="v1">
+                    <text paragraphStyle="PLAIN" v="v1">
                         <textual>email-confirmation.email.xml</textual>
-                    </paragraph>
+                    </text>
                 </cell>
                 <cell>
-                    <paragraph paragraphStyle="PLAIN" v="v1">
+                    <text paragraphStyle="PLAIN" v="v1">
                         <textual>
                             This is the standard email template when a user&apos;s email address is challenged during
                             the registration process.
                         </textual>
-                    </paragraph>
+                    </text>
                 </cell>
             </row>
             <row>
@@ -696,16 +711,16 @@
                     </link>
                 </cell>
                 <cell>
-                    <paragraph paragraphStyle="PLAIN" v="v1">
+                    <text paragraphStyle="PLAIN" v="v1">
                         <textual>reset-password.email.xml</textual>
-                    </paragraph>
+                    </text>
                 </cell>
                 <cell>
-                    <paragraph paragraphStyle="PLAIN" v="v1">
+                    <text paragraphStyle="PLAIN" v="v1">
                         <textual>
                             This is the email template when a user&apos;s requests a password reset.
                         </textual>
-                    </paragraph>
+                    </text>
                 </cell>
             </row>
         </table>
@@ -713,7 +728,7 @@
     <title size="LARGER" v="v1">
         <textual>Widget/Partial Reference</textual>
     </title>
-    <paragraph v="v1">
+    <text v="v1">
         <textual>
             This section lists out all the Widgets. A Widget is an XML element that you can include in a Page Definition
             (page.xml file). Each Widget is backed by a Partial, which is a Freemarker Template. You can find the
@@ -723,7 +738,7 @@
         <link type="external" url="https://freemarker.apache.org/" openNewWindow="true" v="v1">
             <textual>Freemarker</textual>
         </link>
-    </paragraph>
+    </text>
     <list listStyle="BULLET" flexBasis="14em" flexShrink="0" v="v1">
         <list-item>
             <link view="reference.html#abandon-wip-button" v="v1">
@@ -1011,11 +1026,6 @@
             </link>
         </list-item>
         <list-item>
-            <link view="reference.html#paragraph" v="v1">
-                <textual>Paragraph</textual>
-            </link>
-        </list-item>
-        <list-item>
             <link view="reference.html#password-reset-link" v="v1">
                 <textual>Password Reset Link</textual>
             </link>
@@ -1093,6 +1103,11 @@
         <list-item>
             <link view="reference.html#table" v="v1">
                 <textual>Table</textual>
+            </link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#text" v="v1">
+                <textual>Text</textual>
             </link>
         </list-item>
         <list-item>
@@ -1176,14 +1191,14 @@
         <textual>Icons</textual>
     </title>
 
-    <paragraph v="v1">
+    <text v="v1">
         <textual>
             If you want to use Icons in your style pages, you need to enable them in the iconConfig.json file. Set
             enable to true, and they will be available. An icon system will have to be included in the Materials in
             order for this to work.
         </textual>
-    </paragraph>
-    <paragraph v="v1">
+    </text>
+    <text v="v1">
         <textual>
             So how do Icons work? We are going to take Bootstrap Icons as an example. But you can use whatever icon
             system you want. Bootstrap Icons can be found using the link below. When rendering an icon, the icon.ftl
@@ -1193,32 +1208,32 @@
         <link type="external" url="https://icons.getbootstrap.com/" openNewWindow="true" v="v1">
             <textual>Bootstrap</textual>
         </link>
-    </paragraph>
-    <paragraph v="v1">
+    </text>
+    <text v="v1">
         <textual>
             In order for the user to understand what he must enter for the name property, there is a bit of html we
             present to the user in the Admin Console that is supplied here in the Materials. This html is defined in the
             iconHelp.html file.
         </textual>
-    </paragraph>
+    </text>
 
     <title size="LARGER" v="v1">
         <textual>Images</textual>
     </title>
 
-    <paragraph v="v1">
+    <text v="v1">
         <textual>
             All images that are available to the user are supplied via the Materials. There needs to be a list of images
             for the Admin Console to know what to present to the user in the Image Editor. This list is the imges.json
             file.
         </textual>
-    </paragraph>
+    </text>
 
     <title size="LARGER" v="v1">
         <textual>Emails</textual>
     </title>
 
-    <paragraph v="v1">
+    <text v="v1">
         <textual>
             Emails are very similar to Pages. In the emails directory you will find email.xml files. These files are the
             definitions for Emails that are predefined. Additional Emails can be added via the Admin Console. What is
@@ -1227,13 +1242,13 @@
             the email to be viewed offline. The email.properties file contains a list of attachments which is a comma
             separated list of images that need to be embedded with each email.
         </textual>
-    </paragraph>
+    </text>
 
     <title size="LARGER" v="v1">
         <textual>Plantain Substitutions</textual>
     </title>
 
-    <paragraph v="v1">
+    <text v="v1">
         <textual>
             In order for the Materials Toolkit to work, it needs some system for handling Plantain Scripts. The
             Materials Toolkit does not include a Plantain Engine. Instead, if the Materials Toolkit finds a script, it
@@ -1242,5 +1257,5 @@
             Switch Widget works. You will see that the Plantain Scripts found for the condition attributes on the If
             Widgets can be found in the substitutions file.
         </textual>
-    </paragraph>
+    </text>
 </page>

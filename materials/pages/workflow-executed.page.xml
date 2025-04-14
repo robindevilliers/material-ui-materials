@@ -6,14 +6,18 @@
             <textual fontFlavour="WHITE">Workflow Executed</textual>
         </title>
 
-        <paragraph v="v1">
-            <textual>The <script v="v1" script=".title"/> workflow has been executed.
+        <text v="v1">
+            <textual>The
+                <script v="v1" script=".title"/>
+                workflow has been executed.
             </textual>
-        </paragraph>
+        </text>
 
         <div justifyContent="END" v="v1">
             <accept-button id="accept-button" buttonFlavour="WHITE" margin="0.25em 0.5em" v="v1">
-                <textual>Close</textual>
+                <text v="v1">
+                    <textual>Close</textual>
+                </text>
             </accept-button>
         </div>
     </jumbotron>

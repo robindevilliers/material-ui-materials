@@ -3,19 +3,23 @@
     <title size="LARGE" v="v1">
         <textual>Confirm Transfer</textual>
     </title>
-    <paragraph v="v1">
+    <text v="v1">
         <textual>
             This action will transfer the message to a different queue. Do you wish to proceed?
         </textual>
-    </paragraph>
+    </text>
     <div v="v1">
         <cancel-button id="cancel-button" size="MEDIUM" buttonFlavour="DEFAULT" required="false"
             margin="0.25em 1em" v="v1">
-            <textual>Cancel</textual>
+            <text v="v1">
+                <textual>Cancel</textual>
+            </text>
         </cancel-button>
         <accept-button id="accept-button" size="MEDIUM" buttonFlavour="DANGER" required="false"
             margin="0.25em 1em" v="v1">
-            <textual>Accept</textual>
+            <text v="v1">
+                <textual>Accept</textual>
+            </text>
         </accept-button>
     </div>
 </form>

@@ -7,9 +7,9 @@ import RenderingEngine from '../RenderingEngine';
 import { textStyleSupport } from '../text-style-support';
 import { RenderError } from '../RenderError';
 
-export default class ParagraphRenderer implements Renderer {
+export default class TextRenderer implements Renderer {
     accept(name: string): boolean {
-        return name === 'paragraph';
+        return name === 'text';
     }
 
     render(element: Element, classMappings: Properties, renderingEngine: RenderingEngine): string {
@@ -28,6 +28,6 @@ export default class ParagraphRenderer implements Renderer {
         data.classes = classManager.toString();
         data.content = renderingEngine.renderChildren(element.children.find(el => isElement(el) && (el as Element).name === 'textual')! as Element);
 
-        return renderingEngine.render('paragraph.ftl', data);
+        return renderingEngine.render('text.ftl', data);
     }
 }

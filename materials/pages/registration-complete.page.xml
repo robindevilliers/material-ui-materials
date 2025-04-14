@@ -6,13 +6,13 @@
                 <title size="LARGE" v="v1">
                     <textual>Thanks for registering.</textual>
                 </title>
-                <paragraph v="v1">
+                <text v="v1">
                     <textual>
                         Please look out for your confirmation email. This email will allow you to confirm your email
                         address. It is necessary to complete the confirmation process before you can access your
                         account.
                     </textual>
-                </paragraph>
+                </text>
             </div>
         </div>
     </div>

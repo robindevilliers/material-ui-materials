@@ -17,12 +17,12 @@
                     </title>
                 </tool-tip>
                 <tool-tip exposition="Paragraph">
-                    <paragraph paragraphStyle="SUPPRESSED" width="250px" v="v1">
+                    <text paragraphStyle="SUPPRESSED" width="250px" v="v1">
                         <textual>
                             Neque porro quisquam est, qui dolorem ipsum quia dolor sit
                             amet, consectetur.
                         </textual>
-                    </paragraph>
+                    </text>
                 </tool-tip>
             </div>
         </div>
@@ -32,7 +32,7 @@
                     <accordion-item-header>
                         <textual>Law Practice</textual>
                     </accordion-item-header>
-                    <paragraph paragraphStyle="SUPPRESSED" v="v1">
+                    <text paragraphStyle="SUPPRESSED" v="v1">
                         <textual>
                             Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
                             laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
@@ -45,7 +45,7 @@
                             consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
                             molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
                         </textual>
-                    </paragraph>
+                    </text>
                 </accordion-item>
                 <accordion-item backgroundFlavour="BLACK" active="false" orientation="COLUMN">
                     <accordion-item-header>
@@ -54,35 +54,35 @@
                     <title size="SMALLER" v="v1">
                         <textual>Voluptatem accusantium</textual>
                     </title>
-                    <paragraph paragraphStyle="SUPPRESSED" width="250px" v="v1">
+                    <text paragraphStyle="SUPPRESSED" width="250px" v="v1">
                         <textual>
                             Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
                             laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
                             architecto beatae vitae dicta sunt explicabo.
                         </textual>
-                    </paragraph>
+                    </text>
                     <title size="SMALLER" v="v1">
                         <textual>Accusantium doloremque</textual>
                     </title>
-                    <paragraph paragraphStyle="SUPPRESSED" width="250px" v="v1">
+                    <text paragraphStyle="SUPPRESSED" width="250px" v="v1">
                         <textual>
                             Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
                             laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
                             architecto beatae vitae dicta sunt explicabo.
                         </textual>
-                    </paragraph>
+                    </text>
                 </accordion-item>
                 <accordion-item backgroundFlavour="WARNING" active="false" orientation="COLUMN">
                     <accordion-item-header>
                         <textual>Past Experience</textual>
                     </accordion-item-header>
-                    <paragraph paragraphStyle="SUPPRESSED" width="250px" v="v1">
+                    <text paragraphStyle="SUPPRESSED" width="250px" v="v1">
                         <textual>
                             Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
                             laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
                             architecto beatae vitae dicta sunt explicabo.
                         </textual>
-                    </paragraph>
+                    </text>
                 </accordion-item>
                 <accordion-item backgroundFlavour="INFO" active="false" orientation="COLUMN">
                     <accordion-item-header>
@@ -92,39 +92,39 @@
                         <table v="v1">
                             <row>
                                 <cell>
-                                    <paragraph v="v1">
+                                    <text v="v1">
                                         <textual>Landline</textual>
-                                    </paragraph>
+                                    </text>
                                 </cell>
                                 <cell>
-                                    <paragraph v="v1">
+                                    <text v="v1">
                                         <textual>(021) 000-0000</textual>
-                                    </paragraph>
+                                    </text>
                                 </cell>
                             </row>
                             <row>
                                 <cell>
-                                    <paragraph v="v1">
+                                    <text v="v1">
                                         <textual>Mobile Number</textual>
-                                    </paragraph>
+                                    </text>
                                 </cell>
                                 <cell>
-                                    <paragraph v="v1">
+                                    <text v="v1">
                                         <textual>(021) 078 000-0000</textual>
-                                    </paragraph>
+                                    </text>
                                 </cell>
                             </row>
                             <row>
                                 <cell>
-                                    <paragraph v="v1">
+                                    <text v="v1">
                                         <textual>Correspondence Address</textual>
-                                    </paragraph>
+                                    </text>
                                 </cell>
                                 <cell>
-                                    <paragraph v="v1">
+                                    <text v="v1">
                                         <textual>123A Artur Street, Clydes Ville, 8001
                                         </textual>
-                                    </paragraph>
+                                    </text>
                                 </cell>
                             </row>
                         </table>

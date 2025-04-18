@@ -1,0 +1,26 @@
+<?schema version="2"?>
+<page id="test" version="1" active="false" released="false" group="admin" title="Style Guide - Landing Page"
+    description="test"
+    defnVersion="v1" orientation="COLUMN">
+
+
+    <div v="v1" orientation="COLUMN">
+        <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
+            flexBasis="100%">
+            <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
+                flexBasis="100%" width="100%">
+                <title size="LARGE" v="v1">
+                    <textual>Color Picker</textual>
+                </title>
+                <text v="v1" flexBasis="500px">
+                    <textual>
+                        The Color Picker allows selecting of a set of colors.
+                    </textual>
+                </text>
+            </div>
+            <color-picker v="v1"/>
+        </div>
+    </div>
+
+</page>
+

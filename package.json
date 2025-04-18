@@ -6,6 +6,7 @@
     "clean": "rm -rf dist www",
     "compile": "webpack --config webpack.config.cjs",
     "test": "jest",
+    "test": "jest",
     "lint": "eslint --ext js,ts lib/",
     "css:scss": "sass materials/scss/main.scss www/public/css/main.css -I . -q --style=compressed",
     "css:autoprefixer": "postcss -u autoprefixer -r www/public/css/*.css",
@@ -23,7 +24,7 @@
     "watch:html": "onchange \"dist/materials-toolkit.js\" \"materials/pages\"  \"materials/emails\" \"materials/partials\" \"materials/*.ftl\" \"materials/plantain-substitutions.json\" -- node ./dist/materials-toolkit.js --dir materials --output ./www",
     "watch:serve": "ws --directory www  --static.index main.html",
     "watch": "npm run build && run-p watch:*",
-    "watch:js": "onchange \"materials/public/js\" -- webpack --config webpack.test.config.js --mode=development",
+    "watch:js": "onchange \"materials/js\" -- webpack --config webpack.test.config.cjs --mode=production && copyfiles -u 3 www/public/js/main.js materials/public/js/",
     "start": "npm run watch"
   },
   "keywords": [],

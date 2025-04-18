@@ -11,6 +11,7 @@ import "bootstrap/js/dist/scrollspy.js";
 import "bootstrap/js/dist/dropdown.js";
 import "bootstrap/js/dist/collapse.js";
 import "bootstrap/js/dist/button.js";
+import "./colorPicker.js";
 
 document.documentElement.className = "js-enabled"
 

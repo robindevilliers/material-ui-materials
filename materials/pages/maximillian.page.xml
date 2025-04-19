@@ -18,7 +18,9 @@
                     </textual>
                 </text>
             </div>
-            <color-picker v="v1"/>
+            <color-picker v="v1">
+                <textual>Select Colors</textual>
+            </color-picker>
         </div>
     </div>
 

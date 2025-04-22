@@ -6,7 +6,6 @@
     "clean": "rm -rf dist www",
     "compile": "webpack --config webpack.config.cjs",
     "test": "jest",
-    "test": "jest",
     "lint": "eslint --ext js,ts lib/",
     "css:scss": "sass materials/scss/main.scss www/public/css/main.css -I . -q --style=compressed",
     "css:autoprefixer": "postcss -u autoprefixer -r www/public/css/*.css",

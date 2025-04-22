@@ -1,0 +1,78 @@
+.select-panel-widget {
+  display: flex;
+  flex-direction: column;
+
+  .select-panel-content {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .select-panel-item-widget {
+    display: flex;
+    align-items: center;
+
+    padding: unset;
+    margin: 0.25em;
+    border-radius: .25em;
+
+    .text-widget {
+      padding: 1em;
+      margin: unset !important;
+    }
+
+    &.active:has(> .text-widget) {
+      background-color: #aaa !important;
+    }
+
+    &.active:has(> .icon-widget) {
+      background-color: #aaa !important;
+    }
+
+    &.active:has(> .card-widget) {
+      .card-widget {
+        filter: brightness(75%);
+      }
+    }
+
+    &.active:has(> .image-widget) {
+      .image-widget {
+        filter: brightness(120%);
+      }
+    }
+  }
+
+  &[disabled] {
+    filter: brightness(120%)
+  }
+}
+
+.select-panel-widget:not([disabled]) {
+  .select-panel-item-widget {
+    cursor: pointer;
+
+
+    &:hover:not(.active):has(> .text-widget) {
+      background-color: #ddd !important;
+    }
+
+    &:hover:not(.active):has(.icon-widget) {
+      background-color: #ddd !important;
+
+      .icon-widget {
+        filter: brightness(85%);
+      }
+    }
+
+    &:hover:not(.active):has(.card-widget) {
+      .card-widget {
+        filter: brightness(85%);
+      }
+    }
+
+    &:hover:not(.active):has(.image-widget) {
+      .image-widget {
+        filter: grayscale(30%);
+      }
+    }
+  }
+}

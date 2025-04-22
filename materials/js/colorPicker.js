@@ -179,7 +179,7 @@ $(function () {
     function scaleOut(val) {
         return val / radius * 300;
     }
-})
+});
 
 
 function calculateCoordinates(args) {

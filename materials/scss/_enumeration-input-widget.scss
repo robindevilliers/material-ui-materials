@@ -1,8 +1,18 @@
 
 .enumeration-widget {
 
-  input {
+  input[type="checkbox"] {
     min-width: 1.5em;
+    cursor: pointer;
+  }
+
+  input[type="radio"] {
+    min-width: 1.5em;
+    cursor: pointer;
+  }
+
+  select {
+    cursor: pointer;
   }
 
   .value-panel-container {

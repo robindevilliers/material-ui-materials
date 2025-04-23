@@ -76,6 +76,8 @@ import FolderRenderer from "./FolderRenderer";
 import TimezoneSelectRenderer from "./TimezoneSelect";
 import ButtonRenderer from "./ButtonRenderer";
 import ColorPickerRenderer from "./ColorPickerRenderer";
+import SelectPanelRenderer from "./SelectPanelRenderer";
+import SelectPanelItemRenderer from "./SelectPanelItemRenderer";
 
 const registry = [
     new TitleRenderer(),
@@ -155,7 +157,9 @@ const registry = [
     new TextualRenderer(),
     new FolderRenderer(),
     new TimezoneSelectRenderer(),
-    new ColorPickerRenderer()
+    new ColorPickerRenderer(),
+    new SelectPanelRenderer(),
+    new SelectPanelItemRenderer()
 ];
 
 export function findRenderer(name: string) {

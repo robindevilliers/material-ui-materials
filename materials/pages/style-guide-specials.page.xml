@@ -656,30 +656,58 @@
             <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
                 flexBasis="100%" width="100%">
                 <title size="LARGE" v="v1">
-                    <textual>Card as Link</textual>
+                    <textual>Select Panel</textual>
                 </title>
                 <text v="v1" flexBasis="500px">
                     <textual>
-                        Cards can be configured so that the entire Card is clickable, and will lead to another page.
+                        The Select Panel Item can present Cards, Icons, Images or Text as a selection of clickable
+                        widgets that behaves as an Enumeration Widget.
                     </textual>
                 </text>
             </div>
-            <card type="page" page="style-guide-landing.html"
-                width="300px" flexShrink="0" margin="0em 0em 0em 1em" v="v1">
-                <image src="temp0.jpg" alt="Image of Suzi" title="Suzi Profile Picture" height="200px"
-                    width="300px" v="v1"/>
-                <card-body orientation="COLUMN">
-                    <title size="SMALLER" v="v1">
-                        <textual>Lorem Ipsum</textual>
-                    </title>
-                    <text paragraphStyle="PLAIN" v="v1">
-                        <textual>
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.
-                        </textual>
-                    </text>
-                </card-body>
-            </card>
+
+            <select-panel reference="choice" type="STRING" required="false" cardinality="MULTIPLE_SELECT"
+                margin="0.25em 1em" v="v1">
+                <textual>Select Card</textual>
+                <select-panel-item default="false" key="FIRST" v="v1">
+                    <card type="page" page="style-guide-landing.html"
+                        width="300px" flexShrink="0" margin="0em 0em 0em 1em" v="v1">
+                        <image src="temp0.jpg" alt="Image of Suzi" title="Suzi Profile Picture" height="200px"
+                            width="300px" v="v1"/>
+                        <card-body orientation="COLUMN">
+                            <title size="SMALLER" v="v1">
+                                <textual>Lorem Ipsum</textual>
+                            </title>
+                            <text paragraphStyle="PLAIN" v="v1">
+                                <textual>
+                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                    doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                                    veritatis.
+                                </textual>
+                            </text>
+                        </card-body>
+                    </card>
+                </select-panel-item>
+                <select-panel-item default="false" key="SECOND" v="v1">
+                    <card type="page" page="style-guide-landing.html"
+                        width="300px" flexShrink="0" margin="0em 0em 0em 1em" v="v1">
+                        <image src="temp1.jpg" alt="Image of Suzi" title="Suzi Profile Picture" height="200px"
+                            width="300px" v="v1"/>
+                        <card-body orientation="COLUMN">
+                            <title size="SMALLER" v="v1">
+                                <textual>Lorem Ipsum</textual>
+                            </title>
+                            <text paragraphStyle="PLAIN" v="v1">
+                                <textual>
+                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                    doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                                    veritatis.
+                                </textual>
+                            </text>
+                        </card-body>
+                    </card>
+                </select-panel-item>
+            </select-panel>
         </div>
 
         <horizontal-rule/>

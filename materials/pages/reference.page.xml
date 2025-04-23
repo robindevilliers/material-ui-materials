@@ -12977,6 +12977,550 @@
             </table>
         </div>
         <div v="v1" orientation="COLUMN">
+            <title id="select-panel" size="MEDIUM" v="v1">
+                <textual>Select Panel</textual>
+            </title>
+            <text v="v1">
+                <textual>The Select Panel Widget presents a panel that presents different clickable options for the user
+                    to select. This widget offers the same capability as the Enumeration Widget but the presentation is
+                    different. Here the Select Panel has Select Panel Items that can contain Text, Images, Icons or
+                    Cards.
+                </textual>
+            </text>
+            <text v="v1">
+                <textual>The Select Panel can be viewed on the Specials page.</textual>
+            </text>
+            <title size="SMALLER" v="v1">
+                <textual>Widget</textual>
+            </title>
+            <text v="v1">
+                <textual>The widget has, in addition to being a Flex Item and a Textual, the following attributes.
+                </textual>
+            </text>
+            <table v="v1">
+                <row>
+                    <column width="20%">
+                        <textual>Attribute</textual>
+                    </column>
+                    <column>
+                        <textual>Description</textual>
+                    </column>
+                    <column width="25%">
+                        <textual>Permitted values/Examples</textual>
+                    </column>
+                </row>
+                <row>
+                    <cell>
+                        <text v="v1">
+                            <textual>reference</textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>The reference attribute specifies the name of the key when this value is inserted
+                                into the JSON result as the Wizard is completed.
+                            </textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>colour</textual>
+                        </text>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <text v="v1">
+                            <textual>type</textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>The type of value that this enumeration will offer. The values offered by the
+                                select panel must all be of the same type.
+                            </textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>STRING, BOOLEAN, NUMBER, DATE, DATETIME</textual>
+                        </text>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <text v="v1">
+                            <textual>cardinality</textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>The cardinality specifies the number of values that may be selected from the
+                                available select panel.
+                            </textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>MULTIPLE_SELECT, SINGLE_SELECT</textual>
+                        </text>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <text v="v1">
+                            <textual>required</textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>The required attribute specifies if this input must have a value. If the value is
+                                required, then a validation error will present if no value is selected.
+                            </textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>true, false</textual>
+                        </text>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <text v="v1">
+                            <textual>disableScript</textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>This attribute contains a Plantain script that will determine if the widget should
+                                appear disabled or not.
+                            </textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>script : boolean</textual>
+                        </text>
+                    </cell>
+                </row>
+            </table>
+            <title size="SMALLER" v="v1">
+                <textual>Template</textual>
+            </title>
+            <text v="v1">
+                <textual>The template for the Accordion is the accordion.ftl file. It takes the following tokens.
+                </textual>
+            </text>
+            <table v="v1">
+                <row>
+                    <column width="20%">
+                        <textual>Attribute</textual>
+                    </column>
+                    <column>
+                        <textual>Description</textual>
+                    </column>
+                    <column width="25%">
+                        <textual>Type</textual>
+                    </column>
+                </row>
+                <row>
+                    <cell>
+                        <text v="v1">
+                            <textual>id</textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>A unique id.</textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>string</textual>
+                        </text>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <text v="v1">
+                            <textual>classes</textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>A list of classes that should be applied.</textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>class list</textual>
+                        </text>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <text v="v1">
+                            <textual>itemStyles</textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>The css styles that should be applied in order to support Flex Item definitions.
+                            </textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>css</textual>
+                        </text>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <text v="v1">
+                            <textual>cardinality</textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>The cardinality of the Select Panel. This property indicates if the widget should
+                                allow multiple values to be selected or not.
+                            </textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>MULTIPLE_SELECT, SINGLE_SELECT</textual>
+                        </text>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <text v="v1">
+                            <textual>label</textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>The singleActive property specifies that only one panel should be expanded at a
+                                time.
+                            </textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>true, false</textual>
+                        </text>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <text v="v1">
+                            <textual>disabled</textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>The disabled property specifies if the current widget is disabled or not, and
+                                if so, the widget should render in a visually disabled way, and not allow clicking
+                                events.
+                            </textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>true, false</textual>
+                        </text>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <text v="v1">
+                            <textual>textualClasses</textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>These are the classes produced from the Textual definition. They should be applied
+                                to the element that is going to render the textual content.
+                            </textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>class list</textual>
+                        </text>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <text v="v1">
+                            <textual>textualStyles</textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>These are the styles that are produced from the Textual definition. They should be
+                                applied to the element that renders the textual content.
+                            </textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>css</textual>
+                        </text>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <text v="v1">
+                            <textual>content</textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>A content for the widget.</textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>html</textual>
+                        </text>
+                    </cell>
+                </row>
+            </table>
+        </div>
+
+        <div v="v1" orientation="COLUMN">
+            <title id="select-panel-item" size="MEDIUM" v="v1">
+                <textual>Select Panel Item</textual>
+            </title>
+            <text v="v1">
+                <textual>The Select Panel Item Widget presents an item as a part of a Select Panel. The Select Panel
+                    Item represents an option to select within the Select Panel. The item can include the following
+                    widgets as a representation: Card, Image, Icon, or Text.
+                </textual>
+            </text>
+            <text v="v1">
+                <textual>The Select Panel Item can be viewed on the Specials page.</textual>
+            </text>
+            <title size="SMALLER" v="v1">
+                <textual>Widget</textual>
+            </title>
+            <text v="v1">
+                <textual>The widget has the following attributes.
+                </textual>
+            </text>
+            <table v="v1">
+                <row>
+                    <column width="20%">
+                        <textual>Attribute</textual>
+                    </column>
+                    <column>
+                        <textual>Description</textual>
+                    </column>
+                    <column width="25%">
+                        <textual>Permitted values/Examples</textual>
+                    </column>
+                </row>
+                <row>
+                    <cell>
+                        <text v="v1">
+                            <textual>def</textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>The def attribute specifies if the Select Panel Item should be selected by default.
+                            </textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>true, false</textual>
+                        </text>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <text v="v1">
+                            <textual>key</textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>The key specifies the value that this Select Item represents. Its format must
+                                conform to the correct format dictated by the type property of the Select Panel.
+                            </textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>string</textual>
+                        </text>
+                    </cell>
+                </row>
+            </table>
+            <title size="SMALLER" v="v1">
+                <textual>Template</textual>
+            </title>
+            <text v="v1">
+                <textual>The template for the Accordion is the accordion.ftl file. It takes the following tokens.
+                </textual>
+            </text>
+
+            <table v="v1">
+                <row>
+                    <column width="20%">
+                        <textual>Attribute</textual>
+                    </column>
+                    <column>
+                        <textual>Description</textual>
+                    </column>
+                    <column width="25%">
+                        <textual>Type</textual>
+                    </column>
+                </row>
+
+                <row>
+                    <cell>
+                        <text v="v1">
+                            <textual>key</textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>The name property of the Select Panel Item specifies the name for the field that
+                                should be submitted when the form is submitted. This property will match the reference
+                                property of the enclosing Select Panel.
+                            </textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>true, false</textual>
+                        </text>
+                    </cell>
+                </row>
+
+                <row>
+                    <cell>
+                        <text v="v1">
+                            <textual>key</textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>The key property of the Select Panel Item specifies the value that the item should
+                                submit when the form is submitted.
+                            </textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>true, false</textual>
+                        </text>
+                    </cell>
+                </row>
+
+                <row>
+                    <cell>
+                        <text v="v1">
+                            <textual>active</textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>The active property of the Select Panel Item specifies if the current item has been
+                                selected.
+                            </textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>true, false</textual>
+                        </text>
+                    </cell>
+                </row>
+
+                <row>
+                    <cell>
+                        <text v="v1">
+                            <textual>representation</textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>The representation of the Select Panel Item. This attribute can be used to modify
+                                html and css so as to better render the representation.
+                            </textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>Card, Image, Icon, Text</textual>
+                        </text>
+                    </cell>
+                </row>
+
+                <row>
+                    <cell>
+                        <text v="v1">
+                            <textual>classes</textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>A list of classes that should be applied.</textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>class list</textual>
+                        </text>
+                    </cell>
+                </row>
+
+                <row>
+                    <cell>
+                        <text v="v1">
+                            <textual>testMode</textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>The testMode attribute specifies if the current widget should render in testMode.
+                            </textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>true, false</textual>
+                        </text>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <text v="v1">
+                            <textual>content</textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>A content for the widget.</textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>html</textual>
+                        </text>
+                    </cell>
+                </row>
+            </table>
+        </div>
+
+        <div v="v1" orientation="COLUMN">
             <title id="span" size="MEDIUM" v="v1">
                 <textual>Span</textual>
             </title>

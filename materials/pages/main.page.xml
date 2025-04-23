@@ -1076,6 +1076,16 @@
             </link>
         </list-item>
         <list-item>
+            <link view="reference.html#select-panel" v="v1">
+                <textual>Select Panel</textual>
+            </link>
+        </list-item>
+        <list-item>
+            <link view="reference.html#select-panel-item" v="v1">
+                <textual>Select Panel Item</textual>
+            </link>
+        </list-item>
+        <list-item>
             <link view="reference.html#span" v="v1">
                 <textual>Span</textual>
             </link>

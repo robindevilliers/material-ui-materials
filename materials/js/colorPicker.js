@@ -62,15 +62,19 @@ $(function () {
         const coordinates = {
             first: absoluteCoords(calculateCoordinates(polar), 300),
             second: absoluteCoords(calculateCoordinates({
-                angle: polar.angle + 90,
+                angle: polar.angle + 72,
                 radius: polar.radius
             }), 300),
             third: absoluteCoords(calculateCoordinates({
-                angle: polar.angle + 180,
+                angle: polar.angle + 144,
                 radius: polar.radius
             }), 300),
             fourth: absoluteCoords(calculateCoordinates({
-                angle: polar.angle + 270,
+                angle: polar.angle + 216,
+                radius: polar.radius
+            }), 300),
+            fifth: absoluteCoords(calculateCoordinates({
+                angle: polar.angle + 288,
                 radius: polar.radius
             }), 300)
         }
@@ -80,6 +84,7 @@ $(function () {
             second: calculateColor(coordinates.second),
             third: calculateColor(coordinates.third),
             fourth: calculateColor(coordinates.fourth),
+            fifth: calculateColor(coordinates.fifth),
         };
     }
 
@@ -114,6 +119,11 @@ $(function () {
                 green: applyLuminosity(colors.fourth.green),
                 blue: applyLuminosity(colors.fourth.blue)
             },
+            fifth: {
+                red: applyLuminosity(colors.fifth.red),
+                green: applyLuminosity(colors.fifth.green),
+                blue: applyLuminosity(colors.fifth.blue)
+            },
         };
 
         luminosity.css('background', 'linear-gradient(to bottom, white, ' + rgb(colors.first) + ', black)');
@@ -123,6 +133,7 @@ $(function () {
         $('.color-picker .color:nth-child(2)').css('background', rgb(adjustedColors.second));
         $('.color-picker .color:nth-child(3)').css('background', rgb(adjustedColors.third));
         $('.color-picker .color:nth-child(4)').css('background', rgb(adjustedColors.fourth));
+        $('.color-picker .color:nth-child(5)').css('background', rgb(adjustedColors.fifth));
 
         $('#first-coordinates').css({
             'top': 0,
@@ -147,6 +158,12 @@ $(function () {
             'left': 0,
             'width': scaleIn(colors.fourth.x) + 'px',
             'height': scaleIn(colors.fourth.y) + 'px'
+        });
+        $('#fifth-coordinates').css({
+            'top': 0,
+            'left': 0,
+            'width': scaleIn(colors.fifth.x) + 'px',
+            'height': scaleIn(colors.fifth.y) + 'px'
         });
 
         const offset = (1 - luminosityValue) * (radius * 2);

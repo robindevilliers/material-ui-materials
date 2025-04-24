@@ -21,6 +21,10 @@
                 <div class="small-cursor">
                 </div>
             </div>
+            <div id="fifth-coordinates" class="coordinates">
+                <div class="small-cursor">
+                </div>
+            </div>
         </div>
         <div class="luminosity">
             <div class="luminosity-coordinates">
@@ -29,6 +33,8 @@
             </div>
         </div>
         <div class="output">
+            <div class="color">
+            </div>
             <div class="color">
             </div>
             <div class="color">

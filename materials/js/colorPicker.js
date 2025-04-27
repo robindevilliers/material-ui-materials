@@ -5,31 +5,45 @@ $(function () {
     const colorPickerDisc = $('.color-picker-disc');
     const luminosity = $('.luminosity')
     const luminosityCursor = $('.luminosity-cursor');
-    let points = undefined;
+    const points = {
+        red: absoluteCoords(calculateCoordinates({angle: 90, radius: 300}), 300),
+        blue: absoluteCoords(calculateCoordinates({angle: 210, radius: 300}), 300),
+        green: absoluteCoords(calculateCoordinates({angle: 330, radius: 300}), 300),
+    };
     let luminosityValue = 0.5;
     let colors = undefined;
+    let labels = {
+        first: 'PRIMARY',
+        second: 'SUCCESS',
+        third: 'INFO',
+        fourth: 'WARNING',
+        fifth: 'DANGER'
+    }
     let radius = colorPickerDisc.height() / 2;
     luminosityCursor.css("visibility", "hidden");
-    initializePoints();
 
     $('.color-picker-disc .inner').click(function (event) {
         event.stopPropagation();
         event.preventDefault();
     });
 
+    Object.entries(labels).forEach(([key, value]) => {
+        $(`select[name="${key}"]`).val(value);
+    });
+
+    $(".color-select select").change(({target: {name, value}}) => {
+
+        const label = Object.entries(labels).find(([k, v]) => k === name)[1];
+        const ordinal = Object.entries(labels).find(([k, v]) => v === value)[0]
+        labels[ordinal] = label;
+        labels[name] = value;
+        renderColor();
+    });
 
     $(window).resize(function (event) {
         radius = colorPickerDisc.height() / 2;
         renderColor();
     });
-
-    function initializePoints() {
-        points = {
-            red: absoluteCoords(calculateCoordinates({angle: 90, radius: 300}), 300),
-            blue: absoluteCoords(calculateCoordinates({angle: 210, radius: 300}), 300),
-            green: absoluteCoords(calculateCoordinates({angle: 330, radius: 300}), 300),
-        };
-    }
 
     function processColorPickerEvent(event) {
 
@@ -126,14 +140,22 @@ $(function () {
             },
         };
 
+        const output = {
+            primary: adjustedColors[Object.entries(labels).find(([key, value]) => value === 'PRIMARY')[0]],
+            success: adjustedColors[Object.entries(labels).find(([key, value]) => value === 'SUCCESS')[0]],
+            info: adjustedColors[Object.entries(labels).find(([key, value]) => value === 'INFO')[0]],
+            warning: adjustedColors[Object.entries(labels).find(([key, value]) => value === 'WARNING')[0]],
+            danger: adjustedColors[Object.entries(labels).find(([key, value]) => value === 'DANGER')[0]],
+        }
+
         luminosity.css('background', 'linear-gradient(to bottom, white, ' + rgb(colors.first) + ', black)');
         luminosityCursor.css("visibility", "unset");
-        $(".color-picker #color-picker-value").val(JSON.stringify(adjustedColors));
-        $('.color-picker .color:nth-child(1)').css('background', rgb(adjustedColors.first));
-        $('.color-picker .color:nth-child(2)').css('background', rgb(adjustedColors.second));
-        $('.color-picker .color:nth-child(3)').css('background', rgb(adjustedColors.third));
-        $('.color-picker .color:nth-child(4)').css('background', rgb(adjustedColors.fourth));
-        $('.color-picker .color:nth-child(5)').css('background', rgb(adjustedColors.fifth));
+        $(".color-picker #color-picker-value").val(JSON.stringify(output));
+        $('.color-picker .color-select:nth-child(1) .color').css('background', rgb(adjustedColors.first));
+        $('.color-picker .color-select:nth-child(2) .color').css('background', rgb(adjustedColors.second));
+        $('.color-picker .color-select:nth-child(3) .color').css('background', rgb(adjustedColors.third));
+        $('.color-picker .color-select:nth-child(4) .color').css('background', rgb(adjustedColors.fourth));
+        $('.color-picker .color-select:nth-child(5) .color').css('background', rgb(adjustedColors.fifth));
 
         $('#first-coordinates').css({
             'top': 0,
@@ -172,6 +194,10 @@ $(function () {
             'top': 0,
             'left': 0,
             'height': Math.min((radius * 2) - 26, offset - 12) + 'px'
+        });
+
+        Object.entries(labels).forEach(([key, value]) => {
+            $(`select[name="${key}"]`).val(value);
         });
     }
 

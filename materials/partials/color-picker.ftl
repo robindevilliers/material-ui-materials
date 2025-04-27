@@ -33,15 +33,55 @@
             </div>
         </div>
         <div class="output">
-            <div class="color">
+            <div class="color-select">
+                <div class="color"></div>
+                <select name="first" class="input-group form-control form-control-lg mb-3">
+                    <option value="PRIMARY">Primary</option>
+                    <option value="SUCCESS">Success</option>
+                    <option value="INFO">Info</option>
+                    <option value="WARNING">Warning</option>
+                    <option value="DANGER">Danger</option>
+                </select>
             </div>
-            <div class="color">
+            <div class="color-select">
+                <div class="color"></div>
+                <select name="second" class="input-group form-control form-control-lg mb-3">
+                    <option value="PRIMARY">Primary</option>
+                    <option value="SUCCESS">Success</option>
+                    <option value="INFO">Info</option>
+                    <option value="WARNING">Warning</option>
+                    <option value="DANGER">Danger</option>
+                </select>
             </div>
-            <div class="color">
+            <div class="color-select">
+                <div class="color"></div>
+                <select name="third" class="input-group form-control form-control-lg mb-3">
+                    <option value="PRIMARY">Primary</option>
+                    <option value="SUCCESS">Success</option>
+                    <option value="INFO">Info</option>
+                    <option value="WARNING">Warning</option>
+                    <option value="DANGER">Danger</option>
+                </select>
             </div>
-            <div class="color">
+            <div class="color-select">
+                <div class="color"></div>
+                <select name="fourth" class="input-group form-control form-control-lg mb-3">
+                    <option value="PRIMARY">Primary</option>
+                    <option value="SUCCESS">Success</option>
+                    <option value="INFO">Info</option>
+                    <option value="WARNING">Warning</option>
+                    <option value="DANGER">Danger</option>
+                </select>
             </div>
-            <div class="color">
+            <div class="color-select">
+                <div class="color"></div>
+                <select name="fifth" class="input-group form-control form-control-lg mb-3">
+                    <option value="PRIMARY">Primary</option>
+                    <option value="SUCCESS">Success</option>
+                    <option value="INFO">Info</option>
+                    <option value="WARNING">Warning</option>
+                    <option value="DANGER">Danger</option>
+                </select>
             </div>
         </div>
     </div>

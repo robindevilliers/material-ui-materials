@@ -9,7 +9,7 @@
 <div id="${id}" class="enumeration-widget form-group ${classes}" style="${itemStyles}">
     <#if style == "RADIO_CHECKBOX">
         <#if cardinality == "MULTIPLE_SELECT">
-            <label for="${id}" class="form-label ${textualClasses}" style="${textualStyles}">${content}</label>
+            <label for="${id}" class="form-label label ${textualClasses} <#if hideLabel>sr-only</#if>" style="${textualStyles}">${content}</label>
             <#list values as val>
                 <div class="form-check">
                     <input id="${id}-${val.key}"
@@ -21,17 +21,17 @@
                             type="checkbox"
                             <#if val.panel?has_content>data-mw-blind="${val.key}"</#if>
                     />
-                    <label class="form-check-label ${sizeCls}" for="${id}-${val.key}">
+                    <label class="form-check-label label ${sizeCls}" for="${id}-${val.key}">
                         ${val.label}
                     </label>
                 </div>
                 ${val.panel}
             </#list>
             <#if (error)??>
-                <span id="error-message-${name}" class="form-text text-danger">${error}</span>
+                <span id="error-message-${name}" class="error-message form-text text-danger">${error}</span>
             </#if>
         <#elseif cardinality == "SINGLE_SELECT">
-            <label for="${id}" class="form-label ${textualClasses}" style="${textualStyles}">${content}</label>
+            <label for="${id}" class="form-label label ${textualClasses} <#if hideLabel>sr-only</#if>" style="${textualStyles}">${content}</label>
             <#list values as val>
                 <div class="form-check">
                     <input id="${id}-${val.key}"
@@ -44,14 +44,14 @@
                             id="${id}-${val.key}"
                             <#if val.panel?has_content>data-mw-blind="${val.key}"</#if>
                     />
-                    <label class="form-check-label ${sizeCls}" for="${id}-${val.key}">
+                    <label class="form-check-label label ${sizeCls}" for="${id}-${val.key}">
                         ${val.label}
                     </label>
                 </div>
                 ${val.panel}
             </#list>
             <#if (error)??>
-                <span id="error-message-${name}" class="form-text text-danger">${error}</span>
+                <span id="error-message-${name}" class="error-message form-text text-danger">${error}</span>
             </#if>
         </#if>
     <#elseif style == "POPOUT_SELECT">
@@ -63,7 +63,7 @@
             <#assign sizeCls = 'form-select-lg'>
         </#if>
         <#if cardinality == "MULTIPLE_SELECT">
-            <label class="form-label ${textualClasses}" style="${textualStyles}" for="${id}">${content}</label>
+            <label class="form-label label ${textualClasses} <#if hideLabel>sr-only</#if>" style="${textualStyles}" for="${id}">${content}</label>
             <select id="${id}" class="input-group ${sizeCls} form-control " multiple name="${name}"
                     <#if disabled??>disabled</#if> >
                 <option value="" disabled>${prompt}</option>
@@ -73,14 +73,14 @@
                 </#list>
             </select>
             <#if (error)??>
-                <span id="error-message-${name}" class="form-text text-danger">${error}</span>
+                <span id="error-message-${name}" class="error-message form-text text-danger">${error}</span>
             </#if>
             <#list values as val>
                 ${val.panel}
             </#list>
 
         <#elseif cardinality == "SINGLE_SELECT">
-            <label class="form-label ${textualClasses}" style="${textualStyles}" for="${id}">${content}</label>
+            <label class="form-label label ${textualClasses} <#if hideLabel>sr-only</#if>" style="${textualStyles}" for="${id}">${content}</label>
             <select id="${id}" class="input-group ${sizeCls} form-control" name="${name}"
                     <#if disabled??>disabled</#if>>
                 <option value="" disabled selected>${prompt}</option>
@@ -90,7 +90,7 @@
                 </#list>
             </select>
             <#if (error)??>
-                <span id="error-message-${name}" class="form-text text-danger">${error}</span>
+                <span id="error-message-${name}" class="error-message form-text text-danger">${error}</span>
             </#if>
             <#list values as val>
                 ${val.panel}

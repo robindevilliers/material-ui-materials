@@ -9,7 +9,7 @@
 <div class="input-widget form-group ${classes}" style="${itemStyles}">
 
     <#if type == "NUMBER">
-        <label class="form-label ${textualClasses}" style="${textualStyles}" for="${id}">${content}</label>
+        <label class="form-label label ${textualClasses} <#if hideLabel>sr-only</#if>" style="${textualStyles}" for="${id}">${content}</label>
         <div class="input-group">
             <input id="${id}" class="form-control ${sizeCls} validate" type="number" name="${name}"
                     value="${value!}" <#if disabled??>disabled</#if>
@@ -18,11 +18,11 @@
             />
         </div>
         <#if (error)??>
-            <span id="error-message-${name}" class="form-text text-danger">${error}</span>
+            <span id="error-message-${name}" class="error-message form-text text-danger">${error}</span>
         </#if>
     </#if>
     <#if type == "INPUT">
-        <label class="form-label ${textualClasses}" style="${textualStyles}" for="${id}">${content}</label>
+        <label class="form-label label ${textualClasses} <#if hideLabel>sr-only</#if>" style="${textualStyles}" for="${id}">${content}</label>
         <div class="input-group">
             <input id="${id}" class="form-control ${sizeCls} validate" type="text"
                     <#if maxlength??>maxlength="${maxlength}"</#if> <#if disabled??>disabled</#if> name="${name}"
@@ -30,11 +30,11 @@
             />
         </div>
         <#if (error)??>
-            <span id="error-message-${name}" class="form-text text-danger">${error}</span>
+            <span id="error-message-${name}" class="error-message form-text text-danger">${error}</span>
         </#if>
     </#if>
     <#if type == "TEXTAREA">
-        <label class="form-label ${textualClasses}" style="${textualStyles}" for="${id}">${content}</label>
+        <label class="form-label label ${textualClasses} <#if hideLabel>sr-only</#if>" style="${textualStyles}" for="${id}">${content}</label>
         <div class="input-group">
             <textarea id="${id}" class="form-control ${sizeCls} validate" name="${name}"
                     <#if maxLength??>maxLength="${maxLength}"</#if>
@@ -44,33 +44,33 @@
                     >${value!}</textarea>
         </div>
         <#if (error)??>
-            <span id="error-message-${name}" class="form-text text-danger">${error}</span>
+            <span id="error-message-${name}" class="error-message form-text text-danger">${error}</span>
         </#if>
     </#if>
     <#if type == "DATE">
-        <label class="form-label ${textualClasses}" style="${textualStyles}" for="${id}">${content}</label>
+        <label class="form-label label ${textualClasses} <#if hideLabel>sr-only</#if>" style="${textualStyles}" for="${id}">${content}</label>
         <div class="input-group">
             <input id="${id}" class="form-control ${sizeCls} validate" type="text" maxlength="10"
                     name="${name}" value="${value!}" <#if disabled??>disabled</#if>
                     placeholder="yyyy-MM-dd"/>
         </div>
         <#if (error)??>
-            <span id="error-message-${name}" class="form-text text-danger">${error}</span>
+            <span id="error-message-${name}" class="error-message form-text text-danger">${error}</span>
         </#if>
     </#if>
     <#if type == "DATETIME">
-        <label class="form-label ${textualClasses}" style="${textualStyles}" for="${id}">${content}</label>
+        <label class="form-label label ${textualClasses} <#if hideLabel>sr-only</#if>" style="${textualStyles}" for="${id}">${content}</label>
         <div class="input-group">
             <input id="${id}" class="form-control ${sizeCls} validate" type="text" maxlength="16"
                     name="${name}" value="${value!}" <#if disabled??>disabled</#if>
                     placeholder="yyyy-MM-dd HH:mm"/>
         </div>
         <#if (error)??>
-            <span id="error-message-${name}" class="form-text text-danger">${error}</span>
+            <span id="error-message-${name}" class="error-message form-text text-danger">${error}</span>
         </#if>
     </#if>
     <#if type == "CURRENCY">
-        <label class="form-label ${textualClasses}" style="${textualStyles}" for="${id}">${content}</label>
+        <label class="form-label label ${textualClasses} <#if hideLabel>sr-only</#if>" style="${textualStyles}" for="${id}">${content}</label>
         <div class="input-group">
             <span class="input-group-text">${currencySymbol}</span>
             <input id="${id}" class="form-control ${sizeCls} validate" type="number" step="0.01"
@@ -78,17 +78,17 @@
             />
         </div>
         <#if (error)??>
-            <span id="error-message-${name}" class="form-text text-danger">${error}</span>
+            <span id="error-message-${name}" class="error-message form-text text-danger">${error}</span>
         </#if>
     </#if>
     <#if type == "CHECKBOX">
         <div class="form-check">
             <input class="form-check-input ${sizeCls}" type="checkbox" name="${name}" value="selected" id="${id}"
                     <#if value == 'selected'>checked</#if> <#if disabled??>disabled</#if> >
-            <label class="form-check-label ${sizeCls} ${textualClasses}" style="${textualStyles}" for="${id}">${content}</label>
+            <label class="form-check-label label ${sizeCls} ${textualClasses}" style="${textualStyles}" for="${id}">${content}</label>
         </div>
         <#if (error)??>
-            <span id="error-message-${name}" class="form-text text-danger">${error}</span>
+            <span id="error-message-${name}" class="error-message form-text text-danger">${error}</span>
         </#if>
     </#if>
 </div>

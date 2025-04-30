@@ -46,16 +46,12 @@
         color: color-yiq($alternatingOdd);
       }
     }
-
-
   }
 
   .folder-no-content {
     display: flex;
     text-align: center;
     opacity: 0.75;
-    font-style: italic;
-    font-size: 2em;
     min-height: 80px;
     justify-content: center;
     align-items: center;

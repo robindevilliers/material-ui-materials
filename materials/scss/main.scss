@@ -11,12 +11,12 @@ $black: black;
 $white: white;
 $lavender: lavender;
 
-$font-title-primary: Georgia, cursive, serif;
-$font-title-secondary: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
-$font-text-primary: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-$font-text-secondary: Lucida Grande, Lucida Sans Unicode, Lucida Sans, Geneva, Verdana, sans-serif;
-$font-exhibit: Georgia, Times, Times New Roman, serif;
-$font-primary: Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;
+$font-title-primary: Arial, Helvetica Neue, Helvetica, sans-serif;
+$font-title-secondary: Arial Narrow, Arial, sans-serif;
+$font-text-primary: Garamond, Baskerville, Baskerville Old Face, Hoefler Text, Times New Roman, serif;
+$font-text-secondary: Baskerville, Baskerville Old Face, Hoefler Text, Garamond, Times New Roman, serif;
+$font-exhibit: Andale Mono, AndaleMono, monospace;
+$font-primary: Baskerville, Baskerville Old Face, Hoefler Text, Garamond, Times New Roman, serif;
 $font-secondary: Impact, Haettenschweiler, Franklin Gothic Bold, Charcoal, Helvetica Inserat, Bitstream Vera Sans Bold, Arial Black, sans serif;
 
 $alternatingEven: $opal;
@@ -82,90 +82,31 @@ $enable-shadows: true;
 @import "node_modules/bootstrap/scss/utilities";
 @import "node_modules/bootstrap/scss/print";
 
-@each $color, $value in $theme-colors {
-  .bg-#{$color} {
-    background: $value;
-    color: color-yiq($value);
-  }
-}
+//@font-face {
+//  font-family: BrushScriptStd;
+//  src: url("../public/fonts/BrushScriptStd.otf") format("opentype"), url("../public/fonts/BRUSHSCI.TTF") format("truetype");
+//}
 
-body {
-  font-family: $font-text-primary;
 
-  > .container {
-    min-height: 600px;
-  }
-}
+// Boostrap Overrides - changes to default bootstrap styling. Likely to change if different bootstrap skins are in affect.
+@import "bootstrap-skin";
 
-textarea {
-  resize: none;
-}
+// Typography - all styling related to fonts, and typography.
+@import "typography";
 
-td {
-  vertical-align: middle;
-}
+// Control  - these are produced by the platform and expect certain affects.
+@import "control";
 
-.btn-link {
-  outline: none;
-  box-shadow: none !important;
-}
-
-.form-group {
-  margin-bottom: 1em;
-}
-
-.form-control-md {
-  min-height: calc(1em + 1rem + 2px);
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  border-radius: 0.375rem;
-}
-
-@font-face {
-  font-family: BrushScriptStd;
-  src: url("../public/fonts/BrushScriptStd.otf") format("opentype"), url("../public/fonts/BRUSHSCI.TTF") format("truetype");
-}
-
-@media (max-width: 375.98px) {
-  .hide-xs-column {
-    display: none !important
-  }
-}
-
-@each $breakpoint in map-keys($grid-breakpoints) {
-  @include media-breakpoint-down($breakpoint) {
-    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
-
-    .hide#{$infix}-column {
-      display: none !important;
-    }
-  }
-}
-
-.truncated-content {
-  display: flex;
-  color: var(--danger);
-  justify-content: center;
-  align-items: center;
-}
-
-//This class is used by the sizing attribute pane.
-.hide-column {
-  display: none !important;
-}
-
+// Widgets - styling for individual widgets.
 @import "accordion-widget";
 @import "back-link-widget";
 @import "badge-widget";
-@import "bg-white";
-@import "bg-black";
 @import "branding";
 @import "btn-default";
 @import "card-widget";
 @import "carousel-widget";
 @import "cookie-consent-widget";
 @import "enumeration-input-widget";
-@import "font";
 @import "hr-widget";
 @import "icon-widget";
 @import "button-widget";
@@ -196,3 +137,4 @@ td {
 @import "folder-widget";
 @import "color-picker-widget";
 @import "select-panel-widget";
+@import "font-picker-widget";

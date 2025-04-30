@@ -13,6 +13,7 @@ import "bootstrap/js/dist/collapse.js";
 import "bootstrap/js/dist/button.js";
 import "./colorPicker.js";
 import "./selectPanel.js";
+import "./fontPicker.js";
 
 document.documentElement.className = "js-enabled"
 

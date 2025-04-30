@@ -1,0 +1,32 @@
+
+body {
+  font-family: $font-text-primary;
+}
+
+.header {
+  font-family: $font-title-primary;
+}
+
+.title {
+  font-family: $font-title-primary;
+}
+
+label, .label {
+  font-family: $font-title-primary;
+}
+
+.error-message {
+  font-family: $font-title-primary;
+}
+
+a, button {
+  font-family: $font-title-primary;
+}
+
+.no-content {
+  font-family: $font-exhibit
+}
+
+input, select {
+  font-family: $font-exhibit;
+}

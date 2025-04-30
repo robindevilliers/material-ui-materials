@@ -83,13 +83,14 @@
 
     .tray-wizard-title {
       font-size: 1.25em;
-      font-family: Georgia, Times, Times New Roman, serif;
+      font-family: $font-title-primary;
     }
 
     .tray-description {
       margin: 0 1em;
       letter-spacing: initial;
       line-height: initial;
+      font-family: $font-text-primary;
     }
 
     .tray-workflow-title {
@@ -98,6 +99,7 @@
 
     .tray-workflow-description {
       align-self: flex-end;
+      font-family: $font-text-primary;
     }
 
     .tray-principal {
@@ -119,8 +121,6 @@
     display: flex;
     text-align: center;
     opacity: 0.75;
-    font-style: italic;
-    font-size: 2em;
     min-height: 80px;
     justify-content: center;
     align-items: center;

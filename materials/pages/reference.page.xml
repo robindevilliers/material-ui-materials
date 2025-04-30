@@ -5015,6 +5015,25 @@
                 <row>
                     <cell>
                         <text v="v1">
+                            <textual>hideLabel</textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>The hideLabel attribute specifies the label should not display visually, but should
+                                be present for screen readers.
+                            </textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>true, false</textual>
+                        </text>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <text v="v1">
                             <textual>content</textual>
                         </text>
                     </cell>
@@ -5270,6 +5289,25 @@
                     <cell>
                         <text v="v1">
                             <textual>string</textual>
+                        </text>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <text v="v1">
+                            <textual>hideLabel</textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>A boolean value that indicates that the label should be visually hidden but still
+                                available for screen readers.
+                            </textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>boolean</textual>
                         </text>
                     </cell>
                 </row>
@@ -6960,19 +6998,19 @@
                 <row>
                     <cell>
                         <text v="v1">
-                            <textual>label</textual>
+                            <textual>hideLabel</textual>
                         </text>
                     </cell>
                     <cell>
                         <text v="v1">
-                            <textual>The label attribute specifies the text used to present to the user the purpose of
-                                the input field.
+                            <textual>The hideLabel attribute specifies the label should not display visually, but should
+                                be present for screen readers.
                             </textual>
                         </text>
                     </cell>
                     <cell>
                         <text v="v1">
-                            <textual>Name</textual>
+                            <textual>true, false</textual>
                         </text>
                     </cell>
                 </row>
@@ -7274,6 +7312,25 @@
                     <cell>
                         <text v="v1">
                             <textual>string</textual>
+                        </text>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <text v="v1">
+                            <textual>hideLabel</textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>A boolean value that indicates that the label should be visually hidden but still
+                                available for screen readers.
+                            </textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>boolean</textual>
                         </text>
                     </cell>
                 </row>
@@ -12476,6 +12533,25 @@
                 <row>
                     <cell>
                         <text v="v1">
+                            <textual>hideLabel</textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>The hideLabel attribute specifies the label should not display visually, but should
+                                be present for screen readers.
+                            </textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>true, false</textual>
+                        </text>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <text v="v1">
                             <textual>content</textual>
                         </text>
                     </cell>
@@ -12690,6 +12766,25 @@
                     <cell>
                         <text v="v1">
                             <textual>string</textual>
+                        </text>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <text v="v1">
+                            <textual>hideLabel</textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>A boolean value that indicates that the label should be visually hidden but still
+                                available for screen readers.
+                            </textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>boolean</textual>
                         </text>
                     </cell>
                 </row>
@@ -13012,6 +13107,25 @@
                 <row>
                     <cell>
                         <text v="v1">
+                            <textual>hideLabel</textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>The hideLabel attribute specifies the label should not display visually, but should
+                                be present for screen readers.
+                            </textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>true, false</textual>
+                        </text>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <text v="v1">
                             <textual>reference</textual>
                         </text>
                     </cell>
@@ -13138,6 +13252,25 @@
                     <cell>
                         <text v="v1">
                             <textual>string</textual>
+                        </text>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <text v="v1">
+                            <textual>hideLabel</textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>A boolean value that indicates that the label should be visually hidden but still
+                                available for screen readers.
+                            </textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>boolean</textual>
                         </text>
                     </cell>
                 </row>
@@ -14295,6 +14428,25 @@
                 <row>
                     <cell>
                         <text v="v1">
+                            <textual>hideLabel</textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>The hideLabel attribute specifies the label should not display visually, but should
+                                be present for screen readers.
+                            </textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>true, false</textual>
+                        </text>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <text v="v1">
                             <textual>label</textual>
                         </text>
                     </cell>
@@ -14430,11 +14582,6 @@
                 </textual>
             </text>
             <table v="v1">
-
-
-                entry("values", timezones)
-
-
                 <row>
                     <column width="20%">
                         <textual>Attribute</textual>
@@ -14462,6 +14609,25 @@
                     <cell>
                         <text v="v1">
                             <textual>string</textual>
+                        </text>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <text v="v1">
+                            <textual>hideLabel</textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>A boolean value that indicates that the label should be visually hidden but still
+                                available for screen readers.
+                            </textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>boolean</textual>
                         </text>
                     </cell>
                 </row>

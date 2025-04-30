@@ -1,3 +1,3 @@
-<div class="card-header" style="${containerStyles}">
+<div class="card-header header" style="${containerStyles}">
     ${content}
 </div>

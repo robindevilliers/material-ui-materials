@@ -114,7 +114,7 @@
 
         .user-explorer-title {
           font-size: 2em;
-          font-family: Georgia, Times, Times New Roman, serif;
+          font-family: $font-title-primary;
           justify-items: center;
           flex: 1 0 auto;
         }
@@ -163,8 +163,6 @@
       flex-basis: 100%;
       text-align: center;
       opacity: 0.75;
-      font-style: italic;
-      font-size: 2em;
       min-height: 80px;
       justify-content: center;
       align-items: center;

@@ -11,10 +11,7 @@
 }
 
 .blockquote-paragraph {
-  font-size: .875em;
   color: var(--gray);
   word-wrap: break-word;
-  white-space: pre-line;
-  font-family: monospace;
-  line-height: 2em;
+  font-family: $font-exhibit;
 }

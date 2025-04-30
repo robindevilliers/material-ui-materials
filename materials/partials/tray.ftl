@@ -24,7 +24,7 @@
                 </div>
             </#list>
             <#if !values?has_content>
-                <div id="tray-no-content" class="tray-no-content">No Content</div>
+                <div id="tray-no-content" class="tray-no-content no-content">No Content</div>
             </#if>
         </div>
     </div>

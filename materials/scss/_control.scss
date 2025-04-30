@@ -1,0 +1,57 @@
+
+.font-title-primary {
+  font-family: $font-title-primary
+}
+
+.font-title-secondary {
+  font-family: $font-title-secondary
+}
+
+.font-text-primary {
+  font-family: $font-text-primary
+}
+
+.font-text-secondary {
+  font-family: $font-text-secondary
+}
+
+.font-exhibit {
+  font-family: $font-exhibit
+}
+
+.font-primary {
+  font-family: $font-primary
+}
+
+.font-secondary {
+  font-family: $font-secondary
+}
+
+.bg-white {
+  color: black;
+}
+
+.bg-black {
+  color: white;
+}
+
+.hide-column {
+  display: none !important;
+}
+
+@each $color, $value in $theme-colors {
+  .bg-#{$color} {
+    background: $value;
+    color: color-yiq($value);
+  }
+}
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-down($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    .hide#{$infix}-column {
+      display: none !important;
+    }
+  }
+}

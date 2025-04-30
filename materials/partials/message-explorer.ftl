@@ -1,5 +1,5 @@
 <div id="${id}" class="message-explorer-widget ${classes}" style="${itemStyles}">
-    <div class="card-header">
+    <div class="card-header header">
         <form class="form-inline" method="get" action="${action}">
             <input type="hidden" name="bust" value="${bust}"/>
             <div class="input-group">
@@ -50,7 +50,7 @@
 
     <div class="message-explorer-body">
         <#if !values?has_content>
-            <div id="message-explorer-no-content" class="message-explorer-no-content">No Content</div>
+            <div id="message-explorer-no-content" class="message-explorer-no-content no-content">No Content</div>
         <#else>
             <div class="message-explorer-item-list">
                 <#list values as val>
@@ -68,7 +68,7 @@
                             data-parent="#${id}">
 
                         <div class="message-explorer-line">
-                            <span class="message-explorer-wizard-title">${val.wizardTitle} (${val.wizardId})</span>
+                            <span class="message-explorer-wizard-title title">${val.wizardTitle} (${val.wizardId})</span>
                             <span>${val.dateTime}</span>
                         </div>
 
@@ -79,31 +79,31 @@
                         </div>
 
                         <span class="message-explorer-line">
-                            <span>Case Principal</span>
+                            <span class="title">Case Principal</span>
                             <span>${val.principal}</span>
                         </span>
 
                         <span class="message-explorer-line">
-                            <span>Principal Name</span>
+                            <span class="title">Principal Name</span>
                             <span>${val.principalTitle} ${val.principalFirstName} ${val.principalLastName}</span>
                         </span>
 
                         <span class="message-explorer-line">
-                            <span>Date of Birth</span>
+                            <span class="title">Date of Birth</span>
                             <span>${val.principalDateOfBirth}</span>
                         </span>
 
                         <span class="message-explorer-line">
-                                <span>Case Id </span>
+                                <span class="title">Case Id </span>
                                 <span>${val.kaseId}</span>
                             </span>
 
                         <span class="message-explorer-line">
-                                <span>Workflow </span>
+                                <span class="title">Workflow </span>
                                 <span></span>
                             </span>
 
-                        <div>${val.workflowTitle} (${val.workflowId})</div>
+                        <div class="title">${val.workflowTitle} (${val.workflowId})</div>
 
                         <div class="message-explorer-line">
                             <div class="message-explorer-description">

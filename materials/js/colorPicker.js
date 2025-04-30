@@ -11,7 +11,13 @@ $(function () {
         green: absoluteCoords(calculateCoordinates({angle: 330, radius: 300}), 300),
     };
     let luminosityValue = 0.5;
-    let colors = undefined;
+    let colors = {
+        first: {red: 255, green: 255, blue: 255},
+        second: {red: 255, green: 255, blue: 255},
+        third: {red: 255, green: 255, blue: 255},
+        fourth: {red: 255, green: 255, blue: 255},
+        fifth: {red: 255, green: 255, blue: 255},
+    };
     let labels = {
         first: 'PRIMARY',
         second: 'SUCCESS',

@@ -1,6 +1,6 @@
 <div class="color-picker">
-    <label class="form-label ${textualClasses}" style="${textualStyles}" for="${id}">${content}</label>
-    <input id="color-picker-value" type="hidden" name="colors"/>
+    <label class="form-label label ${textualClasses} <#if hideLabel>sr-only</#if>" style="${textualStyles}" for="${id}">${content}</label>
+    <input id="color-picker-value" type="hidden" name="${name}"/>
     <div class="content">
         <div class="color-picker-disc">
             <div class="inner">
@@ -86,6 +86,6 @@
         </div>
     </div>
     <#if (error)??>
-        <span id="error-message-${name}" class="form-text text-danger">${error}</span>
+        <span id="error-message-${name}" class="error-message form-text text-danger">${error}</span>
     </#if>
 </div>

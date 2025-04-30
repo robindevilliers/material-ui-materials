@@ -7,7 +7,7 @@
             </div>
         </#list>
         <#if !values?has_content>
-            <div id="folder-no-content" class="folder-no-content">No Content</div>
+            <div id="folder-no-content" class="folder-no-content no-content">No Content</div>
         </#if>
     </div>
 

@@ -5,6 +5,7 @@
 
 
     <div v="v1" orientation="COLUMN">
+
         <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
             flexBasis="100%">
             <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
@@ -21,6 +22,24 @@
             <color-picker v="v1">
                 <textual>Select Colors</textual>
             </color-picker>
+        </div>
+
+        <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
+            flexBasis="100%">
+            <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
+                flexBasis="100%" width="100%">
+                <title size="LARGE" v="v1">
+                    <textual>Font Picker</textual>
+                </title>
+                <text v="v1" flexBasis="500px">
+                    <textual>
+                        The Font Picker allows selecting of a set of fonts.
+                    </textual>
+                </text>
+            </div>
+            <font-picker v="v1">
+                <textual>Select Fonts</textual>
+            </font-picker>
         </div>
     </div>
 

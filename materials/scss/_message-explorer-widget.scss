@@ -112,7 +112,7 @@
 
           .message-explorer-wizard-title {
             font-size: 1.25em;
-            font-family: Georgia, Times, Times New Roman, serif;
+            font-family: $font-title-primary;
           }
 
           .message-explorer-description {
@@ -156,8 +156,6 @@
       flex-basis: 100%;
       text-align: center;
       opacity: 0.75;
-      font-style: italic;
-      font-size: 2em;
       min-height: 80px;
       justify-content: center;
       align-items: center;

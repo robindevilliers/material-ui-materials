@@ -9,7 +9,7 @@
     <div class="row">
         <div class="col s6">
             <div class="card">
-                <div class="card-header">
+                <div class="card-header header">
                     Your Artefacts
                 </div>
                 <div class="card-body">
@@ -32,7 +32,7 @@
         <div class="col s6">
             <form action="${action}" method="post" enctype="application/x-www-form-urlencoded">
                 <div class="card">
-                    <div class="card-header">
+                    <div class="card-header header">
                         2nd Stage Authentication
                     </div>
                     <div class="card-body">
@@ -41,23 +41,23 @@
                             <div class="row">
                                 <div class="form-group col">
                                     <label for="firstCharacter"
-                                            class="form-label">Character ${firstPasswordPhraseIndex}</label>
+                                            class="form-label label">Character ${firstPasswordPhraseIndex}</label>
                                     <input class="form-control" placeholder="?" id="firstCharacter" maxlength="1"
                                             type="password" name="firstCharacter" style="text-align: right; ">
                                     <#if errors.firstCharacter??>
-                                        <span class="form-text text-danger">${errors.firstCharacter}</span>
+                                        <span class="error-message form-text text-danger">${errors.firstCharacter}</span>
                                     </#if>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="form-group col">
                                     <label for="secondCharacter"
-                                            class="form-label">Character ${secondPasswordPhraseIndex}</label>
+                                            class="form-label label">Character ${secondPasswordPhraseIndex}</label>
                                     <input class="form-control" placeholder="?" id="secondCharacter" maxlength="1"
                                             type="password"
                                             name="secondCharacter" style="text-align: right; ">
                                     <#if errors.secondCharacter??>
-                                        <span class="form-text text-danger">${errors.secondCharacter}</span>
+                                        <span class="error-message form-text text-danger">${errors.secondCharacter}</span>
                                     </#if>
 
                                 </div>
@@ -65,11 +65,11 @@
                             <div class="row">
                                 <div class="form-group col">
                                     <label for="thirdCharacter"
-                                            class="form-label">Character ${thirdPasswordPhraseIndex}</label>
+                                            class="form-label label">Character ${thirdPasswordPhraseIndex}</label>
                                     <input class="form-control" placeholder="?" id="thirdCharacter" maxlength="1"
                                             type="password" name="thirdCharacter" style="text-align: right; ">
                                     <#if errors.thirdCharacter??>
-                                        <span class="form-text text-danger">${errors.thirdCharacter}</span>
+                                        <span class="error-message form-text text-danger">${errors.thirdCharacter}</span>
                                     </#if>
                                 </div>
                             </div>
@@ -89,7 +89,7 @@
                             Cancel
                         </button>
                         <#if errors.global??>
-                            <span class="form-text text-danger">${errors.global}</span>
+                            <span class="error-message form-text text-danger">${errors.global}</span>
                         </#if>
                     </div>
                 </div>

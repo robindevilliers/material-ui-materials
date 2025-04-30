@@ -1,0 +1,338 @@
+import $ from "jquery";
+
+
+const fonts = [
+    {
+        category: "sans-serif",
+        name: "Arial",
+        fontFamily: "Arial, Helvetica Neue, Helvetica, sans-serif",
+        windows: "Very High",
+        apple: "Very High"
+    }, {
+        category: "sans-serif",
+        name: "Arial Black",
+        fontFamily: "Arial Black, Arial Bold, Gadget, sans-serif",
+        windows: "Very High",
+        apple: "Very High"
+    }, {
+        category: "sans-serif",
+        name: "Arial Narrow",
+        fontFamily: "Arial Narrow, Arial, sans-serif",
+        windows: "High",
+        apple: "Very High"
+    }, {
+        category: "sans-serif",
+        name: "Arial Rounded MT Bold",
+        fontFamily: "Arial Rounded MT Bold, Helvetica Rounded, Arial, sans-serif",
+        windows: "Moderate",
+        apple: "Very High"
+    }, {
+        category: "sans-serif",
+        name: "Avant Garde",
+        fontFamily: "Avant Garde, Avantgarde, Century Gothic, CenturyGothic, AppleGothic, sans-serif",
+        windows: "Very Low",
+        apple: "Very Low"
+    }, {
+        category: "sans-serif",
+        name: "Calibri",
+        fontFamily: "Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif",
+        windows: "High",
+        apple: "Low"
+    }, {
+        category: "sans-serif",
+        name: "Candara",
+        fontFamily: "Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif",
+        windows: "High",
+        apple: "Low"
+    }, {
+        category: "sans-serif",
+        name: "Century Gothic",
+        fontFamily: "Century Gothic, CenturyGothic, AppleGothic, sans-serif",
+        windows: "High",
+        apple: "Moderate"
+    }, {
+        category: "sans-serif",
+        name: "Franklin Gothic Medium",
+        fontFamily: "Franklin Gothic Medium, Franklin Gothic, ITC Franklin Gothic, Arial, sans-serif",
+        windows: "Very High",
+        apple: "Very Low"
+    }, {
+        category: "sans-serif",
+        name: "Futura",
+        fontFamily: " Futura, Trebuchet MS, Arial, sans-serif",
+        windows: "Very Low",
+        apple: "Very High"
+    }, {
+        category: "sans-serif",
+        name: "Geneva",
+        fontFamily: " Geneva, Tahoma, Verdana, sans-serif",
+        windows: "Very Low",
+        apple: "Very High"
+    }, {
+        category: "sans-serif",
+        name: "Gill Sans",
+        fontFamily: "Gill Sans, Gill Sans MT, Calibri, sans-serif",
+        windows: "Moderate",
+        apple: "Very High"
+    },
+    {
+        category: "sans-serif",
+        name: "Helvetica",
+        fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif",
+        windows: "Very Low",
+        apple: "Very High"
+    },
+    {
+        category: "sans-serif",
+        name: "Impact",
+        fontFamily: "Impact, Haettenschweiler, Franklin Gothic Bold, Charcoal, Helvetica Inserat, Bitstream Vera Sans Bold, Arial Black, sans serif",
+        windows: "Very Low",
+        apple: "Very High"
+    }, {
+        category: "sans-serif",
+        name: "Lucida Grande",
+        fontFamily: "Lucida Grande, Lucida Sans Unicode, Lucida Sans, Geneva, Verdana, sans-serif",
+        windows: "Very Low",
+        apple: "Very High"
+    }, {
+        category: "sans-serif",
+        name: "Optima",
+        fontFamily: "Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif",
+        windows: "Very Low",
+        apple: "Very High"
+    }, {
+        category: "sans-serif",
+        name: "Segoe UI",
+        fontFamily: "Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif",
+        windows: "High",
+        apple: "Very Low"
+    }, {
+        category: "sans-serif",
+        name: "Tahoma",
+        fontFamily: "Tahoma, Verdana, Segoe, sans-serif",
+        windows: "Very High",
+        apple: "Very High"
+    }, {
+        category: "sans-serif",
+        name: "Trebuchet MS",
+        fontFamily: "Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif",
+        windows: "Very High",
+        apple: "Very High"
+    }, {
+        category: "sans-serif",
+        name: "Verdana",
+        fontFamily: "Verdana, Geneva, sans-serif",
+        windows: "Very High",
+        apple: "Very High"
+    }, {
+        category: "serif",
+        name: "Big Caslon",
+        fontFamily: "Big Caslon, Book Antiqua, Palatino Linotype, Georgia, serif",
+        windows: "Very Low",
+        apple: "Very High"
+    }, {
+        category: "serif",
+        name: "Bodoni MT",
+        fontFamily: "Bodoni MT, Didot, Didot LT STD, Hoefler Text, Garamond, Times New Roman, serif",
+        windows: "Moderate",
+        apple: "Very Low"
+    }, {
+        category: "serif",
+        name: "Book Antiqua",
+        fontFamily: "Book Antiqua, Palatino, Palatino Linotype, Palatino LT STD, Georgia, serif",
+        windows: "High",
+        apple: "Moderate"
+    }, {
+        category: "serif",
+        name: "Calisto MT",
+        fontFamily: "Calisto MT, Bookman Old Style, Bookman, Goudy Old Style, Garamond, Hoefler Text, Bitstream Charter, Georgia, serif",
+        windows: "Moderate",
+        apple: "Moderate"
+    }, {
+        category: "serif",
+        name: "Cambria",
+        fontFamily: "Cambria, Georgia, serif",
+        windows: "High",
+        apple: "Low"
+    }, {
+        category: "serif",
+        name: "Didot",
+        fontFamily: "Didot, Didot LT STD, Hoefler Text, Garamond, Times New Roman, serif",
+        windows: "Very Low",
+        apple: "Very High"
+    }, {
+        category: "serif",
+        name: "Garamond",
+        fontFamily: "Garamond, Baskerville, Baskerville Old Face, Hoefler Text, Times New Roman, serif",
+        windows: "High",
+        apple: "Moderate"
+    }, {
+        category: "serif",
+        name: "Georgia",
+        fontFamily: "Georgia, Times, Times New Roman, serif",
+        windows: "Very High",
+        apple: "Very High"
+    }, {
+        category: "serif",
+        name: "Goudy Old Style",
+        fontFamily: "Goudy Old Style, Garamond, Big Caslon, Times New Roman, serif",
+        windows: "Moderate",
+        apple: "Moderate"
+    }, {
+        category: "serif",
+        name: "Hoefler Text",
+        fontFamily: "Hoefler Text, Baskerville Old Face, Garamond, Times New Roman, serif",
+        windows: "Very Low",
+        apple: "Very High"
+    }, {
+        category: "serif",
+        name: "Lucida Bright",
+        fontFamily: " Lucida Bright, Georgia, serif",
+        windows: "High",
+        apple: "Very High"
+    }, {
+        category: "serif",
+        name: "Palatino",
+        fontFamily: "Palatino, Palatino Linotype, Palatino LT STD, Book Antiqua, Georgia, serif",
+        windows: "Very High",
+        apple: "High"
+    }, {
+        category: "serif",
+        name: "Perpetua",
+        fontFamily: "Perpetua, Baskerville, Big Caslon, Palatino Linotype, Palatino, URW Palladio L, Nimbus Roman No9 L, serif",
+        windows: "Moderate",
+        apple: "Very Low"
+    }, {
+        category: "serif",
+        name: "Rockwell",
+        fontFamily: "Rockwell, Courier Bold, Courier, Georgia, Times, Times New Roman, serif",
+        windows: "Moderate",
+        apple: "Very Low"
+    }, {
+        category: "serif",
+        name: "Rockwell Extra Bold",
+        fontFamily: "Rockwell Extra Bold, Rockwell Bold, monospace",
+        windows: "Moderate",
+        apple: "Very Low"
+    }, {
+        category: "serif",
+        name: "Baskerville",
+        fontFamily: "Baskerville, Baskerville Old Face, Hoefler Text, Garamond, Times New Roman, serif",
+        windows: "Moderate",
+        apple: "Very High"
+    }, {
+        category: "serif",
+        name: "Times New Roman",
+        fontFamily: "TimesNewRoman, Times New Roman, Times, Baskerville, Georgia, serif",
+        windows: "Very High",
+        apple: "Very High"
+    }, {
+        category: "monospace",
+        name: "Consolas",
+        fontFamily: "Consolas, monaco, monospace",
+        windows: "High",
+        apple: "Low"
+    }, {
+        category: "monospace",
+        name: "Courier New",
+        fontFamily: "Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace",
+        windows: "Very High",
+        apple: "Very High"
+    }, {
+        category: "monospace",
+        name: "Lucida Console",
+        fontFamily: "Lucida Console, Lucida Sans Typewriter, monaco, Bitstream Vera Sans Mono, monospace",
+        windows: "Very High",
+        apple: "Very Low"
+    }, {
+        category: "monospace",
+        name: "Lucida Sans Typewriter",
+        fontFamily: "Lucida Sans Typewriter, Lucida Console, monaco, Bitstream Vera Sans Mono, monospace",
+        windows: "High",
+        apple: "Very High"
+    }, {
+        category: "monospace",
+        name: "Monaco",
+        fontFamily: "monaco, Consolas, Lucida Console, monospace",
+        windows: "Very Low",
+        apple: "Very High"
+    }, {
+        category: "monospace",
+        name: "Andale Mono",
+        fontFamily: "Andale Mono, AndaleMono, monospace",
+        windows: "Very Low",
+        apple: "Very High"
+    }, {
+        category: "fantasy",
+        name: "Copperplate",
+        fontFamily: "Copperplate, Copperplate Gothic Light, fantasy",
+        windows: "Moderate",
+        apple: "Very High"
+    }, {
+        category: "fantasy",
+        name: "Papyrus",
+        fontFamily: "Papyrus, fantasy",
+        windows: "High",
+        apple: "Very High"
+    }, {
+        category: "script",
+        name: "Brush Script MT",
+        fontFamily: "Brush Script MT, cursive",
+        windows: "Moderate",
+        apple: "Very High"
+    },
+];
+
+// fonts.map(font => font.name).forEach(name => console.log(name));
+
+const values = {
+    "title-primary": "Arial",
+    "title-secondary": "Arial Narrow",
+    "text-primary": "Times New Roman",
+    "text-secondary": "Verdana",
+    "exhibit": "Brush Script MT",
+    "primary": "Times New Roman",
+    "secondary": "Verdana",
+}
+
+$(function () {
+
+    Object.entries(values).forEach(([k, v]) => {
+
+        fonts.forEach(font => {
+            const html = `<div class="dropdown-item" data-key="${k}" data-name="${font.name}">
+            <div class="font-title" style="font-family: ${font.fontFamily}">${font.name}</div>            
+        </div>`;
+
+            $(`#${k} .dropdown-menu`).append(html);
+        });
+    });
+
+
+    function render() {
+        console.log("render");
+
+        Object.entries(values).forEach(([k, v]) => {
+            const definition = fonts.find(font => font.name === v);
+            $(`#${k}.font-line button`).text(v).css({'font-family': definition.fontFamily});
+
+            $(`.exhibit-${k}`).each(function () {
+                $(this).css({'font-family': definition.fontFamily});
+            });
+        });
+
+
+        $(".font-picker #font-picker-value").val(JSON.stringify(values));
+    }
+
+    render();
+
+    $('.dropdown-item').click((e) => {
+
+        const {key, name} = $(e.currentTarget).data();
+        values[key] = name;
+        render();
+    });
+});
+
+

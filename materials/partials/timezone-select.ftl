@@ -6,7 +6,7 @@
     <#assign sizeCls = 'form-control-lg'>
 </#if>
 
-<label class="form-label ${textualClasses}" style="${textualStyles}" for="${id}">${content}</label>
+<label class="form-label label ${textualClasses} <#if hideLabel>sr-only</#if>" style="${textualStyles}" for="${id}">${content}</label>
 <select id="${id}" class="input-group ${sizeCls} form-control" name="${name}"
         <#if disabled??>disabled</#if>>
     <option value="" disabled selected>Choose timezone</option>
@@ -15,5 +15,5 @@
     </#list>
 </select>
 <#if (error)??>
-    <span id="error-message-${name}" class="form-text text-danger">${error}</span>
+    <span id="error-message-${name}" class="error-message form-text text-danger">${error}</span>
 </#if>

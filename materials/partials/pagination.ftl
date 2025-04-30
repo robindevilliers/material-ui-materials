@@ -1,7 +1,7 @@
 <div id="${id}" class="pagination-widget">
     ${content}
     <#if noContent>
-        <div class="pagination-no-content">No content.</div>
+        <div class="pagination-no-content no-content">No content.</div>
     </#if>
 
     <ul class="pagination">

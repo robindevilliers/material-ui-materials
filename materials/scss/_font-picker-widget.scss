@@ -1,0 +1,68 @@
+
+.font-picker {
+  display: flex;
+  flex-direction: row;
+
+  .label {
+    font-size: 1.25em;
+  }
+
+  .error-message {
+    font-size: 1.25em;
+    margin: auto;
+    width: 50%;
+  }
+
+  .font-line {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    font-size: 2em;
+
+    .title {
+      flex: 1 1 50%;
+    }
+
+    .dropdown {
+      display: flex;
+
+      button {
+        flex: 1 1 50%;
+        font-size: 1.25rem;
+      }
+    }
+
+    > * {
+      margin: 0.5em !important;
+    }
+
+    .dropdown-menu {
+      overflow-y: auto;
+      max-height: 80vh;
+    }
+
+    .dropdown-item {
+      display: flex;
+      flex-direction: row;
+      font-size: 2em;
+
+      > * {
+        margin: 0.25em !important;
+      }
+
+      .font-title {
+        flex: 1 0 30%;
+      }
+    }
+  }
+
+  .exhibit-block {
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+
+  .font-picker-exhibit {
+    border: 1px solid black;
+  }
+}

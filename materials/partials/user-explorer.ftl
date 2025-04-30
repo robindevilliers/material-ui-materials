@@ -1,5 +1,5 @@
 <div id="${id}" class="user-explorer-widget ${classes}" style="${itemStyles}">
-    <div class="card-header">
+    <div class="card-header header">
         <form class="form-inline" method="get" action="${action}">
             <input type="hidden" name="bust" value="${bust}"/>
             <#if messageExplorerMode>
@@ -43,7 +43,7 @@
 
     <div class="user-explorer-body">
         <#if !values?has_content>
-            <div id="user-explorer-no-content" class="user-explorer-no-content">No Content</div>
+            <div id="user-explorer-no-content" class="user-explorer-no-content no-content">No Content</div>
         <#else>
             <div class="user-explorer-item-list">
                 <#list values as val>
@@ -61,37 +61,37 @@
                         <div class="user-explorer-content">
                             <div class="user-explorer-group">
                                 <div class="user-explorer-line">
-                                    <div class="user-explorer-key">Title</div>
+                                    <div class="user-explorer-key title">Title</div>
                                     <div class="user-explorer-value">${val.title}</div>
                                 </div>
 
                                 <div class="user-explorer-line">
-                                    <div class="user-explorer-key">Firstname</div>
+                                    <div class="user-explorer-key title">Firstname</div>
                                     <div class="user-explorer-value">${val.firstName}</div>
                                 </div>
 
                                 <div class="user-explorer-line">
-                                    <div class="user-explorer-key">Lastname</div>
+                                    <div class="user-explorer-key title">Lastname</div>
                                     <div class="user-explorer-value">${val.lastName}</div>
                                 </div>
                                 <div class="user-explorer-line">
-                                    <div class="user-explorer-key">Last Logged In</div>
+                                    <div class="user-explorer-key title">Last Logged In</div>
                                     <div class="user-explorer-value">${val.lastLoggedIn}</div>
                                 </div>
                             </div>
                             <div class="user-explorer-group">
                                 <div class="user-explorer-line">
-                                    <div class="user-explorer-key">Email</div>
+                                    <div class="user-explorer-key title">Email</div>
                                     <div class="user-explorer-value">${val.email}</div>
                                 </div>
 
                                 <div class="user-explorer-line">
-                                    <div class="user-explorer-key">Contact Number</div>
+                                    <div class="user-explorer-key title">Contact Number</div>
                                     <div class="user-explorer-value">${val.contactNumber}</div>
                                 </div>
 
                                 <div class="user-explorer-line">
-                                    <div class="user-explorer-key">Date of Birth</div>
+                                    <div class="user-explorer-key title">Date of Birth</div>
                                     <div class="user-explorer-value">${val.dateOfBirth}</div>
                                 </div>
 

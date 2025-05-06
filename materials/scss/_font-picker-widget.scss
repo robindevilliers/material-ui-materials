@@ -11,48 +11,65 @@
     font-size: 1.25em;
     margin: auto;
     width: 50%;
+    margin-bottom: 0.5em;
   }
 
   .font-line {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-items: flex-start;
     font-size: 2em;
+    margin-bottom: 0.5em;
 
     .title {
       flex: 1 1 50%;
     }
 
-    .dropdown {
-      display: flex;
+    .input-group {
+      justify-content: flex-end;
+      flex-wrap: nowrap;
+      align-self: flex-end;
+      width: 75%;
 
-      button {
-        flex: 1 1 50%;
-        font-size: 1.25rem;
+      > .font-package {
+        flex: 1 0 fit-content;
       }
-    }
 
-    > * {
-      margin: 0.5em !important;
+      > * {
+        flex: 0 0 fit-content;
+
+        &:focus {
+          box-shadow: unset !important;
+          border: 1px solid #6c757d;
+        }
+
+        &.active path {
+          fill: black;
+        }
+      }
+
+      .font-select {
+        padding-right: 1.5em;
+      }
     }
 
     .dropdown-menu {
       overflow-y: auto;
       max-height: 80vh;
-    }
 
-    .dropdown-item {
-      display: flex;
-      flex-direction: row;
-      font-size: 2em;
+      .dropdown-item {
+        display: flex;
+        flex-direction: row;
+        font-size: 2em;
 
-      > * {
-        margin: 0.25em !important;
-      }
+        > * {
+          margin: 0.25em !important;
+        }
 
-      .font-title {
-        flex: 1 0 30%;
+        .font-title {
+          flex: 1 0 30%;
+        }
       }
     }
   }

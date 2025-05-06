@@ -1,6 +1,6 @@
 
-body {
-  font-family: $font-text-primary;
+body, .text-widget {
+  font-family: $font-text;
 }
 
 .header {
@@ -11,22 +11,6 @@ body {
   font-family: $font-title-primary;
 }
 
-label, .label {
-  font-family: $font-title-primary;
-}
-
-.error-message {
-  font-family: $font-title-primary;
-}
-
-a, button {
-  font-family: $font-title-primary;
-}
-
-.no-content {
-  font-family: $font-exhibit
-}
-
-input, select {
-  font-family: $font-exhibit;
+input, select, a, button, .error-message, label, .label, .no-content, .input-group {
+  font-family: $font-label;
 }

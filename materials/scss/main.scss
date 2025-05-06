@@ -1,23 +1,26 @@
 $gray: gray;
 $lightgray: lightgray;
-$blue: #81b1cc;
-$pastel-orange: #ff964f;
-$pastel-red: #ff6961;
-$opal: #a9c8c0;
 $rajah: #f7ce76;
 $pastel-mint: #cef0cc;
-$green: #c1e1c1;
 $black: black;
 $white: white;
 $lavender: lavender;
 
+// BE CAREFUL MODIFYING THESE STRINGS
+// The setup-enrolment-tokens script replaces these strings with TOKENS, that are replaced from the Settings.
+// If you are customizing the materials you can decide to not care about token replacement, in which case the Setttings
+// values will be redundant.
 $font-title-primary: Arial, Helvetica Neue, Helvetica, sans-serif;
 $font-title-secondary: Arial Narrow, Arial, sans-serif;
-$font-text-primary: Garamond, Baskerville, Baskerville Old Face, Hoefler Text, Times New Roman, serif;
-$font-text-secondary: Baskerville, Baskerville Old Face, Hoefler Text, Garamond, Times New Roman, serif;
-$font-exhibit: Andale Mono, AndaleMono, monospace;
-$font-primary: Baskerville, Baskerville Old Face, Hoefler Text, Garamond, Times New Roman, serif;
-$font-secondary: Impact, Haettenschweiler, Franklin Gothic Bold, Charcoal, Helvetica Inserat, Bitstream Vera Sans Bold, Arial Black, sans serif;
+$font-text: TimesNewRoman, Times New Roman, Times, Baskerville, Georgia, serif;
+$font-label: Arial, Helvetica Neue, Helvetica, LiberationSans, sans-serif;
+$font-exhibit: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
+$blue: #81b1cc;
+$pastel-orange: #ff964f;
+$pastel-red: #ff6961;
+$opal: #a9c8c0;
+$green: #c1e1c1;
+// END OF BEING CAREFUL
 
 $alternatingEven: $opal;
 $alternatingOdd: $green;

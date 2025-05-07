@@ -91,6 +91,10 @@
       letter-spacing: initial;
       line-height: initial;
       font-family: $font-text;
+      text-decoration: none;
+      font-weight: normal;
+      font-size: unset;
+      font-style: normal;
     }
 
     .tray-workflow-title {

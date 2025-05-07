@@ -4,29 +4,59 @@ h1 {
   margin-top: 0.8em;
   margin-bottom: 1.25em;
   color: $primary;
+  /*£IF*/
+  /*£ELSE text-decoration: FONT_TITLE_PRIMARY_DECORATION; £END*/
+  /*£IF*/
+  /*£ELSE font-style: FONT_TITLE_PRIMARY_STYLE; £END*/
+  /*£IF*/
+  /*£ELSE font-weight: FONT_TITLE_PRIMARY_WEIGHT; £END*/
 }
 
 h2 {
   font-family: $font-title-secondary;
   font-size: 2rem;
   margin-bottom: 1.25em;
+  /*£IF*/
+  /*£ELSE text-decoration: FONT_TITLE_SECONDARY_DECORATION; £END*/
+  /*£IF*/
+  /*£ELSE font-style: FONT_TITLE_SECONDARY_STYLE; £END*/
+  /*£IF*/
+  /*£ELSE font-weight: FONT_TITLE_SECONDARY_WEIGHT; £END*/
 }
 
 h3 {
   font-family: $font-title-primary;
   font-size: 1.5em;
   margin-bottom: 1em;
+  /*£IF*/
+  /*£ELSE text-decoration: FONT_TITLE_PRIMARY_DECORATION; £END*/
+  /*£IF*/
+  /*£ELSE font-style: FONT_TITLE_PRIMARY_STYLE; £END*/
+  /*£IF*/
+  /*£ELSE font-weight: FONT_TITLE_PRIMARY_WEIGHT; £END*/
 }
 
 h4 {
   font-family: $font-title-secondary;
   font-size: 1.25em;
   margin-bottom: 1em;
+  /*£IF*/
+  /*£ELSE text-decoration: FONT_TITLE_SECONDARY_DECORATION; £END*/
+  /*£IF*/
+  /*£ELSE font-style: FONT_TITLE_SECONDARY_STYLE; £END*/
+  /*£IF*/
+  /*£ELSE font-weight: FONT_TITLE_SECONDARY_WEIGHT; £END*/
 }
 
 h5 {
   font-family: $font-title-primary;
   font-size: 1em;
+  /*£IF*/
+  /*£ELSE text-decoration: FONT_TITLE_PRIMARY_DECORATION; £END*/
+  /*£IF*/
+  /*£ELSE font-style: FONT_TITLE_PRIMARY_STYLE; £END*/
+  /*£IF*/
+  /*£ELSE font-weight: FONT_TITLE_PRIMARY_WEIGHT; £END*/
 }
 
 .title-widget {

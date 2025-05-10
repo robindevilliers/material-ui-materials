@@ -103,7 +103,6 @@ $(function () {
                 if (k === 'label') {
                     const children = $(this).find("input, select, a, button, .error-message, label, .label, .no-content, .input-group");
                     children.each(function () {
-                        console.log(this);
                         $(this).css(style);
                     });
                 }

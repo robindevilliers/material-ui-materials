@@ -207,17 +207,14 @@ $(function () {
         });
     }
 
-    colorPickerDisc.click(function (event) {
+    processDrag(colorPickerDisc, function (event) {
         processColorPickerEvent(event);
         renderColor();
     });
 
-    luminosity.click(function (event) {
-
+    processDrag(luminosity, function (event) {
         const offset = event.offsetY;
-
         luminosityValue = 1 - offset / (radius * 2);
-
         renderColor();
     });
 
@@ -227,6 +224,30 @@ $(function () {
 
     function scaleOut(val) {
         return val / radius * 300;
+    }
+
+    function processDrag(element, callback) {
+
+        let dragging = false;
+
+        element.mousedown(function (event) {
+            callback(event);
+            dragging = true;
+        });
+
+        element.mousemove(function (event) {
+            if (dragging) {
+                callback(event);
+            }
+        });
+
+        element.mouseout(function (event) {
+            dragging = false;
+        });
+
+        element.mouseup(function (event) {
+            dragging = false;
+        });
     }
 });
 

@@ -64,6 +64,7 @@ export default class MessageExplorerRenderer implements Renderer {
         data.startIndex = "0";
         data.endIndex = String(Number.MAX_VALUE);
         data.action = "#" + data.bust;
+        data.parameters = {};
 
         data.workflows = Store.getWorkflows().map(w => {
             return {

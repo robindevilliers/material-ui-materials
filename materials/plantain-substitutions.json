@@ -4,6 +4,11 @@
       "value": "Some error."
     }
   },
+  "request-error.page.xml": {
+    ".reason": {
+      "value": "Some error."
+    }
+  },
   "case-principal-picker.page.xml": {
     ".name": {
       "value": "Arthur Nother"

@@ -1,15 +1,10 @@
 <div id="${id}" class="user-explorer-widget ${classes}" style="${itemStyles}">
     <div class="card-header header">
-        <form class="form-inline" method="get" action="${action}">
-            <input type="hidden" name="bust" value="${bust}"/>
-            <#if messageExplorerMode>
-                <input type="hidden" name="mLookupUser" value=""/>
-                <input type="hidden" name="mQueue" value="${queue}"/>
-                <input type="hidden" name="mWorkflow" value="${workflow}"/>
-                <input type="hidden" name="mWizard" value="${wizard}"/>
-                <input type="hidden" name="mPrincipal" value="${principal}"/>
-            </#if>
 
+        <form class="form-inline" method="get" action="${action}">
+            <div class="user-explorer-header-title">
+                User Lookup
+            </div>
             <div class="input-group">
                 <div class="input-group-prepend">
                     <div class="input-group-text">Group</div>
@@ -38,12 +33,15 @@
                     <button type="submit" name="uSearch" class="btn btn-outline-primary">Search</button>
                 </div>
             </div>
+            <#list parameters as n, v>
+                <input type="hidden" name="${n}" value="${v}"/>
+            </#list>
         </form>
     </div>
 
     <div class="user-explorer-body">
         <#if !values?has_content>
-            <div id="user-explorer-no-content" class="user-explorer-no-content no-content">No Content</div>
+            <div id="user-explorer-no-content" class="user-explorer-no-content no-content">No Results</div>
         <#else>
             <div class="user-explorer-item-list">
                 <#list values as val>
@@ -61,56 +59,54 @@
                         <div class="user-explorer-content">
                             <div class="user-explorer-group">
                                 <div class="user-explorer-line">
-                                    <div class="user-explorer-key title">Title</div>
+                                    <div class="user-explorer-key">Title</div>
                                     <div class="user-explorer-value">${val.title}</div>
                                 </div>
 
                                 <div class="user-explorer-line">
-                                    <div class="user-explorer-key title">Firstname</div>
+                                    <div class="user-explorer-key">Firstname</div>
                                     <div class="user-explorer-value">${val.firstName}</div>
                                 </div>
 
                                 <div class="user-explorer-line">
-                                    <div class="user-explorer-key title">Lastname</div>
+                                    <div class="user-explorer-key">Lastname</div>
                                     <div class="user-explorer-value">${val.lastName}</div>
                                 </div>
                                 <div class="user-explorer-line">
-                                    <div class="user-explorer-key title">Last Logged In</div>
+                                    <div class="user-explorer-key">Last Logged In</div>
                                     <div class="user-explorer-value">${val.lastLoggedIn}</div>
                                 </div>
                             </div>
                             <div class="user-explorer-group">
                                 <div class="user-explorer-line">
-                                    <div class="user-explorer-key title">Email</div>
+                                    <div class="user-explorer-key">Email</div>
                                     <div class="user-explorer-value">${val.email}</div>
                                 </div>
 
                                 <div class="user-explorer-line">
-                                    <div class="user-explorer-key title">Contact Number</div>
+                                    <div class="user-explorer-key">Contact Number</div>
                                     <div class="user-explorer-value">${val.contactNumber}</div>
                                 </div>
 
                                 <div class="user-explorer-line">
-                                    <div class="user-explorer-key title">Date of Birth</div>
+                                    <div class="user-explorer-key">Date of Birth</div>
                                     <div class="user-explorer-value">${val.dateOfBirth}</div>
                                 </div>
 
                                 <div class="user-explorer-form">
 
-                                    <#if messageExplorerMode>
+                                    <#if lookupUserMode>
                                         <form class="form-inline" method="get" action="${action}">
-                                            <input type="hidden" name="bust" value="${bust}"/>
-                                            <input type="hidden" name="mPrincipal" value="${val.username}"/>
-                                            <input type="hidden" name="mQueue" value="${queue}"/>
-                                            <input type="hidden" name="mWorkflow" value="${workflow}"/>
-                                            <input type="hidden" name="mWizard" value="${wizard}"/>
+                                            <input type="hidden" name="principal" value="${val.username}"/>
                                             <div class="btn-group" role="group">
-                                                <button type="submit" aria-label="Select"
-                                                        class="btn btn-primary"
-                                                        name="uSelect">
+                                                <button type="submit" aria-label="Select" class="btn btn-primary"
+                                                        name="actReturn">
                                                     Select
                                                 </button>
                                             </div>
+                                            <#list parameters as n, v>
+                                                <input type="hidden" name="${n}" value="${v}"/>
+                                            </#list>
                                         </form>
                                     <#else >
                                         <form class="form-inline" method="post" action="${executeWorkflow}">
@@ -136,53 +132,46 @@
     </div>
     <div class="user-explorer-footer">
         <form class="form-inline" method="get" action="${action}">
-            <input type="hidden" name="uUsername" value="${username}"/>
-            <input type="hidden" name="uGroup" value="${group}"/>
-            <input type="hidden" name="uFirstName" value="${firstName}"/>
-            <input type="hidden" name="uLastName" value="${lastName}"/>
-            <input type="hidden" name="bust" value="${bust}"/>
-            <input type="hidden" name="uStartIndex" value="${(startIndex)!}"/>
-            <input type="hidden" name="uEndIndex" value="${(endIndex)!}"/>
-            <#if messageExplorerMode>
-                <input type="hidden" name="mLookupUser" value=""/>
-                <input type="hidden" name="mQueue" value="${queue}"/>
-                <input type="hidden" name="mWorkflow" value="${workflow}"/>
-                <input type="hidden" name="mWizard" value="${wizard}"/>
-                <input type="hidden" name="mPrincipal" value="${principal}"/>
-            </#if>
+
+            <#list parameters as n, v>
+                <input type="hidden" name="${n}" value="${v}"/>
+            </#list>
+
             <div class="btn-group" role="group">
-                <button type="submit" aria-label="Previous" class="btn btn-outline-primary"
-                        <#if !startIndex?has_content >disabled</#if> name="uPrevious">
-                    Previous
-                </button>
-                <button type="submit" aria-label="Next" class="btn btn-outline-primary"
-                        <#if !endIndex?has_content >disabled</#if> name="uNext">
-                    Next
-                </button>
+                <#if !disablePrevious >
+                    <button type="submit" aria-label="Previous" class="btn btn-outline-primary" name="actPrevious">
+                        Previous
+                    </button>
+                </#if>
+                <#if !disableNext >
+                    <button type="submit" aria-label="Next" class="btn btn-outline-primary" name="actNext">
+                        Next
+                    </button>
+                </#if>
             </div>
         </form>
-        <#if messageExplorerMode>
+
+        <#if lookupUserMode>
             <form class="form-inline" method="get" action="${action}">
-                <input type="hidden" name="bust" value="${bust}"/>
-                <input type="hidden" name="mQueue" value="${queue}"/>
-                <input type="hidden" name="mPrincipal" value="${principal}"/>
-                <input type="hidden" name="mWorkflow" value="${workflow}"/>
-                <input type="hidden" name="mWizard" value="${wizard}"/>
+
+                <#list parameters as n, v>
+                    <input type="hidden" name="${n}" value="${v}"/>
+                </#list>
                 <div class="btn-group" role="group">
-                    <button type="submit" aria-label="Cancel" class="btn btn-outline-primary" name="uCancel">
-                        Cancel lookup
+                    <button type="submit" aria-label="Cancel" class="btn btn-outline-primary"
+                            name="actReturn">
+                        Cancel
                     </button>
                 </div>
             </form>
-        <#else>
-            <form class="form-inline" method="post" action="${executeWorkflow}">
+        <#else >
+            <form class="form-inline" method="post" action="${cancelExecuteWorkflow}">
                 <input type="hidden" name="_csrf" value="${_csrf}"/>
                 <input type="hidden" name="_checkpoint" value="${_checkpoint}">
-                <input type="hidden" name="type" value="CANCEL"/>
                 <div class="btn-group" role="group">
-                    <button type="submit" aria-label="Select" class="btn btn-outline-primary"
-                            name="cancel" id="cancel-button"
-                            onclick="${testMode?string('alert(&quot;Select clicked&quot;); event.preventDefault();','')}">
+                    <button type="submit" aria-label="Cancel" class="btn btn-outline-primary"
+                            onclick="${testMode?string('alert(&quot;Select clicked&quot;); event.preventDefault();','')}"
+                            name="actReturn">
                         Cancel
                     </button>
                 </div>

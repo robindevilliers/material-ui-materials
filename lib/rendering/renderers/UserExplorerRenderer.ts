@@ -38,6 +38,7 @@ export default class UserExplorerRenderer implements Renderer {
         data.messageExplorerMode = false;
         data.startIndex = "startIndex";
         data.endIndex = "endIndex";
+        data.parameters = {};
 
         const classManager = new ClassManager(classMappings);
         flexItemSupport(data, classManager, element.attributes);

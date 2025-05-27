@@ -1,0 +1,25 @@
+<?schema version="2"?>
+<page defnVersion="v1" id="error" version="1" title="Unable" description="The Unable page." group="public">
+    <div v="v1" orientation="COLUMN">
+        <div v="v1" orientation="ROW" justifyContent="SPACE_AROUND">
+            <div v="v1" orientation="COLUMN" justifyContent="SPACE_AROUND" alignItems="CENTER">
+                <title size="LARGE" v="v1">
+                    <textual>Request error.</textual>
+                </title>
+                <text v="v1">
+                    <textual>
+                        An error has occurred, that is completely your fault. That is to say that the current state of
+                        the system does not support the operation you requested to perform and that the system itself
+                        is working just fine. Please see the message below, which may indicate the cause.
+                    </textual>
+                </text>
+
+                <text v="v1">
+                    <textual>
+                        <script script=".reason" v="v1"/>
+                    </textual>
+                </text>
+            </div>
+        </div>
+    </div>
+</page>

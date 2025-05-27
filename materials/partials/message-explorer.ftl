@@ -1,7 +1,9 @@
 <div id="${id}" class="message-explorer-widget ${classes}" style="${itemStyles}">
     <div class="card-header header">
         <form class="form-inline" method="get" action="${action}">
-            <input type="hidden" name="bust" value="${bust}"/>
+            <div class="message-explorer-header-title">
+                Message Lookup
+            </div>
             <div class="input-group">
                 <div class="input-group-prepend">
                     <div class="input-group-text">Queue</div>
@@ -43,14 +45,15 @@
                     <button type="submit" name="mSearch" class="btn btn-outline-primary">Search</button>
                 </div>
             </div>
-
-
+            <#list parameters as n, v>
+                <input type="hidden" name="${n}" value="${v}"/>
+            </#list>
         </form>
     </div>
 
     <div class="message-explorer-body">
         <#if !values?has_content>
-            <div id="message-explorer-no-content" class="message-explorer-no-content no-content">No Content</div>
+            <div id="message-explorer-no-content" class="message-explorer-no-content no-content">No Results</div>
         <#else>
             <div class="message-explorer-item-list">
                 <#list values as val>
@@ -79,31 +82,31 @@
                         </div>
 
                         <span class="message-explorer-line">
-                            <span class="title">Case Principal</span>
+                            <span class="message-explorer-title">Case Principal</span>
                             <span>${val.principal}</span>
                         </span>
 
                         <span class="message-explorer-line">
-                            <span class="title">Principal Name</span>
+                            <span class="message-explorer-title">Principal Name</span>
                             <span>${val.principalTitle} ${val.principalFirstName} ${val.principalLastName}</span>
                         </span>
 
                         <span class="message-explorer-line">
-                            <span class="title">Date of Birth</span>
+                            <span class="message-explorer-title">Date of Birth</span>
                             <span>${val.principalDateOfBirth}</span>
                         </span>
 
                         <span class="message-explorer-line">
-                                <span class="title">Case Id </span>
+                                <span class="message-explorer-title">Case Id </span>
                                 <span>${val.kaseId}</span>
                             </span>
 
                         <span class="message-explorer-line">
-                                <span class="title">Workflow </span>
+                                <span class="message-explorer-title">Workflow </span>
                                 <span></span>
                             </span>
 
-                        <div class="title">${val.workflowTitle} (${val.workflowId})</div>
+                        <div class="message-explorer-title">${val.workflowTitle} (${val.workflowId})</div>
 
                         <div class="message-explorer-line">
                             <div class="message-explorer-description">
@@ -134,36 +137,30 @@
     </div>
     <div class="message-explorer-footer">
         <form class="form-inline" method="get" action="${action}">
-            <input type="hidden" name="mQueue" value="${queue}"/>
-            <input type="hidden" name="mWorkflow" value="${workflow}"/>
-            <input type="hidden" name="mWizard" value="${wizard}"/>
-            <input type="hidden" name="mPrincipal" value="${principal}"/>
-            <input type="hidden" name="bust" value="${bust}"/>
-            <input type="hidden" name="mStartIndex" value="${(startIndex)!}"/>
-            <input type="hidden" name="mEndIndex" value="${(endIndex)!}"/>
+            <#list parameters as n, v>
+                <input type="hidden" name="${n}" value="${v}"/>
+            </#list>
             <div class="btn-group" role="group">
-                <button type="submit" aria-label="Previous" class="btn btn-outline-primary"
-                        <#if !startIndex?has_content >disabled</#if> name="mPrevious">
-                    Previous
-                </button>
-                <button type="submit" aria-label="Next" class="btn btn-outline-primary"
-                        <#if !endIndex?has_content >disabled</#if> name="mNext">
-                    Next
-                </button>
+                <#if !disablePrevious >
+                    <button type="submit" aria-label="Previous" class="btn btn-outline-primary" name="actPrevious">
+                        Previous
+                    </button>
+                </#if>
+                <#if !disableNext >
+                    <button type="submit" aria-label="Next" class="btn btn-outline-primary" name="actNext">
+                        Next
+                    </button>
+                </#if>
             </div>
         </form>
 
         <form class="form-inline" method="get" action="${action}">
-            <input type="hidden" name="mQueue" value="${queue}"/>
-            <input type="hidden" name="mWorkflow" value="${workflow}"/>
-            <input type="hidden" name="mWizard" value="${wizard}"/>
-            <input type="hidden" name="mPrincipal" value="${principal}"/>
-            <input type="hidden" name="bust" value="${bust}"/>
-            <input type="hidden" name="mStartIndex" value="${(startIndex)!}"/>
-            <input type="hidden" name="mEndIndex" value="${(endIndex)!}"/>
+            <#list parameters as n, v>
+                <input type="hidden" name="${n}" value="${v}"/>
+            </#list>
             <div class="btn-group" role="group">
                 <button type="submit" aria-label="Lookup username" class="btn btn-outline-primary"
-                        name="mLookupUser">
+                        name="actmLookupUser">
                     Lookup principal
                 </button>
             </div>

@@ -5,6 +5,7 @@ import Wizard from './Wizard';
 import Workflow from './Workflow';
 import Page from './Page';
 import Queue from './Queue';
+import Kase from "./Kase";
 
 
 class Store {
@@ -19,6 +20,7 @@ class Store {
         private workflows: Workflow[] = [],
         private pages: Page[] = [],
         private queues: Queue[] = [],
+        private kases: Kase[] = [],
     ) {
     }
 
@@ -50,6 +52,10 @@ class Store {
         return this.queues;
     }
 
+    public getKases() {
+        return this.kases;
+    }
+
     setTestContext() {
         this.testContext = true;
     }
@@ -65,6 +71,7 @@ class Store {
         this.wizards = [];
         this.workflows = [];
         this.pages = [];
+        this.kases = [];
         this.testContext = false;
     }
 
@@ -94,6 +101,10 @@ class Store {
 
     addGroup(group: Group) {
         this.groups.push(group);
+    }
+
+    addKase(kase: Kase) {
+        this.kases.push(kase);
     }
 }
 

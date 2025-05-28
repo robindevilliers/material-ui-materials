@@ -23,27 +23,24 @@ export default class UserExplorerRenderer implements Renderer {
 
         data.id = element.attributes.id;
         data._csrf = generateId();
-        data.bust = generateId();
+        data._checkpoint = "17e3422d-0197-1000-b8bc-989daa23ef9c";
         data.values = Store.getUsers();
         data.groups = Store.getGroups();
         data.group = "";
-        data.wizard = "";
-        data.workflow = "";
-        data.queue = "";
-        data.principal = "";
         data.username = "";
         data.firstName = "";
         data.lastName = "";
-        data.executeWorkflow = "/workflow/initiate-as/";
-        data.messageExplorerMode = false;
-        data.startIndex = "startIndex";
-        data.endIndex = "endIndex";
+        data.executeWorkflow = "/operation/accept";
+        data.cancelExecuteWorkflow = "/operation/cancel";
         data.parameters = {};
+        data.lookupUserMode = false;
+        data.disablePrevious = false;
+        data.disableNext = false;
 
         const classManager = new ClassManager(classMappings);
         flexItemSupport(data, classManager, element.attributes);
         data.classes = classManager.toString();
-        data.action = "#" + data.bust;
+        data.action = "#" + generateId();
         data.testMode = Store.isTestContext();
 
         return renderingEngine.render('user-explorer.ftl', data);

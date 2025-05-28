@@ -5,6 +5,7 @@ import Wizard from './Wizard';
 import Workflow from './Workflow';
 import Page from './Page';
 import Queue from './Queue';
+import Kase from "./Kase";
 declare class Store {
     private users;
     private groups;
@@ -13,8 +14,9 @@ declare class Store {
     private workflows;
     private pages;
     private queues;
+    private kases;
     private testContext;
-    constructor(users?: User[], groups?: Group[], messages?: Message[], wizards?: Wizard[], workflows?: Workflow[], pages?: Page[], queues?: Queue[]);
+    constructor(users?: User[], groups?: Group[], messages?: Message[], wizards?: Wizard[], workflows?: Workflow[], pages?: Page[], queues?: Queue[], kases?: Kase[]);
     getUsers(): User[];
     getGroups(): Group[];
     getMessages(): Message[];
@@ -22,6 +24,7 @@ declare class Store {
     getWorkflows(): Workflow[];
     getPages(): Page[];
     getQueues(): Queue[];
+    getKases(): Kase[];
     setTestContext(): void;
     isTestContext(): boolean;
     clear(): void;
@@ -32,6 +35,7 @@ declare class Store {
     addPage(page: Page): void;
     addQueue(queue: Queue): void;
     addGroup(group: Group): void;
+    addKase(kase: Kase): void;
 }
 declare const INSTANCE: Store;
 export default INSTANCE;

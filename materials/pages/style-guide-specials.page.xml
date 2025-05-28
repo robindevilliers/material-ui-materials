@@ -2,8 +2,8 @@
 <page id="test" version="1" active="false" released="false" group="admin" title="Style Guide - Landing Page"
     description="test"
     defnVersion="v1" orientation="COLUMN">
-    <fake-store currentUser="robindevilliers">
-        <fake-user username="robindevilliers"
+    <fake-store currentUser="robin">
+        <fake-user username="robin"
             groups=":public:authenticated:admin:"
             title="Mr"
             firstName="Robin"
@@ -14,7 +14,7 @@
             timezone="Europe/London"
             userData="{&quot;alpha&quot;: true, &quot;beta&quot;: false}"
         />
-        <fake-user username="connordevilliers"
+        <fake-user username="connor"
             groups=":public:authenticated:client:"
             title="Mr"
             firstName="Connor"
@@ -47,6 +47,30 @@
             timezone="Europe/London"
             userData="{&quot;alpha&quot;: true, &quot;beta&quot;: false}"
         />
+        <fake-kase
+            dateTime="2024-01-30T18:31:32Z"
+            kaseId="1"
+            workflowId="public:workflow-one:1"
+            principal="robin"
+        />
+        <fake-kase
+            dateTime="2024-01-30T18:31:32Z"
+            kaseId="2"
+            workflowId="public:workflow-one:1"
+            principal="robin"
+        />
+        <fake-kase
+            dateTime="2024-01-30T18:31:32Z"
+            kaseId="3"
+            workflowId="public:workflow-one:1"
+            principal="connor"
+        />
+        <fake-kase
+            dateTime="2024-01-30T18:31:32Z"
+            kaseId="5"
+            workflowId="public:workflow-one:1"
+            principal="leah"
+        />
         <fake-message
             dateTime="2024-01-30T18:31:32Z"
             kaseId="1"
@@ -54,7 +78,7 @@
             workflowId="public:workflow-one:1"
             group="public"
             queue="main-user"
-            principal="robindevilliers"
+            principal="robin"
         />
         <fake-message
             dateTime="2024-01-30T18:32:32Z"
@@ -63,7 +87,7 @@
             workflowId="public:workflow-two:1"
             group="public"
             queue="main-user"
-            principal="connordevilliers"
+            principal="connor"
         />
         <fake-message
             dateTime="2024-01-30T18:33:32Z"
@@ -72,7 +96,7 @@
             workflowId="public:workflow-one:1"
             group="public"
             queue="main-user"
-            principal="connordevilliers"
+            principal="connor"
         />
         <fake-message
             dateTime="2024-01-30T18:35:47Z"
@@ -497,6 +521,27 @@
             <user-explorer v="v1"/>
         </div>
 
+        <horizontal-rule/>
+        <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
+            flexBasis="100%">
+            <div orientation="ROW" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
+                flexBasis="100%" width="100%">
+                <title size="LARGE" v="v1">
+                    <textual>Case Explorer</textual>
+                </title>
+                <text v="v1" flexBasis="500px">
+                    <textual>
+                        The Case Explorer Widget allows the user to search for a particular case based on a number of
+                        criteria. It is a very powerful component that is intended for the use of staff. The user
+                        can search by workflow, or case principal. Once a case is found, an associated Case Page can
+                        be opened if an appropriate page reference is configured. While the Materials can display this
+                        component, much of its functionality can only be facilitated on the platform itself.
+                    </textual>
+                </text>
+            </div>
+            <kase-explorer v="v1">
+            </kase-explorer>
+        </div>
         <horizontal-rule/>
         <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" v="v1"
             flexBasis="100%">

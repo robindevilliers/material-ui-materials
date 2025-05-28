@@ -2,7 +2,7 @@
     ${header}
     <div class="folder-content">
         <#list values as val>
-            <div id="folder-item-${val.workflowId}-${val.wizardId}"  class="folder-item">
+            <div id="folder-item-${val.workflowId}-${val.wizardId}" class="folder-item">
                 ${val.html}
             </div>
         </#list>
@@ -19,7 +19,9 @@
                     <input type="hidden" name="fIndex" value="${previousPage}">
                 </#if>
                 <button type="submit" aria-label="Previous" class="btn btn-link page-link"
-                        <#if !previousPage?has_content >disabled</#if> name="lPage">
+                        <#if !previousPage?has_content >disabled</#if> name="lPage"
+                        onclick="${testMode?string('alert(&quot;Button clicked&quot;); event.preventDefault();','')}"
+                >
                     <span aria-hidden="true">&laquo;</span>
                     <span class="sr-only">Previous</span>
                 </button>
@@ -31,7 +33,9 @@
                 <form class="form-inline" method="get" action="${action}">
                     <input type="hidden" name="bust" value="${bust}"/>
                     <input type="hidden" name="fIndex" value="${page}">
-                    <button type="submit" aria-label="Page" class="page-link" name="lPage">
+                    <button type="submit" aria-label="Page" class="page-link" name="lPage"
+                            onclick="${testMode?string('alert(&quot;Button clicked&quot;); event.preventDefault();','')}"
+                    >
                         ${page + 1}
                     </button>
                 </form>
@@ -45,6 +49,7 @@
                     <input type="hidden" name="fIndex" value="${nextPage}">
                 </#if>
                 <button type="submit" aria-label="Next" class="btn btn-link page-link"
+                        onclick="${testMode?string('alert(&quot;Button clicked&quot;); event.preventDefault();','')}"
                         <#if !nextPage?has_content >disabled</#if> name="lPage">
                     <span aria-hidden="true">&raquo;</span>
                     <span class="sr-only">Next</span>

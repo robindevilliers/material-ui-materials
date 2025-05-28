@@ -42,7 +42,10 @@
                         value="${principal}" placeholder="Principal">
 
                 <div class="input-group-append">
-                    <button type="submit" name="mSearch" class="btn btn-outline-primary">Search</button>
+                    <button type="submit" name="mSearch" class="btn btn-outline-primary"
+                            onclick="${testMode?string('alert(&quot;Button clicked&quot;); event.preventDefault();','')}"
+                    >Search
+                    </button>
                 </div>
             </div>
             <#list parameters as n, v>
@@ -142,12 +145,16 @@
             </#list>
             <div class="btn-group" role="group">
                 <#if !disablePrevious >
-                    <button type="submit" aria-label="Previous" class="btn btn-outline-primary" name="actPrevious">
+                    <button type="submit" aria-label="Previous" class="btn btn-outline-primary" name="actPrevious"
+                            onclick="${testMode?string('alert(&quot;Button clicked&quot;); event.preventDefault();','')}"
+                    >
                         Previous
                     </button>
                 </#if>
                 <#if !disableNext >
-                    <button type="submit" aria-label="Next" class="btn btn-outline-primary" name="actNext">
+                    <button type="submit" aria-label="Next" class="btn btn-outline-primary" name="actNext"
+                            onclick="${testMode?string('alert(&quot;Button clicked&quot;); event.preventDefault();','')}"
+                    >
                         Next
                     </button>
                 </#if>
@@ -160,6 +167,7 @@
             </#list>
             <div class="btn-group" role="group">
                 <button type="submit" aria-label="Lookup username" class="btn btn-outline-primary"
+                        onclick="${testMode?string('alert(&quot;Button clicked&quot;); event.preventDefault();','')}"
                         name="actmLookupUser">
                     Lookup principal
                 </button>

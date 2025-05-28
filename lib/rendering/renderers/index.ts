@@ -79,6 +79,8 @@ import ColorPickerRenderer from "./ColorPickerRenderer";
 import SelectPanelRenderer from "./SelectPanelRenderer";
 import SelectPanelItemRenderer from "./SelectPanelItemRenderer";
 import FontPickerRenderer from "./FontPickerRenderer";
+import FakeKaseRenderer from "./FakeKaseRenderer";
+import KaseExplorerRenderer from "./KaseExplorerRenderer";
 
 const registry = [
     new TitleRenderer(),
@@ -161,7 +163,9 @@ const registry = [
     new ColorPickerRenderer(),
     new SelectPanelRenderer(),
     new SelectPanelItemRenderer(),
-    new FontPickerRenderer()
+    new FontPickerRenderer(),
+    new FakeKaseRenderer(),
+    new KaseExplorerRenderer()
 ];
 
 export function findRenderer(name: string) {

@@ -5,7 +5,3 @@ document iconHelp.html.
 
 set width for columns in reference page.
 
-message explorer and user explorer are not working correctly.
-    1.  onclick and hte page refreshed and jumps to the top of the page.
-    2. input values for filters are not reproduced.
-    message explorer is not going to work without a back end.

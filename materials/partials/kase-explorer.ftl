@@ -21,7 +21,10 @@
                 <input autocomplete="off" type="text" class="form-control" name="kPrincipal" id="principal"
                         value="${principal}" placeholder="Case Principal">
                 <div class="input-group-append">
-                    <button type="submit" name="actSearch" class="btn btn-outline-primary">Search</button>
+                    <button type="submit" name="actSearch" class="btn btn-outline-primary"
+                            onclick="${testMode?string('alert(&quot;Button clicked&quot;); event.preventDefault();','')}">
+                        Search
+                    </button>
                 </div>
             </div>
             <#list parameters as n, v>
@@ -80,7 +83,7 @@
                             <span class="kase-explorer-button-line">
                                     <button class="btn btn-primary"
                                             id="kase-explorer-item-${val.workflowId}"
-                                            onclick="${testMode?string('alert(&quot;Open clicked&quot;); event.preventDefault();','')}"
+                                            onclick="${testMode?string('alert(&quot;Button clicked&quot;); event.preventDefault();','')}"
                                             type="submit">
                                         Open
                                     </button>
@@ -98,12 +101,16 @@
             </#list>
             <div class="btn-group" role="group">
                 <#if !disablePrevious >
-                    <button type="submit" aria-label="Previous" class="btn btn-outline-primary" name="actPrevious">
+                    <button type="submit" aria-label="Previous" class="btn btn-outline-primary" name="actPrevious"
+                            onclick="${testMode?string('alert(&quot;Button clicked&quot;); event.preventDefault();','')}"
+                    >
                         Previous
                     </button>
                 </#if>
                 <#if !disableNext >
-                    <button type="submit" aria-label="Next" class="btn btn-outline-primary" name="actNext">
+                    <button type="submit" aria-label="Next" class="btn btn-outline-primary" name="actNext"
+                            onclick="${testMode?string('alert(&quot;Button clicked&quot;); event.preventDefault();','')}"
+                    >
                         Next
                     </button>
                 </#if>
@@ -116,7 +123,8 @@
             </#list>
             <div class="btn-group" role="group">
                 <button type="submit" aria-label="Lookup username" class="btn btn-outline-primary"
-                        name="actkLookupUser">
+                        name="actkLookupUser"
+                        onclick="${testMode?string('alert(&quot;Button clicked&quot;); event.preventDefault();','')}">
                     Lookup principal
                 </button>
             </div>

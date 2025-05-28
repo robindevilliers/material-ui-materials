@@ -831,6 +831,11 @@
             </link>
         </list-item>
         <list-item>
+            <link view="reference.html#kase-explorer" v="v1">
+                <textual>Case Explorer</textual>
+            </link>
+        </list-item>
+        <list-item>
             <link view="reference.html#cell" v="v1">
                 <textual>Cell</textual>
             </link>

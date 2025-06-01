@@ -59,6 +59,8 @@ export default class MessageExplorerRenderer implements Renderer {
         data.queue = "";
         data.workflow = "";
         data.principal = "";
+        data.startDate = "";
+        data.endDate = "";
         data.action = "#" + generateId();
         data.parameters = {};
 

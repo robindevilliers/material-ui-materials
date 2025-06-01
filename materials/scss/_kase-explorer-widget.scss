@@ -8,6 +8,23 @@
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
+  min-width: 690px;
+
+  .kase-explorer-query {
+    display: flex;
+
+    .header-row {
+      display: flex;
+      flex: 1 1 auto;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: center;
+
+      & > * {
+        margin-bottom: 10px;
+      }
+    }
+  }
 
   .kase-explorer-header-title {
     font-size: 1em;
@@ -121,7 +138,7 @@
             font-family: $font-title-primary;
           }
 
-          .kase-explorer-wizard-title {
+          .kase-explorer-item-title {
             font-size: 1.25em;
           }
 

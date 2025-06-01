@@ -48,6 +48,8 @@ export default class KaseExplorerRenderer implements Renderer {
         data.values = values;
         data.workflow = "";
         data.principal = "";
+        data.startDate = "";
+        data.endDate = "";
         data.action = "#" + generateId();
         data.parameters = {};
 

@@ -8,12 +8,30 @@
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
+  min-width: 690px;
+
+  .message-explorer-query {
+    display: flex;
+
+    .header-row {
+      display: flex;
+      flex: 1 1 auto;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: center;
+
+      & > * {
+        margin-bottom: 10px;
+      }
+    }
+  }
 
   .message-explorer-header-title {
     font-size: 1em;
     font-family: $font-title-primary;
     color: #fff;
     margin-right: 1em;
+    flex: 10 1 auto;
   }
 
   .input-group-text {

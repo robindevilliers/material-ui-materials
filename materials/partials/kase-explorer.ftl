@@ -1,30 +1,50 @@
 <div id="${id}" class="kase-explorer-widget ${classes}" style="${itemStyles}">
     <div class="card-header header">
 
-        <form class="form-inline" method="get" action="${action}">
-            <div class="kase-explorer-header-title">
-                Case Lookup
-            </div>
-            <div class="input-group">
-                <div class="input-group-prepend">
-                    <div class="input-group-text">Workflow</div>
+        <form class="form-inline kase-explorer-query" method="get" action="${action}">
+            <div class="header-row">
+                <div class="kase-explorer-header-title">
+                    Case Lookup
                 </div>
-                <label class="sr-only" for="workflow">Workflow</label>
-                <select class="form-control" id="workflow" name="kWorkflow">
-                    <option value=""></option>
-                    <#list workflows as val>
-                        <option <#if workflow == val.id>selected</#if> value="${val.id}">${val.title}</option>
-                    </#list>
-                </select>
+            </div>
+            <div class="header-row">
+                <div class="spacer"></div>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">Workflow</div>
+                    </div>
+                    <label class="sr-only" for="workflow">Workflow</label>
+                    <select class="form-control" id="workflow" name="kWorkflow">
+                        <option value=""></option>
+                        <#list workflows as val>
+                            <option <#if workflow == val.id>selected</#if> value="${val.id}">${val.title}</option>
+                        </#list>
+                    </select>
 
-                <label class="sr-only" for="principal">Case Principal</label>
-                <input autocomplete="off" type="text" class="form-control" name="kPrincipal" id="principal"
-                        value="${principal}" placeholder="Case Principal">
-                <div class="input-group-append">
-                    <button type="submit" name="actSearch" class="btn btn-outline-primary"
-                            onclick="${testMode?string('alert(&quot;Button clicked&quot;); event.preventDefault();','')}">
-                        Search
-                    </button>
+                    <label class="sr-only" for="principal">Case Principal</label>
+                    <input autocomplete="off" type="text" class="form-control" name="kPrincipal" id="principal"
+                            value="${principal}" placeholder="Case Principal">
+
+                    <label class="sr-only" for="startDate">Start Date</label>
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">Start Date</div>
+                    </div>
+                    <input autocomplete="off" type="date" class="form-control" name="kStartDate" id="startDate"
+                            value="${startDate}" placeholder="Start Date">
+
+                    <label class="sr-only" for="endDate">End Date</label>
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">End Date</div>
+                    </div>
+                    <input autocomplete="off" type="date" class="form-control" name="kEndDate" id="endDate"
+                            value="${endDate}" placeholder="End Date">
+
+                    <div class="input-group-append">
+                        <button type="submit" name="actSearch" class="btn btn-outline-primary"
+                                onclick="${testMode?string('alert(&quot;Button clicked&quot;); event.preventDefault();','')}">
+                            Search
+                        </button>
+                    </div>
                 </div>
             </div>
             <#list parameters as n, v>
@@ -50,6 +70,11 @@
                 <#list values as val>
                     <div id="${val.id}" class="kase-explorer-item" data-display="flex"
                             data-parent="#${id}">
+
+                        <div class="kase-explorer-line">
+                            <span class="kase-explorer-item-title title">${val.id}</span>
+                            <span>${val.dateTime}</span>
+                        </div>
 
                         <span class="kase-explorer-line">
                             <span class="kase-explorer-title">Case Principal</span>

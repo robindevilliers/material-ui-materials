@@ -1,3 +1,77 @@
+
+@font-face {
+  font-family: "Liberation Mono";
+  src: url("/public/fonts/LiberationMono-Regular.ttf" ) format("truetype");
+}
+
+@font-face {
+  font-family: "Liberation Mono";
+  src: url("/public/fonts/LiberationMono-Bold.ttf" ) format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Liberation Mono";
+  src: url("/public/fonts/LiberationMono-Italic.ttf" ) format("truetype");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Liberation Mono";
+  src: url("/public/fonts/LiberationMono-BoldItalic.ttf" ) format("truetype");
+  font-style: italic;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Liberation Sans";
+  src: url("/public/fonts/LiberationSans-Regular.ttf" ) format("truetype");
+}
+
+@font-face {
+  font-family: "Liberation Sans";
+  src: url("/public/fonts/LiberationSans-Bold.ttf" ) format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Liberation Sans";
+  src: url("/public/fonts/LiberationSans-Italic.ttf" ) format("truetype");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Liberation Sans";
+  src: url("/public/fonts/LiberationSans-BoldItalic.ttf" ) format("truetype");
+  font-style: italic;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Liberation Serif";
+  src: url("/public/fonts/LiberationSerif-Regular.ttf" ) format("truetype");
+}
+
+@font-face {
+  font-family: "Liberation Serif";
+  src: url("/public/fonts/LiberationSerif-Bold.ttf" ) format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Liberation Serif";
+  src: url("/public/fonts/LiberationSerif-Italic.ttf" ) format("truetype");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Liberation Serif";
+  src: url("/public/fonts/LiberationSerif-BoldItalic.ttf" ) format("truetype");
+  font-style: italic;
+  font-weight: bold;
+}
+
+
 $gray: gray;
 $lightgray: lightgray;
 $rajah: #f7ce76;
@@ -31,19 +105,19 @@ $lavender: lavender;
  */
 
 $font-title-primary: /*£IF*/
-        Arial, Helvetica Neue, Helvetica, sans-serif/*£ELSE FONT_TITLE_PRIMARY_FAMILY £END*/
+        Liberation Sans, sans-serif/*£ELSE FONT_TITLE_PRIMARY_FAMILY £END*/
 ;
 $font-title-secondary: /*£IF*/
-        Arial Narrow, Arial, sans-serif/*£ELSE FONT_TITLE_SECONDARY_FAMILY £END*/
+        Liberation Sans, sans-serif/*£ELSE FONT_TITLE_SECONDARY_FAMILY £END*/
 ;
 $font-text: /*£IF*/
-        TimesNewRoman, Times New Roman, Times, Baskerville, Georgia, serif/*£ELSE FONT_TEXT_FAMILY £END*/
+        Liberation Sans, sans-serif/*£ELSE FONT_TEXT_FAMILY £END*/
 ;
 $font-label: /*£IF*/
-        Arial, Helvetica Neue, Helvetica, LiberationSans, sans-serif/*£ELSE FONT_LABEL_FAMILY £END*/
+        Liberation Sans, sans-serif/*£ELSE FONT_LABEL_FAMILY £END*/
 ;
 $font-exhibit: /*£IF*/
-        Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif/*£ELSE FONT_EXHIBIT_FAMILY £END*/
+        Liberation Mono, monospace/*£ELSE FONT_EXHIBIT_FAMILY £END*/
 ;
 
 

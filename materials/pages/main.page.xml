@@ -966,6 +966,11 @@
             </link>
         </list-item>
         <list-item>
+            <link view="reference.html#locale-select" v="v1">
+                <textual>Locale Select</textual>
+            </link>
+        </list-item>
+        <list-item>
             <link view="reference.html#login-panel" v="v1">
                 <textual>Login Panel</textual>
             </link>

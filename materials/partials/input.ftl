@@ -22,11 +22,12 @@
             <span id="error-message-${name}" class="error-message form-text text-danger">${error}</span>
         </#if>
     </#if>
-    <#if type == "INPUT">
+    <#if type == "INPUT" || type == "PASSWORD">
         <label class="form-label label ${textualClasses} <#if hideLabel>sr-only</#if>" style="${textualStyles}"
                 for="${id}">${content}</label>
         <div class="input-group">
-            <input id="${id}" class="form-control ${sizeCls} validate" type="text"
+            <input id="${id}" class="form-control ${sizeCls} validate"
+                    type="<#if type == "PASSWORD">password<#else>text</#if>"
                     <#if maxlength??>maxlength="${maxlength}"</#if> <#if disabled??>disabled</#if> name="${name}"
                     value="${value!}"
             />

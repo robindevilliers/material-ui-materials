@@ -5935,7 +5935,7 @@
                     <cell>
                         <text v="v1">
                             <textual>The error token specifies an error message if there has been some validation error
-                                associated with the Enumeration.
+                                associated with the widget.
                             </textual>
                         </text>
                     </cell>
@@ -7685,7 +7685,7 @@
                     </cell>
                     <cell>
                         <text v="v1">
-                            <textual>A id for the button. This must be included in order for some of the button
+                            <textual>A id for the button. This must be included in order for some of the widget
                                 functionality to work.
                             </textual>
                         </text>
@@ -8014,7 +8014,7 @@
                     <cell>
                         <text v="v1">
                             <textual>The error token specifies an error message if there has been some validation error
-                                associated with the Enumeration.
+                                associated with the widget.
                             </textual>
                         </text>
                     </cell>
@@ -8105,7 +8105,7 @@
                     </cell>
                     <cell>
                         <text v="v1">
-                            <textual>A id for the button. This must be included in order for some of the button
+                            <textual>A id for the button. This must be included in order for some of the widget
                                 functionality to work.
                             </textual>
                         </text>
@@ -8271,7 +8271,7 @@
                     </cell>
                     <cell>
                         <text v="v1">
-                            <textual>A id for the button. This must be included in order for some of the button
+                            <textual>A id for the button. This must be included in order for some of the widget
                                 functionality to work.
                             </textual>
                         </text>
@@ -8893,6 +8893,475 @@
                 </row>
             </table>
         </div>
+
+        <div v="v1" orientation="COLUMN">
+            <title id="locale-select" size="MEDIUM" v="v1">
+                <textual>Locale Select</textual>
+            </title>
+            <text v="v1">
+                <textual>The Locale Select Widget presents a dropdown select that offers locales for selection on
+                    the page.
+                </textual>
+            </text>
+            <text v="v1">
+                <textual>The Locale Select Widget can be viewed on the Style Guide Specials page.</textual>
+            </text>
+            <title size="SMALLER" v="v1">
+                <textual>Widget</textual>
+            </title>
+            <text v="v1">
+                <textual>The Locale Select Widget is a Flex Item and Textual Container in addition to the following
+                    properties.
+                </textual>
+            </text>
+            <table v="v1">
+                <row>
+                    <column width="20%">
+                        <textual>Attribute</textual>
+                    </column>
+                    <column>
+                        <textual>Description</textual>
+                    </column>
+                    <column width="25%">
+                        <textual>Permitted values/Examples</textual>
+                    </column>
+                </row>
+                <row>
+                    <cell>
+                        <text v="v1">
+                            <textual>hideLabel</textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>The hideLabel attribute specifies the label should not display visually, but should
+                                be present for screen readers.
+                            </textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>true, false</textual>
+                        </text>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <text v="v1">
+                            <textual>label</textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>The label attribute specifies the text used to present to the user the purpose of
+                                the field.
+                            </textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>label</textual>
+                        </text>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <text v="v1">
+                            <textual>reference</textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>The reference attribute specifies the name of the key used when the value is
+                                included in the resulting JSON document, that is the Wizard&apos;s output.
+                            </textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>name</textual>
+                        </text>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <text v="v1">
+                            <textual>value</textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>The value attribute specifies the initial value of the input.</textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>English (United Kingdom)</textual>
+                        </text>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <text v="v1">
+                            <textual>size</textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>The size of the widget.</textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>LARGE, MEDIUM, SMALL</textual>
+                        </text>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <text v="v1">
+                            <textual>required</textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>The required attribute specifies if this input must have value. If the value is
+                                required, then a validation error will present if no value is supplied.
+                            </textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>true, false</textual>
+                        </text>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <text v="v1">
+                            <textual>disableScript</textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>This attribute contains a Plantain script that will determine if the widget should
+                                appear disabled or not.
+                            </textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>script : boolean</textual>
+                        </text>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <text v="v1">
+                            <textual>hiddenScript</textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>This attribute contains a Plantain script that will determine if the widget should
+                                appear hidden or not.
+                            </textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>script : boolean</textual>
+                        </text>
+                    </cell>
+                </row>
+            </table>
+            <title size="SMALLER" v="v1">
+                <textual>Template</textual>
+            </title>
+            <text v="v1">
+                <textual>The template for the widget is the locale-select.ftl file. It takes the following tokens.
+                </textual>
+            </text>
+            <table v="v1">
+                <row>
+                    <column width="20%">
+                        <textual>Attribute</textual>
+                    </column>
+                    <column>
+                        <textual>Description</textual>
+                    </column>
+                    <column width="25%">
+                        <textual>Type</textual>
+                    </column>
+                </row>
+                <row>
+                    <cell>
+                        <text v="v1">
+                            <textual>id</textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>A id for the button. This must be included in order for some of the widget
+                                functionality to work.
+                            </textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>string</textual>
+                        </text>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <text v="v1">
+                            <textual>hideLabel</textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>A boolean value that indicates that the label should be visually hidden but still
+                                available for screen readers.
+                            </textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>boolean</textual>
+                        </text>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <text v="v1">
+                            <textual>classes</textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>A list of classes that should be applied.</textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>class list</textual>
+                        </text>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <text v="v1">
+                            <textual>itemStyles</textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>The css styles that should be applied in order to support Flex Item definitions.
+                            </textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>css</textual>
+                        </text>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <text v="v1">
+                            <textual>value</textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>The value token holds the current value for the Locale.</textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>string</textual>
+                        </text>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <text v="v1">
+                            <textual>label</textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>The label token holds the label that should be presented as text in association
+                                with the input.
+                            </textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>string</textual>
+                        </text>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <text v="v1">
+                            <textual>name</textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>The name token specifies the name that the Locale should hold for the purposes
+                                of inclusion into the results.
+                            </textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>string</textual>
+                        </text>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <text v="v1">
+                            <textual>size</textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>The size of the widget.</textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>SMALL, MEDIUM, LARGE</textual>
+                        </text>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <text v="v1">
+                            <textual>disabled</textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>The disabled token indicates if the widget should be disabled or not.</textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>boolean</textual>
+                        </text>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <text v="v1">
+                            <textual>error</textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>The error token specifies an error message if there has been some validation error
+                                associated with the widget.
+                            </textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>string</textual>
+                        </text>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <text v="v1">
+                            <textual>textualClasses</textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>These are the classes produced from the Textual definition. They should be applied
+                                to the element that is going to render the textual content.
+                            </textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>class list</textual>
+                        </text>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <text v="v1">
+                            <textual>textualStyles</textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>These are the styles that are produced from the Textual definition. They should be
+                                applied to the element that renders the textual content.
+                            </textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>css</textual>
+                        </text>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <text v="v1">
+                            <textual>content</textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>The content of the widget which will be the label content.</textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>html</textual>
+                        </text>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <text v="v1">
+                            <textual>values</textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>The values token contains a list of values for population in the select. Each
+                                locale has two properties. &apos;languageTag&apos; is the code for the local, such as
+                                &apos;en-GB&apos;. &apos;displayName&apos; is the name of the locale as in &apos;English
+                                (United Kingdom)&apos;.
+                            </textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>List&lt;{
+                                <br/>
+                                languageTag : string,
+                                <br/>
+                                displayName: string,
+                                <br/>
+                                }&gt;
+                                <br/>
+                            </textual>
+                        </text>
+                    </cell>
+                </row>
+            </table>
+        </div>
+
         <div v="v1" orientation="COLUMN">
             <title id="login-panel" size="MEDIUM" v="v1">
                 <textual>Login Panel</textual>
@@ -10037,7 +10506,8 @@
                     </cell>
                     <cell>
                         <text v="v1">
-                            <textual>For most operations within the Message Explorer, the button performs a GET request on
+                            <textual>For most operations within the Message Explorer, the button performs a GET request
+                                on
                                 the action endpoint. The action endpoint will point to the current page but has the
                                 appropriate anchor tag so that the browser maintains focus or brings into focus the
                                 correct html.
@@ -10075,8 +10545,8 @@
                     </cell>
                     <cell>
                         <text v="v1">
-                            <textual>The Message Explorer offers a Next and a Previous button to support pagination. When
-                                this token is true, then the Next button should be disabled, or hidden.
+                            <textual>The Message Explorer offers a Next and a Previous button to support pagination.
+                                When this token is true, then the Next button should be disabled, or hidden.
                             </textual>
                         </text>
                     </cell>
@@ -10094,8 +10564,8 @@
                     </cell>
                     <cell>
                         <text v="v1">
-                            <textual>The Message Explorer offers a Next and a Previous button to support pagination. When
-                                this token is true, then the Previous button should be disabled, or hidden.
+                            <textual>The Message Explorer offers a Next and a Previous button to support pagination.
+                                When this token is true, then the Previous button should be disabled, or hidden.
                             </textual>
                         </text>
                     </cell>
@@ -10779,7 +11249,7 @@
                     </cell>
                     <cell>
                         <text v="v1">
-                            <textual>A id for the button. This must be included in order for some of the button
+                            <textual>A id for the button. This must be included in order for some of the widget
                                 functionality to work.
                             </textual>
                         </text>
@@ -13341,7 +13811,7 @@
                     <cell>
                         <text v="v1">
                             <textual>The error token specifies an error message if there has been some validation error
-                                associated with the Enumeration.
+                                associated with the widget.
                             </textual>
                         </text>
                     </cell>
@@ -14973,7 +15443,7 @@
                     </cell>
                     <cell>
                         <text v="v1">
-                            <textual>A id for the button. This must be included in order for some of the button
+                            <textual>A id for the widget. This must be included in order for some of the widget
                                 functionality to work.
                             </textual>
                         </text>
@@ -15046,7 +15516,7 @@
                     </cell>
                     <cell>
                         <text v="v1">
-                            <textual>The value token holds the current value for the Enumeration.</textual>
+                            <textual>The value token holds the current value for the widget.</textual>
                         </text>
                     </cell>
                     <cell>
@@ -15082,7 +15552,7 @@
                     </cell>
                     <cell>
                         <text v="v1">
-                            <textual>The name token specifies the name that the Enumeration should hold for the purposes
+                            <textual>The name token specifies the name that the widget should hold for the purposes
                                 of inclusion into the results.
                             </textual>
                         </text>
@@ -15118,7 +15588,7 @@
                     </cell>
                     <cell>
                         <text v="v1">
-                            <textual>The disabled token indicates if the button should be disabled or not.</textual>
+                            <textual>The disabled token indicates if the widget should be disabled or not.</textual>
                         </text>
                     </cell>
                     <cell>
@@ -15136,7 +15606,7 @@
                     <cell>
                         <text v="v1">
                             <textual>The error token specifies an error message if there has been some validation error
-                                associated with the Enumeration.
+                                associated with the widget.
                             </textual>
                         </text>
                     </cell>
@@ -17010,7 +17480,7 @@
                     </cell>
                     <cell>
                         <text v="v1">
-                            <textual>A id for the button. This must be included in order for some of the button
+                            <textual>A id for the button. This must be included in order for some of the widget
                                 functionality to work.
                             </textual>
                         </text>
@@ -17171,7 +17641,7 @@
                     </cell>
                     <cell>
                         <text v="v1">
-                            <textual>A id for the button. This must be included in order for some of the button
+                            <textual>A id for the button. This must be included in order for some of the widget
                                 functionality to work.
                             </textual>
                         </text>

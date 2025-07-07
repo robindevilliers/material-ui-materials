@@ -1,6 +1,6 @@
 
 
-.btn.btn-default:hover {
+.btn.btn-default:hover:not(.disabled) {
   color: #fff;
   filter: brightness(0.85);
 }

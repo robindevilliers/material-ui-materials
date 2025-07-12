@@ -20,7 +20,7 @@ export default class InputRenderer implements Renderer {
 
         const data: Record<string, any> = {};
         data.id = element.attributes.id;
-        data.value = "";
+        data.value = element.attributes.value;
         data.disabled = null;
         data.type = element.attributes.type;
         data.name = element.attributes.reference;

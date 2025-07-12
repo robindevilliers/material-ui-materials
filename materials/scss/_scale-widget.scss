@@ -13,4 +13,8 @@
   .scale-content > * {
     flex: 1 0 auto;
   }
+
+  .form-check-inline .form-check-input {
+    cursor: pointer;
+  }
 }

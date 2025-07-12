@@ -1,4 +1,4 @@
-<div class="error-summary-widget card text-white bg-danger mb-3" style="${itemStyles}">
+<div class="card error-summary-widget" style="${itemStyles}">
     <div class="card-header header">
         Errors
     </div>

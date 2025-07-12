@@ -24,7 +24,7 @@
                         number. Finally you have the humble checkbox.
                     </textual>
                 </text>
-                <input type="CURRENCY" reference="currency" required="false" size="MEDIUM" v="v1">
+                <input type="CURRENCY" reference="currency" required="false" size="MEDIUM" v="v1" value="200.00">
                     <textual>Currency Value</textual>
                     <test-value text="679.15"/>
                     <test-value text="1149.88"/>

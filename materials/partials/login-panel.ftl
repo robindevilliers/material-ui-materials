@@ -14,7 +14,7 @@
                         <input type="text" name="username" class="form-control" id="loginPanelUsername">
                     </div>
                     <#if errors.username??>
-                        <div class="error-message form-text text-danger">${errors.username}</div>
+                        <div class="error-message">${errors.username}</div>
                     </#if>
                 </div>
             </div>
@@ -25,7 +25,7 @@
                         <input type="password" name="password" class="form-control" id="loginPanelPassword">
                     </div>
                     <#if errors.password??>
-                        <div class="error-message form-text text-danger">${errors.password}</div>
+                        <div class="error-message">${errors.password}</div>
                     </#if>
                 </div>
             </div>
@@ -40,7 +40,7 @@
                                     onclick="${testMode?string('alert(&quot;View privacy policy clicked&quot;); event.preventDefault();','')}">View</a>
                         </div>
                         <#if errors.acceptPrivacyPolicy??>
-                            <div class="error-message form-text text-danger">${errors.acceptPrivacyPolicy}</div>
+                            <div class="error-message">${errors.acceptPrivacyPolicy}</div>
                         </#if>
                     </div>
                 </div>
@@ -48,7 +48,7 @@
             <div class="row">
                 <div class="col s12">
                     <#if errors.global??>
-                        <span class="login-error error-message form-text text-danger">${errors.global}</span>
+                        <span class="login-error error-message">${errors.global}</span>
                     </#if>
                 </div>
             </div>

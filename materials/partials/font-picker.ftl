@@ -187,7 +187,7 @@
         </div>
 
         <#if (error)??>
-            <span id="error-message-${name}" class="error-message form-text text-danger">${error}</span>
+            <span id="error-message-${name}" class="error-message">${error}</span>
         </#if>
     </div>
     <div class="font-picker-exhibit col col-12 col-lg-6">
@@ -222,7 +222,7 @@
                 <input id="pkKGlhFWnP" class="form-control form-control-md validate" type="text" name="text"
                         value="text">
             </div>
-            <span id="error-message-text" class="error-message form-text text-danger">Input error message</span>
+            <span id="error-message-text" class="error-message">Input error message</span>
         </div>
     </div>
 </div>

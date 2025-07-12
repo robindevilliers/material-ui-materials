@@ -45,7 +45,7 @@
                                     <input class="form-control" placeholder="?" id="firstCharacter" maxlength="1"
                                             type="password" name="firstCharacter" style="text-align: right; ">
                                     <#if errors.firstCharacter??>
-                                        <span class="error-message form-text text-danger">${errors.firstCharacter}</span>
+                                        <span class="error-message">${errors.firstCharacter}</span>
                                     </#if>
                                 </div>
                             </div>
@@ -57,7 +57,7 @@
                                             type="password"
                                             name="secondCharacter" style="text-align: right; ">
                                     <#if errors.secondCharacter??>
-                                        <span class="error-message form-text text-danger">${errors.secondCharacter}</span>
+                                        <span class="error-message">${errors.secondCharacter}</span>
                                     </#if>
 
                                 </div>
@@ -69,7 +69,7 @@
                                     <input class="form-control" placeholder="?" id="thirdCharacter" maxlength="1"
                                             type="password" name="thirdCharacter" style="text-align: right; ">
                                     <#if errors.thirdCharacter??>
-                                        <span class="error-message form-text text-danger">${errors.thirdCharacter}</span>
+                                        <span class="error-message">${errors.thirdCharacter}</span>
                                     </#if>
                                 </div>
                             </div>
@@ -89,7 +89,7 @@
                             Cancel
                         </button>
                         <#if errors.global??>
-                            <span class="error-message form-text text-danger">${errors.global}</span>
+                            <span class="error-message">${errors.global}</span>
                         </#if>
                     </div>
                 </div>

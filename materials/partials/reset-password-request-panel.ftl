@@ -5,7 +5,7 @@
             <label for="resetPasswordEmail" class="active">Email Address</label>
             <input id="resetPasswordEmail" type="text" name="email" class="form-control" value="${(email)!}">
             <#if errors.email??>
-                <span class="error-message form-text text-danger">${errors.email}</span>
+                <span class="error-message">${errors.email}</span>
             <#else>
                 <span class="form-text text-muted">Please enter your email address.</span>
             </#if>

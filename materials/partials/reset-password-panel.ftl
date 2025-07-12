@@ -6,7 +6,7 @@
             <label for="resetPasswordPasswordOnce" class="active">Password</label>
             <input id="resetPasswordPasswordOnce" type="password" class="form-control" name="passwordOnce">
             <#if errors.passwordOnce??>
-                <span class="error-message form-text text-danger">${errors.passwordOnce}</span>
+                <span class="error-message">${errors.passwordOnce}</span>
             <#else>
                 <span class="form-text text-muted">Please enter a password.</span>
             </#if>
@@ -17,7 +17,7 @@
             <label for="resetPasswordPasswordTwice" class="active">Password (Again)</label>
             <input id="resetPasswordPasswordTwice" type="password" class="form-control" name="passwordTwice">
             <#if errors.passwordTwice??>
-                <span class="error-message form-text text-danger">${errors.passwordTwice}</span>
+                <span class="error-message">${errors.passwordTwice}</span>
             <#else>
                 <span class="form-text text-muted">Please enter your password again.</span>
             </#if>

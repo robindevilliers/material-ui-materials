@@ -28,7 +28,7 @@
                 ${val.panel}
             </#list>
             <#if (error)??>
-                <span id="error-message-${name}" class="error-message form-text text-danger">${error}</span>
+                <span id="error-message-${name}" class="error-message">${error}</span>
             </#if>
         <#elseif cardinality == "SINGLE_SELECT">
             <label for="${id}" class="form-label label ${textualClasses} <#if hideLabel>sr-only</#if>" style="${textualStyles}">${content}</label>
@@ -51,7 +51,7 @@
                 ${val.panel}
             </#list>
             <#if (error)??>
-                <span id="error-message-${name}" class="error-message form-text text-danger">${error}</span>
+                <span id="error-message-${name}" class="error-message">${error}</span>
             </#if>
         </#if>
     <#elseif style == "POPOUT_SELECT">
@@ -73,7 +73,7 @@
                 </#list>
             </select>
             <#if (error)??>
-                <span id="error-message-${name}" class="error-message form-text text-danger">${error}</span>
+                <span id="error-message-${name}" class="error-message">${error}</span>
             </#if>
             <#list values as val>
                 ${val.panel}
@@ -90,7 +90,7 @@
                 </#list>
             </select>
             <#if (error)??>
-                <span id="error-message-${name}" class="error-message form-text text-danger">${error}</span>
+                <span id="error-message-${name}" class="error-message">${error}</span>
             </#if>
             <#list values as val>
                 ${val.panel}

@@ -19,7 +19,7 @@
             />
         </div>
         <#if (error)??>
-            <span id="error-message-${name}" class="error-message form-text text-danger">${error}</span>
+            <span id="error-message-${name}" class="error-message">${error}</span>
         </#if>
     </#if>
     <#if type == "INPUT" || type == "PASSWORD">
@@ -33,7 +33,7 @@
             />
         </div>
         <#if (error)??>
-            <span id="error-message-${name}" class="error-message form-text text-danger">${error}</span>
+            <span id="error-message-${name}" class="error-message">${error}</span>
         </#if>
     </#if>
     <#if type == "TEXTAREA">
@@ -48,7 +48,7 @@
                     >${value!}</textarea>
         </div>
         <#if (error)??>
-            <span id="error-message-${name}" class="error-message form-text text-danger">${error}</span>
+            <span id="error-message-${name}" class="error-message">${error}</span>
         </#if>
     </#if>
     <#if type == "DATE">
@@ -60,7 +60,7 @@
                     placeholder="yyyy-MM-dd"/>
         </div>
         <#if (error)??>
-            <span id="error-message-${name}" class="error-message form-text text-danger">${error}</span>
+            <span id="error-message-${name}" class="error-message">${error}</span>
         </#if>
     </#if>
     <#if type == "DATETIME">
@@ -72,7 +72,7 @@
                     placeholder="yyyy-MM-dd HH:mm"/>
         </div>
         <#if (error)??>
-            <span id="error-message-${name}" class="error-message form-text text-danger">${error}</span>
+            <span id="error-message-${name}" class="error-message">${error}</span>
         </#if>
     </#if>
     <#if type == "CURRENCY">
@@ -87,7 +87,7 @@
             />
         </div>
         <#if (error)??>
-            <span id="error-message-${name}" class="error-message form-text text-danger">${error}</span>
+            <span id="error-message-${name}" class="error-message">${error}</span>
         </#if>
     </#if>
     <#if type == "CHECKBOX">
@@ -98,7 +98,7 @@
                     for="${id}">${content}</label>
         </div>
         <#if (error)??>
-            <span id="error-message-${name}" class="error-message form-text text-danger">${error}</span>
+            <span id="error-message-${name}" class="error-message">${error}</span>
         </#if>
     </#if>
 </div>

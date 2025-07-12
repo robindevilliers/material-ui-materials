@@ -205,6 +205,7 @@ $enable-shadows: true;
 @import "control";
 
 // Widgets - styling for individual widgets.
+@import "error-message";
 @import "accordion-widget";
 @import "back-link-widget";
 @import "badge-widget";

@@ -52,6 +52,10 @@ textarea {
   font-size: 1rem;
 }
 
+.form-check-input {
+  min-width: 1.5em;
+  min-height: calc(1em + 1rem + 2px);
+}
 
 @media (max-width: 375.98px) {
   .hide-xs-column {

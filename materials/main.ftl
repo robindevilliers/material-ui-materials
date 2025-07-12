@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Example Materials <#if title?? && title?has_content >:</#if> ${title}</title>
+    <title>MATERIALS_PAGE_TITLE_TOKEN <#if title?? && title?has_content >:</#if> ${title}</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link href="/public/css/main.css" rel="stylesheet">
@@ -16,10 +16,7 @@
     <div class="minor-title-panel">
         <div class="brand-outer">
             <div class="brand-inner">
-                <div class="image-panel">
-                    <img src="/public/img/logo.svg" alt="title">
-                </div>
-                <div class="text-primary title-text">Example Materials</div>
+                <div class="text-primary title-text">MATERIALS_PAGE_TITLE_TOKEN</div>
             </div>
         </div>
 
@@ -39,6 +36,10 @@
 
 <footer class="footer">
     <hr>
+    <div class="footer-content">
+        <div>© All rights reserved</div>
+        <div>Web-Hosting powered by <a href="https://www.maximillian-workflows.com">Maximillian Workflows</a></div>
+    </div>
 </footer>
 </body>
 </html>

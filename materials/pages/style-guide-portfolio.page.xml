@@ -1,137 +1,137 @@
 <?schema version="2"?>
 <page id="test" version="1" active="false" released="false" group="admin" title="Style Guide - Portfolio Page"
-      description="test"
-      defnVersion="v1" orientation="COLUMN">
+    description="test"
+    defnVersion="v1" orientation="COLUMN">
     <div v="v1" orientation="ROW">
         <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" margin="0em 1em" padding="1em"
-             borderRadius="1em" v="v1">
-            <tool-tip exposition="Image">
-                <image src="suzi.jpeg" alt="Suzi" title="Logo" v="v1"/>
-            </tool-tip>
-            <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" margin="1em 0em" padding="1em"
-                 borderRadius="1em" v="v1">
+            borderRadius="1em" v="v1">
 
-                <tool-tip exposition="Title">
-                    <title size="LARGE" v="v1">
-                        <textual>Suzi Florez</textual>
-                    </title>
-                </tool-tip>
-                <tool-tip exposition="Paragraph">
-                    <text paragraphStyle="SUPPRESSED" width="250px" v="v1">
-                        <textual>
-                            Neque porro quisquam est, qui dolorem ipsum quia dolor sit
-                            amet, consectetur.
-                        </textual>
-                    </text>
-                </tool-tip>
+            <image src="suzi.jpeg" alt="Suzi" title="Logo" v="v1"/>
+
+            <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" margin="1em 0em" padding="1em"
+                borderRadius="1em" v="v1">
+
+
+                <title size="LARGE" v="v1">
+                    <textual>Suzi Florez</textual>
+                </title>
+
+
+                <text paragraphStyle="SUPPRESSED" width="250px" v="v1">
+                    <textual>
+                        Neque porro quisquam est, qui dolorem ipsum quia dolor sit
+                        amet, consectetur.
+                    </textual>
+                </text>
+
             </div>
         </div>
-        <tool-tip exposition="Accordion">
-            <accordion flush="false" flavour="PRIMARY" singleActive="true" width="100%" v="v1">
-                <accordion-item backgroundFlavour="PRIMARY" active="true" orientation="COLUMN">
-                    <accordion-item-header>
-                        <textual>Law Practice</textual>
-                    </accordion-item-header>
-                    <text paragraphStyle="SUPPRESSED" v="v1">
-                        <textual>
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-                            architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-                            aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
-                            voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-                            consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
-                            dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum
-                            exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
-                            consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
-                            molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
-                        </textual>
-                    </text>
-                </accordion-item>
-                <accordion-item backgroundFlavour="BLACK" active="false" orientation="COLUMN">
-                    <accordion-item-header>
-                        <textual>Qualifications</textual>
-                    </accordion-item-header>
-                    <title size="SMALLER" v="v1">
-                        <textual>Voluptatem accusantium</textual>
-                    </title>
-                    <text paragraphStyle="SUPPRESSED" width="250px" v="v1">
-                        <textual>
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-                            architecto beatae vitae dicta sunt explicabo.
-                        </textual>
-                    </text>
-                    <title size="SMALLER" v="v1">
-                        <textual>Accusantium doloremque</textual>
-                    </title>
-                    <text paragraphStyle="SUPPRESSED" width="250px" v="v1">
-                        <textual>
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-                            architecto beatae vitae dicta sunt explicabo.
-                        </textual>
-                    </text>
-                </accordion-item>
-                <accordion-item backgroundFlavour="WARNING" active="false" orientation="COLUMN">
-                    <accordion-item-header>
-                        <textual>Past Experience</textual>
-                    </accordion-item-header>
-                    <text paragraphStyle="SUPPRESSED" width="250px" v="v1">
-                        <textual>
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-                            architecto beatae vitae dicta sunt explicabo.
-                        </textual>
-                    </text>
-                </accordion-item>
-                <accordion-item backgroundFlavour="INFO" active="false" orientation="COLUMN">
-                    <accordion-item-header>
-                        <textual>Contact Details</textual>
-                    </accordion-item-header>
-                    <tool-tip exposition="Table">
-                        <table v="v1">
-                            <row>
-                                <cell>
-                                    <text v="v1">
-                                        <textual>Landline</textual>
-                                    </text>
-                                </cell>
-                                <cell>
-                                    <text v="v1">
-                                        <textual>(021) 000-0000</textual>
-                                    </text>
-                                </cell>
-                            </row>
-                            <row>
-                                <cell>
-                                    <text v="v1">
-                                        <textual>Mobile Number</textual>
-                                    </text>
-                                </cell>
-                                <cell>
-                                    <text v="v1">
-                                        <textual>(021) 078 000-0000</textual>
-                                    </text>
-                                </cell>
-                            </row>
-                            <row>
-                                <cell>
-                                    <text v="v1">
-                                        <textual>Correspondence Address</textual>
-                                    </text>
-                                </cell>
-                                <cell>
-                                    <text v="v1">
-                                        <textual>123A Artur Street, Clydes Ville, 8001
-                                        </textual>
-                                    </text>
-                                </cell>
-                            </row>
-                        </table>
-                    </tool-tip>
-                </accordion-item>
-            </accordion>
-        </tool-tip>
+
+        <accordion flush="false" flavour="PRIMARY" singleActive="true" width="100%" v="v1">
+            <accordion-item backgroundFlavour="PRIMARY" active="true" orientation="COLUMN">
+                <accordion-item-header>
+                    <textual>Law Practice</textual>
+                </accordion-item-header>
+                <text paragraphStyle="SUPPRESSED" v="v1">
+                    <textual>
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                        laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                        architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+                        aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                        voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                        consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
+                        dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum
+                        exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
+                        consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
+                        molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+                    </textual>
+                </text>
+            </accordion-item>
+            <accordion-item backgroundFlavour="BLACK" active="false" orientation="COLUMN">
+                <accordion-item-header>
+                    <textual>Qualifications</textual>
+                </accordion-item-header>
+                <title size="SMALLER" v="v1">
+                    <textual>Voluptatem accusantium</textual>
+                </title>
+                <text paragraphStyle="SUPPRESSED" width="250px" v="v1">
+                    <textual>
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                        laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                        architecto beatae vitae dicta sunt explicabo.
+                    </textual>
+                </text>
+                <title size="SMALLER" v="v1">
+                    <textual>Accusantium doloremque</textual>
+                </title>
+                <text paragraphStyle="SUPPRESSED" width="250px" v="v1">
+                    <textual>
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                        laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                        architecto beatae vitae dicta sunt explicabo.
+                    </textual>
+                </text>
+            </accordion-item>
+            <accordion-item backgroundFlavour="WARNING" active="false" orientation="COLUMN">
+                <accordion-item-header>
+                    <textual>Past Experience</textual>
+                </accordion-item-header>
+                <text paragraphStyle="SUPPRESSED" width="250px" v="v1">
+                    <textual>
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                        laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                        architecto beatae vitae dicta sunt explicabo.
+                    </textual>
+                </text>
+            </accordion-item>
+            <accordion-item backgroundFlavour="INFO" active="false" orientation="COLUMN">
+                <accordion-item-header>
+                    <textual>Contact Details</textual>
+                </accordion-item-header>
+
+                <table v="v1">
+                    <row>
+                        <cell>
+                            <text v="v1">
+                                <textual>Landline</textual>
+                            </text>
+                        </cell>
+                        <cell>
+                            <text v="v1">
+                                <textual>(021) 000-0000</textual>
+                            </text>
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>
+                            <text v="v1">
+                                <textual>Mobile Number</textual>
+                            </text>
+                        </cell>
+                        <cell>
+                            <text v="v1">
+                                <textual>(021) 078 000-0000</textual>
+                            </text>
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>
+                            <text v="v1">
+                                <textual>Correspondence Address</textual>
+                            </text>
+                        </cell>
+                        <cell>
+                            <text v="v1">
+                                <textual>123A Artur Street, Clydes Ville, 8001
+                                </textual>
+                            </text>
+                        </cell>
+                    </row>
+                </table>
+
+            </accordion-item>
+        </accordion>
+
     </div>
 
 </page>

@@ -1,4 +1,23 @@
 
+body {
+  > .container {
+    min-height: 600px;
+  }
+}
+
+textarea {
+  resize: none;
+}
+
+.form-check-label {
+  padding: 0.5rem 1rem;
+}
+
+.btn-link {
+  outline: none;
+  box-shadow: none !important;
+}
+
 .bg-white {
   color: black;
 }
@@ -25,5 +44,17 @@
     .hide#{$infix}-column {
       display: none !important;
     }
+  }
+}
+
+.form-control-md {
+  min-height: calc(1em + 1rem + 2px);
+  font-size: 1rem;
+}
+
+
+@media (max-width: 375.98px) {
+  .hide-xs-column {
+    display: none !important
   }
 }

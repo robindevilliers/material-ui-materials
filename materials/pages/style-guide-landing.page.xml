@@ -1,164 +1,142 @@
 <?schema version="2"?>
 <page id="test" version="1" active="false" released="false" group="admin" title="Style Guide - Landing Page"
-      description="test"
-      defnVersion="v1" orientation="COLUMN">
+    description="test"
+    defnVersion="v1" orientation="COLUMN">
     <div v="v1" orientation="ROW">
         <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" margin="0em 1em" padding="1em"
-             borderRadius="1em" v="v1">
-            <tool-tip exposition="Image">
-                <image src="logo.svg" alt="Logo" title="Logo" height="320px" width="320px" v="v1"/>
-            </tool-tip>
+            borderRadius="1em" v="v1">
+            <image src="logo.svg" alt="Logo" title="Logo" height="320px" width="320px" v="v1"/>
             <div orientation="COLUMN" alignItems="CENTER" justifyContent="SPACE_BETWEEN" margin="1em 0em" padding="1em"
-                 borderRadius="1em" v="v1">
-
-                <tool-tip exposition="Title">
-                    <title size="LARGE" v="v1">
-                        <textual>Turtles of Postmodernism</textual>
-                    </title>
-                </tool-tip>
-                <tool-tip exposition="Paragraph">
-                    <text paragraphStyle="SUPPRESSED" width="250px" v="v1">
-                        <textual>
-                            Neque porro quisquam est, qui dolorem ipsum quia dolor sit
-                            amet, consectetur.
-                        </textual>
-                    </text>
-                </tool-tip>
+                borderRadius="1em" v="v1">
+                <title size="LARGE" v="v1">
+                    <textual>Turtles of Postmodernism</textual>
+                </title>
+                <text paragraphStyle="SUPPRESSED" width="250px" v="v1">
+                    <textual>
+                        Neque porro quisquam est, qui dolorem ipsum quia dolor sit
+                        amet, consectetur.
+                    </textual>
+                </text>
             </div>
         </div>
-        <tool-tip exposition="Carousel">
-            <carousel autoSlide="false" indicators="true" controls="true" height="500px" width="800px" flexShrink="0"
-                      v="v1" borderRadius="1em">
-                <carousel-panel src="panel-1.jpg" active="false" interval="5000" justifyContent="CENTER"
-                                orientation="COLUMN"
-                                alignItems="END">
-                    <tool-tip exposition="Div">
-                        <div orientation="COLUMN" alignSelf="END" margin="0em 10em 0em 0em" padding="1em"
-                             backgroundFlavour="INFO"
-                             borderRadius="1em" v="v1">
-                            <tool-tip exposition="Title">
-                                <title size="LARGE" fontFlavour="BLACK" v="v1">
-                                    <textual>Eaves of Lettuce</textual>
-                                </title>
-                            </tool-tip>
-                            <tool-tip exposition="Paragraph">
-                                <text paragraphStyle="PLAIN" width="250px" v="v1">
-                                    <textual>
-                                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                                        doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
-                                        veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-                                    </textual>
-                                </text>
-                            </tool-tip>
-                        </div>
-                    </tool-tip>
-                </carousel-panel>
-                <carousel-panel src="panel-2.jpg" active="false" justifyContent="START" orientation="COLUMN"
-                                alignItems="CENTER">
-                    <title size="LARGE" fontFlavour="BLACK" padding="0em 1em" backgroundFlavour="INFO"
-                           borderRadius="0.25em"
-                           v="v1">
-                        <textual>
-                            Opinions from Cheddar
-                        </textual>
+
+        <carousel autoSlide="false" indicators="true" controls="true" height="500px" width="800px" flexShrink="0"
+            v="v1" borderRadius="1em">
+            <carousel-panel src="panel-1.jpg" active="false" interval="5000" justifyContent="CENTER"
+                orientation="COLUMN"
+                alignItems="END">
+
+                <div orientation="COLUMN" alignSelf="END" margin="0em 10em 0em 0em" padding="1em"
+                    backgroundFlavour="INFO"
+                    borderRadius="1em" v="v1">
+                    <title size="LARGE" fontFlavour="BLACK" v="v1">
+                        <textual>Eaves of Lettuce</textual>
                     </title>
-                    <text paragraphStyle="PLAIN" width="400px" backgroundFlavour="WHITE" borderRadius="1em"
-                               v="v1">
+
+                    <text paragraphStyle="PLAIN" width="250px" v="v1">
                         <textual>
-                            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-                            voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
-                            cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id
-                            est laborum et dolorum fuga.
+                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                            doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                            veritatis et quasi architecto beatae vitae dicta sunt explicabo.
                         </textual>
                     </text>
-                </carousel-panel>
-                <carousel-panel src="panel-3.jpg" active="false" justifyContent="END" orientation="COLUMN"
-                                alignItems="START">
-                    <div margin="2em" padding="1em" backgroundFlavour="PRIMARY" v="v1">
-                        <image src="temp0.jpg" height="181px" width="278px" borderRadius="5px"
-                               border="2px solid black" v="v1"/>
-                        <text paragraphStyle="PLAIN" v="v1">
-                            <textual>
-                                Harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta
-                                nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere
-                                possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem
-                                quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et
-                                voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur
-                                a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut
-                                perferendis doloribus asperiores repellat.
-                            </textual>
-                        </text>
-                    </div>
-                </carousel-panel>
-            </carousel>
-        </tool-tip>
+
+                </div>
+
+            </carousel-panel>
+            <carousel-panel src="panel-2.jpg" active="false" justifyContent="START" orientation="COLUMN"
+                alignItems="CENTER">
+                <title size="LARGE" fontFlavour="BLACK" padding="0em 1em" backgroundFlavour="INFO"
+                    borderRadius="0.25em"
+                    v="v1">
+                    <textual>
+                        Opinions from Cheddar
+                    </textual>
+                </title>
+                <text paragraphStyle="PLAIN" width="400px" backgroundFlavour="WHITE" borderRadius="1em"
+                    v="v1">
+                    <textual>
+                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                        voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
+                        cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id
+                        est laborum et dolorum fuga.
+                    </textual>
+                </text>
+            </carousel-panel>
+            <carousel-panel src="panel-3.jpg" active="false" justifyContent="END" orientation="COLUMN"
+                alignItems="START">
+                <div margin="2em" padding="1em" backgroundFlavour="PRIMARY" v="v1">
+                    <image src="temp0.jpg" height="181px" width="278px" borderRadius="5px"
+                        border="2px solid black" v="v1"/>
+                    <text paragraphStyle="PLAIN" v="v1">
+                        <textual>
+                            Harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta
+                            nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere
+                            possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem
+                            quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et
+                            voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur
+                            a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut
+                            perferendis doloribus asperiores repellat.
+                        </textual>
+                    </text>
+                </div>
+            </carousel-panel>
+        </carousel>
+
     </div>
     <div v="v1" orientation="ROW">
         <div orientation="COLUMN" alignItems="CENTER" margin="0 0.5em" v="v1">
-            <tool-tip exposition="Icon">
-                <icon v="v1" name="car-front-fill"/>
-            </tool-tip>
-            <tool-tip exposition="Title">
-                <title size="MEDIUM" fontFlavour="PRIMARY" padding="0em 1em" v="v1">
-                    <textual>Lorem Ipsum</textual>
-                </title>
-            </tool-tip>
-            <tool-tip exposition="Paragraph">
-                <text paragraphStyle="PLAIN" v="v1">
-                    <textual>
-                        Harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est
-                        eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis
-                        voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis
-                        debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae
-                        non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis
-                        voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
-                    </textual>
-                </text>
-            </tool-tip>
+            <icon v="v1" name="car-front-fill"/>
+            <title size="MEDIUM" fontFlavour="PRIMARY" padding="0em 1em" v="v1">
+                <textual>Lorem Ipsum</textual>
+            </title>
+            <text paragraphStyle="PLAIN" v="v1">
+                <textual>
+                    Harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est
+                    eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis
+                    voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis
+                    debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae
+                    non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis
+                    voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+                </textual>
+            </text>
+
         </div>
         <div orientation="COLUMN" alignItems="CENTER" v="v1">
-            <tool-tip exposition="Icon">
-                <icon v="v1" name="archive-fill"/>
-            </tool-tip>
-            <tool-tip exposition="Title">
-                <title size="MEDIUM" fontFlavour="PRIMARY" padding="0em 1em" v="v1">
-                    <textual>Lorem Ipsum</textual>
-                </title>
-            </tool-tip>
-            <tool-tip exposition="Paragraph">
-                <text paragraphStyle="PLAIN" v="v1">
-                    <textual>
-                        Harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est
-                        eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis
-                        voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis
-                        debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae
-                        non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis
-                        voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
-                    </textual>
-                </text>
-            </tool-tip>
+
+            <icon v="v1" name="archive-fill"/>
+
+            <title size="MEDIUM" fontFlavour="PRIMARY" padding="0em 1em" v="v1">
+                <textual>Lorem Ipsum</textual>
+            </title>
+
+            <text paragraphStyle="PLAIN" v="v1">
+                <textual>
+                    Harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est
+                    eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis
+                    voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis
+                    debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae
+                    non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis
+                    voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+                </textual>
+            </text>
+
         </div>
         <div orientation="COLUMN" alignItems="CENTER" v="v1">
-            <tool-tip exposition="Icon">
-                <icon flavour="DEFAULT" name="clipboard-data-fill" v="v1"/>
-            </tool-tip>
-            <tool-tip exposition="Title">
-                <title size="MEDIUM" fontFlavour="PRIMARY" padding="0em 1em" v="v1">
-                    <textual>Lorem Ipsum</textual>
-                </title>
-            </tool-tip>
-            <tool-tip exposition="Paragraph">
-                <text paragraphStyle="PLAIN" v="v1">
-                    <textual>
-                        Harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est
-                        eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis
-                        voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis
-                        debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae
-                        non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis
-                        voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
-                    </textual>
-                </text>
-            </tool-tip>
+            <icon flavour="DEFAULT" name="clipboard-data-fill" v="v1"/>
+            <title size="MEDIUM" fontFlavour="PRIMARY" padding="0em 1em" v="v1">
+                <textual>Lorem Ipsum</textual>
+            </title>
+            <text paragraphStyle="PLAIN" v="v1">
+                <textual>
+                    Harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est
+                    eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis
+                    voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis
+                    debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae
+                    non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis
+                    voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+                </textual>
+            </text>
         </div>
     </div>
 </page>

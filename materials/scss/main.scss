@@ -1,77 +1,78 @@
+@import "node_modules/bootstrap/scss/functions"; // Required
 
 @font-face {
   font-family: "Liberation Mono";
-  src: url("/public/fonts/LiberationMono-Regular.ttf" ) format("truetype");
+  src: url("/public/fonts/LiberationMono-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Liberation Mono";
-  src: url("/public/fonts/LiberationMono-Bold.ttf" ) format("truetype");
+  src: url("/public/fonts/LiberationMono-Bold.ttf") format("truetype");
   font-weight: bold;
 }
 
 @font-face {
   font-family: "Liberation Mono";
-  src: url("/public/fonts/LiberationMono-Italic.ttf" ) format("truetype");
+  src: url("/public/fonts/LiberationMono-Italic.ttf") format("truetype");
   font-style: italic;
 }
 
 @font-face {
   font-family: "Liberation Mono";
-  src: url("/public/fonts/LiberationMono-BoldItalic.ttf" ) format("truetype");
+  src: url("/public/fonts/LiberationMono-BoldItalic.ttf") format("truetype");
   font-style: italic;
   font-weight: bold;
 }
 
 @font-face {
   font-family: "Liberation Sans";
-  src: url("/public/fonts/LiberationSans-Regular.ttf" ) format("truetype");
+  src: url("/public/fonts/LiberationSans-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Liberation Sans";
-  src: url("/public/fonts/LiberationSans-Bold.ttf" ) format("truetype");
+  src: url("/public/fonts/LiberationSans-Bold.ttf") format("truetype");
   font-weight: bold;
 }
 
 @font-face {
   font-family: "Liberation Sans";
-  src: url("/public/fonts/LiberationSans-Italic.ttf" ) format("truetype");
+  src: url("/public/fonts/LiberationSans-Italic.ttf") format("truetype");
   font-style: italic;
 }
 
 @font-face {
   font-family: "Liberation Sans";
-  src: url("/public/fonts/LiberationSans-BoldItalic.ttf" ) format("truetype");
+  src: url("/public/fonts/LiberationSans-BoldItalic.ttf") format("truetype");
   font-style: italic;
   font-weight: bold;
 }
 
 @font-face {
   font-family: "Liberation Serif";
-  src: url("/public/fonts/LiberationSerif-Regular.ttf" ) format("truetype");
+  src: url("/public/fonts/LiberationSerif-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Liberation Serif";
-  src: url("/public/fonts/LiberationSerif-Bold.ttf" ) format("truetype");
+  src: url("/public/fonts/LiberationSerif-Bold.ttf") format("truetype");
   font-weight: bold;
 }
 
 @font-face {
   font-family: "Liberation Serif";
-  src: url("/public/fonts/LiberationSerif-Italic.ttf" ) format("truetype");
+  src: url("/public/fonts/LiberationSerif-Italic.ttf") format("truetype");
   font-style: italic;
 }
 
 @font-face {
   font-family: "Liberation Serif";
-  src: url("/public/fonts/LiberationSerif-BoldItalic.ttf" ) format("truetype");
+  src: url("/public/fonts/LiberationSerif-BoldItalic.ttf") format("truetype");
   font-style: italic;
   font-weight: bold;
 }
 
-
+$blue: #81b1cc;
 $gray: gray;
 $lightgray: lightgray;
 $rajah: #f7ce76;
@@ -120,7 +121,6 @@ $font-exhibit: /*£IF*/
         Liberation Mono, monospace/*£ELSE FONT_EXHIBIT_FAMILY £END*/
 ;
 
-
 /*
   Color Tokenization.
 
@@ -133,7 +133,7 @@ $font-exhibit: /*£IF*/
   to the following.  This is definitely a hack, but only applies to auto enrolment.  When materials are customized,
   all of this can be dropped.
  */
-$blue: #81b1cc;
+
 $pastel-orange: #ff964f;
 $pastel-red: #ff6961;
 $opal: #a9c8c0;
@@ -164,7 +164,6 @@ $theme-colors: (
 $enable-gradients: true;
 $enable-shadows: true;
 
-@import "node_modules/bootstrap/scss/functions"; // Required
 @import "node_modules/bootstrap/scss/variables"; // Required
 @import "node_modules/bootstrap/scss/mixins"; // Required
 @import "node_modules/bootstrap/scss/root"; // Required
@@ -201,18 +200,6 @@ $enable-shadows: true;
 @import "node_modules/bootstrap/scss/spinners";
 @import "node_modules/bootstrap/scss/utilities";
 @import "node_modules/bootstrap/scss/print";
-
-//@font-face {
-//  font-family: BrushScriptStd;
-//  src: url("../public/fonts/BrushScriptStd.otf") format("opentype"), url("../public/fonts/BRUSHSCI.TTF") format("truetype");
-//}
-
-
-// Boostrap Overrides - changes to default bootstrap styling. Likely to change if different bootstrap skins are in affect.
-@import "bootstrap-skin";
-
-// Typography - all styling related to fonts, and typography.
-@import "typography";
 
 // Control  - these are produced by the platform and expect certain affects.
 @import "control";
@@ -261,3 +248,9 @@ $enable-shadows: true;
 @import "kase-explorer-widget";
 @import "error-summary-widget";
 @import "template";
+
+// Boostrap Overrides - changes to default bootstrap styling. Likely to change if different bootstrap skins are in affect.
+@import "theme";
+
+// Typography - all styling related to fonts, and typography.
+@import "typography";

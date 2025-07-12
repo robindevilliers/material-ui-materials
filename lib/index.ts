@@ -71,7 +71,7 @@ function processDirectory(dir: string, suffix: string, baseTemplate: string, new
             const body = renderingEngine.renderElement(dom.root as Element);
 
             const mainTemplate = fs.readFileSync(path.join(process.env.INIT_CWD!, options.dir, baseTemplate), 'utf8')
-                .replaceAll("MATERIALS_PAGE_TITLE_TOKEN", "Title");
+                .replaceAll("MATERIALS_PAGE_TITLE_TOKEN", "Company Title");
 
             try {
                 const html = new TemplateEngine().render(mainTemplate, {

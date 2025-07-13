@@ -1,36 +1,4 @@
 
 .folder-widget {
   padding: 5px;
-
-  .folder-content {
-    overflow-y: auto;
-    max-height: 600px;
-    padding-bottom: 2px;
-
-    .folder-item {
-      margin: 0.5em 0.5em 0 0;
-      border-radius: 10px;
-      min-height: 3em;
-      padding: 0.5em 1em;
-
-      &:nth-child(even) {
-        background-color: $alternatingEven;
-        color: color-yiq($alternatingEven);
-      }
-
-      &:nth-child(odd) {
-        background-color: $alternatingOdd;
-        color: color-yiq($alternatingOdd);
-      }
-    }
-  }
-
-  .folder-no-content {
-    display: flex;
-    text-align: center;
-    opacity: 0.75;
-    min-height: 80px;
-    justify-content: center;
-    align-items: center;
-  }
 }

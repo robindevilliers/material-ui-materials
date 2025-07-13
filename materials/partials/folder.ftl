@@ -1,14 +1,16 @@
 <div id="${id!}" class="folder-widget panel  ${classes}" style="${itemStyles}">
     ${header}
-    <div class="folder-content">
-        <#list values as val>
-            <div id="folder-item-${val.workflowId}-${val.wizardId}" class="folder-item">
-                ${val.html}
-            </div>
-        </#list>
-        <#if !values?has_content>
-            <div id="folder-no-content" class="folder-no-content no-content">No Content</div>
-        </#if>
+    <div class="panel-body">
+        <div class="folder-content panel-content">
+            <#list values as val>
+                <div id="folder-item-${val.workflowId}-${val.wizardId}" class="panel-item">
+                    ${val.html}
+                </div>
+            </#list>
+            <#if !values?has_content>
+                <div id="folder-no-content" class="panel-no-content no-content">No Content</div>
+            </#if>
+        </div>
     </div>
     <div class="panel-footer">
         <ul class="pagination">

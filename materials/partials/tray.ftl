@@ -1,9 +1,9 @@
 <div class="tray-widget panel ${classes}" style="${itemStyles}">
     ${header}
-    <div class="panel-content">
-        <div class="tray-body">
+    <div class="panel-body">
+        <div class="tray-body panel-content">
             <#list values as val>
-                <div class="tray-item">
+                <div class="tray-item panel-item">
                     <form action="${val.action}" method="post"
                             enctype="application/x-www-form-urlencoded">
                         <input type="hidden" name="_csrf" value="${_csrf}">
@@ -24,7 +24,7 @@
                 </div>
             </#list>
             <#if !values?has_content>
-                <div id="tray-no-content" class="tray-no-content no-content">No Content</div>
+                <div id="tray-no-content" class="panel-no-content no-content">No Content</div>
             </#if>
         </div>
     </div>

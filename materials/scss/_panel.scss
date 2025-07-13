@@ -10,9 +10,9 @@ $panel-inner-border-radius: 19px;
   flex-direction: column;
   word-wrap: break-word;
   background-clip: border-box;
-  background: #81b1cc;
-  border: 5px #81b1cc solid;
-  border-radius: 25px;
+  background: theme-color("primary");
+  border: 5px theme-color("primary") solid;
+  border-radius: $panel-border-radius;
   margin: 4px;
 }
 
@@ -24,9 +24,9 @@ $panel-inner-border-radius: 19px;
   align-items: center;
   font-size: 1.5em;
   padding: .5em 1em;
-  background-color: #e6e6fa;
-  color: #212529;
-  border-bottom: 5px #81b1cc solid;
+  background-color: $headerBackground;
+  color: color-yiq($headerBackground);
+  border-bottom: 5px theme-color("primary") solid;
 }
 
 .panel-body {

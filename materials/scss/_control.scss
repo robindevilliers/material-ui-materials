@@ -5,14 +5,6 @@ body {
   }
 }
 
-textarea {
-  resize: none;
-}
-
-.form-check-label {
-  padding: 0.5rem 1rem;
-}
-
 .btn-link {
   outline: none;
   box-shadow: none !important;
@@ -45,16 +37,6 @@ textarea {
       display: none !important;
     }
   }
-}
-
-.form-control-md {
-  min-height: calc(1em + 1rem + 2px);
-  font-size: 1rem;
-}
-
-.form-check-input {
-  min-width: 1.5em;
-  min-height: calc(1em + 1rem + 2px);
 }
 
 @media (max-width: 375.98px) {

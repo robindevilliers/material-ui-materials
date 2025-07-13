@@ -1,0 +1,51 @@
+
+
+@import "node_modules/bootstrap/scss/forms";
+
+textarea {
+  resize: none;
+}
+
+.form-check-label {
+  padding: 0.5rem 1rem;
+}
+
+.form-control-md {
+  min-height: calc(1em + 1rem + 2px);
+  font-size: 1rem;
+}
+
+.form-check {
+  .form-check-input {
+    float: unset;
+    height: 1em;
+    width: 1em;
+    min-width: 1.5em;
+    min-height: calc(1em + 1rem + 2px);
+    cursor: pointer;
+
+    &.form-control-lg {
+      min-height: unset;
+      padding: unset;
+      font-size: unset;
+      height: 2em;
+      width: 2em;
+    }
+
+    &.form-control-md {
+      min-height: unset;
+      padding: unset;
+      font-size: unset;
+      height: 1.5em;
+      width: 1.5em;
+    }
+
+    &.form-control-sm {
+      min-height: unset;
+      padding: unset;
+      font-size: unset;
+      height: 1em;
+      width: 1em;
+    }
+  }
+}

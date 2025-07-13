@@ -1,9 +1,9 @@
-<div id="${id}" class="kase-explorer-widget ${classes}" style="${itemStyles}">
-    <div class="card-header header">
+<div id="${id}" class="explorer-widget explorer panel ${classes}" style="${itemStyles}">
+    <div class="header panel-header">
 
-        <form class="form-inline kase-explorer-query" method="get" action="${action}">
+        <form class="form-inline explorer-query" method="get" action="${action}">
             <div class="header-row">
-                <div class="kase-explorer-header-title">
+                <div class="explorer-header-title">
                     Case Lookup
                 </div>
             </div>
@@ -40,7 +40,7 @@
                             value="${endDate}" placeholder="End Date">
 
                     <div class="input-group-append">
-                        <button type="submit" name="actSearch" class="btn btn-outline-primary"
+                        <button type="submit" name="actSearch" class="btn btn-primary"
                                 onclick="${testMode?string('alert(&quot;Button clicked&quot;); event.preventDefault();','')}">
                             Search
                         </button>
@@ -53,61 +53,61 @@
         </form>
     </div>
 
-    <div class="kase-explorer-body">
+    <div class="explorer-body">
         <#if !values?has_content>
-            <div id="kase-explorer-no-content" class="kase-explorer-no-content no-content">No Results</div>
+            <div id="explorer-no-content" class="explorer-no-content no-content">No Results</div>
         <#else>
-            <div class="kase-explorer-item-list">
+            <div class="explorer-item-list">
                 <#list values as val>
-                    <a class="kase-explorer-item-select" href="#${val.id}"
+                    <a class="explorer-item-select" href="#${val.id}"
                             role="button" aria-expanded="false" aria-controls="${val.id}">
-                        <span class="kase-explorer-workflow-description">${val.dateTime}</span>
-                        <span class="kase-explorer-principal">${val.principal}</span>
+                        <span class="explorer-workflow-description">${val.dateTime}</span>
+                        <span class="explorer-principal">${val.principal}</span>
                     </a>
                 </#list>
             </div>
-            <div class="kase-explorer-item-detail" id="${id}">
+            <div class="explorer-item-detail" id="${id}">
                 <#list values as val>
-                    <div id="${val.id}" class="kase-explorer-item" data-display="flex"
+                    <div id="${val.id}" class="explorer-item" data-display="flex"
                             data-parent="#${id}">
 
-                        <div class="kase-explorer-line">
-                            <span class="kase-explorer-item-title title">${val.id}</span>
+                        <div class="explorer-line">
+                            <span class="explorer-item-title title">${val.id}</span>
                             <span>${val.dateTime}</span>
                         </div>
 
-                        <span class="kase-explorer-line">
-                            <span class="kase-explorer-title">Case Principal</span>
+                        <span class="explorer-line">
+                            <span class="explorer-title">Case Principal</span>
                             <span>${val.principal}</span>
                         </span>
 
-                        <span class="kase-explorer-line">
-                                <span class="kase-explorer-title">Case Id </span>
+                        <span class="explorer-line">
+                                <span class="explorer-title">Case Id </span>
                                 <span>${val.kaseId}</span>
                             </span>
 
-                        <span class="kase-explorer-line">
-                                <span class="kase-explorer-title">Workflow </span>
+                        <span class="explorer-line">
+                                <span class="explorer-title">Workflow </span>
                                 <span></span>
                             </span>
 
-                        <div class="kase-explorer-title">${val.workflowTitle} (${val.workflowId})</div>
+                        <div class="explorer-title">${val.workflowTitle} (${val.workflowId})</div>
 
-                        <div class="kase-explorer-line">
-                            <div class="kase-explorer-description">
+                        <div class="explorer-line">
+                            <div class="explorer-description">
                                 ${val.workflowDescription}
                             </div>
                         </div>
 
-                        <form class="kase-explorer-form" action="${val.action}" method="post"
+                        <form class="explorer-form" action="${val.action}" method="post"
                                 enctype="application/x-www-form-urlencoded">
                             <input type="hidden" name="_csrf" value="${_csrf}">
                             <input type="hidden" name="_checkpoint" value="${_checkpoint}">
                             <input type="hidden" name="payload" value="${val.payload}">
                             <input type="hidden" name="source" value="${source}">
-                            <span class="kase-explorer-button-line">
+                            <span class="explorer-button-line">
                                     <button class="btn btn-primary"
-                                            id="kase-explorer-item-${val.workflowId}"
+                                            id="explorer-item-${val.workflowId}"
                                             onclick="${testMode?string('alert(&quot;Button clicked&quot;); event.preventDefault();','')}"
                                             type="submit">
                                         Open
@@ -119,21 +119,21 @@
             </div>
         </#if>
     </div>
-    <div class="kase-explorer-footer">
+    <div class="explorer-footer panel-footer">
         <form class="form-inline" method="get" action="${action}">
             <#list parameters as n, v>
                 <input type="hidden" name="${n}" value="${v}"/>
             </#list>
             <div class="btn-group" role="group">
                 <#if !disablePrevious >
-                    <button type="submit" aria-label="Previous" class="btn btn-outline-primary" name="actPrevious"
+                    <button type="submit" aria-label="Previous" class="btn btn-secondary" name="actPrevious"
                             onclick="${testMode?string('alert(&quot;Button clicked&quot;); event.preventDefault();','')}"
                     >
                         Previous
                     </button>
                 </#if>
                 <#if !disableNext >
-                    <button type="submit" aria-label="Next" class="btn btn-outline-primary" name="actNext"
+                    <button type="submit" aria-label="Next" class="btn btn-secondary" name="actNext"
                             onclick="${testMode?string('alert(&quot;Button clicked&quot;); event.preventDefault();','')}"
                     >
                         Next
@@ -147,7 +147,7 @@
                 <input type="hidden" name="${n}" value="${v}"/>
             </#list>
             <div class="btn-group" role="group">
-                <button type="submit" aria-label="Lookup username" class="btn btn-outline-primary"
+                <button type="submit" aria-label="Lookup username" class="btn btn-secondary"
                         name="actkLookupUser"
                         onclick="${testMode?string('alert(&quot;Button clicked&quot;); event.preventDefault();','')}">
                     Lookup principal

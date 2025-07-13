@@ -2,11 +2,11 @@
         enctype="application/x-www-form-urlencoded" style="${itemStyles}">
     <input type="hidden" name="_csrf" value="${_csrf}">
     <input type="hidden" name="_checkpoint" value="${_checkpoint}">
-    <div class="card">
-        <div class="card-header header">
+    <div class="panel">
+        <div class="panel-header header">
             Customer Login
         </div>
-        <div class="card-body">
+        <div class="panel-body">
             <div class="row">
                 <div class="col mb-3">
                     <label for="loginPanelUsername" class="form-label label">Username</label>
@@ -53,7 +53,7 @@
                 </div>
             </div>
         </div>
-        <div class="card-footer text-muted">
+        <div class="panel-footer text-muted">
             <div class="button-panel">
                 <button id="login-button" class="btn btn-primary" type="submit" name="login"
                         onclick="${testMode?string('alert(&quot;Login button clicked&quot;); event.preventDefault();','')}">

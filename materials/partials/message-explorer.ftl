@@ -1,8 +1,8 @@
-<div id="${id}" class="message-explorer-widget ${classes}" style="${itemStyles}">
-    <div class="card-header header">
-        <form class="form-inline message-explorer-query" method="get" action="${action}">
+<div id="${id}" class="message-explorer-widget explorer panel ${classes}" style="${itemStyles}">
+    <div class="header panel-header">
+        <form class="form-inline explorer-query" method="get" action="${action}">
             <div class="header-row">
-                <div class="message-explorer-header-title">
+                <div class="explorer-header-title">
                     Message Lookup
                 </div>
             </div>
@@ -70,7 +70,7 @@
                             value="${endDate}" placeholder="End Date">
 
                     <div class="input-group-append">
-                        <button type="submit" name="mSearch" class="btn btn-outline-primary"
+                        <button type="submit" name="mSearch" class="btn btn-primary"
                                 onclick="${testMode?string('alert(&quot;Button clicked&quot;); event.preventDefault();','')}"
                         >Search
                         </button>
@@ -83,79 +83,79 @@
         </form>
     </div>
 
-    <div class="message-explorer-body">
+    <div class="explorer-body">
         <#if !values?has_content>
-            <div id="message-explorer-no-content" class="message-explorer-no-content no-content">No Results</div>
+            <div id="explorer-no-content" class="explorer-no-content no-content">No Results</div>
         <#else>
-            <div class="message-explorer-item-list">
+            <div class="explorer-item-list">
                 <#list values as val>
-                    <a class="message-explorer-item-select" href="#${val.id}"
+                    <a class="explorer-item-select" href="#${val.id}"
                             role="button" aria-expanded="false" aria-controls="${val.id}">
-                        <span class="message-explorer-workflow-description">${val.dateTime}</span>
-                        <span class="message-explorer-wizard-title">${val.wizardTitle}</span>
-                        <span class="message-explorer-principal">${val.principal}</span>
+                        <span class="explorer-workflow-description">${val.dateTime}</span>
+                        <span class="explorer-wizard-title">${val.wizardTitle}</span>
+                        <span class="explorer-principal">${val.principal}</span>
                     </a>
                 </#list>
             </div>
-            <div class="message-explorer-item-detail" id="${id}">
+            <div class="explorer-item-detail" id="${id}">
                 <#list values as val>
-                    <div id="${val.id}" class="message-explorer-item" data-display="flex"
+                    <div id="${val.id}" class="explorer-item" data-display="flex"
                             data-parent="#${id}">
 
-                        <div class="message-explorer-line">
-                            <span class="message-explorer-wizard-title title">${val.wizardTitle} (${val.wizardId})</span>
+                        <div class="explorer-line">
+                            <span class="explorer-wizard-title title">${val.wizardTitle} (${val.wizardId})</span>
                             <span>${val.dateTime}</span>
                         </div>
 
-                        <div class="message-explorer-line">
-                            <div class="message-explorer-description">
+                        <div class="explorer-line">
+                            <div class="explorer-description">
                                 ${val.wizardDescription}
                             </div>
                         </div>
 
-                        <span class="message-explorer-line">
-                            <span class="message-explorer-title">Case Principal</span>
+                        <span class="explorer-line">
+                            <span class="explorer-title">Case Principal</span>
                             <span>${val.principal}</span>
                         </span>
 
-                        <span class="message-explorer-line">
-                            <span class="message-explorer-title">Principal Name</span>
+                        <span class="explorer-line">
+                            <span class="explorer-title">Principal Name</span>
                             <span>${val.principalTitle} ${val.principalFirstName} ${val.principalLastName}</span>
                         </span>
 
-                        <span class="message-explorer-line">
-                            <span class="message-explorer-title">Date of Birth</span>
+                        <span class="explorer-line">
+                            <span class="explorer-title">Date of Birth</span>
                             <span>${val.principalDateOfBirth}</span>
                         </span>
 
-                        <span class="message-explorer-line">
-                                <span class="message-explorer-title">Case Id </span>
+                        <span class="explorer-line">
+                                <span class="explorer-title">Case Id </span>
                                 <span>${val.kaseId}</span>
                             </span>
 
-                        <span class="message-explorer-line">
-                                <span class="message-explorer-title">Workflow </span>
+                        <span class="explorer-line">
+                                <span class="explorer-title">Workflow </span>
                                 <span></span>
                             </span>
 
-                        <div class="message-explorer-title">${val.workflowTitle} (${val.workflowId})</div>
+                        <div class="explorer-title">${val.workflowTitle} (${val.workflowId})</div>
 
-                        <div class="message-explorer-line">
-                            <div class="message-explorer-description">
+                        <div class="explorer-line">
+                            <div class="explorer-description">
                                 ${val.workflowDescription}
                             </div>
                         </div>
 
-                        <form class="message-explorer-form"
+                        <form class="explorer-form"
                                 action="${val.action}"
                                 method="post" enctype="application/x-www-form-urlencoded">
                             <input type="hidden" name="_csrf" value="${_csrf}">
                             <input type="hidden" name="_checkpoint" value="${_checkpoint}">
                             <input type="hidden" name="payload" value="${val.payload}">
                             <input type="hidden" name="source" value="${source}">
-                            <span class="message-explorer-button-line">
+                            <span class="explorer-button-line">
                                     <button class="btn btn-primary"
-                                            id="message-explorer-item-${val.workflowId}-${val.wizardId}"
+                                            id="explorer-item-${val.workflowId}-${val.wizardId}"
                                             onclick="${testMode?string('alert(&quot;Open clicked&quot;); event.preventDefault();','')}"
                                             type="submit">
                                         Open
@@ -167,21 +167,21 @@
             </div>
         </#if>
     </div>
-    <div class="message-explorer-footer">
+    <div class="explorer-footer panel-footer">
         <form class="form-inline" method="get" action="${action}">
             <#list parameters as n, v>
                 <input type="hidden" name="${n}" value="${v}"/>
             </#list>
             <div class="btn-group" role="group">
                 <#if !disablePrevious >
-                    <button type="submit" aria-label="Previous" class="btn btn-outline-primary" name="actPrevious"
+                    <button type="submit" aria-label="Previous" class="btn btn-secondary" name="actPrevious"
                             onclick="${testMode?string('alert(&quot;Button clicked&quot;); event.preventDefault();','')}"
                     >
                         Previous
                     </button>
                 </#if>
                 <#if !disableNext >
-                    <button type="submit" aria-label="Next" class="btn btn-outline-primary" name="actNext"
+                    <button type="submit" aria-label="Next" class="btn btn-secondary" name="actNext"
                             onclick="${testMode?string('alert(&quot;Button clicked&quot;); event.preventDefault();','')}"
                     >
                         Next
@@ -195,7 +195,7 @@
                 <input type="hidden" name="${n}" value="${v}"/>
             </#list>
             <div class="btn-group" role="group">
-                <button type="submit" aria-label="Lookup username" class="btn btn-outline-primary"
+                <button type="submit" aria-label="Lookup username" class="btn btn-secondary"
                         onclick="${testMode?string('alert(&quot;Button clicked&quot;); event.preventDefault();','')}"
                         name="actmLookupUser">
                     Lookup principal

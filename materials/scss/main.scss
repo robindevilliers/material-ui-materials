@@ -146,6 +146,7 @@ $headerBackground: $lavender;
 $theme-colors: (
         "default": $gray,
         "primary": $blue,
+        "secondary": lightgray,
         "success" : $green,
         "warning" : $pastel-orange,
         "info" : $opal,
@@ -168,6 +169,7 @@ $enable-shadows: true;
 @import "node_modules/bootstrap/scss/mixins"; // Required
 @import "node_modules/bootstrap/scss/root"; // Required
 @import "node_modules/bootstrap/scss/reboot"; // Required
+
 @import "node_modules/bootstrap/scss/type";
 @import "node_modules/bootstrap/scss/images";
 @import "node_modules/bootstrap/scss/code";
@@ -203,6 +205,8 @@ $enable-shadows: true;
 
 // Control  - these are produced by the platform and expect certain affects.
 @import "control";
+@import "panel";
+@import "explorer";
 
 // Widgets - styling for individual widgets.
 @import "error-message";
@@ -249,9 +253,6 @@ $enable-shadows: true;
 @import "kase-explorer-widget";
 @import "error-summary-widget";
 @import "template";
-
-// Boostrap Overrides - changes to default bootstrap styling. Likely to change if different bootstrap skins are in affect.
-@import "theme";
 
 // Typography - all styling related to fonts, and typography.
 @import "typography";

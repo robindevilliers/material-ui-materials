@@ -1,40 +1,17 @@
 
 .folder-widget {
-  display: flex;
-  flex-direction: column;
-  word-wrap: break-word;
-  background-clip: border-box;
-  border: 5px $primary solid;
-  background: $primary;
   padding: 5px;
-  margin: 4px;
-  border-radius: 0.5em;
-  flex: 1 0 auto;
-  align-self: stretch;
-
-  .header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0.5em 1em;
-    font-size: 1.5em;
-    border-bottom: 5px #81b1cc solid;
-
-    background-color: $headerBackground;
-    color: color-yiq($headerBackground);
-  }
 
   .folder-content {
     overflow-y: auto;
     max-height: 600px;
-    margin-bottom: 0.5em;
-    flex: 1 0 auto;
+    padding-bottom: 2px;
 
     .folder-item {
       margin: 0.5em 0.5em 0 0;
-      padding: 0.5em 1em;
-      background-color: #e9ecef;
+      border-radius: 10px;
       min-height: 3em;
+      padding: 0.5em 1em;
 
       &:nth-child(even) {
         background-color: $alternatingEven;

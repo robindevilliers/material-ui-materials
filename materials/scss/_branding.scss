@@ -1,7 +1,7 @@
 
 .title-panel {
-  border: 5px $primary solid;
-  background: $primary;
+  border: 5px theme-color("primary") solid;
+  background: theme-color("primary");
   border-radius: 25px;
   padding: 5px;
   margin: 2em 0;
@@ -41,8 +41,8 @@
 }
 
 .brand-outer {
-  border: 5px $primary solid;
-  background: $primary;
+  border: 5px theme-color("primary") solid;
+  background: theme-color("primary");
   border-radius: 25px;
   padding: 5px;
 
@@ -71,7 +71,7 @@
 }
 
 .page-title {
-  color: $primary;
+  color: theme-color("primary");
   font-size: 2.5rem;
   padding: 5px;
   text-align: right;

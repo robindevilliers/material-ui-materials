@@ -1,0 +1,184 @@
+
+.explorer {
+  min-width: 690px;
+  padding: 5px;
+
+  .explorer-query {
+    display: flex;
+
+    .header-row {
+      display: flex;
+      flex: 1 1 auto;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: center;
+
+      & > * {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .input-group-text {
+    background-color: theme-color("secondary");
+    color: color-yiq(theme-color("secondary"));
+  }
+
+  .explorer-body {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    //flex: 100% 1 0;
+    background-color: #fff;
+    height: 600px;
+
+    .explorer-item-list {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      padding: 1em;
+      overflow-y: auto;
+      flex-shrink: 0;
+
+      .explorer-item-select {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 4px;
+        padding: 0 16px;
+        text-transform: unset;
+        text-decoration: none;
+        letter-spacing: .5px;
+        font-size: 14px;
+        border-radius: 2px;
+        line-height: 36px;
+
+        &:hover {
+          background-color: $blue !important;
+          color: color-yiq($blue);
+        }
+
+        & > *:not(:first-child) {
+          margin-left: 1em;
+        }
+
+        &:nth-child(even) {
+          background-color: $alternatingEven;
+          color: color-yiq($alternatingEven);
+        }
+
+        &:nth-child(odd) {
+          background-color: $alternatingOdd;
+          color: color-yiq($alternatingOdd);
+        }
+      }
+    }
+
+    .explorer-item-detail {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      padding: 1em;
+      overflow-y: auto;
+
+      .explorer-item {
+        display: flex;
+        flex-direction: column;
+        text-transform: unset;
+        text-decoration: none;
+        text-align: center;
+        letter-spacing: .5px;
+        font-size: 14px;
+        outline: 0;
+        border: none;
+        border-radius: 2px;
+        line-height: 36px;
+        vertical-align: middle;
+        -webkit-tap-highlight-color: transparent;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.20);
+        max-width: unset;
+        padding: 16px;
+        margin: 0.5em 0;
+
+        &:nth-child(even) {
+          border: 5px $alternatingOdd solid;
+          border-radius: 25px;
+        }
+
+        &:nth-child(odd) {
+          border: 5px $alternatingEven solid;
+          border-radius: 25px;
+        }
+
+        .explorer-line {
+          display: flex;
+          justify-content: space-between;
+
+          .explorer-title {
+            font-size: 1em;
+            font-family: $font-title-primary;
+          }
+
+          .explorer-wizard-title {
+            font-size: 1.25em;
+          }
+
+          .explorer-description {
+            margin: 0 1em;
+            letter-spacing: initial;
+            line-height: initial;
+          }
+
+          .explorer-workflow-title {
+            align-self: flex-end;
+          }
+
+          .explorer-workflow-description {
+            align-self: flex-end;
+          }
+
+          .explorer-principal {
+            align-self: flex-end;
+          }
+
+          & > *:first-child {
+            margin-right: 1em;
+          }
+        }
+
+        .explorer-form {
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: stretch;
+        }
+      }
+    }
+
+    .explorer-no-content {
+      display: flex;
+      flex-basis: 100%;
+      text-align: center;
+      opacity: 0.75;
+      min-height: 80px;
+      justify-content: center;
+      align-items: center;
+      padding: 1em;
+    }
+  }
+
+  .explorer-footer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .explorer-button-line {
+    display: flex;
+    padding: 1em;
+    justify-content: flex-end;
+  }
+
+  .pagination {
+    margin-bottom: 0;
+  }
+}

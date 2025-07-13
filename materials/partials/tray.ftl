@@ -1,9 +1,9 @@
-<div class="tray-widget card ${classes}" style="${itemStyles}">
-    <div class="card-content">
-        ${header}
+<div class="tray-widget panel ${classes}" style="${itemStyles}">
+    ${header}
+    <div class="panel-content">
         <div class="tray-body">
             <#list values as val>
-                <div class="tray-form">
+                <div class="tray-item">
                     <form action="${val.action}" method="post"
                             enctype="application/x-www-form-urlencoded">
                         <input type="hidden" name="_csrf" value="${_csrf}">

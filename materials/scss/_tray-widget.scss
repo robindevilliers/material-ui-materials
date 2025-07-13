@@ -3,6 +3,10 @@
   padding: 5px;
 
   .tray-body {
+    .panel-item:hover {
+      background-color: theme-color("primary") !important;
+      color: color-yiq(theme-color("primary")) !important;
+    }
 
     form {
       display: flex;
@@ -28,6 +32,7 @@
       vertical-align: middle;
       -webkit-tap-highlight-color: transparent;
       max-width: unset;
+      color: inherit;
     }
   }
 

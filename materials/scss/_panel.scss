@@ -50,17 +50,12 @@ $panel-inner-border-radius: 19px;
         margin-top: 0.5em;
       }
 
-      &:hover {
-        background-color: theme-color("primary") !important;
-        color: color-yiq(theme-color("primary"));
-      }
-
-      &:nth-child(even):not(:hover) {
+      &:nth-child(even) {
         background-color: $alternatingEven;
         color: color-yiq($alternatingEven);
       }
 
-      &:nth-child(odd):not(:hover) {
+      &:nth-child(odd) {
         background-color: $alternatingOdd;
         color: color-yiq($alternatingOdd);
       }

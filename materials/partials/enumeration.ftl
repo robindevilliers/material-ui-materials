@@ -44,7 +44,7 @@
                             id="${id}-${val.key}"
                             <#if val.panel?has_content>data-mw-blind="${val.key}"</#if>
                     />
-                    <label class="form-radio-label label ${sizeCls}" for="${id}-${val.key}">
+                    <label class="form-radio-label ${sizeCls}" for="${id}-${val.key}">
                         ${val.label}
                     </label>
                 </div>

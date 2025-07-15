@@ -33,9 +33,9 @@
         <#elseif cardinality == "SINGLE_SELECT">
             <label for="${id}" class="form-label label ${textualClasses} <#if hideLabel>sr-only</#if>" style="${textualStyles}">${content}</label>
             <#list values as val>
-                <div class="form-check">
+                <div class="form-radio">
                     <input id="${id}-${val.key}"
-                            class="form-check-input ${sizeCls}"
+                            class="form-radio-input ${sizeCls}"
                             name="${name}"
                             value="${val.key}"
                             <#if disabled??>disabled</#if>
@@ -44,7 +44,7 @@
                             id="${id}-${val.key}"
                             <#if val.panel?has_content>data-mw-blind="${val.key}"</#if>
                     />
-                    <label class="form-check-label label ${sizeCls}" for="${id}-${val.key}">
+                    <label class="form-radio-label label ${sizeCls}" for="${id}-${val.key}">
                         ${val.label}
                     </label>
                 </div>

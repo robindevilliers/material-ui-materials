@@ -1,3 +1,10 @@
-.jumbotron .list-bullet-item .link-widget {
-  color: white;
+.jumbotron {
+  background: theme-color("primary");
+  color: color-yiq(theme-color("primary"));
+  margin-top: 1.5rem;
+  border-radius: .25rem;
+
+  .list-bullet-item .link-widget {
+    color: white;
+  }
 }

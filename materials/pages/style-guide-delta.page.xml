@@ -195,6 +195,32 @@
                         <test-value text="false"/>
                     </input>
                 </div>
+                <div orientation="COLUMN" v="v1">
+
+                    <enumeration-input type="STRING" reference="colours" required="false"
+                        cardinality="SINGLE_SELECT" style="RADIO_CHECKBOX" size="SMALL"
+                        v="v1">
+                        <textual>Colours</textual>
+                        <value label="Green" key="green" default="false" panel="false" v="v1"
+                            orientation="COLUMN"/>
+                    </enumeration-input>
+
+                    <enumeration-input type="STRING" reference="colours" required="false"
+                        cardinality="SINGLE_SELECT" style="RADIO_CHECKBOX" size="MEDIUM"
+                        v="v1">
+                        <textual>Colours</textual>
+                        <value label="Green" key="green" default="false" panel="false" v="v1"
+                            orientation="COLUMN"/>
+                    </enumeration-input>
+
+                    <enumeration-input type="STRING" reference="colours" required="false"
+                        cardinality="SINGLE_SELECT" style="RADIO_CHECKBOX" size="LARGE"
+                        v="v1">
+                        <textual>Colours</textual>
+                        <value label="Green" key="green" default="false" panel="false" v="v1"
+                            orientation="COLUMN"/>
+                    </enumeration-input>
+                </div>
             </div>
         </div>
         <div orientation="COLUMN" v="v1">

@@ -1,13 +1,29 @@
-
-
 @import "node_modules/bootstrap/scss/forms";
 
 textarea {
   resize: none;
 }
 
-.form-check-label {
-  padding: 0.5rem 1rem;
+.form-radio {
+  position: relative;
+  display: block;
+  padding-left: 1.25rem;
+
+  .form-radio-input {
+    position: absolute;
+    margin-top: .3rem;
+    margin-left: -1.25rem;
+  }
+
+  .form-radio-label {
+    padding: 0.5rem 1rem;
+  }
+}
+
+.form-check {
+  .form-check-label {
+    padding: 0.5rem 1rem;
+  }
 }
 
 .form-control-md {

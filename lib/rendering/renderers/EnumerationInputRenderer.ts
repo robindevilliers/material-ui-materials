@@ -55,7 +55,7 @@ export default class EnumerationInputRenderer implements Renderer {
             panel: renderingEngine.renderElement(value, element)
         }));
 
-        data.error = "Enumeration error message";
+        data.error = element.attributes.error;
 
         const classManager = new ClassManager(classMappings);
         textStyleSupport(data, element, classMappings);

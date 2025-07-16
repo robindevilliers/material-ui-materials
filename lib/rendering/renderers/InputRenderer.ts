@@ -31,7 +31,7 @@ export default class InputRenderer implements Renderer {
         data.size = element.attributes.size;
         data.maxLength = element.attributes.maxLength;
         data.currencySymbol = element.attributes.type === 'CURRENCY' ? '£' : null;
-        data.error = "Input error message";
+        data.error = element.attributes.error;
         data.content = renderingEngine.renderChildren(element.children.find(el => isElement(el) && (el as Element).name === 'textual')! as Element);
 
         const classManager = new ClassManager(classMappings);

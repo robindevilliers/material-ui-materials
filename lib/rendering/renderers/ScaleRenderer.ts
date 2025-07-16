@@ -68,7 +68,7 @@ export default class ScaleRenderer implements Renderer {
         data.size = element.attributes.size;
         data.values = values;
         data.value = "";
-        data.error = "Scale error message";
+        data.error = element.attributes.error;
         data.content = renderingEngine.renderChildren(element.children.find(el => isElement(el) && (el as Element).name === 'textual')! as Element);
 
         const classManager = new ClassManager(classMappings);

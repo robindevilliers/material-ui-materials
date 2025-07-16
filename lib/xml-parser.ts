@@ -119,7 +119,7 @@ export function parse(xml: string): Document {
         let character = reader.next();
         let c = character.getString();
 
-        if (c.charCodeAt(0) === 10) {
+        if (c.charCodeAt(0) === 10 || c.charCodeAt(0) === 13) {
             continue;
         }
 

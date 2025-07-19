@@ -4,10 +4,12 @@ textarea {
   resize: none;
 }
 
-//.form-control {
-//  min-height: calc(1em + 1rem + 2px);
-//  font-size: 1rem;
-//}
+.form-label {
+
+  &:has(~ .error-message) {
+    color: theme-color("danger");
+  }
+}
 
 .form-check {
   display: flex;

@@ -39,23 +39,27 @@
                         <input type="hidden" name="_csrf" value="${_csrf}">
                         <div class="card-body">
                             <div class="row">
-                                <div class="form-group col">
-                                    <label for="firstCharacter"
-                                            class="form-label label">Character ${firstPasswordPhraseIndex}</label>
-                                    <input class="form-control" placeholder="?" id="firstCharacter" maxlength="1"
-                                            type="password" name="firstCharacter" style="text-align: right; ">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label for="firstCharacter"
+                                                class="form-label label">Character ${firstPasswordPhraseIndex}</label>
+                                        <input class="form-control" placeholder="?" id="firstCharacter" maxlength="1"
+                                                type="password" name="firstCharacter" style="text-align: right; ">
+                                    </div>
                                     <#if errors.firstCharacter??>
                                         <span class="error-message">${errors.firstCharacter}</span>
                                     </#if>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="form-group col">
-                                    <label for="secondCharacter"
-                                            class="form-label label">Character ${secondPasswordPhraseIndex}</label>
-                                    <input class="form-control" placeholder="?" id="secondCharacter" maxlength="1"
-                                            type="password"
-                                            name="secondCharacter" style="text-align: right; ">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label for="secondCharacter"
+                                                class="form-label label">Character ${secondPasswordPhraseIndex}</label>
+                                        <input class="form-control" placeholder="?" id="secondCharacter" maxlength="1"
+                                                type="password"
+                                                name="secondCharacter" style="text-align: right; ">
+                                    </div>
                                     <#if errors.secondCharacter??>
                                         <span class="error-message">${errors.secondCharacter}</span>
                                     </#if>
@@ -63,11 +67,13 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="form-group col">
-                                    <label for="thirdCharacter"
-                                            class="form-label label">Character ${thirdPasswordPhraseIndex}</label>
-                                    <input class="form-control" placeholder="?" id="thirdCharacter" maxlength="1"
-                                            type="password" name="thirdCharacter" style="text-align: right; ">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label for="thirdCharacter"
+                                                class="form-label label">Character ${thirdPasswordPhraseIndex}</label>
+                                        <input class="form-control" placeholder="?" id="thirdCharacter" maxlength="1"
+                                                type="password" name="thirdCharacter" style="text-align: right; ">
+                                    </div>
                                     <#if errors.thirdCharacter??>
                                         <span class="error-message">${errors.thirdCharacter}</span>
                                     </#if>

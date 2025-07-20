@@ -8,10 +8,10 @@
         </div>
         <div class="panel-body">
             <div class="row">
-                <div class="col mb-3">
-                    <label for="loginPanelUsername" class="form-label label">Username</label>
-                    <div class="input-group">
-                        <input type="text" name="username" class="form-control" id="loginPanelUsername">
+                <div class="col mb-3 ">
+                    <div class="form-group">
+                        <label for="loginPanelUsername" class="form-label label">Username</label>
+                        <input type="text" name="username" class="form-control" id="loginPanelUsername" placeholder="">
                     </div>
                     <#if errors.username??>
                         <div class="error-message">${errors.username}</div>
@@ -20,9 +20,10 @@
             </div>
             <div class="row">
                 <div class="col mb-3">
-                    <label for="loginPanelPassword" class="form-label label">Password</label>
-                    <div class="input-group">
-                        <input type="password" name="password" class="form-control" id="loginPanelPassword">
+                    <div class="form-group">
+                        <label for="loginPanelPassword" class="form-label label">Password</label>
+                        <input type="password" name="password" class="form-control" id="loginPanelPassword"
+                                placeholder="">
                     </div>
                     <#if errors.password??>
                         <div class="error-message">${errors.password}</div>
@@ -35,7 +36,8 @@
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" id="acceptPrivacyPolicy"
                                     name="acceptPrivacyPolicy">
-                            <label class="form-check-label label" for="acceptPrivacyPolicy"> Accept Privacy Policy </label>
+                            <label class="form-check-label label" for="acceptPrivacyPolicy"> Accept Privacy
+                                Policy </label>
                             <a class="ml-3" href="/fixed/privacy"
                                     onclick="${testMode?string('alert(&quot;View privacy policy clicked&quot;); event.preventDefault();','')}">View</a>
                         </div>

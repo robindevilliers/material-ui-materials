@@ -9,8 +9,11 @@
     </div>
     <div class="row">
         <div class="form-group col">
-            <label for="registerPanelUsername" class="form-label label">Username</label>
-            <input class="form-control" id="registerPanelUsername" type="text" name="username" value="${(username)!}">
+            <div class="form-group">
+                <label for="registerPanelUsername" class="form-label label">Username</label>
+                <input class="form-control" id="registerPanelUsername" type="text" name="username" placeholder=""
+                        value="${(username)!}">
+            </div>
             <#if errors.username??>
                 <span class="error-message">${errors.username}</span>
             <#else>
@@ -19,18 +22,20 @@
         </div>
 
         <div class="form-group col">
-            <label for="title">Title</label>
-            <select id="title" name="title" class="form-control">
-                <#if (title)?has_content>
-                    <option value=""></option><#else>
-                    <option value="" selected></option></#if>
-                <#if (title)! == 'Mr'>
-                    <option value="Mr" selected>Mr</option><#else>
-                    <option value="Mr">Mr</option></#if>
-                <#if (title)! == 'Ms'>
-                    <option value="Ms" selected>Ms</option><#else>
-                    <option value="Ms">Ms</option></#if>
-            </select>
+            <div class="form-group">
+                <label for="title" class="form-label label">Title</label>
+                <select id="title" name="title" class="form-control">
+                    <#if (title)?has_content>
+                        <option value=""></option><#else>
+                        <option value="" selected></option></#if>
+                    <#if (title)! == 'Mr'>
+                        <option value="Mr" selected>Mr</option><#else>
+                        <option value="Mr">Mr</option></#if>
+                    <#if (title)! == 'Ms'>
+                        <option value="Ms" selected>Ms</option><#else>
+                        <option value="Ms">Ms</option></#if>
+                </select>
+            </div>
             <#if errors.title??>
                 <span class="error-message">${errors.title}</span>
             <#else>
@@ -42,8 +47,11 @@
 
     <div class="row">
         <div class="form-group col">
-            <label for="firstName" class="active">First Name</label>
-            <input id="firstName" type="text" name="firstName" class="form-control" value="${(firstName)!}">
+            <div class="form-group">
+                <label for="firstName" class="form-label label">First Name</label>
+                <input id="firstName" type="text" name="firstName" class="form-control" value="${(firstName)!}"
+                        placeholder="">
+            </div>
             <#if errors.firstName??>
                 <span class="error-message">${errors.firstName}</span>
             <#else>
@@ -52,8 +60,11 @@
         </div>
 
         <div class="form-group col">
-            <label for="lastName" class="active">Last Name</label>
-            <input id="lastName" type="text" name="lastName" class="form-control" value="${(lastName)!}">
+            <div class="form-group">
+                <label for="lastName" class="form-label label">Last Name</label>
+                <input id="lastName" type="text" name="lastName" class="form-control" value="${(lastName)!}"
+                        placeholder="">
+            </div>
             <#if errors.lastName??>
                 <span class="error-message">${errors.lastName}</span>
             <#else>
@@ -64,8 +75,11 @@
 
     <div class="row">
         <div class="form-group col">
-            <label for="registerPanelEmail" class="active">Email Address</label>
-            <input id="registerPanelEmail" type="text" name="email" class="form-control" value="${(email)!}">
+            <div class="form-group">
+                <label for="registerPanelEmail" class="form-label label">Email Address</label>
+                <input id="registerPanelEmail" type="text" name="email" class="form-control" value="${(email)!}"
+                        placeholder="">
+            </div>
             <#if errors.email??>
                 <span class="error-message">${errors.email}</span>
             <#else>
@@ -74,10 +88,11 @@
         </div>
 
         <div class="form-group col">
-            <label for="contactNumber" class="active">Contact Number</label>
-            <input id="contactNumber" type="text" class="form-control" name="contactNumber"
-                    value="${(contactNumber)!}">
-
+            <div class="form-group">
+                <label for="contactNumber" class="form-label label">Contact Number</label>
+                <input id="contactNumber" type="text" class="form-control" name="contactNumber"
+                        value="${(contactNumber)!}" placeholder="">
+            </div>
             <#if errors.contactNumber??>
                 <span class="error-message">${errors.contactNumber}</span>
             <#else>
@@ -88,9 +103,11 @@
 
     <div class="row">
         <div class="form-group col">
-            <label for="registerPanelPasswordOnce" class="active">Password</label>
-            <input id="registerPanelPasswordOnce" type="password" class="form-control" name="passwordOnce"
-                    value="${passwordOnce!}">
+            <div class="form-group">
+                <label for="registerPanelPasswordOnce" class="form-label label">Password</label>
+                <input id="registerPanelPasswordOnce" type="password" class="form-control" name="passwordOnce"
+                        value="${passwordOnce!}" placeholder="">
+            </div>
             <#if errors.passwordOnce??>
                 <span class="error-message">${errors.passwordOnce}</span>
             <#else>
@@ -98,9 +115,11 @@
             </#if>
         </div>
         <div class="form-group col">
-            <label for="registerPanelPasswordTwice" class="active">Password (Again)</label>
-            <input id="registerPanelPasswordTwice" type="password" class="form-control" name="passwordTwice"
-                    value="${passwordTwice!}">
+            <div class="form-group">
+                <label for="registerPanelPasswordTwice" class="form-label label">Password (Again)</label>
+                <input id="registerPanelPasswordTwice" type="password" class="form-control" name="passwordTwice"
+                        value="${passwordTwice!}" placeholder="">
+            </div>
             <#if errors.passwordTwice??>
                 <span class="error-message">${errors.passwordTwice}</span>
             <#else>
@@ -109,25 +128,29 @@
         </div>
     </div>
     <div class="row">
-        <div class="form-group col">
-            <label for="dateOfBirth" class="active">Date of Birth</label>
-            <input type="text" id="dateOfBirth" name="dateOfBirth" class="form-control" value="${(dateOfBirth)!}"
-                    placeholder="YYYY-MM-DD">
+        <div class=" col">
+            <div class="form-group">
+                <label for="dateOfBirth" class="form-label label">Date of Birth</label>
+                <input type="text" id="dateOfBirth" name="dateOfBirth" class="form-control" value="${(dateOfBirth)!}"
+                        placeholder="YYYY-MM-DD">
+            </div>
             <#if errors.dateOfBirth??>
                 <span class="error-message">${errors.dateOfBirth}</span>
             <#else>
                 <span class="form-text text-muted">Please enter your date of birth.</span>
             </#if>
         </div>
-        <div class="form-group col">
-            <label for="timezone">Timezone (${timezone})</label>
-            <select id="timezone" name="timezone" class="form-control">
-                <option value=""></option>
-                <#list timezones as tz>
-                    <option value="${tz.id}" <#if timezone?? && timezone == '${tz.id}'>selected</#if>>${tz.offset} -
-                        [${tz.id}] ${tz.displayName}</option>
-                </#list>
-            </select>
+        <div class=" col">
+            <div class="form-group">
+                <label for="timezone" class="form-label label">Timezone (${timezone})</label>
+                <select id="timezone" name="timezone" class="form-control">
+                    <option value=""></option>
+                    <#list timezones as tz>
+                        <option value="${tz.id}" <#if timezone?? && timezone == '${tz.id}'>selected</#if>>${tz.offset} -
+                            [${tz.id}] ${tz.displayName}</option>
+                    </#list>
+                </select>
+            </div>
             <#if errors.timezone??>
                 <span class="error-message">${errors.timezone}</span>
             <#else>
@@ -137,13 +160,15 @@
 
     </div>
     <div class="row">
-        <div class="form-group col">
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="acceptPrivacyPolicy"
-                        name="acceptPrivacyPolicy" <#if isAcceptPrivacyPolicy>checked</#if>>
-                <label class="form-check-label label" for="acceptPrivacyPolicy"> Accept Privacy Policy </label>
-                <a class="ml-3" href="/fixed/privacy"
-                        onclick="${testMode?string('alert(&quot;View privacy policy clicked&quot;); event.preventDefault();','')}">View</a>
+        <div class="col">
+            <div class="form-group">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="acceptPrivacyPolicy" placeholder=""
+                            name="acceptPrivacyPolicy" <#if isAcceptPrivacyPolicy>checked</#if>>
+                    <label class="form-check-label label" for="acceptPrivacyPolicy"> Accept Privacy Policy </label>
+                    <a class="ml-3" href="/fixed/privacy"
+                            onclick="${testMode?string('alert(&quot;View privacy policy clicked&quot;); event.preventDefault();','')}">View</a>
+                </div>
             </div>
             <#if errors.acceptPrivacyPolicy??>
                 <div class="error-message">${errors.acceptPrivacyPolicy}</div>
@@ -151,7 +176,7 @@
         </div>
     </div>
     <div class="row">
-        <div class="form-group col">
+        <div class="col">
             <button class="btn btn-primary float-end mx-1" type="submit" name="register"
                     onclick="${testMode?string('alert(&quot;Register clicked&quot;); event.preventDefault();','')}">
                 Register

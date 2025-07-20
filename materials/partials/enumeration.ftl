@@ -72,7 +72,7 @@
             <div id="${id}" class="form-group">
                 <label class="form-label label ${textualClasses} <#if hideLabel>sr-only</#if>" style="${textualStyles}"
                         for="${id}">${content}</label>
-                <select id="${id}" class="input-group ${sizeCls} form-control " multiple name="${name}"
+                <select id="${id}" class="${sizeCls} form-control " multiple name="${name}"
                         <#if disabled??>disabled</#if> >
                     <option value="" disabled>${prompt}</option>
                     <#list values as val>
@@ -92,7 +92,7 @@
             <div id="${id}" class="form-group">
                 <label class="form-label label ${textualClasses} <#if hideLabel>sr-only</#if>" style="${textualStyles}"
                         for="${id}">${content}</label>
-                <select id="${id}" class="input-group ${sizeCls} form-control" name="${name}"
+                <select id="${id}" class="${sizeCls} form-control" name="${name}"
                         <#if disabled??>disabled</#if>>
                     <option value="" disabled selected>${prompt}</option>
                     <#list values as val>

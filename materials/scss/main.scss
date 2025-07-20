@@ -72,15 +72,6 @@
   font-weight: bold;
 }
 
-$blue: #81b1cc;
-$gray: gray;
-$lightgray: lightgray;
-$rajah: #f7ce76;
-$pastel-mint: #cef0cc;
-$black: black;
-$white: white;
-$lavender: lavender;
-
 /*
   Font Tokenization.
   When these Materials are used during auto enrolment, the account will have valid values configured for replacement
@@ -134,24 +125,21 @@ $font-exhibit: /*£IF*/
   all of this can be dropped.
  */
 
+$lavender: lavender;
 $pastel-orange: #ff964f;
 $pastel-red: #ff6961;
 $opal: #a9c8c0;
 $green: #c1e1c1;
 
-$alternatingEven: $opal;
-$alternatingOdd: $green;
-$headerBackground: $lavender;
-
 $theme-colors: (
-        "default": $gray,
-        "primary": $blue,
-        "secondary": lightgray,
-        "success" : $green,
-        "warning" : $pastel-orange,
-        "info" : $opal,
-        "danger": $pastel-red,
-        "muted": $lightgray,
+        "default": gray,
+        "primary": #007bff,
+        "secondary": #6c757d,
+        "success" : #28a745,
+        "warning" : #ffc107,
+        "info" : #17a2b8,
+        "danger": #dc3545,
+        "muted": lightgray,
         "black": black,
         "white": white,
 );
@@ -160,6 +148,7 @@ $theme-colors: (
   --gray-light: lightgray;
   --white: white;
   --black: black;
+  accent-color: theme-color("primary");
 }
 
 $enable-gradients: true;
@@ -170,17 +159,21 @@ $enable-shadows: true;
 @import "node_modules/bootstrap/scss/root"; // Required
 @import "node_modules/bootstrap/scss/reboot"; // Required
 
+$alternatingEven: theme-color-level("primary", -8);
+$alternatingOdd: theme-color-level("primary", -10);
+$headerBackground: rgba(0, 0, 0, .03);
+
 @import "node_modules/bootstrap/scss/type";
 @import "node_modules/bootstrap/scss/images";
 @import "node_modules/bootstrap/scss/code";
 @import "node_modules/bootstrap/scss/grid";
 @import "node_modules/bootstrap/scss/tables";
 @import "forms";
-@import "node_modules/bootstrap/scss/buttons";
+@import "buttons";
 @import "node_modules/bootstrap/scss/transitions";
 @import "node_modules/bootstrap/scss/dropdown";
 @import "node_modules/bootstrap/scss/button-group";
-@import "node_modules/bootstrap/scss/input-group"; // Requires forms
+@import "input-group";
 @import "node_modules/bootstrap/scss/custom-forms";
 @import "node_modules/bootstrap/scss/nav";
 @import "node_modules/bootstrap/scss/navbar"; // Requires nav
@@ -207,6 +200,7 @@ $enable-shadows: true;
 @import "control";
 @import "panel";
 @import "explorer";
+@import "ripple";
 
 // Widgets - styling for individual widgets.
 @import "error-message";

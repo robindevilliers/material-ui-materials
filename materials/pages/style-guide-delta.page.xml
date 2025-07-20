@@ -203,7 +203,7 @@
                         cardinality="SINGLE_SELECT" style="RADIO_CHECKBOX" size="SMALL"
                         v="v1">
                         <textual>Colours</textual>
-                        <value label="Green" key="green" default="false" panel="false" v="v1"
+                        <value label="Small" key="small" default="false" panel="false" v="v1"
                             orientation="COLUMN"/>
                     </enumeration-input>
 
@@ -211,7 +211,7 @@
                         cardinality="SINGLE_SELECT" style="RADIO_CHECKBOX" size="MEDIUM"
                         v="v1">
                         <textual>Colours</textual>
-                        <value label="Green" key="green" default="false" panel="false" v="v1"
+                        <value label="Medium" key="medium" default="false" panel="false" v="v1"
                             orientation="COLUMN"/>
                     </enumeration-input>
 
@@ -219,7 +219,7 @@
                         cardinality="SINGLE_SELECT" style="RADIO_CHECKBOX" size="LARGE"
                         v="v1">
                         <textual>Colours</textual>
-                        <value label="Green" key="green" default="false" panel="false" v="v1"
+                        <value label="Large" key="large" default="false" panel="false" v="v1"
                             orientation="COLUMN"/>
                     </enumeration-input>
                 </div>

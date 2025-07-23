@@ -5,7 +5,7 @@
 <#elseif size == 'LARGE'>
     <#assign sizeCls = 'form-control-lg'>
 </#if>
-<div class="timezone-select-widget form-group ${classes}" style="${itemStyles}">
+<div class="timezone-select-widget ${classes}" style="${itemStyles}">
     <div class="form-group">
         <label class="form-label label ${textualClasses} <#if hideLabel>sr-only</#if>" style="${textualStyles}"
                 for="${id}">${content}</label>

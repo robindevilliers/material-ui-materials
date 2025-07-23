@@ -721,8 +721,8 @@ describe('engine', () => {
         }).retrieve()).toEqual("in");
 
         expect(expression.evaluate({
-            name: "connor"
-        }).retrieve()).toEqual("connor");
+            name: "harry"
+        }).retrieve()).toEqual("harry");
     });
 
     test('name?remove_ending("in")', () => {
@@ -733,8 +733,8 @@ describe('engine', () => {
         }).retrieve()).toEqual("rob");
 
         expect(expression.evaluate({
-            name: "connor"
-        }).retrieve()).toEqual("connor");
+            name: "harry"
+        }).retrieve()).toEqual("harry");
     });
 
     test('name?split(" ")', () => {
@@ -1052,8 +1052,8 @@ describe('engine', () => {
 
     test('seq?sort_by("name")', () => {
         expect(new ExpressionEngine().build('seq?sort_by("name")', 0, 0)!.evaluate({
-            seq: [{ name: 'rose' }, { name: 'robin' }, { name: 'connor' }, { name: 'leah' }]
-        }).retrieve()).toEqual([{ name: 'connor' }, { name: 'leah' }, { name: 'robin' }, { name: 'rose' }]);
+            seq: [{ name: 'markel' }, { name: 'robin' }, { name: 'harry' }, { name: 'sally' }]
+        }).retrieve()).toEqual([{ name: 'harry' }, { name: 'markel' }, { name: 'robin' }, { name: 'sally' }]);
     });
 
     test('seq?take_while(x -> x < 4)', () => {

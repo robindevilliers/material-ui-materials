@@ -14,35 +14,35 @@
             timezone="Europe/London"
             userData="{&quot;alpha&quot;: true, &quot;beta&quot;: false}"
         />
-        <fake-user username="connor"
+        <fake-user username="harry"
             groups=":public:authenticated:client:"
             title="Mr"
-            firstName="Connor"
-            lastName="de Villiers"
+            firstName="Harry"
+            lastName="Smith"
             dateOfBirth="2013-01-01"
-            email="connor@me.com"
+            email="harry@me.com"
             contactNumber="0123576"
             timezone="Europe/London"
             userData="{&quot;alpha&quot;: true, &quot;beta&quot;: false}"
         />
-        <fake-user username="rosedevilliers"
+        <fake-user username="markelarcher"
             groups=":public:authenticated:client:"
             title="Mrs"
-            firstName="Rose"
-            lastName="de Villiers"
+            firstName="Markel"
+            lastName="Archer"
             dateOfBirth="1911-01-2"
-            email="rose@me.com"
+            email="markel@me.com"
             contactNumber="0123576"
             timezone="Europe/London"
             userData="{&quot;alpha&quot;: true, &quot;beta&quot;: false}"
         />
-        <fake-user username="leah"
+        <fake-user username="sally"
             groups=":public:authenticated:staff:"
             title="Miss"
-            firstName="Leah"
-            lastName="de Villiers"
+            firstName="Sally"
+            lastName="Cooper"
             dateOfBirth="2015-01-01"
-            email="leah@me.com"
+            email="sally@me.com"
             contactNumber="9283646"
             timezone="Europe/London"
             userData="{&quot;alpha&quot;: true, &quot;beta&quot;: false}"
@@ -63,13 +63,13 @@
             dateTime="2024-01-30T18:31:32Z"
             kaseId="3"
             workflowId="public:workflow-one:1"
-            principal="connor"
+            principal="harry"
         />
         <fake-kase
             dateTime="2024-01-30T18:31:32Z"
             kaseId="5"
             workflowId="public:workflow-one:1"
-            principal="leah"
+            principal="sally"
         />
         <fake-message
             dateTime="2024-01-30T18:31:32Z"
@@ -87,7 +87,7 @@
             workflowId="public:workflow-two:1"
             group="public"
             queue="main-user"
-            principal="connor"
+            principal="harry"
         />
         <fake-message
             dateTime="2024-01-30T18:33:32Z"
@@ -96,7 +96,7 @@
             workflowId="public:workflow-one:1"
             group="public"
             queue="main-user"
-            principal="connor"
+            principal="harry"
         />
         <fake-message
             dateTime="2024-01-30T18:35:47Z"
@@ -105,7 +105,7 @@
             workflowId="public:workflow-two:1"
             group="public"
             queue="main-user"
-            principal="leah"
+            principal="sally"
         />
         <fake-message
             dateTime="2024-01-30T18:35:48Z"
@@ -114,7 +114,7 @@
             workflowId="public:workflow-one:1"
             group="public"
             queue="main-user"
-            principal="leah"
+            principal="sally"
         />
         <fake-wizard
             name="wizard-one"

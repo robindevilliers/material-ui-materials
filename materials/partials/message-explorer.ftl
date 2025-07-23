@@ -18,22 +18,20 @@
                             <option <#if queue == val.name>selected</#if> value="${val.name}">${val.title}</option>
                         </#list>
                     </select>
-
-                    <label class="sr-only" for="wizard">Wizard</label>
                     <div class="input-group-prepend">
                         <div class="input-group-text">Wizard</div>
                     </div>
+                    <label class="sr-only" for="wizard">Wizard</label>
                     <select class="form-control" id="wizard" name="mWizard">
                         <option value=""></option>
                         <#list wizards as val>
                             <option <#if wizard == val.id>selected</#if> value="${val.id}">${val.title}</option>
                         </#list>
                     </select>
-
-                    <label class="sr-only" for="workflow">Workflow</label>
                     <div class="input-group-prepend">
                         <div class="input-group-text">Workflow</div>
                     </div>
+                    <label class="sr-only" for="workflow">Workflow</label>
                     <select class="form-control" id="workflow" name="mWorkflow">
                         <option value=""></option>
                         <#list workflows as val>
@@ -46,26 +44,25 @@
                 <div class="spacer"></div>
 
                 <div class="input-group">
-
-                    <label class="sr-only" for="principal">Principal</label>
                     <div class="input-group-prepend">
                         <div class="input-group-text">Principal</div>
                     </div>
+                    <label class="sr-only" for="principal">Principal</label>
                     <input autocomplete="off" type="text" class="form-control" name="mPrincipal" id="principal"
                             value="${principal}" placeholder="Principal">
 
-
-                    <label class="sr-only" for="startDate">Start Date</label>
                     <div class="input-group-prepend">
                         <div class="input-group-text">Start Date</div>
                     </div>
+                    <label class="sr-only" for="startDate">Start Date</label>
                     <input autocomplete="off" type="date" class="form-control" name="mStartDate" id="startDate"
                             value="${startDate}" placeholder="Start Date">
 
-                    <label class="sr-only" for="endDate">End Date</label>
+
                     <div class="input-group-prepend">
                         <div class="input-group-text">End Date</div>
                     </div>
+                    <label class="sr-only" for="endDate">End Date</label>
                     <input autocomplete="off" type="date" class="form-control" name="mEndDate" id="endDate"
                             value="${endDate}" placeholder="End Date">
 

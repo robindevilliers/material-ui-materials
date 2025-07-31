@@ -30,7 +30,7 @@
             </div>
         </div>
         <div class="col s6">
-            <form action="${action}" method="post" enctype="application/x-www-form-urlencoded">
+            <form action="${action}" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8">
                 <div class="card">
                     <div class="card-header header">
                         2nd Stage Authentication

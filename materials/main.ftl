@@ -13,7 +13,7 @@
 <body>
 
 <div class="container">
-    <div class="minor-title-panel">
+    <header class="minor-title-panel">
         <div class="brand-outer">
             <div class="brand-inner">
                 <div class="text-primary title-text">MATERIALS_PAGE_TITLE_TOKEN</div>
@@ -29,17 +29,17 @@
                 </ul>
             </#if>
         </div>
-    </div>
-    ${body}
-
+    </header>
+    <main>
+        ${body}
+    </main>
+    <footer class="footer">
+        <hr>
+        <div class="footer-content">
+            <div>© All rights reserved</div>
+            <div>Web-Hosting powered by <a href="https://www.maximillian-workflows.com">Maximillian Workflows</a></div>
+        </div>
+    </footer>
 </div>
-
-<footer class="footer">
-    <hr>
-    <div class="footer-content">
-        <div>© All rights reserved</div>
-        <div>Web-Hosting powered by <a href="https://www.maximillian-workflows.com">Maximillian Workflows</a></div>
-    </div>
-</footer>
 </body>
 </html>

@@ -1,4 +1,4 @@
-<form action="${action}" method="post" enctype="application/x-www-form-urlencoded" class="register-panel-widget">
+<form action="${action}" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" class="register-panel-widget">
     <input type="hidden" name="_csrf" value="${_csrf}">
     <div class="row">
         <div class="form-group col">

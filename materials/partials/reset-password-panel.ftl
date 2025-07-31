@@ -1,5 +1,5 @@
 <form action="${action}" class="reset-password-panel" method="post" enctype="application/x-www-form-urlencoded"
-        style="${itemStyles}">
+        accept-charset="UTF-8" style="${itemStyles}">
     <input type="hidden" name="_csrf" value="${_csrf}">
     <div class="form-group">
         <label for="resetPasswordPasswordOnce" class="form-label label">Password</label>

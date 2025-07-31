@@ -5,7 +5,7 @@
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-            background-color: lavender;
+            background-color: white;
         }
 
         *, *::before, *::after {
@@ -13,7 +13,7 @@
         }
 
         a {
-            color: #81b1cc;
+            color: #1E90FF;
             text-decoration: none;
             background-color: transparent;
         }
@@ -38,8 +38,7 @@
             flex-direction: column;
             align-items: center;
             margin: unset;
-            color: #81b1cc !important;
-
+            color: black;
         }
 
         .header {
@@ -70,12 +69,12 @@
         }
 
         .email-hr {
-            border: 2px #81b1cc solid;
+            border: 2px darkgray solid;
             width: 100%;
         }
 
         hr {
-            border: 2px #81b1cc solid;
+            border: 2px darkgray solid;
             width: 100%;
         }
 

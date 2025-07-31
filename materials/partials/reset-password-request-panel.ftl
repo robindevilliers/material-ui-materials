@@ -1,4 +1,4 @@
-<form action="${action}" class="reset-password-request-panel" method="post" enctype="application/x-www-form-urlencoded">
+<form action="${action}" class="reset-password-request-panel" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8">
     <input type="hidden" name="_csrf" value="${_csrf}">
     <div class="form-group">
         <label for="resetPasswordEmail" class="form-label label">Email Address</label>

@@ -712,7 +712,7 @@
             </div>
 
             <select-panel reference="choice" type="STRING" required="false" cardinality="MULTIPLE_SELECT"
-                margin="0.25em 1em" v="v1">
+                margin="0.25em 1em" v="v1" error="There is some error.">
                 <textual>Select Card</textual>
                 <select-panel-item default="false" key="FIRST" v="v1">
                     <card type="page" page="style-guide-landing.html"

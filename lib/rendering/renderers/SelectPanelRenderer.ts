@@ -43,6 +43,7 @@ export default class SelectPanelRenderer implements Renderer {
         const classManager = new ClassManager(classMappings);
         flexItemSupport(data, classManager, element.attributes);
         data.classes = classManager.toString();
+        data.error = element.attributes.error;
 
 
         return renderingEngine.render('select-panel.ftl', data);

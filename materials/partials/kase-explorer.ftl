@@ -1,7 +1,7 @@
 <div id="${id}" class="explorer-widget explorer panel ${classes}" style="${itemStyles}">
     <div class="header panel-header">
 
-        <form class="form-inline explorer-query" method="get" action="${action}">
+        <form class="form-inline explorer-query" method="get" action="${action}" accept-charset="UTF-8">
             <div class="header-row">
                 <div class="explorer-header-title">
                     Case Lookup

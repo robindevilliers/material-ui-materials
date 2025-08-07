@@ -53,7 +53,7 @@
             </div>
             <div class="explorer-item-detail" id="${id}">
                 <#list values as val>
-                    <div id="explorer-item-${val.username}" class="explorer-item " data-display="flex"
+                    <div id="user-explorer-item-${val.username}" class="explorer-item " data-display="flex"
                             data-parent="#${id}">
                         <div class="explorer-title">${val.username}</div>
                         <div class="explorer-content">

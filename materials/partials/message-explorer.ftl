@@ -152,7 +152,7 @@
                             <input type="hidden" name="source" value="${source}">
                             <span class="explorer-button-line">
                                     <button class="btn btn-primary"
-                                            id="explorer-item-${val.workflowId}-${val.wizardId}"
+                                            id="message-explorer-item-${val.workflowId}-${val.wizardId}"
                                             onclick="${testMode?string('alert(&quot;Open clicked&quot;); event.preventDefault();','')}"
                                             type="submit">
                                         Open

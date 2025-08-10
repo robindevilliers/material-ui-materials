@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MATERIALS_PAGE_TITLE_TOKEN <#if title?? && title?has_content >:</#if> ${title}</title>
-
+    <#if noindex>
+        <meta name="robots" content="noindex">
+    </#if>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link href="/public/css/main.css" rel="stylesheet">
     <script src="/public/js/main.js"></script>

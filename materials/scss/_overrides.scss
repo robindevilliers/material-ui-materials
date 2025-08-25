@@ -1,0 +1,24 @@
+
+@function darken($color, $amount) {
+  @return 'darken(#{$color},#{$amount})';
+}
+
+@function red($color){
+  @return 'red(#{$color})';
+}
+
+@function rgba($args...){
+  @return 'rgba(#{$args})';
+}
+
+@function mix($color1, $color2, $weight){
+  @return 'mix(#{$color1},#{$color2},#{$weight})';
+}
+
+@function color-yiq($color, $dark: $yiq-text-dark, $light: $yiq-text-light) {
+  @return 'color-yiq(#{$color},#{$dark},#{$light})';
+}
+
+@function color-yiq-if($value, $if-true, $if-false) {
+  @return 'color-yiq-if(#{$value},#{$if-true},#{$if-false})';
+}

@@ -1,36 +1,24 @@
 
 body, .text-widget {
   font-family: $font-text;
-  /*£IF*/
-  /*£ELSE text-decoration: FONT_TEXT_DECORATION; £END*/
-  /*£IF*/
-  /*£ELSE font-size: FONT_TEXT_SIZE; £END*/
-  /*£IF*/
-  /*£ELSE font-style: FONT_TEXT_STYLE; £END*/
-  /*£IF*/
-  /*£ELSE font-weight: FONT_TEXT_WEIGHT; £END*/
+  text-decoration: FONT_TEXT_DECORATION;
+  font-size: FONT_TEXT_SIZE;
+  font-style: FONT_TEXT_STYLE;
+  font-weight: FONT_TEXT_WEIGHT;
 }
 
 .header, .title {
   font-family: $font-title-primary;
-  /*£IF*/
-  /*£ELSE text-decoration: FONT_TITLE_PRIMARY_DECORATION; £END*/
-  /*£IF*/
-  /*£ELSE font-size: FONT_TITLE_PRIMARY_SIZE; £END*/
-  /*£IF*/
-  /*£ELSE font-style: FONT_TITLE_PRIMARY_STYLE; £END*/
-  /*£IF*/
-  /*£ELSE font-weight: FONT_TITLE_PRIMARY_WEIGHT; £END*/
+  text-decoration: FONT_TITLE_PRIMARY_DECORATION;
+  font-size: FONT_TITLE_PRIMARY_SIZE;
+  font-style: FONT_TITLE_PRIMARY_STYLE;
+  font-weight: FONT_TITLE_PRIMARY_WEIGHT;
 }
 
 input, select, a, button, .error-message, label, .label, .no-content, .input-group {
   font-family: $font-label;
-  /*£IF*/
-  /*£ELSE text-decoration: FONT_LABEL_DECORATION; £END*/
-  /*£IF*/
-  /*£ELSE font-size: FONT_LABEL_SIZE; £END*/
-  /*£IF*/
-  /*£ELSE font-style: FONT_LABEL_STYLE; £END*/
-  /*£IF*/
-  /*£ELSE font-weight: FONT_LABEL_WEIGHT; £END*/
+  text-decoration: FONT_LABEL_DECORATION;
+  font-size: FONT_LABEL_SIZE;
+  font-style: FONT_LABEL_STYLE;
+  font-weight: FONT_LABEL_WEIGHT;
 }

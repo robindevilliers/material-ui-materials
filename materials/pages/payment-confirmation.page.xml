@@ -1,0 +1,18 @@
+<?schema version="2"?>
+<page defnVersion="v1" id="payment-confirmation" version="1" title="Payment Confirmation" description="The Payment Confirmation page." group="public">
+    <div v="v1" orientation="COLUMN">
+        <div v="v1" orientation="ROW" justifyContent="SPACE_AROUND">
+            <div v="v1" orientation="COLUMN" justifyContent="SPACE_AROUND" alignItems="CENTER">
+                <title size="LARGE" v="v1">
+                    <textual>Payment Confirmation</textual>
+                </title>
+                <text v="v1">
+                    <textual>
+                        The Payment Provider has handed back to us. Please return to your original browser
+                        where we will verify your transaction.
+                    </textual>
+                </text>
+            </div>
+        </div>
+    </div>
+</page>

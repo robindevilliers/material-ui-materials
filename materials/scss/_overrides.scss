@@ -1,17 +1,16 @@
-
 @function darken($color, $amount) {
   @return 'darken(#{$color},#{$amount})';
 }
 
-@function red($color){
+@function red($color) {
   @return 'red(#{$color})';
 }
 
-@function rgba($args...){
+@function rgba($args...) {
   @return 'rgba(#{$args})';
 }
 
-@function mix($color1, $color2, $weight){
+@function mix($color1, $color2, $weight) {
   @return 'mix(#{$color1},#{$color2},#{$weight})';
 }
 
@@ -21,4 +20,9 @@
 
 @function color-yiq-if($value, $if-true, $if-false) {
   @return 'color-yiq-if(#{$value},#{$if-true},#{$if-false})';
+}
+
+@function theme-color-level($color, $level) {
+  $value: theme-color($color);
+  @return 'theme-color-level(#{$value},#{$level})';
 }

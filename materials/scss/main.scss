@@ -1,24 +1,11 @@
 @import "functions"; //Required
 @import "node_modules/bootstrap/scss/variables"; // Required
 
-$enable-gradients: false;
-$enable-shadows: false;
+$enable-gradients: false; //turned off for easier tokenization.
+$enable-shadows: false; //turned off for easier tokenization.
 
 $gray: gray;
 $lavender: lavender;
-
-//$blue: #81b1cc;
-
-//$lightgray: lightgray;
-//$rajah: #f7ce76;
-//$pastel-mint: #cef0cc;
-//$black: black;
-//$white: white;
-
-//$pastel-orange: #ff964f;
-//$pastel-red: #ff6961;
-//$opal: #a9c8c0;
-//$green: #c1e1c1;
 
 :root {
   --gray-light: lightgray;
@@ -32,8 +19,7 @@ $lavender: lavender;
   These scss files produce css with tokens for the Maximillian platform to replace during page serving.
   This is so that Maximillian can do color and font overrides to support auto enrolment.
 
-  If you do not require auto-enrolment, or don't wish to support overrides, remove this and remove tokenize.js and
-  customize.js scripts.
+  If you do not require auto-enrolment, or don't wish to support overrides, remove this and remove the customize.js script.
  */
 
 $font-title-primary: FONT_TITLE_PRIMARY_FAMILY;
@@ -41,19 +27,6 @@ $font-title-secondary: FONT_TITLE_SECONDARY_FAMILY;
 $font-text: FONT_TEXT_FAMILY;
 $font-label: FONT_LABEL_FAMILY;
 $font-exhibit: FONT_EXHIBIT_FAMILY;
-
-//$theme-colors: (
-//        "default": $gray,
-//        "primary": $blue,
-//        "secondary": lightgray,
-//        "success" : $green,
-//        "warning" : $pastel-orange,
-//        "info" : $opal,
-//        "danger": $pastel-red,
-//        "muted": $lightgray,
-//        "black": black,
-//        "white": white,
-//);
 
 $theme-colors: (
         "default": COLOR_DEFAULT,
@@ -64,8 +37,8 @@ $theme-colors: (
         "info" : COLOR_INFO,
         "danger": COLOR_DANGER,
         "muted": COLOR_MUTED,
-        "black": black,
-        "white": white,
+        "black": COLOR_BLACK,
+        "white": COLOR_WHITE,
 );
 
 $alternatingEven: theme-color("info");

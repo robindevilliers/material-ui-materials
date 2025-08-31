@@ -5,7 +5,20 @@
     configured within settings.
  */
 
-const {mix, toHex, color, darken, rgba, darkenA, toRgba, colorA, colorYiq, rgb, colorYiqIf} = require("./utils");
+const {
+    mix,
+    toHex,
+    color,
+    darken,
+    rgba,
+    darkenA,
+    toRgba,
+    colorA,
+    colorYiq,
+    rgb,
+    colorYiqIf,
+    themeColorLevel
+} = require("./utils");
 
 const fs = require('fs');
 
@@ -37,6 +50,7 @@ fs.readFile(inputFile, 'utf8', function (err, data) {
     }
 
     data = data.replaceAll("\"rgba(black, 0)\"", toRgba(colorA("black", 0)));
+    data = data.replaceAll("\"rgba(#000, 0)\"", toRgba(colorA("black", 0)));
 
     data = replaceForThemeColor(data, 'COLOR_DEFAULT', themeColor('COLOR_DEFAULT'));
     data = replaceForThemeColor(data, 'COLOR_PRIMARY', themeColor('COLOR_PRIMARY'));
@@ -148,9 +162,9 @@ fs.readFile(inputFile, 'utf8', function (err, data) {
 
 function replaceForThemeColor(data, colorTheme, colorCode) {
     return data
-    .replaceAll(`"mix(white,${colorTheme},72%)"`, toHex(mix(color('white'), color(colorCode), 72)))
-    .replaceAll(`"mix(white,${colorTheme},48%)"`, toHex(mix(color('white'), color(colorCode), 48)))
-    .replaceAll(`"darken(mix(white,${colorTheme},72%),5%)"`, toHex(darken(mix(color('white'), color(colorCode), 72), 5)))
+    .replaceAll(`"mix(#fff,${colorTheme},72%)"`, toHex(mix(color('white'), color(colorCode), 72)))
+    .replaceAll(`"mix(#fff,${colorTheme},48%)"`, toHex(mix(color('white'), color(colorCode), 48)))
+    .replaceAll(`"darken(mix(#fff,${colorTheme},72%),5%)"`, toHex(darken(mix(color('white'), color(colorCode), 72), 5)))
     .replaceAll(`"color-yiq(${colorTheme},#212529,#fff)"`, toHex(colorYiq(color(colorCode), color('#212529'), color('#fff'))))
     .replaceAll(`"color-yiq(darken(${colorTheme},7.5%),#212529,#fff)"`, toHex(colorYiq(darken(color(colorCode), 7.5), color('#212529'), color('#fff'))))
     .replaceAll(`"darken(${colorTheme},7.5%)"`, toHex(darken(color(colorCode), 7.5)))
@@ -158,12 +172,20 @@ function replaceForThemeColor(data, colorTheme, colorCode) {
     .replaceAll(`"rgba(mix(color-yiq(${colorTheme},#212529,#fff),${colorTheme},15%), 0.5)"`, toRgba(mix(colorYiq(color(colorCode), color("#212529"), color("#fff")), color(colorCode), 15), 0.5))
     .replaceAll(`"color-yiq(darken(${colorTheme},10%),#212529,#fff)"`, toHex(colorYiq(darken(color(colorCode), 10), color("#212529"), color("#fff"))))
     .replaceAll(`"darken(${colorTheme},12.5%)"`, toHex(darken(color(colorCode), 12.5)))
-    .replaceAll(`"mix(black,${colorTheme},48%)"`, toHex(mix(color("black"), color(colorCode), 48)))
+    .replaceAll(`"mix(#000,${colorTheme},48%)"`, toHex(mix(color("black"), color(colorCode), 48)))
     .replaceAll(`"rgba(${colorTheme}, 0.5)"`, toRgba(color(colorCode), 0.5))
-    .replaceAll(`"mix(white,${colorTheme},80%)"`, toHex(mix(color("white"), color(colorCode), 80)))
-    .replaceAll(`"darken(mix(black,${colorTheme},48%),10%)"`, toHex(darken(mix(color("black"), color(colorCode), 48), 10)))
-    .replaceAll(`"color-yiq-if(${colorTheme},1,-3)"`, toHex(colorYiqIf(color(colorCode), 1, -3)))
+    .replaceAll(`"mix(#fff,${colorTheme},80%)"`, toHex(mix(color("white"), color(colorCode), 80)))
+    .replaceAll(`"darken(mix(#000,${colorTheme},48%),10%)"`, toHex(darken(mix(color("black"), color(colorCode), 48), 10)))
+    .replaceAll(`"theme-color-level(${colorTheme},color-yiq-if(${colorTheme},1,-3))"`, toHex(themeColorLevel(color(colorCode), colorYiqIf(color(colorCode), 1, -3))))
+
+    .replaceAll(`"theme-color-level(${colorTheme},-9)"`, toHex(themeColorLevel(color(colorCode), -9)))
+    .replaceAll(`"theme-color-level(${colorTheme},-6)"`, toHex(themeColorLevel(color(colorCode), -6)))
+    .replaceAll(`"darken(theme-color-level(${colorTheme},-9),5%)"`, toHex(darken(themeColorLevel(color(colorCode), -9), 5)))
+
+    .replaceAll(`"theme-color-level(${colorTheme},6)"`, toHex(themeColorLevel(color(colorCode), 6)))
+    .replaceAll(`"theme-color-level(${colorTheme},-10)"`, toHex(themeColorLevel(color(colorCode), -10)))
+    .replaceAll(`"darken(theme-color-level(${colorTheme},6),10%)"`, toHex(darken(themeColorLevel(color(colorCode), 6), 10)))
+
     .replaceAll(colorTheme, colorCode)
     ;
-
 }

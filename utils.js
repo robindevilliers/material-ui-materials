@@ -8,7 +8,22 @@ const namedColors = {
     lavender: '#E6E6FA'
 };
 
-module.exports = {mix, toHex, color, darken, fromHsl, toHsl, rgba, rgb, darkenA, toRgba, colorA, colorYiq, colorYiqIf}
+module.exports = {
+    mix,
+    toHex,
+    color,
+    darken,
+    fromHsl,
+    toHsl,
+    rgba,
+    rgb,
+    darkenA,
+    toRgba,
+    colorA,
+    colorYiq,
+    colorYiqIf,
+    themeColorLevel
+}
 
 function rgb(r, g, b) {
     return {
@@ -65,9 +80,14 @@ function color(value) {
 }
 
 function toHex(color) {
-    const rh = Math.round(color.red).toString(16);
-    const gh = Math.round(color.green).toString(16);
-    const bh = Math.round(color.blue).toString(16);
+
+    function format(val) {
+        return ('00' + Math.round(val).toString(16)).slice(-2);
+    }
+
+    const rh = format(color.red);
+    const gh = format(color.green);
+    const bh = format(color.blue);
 
     return "#" + rh + gh + bh;
 }
@@ -223,9 +243,9 @@ function colorYiq(color, dark, light) {
 
 function colorYiqIf(color, trueValue, falseValue) {
     if ((color.red * 299 + color.green * 587 + color.blue * 114) * 0.001 >= 150) {
-        return themeColorLevel(color, trueValue);
+        return trueValue;
     } else {
-        return themeColorLevel(color, falseValue);
+        return falseValue;
     }
 }
 

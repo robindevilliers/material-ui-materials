@@ -11,7 +11,7 @@
         <div class="form-group col">
             <div class="form-group">
                 <label for="registerPanelUsername" class="form-label label">Username</label>
-                <input class="form-control" id="registerPanelUsername" type="text" name="username" placeholder=""
+                <input class="form-control" id="registerPanelUsername" type="text" name="username" placeholder=" "
                         value="${(username)!}">
             </div>
             <#if errors.username??>
@@ -50,7 +50,7 @@
             <div class="form-group">
                 <label for="firstName" class="form-label label">First Name</label>
                 <input id="firstName" type="text" name="firstName" class="form-control" value="${(firstName)!}"
-                        placeholder="">
+                        placeholder=" ">
             </div>
             <#if errors.firstName??>
                 <span class="error-message">${errors.firstName}</span>
@@ -63,7 +63,7 @@
             <div class="form-group">
                 <label for="lastName" class="form-label label">Last Name</label>
                 <input id="lastName" type="text" name="lastName" class="form-control" value="${(lastName)!}"
-                        placeholder="">
+                        placeholder=" ">
             </div>
             <#if errors.lastName??>
                 <span class="error-message">${errors.lastName}</span>
@@ -78,7 +78,7 @@
             <div class="form-group">
                 <label for="registerPanelEmail" class="form-label label">Email Address</label>
                 <input id="registerPanelEmail" type="text" name="email" class="form-control" value="${(email)!}"
-                        placeholder="">
+                        placeholder=" ">
             </div>
             <#if errors.email??>
                 <span class="error-message">${errors.email}</span>
@@ -91,7 +91,7 @@
             <div class="form-group">
                 <label for="contactNumber" class="form-label label">Contact Number</label>
                 <input id="contactNumber" type="text" class="form-control" name="contactNumber"
-                        value="${(contactNumber)!}" placeholder="">
+                        value="${(contactNumber)!}" placeholder=" ">
             </div>
             <#if errors.contactNumber??>
                 <span class="error-message">${errors.contactNumber}</span>
@@ -106,7 +106,7 @@
             <div class="form-group">
                 <label for="registerPanelPasswordOnce" class="form-label label">Password</label>
                 <input id="registerPanelPasswordOnce" type="password" class="form-control" name="passwordOnce"
-                        value="${passwordOnce!}" placeholder="">
+                        value="${passwordOnce!}" placeholder=" ">
             </div>
             <#if errors.passwordOnce??>
                 <span class="error-message">${errors.passwordOnce}</span>
@@ -118,7 +118,7 @@
             <div class="form-group">
                 <label for="registerPanelPasswordTwice" class="form-label label">Password (Again)</label>
                 <input id="registerPanelPasswordTwice" type="password" class="form-control" name="passwordTwice"
-                        value="${passwordTwice!}" placeholder="">
+                        value="${passwordTwice!}" placeholder=" ">
             </div>
             <#if errors.passwordTwice??>
                 <span class="error-message">${errors.passwordTwice}</span>
@@ -163,7 +163,7 @@
         <div class="col">
             <div class="form-group">
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="acceptPrivacyPolicy" placeholder=""
+                    <input class="form-check-input" type="checkbox" id="acceptPrivacyPolicy" placeholder=" "
                             name="acceptPrivacyPolicy" <#if isAcceptPrivacyPolicy>checked</#if>>
                     <label class="form-check-label label" for="acceptPrivacyPolicy"> Accept Privacy Policy </label>
                     <a class="ml-3" href="/fixed/privacy"

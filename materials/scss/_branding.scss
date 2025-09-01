@@ -41,17 +41,15 @@
 }
 
 .brand-outer {
-  border: 5px theme-color("primary") solid;
-  background: theme-color("primary");
-  border-radius: 25px;
   padding: 5px;
 
   .brand-inner {
-    border-radius: 10px;
+    border-radius: .25em;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0.5em 1em;
+    border: 1px solid rgba(0, 0, 0, .125);
     background-color: $headerBackground;
 
     .title-text {

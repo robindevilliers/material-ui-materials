@@ -12,14 +12,14 @@
                     <div class="form-group">
                         <label for="loginPanelUsername" class="form-label label">Username</label>
                         <input type="text" name="username" class="form-control" id="loginPanelUsername"
-                                autocomplete="username" placeholder="" value="${(username)!}" <#if disableUsername>disabled</#if>>
-                        <#if errors.username??>
-                            <span class="error-message">${errors.username}</span>
-                        </#if>
+                                autocomplete="username" placeholder=" " value="${(username)!}" <#if disableUsername>disabled</#if>>
                         <#if disableUsername>
                             <input type="hidden" name="username" value="${(username)!}"/>
                         </#if>
                     </div>
+                    <#if errors.username??>
+                        <span class="error-message">${errors.username}</span>
+                    </#if>
                 </div>
             </div>
             <div class="row">
@@ -28,11 +28,11 @@
                         <label for="loginPanelPassword" class="form-label label">Password</label>
                         <input type="password" name="password" class="form-control" id="loginPanelPassword"
                                 autocomplete="current-password"
-                                placeholder="">
-                        <#if errors.password??>
-                            <span class="error-message">${errors.password}</span>
-                        </#if>
+                                placeholder=" ">
                     </div>
+                    <#if errors.password??>
+                        <span class="error-message">${errors.password}</span>
+                    </#if>
                 </div>
             </div>
             <#if enablePrivacyPolicyAgreementOnLogin>

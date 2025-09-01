@@ -19,6 +19,7 @@
 
   .panel-body {
     background-color: theme-color("primary") !important;
+    color: color-yiq(theme-color("primary")) !important;
   }
 
   .wip-tray-body {

@@ -2,7 +2,7 @@
     <input type="hidden" name="_csrf" value="${_csrf}">
     <div class="form-group">
         <label for="resetPasswordEmail" class="form-label label">Email Address</label>
-        <input id="resetPasswordEmail" type="text" name="email" class="form-control" value="${(email)!}" placeholder="">
+        <input id="resetPasswordEmail" type="text" name="email" class="form-control" value="${(email)!}" placeholder=" ">
     </div>
     <#if errors.email??>
         <span class="error-message">${errors.email}</span>

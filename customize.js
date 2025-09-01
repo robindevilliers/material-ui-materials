@@ -25,13 +25,13 @@ const path = require('path');
 
 const themeColorMappings = {
     "COLOR_DEFAULT": "#808080",
-    "COLOR_PRIMARY": "#81b1cc",
-    "COLOR_SUCCESS": "#c1e1c1",
-    "COLOR_WARNING": "#ff964f",
-    "COLOR_DANGER": "#ff6961",
-    "COLOR_INFO": "#a9c8c0",
+    "COLOR_PRIMARY": "#007bff",
+    "COLOR_SUCCESS": "#28a745",
+    "COLOR_WARNING": "#ffc107",
+    "COLOR_DANGER": "#dc3545",
+    "COLOR_INFO": "#17a2b8",
     "COLOR_MUTED": "#D3D3D3",
-    "COLOR_SECONDARY": "#D3D3D3",
+    "COLOR_SECONDARY": "#6c757d",
 };
 
 function themeColor(name) {
@@ -87,6 +87,11 @@ fs.readFile(inputFile, 'utf8', function (err, data) {
 
     .replaceAll("\"color-yiq(#a9c8c0,#212529,#fff)\"", toHex(colorYiq(color("#a9c8c0"), color("#212529"), color("#fff"))))
     .replaceAll("\"color-yiq(#c1e1c1,#212529,#fff)\"", toHex(colorYiq(color("#c1e1c1"), color("#212529"), color("#fff"))))
+
+    .replaceAll("\"color-yiq(theme-color-level(#007bff,-10),#212529,#fff)\"", toHex(colorYiq(themeColorLevel(color("#007bff"), -10), color("#212529"), color("#fff"))))
+    .replaceAll("\"color-yiq(theme-color-level(#007bff,-8),#212529,#fff)\"", toHex(colorYiq(themeColorLevel(color("#007bff"), -8), color("#212529"), color("#fff"))))
+    .replaceAll("\"theme-color-level(#007bff,-8)\"", toHex(themeColorLevel(color("#007bff"),-8)))
+    .replaceAll("\"theme-color-level(#007bff,-10)\"", toHex(themeColorLevel(color("#007bff"),-10)))
 
     //color picker mappings
     .replaceAll("\"rgba(64, 87, 109, 0.07)\"", toRgba(rgba(64, 87, 109, 0.07)))

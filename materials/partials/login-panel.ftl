@@ -11,7 +11,7 @@
                 <div class="col mb-3 ">
                     <div class="form-group">
                         <label for="loginPanelUsername" class="form-label label">Username</label>
-                        <input type="text" name="username" class="form-control" id="loginPanelUsername" placeholder="">
+                        <input type="text" name="username" class="form-control" id="loginPanelUsername" placeholder=" ">
                     </div>
                     <#if errors.username??>
                         <div class="error-message">${errors.username}</div>
@@ -23,7 +23,7 @@
                     <div class="form-group">
                         <label for="loginPanelPassword" class="form-label label">Password</label>
                         <input type="password" name="password" class="form-control" id="loginPanelPassword"
-                                placeholder="">
+                                placeholder=" ">
                     </div>
                     <#if errors.password??>
                         <div class="error-message">${errors.password}</div>

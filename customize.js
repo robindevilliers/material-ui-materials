@@ -26,13 +26,13 @@ const path = require('path');
 
 const themeColorMappings = {
     "COLOR_DEFAULT": "#808080",
-    "COLOR_PRIMARY": "#81b1cc",
-    "COLOR_SUCCESS": "#c1e1c1",
-    "COLOR_WARNING": "#ff964f",
-    "COLOR_DANGER": "#ff6961",
-    "COLOR_INFO": "#a9c8c0",
+    "COLOR_PRIMARY": "#007bff",
+    "COLOR_SUCCESS": "#28a745",
+    "COLOR_WARNING": "#ffc107",
+    "COLOR_DANGER": "#dc3545",
+    "COLOR_INFO": "#17a2b8",
     "COLOR_MUTED": "#D3D3D3",
-    "COLOR_SECONDARY": "#D3D3D3",
+    "COLOR_SECONDARY": "#6c757d",
 };
 
 function themeColor(name) {
@@ -245,6 +245,11 @@ function replaceForThemeColor(data, colorTheme, colorCode) {
     .replaceAll(`"theme-color-level(${colorTheme},-9)"`, toHex(themeColorLevel(color(colorCode), -9)))
     .replaceAll(`"theme-color-level(${colorTheme},-6)"`, toHex(themeColorLevel(color(colorCode), -6)))
     .replaceAll(`"darken(theme-color-level(${colorTheme},-9),5%)"`, toHex(darken(themeColorLevel(color(colorCode), -9), 5)))
+
+    .replaceAll(`"color-yiq(theme-color-level(${colorTheme},-10),#212529,#fff)"`, toHex(colorYiq(themeColorLevel(color(colorCode), -10), color("#212529"), color("#fff"))))
+    .replaceAll(`"color-yiq(theme-color-level(${colorTheme},-8),#212529,#fff)\"`, toHex(colorYiq(themeColorLevel(color(colorCode), -8), color("#212529"), color("#fff"))))
+    .replaceAll(`"theme-color-level(${colorTheme},-8)\"`, toHex(themeColorLevel(color(colorCode), -8)))
+    .replaceAll(`"theme-color-level(${colorTheme},-10)\"`, toHex(themeColorLevel(color(colorCode), -10)))
 
     .replaceAll(`"theme-color-level(${colorTheme},6)"`, toHex(themeColorLevel(color(colorCode), 6)))
     .replaceAll(`"theme-color-level(${colorTheme},-10)"`, toHex(themeColorLevel(color(colorCode), -10)))

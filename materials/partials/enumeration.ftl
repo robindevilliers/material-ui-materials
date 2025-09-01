@@ -87,7 +87,6 @@
             <#list values as val>
                 ${val.panel}
             </#list>
-
         <#elseif cardinality == "SINGLE_SELECT">
             <div id="${id}" class="form-group">
                 <label class="form-label label ${textualClasses} <#if hideLabel>sr-only</#if>" style="${textualStyles}"
@@ -107,7 +106,6 @@
             <#list values as val>
                 ${val.panel}
             </#list>
-
         </#if>
     </#if>
 </div>

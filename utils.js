@@ -251,10 +251,5 @@ function colorYiqIf(color, trueValue, falseValue) {
 
 function themeColorLevel(colorCode, level) {
     const base = level > 0 ? color('black') : color('white');
-    return mix(base, colorCode, level * 8)
+    return mix(base, colorCode, Math.abs(level) * 8)
 }
-
-
-
-
-

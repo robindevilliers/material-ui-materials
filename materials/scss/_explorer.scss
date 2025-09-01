@@ -103,10 +103,12 @@
 
         &:nth-child(even) {
           background: $alternatingOdd;
+          color: color-yiq($alternatingOdd);
         }
 
         &:nth-child(odd) {
           background: $alternatingEven;
+          color: color-yiq($alternatingEven);
         }
 
         .explorer-line {

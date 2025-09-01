@@ -4,7 +4,7 @@
     <input type="hidden" name="_checkpoint" value="${_checkpoint}">
     <div class="form-group">
         <label for="resetPasswordEmail" class="form-label label">Email Address</label>
-        <input id="resetPasswordEmail" type="text" name="email" class="form-control" value="${(email)!}" placeholder="">
+        <input id="resetPasswordEmail" type="text" name="email" class="form-control" value="${(email)!}" placeholder=" ">
         <#if errors.email??>
             <span class="error-message">${errors.email}</span>
         <#else>

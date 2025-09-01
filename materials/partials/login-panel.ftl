@@ -12,7 +12,7 @@
                     <div class="form-group">
                         <label for="loginPanelUsername" class="form-label label">Username</label>
                         <input type="text" name="username" class="form-control" id="loginPanelUsername"
-                                autocomplete="username" placeholder="">
+                                autocomplete="username" placeholder=" ">
                         <#if errors.username??>
                             <span class="error-message">${errors.username}</span>
                         </#if>
@@ -25,7 +25,7 @@
                         <label for="loginPanelPassword" class="form-label label">Password</label>
                         <input type="password" name="password" class="form-control" id="loginPanelPassword"
                                 autocomplete="current-password"
-                                placeholder="">
+                                placeholder=" ">
                         <#if errors.password??>
                             <span class="error-message">${errors.password}</span>
                         </#if>

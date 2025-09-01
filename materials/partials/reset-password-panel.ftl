@@ -4,7 +4,7 @@
     <input type="hidden" name="_checkpoint" value="${_checkpoint}">
     <div class="form-group">
         <label for="resetPasswordPasswordOnce" class="form-label label">Password</label>
-        <input id="resetPasswordPasswordOnce" type="password" class="form-control" name="passwordOnce" placeholder="">
+        <input id="resetPasswordPasswordOnce" type="password" class="form-control" name="passwordOnce" placeholder=" ">
         <#if errors.passwordOnce??>
             <span class="error-message">${errors.passwordOnce}</span>
         <#else>
@@ -13,7 +13,7 @@
     </div>
     <div class="form-group ">
         <label for="resetPasswordPasswordTwice" class="form-label label">Password (Again)</label>
-        <input id="resetPasswordPasswordTwice" type="password" class="form-control" name="passwordTwice" placeholder="">
+        <input id="resetPasswordPasswordTwice" type="password" class="form-control" name="passwordTwice" placeholder=" ">
         <#if errors.passwordTwice??>
             <span class="error-message">${errors.passwordTwice}</span>
         <#else>

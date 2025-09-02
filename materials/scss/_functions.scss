@@ -1,12 +1,11 @@
 @import "node_modules/bootstrap/scss/functions";
 
-@function color-yiq-if($color, $if-true, $if-false) {
-  $value: theme-color($color);
+@function color-yiq-if($value, $if-true, $if-false) {
   $r: red($value);
   $g: green($value);
   $b: blue($value);
 
   $yiq: (($r * 299) + ($g * 587) + ($b * 114)) * .001;
 
-  @return theme-color-level($color, if($yiq >= $yiq-contrasted-threshold, $if-true, $if-false));
+  @return if($yiq >= $yiq-contrasted-threshold, $if-true, $if-false);
 }

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "clean": "rm -rf dist www tmp",
+    "clean": "rm -rf dist www",
     "compile": "webpack --config webpack.config.cjs",
     "test": "jest",
     "lint": "eslint --ext js,ts lib/",

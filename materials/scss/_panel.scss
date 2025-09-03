@@ -87,7 +87,7 @@ $panel-inner-border-radius: 19px;
 
 .panel-footer {
   @extend .card-footer;
-  background-color: #e6e6fa;
-  border-top: 5px #81b1cc solid;
-  color: #212529;
+  background-color: $headerBackground;
+  color: color-yiq($headerBackground);
+  border-top: 5px theme-color("primary") solid;
 }

@@ -21,6 +21,7 @@ const {
 } = require("./utils");
 
 const fs = require('fs');
+const path = require('path');
 
 const themeColorMappings = {
     "COLOR_DEFAULT": "#808080",
@@ -37,12 +38,12 @@ function themeColor(name) {
     return themeColorMappings[name];
 }
 
-const file = 'materials/public/css/main.css';
-
 console.log('> running customization');
 
 const inputFile = process.argv[2];
 const outputFile = process.argv[3];
+
+fs.mkdirSync(path.dirname(outputFile), { recursive: true });
 
 fs.readFile(inputFile, 'utf8', function (err, data) {
     if (err) {

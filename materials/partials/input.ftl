@@ -27,7 +27,7 @@
             <input id="${id}" class="form-control ${sizeCls} validate"
                     type="<#if type == "PASSWORD">password<#else>text</#if>"
                     <#if maxlength??>maxlength="${maxlength}"</#if> <#if disabled??>disabled</#if> name="${name}"
-                    value="${value!}"
+                    <#if type == "INPUT">value="${value!}"</#if>
             />
             <#if (error)??>
                 <span id="error-message-${name}" class="error-message">${error}</span>

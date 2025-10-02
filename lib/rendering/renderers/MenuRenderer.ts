@@ -52,7 +52,7 @@ export default class MenuRenderer implements Renderer {
         const classManager = new ClassManager(classMappings);
         classManager.add(expand);
         flexItemSupport(data, classManager, element.attributes);
-        flexContainerSupport(data, classManager, element.attributes);
+        flexContainerSupport(data, classManager, element);
         data.classes = classManager.toString();
 
         return renderingEngine.render('menu.ftl', data);

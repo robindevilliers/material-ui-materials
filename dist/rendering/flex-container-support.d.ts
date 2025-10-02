@@ -1,2 +1,3 @@
 import ClassManager from './ClassManager';
-export declare function flexContainerSupport(data: Record<string, any>, classManager: ClassManager, attributes: Record<string, string>): void;
+import { Element } from "../xml-parser";
+export declare function flexContainerSupport(data: Record<string, any>, classManager: ClassManager, element: Element): void;

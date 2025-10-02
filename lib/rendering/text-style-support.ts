@@ -10,22 +10,27 @@ export function textStyle(data: Record<string, any>, attributes: Record<string, 
 
     const classManager = new ClassManager(classMappings);
 
-    if (attributes.font) {
-        if (attributes.font === 'TITLE_PRIMARY') {
+    //font package is not really implemented or supported in canned pages.
+    if (attributes.fontPackage) {
+        if (attributes.fontPackage === 'TITLE_PRIMARY') {
             classManager.add("font-title-primary");
-        } else if (attributes.font === 'TITLE_SECONDARY') {
+        } else if (attributes.fontPackage === 'TITLE_SECONDARY') {
             classManager.add("font-title-secondary");
-        } else if (attributes.font === 'TEXT_PRIMARY') {
+        } else if (attributes.fontPackage === 'TEXT_PRIMARY') {
             classManager.add("font-text-primary");
-        } else if (attributes.font === 'TEXT_SECONDARY') {
+        } else if (attributes.fontPackage === 'TEXT_SECONDARY') {
             classManager.add("font-text-secondary");
-        } else if (attributes.font === 'EXHIBIT') {
+        } else if (attributes.fontPackage === 'EXHIBIT') {
             classManager.add("font-exhibit");
-        } else if (attributes.font === 'PRIMARY') {
+        } else if (attributes.fontPackage === 'PRIMARY') {
             classManager.add("font-primary");
-        } else if (attributes.font === 'SECONDARY') {
+        } else if (attributes.fontPackage === 'SECONDARY') {
             classManager.add("font-secondary");
         }
+    }
+
+    if (attributes.fontFamily) {
+        styles['font-family'] = attributes.fontFamily.toLowerCase();
     }
 
     if (attributes.textAlign) {
@@ -78,5 +83,5 @@ export function textStyleSupport(data: Record<string, any>, element: Element, cl
         throw new RenderError("Textual composer element does not contain a textual element: " + element.name);
     }
 
-    textStyle(data, element.attributes, classMappings);
+    textStyle(data, textual.attributes, classMappings);
 }

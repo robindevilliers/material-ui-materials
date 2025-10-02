@@ -1,65 +1,80 @@
 import { StringBuffer } from '../utilities/StringBuffer';
 import ClassManager from './ClassManager';
+import { Element, isElement } from "../xml-parser";
 
 
-export function flexContainerSupport(data: Record<string, any>, classManager: ClassManager, attributes: Record<string, string>) {
+export function flexContainerSupport(data: Record<string, any>, classManager: ClassManager, element: Element) {
 
     const styles: Record<string, string> = {
         display: 'flex'
     };
 
-    if (attributes.padding) {
-        styles['padding'] = attributes.padding;
+    const bootstrapSizingMode = element.children.find(child => {
+        return isElement(child) && (
+            child.attributes.columnWidth ||
+            child.attributes.columnWidthExtraSmall ||
+            child.attributes.columnWidthSmall ||
+            child.attributes.columnWidthMedium ||
+            child.attributes.columnWidthLarge ||
+            child.attributes.columnWidthExtraLarge)
+    });
+
+    if (bootstrapSizingMode) {
+        classManager.add("row");
     }
 
-    if (attributes.orientation) {
-        styles['flex-direction'] = attributes.orientation.toLowerCase().replaceAll("_", "-");
+    if (element.attributes.padding) {
+        styles['padding'] = element.attributes.padding;
     }
 
-    if (attributes.justifyContent) {
-        if (attributes.justifyContent === 'START') {
+    if (element.attributes.orientation) {
+        styles['flex-direction'] = element.attributes.orientation.toLowerCase().replaceAll("_", "-");
+    }
+
+    if (element.attributes.justifyContent) {
+        if (element.attributes.justifyContent === 'START') {
             styles['justify-content'] = 'flex-start';
-        } else if (attributes.justifyContent === 'END') {
+        } else if (element.attributes.justifyContent === 'END') {
             styles['justify-content'] = 'flex-end';
-        } else if (attributes.justifyContent === 'CENTER') {
+        } else if (element.attributes.justifyContent === 'CENTER') {
             styles['justify-content'] = 'center';
-        } else if (attributes.justifyContent === 'SPACE_BETWEEN') {
+        } else if (element.attributes.justifyContent === 'SPACE_BETWEEN') {
             styles['justify-content'] = 'space-between';
-        } else if (attributes.justifyContent === 'SPACE_AROUND') {
+        } else if (element.attributes.justifyContent === 'SPACE_AROUND') {
             styles['justify-content'] = 'space-around';
         }
     }
 
-    if (attributes.alignItems) {
-        if (attributes.alignItems === 'START') {
+    if (element.attributes.alignItems) {
+        if (element.attributes.alignItems === 'START') {
             styles['align-items'] = 'flex-start';
-        } else if (attributes.alignItems === 'END') {
+        } else if (element.attributes.alignItems === 'END') {
             styles['align-items'] = 'flex-end';
-        } else if (attributes.alignItems === 'CENTER') {
+        } else if (element.attributes.alignItems === 'CENTER') {
             styles['align-items'] = 'center';
-        } else if (attributes.alignItems === 'BASELINE') {
+        } else if (element.attributes.alignItems === 'BASELINE') {
             styles['align-items'] = 'baseline';
-        } else if (attributes.alignItems === 'STRETCH') {
+        } else if (element.attributes.alignItems === 'STRETCH') {
             styles['align-items'] = 'stretch';
         }
     }
 
-    if (attributes.alignContent) {
-        if (attributes.alignContent === 'START') {
+    if (element.attributes.alignContent) {
+        if (element.attributes.alignContent === 'START') {
             styles['align-content'] = 'flex-start';
-        } else if (attributes.alignContent === 'END') {
+        } else if (element.attributes.alignContent === 'END') {
             styles['align-content'] = 'flex-end';
-        } else if (attributes.alignContent === 'CENTER') {
+        } else if (element.attributes.alignContent === 'CENTER') {
             styles['align-content'] = 'center';
-        } else if (attributes.alignContent === 'BASELINE') {
+        } else if (element.attributes.alignContent === 'BASELINE') {
             styles['align-content'] = 'baseline';
-        } else if (attributes.alignContent === 'STRETCH') {
+        } else if (element.attributes.alignContent === 'STRETCH') {
             styles['align-content'] = 'stretch';
         }
     }
 
-    if (attributes.wrap) {
-        styles['flex-wrap'] = attributes.wrap.toLowerCase().replaceAll("_", "-");
+    if (element.attributes.wrap) {
+        styles['flex-wrap'] = element.attributes.wrap.toLowerCase().replaceAll("_", "-");
     }
 
     const buffer = new StringBuffer();

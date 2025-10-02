@@ -25,7 +25,7 @@ export default class InsetTextRenderer implements Renderer {
         const classManager = new ClassManager(classMappings);
         classManager.append(element.attributes.flavour, 'inset-text-', 'inset-text-default');
         flexItemSupport(data, classManager, element.attributes);
-        flexContainerSupport(data, classManager, element.attributes);
+        flexContainerSupport(data, classManager, element);
         data.classes = classManager.toString();
 
         return renderingEngine.render('inset-text.ftl', data);

@@ -40,7 +40,7 @@ export default class AccordionItemRenderer implements Renderer {
 
         const classManager = new ClassManager(classMappings);
         classManager.append(element.attributes.backgroundFlavour, 'bg-', '');
-        flexContainerSupport(data, classManager, element.attributes);
+        flexContainerSupport(data, classManager, element);
         data.classes = classManager.toString();
 
         return renderingEngine.render('accordion-item.ftl', data);

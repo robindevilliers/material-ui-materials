@@ -24,7 +24,7 @@ export default class JumbotronRenderer implements Renderer {
 
         const classManager = new ClassManager(classMappings);
         flexItemSupport(data, classManager, element.attributes);
-        flexContainerSupport(data, classManager, element.attributes);
+        flexContainerSupport(data, classManager, element);
         data.classes = classManager.toString();
 
         return renderingEngine.render('jumbotron.ftl', data);

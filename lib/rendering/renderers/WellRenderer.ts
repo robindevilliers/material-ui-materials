@@ -24,7 +24,7 @@ export default class WellRenderer implements Renderer {
         const classManager = new ClassManager(classMappings);
         classManager.append(element.attributes.flavour, 'well-', 'well-default');
         flexItemSupport(data, classManager, element.attributes);
-        flexContainerSupport(data, classManager, element.attributes);
+        flexContainerSupport(data, classManager, element);
         data.classes = classManager.toString();
 
         return renderingEngine.render('well.ftl', data);

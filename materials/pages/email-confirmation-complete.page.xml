@@ -2,9 +2,11 @@
 <page defnVersion="v1" id="emailConfirmationComplete" title="Email Confirmation Complete" group="public">
     <div v="v1" orientation="COLUMN" justifyContent="SPACE_AROUND" alignItems="STRETCH">
         <div v="v1" orientation="ROW" justifyContent="SPACE_AROUND" alignItems="CENTER" padding="1em">
-            <image v="v1" src="logo.svg" width="200px" height="200px"
-                margin="0 5em 2em 0"/>
-            <div v="v1" orientation="COLUMN" justifyContent="SPACE_AROUND" alignItems="CENTER">
+            <div v="v1" columnWidth="12" columnWidthMedium="4" justifyContent="CENTER">
+                <image v="v1" src="logo.svg" width="200px" height="200px"/>
+            </div>
+            <div v="v1" columnWidth="12" orientation="COLUMN" justifyContent="SPACE_AROUND" alignItems="CENTER"
+                columnWidthMedium="8">
                 <title size="LARGE" v="v1">
                     <textual>Registration Complete</textual>
                 </title>

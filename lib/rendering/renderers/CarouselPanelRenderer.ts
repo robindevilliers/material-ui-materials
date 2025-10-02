@@ -23,7 +23,7 @@ export default class CarouselPanelRenderer implements Renderer {
         data.carouselId = parent?.attributes.id;
 
         const classManager = new ClassManager(classMappings);
-        flexContainerSupport(data, classManager, element.attributes);
+        flexContainerSupport(data, classManager, element);
         data.classes = classManager.toString();
 
         return renderingEngine.render('carousel-panel.ftl', data);

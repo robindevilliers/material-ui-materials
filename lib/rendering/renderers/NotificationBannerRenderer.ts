@@ -28,7 +28,7 @@ export default class NotificationBannerRenderer implements Renderer {
         const classManager = new ClassManager(classMappings);
         classManager.append(element.attributes.flavour, 'notification-banner-', 'notification-banner-default');
         flexItemSupport(data, classManager, element.attributes);
-        flexContainerSupport(data, classManager, element.attributes);
+        flexContainerSupport(data, classManager, element);
         data.classes = classManager.toString();
 
         return renderingEngine.render('notification-banner.ftl', data);

@@ -557,27 +557,6 @@
             </row>
             <row>
                 <cell>
-                    <link type="internal" view="message-unavailable.html" openNewWindow="false" v="v1">
-                        <textual>Message Unavailable Page</textual>
-                    </link>
-                </cell>
-                <cell>
-                    <text paragraphStyle="PLAIN" v="v1">
-                        <textual>message-unavailable.page.xml</textual>
-                    </text>
-                </cell>
-                <cell>
-                    <text paragraphStyle="PLAIN" v="v1">
-                        <textual>
-                            When two or more users simultaneously click on a message in a Tray, or Folder, then one of
-                            them will continue the operation as normal, while the other will be presented with this
-                            page.
-                        </textual>
-                    </text>
-                </cell>
-            </row>
-            <row>
-                <cell>
                     <link type="internal" view="workflow-executed.html" openNewWindow="false" v="v1">
                         <textual>Workflow Executed Page</textual>
                     </link>

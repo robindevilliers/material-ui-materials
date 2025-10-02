@@ -52,7 +52,7 @@ export default class TrayRenderer implements Renderer {
         data.id = element.attributes.id;
         data._csrf = generateId();
         data.header = header ? renderingEngine.renderElement(header, element) : "";
-        data.values = values;
+        data.values = [];
         data.trayId = generateId();
         data.source = "";
         data.action = "/operation/open-tray";

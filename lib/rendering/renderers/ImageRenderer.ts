@@ -30,10 +30,6 @@ export default class ImageRenderer implements Renderer {
             imageStyles += 'padding: ' + element.attributes['padding'] + '; ';
         }
 
-        if ('margin' in element.attributes) {
-            imageStyles += 'margin: ' + element.attributes['margin'] + '; ';
-        }
-
         if ('border' in element.attributes) {
             imageStyles += 'border: ' + element.attributes['border'] + '; ';
         }

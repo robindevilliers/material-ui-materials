@@ -19,7 +19,7 @@ export default class FormRenderer implements Renderer {
         data.content = renderingEngine.renderChildren(element);
 
         const classManager = new ClassManager(classMappings);
-        flexContainerSupport(data, classManager, element.attributes);
+        flexContainerSupport(data, classManager, element);
         data.classes = classManager.toString();
         data.action = "#"
 

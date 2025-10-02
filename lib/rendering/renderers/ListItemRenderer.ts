@@ -18,7 +18,7 @@ export default class ListItemRenderer implements Renderer {
         data.content = renderingEngine.renderChildren(element);
 
         const classManager = new ClassManager(classMappings);
-        flexContainerSupport(data, classManager, element.attributes);
+        flexContainerSupport(data, classManager, element);
         data.classes = classManager.toString();
 
         return renderingEngine.render('list-item.ftl', data);

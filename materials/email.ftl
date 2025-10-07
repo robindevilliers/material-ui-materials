@@ -717,7 +717,135 @@
             }
         }
 
+        .text-default {
+            color: COLOR_DEFAULT !important
+        }
 
+        a.text-default:hover, a.text-default:focus {
+            color: "darken(COLOR_DEFAULT,15%)" !important
+        }
+
+        .bg-warning {
+            background: COLOR_DEFAULT;
+            color: "color-yiq(COLOR_DEFAULT,#212529,#fff)"
+        }
+
+        .text-primary {
+            color: COLOR_PRIMARY !important
+        }
+
+        a.text-primary:hover, a.text-primary:focus {
+            color: "darken(COLOR_PRIMARY,15%)" !important
+        }
+
+        .bg-primary {
+            background: COLOR_PRIMARY;
+            color: "color-yiq(COLOR_PRIMARY,#212529,#fff)"
+        }
+
+        .text-secondary {
+            color: COLOR_SECONDARY !important
+        }
+
+        a.text-secondary:hover, a.text-primary:focus {
+            color: "darken(COLOR_SECONDARY,15%)" !important
+        }
+
+        .bg-secondary {
+            background: COLOR_SECONDARY;
+            color: "color-yiq(COLOR_SECONDARY,#212529,#fff)"
+        }
+
+        .text-success {
+            color: COLOR_SUCCESS !important
+        }
+
+        a.text-success:hover, a.text-primary:focus {
+            color: "darken(COLOR_SUCCESS,15%)" !important
+        }
+
+        .bg-success {
+            background: COLOR_SUCCESS;
+            color: "color-yiq(COLOR_SUCCESS,#212529,#fff)"
+        }
+
+        .text-warning {
+            color: COLOR_WARNING !important
+        }
+
+        a.text-warning:hover, a.text-primary:focus {
+            color: "darken(COLOR_WARNING,15%)" !important
+        }
+
+        .bg-warning {
+            background: COLOR_WARNING;
+            color: "color-yiq(COLOR_WARNING,#212529,#fff)"
+        }
+
+        .text-info {
+            color: COLOR_INFO !important
+        }
+
+        a.text-info:hover, a.text-primary:focus {
+            color: "darken(COLOR_INFO,15%)" !important
+        }
+
+        .bg-info {
+            background: COLOR_INFO;
+            color: "color-yiq(COLOR_INFO,#212529,#fff)"
+        }
+
+        .text-danger {
+            color: COLOR_DANGER !important
+        }
+
+        a.text-danger:hover, a.text-primary:focus {
+            color: "darken(COLOR_DANGER,15%)" !important
+        }
+
+        .bg-danger {
+            background: COLOR_DANGER;
+            color: "color-yiq(COLOR_DANGER,#212529,#fff)"
+        }
+
+        .text-muted {
+            color: COLOR_MUTED !important
+        }
+
+        a.text-muted:hover, a.text-primary:focus {
+            color: "darken(COLOR_MUTED,15%)" !important
+        }
+
+        .bg-muted {
+            background: COLOR_MUTED;
+            color: "color-yiq(COLOR_MUTED,#212529,#fff)"
+        }
+
+        .text-black {
+            color: COLOR_BLACK !important
+        }
+
+        a.text-black:hover, a.text-primary:focus {
+            color: "darken(COLOR_BLACK,15%)" !important
+        }
+
+        .bg-black {
+            background: COLOR_BLACK;
+            color: "color-yiq(COLOR_BLACK,#212529,#fff)"
+        }
+
+        .text-white {
+            color: COLOR_WHITE !important
+        }
+
+        a.text-white:hover, a.text-primary:focus {
+            color: "darken(COLOR_WHITE,15%)" !important
+        }
+
+        .bg-white {
+            background: COLOR_WHITE;
+            color: "color-yiq(COLOR_WHITE,#212529,#fff)"
+        }
     </style>
 </head>
 <body>

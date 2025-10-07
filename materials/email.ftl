@@ -727,7 +727,7 @@
             color: "darken(COLOR_DEFAULT,15%)" !important
         }
 
-        .bg-warning {
+        .bg-default {
             background: COLOR_DEFAULT;
             color: "color-yiq(COLOR_DEFAULT,#212529,#fff)"
         }

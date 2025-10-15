@@ -4965,6 +4965,26 @@
                         </text>
                     </cell>
                 </row>
+                <row>
+                    <cell>
+                        <text v="v1">
+                            <textual>mandateAgreement</textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>The mandateAgreement token indicates if the Cookie Consent dialog should force the
+                                user to agree before interacting with other elements on the page. This is usually done
+                                by presenting a semi-opague backdrop.
+                            </textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>boolean</textual>
+                        </text>
+                    </cell>
+                </row>
             </table>
         </div>
         <div v="v1" orientation="COLUMN">

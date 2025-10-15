@@ -1,3 +1,6 @@
+<#if mandateAgreement>
+    <div class="cookie-consent-backdrop"></div>
+</#if>
 <form action="${action}" method="post" enctype="application/x-www-form-urlencoded" style="${itemStyles}">
     <input type="hidden" name="_csrf" value="${_csrf}">
     <div class="cookie-consent">

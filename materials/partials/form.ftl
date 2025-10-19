@@ -3,3 +3,4 @@
     <input type="hidden" name="_checkpoint" value="${_checkpoint}">
     <div class="form-widget ${classes}" style="${containerStyles}">${content}</div>
 </form>
+${cookieConsent!''}

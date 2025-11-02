@@ -12,17 +12,17 @@
 
             <list listStyle="BORDERED" flexBasis="14em" flexShrink="0" v="v1">
                 <list-item>
-                    <link type="internal" view="fixed/style-guide-alpha" openNewWindow="false" v="v1">
+                    <link type="page" page="fixed/style-guide-alpha" openNewWindow="false" v="v1">
                         <textual>Sample Page Alpha</textual>
                     </link>
                 </list-item>
                 <list-item>
-                    <link type="internal" view="fixed/style-guide-beta" openNewWindow="false" v="v1">
+                    <link type="page" page="fixed/style-guide-beta" openNewWindow="false" v="v1">
                         <textual>Sample Page Beta</textual>
                     </link>
                 </list-item>
                 <list-item>
-                    <link type="internal" view="fixed/style-guide-delta" openNewWindow="false" v="v1">
+                    <link type="page" page="fixed/style-guide-delta" openNewWindow="false" v="v1">
                         <textual>Sample Page Delta</textual>
                     </link>
                 </list-item>

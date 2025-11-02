@@ -153,7 +153,7 @@
                     </text>
                 </card-body>
                 <card-footer orientation="COLUMN">
-                    <link type="internal" view="" openNewWindow="false" v="v1">
+                    <link type="page" page="" openNewWindow="false" v="v1">
                         <textual>A Link</textual>
                     </link>
                 </card-footer>

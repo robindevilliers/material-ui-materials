@@ -35,8 +35,8 @@ export default class LinkRenderer implements Renderer {
             data.href = 'javascript:alert(&quot;link was clicked&quot;); event.preventDefault();';
         } else {
 
-            if (element.attributes.view) {
-                data.href = "/" + element.attributes.view;
+            if (element.attributes.page) {
+                data.href = "/" + element.attributes.page;
             } else {
                 data.href = element.attributes.url;
                 data.rel = "noreferrer noopener";

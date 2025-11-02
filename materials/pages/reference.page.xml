@@ -8408,30 +8408,49 @@
                 <row>
                     <cell>
                         <text v="v1">
-                            <textual>type</textual>
+                            <textual>id</textual>
                         </text>
                     </cell>
                     <cell>
                         <text v="v1">
-                            <textual>The type property specifies if the link is an internal or external link.</textual>
+                            <textual>The id of the widget. Used to find the widget when executing links.</textual>
                         </text>
                     </cell>
                     <cell>
                         <text v="v1">
-                            <textual>internal, external</textual>
+                            <textual>id</textual>
                         </text>
                     </cell>
                 </row>
                 <row>
                     <cell>
                         <text v="v1">
-                            <textual>view</textual>
+                            <textual>type</textual>
                         </text>
                     </cell>
                     <cell>
                         <text v="v1">
-                            <textual>The view property specifies which internal page to link to. This property is only
-                                valid, if the link is an internal link.
+                            <textual>The type property specifies if the link is an page, wip-page, kase-page, wizard or
+                                url link.
+                            </textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>page, wip-page, kase-page, wizard or url</textual>
+                        </text>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <text v="v1">
+                            <textual>page</textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>The page property specifies which internal page to link to. This property is only
+                                valid, if the link is a page, wip-page, or kase-page link.
                             </textual>
                         </text>
                     </cell>
@@ -8461,6 +8480,26 @@
                 <row>
                     <cell>
                         <text v="v1">
+                            <textual>queue</textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>The queue property is used to identify the context for wizard, wip-page and
+                                kase-page links. The platform will find the first visible message in the queue and
+                                from that message establish with the Wip or Case used depending on the link.
+                            </textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>page, wip-page, kase-page, wizard or url</textual>
+                        </text>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <text v="v1">
                             <textual>openNewWindow</textual>
                         </text>
                     </cell>
@@ -8468,6 +8507,26 @@
                         <text v="v1">
                             <textual>The openNewWindow property will specify if, when clicked, the browser will present
                                 the destination view or url in a separate window.
+                            </textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>true, false</textual>
+                        </text>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <text v="v1">
+                            <textual>autoAuthenticate</textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>The autoAuthenticate property indicates if the link will automatically authenticate
+                                the current user based on the user id of the token associated with the link. This is
+                                only valid on links embedded within emails that are sent to the Case Principal.
                             </textual>
                         </text>
                     </cell>

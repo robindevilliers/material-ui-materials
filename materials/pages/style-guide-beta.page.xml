@@ -52,7 +52,7 @@
                         <text paragraphStyle="PLAIN" v="v1">
                             <textual>This is a paragraph.</textual>
                         </text>
-                        <link type="internal" view="fixed/style-guide-main" openNewWindow="false" v="v1">
+                        <link type="page" page="fixed/style-guide-main" openNewWindow="false" v="v1">
                             <textual>A Link</textual>
                         </link>
                     </carousel-panel>

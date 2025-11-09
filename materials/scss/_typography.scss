@@ -9,13 +9,14 @@ body, .text-widget {
 
 .header, .title {
   font-family: $font-title-primary;
+  color: theme-color("primary");
   text-decoration: FONT_TITLE_PRIMARY_DECORATION;
   font-size: FONT_TITLE_PRIMARY_SIZE;
   font-style: FONT_TITLE_PRIMARY_STYLE;
   font-weight: FONT_TITLE_PRIMARY_WEIGHT;
 }
 
-input, select, a, button, .error-message, label, .label, .no-content, .input-group {
+input, select, a, button, button > .text-widget, .error-message, label, .label, .no-content, .input-group {
   font-family: $font-label;
   text-decoration: FONT_LABEL_DECORATION;
   font-size: FONT_LABEL_SIZE;

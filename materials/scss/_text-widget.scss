@@ -13,5 +13,5 @@
 .blockquote-paragraph {
   color: var(--gray);
   word-wrap: break-word;
-  font-family: $font-exhibit;
+  font-family: $font-exhibit !important;
 }

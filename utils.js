@@ -13,6 +13,7 @@ module.exports = {
     toHex,
     color,
     darken,
+    lighten,
     fromHsl,
     toHsl,
     rgba,
@@ -162,6 +163,12 @@ function darkenA(color, amount) {
 function darken(color, amount) {
     const hsl = toHsl(color);
     hsl.lum = Math.max(hsl.lum - amount, 0);
+    return fromHsl(hsl);
+}
+
+function lighten(color, amount) {
+    const hsl = toHsl(color);
+    hsl.lum = Math.max(hsl.lum + amount, 0);
     return fromHsl(hsl);
 }
 

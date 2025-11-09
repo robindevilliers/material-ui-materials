@@ -10,6 +10,7 @@ const {
     toHex,
     color,
     darken,
+    lighten,
     rgba,
     darkenA,
     toRgba,
@@ -43,7 +44,7 @@ console.log('> running customization');
 const inputFile = process.argv[2];
 const outputFile = process.argv[3];
 
-fs.mkdirSync(path.dirname(outputFile), { recursive: true });
+fs.mkdirSync(path.dirname(outputFile), {recursive: true});
 
 fs.readFile(inputFile, 'utf8', function (err, data) {
     if (err) {
@@ -63,6 +64,10 @@ fs.readFile(inputFile, 'utf8', function (err, data) {
     data = replaceForThemeColor(data, 'COLOR_MUTED', themeColor('COLOR_MUTED'));
     data = replaceForThemeColor(data, 'COLOR_BLACK', 'black');
     data = replaceForThemeColor(data, 'COLOR_WHITE', 'white');
+
+    data = replaceForStandardColor(data, "#343a40");
+    data = replaceForStandardColor(data, "#f8f9fa");
+
     const result = data
 
     .replaceAll("\"darken(rgba(0, 0, 0, 0.075),5%)\"", toRgba(darkenA(colorA('black', 0.075), 5)))
@@ -77,6 +82,7 @@ fs.readFile(inputFile, 'utf8', function (err, data) {
     .replaceAll("\"color-yiq(lavender,#212529,#fff)\"", toHex(colorYiq(color("lavender"), color("#212529"), color("#fff"))))
 
     .replaceAll("\"rgba(0, 0, 0, 0.14)\"", toRgba(color("black"), 0.14))
+    .replaceAll("\"rgba(0, 0, 0, 0.1)\"", toRgba(color("black"), 0.1))
     .replaceAll("\"rgba(0, 0, 0, 0.12)\"", toRgba(color("black"), 0.12))
     .replaceAll("\"rgba(0, 0, 0, 0.125)\"", toRgba(color("black"), 0.125))
     .replaceAll("\"rgba(0, 0, 0, 0.2)\"", toRgba(color("black"), 0.2))
@@ -87,6 +93,33 @@ fs.readFile(inputFile, 'utf8', function (err, data) {
 
     .replaceAll("\"color-yiq(#a9c8c0,#212529,#fff)\"", toHex(colorYiq(color("#a9c8c0"), color("#212529"), color("#fff"))))
     .replaceAll("\"color-yiq(#c1e1c1,#212529,#fff)\"", toHex(colorYiq(color("#c1e1c1"), color("#212529"), color("#fff"))))
+    .replaceAll("\"color-yiq(#e9e9e9,#212529,#fff)\"", toHex(colorYiq(color("#e9e9e9"), color("#212529"), color("#fff"))))
+    .replaceAll("\"rgba(#000, 0.03)\"", toRgba(rgba(0, 0, 0, 0.03)))
+    .replaceAll("\"rgba(#000, 0.05)\"", toRgba(rgba(0, 0, 0, 0.05)))
+    .replaceAll("\"rgba(#000, 0.075)\"", toRgba(rgba(0, 0, 0, 0.075)))
+    .replaceAll("\"rgba(#000, 0.175)\"", toRgba(rgba(0, 0, 0, 0.175)))
+    .replaceAll("\"rgba(#000, 0.1)\"", toRgba(rgba(0, 0, 0, 0.1)))
+    .replaceAll("\"rgba(#000, 0.2)\"", toRgba(rgba(0, 0, 0, 0.2)))
+    .replaceAll("\"rgba(#000, 0.15)\"", toRgba(rgba(0, 0, 0, 0.15)))
+    .replaceAll("\"rgba(#000, 0.9)\"", toRgba(rgba(0, 0, 0, 0.9)))
+    .replaceAll("\"rgba(#000, 0.5)\"", toRgba(rgba(0, 0, 0, 0.5)))
+    .replaceAll("\"rgba(#000, 0.7)\"", toRgba(rgba(0, 0, 0, 0.7)))
+    .replaceAll("\"rgba(#000, 0.3)\"", toRgba(rgba(0, 0, 0, 0.3)))
+    .replaceAll("\"rgba(#000, 0.125)\"", toRgba(rgba(0, 0, 0, 0.125)))
+    .replaceAll("\"darken(rgba(#000, 0.075),5%)\"", toRgba(darkenA(colorA('black', 0.075), 5)))
+    .replaceAll("\"rgba(#fff, 0.1)\"", toRgba(rgba(255, 255, 255, 0.1)))
+    .replaceAll("\"rgba(#fff, 0.15)\"", toRgba(rgba(255, 255, 255, 0.15)))
+    .replaceAll("\"rgba(#fff, 0.05)\"", toRgba(rgba(255, 255, 255, 0.05)))
+    .replaceAll("\"rgba(#fff, 0.075)\"", toRgba(rgba(255, 255, 255, 0.075)))
+    .replaceAll("\"rgba(#fff, 0.75)\"", toRgba(rgba(255, 255, 255, 0.75)))
+    .replaceAll("\"rgba(#fff, 0.25)\"", toRgba(rgba(255, 255, 255, 0.25)))
+    .replaceAll("\"rgba(#fff, 0.85)\"", toRgba(rgba(255, 255, 255, 0.85)))
+    .replaceAll("\"rgba(#fff, 0.5)\"", toRgba(rgba(255, 255, 255, 0.5)))
+    .replaceAll("\"darken(#212529,5%)\"", toHex(darken(color("#212529"), 5)))
+    .replaceAll("\"darken(#000,5%)\"", toHex(darken(color("#000"), 5)))
+    .replaceAll("\"darken(#fff,3%)\"", toHex(darken(color("#fff"), 3)))
+    .replaceAll("\"darken(darken(#fff,3%),5%)\"", toHex(darken(darken(color("#fff"), 3), 5)))
+    .replaceAll("\"fade-in(rgba(#000, 0.2),0.05)\"", toHex(rgba(0, 0, 0, 0.3)))
 
     //color picker mappings
     .replaceAll("\"rgba(64, 87, 109, 0.07)\"", toRgba(rgba(64, 87, 109, 0.07)))
@@ -122,7 +155,7 @@ fs.readFile(inputFile, 'utf8', function (err, data) {
     .replaceAll("\"rgba(230, 26, 179, 0.6)\"", toRgba(rgba(230, 26, 179, 0.6)))
     .replaceAll("\"rgba(204, 51, 166, 0.4)\"", toRgba(rgba(204, 51, 166, 0.4)))
     .replaceAll("\"rgba(166, 89, 147, 0.2)\"", toRgba(rgba(166, 89, 147, 0.2)))
-
+    .replaceAll("\"rgba(0, 0, 0, 0)\"", toRgba(rgba(0, 0, 0, 0)))
 
     .replace(/FONT_TITLE_PRIMARY_FAMILY/g, 'Liberation Sans, sans-serif')
     .replace(/FONT_TITLE_SECONDARY_FAMILY/g, 'Liberation Sans, sans-serif')
@@ -160,6 +193,28 @@ fs.readFile(inputFile, 'utf8', function (err, data) {
     });
 });
 
+function replaceForStandardColor(data, colorCode) {
+    return data
+    .replaceAll(`"color-yiq(${colorCode},#212529,#fff)"`, toHex(colorYiq(color(colorCode), color('#212529'), color('#fff'))))
+    .replaceAll(`"color-yiq(darken(${colorCode},7.5%),#212529,#fff)"`, toHex(colorYiq(darken(color(colorCode), 7.5), color('#212529'), color('#fff'))))
+    .replaceAll(`"color-yiq(darken(${colorCode},10%),#212529,#fff)"`, toHex(colorYiq(darken(color(colorCode), 10), color('#212529'), color('#fff'))))
+    .replaceAll(`"theme-color-level(${colorCode},-10)"`, toHex(themeColorLevel(color(colorCode), -10)))
+    .replaceAll(`"theme-color-level(${colorCode},-9)"`, toHex(themeColorLevel(color(colorCode), -9)))
+    .replaceAll(`"theme-color-level(${colorCode},-6)"`, toHex(themeColorLevel(color(colorCode), -6)))
+    .replaceAll(`"theme-color-level(${colorCode},6)"`, toHex(themeColorLevel(color(colorCode), 6)))
+    .replaceAll(`"darken(theme-color-level(${colorCode},-9),5%)"`, toHex(darken(themeColorLevel(color(colorCode), -9), 5)))
+    .replaceAll(`"darken(theme-color-level(${colorCode},-10),10%)"`, toHex(darken(themeColorLevel(color(colorCode), -10), 10)))
+    .replaceAll(`"darken(theme-color-level(${colorCode},6),10%)"`, toHex(darken(themeColorLevel(color(colorCode), 6), 10)))
+    .replaceAll(`"lighten(${colorCode},7.5%)"`, toHex(lighten(color(colorCode), 7.5)))
+    .replaceAll(`"darken(${colorCode},7.5%)"`, toHex(darken(color(colorCode), 7.5)))
+    .replaceAll(`"darken(${colorCode},10%)"`, toHex(darken(color(colorCode), 10)))
+    .replaceAll(`"darken(${colorCode},12.5%)"`, toHex(darken(color(colorCode), 12.5)))
+    .replaceAll(`"darken(${colorCode},15%)"`, toHex(darken(color(colorCode), 15)))
+    .replaceAll(`"rgba(mix(color-yiq(${colorCode},#212529,#fff),${colorCode},15%), 0.5)"`, toHex(mix(colorYiq(color(colorCode), color('#212529'), color('#fff')), color(colorCode), 15), 0.5))
+    .replaceAll(`"rgba(${colorCode}, 0.5)"`, toRgba(color(colorCode), 0.5))
+    .replaceAll(`"theme-color-level(${colorCode},color-yiq-if(${colorCode},1,-3))"`, toHex(themeColorLevel(color(colorCode), colorYiqIf(color(colorCode), 1, -3))))
+    ;
+}
 
 function replaceForThemeColor(data, colorTheme, colorCode) {
     return data
@@ -170,11 +225,18 @@ function replaceForThemeColor(data, colorTheme, colorCode) {
     .replaceAll(`"color-yiq(darken(${colorTheme},7.5%),#212529,#fff)"`, toHex(colorYiq(darken(color(colorCode), 7.5), color('#212529'), color('#fff'))))
     .replaceAll(`"darken(${colorTheme},7.5%)"`, toHex(darken(color(colorCode), 7.5)))
     .replaceAll(`"darken(${colorTheme},10%)"`, toHex(darken(color(colorCode), 10)))
+    .replaceAll(`"darken(${colorTheme},15%)"`, toHex(darken(color(colorCode), 15)))
+    .replaceAll(`"lighten(${colorTheme},7.5%)"`, toHex(lighten(color(colorCode), 7.5)))
+    .replaceAll(`"lighten(${colorTheme},25%)"`, toHex(lighten(color(colorCode), 25)))
+    .replaceAll(`"lighten(${colorTheme},35%)"`, toHex(lighten(color(colorCode), 35)))
+    .replaceAll(`"lighten(${colorTheme},10%)"`, toHex(lighten(color(colorCode), 10)))
     .replaceAll(`"rgba(mix(color-yiq(${colorTheme},#212529,#fff),${colorTheme},15%), 0.5)"`, toRgba(mix(colorYiq(color(colorCode), color("#212529"), color("#fff")), color(colorCode), 15), 0.5))
     .replaceAll(`"color-yiq(darken(${colorTheme},10%),#212529,#fff)"`, toHex(colorYiq(darken(color(colorCode), 10), color("#212529"), color("#fff"))))
     .replaceAll(`"darken(${colorTheme},12.5%)"`, toHex(darken(color(colorCode), 12.5)))
     .replaceAll(`"mix(#000,${colorTheme},48%)"`, toHex(mix(color("black"), color(colorCode), 48)))
     .replaceAll(`"rgba(${colorTheme}, 0.5)"`, toRgba(color(colorCode), 0.5))
+    .replaceAll(`"rgba(${colorTheme}, 0.25)"`, toRgba(color(colorCode), 0.25))
+    .replaceAll(`"rgba(${colorTheme}, 0.9)"`, toRgba(color(colorCode), 0.9))
     .replaceAll(`"mix(#fff,${colorTheme},80%)"`, toHex(mix(color("white"), color(colorCode), 80)))
     .replaceAll(`"darken(mix(#000,${colorTheme},48%),10%)"`, toHex(darken(mix(color("black"), color(colorCode), 48), 10)))
     .replaceAll(`"theme-color-level(${colorTheme},color-yiq-if(${colorTheme},1,-3))"`, toHex(themeColorLevel(color(colorCode), colorYiqIf(color(colorCode), 1, -3))))
@@ -186,7 +248,6 @@ function replaceForThemeColor(data, colorTheme, colorCode) {
     .replaceAll(`"theme-color-level(${colorTheme},6)"`, toHex(themeColorLevel(color(colorCode), 6)))
     .replaceAll(`"theme-color-level(${colorTheme},-10)"`, toHex(themeColorLevel(color(colorCode), -10)))
     .replaceAll(`"darken(theme-color-level(${colorTheme},6),10%)"`, toHex(darken(themeColorLevel(color(colorCode), 6), 10)))
-
     .replaceAll(colorTheme, colorCode)
     ;
 }

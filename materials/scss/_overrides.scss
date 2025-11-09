@@ -2,6 +2,14 @@
   @return 'darken(#{$color},#{$amount})';
 }
 
+@function lighten($color, $amount) {
+  @return 'lighten(#{$color},#{$amount})';
+}
+
+@function fade-in($popover-border-color, $amount) {
+  @return 'fade-in(#{$popover-border-color},#{$amount})';
+}
+
 @function red($color) {
   @return 'red(#{$color})';
 }

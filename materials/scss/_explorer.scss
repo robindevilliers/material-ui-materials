@@ -52,6 +52,7 @@
         font-size: 14px;
         border-radius: 2px;
         line-height: 36px;
+        color: unset;
 
         &:hover {
           background-color: theme-color("primary") !important;

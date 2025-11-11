@@ -4,6 +4,11 @@
   color: color-yiq(theme-color("danger"));
   margin-bottom: 1rem !important;
 
+  .header {
+    color: inherit;
+    font-size: 1.5em;
+  }
+
   & .error-message {
     color: color-yiq(theme-color("danger")) !important;
   }

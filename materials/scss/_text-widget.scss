@@ -7,11 +7,15 @@
 
 .suppressed-paragraph {
   opacity: 0.8;
-  font-size: 0.8rem;
+  font-size: 1rem !important;
 }
 
 .blockquote-paragraph {
   color: var(--gray);
   word-wrap: break-word;
   font-family: $font-exhibit !important;
+  text-decoration: FONT_EXHIBIT_DECORATION;
+  font-size: FONT_EXHIBIT_SIZE;
+  font-style: FONT_EXHIBIT_STYLE;
+  font-weight: FONT_EXHIBIT_WEIGHT;
 }

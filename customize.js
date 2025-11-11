@@ -163,7 +163,7 @@ fs.readFile(inputFile, 'utf8', function (err, data) {
     .replace(/FONT_LABEL_FAMILY/g, 'Liberation Sans, sans-serif')
     .replace(/FONT_EXHIBIT_FAMILY/g, 'Liberation Mono, monospace')
 
-    .replace(/FONT_TITLE_PRIMARY_SIZE/g, 'initial')
+    .replace(/FONT_TITLE_PRIMARY_SIZE/g, '2em')
     .replace(/FONT_TITLE_SECONDARY_SIZE/g, 'initial')
     .replace(/FONT_TEXT_SIZE/g, 'initial')
     .replace(/FONT_LABEL_SIZE/g, 'initial')
@@ -223,6 +223,7 @@ function replaceForThemeColor(data, colorTheme, colorCode) {
     .replaceAll(`"darken(mix(#fff,${colorTheme},72%),5%)"`, toHex(darken(mix(color('white'), color(colorCode), 72), 5)))
     .replaceAll(`"color-yiq(${colorTheme},#212529,#fff)"`, toHex(colorYiq(color(colorCode), color('#212529'), color('#fff'))))
     .replaceAll(`"color-yiq(darken(${colorTheme},7.5%),#212529,#fff)"`, toHex(colorYiq(darken(color(colorCode), 7.5), color('#212529'), color('#fff'))))
+    .replaceAll(`"color-yiq(lighten(${colorTheme},10%),#212529,#fff)"`, toHex(colorYiq(lighten(color(colorCode), 10), color('#212529'), color('#fff'))))
     .replaceAll(`"darken(${colorTheme},7.5%)"`, toHex(darken(color(colorCode), 7.5)))
     .replaceAll(`"darken(${colorTheme},10%)"`, toHex(darken(color(colorCode), 10)))
     .replaceAll(`"darken(${colorTheme},15%)"`, toHex(darken(color(colorCode), 15)))

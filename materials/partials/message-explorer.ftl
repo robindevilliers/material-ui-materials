@@ -100,7 +100,7 @@
                             data-parent="#${id}">
 
                         <div class="explorer-line">
-                            <span class="explorer-wizard-title title">${val.wizardTitle} (${val.wizardId})</span>
+                            <span class="explorer-wizard-title">${val.wizardTitle} (${val.wizardId})</span>
                             <span>${val.dateTime}</span>
                         </div>
 

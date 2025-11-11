@@ -1,12 +1,24 @@
 <form action="${action}" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" class="register-panel-widget">
     <input type="hidden" name="_csrf" value="${_csrf}">
-    <div class="row">
-        <div class="form-group col">
-            <#if errors.global??>
-                <span class="error-message">${errors.global}</span>
-            </#if>
+    <#if errors?has_content>
+        <div class="row">
+            <div class="form-group col">
+                <div class="card error-summary-widget" style="${itemStyles}">
+                    <div class="card-header header">
+                        Errors
+                    </div>
+                    <div class="card-body">
+                        <p class="label">There are validation errors.</p>
+                        <ul>
+                            <#list errors as key, value>
+                                <li id="error-summary-message-${key}" class="error-message form-text">${value}</li>
+                            </#list>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+    </#if>
     <div class="row">
         <div class="form-group col">
             <div class="form-group">

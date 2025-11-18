@@ -7174,23 +7174,6 @@
                         </text>
                     </cell>
                 </row>
-                <row>
-                    <cell>
-                        <text v="v1">
-                            <textual>background</textual>
-                        </text>
-                    </cell>
-                    <cell>
-                        <text v="v1">
-                            <textual>The background property translates at the background attribute in HTML.</textual>
-                        </text>
-                    </cell>
-                    <cell>
-                        <text v="v1">
-                            <textual>green</textual>
-                        </text>
-                    </cell>
-                </row>
             </table>
             <title size="SMALLER" v="v1">
                 <textual>Template</textual>

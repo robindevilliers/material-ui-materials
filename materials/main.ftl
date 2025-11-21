@@ -39,7 +39,7 @@
         <hr>
         <div class="footer-content">
             <div>© All rights reserved</div>
-            <div>Web-Hosting powered by <a href="https://www.maximillian-workflows.com">Maximillian Workflows</a></div>
+            <div>Web-Hosting powered by <a <#if testMode>href="javascript:void(0)" onclick="alert('Link clicked');"<#else>href="https://www.maximillian-workflows.com"</#if>>Maximillian Workflows</a></div>
         </div>
     </footer>
 </div>

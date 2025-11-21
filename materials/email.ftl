@@ -865,10 +865,10 @@
     <hr class="email-hr"/>
 
     <div class="footer">
-        <p><a href="http://example-materials.com">© 2023 MATERIALS_PAGE_TITLE_TOKEN</a></p>
+        <p><a <#if testMode> href="javascript:void(0)" onclick="alert('Link clicked');" <#else> href="http://example-materials.com"</#if>> © 2023 MATERIALS_PAGE_TITLE_TOKEN</a></p>
         <p>All rights reserved</p>
-        <p><a href="http://example-materials.com/terms.html">Terms of Service</a></p>
-        <p><a href="http://example-materials.com/privacy.html">Privacy Policy</a></p>
+        <p><a <#if testMode> href="javascript:void(0)" onclick="alert('Link clicked');" <#else> href="http://example-materials.com/terms.html"</#if>>Terms of Service</a></p>
+        <p><a <#if testMode> href="javascript:void(0)" onclick="alert('Link clicked');" <#else> href="http://example-materials.com/privacy.html"</#if>>Privacy Policy</a></p>
         <p>Web-hosting provided by Maximillian Workflows</p>
     </div>
 </div>

@@ -32,6 +32,18 @@ $(function () {
         event.stopPropagation();
         event.preventDefault();
     });
+    $('.color-picker-disc .inner').mousemove(function (event) {
+        event.stopPropagation();
+        event.preventDefault();
+    });
+    $('.color-picker-disc .inner').mouseup(function (event) {
+        event.stopPropagation();
+        event.preventDefault();
+    });
+    $('.color-picker-disc .inner').mousedown(function (event) {
+        event.stopPropagation();
+        event.preventDefault();
+    });
 
     Object.entries(labels).forEach(([key, value]) => {
         $(`select[name="${key}"]`).val(value);

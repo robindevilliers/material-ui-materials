@@ -1,8 +1,12 @@
 
-body {
-  main {
-    min-height: 600px;
-  }
+html {
+  min-height: 100%;
+}
+
+html, body, .container, main  {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
 }
 
 .btn-link {

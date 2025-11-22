@@ -3,10 +3,20 @@
 <head>
     <title>Email Template</title>
     <style>
+
+        html {
+            min-height: 100%;
+        }
+
+        html, body, .container, main  {
+            display: flex;
+            flex-direction: column;
+            flex: 1 0 auto;
+        }
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
             background-color: white;
-            line-height: 1.25em;
             max-width: 60em;
         }
 
@@ -18,13 +28,6 @@
             color: #1E90FF;
             text-decoration: none;
             background-color: transparent;
-        }
-
-        .container {
-            display: flex;
-            flex-direction: column;
-            flex: 0 0 40em;
-            align-items: stretch;
         }
 
         .image-panel img {
@@ -56,7 +59,6 @@
             flex-direction: column;
             flex: 1 0 100%;
             align-self: stretch;
-            min-height: 400px;
             background-color: white;
             padding: 1em;
         }
@@ -64,7 +66,6 @@
         .footer {
             display: flex;
             flex-direction: row;
-            flex: 1 0 100%;
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;

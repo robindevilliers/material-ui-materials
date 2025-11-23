@@ -1,8 +1,7 @@
 import { Renderer } from '../Renderer';
-import { Element, isElement } from '../../xml-parser';
+import { Element } from '../../xml-parser';
 import Properties from '../Properties';
 import flexItemSupport from '../flex-item-support';
-import { textStyleSupport } from '../text-style-support';
 import ClassManager from '../ClassManager';
 import RenderingEngine from '../RenderingEngine';
 import Store from '../../store/Store';
@@ -25,10 +24,9 @@ export default class EmailConfirmationLinkRenderer implements Renderer {
         data.testMode = Store.isTestContext();
 
         const classManager = new ClassManager(classMappings);
-        textStyleSupport(data, element, classMappings);
         flexItemSupport(data, classManager, element.attributes);
         data.classes = classManager.toString();
-        data.content = renderingEngine.renderChildren(element.children.find(el => isElement(el) && (el as Element).name === 'textual')! as Element);
+        data.content = renderingEngine.renderChildren(element);
 
         return renderingEngine.render('email-confirmation-link.ftl', data);
     }

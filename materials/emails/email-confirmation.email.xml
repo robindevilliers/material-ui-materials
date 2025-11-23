@@ -14,8 +14,10 @@
                         Please click on the link below to complete your registration.
                     </textual>
                 </text>
-                <email-confirmation-link v="v1">
-                    <textual>Confirm</textual>
+                <email-confirmation-link id="a12345678" v="v1">
+                    <text v="v1">
+                        <textual>Confirm</textual>
+                    </text>
                 </email-confirmation-link>
             </div>
         </div>

@@ -1,6 +1,7 @@
 <form action="${action}" class="reset-password-panel" method="post" enctype="application/x-www-form-urlencoded"
         accept-charset="UTF-8" style="${itemStyles}">
     <input type="hidden" name="_csrf" value="${_csrf}">
+    <input type="hidden" name="_checkpoint" value="${_checkpoint}">
     <div class="form-group">
         <label for="resetPasswordPasswordOnce" class="form-label label">Password</label>
         <input id="resetPasswordPasswordOnce" type="password" class="form-control" name="passwordOnce" placeholder="">
@@ -19,10 +20,12 @@
     <#else>
         <span class="form-text text-muted">Please enter your password again.</span>
     </#if>
-    <button class="btn btn-primary float-end mx-1" type="submit" name="resetPassword"
-            onclick="${testMode?string('alert(&quot;Next clicked&quot;); event.preventDefault();','')}">Next
-    </button>
-    <button class="btn btn-secondary float-end mx-1" type="submit" name="cancel"
-            onclick="${testMode?string('alert(&quot;Cancel clicked&quot;); event.preventDefault();','')}">Cancel
-    </button>
+    <div class="button-panel">
+        <button class="btn btn-primary float-end mx-1" type="submit" name="resetPassword"
+                onclick="${testMode?string('alert(&quot;Next clicked&quot;); event.preventDefault();','')}">Next
+        </button>
+        <button class="btn btn-secondary float-end mx-1" type="submit" name="cancel"
+                onclick="${testMode?string('alert(&quot;Cancel clicked&quot;); event.preventDefault();','')}">Cancel
+        </button>
+    </div>
 </form>

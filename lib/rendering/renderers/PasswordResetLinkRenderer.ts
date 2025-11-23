@@ -25,10 +25,9 @@ export default class PasswordResetLinkRenderer implements Renderer {
         data.testMode = Store.isTestContext();
 
         const classManager = new ClassManager(classMappings);
-        textStyleSupport(data, element, classMappings);
         flexItemSupport(data, classManager, element.attributes);
         data.classes = classManager.toString();
-        data.content = renderingEngine.renderChildren(element.children.find(el => isElement(el) && (el as Element).name === 'textual')! as Element);
+        data.content = renderingEngine.renderChildren(element);
 
         return renderingEngine.render('password-reset-link.ftl', data);
     }

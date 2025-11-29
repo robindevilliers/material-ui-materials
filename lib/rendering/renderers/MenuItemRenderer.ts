@@ -1,12 +1,12 @@
 import { Renderer } from '../Renderer';
-import { Element, isElement } from '../../xml-parser';
-import { textStyleSupport } from '../text-style-support';
+import { Element } from '../../xml-parser';
 import Properties from '../Properties';
 import ClassManager from '../ClassManager';
 import { Substitutions } from '../Substitutions';
 import RenderingEngine from '../RenderingEngine';
-import generateId from '../../utilities/generate-id';
-import Store from '../../store/Store';
+import { flexContainerSupport } from "../flex-container-support";
+import { RenderError } from "../RenderError";
+import flexItemSupport from "../flex-item-support";
 
 export default class MenuItemRenderer implements Renderer {
     accept(name: string): boolean {
@@ -20,22 +20,20 @@ export default class MenuItemRenderer implements Renderer {
             parent!.attributes.hasContent = "true";
         }
 
+
+        if (!element.attributes.v) {
+            throw new RenderError("Version attribute 'v' not configured against element: " + element.name);
+        }
+
         const data: Record<string, any> = {};
         data.id = element.attributes.id;
-        data._csrf = generateId();
-        data.type = element.attributes.type;
-        data.disabled = null;
-        data.action = "/workflow/initiate/" + element.attributes.workflow;
-        data.link = "#";
+        data.content = renderingEngine.renderChildren(element);
         data.isInSubMenu = isInSubMenu;
-        data.showCasePrincipalPicker = element.attributes.showCasePrincipalPicker === "true";
 
         const classManager = new ClassManager(classMappings);
-        classManager.append(element.attributes.flavour, 'text-', 'text-default');
-        textStyleSupport(data, element, classMappings);
+        flexItemSupport(data, classManager, element.attributes);
+        flexContainerSupport(data, classManager, element);
         data.classes = classManager.toString();
-        data.testMode = Store.isTestContext();
-        data.content = renderingEngine.renderChildren(element.children.find(el => isElement(el) && (el as Element).name === 'textual')! as Element);
 
         return renderingEngine.render('menu-item.ftl', data);
     }

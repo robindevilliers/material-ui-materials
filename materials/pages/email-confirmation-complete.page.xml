@@ -17,11 +17,11 @@
                     </textual>
                 </text>
                 <text v="v1">
-                    <textual>Click on the link to return to the login page.</textual>
+                    <textual>Click on the link to return to the landing page.</textual>
                 </text>
                 <link v="v1" type="page" page="index" id="a12345678">
                     <text v="v1">
-                        <textual>Login Page</textual>
+                        <textual>Landing Page</textual>
                     </text>
                 </link>
             </div>

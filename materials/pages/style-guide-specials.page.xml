@@ -322,31 +322,65 @@
                 <menu-brand v="v1">
                     <textual>menu brand</textual>
                 </menu-brand>
-                <menu-item type="workflow" workflow="workflow-one" flavour="DEFAULT" v="v1">
-                    <textual>workflow 1</textual>
+                <menu-item v="v1">
+                    <link v="v1" type="page" page="index" id="a12345678">
+                        <text v="v1">
+                            <textual>workflow 1</textual>
+                        </text>
+                    </link>
                 </menu-item>
-                <menu-item type="workflow" workflow="workflow-two" flavour="DEFAULT" v="v1">
-                    <textual>workflow 2</textual>
+                <menu-item v="v1">
+                    <link v="v1" type="page" page="index" id="a12345678">
+                        <text v="v1">
+                            <textual>workflow 2</textual>
+                        </text>
+                    </link>
                 </menu-item>
-                <menu-item type="workflow" workflow="workflow-three" flavour="DEFAULT" v="v1">
-                    <textual>workflow 3</textual>
+                <menu-item v="v1">
+                    <link v="v1" type="page" page="index" id="a12345678">
+                        <text v="v1">
+                            <textual>workflow 3</textual>
+                        </text>
+                    </link>
                 </menu-item>
                 <sub-menu flavour="DEFAULT" v="v1">
                     <sub-menu-label v="v1">
                         <textual>sub menu label</textual>
                     </sub-menu-label>
-                    <menu-item type="page" page="one" flavour="DEFAULT">
-                        <textual>page 1</textual>
+                    <menu-item v="v1">
+                        <link v="v1" type="page" page="index" id="a12345678">
+                            <text v="v1">
+                                <textual>page 1</textual>
+                            </text>
+                        </link>
                     </menu-item>
-                    <menu-item type="page" page="two" flavour="DEFAULT">
-                        <textual>page 2</textual>
+                    <menu-item v="v1">
+                        <link v="v1" type="page" page="index" id="a12345678">
+                            <text v="v1">
+                                <textual>page 2</textual>
+                            </text>
+                        </link>
+                        <badge size="SMALL" flavour="DEFAULT" v="v1">
+                            <textual>1</textual>
+                        </badge>
                     </menu-item>
-                    <menu-item type="workflow" workflow="workflow-four" flavour="DEFAULT" v="v1">
-                        <textual>workflow 4</textual>
+                    <menu-item v="v1">
+                        <link v="v1" type="page" page="index" id="a12345678">
+                            <text v="v1">
+                                <textual>workflow 4</textual>
+                            </text>
+                        </link>
                     </menu-item>
                 </sub-menu>
-                <menu-item type="page" page="three" flavour="DEFAULT" v="v1">
-                    <textual>page 3</textual>
+                <menu-item v="v1">
+                    <link v="v1" type="page" page="index" id="a12345678">
+                        <text v="v1">
+                            <textual>page 3</textual>
+                        </text>
+                    </link>
+                    <badge size="SMALL" flavour="DEFAULT" v="v1">
+                        <textual>1</textual>
+                    </badge>
                 </menu-item>
             </menu>
         </div>

@@ -8,17 +8,20 @@
                 </title>
                 <text v="v1">
                     <textual>
-                        An error has occurred, that is completely your fault. That is to say that the current state of
-                        the system does not support the operation you requested to perform and that the system itself
-                        is working just fine. Please see the message below, which may indicate the cause.
+                        There is something wrong with the data you have submitted to the service. Please see the message
+                        below, which may indicate the cause.
                     </textual>
                 </text>
-
                 <text v="v1">
                     <textual>
                         <script script=".reason" v="v1"/>
                     </textual>
                 </text>
+                <link v="v1" type="page" page="index" id="a1234">
+                    <text v="v1">
+                        <textual>Landing Page</textual>
+                    </text>
+                </link>
             </div>
         </div>
     </div>

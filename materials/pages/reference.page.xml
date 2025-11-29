@@ -52,7 +52,9 @@
             </textual>
         </text>
         <link type="external" url="https://freemarker.apache.org/" openNewWindow="true" v="v1">
-            <textual>Freemarker</textual>
+            <text v="v1">
+                <textual>Freemarker</textual>
+            </text>
         </link>
         <text v="v1">
             <textual>We also have a set of classes that are produced for each widget. These classes will be included in
@@ -9990,8 +9992,7 @@
                 <textual>Menu Item</textual>
             </title>
             <text v="v1">
-                <textual>The Menu Item Widget presents a menu item that presents a link within the Menu. The link can
-                    either be to a page, or can initiate a workflow.
+                <textual>The Menu Item Widget presents a menu item. The widget can compose links, badges or icons.
                 </textual>
             </text>
             <text v="v1">
@@ -10001,133 +10002,9 @@
                 <textual>Widget</textual>
             </title>
             <text v="v1">
-                <textual>The Menu Item Widget is a Textual Container in addition to having the following properties.
+                <textual>The Menu Item Widget is a Container.
                 </textual>
             </text>
-            <table v="v1">
-                <row>
-                    <column width="20%">
-                        <textual>Attribute</textual>
-                    </column>
-                    <column>
-                        <textual>Description</textual>
-                    </column>
-                    <column width="25%">
-                        <textual>Permitted values/Examples</textual>
-                    </column>
-                </row>
-                <row>
-                    <cell>
-                        <text v="v1">
-                            <textual>type</textual>
-                        </text>
-                    </cell>
-                    <cell>
-                        <text v="v1">
-                            <textual>The type property specifies if the Menu Item will link to a Page, or initiate a
-                                Workflow.
-                            </textual>
-                        </text>
-                    </cell>
-                    <cell>
-                        <text v="v1">
-                            <textual>page, workflow</textual>
-                        </text>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <text v="v1">
-                            <textual>page</textual>
-                        </text>
-                    </cell>
-                    <cell>
-                        <text v="v1">
-                            <textual>The page property specifies the Page that should be presented when clicked.
-                            </textual>
-                        </text>
-                    </cell>
-                    <cell>
-                        <text v="v1">
-                            <textual>home</textual>
-                        </text>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <text v="v1">
-                            <textual>workflow</textual>
-                        </text>
-                    </cell>
-                    <cell>
-                        <text v="v1">
-                            <textual>The workflow property specifies the Workflow that should be initiated when
-                                clicked.
-                            </textual>
-                        </text>
-                    </cell>
-                    <cell>
-                        <text v="v1">
-                            <textual>requisition</textual>
-                        </text>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <text v="v1">
-                            <textual>flavour</textual>
-                        </text>
-                    </cell>
-                    <cell>
-                        <text v="v1">
-                            <textual>The flavour property specifies the colouring of the link.</textual>
-                        </text>
-                    </cell>
-                    <cell>
-                        <text v="v1">
-                            <textual>DEFAULT, PRIMARY, INFO, WARNING, DANGER, SUCCESS, MUTED, BLACK, WHITE</textual>
-                        </text>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <text v="v1">
-                            <textual>disableScript</textual>
-                        </text>
-                    </cell>
-                    <cell>
-                        <text v="v1">
-                            <textual>This attribute contains a Plantain script that will determine if the widget should
-                                appear disabled or not.
-                            </textual>
-                        </text>
-                    </cell>
-                    <cell>
-                        <text v="v1">
-                            <textual>script : boolean</textual>
-                        </text>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <text v="v1">
-                            <textual>hiddenScript</textual>
-                        </text>
-                    </cell>
-                    <cell>
-                        <text v="v1">
-                            <textual>This attribute contains a Plantain script that will determine if the widget should
-                                appear hidden or not.
-                            </textual>
-                        </text>
-                    </cell>
-                    <cell>
-                        <text v="v1">
-                            <textual>script : boolean</textual>
-                        </text>
-                    </cell>
-                </row>
-            </table>
             <title size="SMALLER" v="v1">
                 <textual>Template</textual>
             </title>
@@ -10145,150 +10022,6 @@
                     <column width="25%">
                         <textual>Type</textual>
                     </column>
-                </row>
-                <row>
-                    <cell>
-                        <text v="v1">
-                            <textual>id</textual>
-                        </text>
-                    </cell>
-                    <cell>
-                        <text v="v1">
-                            <textual>A unique id for each item.</textual>
-                        </text>
-                    </cell>
-                    <cell>
-                        <text v="v1">
-                            <textual>string</textual>
-                        </text>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <text v="v1">
-                            <textual>_csrf</textual>
-                        </text>
-                    </cell>
-                    <cell>
-                        <text v="v1">
-                            <textual>The CSRF token for the form submit.</textual>
-                        </text>
-                    </cell>
-                    <cell>
-                        <text v="v1">
-                            <textual>string</textual>
-                        </text>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <text v="v1">
-                            <textual>type</textual>
-                        </text>
-                    </cell>
-                    <cell>
-                        <text v="v1">
-                            <textual>The type token specifies if the Menu Item links to a Page, or will initiate a
-                                Workflow.
-                            </textual>
-                        </text>
-                    </cell>
-                    <cell>
-                        <text v="v1">
-                            <textual>workflow, page</textual>
-                        </text>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <text v="v1">
-                            <textual>href</textual>
-                        </text>
-                    </cell>
-                    <cell>
-                        <text v="v1">
-                            <textual>The href property specifies the value for the href property when the type property
-                                is set to &apos;page&apos;.
-                            </textual>
-                        </text>
-                    </cell>
-                    <cell>
-                        <text v="v1">
-                            <textual>url</textual>
-                        </text>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <text v="v1">
-                            <textual>action</textual>
-                        </text>
-                    </cell>
-                    <cell>
-                        <text v="v1">
-                            <textual>The action property specifies the value for the action property that is generated
-                                when type is specified as &apos;workflow&apos;.
-                            </textual>
-                        </text>
-                    </cell>
-                    <cell>
-                        <text v="v1">
-                            <textual>url</textual>
-                        </text>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <text v="v1">
-                            <textual>classes</textual>
-                        </text>
-                    </cell>
-                    <cell>
-                        <text v="v1">
-                            <textual>A list of classes that should be applied.</textual>
-                        </text>
-                    </cell>
-                    <cell>
-                        <text v="v1">
-                            <textual>class list</textual>
-                        </text>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <text v="v1">
-                            <textual>testMode</textual>
-                        </text>
-                    </cell>
-                    <cell>
-                        <text v="v1">
-                            <textual>The testMode token indicates if the widget should render in test mode, which
-                                typically disables any button or link clicks.
-                            </textual>
-                        </text>
-                    </cell>
-                    <cell>
-                        <text v="v1">
-                            <textual>boolean</textual>
-                        </text>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <text v="v1">
-                            <textual>disabled</textual>
-                        </text>
-                    </cell>
-                    <cell>
-                        <text v="v1">
-                            <textual>The disabled token indicates if the Menu Item should be disabled or not.</textual>
-                        </text>
-                    </cell>
-                    <cell>
-                        <text v="v1">
-                            <textual>boolean</textual>
-                        </text>
-                    </cell>
                 </row>
                 <row>
                     <cell>
@@ -10322,43 +10055,6 @@
                     <cell>
                         <text v="v1">
                             <textual>boolean</textual>
-                        </text>
-                    </cell>
-                </row>
-            </table>
-            <text v="v1">
-                <textual>The following classes are produced for the Menu Item Widget.</textual>
-            </text>
-            <table v="v1">
-                <row>
-                    <column width="20%">
-                        <textual>Name</textual>
-                    </column>
-                    <column>
-                        <textual>Description</textual>
-                    </column>
-                    <column width="25%">
-                        <textual>Values</textual>
-                    </column>
-                </row>
-                <row>
-                    <cell>
-                        <text v="v1">
-                            <textual>Text Flavour</textual>
-                        </text>
-                    </cell>
-                    <cell>
-                        <text v="v1">
-                            <textual>Given that the text flavour has been configured on the widget, one of these classes
-                                will be produced.
-                            </textual>
-                        </text>
-                    </cell>
-                    <cell>
-                        <text v="v1">
-                            <textual>text-default, text-primary, text-secondary, text-info, text-warning, text-danger,
-                                text-success, text-muted, text-black, text-white
-                            </textual>
                         </text>
                     </cell>
                 </row>

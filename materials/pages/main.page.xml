@@ -67,7 +67,7 @@
         </textual>
     </text>
     <div v="v1" alignItems="STRETCH" wrap="WRAP" border="1px solid black">
-        <link type="page" page="style-guide-landing.html" openNewWindow="false"
+        <link type="page" page="style-guide-landing.html"
             flexBasis="240px" flexShrink="0" margin="0em 1em 1em 0em" v="v1">
             <card v="v1">
                 <image src="temp0.jpg" alt="Image of Suzi" title="Suzi Profile Picture"
@@ -85,7 +85,7 @@
                 </card-body>
             </card>
         </link>
-        <link type="page" page="style-guide-portfolio.html" openNewWindow="false"
+        <link type="page" page="style-guide-portfolio.html"
             flexBasis="240px" flexShrink="0" margin="0em 1em 1em 0em" v="v1">
             <card v="v1">
                 <image src="temp2.jpg" alt="Portfolio" title="Portfolio"
@@ -103,7 +103,7 @@
                 </card-body>
             </card>
         </link>
-        <link type="page" page="style-guide-question.html" openNewWindow="false"
+        <link type="page" page="style-guide-question.html"
             flexBasis="240px" flexShrink="0" margin="0em 1em 1em 0em" v="v1">
             <card v="v1">
                 <image src="temp7.jpg" alt="Question" title="Question"
@@ -121,7 +121,7 @@
                 </card-body>
             </card>
         </link>
-        <link type="page" page="style-guide-typography.html" openNewWindow="false"
+        <link type="page" page="style-guide-typography.html"
             flexBasis="240px" flexShrink="0" margin="0em 1em 1em 0em" v="v1">
             <card v="v1">
                 <image src="temp1.jpg" alt="Page A" title="Page A" width="240px"
@@ -138,7 +138,7 @@
                 </card-body>
             </card>
         </link>
-        <link type="page" page="style-guide-alpha.html" openNewWindow="false"
+        <link type="page" page="style-guide-alpha.html"
             flexBasis="240px" flexShrink="0" margin="0em 1em 1em 0em" v="v1">
             <card v="v1">
                 <image src="temp4.jpg" alt="Reference Alpha" title="Reference Alpha" width="240px"
@@ -154,7 +154,7 @@
                 </card-body>
             </card>
         </link>
-        <link type="page" page="style-guide-beta.html" openNewWindow="false"
+        <link type="page" page="style-guide-beta.html"
             flexBasis="240px" flexShrink="0" margin="0em 1em 1em 0em" v="v1">
             <card v="v1">
                 <image src="temp5.jpg" alt="Reference Beta" title="Reference Beta" width="240px"
@@ -170,7 +170,7 @@
                 </card-body>
             </card>
         </link>
-        <link type="page" page="style-guide-delta.html" openNewWindow="false"
+        <link type="page" page="style-guide-delta.html"
             flexBasis="240px" flexShrink="0" margin="0em 1em 1em 0em" v="v1">
             <card v="v1">
                 <image src="temp6.jpg" alt="Reference Delta" title="Reference Delta" width="240px"
@@ -185,7 +185,7 @@
                 </card-body>
             </card>
         </link>
-        <link type="page" page="style-guide-specials.html" openNewWindow="false"
+        <link type="page" page="style-guide-specials.html"
             flexBasis="240px" flexShrink="0" margin="0em 1em 1em 0em" v="v1">
             <card v="v1">
                 <image src="temp8.jpg" alt="Specials" title="Specials" width="240px"
@@ -225,9 +225,10 @@
             </row>
             <row>
                 <cell>
-                    <link type="page" page="error.html" openNewWindow="false"
-                        v="v1">
-                        <textual>Error Page</textual>
+                    <link type="page" page="error.html" v="v1">
+                        <text v="v1">
+                            <textual>Error Page</textual>
+                        </text>
                     </link>
                 </cell>
                 <cell>
@@ -245,8 +246,10 @@
             </row>
             <row>
                 <cell>
-                    <link type="page" page="not-found.html" openNewWindow="false" v="v1">
-                        <textual>Not Found Page</textual>
+                    <link type="page" page="not-found.html" v="v1">
+                        <text v="v1">
+                            <textual>Not ound Page</textual>
+                        </text>
                     </link>
                 </cell>
                 <cell>
@@ -266,9 +269,10 @@
             </row>
             <row>
                 <cell>
-                    <link type="page" page="unauthorized.html" openNewWindow="false"
-                        v="v1">
-                        <textual>Unauthorized Page</textual>
+                    <link type="page" page="unauthorized.html" v="v1">
+                        <text v="v1">
+                            <textual>Unauthorized Page</textual>
+                        </text>
                     </link>
                 </cell>
                 <cell>
@@ -291,9 +295,10 @@
             </row>
             <row>
                 <cell>
-                    <link type="page" page="register.html" openNewWindow="false"
-                        v="v1">
-                        <textual>Register Page</textual>
+                    <link type="page" page="register.html" v="v1">
+                        <text v="v1">
+                            <textual>Register Page</textual>
+                        </text>
                     </link>
                 </cell>
                 <cell>
@@ -315,9 +320,10 @@
             </row>
             <row>
                 <cell>
-                    <link type="page" page="registration-complete.html" openNewWindow="false"
-                        v="v1">
-                        <textual>Registration Complete Page</textual>
+                    <link type="page" page="registration-complete.html" v="v1">
+                        <text v="v1">
+                            <textual>Registration Complete Page</textual>
+                        </text>
                     </link>
                 </cell>
                 <cell>
@@ -337,8 +343,10 @@
             </row>
             <row>
                 <cell>
-                    <link type="page" page="email-confirmation-complete.html" openNewWindow="false" v="v1">
-                        <textual>Email Confirmation Complete Page</textual>
+                    <link type="page" page="email-confirmation-complete.html" v="v1">
+                        <text v="v1">
+                            <textual>Email Confirmation Complete Page</textual>
+                        </text>
                     </link>
                 </cell>
                 <cell>
@@ -359,8 +367,10 @@
             </row>
             <row>
                 <cell>
-                    <link type="page" page="case-principal-picker.html" openNewWindow="false" v="v1">
-                        <textual>Case Principal Picker Page</textual>
+                    <link type="page" page="case-principal-picker.html" v="v1">
+                        <text v="v1">
+                            <textual>Case Principal Picker Page</textual>
+                        </text>
                     </link>
                 </cell>
                 <cell>
@@ -384,8 +394,10 @@
             </row>
             <row>
                 <cell>
-                    <link type="page" page="privacy.html" openNewWindow="false" v="v1">
-                        <textual>Privacy Page</textual>
+                    <link type="page" page="privacy.html" v="v1">
+                        <text v="v1">
+                            <textual>Privacy Page</textual>
+                        </text>
                     </link>
                 </cell>
                 <cell>
@@ -408,8 +420,10 @@
             </row>
             <row>
                 <cell>
-                    <link type="page" page="reset-password.html" openNewWindow="false" v="v1">
-                        <textual>Reset Password Page</textual>
+                    <link type="page" page="reset-password.html" v="v1">
+                        <text v="v1">
+                            <textual>Reset Password Page</textual>
+                        </text>
                     </link>
                 </cell>
                 <cell>
@@ -431,8 +445,10 @@
             </row>
             <row>
                 <cell>
-                    <link type="page" page="reset-password-complete.html" openNewWindow="false" v="v1">
-                        <textual>Reset Password Complete Page</textual>
+                    <link type="page" page="reset-password-complete.html" v="v1">
+                        <text v="v1">
+                            <textual>Reset Password Complete Page</textual>
+                        </text>
                     </link>
                 </cell>
                 <cell>
@@ -452,8 +468,10 @@
             </row>
             <row>
                 <cell>
-                    <link type="page" page="reset-password-request.html" openNewWindow="false" v="v1">
-                        <textual>Reset Password Request Page</textual>
+                    <link type="page" page="reset-password-request.html" v="v1">
+                        <text v="v1">
+                            <textual>Reset Password Request Page</textual>
+                        </text>
                     </link>
                 </cell>
                 <cell>
@@ -474,8 +492,10 @@
             </row>
             <row>
                 <cell>
-                    <link type="page" page="reset-password-request-complete.html" openNewWindow="false" v="v1">
-                        <textual>Reset Password Request Complete Page</textual>
+                    <link type="page" page="reset-password-request-complete.html" v="v1">
+                        <text v="v1">
+                            <textual>Reset Password Request Complete Page</textual>
+                        </text>
                     </link>
                 </cell>
                 <cell>
@@ -496,8 +516,10 @@
             </row>
             <row>
                 <cell>
-                    <link type="page" page="wizard-test-results.html" openNewWindow="false" v="v1">
-                        <textual>Wizard Test Results Page</textual>
+                    <link type="page" page="wizard-test-results.html" v="v1">
+                        <text v="v1">
+                            <textual>Wizard Test Results Page</textual>
+                        </text>
                     </link>
                 </cell>
                 <cell>
@@ -517,8 +539,10 @@
 
             <row>
                 <cell>
-                    <link type="page" page="workflow-confirm.html" openNewWindow="false" v="v1">
-                        <textual>Workflow Confirm Page</textual>
+                    <link type="page" page="workflow-confirm.html" v="v1">
+                        <text v="v1">
+                            <textual>Workflow Confirm Page</textual>
+                        </text>
                     </link>
                 </cell>
                 <cell>
@@ -538,8 +562,10 @@
             </row>
             <row>
                 <cell>
-                    <link type="page" page="confirm.html" openNewWindow="false" v="v1">
-                        <textual>Confirm Page</textual>
+                    <link type="page" page="confirm.html" v="v1">
+                        <text v="v1">
+                            <textual>Confirm Page</textual>
+                        </text>
                     </link>
                 </cell>
                 <cell>
@@ -557,8 +583,10 @@
             </row>
             <row>
                 <cell>
-                    <link type="page" page="workflow-executed.html" openNewWindow="false" v="v1">
-                        <textual>Workflow Executed Page</textual>
+                    <link type="page" page="workflow-executed.html" v="v1">
+                        <text v="v1">
+                            <textual>Workflow Executed Page</textual>
+                        </text>
                     </link>
                 </cell>
                 <cell>
@@ -580,8 +608,10 @@
             </row>
             <row>
                 <cell>
-                    <link type="page" page="wizard-delete-confirmation.html" openNewWindow="false" v="v1">
-                        <textual>Wizard Delete Confirmation Form</textual>
+                    <link type="page" page="wizard-delete-confirmation.html" v="v1">
+                        <text v="v1">
+                            <textual>Wizard Delete Confirmation Form</textual>
+                        </text>
                     </link>
                 </cell>
                 <cell>
@@ -600,8 +630,10 @@
             </row>
             <row>
                 <cell>
-                    <link type="page" page="wizard-transfer-confirmation.html" openNewWindow="false" v="v1">
-                        <textual>Wizard Transfer Confirmation Form</textual>
+                    <link type="page" page="wizard-transfer-confirmation.html" v="v1">
+                        <text v="v1">
+                            <textual>Wizard Transfer Confirmation Form</textual>
+                        </text>
                     </link>
                 </cell>
                 <cell>
@@ -645,7 +677,7 @@
             </row>
             <row>
                 <cell>
-                    <link type="page" page="test-email-email.html" openNewWindow="false"
+                    <link type="page" page="test-email-email.html"
                         v="v1">
                         <textual>Test Email</textual>
                     </link>
@@ -665,7 +697,7 @@
             </row>
             <row>
                 <cell>
-                    <link type="page" page="email-confirmation-email.html" openNewWindow="false" v="v1">
+                    <link type="page" page="email-confirmation-email.html" v="v1">
                         <textual>Email Confirmation</textual>
                     </link>
                 </cell>
@@ -685,7 +717,7 @@
             </row>
             <row>
                 <cell>
-                    <link type="page" page="reset-password-email.html" openNewWindow="false" v="v1">
+                    <link type="page" page="reset-password-email.html" v="v1">
                         <textual>Reset Password</textual>
                     </link>
                 </cell>
@@ -721,467 +753,653 @@
     <list listStyle="BULLET" flexBasis="14em" flexShrink="0" v="v1">
         <list-item>
             <link type="page" page="reference.html#abandon-wip-button" v="v1">
-                <textual>Abandon Wip Button</textual>
+                <text v="v1">
+                    <textual>Abandon Wip Button</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#accept-button" v="v1">
-                <textual>Accept Button</textual>
+                <text v="v1">
+                    <textual>Accept Button</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#accordion" v="v1">
-                <textual>Accordion</textual>
+                <text v="v1">
+                    <textual>Accordion</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#accordion-item" v="v1">
-                <textual>Accordion Item</textual>
+                <text v="v1">
+                    <textual>Accordion Item</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#accordion-item-header" v="v1">
-                <textual>Accordion Item Header</textual>
+                <text v="v1">
+                    <textual>Accordion Item Header</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#array-append-button" v="v1">
-                <textual>Array Append Button</textual>
+                <text v="v1">
+                    <textual>Array Append Button</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#array-item-delete-button" v="v1">
-                <textual>Array Item Delete Button</textual>
+                <text v="v1">
+                    <textual>Array Item Delete Button</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#array-item-replace-button" v="v1">
-                <textual>Array Item Replace Button</textual>
+                <text v="v1">
+                    <textual>Array Item Replace Button</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#back-link" v="v1">
-                <textual>Back Link</textual>
+                <text v="v1">
+                    <textual>Back Link</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#badge" v="v1">
-                <textual>Badge</textual>
+                <text v="v1">
+                    <textual>Badge</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#br" v="v1">
-                <textual>Br</textual>
+                <text v="v1">
+                    <textual>Br</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#cancel-button" v="v1">
-                <textual>Cancel Button</textual>
+                <text v="v1">
+                    <textual>Cancel Button</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#card" v="v1">
-                <textual>Card</textual>
+                <text v="v1">
+                    <textual>Card</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#card-body" v="v1">
-                <textual>Card Body</textual>
+                <text v="v1">
+                    <textual>Card Body</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#card-footer" v="v1">
-                <textual>Card Footer</textual>
+                <text v="v1">
+                    <textual>Card Footer</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#card-header" v="v1">
-                <textual>Card Header</textual>
+                <text v="v1">
+                    <textual>Card Header</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#carousel" v="v1">
-                <textual>Carousel</textual>
+                <text v="v1">
+                    <textual>Carousel</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#carousel-panel" v="v1">
-                <textual>Carousel Panel</textual>
+                <text v="v1">
+                    <textual>Carousel Panel</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#kase-explorer" v="v1">
-                <textual>Case Explorer</textual>
+                <text v="v1">
+                    <textual>Case Explorer</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#cell" v="v1">
-                <textual>Cell</textual>
+                <text v="v1">
+                    <textual>Cell</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#close-workflow-executed-panel" v="v1">
-                <textual>Close Workflow Executed Panel</textual>
+                <text v="v1">
+                    <textual>Close Workflow Executed Panel</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#column" v="v1">
-                <textual>Column</textual>
+                <text v="v1">
+                    <textual>Column</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#confirm-workflow-panel" v="v1">
-                <textual>Confirm Workflow Panel</textual>
+                <text v="v1">
+                    <textual>Confirm Workflow Panel</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#confirmation-panel" v="v1">
-                <textual>Confirmation Panel</textual>
+                <text v="v1">
+                    <textual>Confirmation Panel</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#cookie-consent" v="v1">
-                <textual>Cookie Consent</textual>
+                <text v="v1">
+                    <textual>Cookie Consent</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#def" v="v1">
-                <textual>Def</textual>
+                <text v="v1">
+                    <textual>Def</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#div" v="v1">
-                <textual>Div</textual>
+                <text v="v1">
+                    <textual>Div</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#email" v="v1">
-                <textual>Email</textual>
+                <text v="v1">
+                    <textual>Email</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#email-confirmation-link" v="v1">
-                <textual>Email Confirmation Link</textual>
+                <text v="v1">
+                    <textual>Email Confirmation Link</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#enumeration" v="v1">
-                <textual>Enumeration</textual>
+                <text v="v1">
+                    <textual>Enumeration</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#error-summary" v="v1">
-                <textual>Error Summary</textual>
+                <text v="v1">
+                    <textual>Error Summary</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#folder" v="v1">
-                <textual>Folder</textual>
+                <text v="v1">
+                    <textual>Folder</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#form" v="v1">
-                <textual>Form</textual>
+                <text v="v1">
+                    <textual>Form</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#header" v="v1">
-                <textual>Header</textual>
+                <text v="v1">
+                    <textual>Header</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#horizontal-rule" v="v1">
-                <textual>Horizontal Rule</textual>
+                <text v="v1">
+                    <textual>Horizontal Rule</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#icon" v="v1">
-                <textual>Icon</textual>
+                <text v="v1">
+                    <textual>Icon</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#if" v="v1">
-                <textual>If</textual>
+                <text v="v1">
+                    <textual>If</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#image" v="v1">
-                <textual>Image</textual>
+                <text v="v1">
+                    <textual>Image</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#initiate-workflow-button" v="v1">
-                <textual>Initiate Workflow Button</textual>
+                <text v="v1">
+                    <textual>Initiate Workflow Button</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#input" v="v1">
-                <textual>Input</textual>
+                <text v="v1">
+                    <textual>Input</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#inset-text" v="v1">
-                <textual>Inset Text</textual>
+                <text v="v1">
+                    <textual>Inset Text</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#jumbotron" v="v1">
-                <textual>Jumbotron</textual>
+                <text v="v1">
+                    <textual>Jumbotron</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#link" v="v1">
-                <textual>Link</textual>
+                <text v="v1">
+                    <textual>Link</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#list" v="v1">
-                <textual>List</textual>
+                <text v="v1">
+                    <textual>List</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#list-item" v="v1">
-                <textual>List Item</textual>
+                <text v="v1">
+                    <textual>List Item</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#locale-select" v="v1">
-                <textual>Locale Select</textual>
+                <text v="v1">
+                    <textual>Locale Select</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#login-panel" v="v1">
-                <textual>Login Panel</textual>
+                <text v="v1">
+                    <textual>Login Panel</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#loop" v="v1">
-                <textual>Loop</textual>
+                <text v="v1">
+                    <textual>Loop</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#menu" v="v1">
-                <textual>Menu</textual>
+                <text v="v1">
+                    <textual>Menu</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#menu-brand" v="v1">
-                <textual>Menu Brand</textual>
+                <text v="v1">
+                    <textual>Menu Brand</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#menu-item" v="v1">
-                <textual>Menu Item</textual>
+                <text v="v1">
+                    <textual>Menu Item</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#merge-button" v="v1">
-                <textual>Merge Button</textual>
+                <text v="v1">
+                    <textual>Merge Button</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#message-explorer" v="v1">
-                <textual>Message Explorer</textual>
+                <text v="v1">
+                    <textual>Message Explorer</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#mile-stone" v="v1">
-                <textual>Mile Stone</textual>
+                <text v="v1">
+                    <textual>Mile Stone</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#notification-banner" v="v1">
-                <textual>Notification Banner</textual>
+                <text v="v1">
+                    <textual>Notification Banner</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#open-wip-button" v="v1">
-                <textual>Open Wip Button</textual>
+                <text v="v1">
+                    <textual>Open Wip Button</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#open-wip-page-button" v="v1">
-                <textual>Open Wip Page Button</textual>
+                <text v="v1">
+                    <textual>Open Wip Page Button</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#page" v="v1">
-                <textual>Page</textual>
+                <text v="v1">
+                    <textual>Page</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#pagination" v="v1">
-                <textual>Pagination</textual>
+                <text v="v1">
+                    <textual>Pagination</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#password-reset-link" v="v1">
-                <textual>Password Reset Link</textual>
+                <text v="v1">
+                    <textual>Password Reset Link</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#payment-button" v="v1">
-                <textual>Payment Button</textual>
+                <text v="v1">
+                    <textual>Payment Button</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#progress-bar" v="v1">
-                <textual>Progress Bar</textual>
+                <text v="v1">
+                    <textual>Progress Bar</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#register-panel" v="v1">
-                <textual>Register Panel</textual>
+                <text v="v1">
+                    <textual>Register Panel</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#reset-password-panel" v="v1">
-                <textual>Reset Password Panel</textual>
+                <text v="v1">
+                    <textual>Reset Password Panel</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#reset-password-request-panel" v="v1">
-                <textual>Reset Password Request Panel</textual>
+                <text v="v1">
+                    <textual>Reset Password Request Panel</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#row" v="v1">
-                <textual>Row</textual>
+                <text v="v1">
+                    <textual>Row</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#save-button" v="v1">
-                <textual>Save Button</textual>
+                <text v="v1">
+                    <textual>Save Button</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#scale" v="v1">
-                <textual>Scale</textual>
+                <text v="v1">
+                    <textual>Scale</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#script" v="v1">
-                <textual>Script</textual>
+                <text v="v1">
+                    <textual>Script</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#select-panel" v="v1">
-                <textual>Select Panel</textual>
+                <text v="v1">
+                    <textual>Select Panel</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#select-panel-item" v="v1">
-                <textual>Select Panel Item</textual>
+                <text v="v1">
+                    <textual>Select Panel Item</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#span" v="v1">
-                <textual>Span</textual>
+                <text v="v1">
+                    <textual>Span</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#sub-menu" v="v1">
-                <textual>Sub Menu</textual>
+                <text v="v1">
+                    <textual>Sub Menu</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#sub-menu-label" v="v1">
-                <textual>Sub Menu Label</textual>
+                <text v="v1">
+                    <textual>Sub Menu Label</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#submit-button" v="v1">
-                <textual>Submit Button</textual>
+                <text v="v1">
+                    <textual>Submit Button</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#switch" v="v1">
-                <textual>Switch</textual>
+                <text v="v1">
+                    <textual>Switch</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#table" v="v1">
-                <textual>Table</textual>
+                <text v="v1">
+                    <textual>Table</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#text" v="v1">
-                <textual>Text</textual>
+                <text v="v1">
+                    <textual>Text</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#timezone-select" v="v1">
-                <textual>Timezone Select</textual>
+                <text v="v1">
+                    <textual>Timezone Select</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#title" v="v1">
-                <textual>Title</textual>
+                <text v="v1">
+                    <textual>Title</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#tool-tip" v="v1">
-                <textual>Tool Tip</textual>
+                <text v="v1">
+                    <textual>Tool Tip</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#transfer-wip-button" v="v1">
-                <textual>Transfer Wip Button</textual>
+                <text v="v1">
+                    <textual>Transfer Wip Button</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#tray" v="v1">
-                <textual>Tray</textual>
+                <text v="v1">
+                    <textual>Tray</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#user-explorer" v="v1">
-                <textual>User Explorer</textual>
+                <text v="v1">
+                    <textual>User Explorer</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#uuid" v="v1">
-                <textual>UUID</textual>
+                <text v="v1">
+                    <textual>UUID</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#validation-rule" v="v1">
-                <textual>Validation Rule</textual>
+                <text v="v1">
+                    <textual>Validation Rule</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#value" v="v1">
-                <textual>Value</textual>
+                <text v="v1">
+                    <textual>Value</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#warning" v="v1">
-                <textual>Warning</textual>
+                <text v="v1">
+                    <textual>Warning</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#well" v="v1">
-                <textual>Well</textual>
+                <text v="v1">
+                    <textual>Well</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#wizard-test-results" v="v1">
-                <textual>Wizard Test Results</textual>
+                <text v="v1">
+                    <textual>Wizard Test Results</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#wizard-intro-panel" v="v1">
-                <textual>Wizard Intro Panel</textual>
+                <text v="v1">
+                    <textual>Wizard Intro Panel</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#wizard-resume-panel" v="v1">
-                <textual>Wizard Resume Panel</textual>
+                <text v="v1">
+                    <textual>Wizard Resume Panel</textual>
+                </text>
             </link>
         </list-item>
         <list-item>
             <link type="page" page="reference.html#wizard-outro-panel" v="v1">
-                <textual>Wizard Outro Panel</textual>
+                <text v="v1">
+                    <textual>Wizard Outro Panel</textual>
+                </text>
             </link>
         </list-item>
     </list>

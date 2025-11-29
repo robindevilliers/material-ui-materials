@@ -12,6 +12,11 @@
                         administrator if the problem persists.
                     </textual>
                 </text>
+                <link v="v1" type="page" page="index" id="a1234">
+                    <text v="v1">
+                        <textual>Landing Page</textual>
+                    </text>
+                </link>
             </div>
         </div>
     </div>

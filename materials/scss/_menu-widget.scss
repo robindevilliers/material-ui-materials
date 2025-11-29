@@ -8,6 +8,13 @@
     }
   }
 
+  .nav-item {
+    display: flex;
+    align-items: center;
+    padding: .5rem;
+    justify-content: space-between;
+  }
+
   .navbar-nav {
     flex-basis: 100%;
     .dropdown-menu {

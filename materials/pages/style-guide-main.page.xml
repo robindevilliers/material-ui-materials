@@ -1,10 +1,10 @@
 <?schema version="2"?>
 <page id="style-guide-main" version="1" active="false" released="false" group="public" title="Style Guide Main"
-      description="Style Guide Main Page" defnVersion="v1" orientation="COLUMN">
+    description="Style Guide Main Page" defnVersion="v1" orientation="COLUMN">
     <jumbotron orientation="COLUMN" v="v1">
         <div orientation="ROW" v="v1">
             <image src="logo.svg" title="Logo" height="210px" width="210px" borderRadius="1em" padding="1em"
-                   border="1px solid black" margin="0em 2em 1em" v="v1" background="white"/>
+                border="1px solid black" margin="0em 2em 1em" v="v1" background="white"/>
 
             <title size="LARGE" v="v1">
                 <textual>Welcome to the Style Guide</textual>
@@ -12,18 +12,24 @@
 
             <list listStyle="BORDERED" flexBasis="14em" flexShrink="0" v="v1">
                 <list-item>
-                    <link type="page" page="fixed/style-guide-alpha" openNewWindow="false" v="v1">
-                        <textual>Sample Page Alpha</textual>
+                    <link type="page" page="fixed/style-guide-alpha"  v="v1">
+                        <text v="v1">
+                            <textual>Sample Page Alpha</textual>
+                        </text>
                     </link>
                 </list-item>
                 <list-item>
-                    <link type="page" page="fixed/style-guide-beta" openNewWindow="false" v="v1">
-                        <textual>Sample Page Beta</textual>
+                    <link type="page" page="fixed/style-guide-beta"  v="v1">
+                        <text v="v1">
+                            <textual>Sample Page Beta</textual>
+                        </text>
                     </link>
                 </list-item>
                 <list-item>
-                    <link type="page" page="fixed/style-guide-delta" openNewWindow="false" v="v1">
-                        <textual>Sample Page Delta</textual>
+                    <link type="page" page="fixed/style-guide-delta"  v="v1">
+                        <text v="v1">
+                            <textual>Sample Page Delta</textual>
+                        </text>
                     </link>
                 </list-item>
             </list>

@@ -1,7 +1,7 @@
 <?schema version="2"?>
 <page id="style-guide-sample-alpha" version="1" active="false" released="false" group="public"
-      title="Style Guide - Alpha" description="Style Guide Sample Alpha Page" defnVersion="v1"
-      orientation="COLUMN">
+    title="Style Guide - Alpha" description="Style Guide Sample Alpha Page" defnVersion="v1"
+    orientation="COLUMN">
     <fake-store>
         <title size="MEDIUM" v="v1">
             <textual>
@@ -135,7 +135,7 @@
             </div>
             <card flexBasis="300px" flexShrink="0" margin="0em 0em 0em 1em" v="v1">
                 <image src="suzi.jpeg" alt="Image of Suzi" title="Suzi Profile Picture" height="200px" width="300px"
-                       v="v1"/>
+                    v="v1"/>
                 <card-header orientation="COLUMN">
                     <title size="SMALLER" v="v1">
                         <textual>Senior Manager</textual>
@@ -153,8 +153,10 @@
                     </text>
                 </card-body>
                 <card-footer orientation="COLUMN">
-                    <link type="page" page="" openNewWindow="false" v="v1">
-                        <textual>A Link</textual>
+                    <link type="page" page="" v="v1">
+                        <text v="v1">
+                            <textual>A Link</textual>
+                        </text>
                     </link>
                 </card-footer>
             </card>

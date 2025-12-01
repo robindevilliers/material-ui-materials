@@ -5,22 +5,3 @@ document iconHelp.html.
 
 set width for columns in reference page.
 
-commit 55d77ce947c820d7eacebc25c2beb961ed9394f8 (HEAD -> master)
-Author: Robin de Villiers <robindevilliers@me.com>
-Date:   Sat Aug 16 22:10:42 2025 +0100
-
-    16 Aug 2025 - Added validation for event result name.
-    16 Aug 2025 - Fixed bug when plan widget event result name is not found in referencing payment button.
-    16 Aug 2025 - Fixed bug with control panel search for domain throwing alias not found exception.
-
-commit b526f062c5dbb549a16275e362d476c95f4c2b06
-Author: Robin de Villiers <robindevilliers@me.com>
-Date:   Sat Aug 16 14:51:50 2025 +0100
-
-    16 Aug 2025 - Fixed bug with test page render fail due to noindex.
-
-commit d936b2810a207ae2f5dedb4329bcdaf1d16dc04a
-Author: Robin de Villiers <robindevilliers@me.com>
-Date:   Sat Aug 16 13:59:21 2025 +0100
-
-    analysis

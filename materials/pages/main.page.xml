@@ -6,8 +6,8 @@
             <image src="logo.svg" title="Logo" height="210px" width="210px" borderRadius="1em"
                 padding="0.5em" margin="0em 2em 1em" v="v1" background="white"/>
             <div orientation="COLUMN" v="v1">
-                <title size="LARGE" fontFlavour="WHITE" v="v1">
-                    <textual>Welcome to the Materials Toolkit</textual>
+                <title size="LARGE" v="v1">
+                    <textual fontFlavour="WHITE" >Welcome to the Materials Toolkit</textual>
                 </title>
                 <text v="v1">
                     <textual>

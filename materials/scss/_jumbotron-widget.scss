@@ -1,5 +1,5 @@
 .jumbotron {
-  background: theme-color("primary");
+  background: darken(theme-color("primary"), 7.5%);;
   color: color-yiq(theme-color("primary"));
   margin-top: 1.5rem;
   border-radius: .25rem;

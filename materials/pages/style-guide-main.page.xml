@@ -12,21 +12,21 @@
 
             <list listStyle="BORDERED" flexBasis="14em" flexShrink="0" v="v1">
                 <list-item>
-                    <link type="page" page="fixed/style-guide-alpha"  v="v1">
+                    <link type="page" page="fixed/style-guide-alpha" v="v1">
                         <text v="v1">
                             <textual>Sample Page Alpha</textual>
                         </text>
                     </link>
                 </list-item>
                 <list-item>
-                    <link type="page" page="fixed/style-guide-beta"  v="v1">
+                    <link type="page" page="fixed/style-guide-beta" v="v1">
                         <text v="v1">
                             <textual>Sample Page Beta</textual>
                         </text>
                     </link>
                 </list-item>
                 <list-item>
-                    <link type="page" page="fixed/style-guide-delta"  v="v1">
+                    <link type="page" page="fixed/style-guide-delta" v="v1">
                         <text v="v1">
                             <textual>Sample Page Delta</textual>
                         </text>
@@ -55,26 +55,26 @@
     </title>
     <div v="v1">
         <div orientation="COLUMN" v="v1">
-            <title fontFlavour="DEFAULT" size="LARGE" v="v1">
-                <textual>This is a Large Title</textual>
+            <title size="LARGE" v="v1">
+                <textual fontFlavour="DEFAULT">This is a Large Title</textual>
             </title>
-            <title fontFlavour="PRIMARY" size="LARGER" v="v1">
-                <textual>This is a Larger Title</textual>
+            <title size="LARGER" v="v1">
+                <textual fontFlavour="PRIMARY">This is a Larger Title</textual>
             </title>
-            <title fontFlavour="INFO" size="MEDIUM" v="v1">
-                <textual>This is a Medium Title</textual>
+            <title size="MEDIUM" v="v1">
+                <textual fontFlavour="INFO">This is a Medium Title</textual>
             </title>
-            <title fontFlavour="WARNING" size="SMALLER" v="v1">
-                <textual>This is a Smaller Title</textual>
+            <title size="SMALLER" v="v1">
+                <textual fontFlavour="WARNING">This is a Smaller Title</textual>
             </title>
-            <title fontFlavour="DANGER" size="SMALL" v="v1">
-                <textual>This is a Small Title</textual>
+            <title size="SMALL" v="v1">
+                <textual fontFlavour="DANGER">This is a Small Title</textual>
             </title>
-            <title fontFlavour="SUCCESS" size="SMALL" v="v1">
-                <textual>This is a Small Title</textual>
+            <title size="SMALL" v="v1">
+                <textual fontFlavour="SUCCESS">This is a Small Title</textual>
             </title>
-            <title fontFlavour="MUTED" size="SMALL" v="v1">
-                <textual>This is a Small Title</textual>
+            <title size="SMALL" v="v1">
+                <textual fontFlavour="MUTED">This is a Small Title</textual>
             </title>
         </div>
         <div orientation="COLUMN" margin="0em 0em 0em 1em" v="v1">

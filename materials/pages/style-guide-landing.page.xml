@@ -29,8 +29,8 @@
                 <div orientation="COLUMN" alignSelf="END" margin="0em 10em 0em 0em" padding="1em"
                     backgroundFlavour="INFO"
                     borderRadius="1em" v="v1">
-                    <title size="LARGE" fontFlavour="BLACK" v="v1">
-                        <textual>Eaves of Lettuce</textual>
+                    <title size="LARGE" v="v1">
+                        <textual fontFlavour="BLACK">Eaves of Lettuce</textual>
                     </title>
 
                     <text paragraphStyle="PLAIN" width="250px" v="v1">
@@ -46,10 +46,8 @@
             </carousel-panel>
             <carousel-panel src="panel-2.jpg" active="false" justifyContent="START" orientation="COLUMN"
                 alignItems="CENTER">
-                <title size="LARGE" fontFlavour="BLACK" padding="0em 1em" backgroundFlavour="INFO"
-                    borderRadius="0.25em"
-                    v="v1">
-                    <textual>
+                <title size="LARGE" padding="0em 1em" v="v1"  borderRadius="0.25em">
+                    <textual fontFlavour="BLACK" backgroundFlavour="INFO">
                         Opinions from Cheddar
                     </textual>
                 </title>
@@ -87,8 +85,8 @@
     <div v="v1" orientation="ROW">
         <div orientation="COLUMN" alignItems="CENTER" margin="0 0.5em" v="v1">
             <icon v="v1" name="car-front-fill"/>
-            <title size="MEDIUM" fontFlavour="PRIMARY" padding="0em 1em" v="v1">
-                <textual>Lorem Ipsum</textual>
+            <title size="MEDIUM" padding="0em 1em" v="v1">
+                <textual fontFlavour="PRIMARY" >Lorem Ipsum</textual>
             </title>
             <text paragraphStyle="PLAIN" v="v1">
                 <textual>
@@ -106,8 +104,8 @@
 
             <icon v="v1" name="archive-fill"/>
 
-            <title size="MEDIUM" fontFlavour="PRIMARY" padding="0em 1em" v="v1">
-                <textual>Lorem Ipsum</textual>
+            <title size="MEDIUM" padding="0em 1em" v="v1">
+                <textual fontFlavour="PRIMARY" >Lorem Ipsum</textual>
             </title>
 
             <text paragraphStyle="PLAIN" v="v1">
@@ -124,8 +122,8 @@
         </div>
         <div orientation="COLUMN" alignItems="CENTER" v="v1">
             <icon flavour="DEFAULT" name="clipboard-data-fill" v="v1"/>
-            <title size="MEDIUM" fontFlavour="PRIMARY" padding="0em 1em" v="v1">
-                <textual>Lorem Ipsum</textual>
+            <title size="MEDIUM" padding="0em 1em" v="v1">
+                <textual fontFlavour="PRIMARY" >Lorem Ipsum</textual>
             </title>
             <text paragraphStyle="PLAIN" v="v1">
                 <textual>

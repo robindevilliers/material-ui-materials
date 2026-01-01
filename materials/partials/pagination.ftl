@@ -12,7 +12,7 @@
                     <input type="hidden" name="lIndex" value="${previousPage}">
                 </#if>
                 <button type="submit" aria-label="Previous" class="btn btn-link page-link"
-                        <#if !previousPage?has_content >disabled</#if> name="lPage">
+                        <#if !previousPage?has_content >disabled</#if> name="previousPage">
                     <span aria-hidden="true">&laquo;</span>
                     <span class="sr-only">Previous</span>
                 </button>
@@ -24,7 +24,7 @@
                 <form class="form-inline" method="get" action="${action}">
                     <input type="hidden" name="bust" value="${bust}"/>
                     <input type="hidden" name="lIndex" value="${page}">
-                    <button type="submit" aria-label="Page" class="page-link" name="lPage">
+                    <button type="submit" aria-label="Page" class="page-link" name="page_${page?index}">
                         ${page + 1}
                     </button>
                 </form>
@@ -38,7 +38,7 @@
                     <input type="hidden" name="lIndex" value="${nextPage}">
                 </#if>
                 <button type="submit" aria-label="Next" class="btn btn-link page-link"
-                        <#if !nextPage?has_content >disabled</#if> name="lPage">
+                        <#if !nextPage?has_content >disabled</#if> name="nextPage">
                     <span aria-hidden="true">&raquo;</span>
                     <span class="sr-only">Next</span>
                 </button>

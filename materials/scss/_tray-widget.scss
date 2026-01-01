@@ -2,6 +2,10 @@
 .tray-widget {
   padding: 5px;
 
+  .panel-body {
+    background-color: theme-color("primary") !important;
+  }
+
   .tray-body {
     .panel-item:hover {
       background-color: theme-color("primary") !important;

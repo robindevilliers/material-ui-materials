@@ -18,8 +18,8 @@
                     ) ${val.id}</option>
             </#list>
         </select>
+        <#if (error)??>
+            <span id="error-message-${name}" class="error-message">${error}</span>
+        </#if>
     </div>
-    <#if (error)??>
-        <span id="error-message-${name}" class="error-message">${error}</span>
-    </#if>
 </div>

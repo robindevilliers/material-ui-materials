@@ -45,10 +45,10 @@
                                                 class="form-label label">Character ${firstPasswordPhraseIndex}</label>
                                         <input class="form-control" placeholder="?" id="firstCharacter" maxlength="1"
                                                 type="password" name="firstCharacter" style="text-align: right; ">
+                                        <#if errors.firstCharacter??>
+                                            <span class="error-message">${errors.firstCharacter}</span>
+                                        </#if>
                                     </div>
-                                    <#if errors.firstCharacter??>
-                                        <span class="error-message">${errors.firstCharacter}</span>
-                                    </#if>
                                 </div>
                             </div>
                             <div class="row">
@@ -59,11 +59,10 @@
                                         <input class="form-control" placeholder="?" id="secondCharacter" maxlength="1"
                                                 type="password"
                                                 name="secondCharacter" style="text-align: right; ">
+                                        <#if errors.secondCharacter??>
+                                            <span class="error-message">${errors.secondCharacter}</span>
+                                        </#if>
                                     </div>
-                                    <#if errors.secondCharacter??>
-                                        <span class="error-message">${errors.secondCharacter}</span>
-                                    </#if>
-
                                 </div>
                             </div>
                             <div class="row">
@@ -73,10 +72,10 @@
                                                 class="form-label label">Character ${thirdPasswordPhraseIndex}</label>
                                         <input class="form-control" placeholder="?" id="thirdCharacter" maxlength="1"
                                                 type="password" name="thirdCharacter" style="text-align: right; ">
+                                        <#if errors.thirdCharacter??>
+                                            <span class="error-message">${errors.thirdCharacter}</span>
+                                        </#if>
                                     </div>
-                                    <#if errors.thirdCharacter??>
-                                        <span class="error-message">${errors.thirdCharacter}</span>
-                                    </#if>
                                 </div>
                             </div>
                         </div>

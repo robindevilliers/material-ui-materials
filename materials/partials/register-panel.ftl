@@ -1,4 +1,5 @@
-<form action="${action}" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" class="register-panel-widget">
+<form action="${action}" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8"
+        class="register-panel-widget">
     <input type="hidden" name="_csrf" value="${_csrf}">
     <#if errors?has_content>
         <div class="row">
@@ -21,11 +22,9 @@
     </#if>
     <div class="row">
         <div class="form-group col">
-            <div class="form-group">
-                <label for="registerPanelUsername" class="form-label label">Username</label>
-                <input class="form-control" id="registerPanelUsername" type="text" name="username" placeholder=""
-                        value="${(username)!}">
-            </div>
+            <label for="registerPanelUsername" class="form-label label">Username</label>
+            <input class="form-control" id="registerPanelUsername" type="text" name="username" placeholder=""
+                    value="${(username)!}">
             <#if errors.username??>
                 <span class="error-message">${errors.username}</span>
             <#else>
@@ -34,20 +33,18 @@
         </div>
 
         <div class="form-group col">
-            <div class="form-group">
-                <label for="title" class="form-label label">Title</label>
-                <select id="title" name="title" class="form-control">
-                    <#if (title)?has_content>
-                        <option value=""></option><#else>
-                        <option value="" selected></option></#if>
-                    <#if (title)! == 'Mr'>
-                        <option value="Mr" selected>Mr</option><#else>
-                        <option value="Mr">Mr</option></#if>
-                    <#if (title)! == 'Ms'>
-                        <option value="Ms" selected>Ms</option><#else>
-                        <option value="Ms">Ms</option></#if>
-                </select>
-            </div>
+            <label for="title" class="form-label label">Title</label>
+            <select id="title" name="title" class="form-control">
+                <#if (title)?has_content>
+                    <option value=""></option><#else>
+                    <option value="" selected></option></#if>
+                <#if (title)! == 'Mr'>
+                    <option value="Mr" selected>Mr</option><#else>
+                    <option value="Mr">Mr</option></#if>
+                <#if (title)! == 'Ms'>
+                    <option value="Ms" selected>Ms</option><#else>
+                    <option value="Ms">Ms</option></#if>
+            </select>
             <#if errors.title??>
                 <span class="error-message">${errors.title}</span>
             <#else>
@@ -59,11 +56,9 @@
 
     <div class="row">
         <div class="form-group col">
-            <div class="form-group">
-                <label for="firstName" class="form-label label">First Name</label>
-                <input id="firstName" type="text" name="firstName" class="form-control" value="${(firstName)!}"
-                        placeholder="">
-            </div>
+            <label for="firstName" class="form-label label">First Name</label>
+            <input id="firstName" type="text" name="firstName" class="form-control" value="${(firstName)!}"
+                    placeholder="">
             <#if errors.firstName??>
                 <span class="error-message">${errors.firstName}</span>
             <#else>
@@ -72,11 +67,9 @@
         </div>
 
         <div class="form-group col">
-            <div class="form-group">
-                <label for="lastName" class="form-label label">Last Name</label>
-                <input id="lastName" type="text" name="lastName" class="form-control" value="${(lastName)!}"
-                        placeholder="">
-            </div>
+            <label for="lastName" class="form-label label">Last Name</label>
+            <input id="lastName" type="text" name="lastName" class="form-control" value="${(lastName)!}"
+                    placeholder="">
             <#if errors.lastName??>
                 <span class="error-message">${errors.lastName}</span>
             <#else>
@@ -87,11 +80,9 @@
 
     <div class="row">
         <div class="form-group col">
-            <div class="form-group">
-                <label for="registerPanelEmail" class="form-label label">Email Address</label>
-                <input id="registerPanelEmail" type="text" name="email" class="form-control" value="${(email)!}"
-                        placeholder="">
-            </div>
+            <label for="registerPanelEmail" class="form-label label">Email Address</label>
+            <input id="registerPanelEmail" type="text" name="email" class="form-control" value="${(email)!}"
+                    placeholder="">
             <#if errors.email??>
                 <span class="error-message">${errors.email}</span>
             <#else>
@@ -100,11 +91,9 @@
         </div>
 
         <div class="form-group col">
-            <div class="form-group">
-                <label for="contactNumber" class="form-label label">Contact Number</label>
-                <input id="contactNumber" type="text" class="form-control" name="contactNumber"
-                        value="${(contactNumber)!}" placeholder="">
-            </div>
+            <label for="contactNumber" class="form-label label">Contact Number</label>
+            <input id="contactNumber" type="text" class="form-control" name="contactNumber"
+                    value="${(contactNumber)!}" placeholder="">
             <#if errors.contactNumber??>
                 <span class="error-message">${errors.contactNumber}</span>
             <#else>
@@ -115,11 +104,9 @@
 
     <div class="row">
         <div class="form-group col">
-            <div class="form-group">
-                <label for="registerPanelPasswordOnce" class="form-label label">Password</label>
-                <input id="registerPanelPasswordOnce" type="password" class="form-control" name="passwordOnce"
-                        value="${passwordOnce!}" placeholder="">
-            </div>
+            <label for="registerPanelPasswordOnce" class="form-label label">Password</label>
+            <input id="registerPanelPasswordOnce" type="password" class="form-control" name="passwordOnce"
+                    value="${passwordOnce!}" placeholder="">
             <#if errors.passwordOnce??>
                 <span class="error-message">${errors.passwordOnce}</span>
             <#else>
@@ -127,11 +114,9 @@
             </#if>
         </div>
         <div class="form-group col">
-            <div class="form-group">
-                <label for="registerPanelPasswordTwice" class="form-label label">Password (Again)</label>
-                <input id="registerPanelPasswordTwice" type="password" class="form-control" name="passwordTwice"
-                        value="${passwordTwice!}" placeholder="">
-            </div>
+            <label for="registerPanelPasswordTwice" class="form-label label">Password (Again)</label>
+            <input id="registerPanelPasswordTwice" type="password" class="form-control" name="passwordTwice"
+                    value="${passwordTwice!}" placeholder="">
             <#if errors.passwordTwice??>
                 <span class="error-message">${errors.passwordTwice}</span>
             <#else>
@@ -141,11 +126,9 @@
     </div>
     <div class="row">
         <div class=" col">
-            <div class="form-group">
-                <label for="dateOfBirth" class="form-label label">Date of Birth</label>
-                <input type="text" id="dateOfBirth" name="dateOfBirth" class="form-control" value="${(dateOfBirth)!}"
-                        placeholder="YYYY-MM-DD">
-            </div>
+            <label for="dateOfBirth" class="form-label label">Date of Birth</label>
+            <input type="text" id="dateOfBirth" name="dateOfBirth" class="form-control" value="${(dateOfBirth)!}"
+                    placeholder="YYYY-MM-DD">
             <#if errors.dateOfBirth??>
                 <span class="error-message">${errors.dateOfBirth}</span>
             <#else>
@@ -162,12 +145,12 @@
                             [${tz.id}] ${tz.displayName}</option>
                     </#list>
                 </select>
+                <#if errors.timezone??>
+                    <span class="error-message">${errors.timezone}</span>
+                <#else>
+                    <span class="form-text text-muted">Please select your timezone.</span>
+                </#if>
             </div>
-            <#if errors.timezone??>
-                <span class="error-message">${errors.timezone}</span>
-            <#else>
-                <span class="form-text text-muted">Please select your timezone.</span>
-            </#if>
         </div>
 
     </div>
@@ -181,10 +164,10 @@
                     <a class="ml-3" href="/fixed/privacy"
                             onclick="${testMode?string('alert(&quot;View privacy policy clicked&quot;); event.preventDefault();','')}">View</a>
                 </div>
+                <#if errors.acceptPrivacyPolicy??>
+                    <span class="error-message">${errors.acceptPrivacyPolicy}</span>
+                </#if>
             </div>
-            <#if errors.acceptPrivacyPolicy??>
-                <div class="error-message">${errors.acceptPrivacyPolicy}</div>
-            </#if>
         </div>
     </div>
     <div class="row">

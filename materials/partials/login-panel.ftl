@@ -13,10 +13,10 @@
                         <label for="loginPanelUsername" class="form-label label">Username</label>
                         <input type="text" name="username" class="form-control" id="loginPanelUsername"
                                 autocomplete="username" placeholder="">
+                        <#if errors.username??>
+                            <span class="error-message">${errors.username}</span>
+                        </#if>
                     </div>
-                    <#if errors.username??>
-                        <div class="error-message">${errors.username}</div>
-                    </#if>
                 </div>
             </div>
             <div class="row">
@@ -26,26 +26,29 @@
                         <input type="password" name="password" class="form-control" id="loginPanelPassword"
                                 autocomplete="current-password"
                                 placeholder="">
+                        <#if errors.password??>
+                            <span class="error-message">${errors.password}</span>
+                        </#if>
                     </div>
-                    <#if errors.password??>
-                        <div class="error-message">${errors.password}</div>
-                    </#if>
                 </div>
             </div>
             <#if enablePrivacyPolicyAgreementOnLogin>
                 <div class="row">
                     <div class="col mb-3">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="acceptPrivacyPolicy"
-                                    name="acceptPrivacyPolicy">
-                            <label class="form-check-label label" for="acceptPrivacyPolicy"> Accept Privacy
-                                Policy </label>
-                            <a class="ml-3" href="/fixed/privacy"
-                                    onclick="${testMode?string('alert(&quot;View privacy policy clicked&quot;); event.preventDefault();','')}">View</a>
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="acceptPrivacyPolicy"
+                                        name="acceptPrivacyPolicy">
+                                <label class="form-check-label label" for="acceptPrivacyPolicy"> Accept Privacy
+                                    Policy </label>
+                                <a class="ml-3" href="/fixed/privacy"
+                                        onclick="${testMode?string('alert(&quot;View privacy policy clicked&quot;); event.preventDefault();','')}">View</a>
+
+                            </div>
+                            <#if errors.acceptPrivacyPolicy??>
+                                <span class="error-message">${errors.acceptPrivacyPolicy}</span>
+                            </#if>
                         </div>
-                        <#if errors.acceptPrivacyPolicy??>
-                            <div class="error-message">${errors.acceptPrivacyPolicy}</div>
-                        </#if>
                     </div>
                 </div>
             </#if>

@@ -5,21 +5,21 @@
     <div class="form-group">
         <label for="resetPasswordPasswordOnce" class="form-label label">Password</label>
         <input id="resetPasswordPasswordOnce" type="password" class="form-control" name="passwordOnce" placeholder="">
+        <#if errors.passwordOnce??>
+            <span class="error-message">${errors.passwordOnce}</span>
+        <#else>
+            <span class="form-text text-muted">Please enter a password.</span>
+        </#if>
     </div>
-    <#if errors.passwordOnce??>
-        <span class="error-message">${errors.passwordOnce}</span>
-    <#else>
-        <span class="form-text text-muted">Please enter a password.</span>
-    </#if>
     <div class="form-group ">
         <label for="resetPasswordPasswordTwice" class="form-label label">Password (Again)</label>
         <input id="resetPasswordPasswordTwice" type="password" class="form-control" name="passwordTwice" placeholder="">
+        <#if errors.passwordTwice??>
+            <span class="error-message">${errors.passwordTwice}</span>
+        <#else>
+            <span class="form-text text-muted">Please enter your password again.</span>
+        </#if>
     </div>
-    <#if errors.passwordTwice??>
-        <span class="error-message">${errors.passwordTwice}</span>
-    <#else>
-        <span class="form-text text-muted">Please enter your password again.</span>
-    </#if>
     <div class="button-panel">
         <button class="btn btn-primary float-end mx-1" type="submit" name="resetPassword"
                 onclick="${testMode?string('alert(&quot;Next clicked&quot;); event.preventDefault();','')}">Next

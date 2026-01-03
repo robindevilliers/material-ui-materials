@@ -5,12 +5,12 @@
     <div class="form-group">
         <label for="resetPasswordEmail" class="form-label label">Email Address</label>
         <input id="resetPasswordEmail" type="text" name="email" class="form-control" value="${(email)!}" placeholder="">
+        <#if errors.email??>
+            <span class="error-message">${errors.email}</span>
+        <#else>
+            <span class="form-text text-muted">Please enter your email address.</span>
+        </#if>
     </div>
-    <#if errors.email??>
-        <span class="error-message">${errors.email}</span>
-    <#else>
-        <span class="form-text text-muted">Please enter your email address.</span>
-    </#if>
     <div class="button-panel">
         <button class="btn btn-primary float-end mx-1" type="submit" name="resetPassword"
                 onclick="${testMode?string('alert(&quot;Next clicked&quot;); event.preventDefault();','')}">Next

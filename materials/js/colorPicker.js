@@ -2,6 +2,7 @@ import $ from "jquery";
 
 $(function () {
 
+    let hasValue = false;
     const colorPickerDisc = $('.color-picker-disc');
     const luminosity = $('.luminosity')
     const luminosityCursor = $('.luminosity-cursor');
@@ -222,12 +223,15 @@ $(function () {
     processDrag(colorPickerDisc, function (event) {
         processColorPickerEvent(event);
         renderColor();
+        hasValue = true;
     });
 
     processDrag(luminosity, function (event) {
-        const offset = event.offsetY;
-        luminosityValue = 1 - offset / (radius * 2);
-        renderColor();
+        if (hasValue) {
+            const offset = event.offsetY;
+            luminosityValue = 1 - offset / (radius * 2);
+            renderColor();
+        }
     });
 
     function scaleIn(val) {

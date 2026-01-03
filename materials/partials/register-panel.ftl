@@ -125,34 +125,30 @@
         </div>
     </div>
     <div class="row">
-        <div class=" col">
-            <div class="form-group">
-                <label for="dateOfBirth" class="form-label label">Date of Birth</label>
-                <input type="text" id="dateOfBirth" name="dateOfBirth" class="form-control" value="${(dateOfBirth)!}"
-                        placeholder="YYYY-MM-DD">
-                <#if errors.dateOfBirth??>
-                    <span class="error-message">${errors.dateOfBirth}</span>
-                <#else>
-                    <span class="form-text text-muted">Please enter your date of birth.</span>
-                </#if>
-            </div>
+        <div class="form-group col">
+            <label for="dateOfBirth" class="form-label label">Date of Birth</label>
+            <input type="text" id="dateOfBirth" name="dateOfBirth" class="form-control" value="${(dateOfBirth)!}"
+                    placeholder="YYYY-MM-DD">
+            <#if errors.dateOfBirth??>
+                <span class="error-message">${errors.dateOfBirth}</span>
+            <#else>
+                <span class="form-text text-muted">Please enter your date of birth.</span>
+            </#if>
         </div>
-        <div class=" col">
-            <div class="form-group">
-                <label for="timezone" class="form-label label">Timezone (${timezone})</label>
-                <select id="timezone" name="timezone" class="form-control">
-                    <option value=""></option>
-                    <#list timezones as tz>
-                        <option value="${tz.id}" <#if timezone?? && timezone == '${tz.id}'>selected</#if>>${tz.offset} -
-                            [${tz.id}] ${tz.displayName}</option>
-                    </#list>
-                </select>
-                <#if errors.timezone??>
-                    <span class="error-message">${errors.timezone}</span>
-                <#else>
-                    <span class="form-text text-muted">Please select your timezone.</span>
-                </#if>
-            </div>
+        <div class="form-group col">
+            <label for="timezone" class="form-label label">Timezone (${timezone})</label>
+            <select id="timezone" name="timezone" class="form-control">
+                <option value=""></option>
+                <#list timezones as tz>
+                    <option value="${tz.id}" <#if timezone?? && timezone == '${tz.id}'>selected</#if>>${tz.offset} -
+                        [${tz.id}] ${tz.displayName}</option>
+                </#list>
+            </select>
+            <#if errors.timezone??>
+                <span class="error-message">${errors.timezone}</span>
+            <#else>
+                <span class="form-text text-muted">Please select your timezone.</span>
+            </#if>
         </div>
     </div>
     <div class="row">

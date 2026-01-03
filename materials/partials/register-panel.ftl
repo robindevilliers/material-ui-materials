@@ -126,14 +126,16 @@
     </div>
     <div class="row">
         <div class=" col">
-            <label for="dateOfBirth" class="form-label label">Date of Birth</label>
-            <input type="text" id="dateOfBirth" name="dateOfBirth" class="form-control" value="${(dateOfBirth)!}"
-                    placeholder="YYYY-MM-DD">
-            <#if errors.dateOfBirth??>
-                <span class="error-message">${errors.dateOfBirth}</span>
-            <#else>
-                <span class="form-text text-muted">Please enter your date of birth.</span>
-            </#if>
+            <div class="form-group">
+                <label for="dateOfBirth" class="form-label label">Date of Birth</label>
+                <input type="text" id="dateOfBirth" name="dateOfBirth" class="form-control" value="${(dateOfBirth)!}"
+                        placeholder="YYYY-MM-DD">
+                <#if errors.dateOfBirth??>
+                    <span class="error-message">${errors.dateOfBirth}</span>
+                <#else>
+                    <span class="form-text text-muted">Please enter your date of birth.</span>
+                </#if>
+            </div>
         </div>
         <div class=" col">
             <div class="form-group">
@@ -152,7 +154,6 @@
                 </#if>
             </div>
         </div>
-
     </div>
     <div class="row">
         <div class="col">

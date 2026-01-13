@@ -6,13 +6,19 @@
     <input type="hidden" name="source" value="${source}">
     <input type="hidden" name="payload" value="${payload}">
 </#if>
-<button id="${id}" type="submit" name="${name}" class="button-widget <#if representation == 'text'>btn  ${classes}</#if>"
-        style="<#if !formRequired>${itemStyles}</#if>"
-        onclick="${testMode?string('alert(&quot;Buton clicked&quot;); event.preventDefault();','')}"
-        <#if disabled??>disabled</#if>
->
-    ${content}
-</button>
+<div class="button-widget ${classes}" style="<#if !formRequired>${itemStyles}</#if>">
+    <button id="${id}" type="submit" name="${name}"
+            class="<#if representation == 'text' || representation == 'icon'>btn  ${btnClasses}</#if>"
+            onclick="${testMode?string('alert(&quot;Buton clicked&quot;); event.preventDefault();','')}"
+            <#if disabled??>disabled</#if>
+    >
+        ${content}
+    </button>
+
+    <#if (error)??>
+        <span id="error-message-${name}" class="error-message">${error}</span>
+    </#if>
+</div>
 <#if formRequired>
     </form>
 </#if>

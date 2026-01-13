@@ -297,12 +297,32 @@
             </submit-button>
 
             <submit-button workflow="workflow-one" size="MEDIUM" buttonFlavour="PRIMARY" v="v1">
-                <icon flavour="PRIMARY" name="clipboard-data-fill" v="v1"/>
+                <icon flavour="PRIMARY" name="bi-clipboard-data-fill" v="v1"/>
             </submit-button>
 
             <submit-button workflow="workflow-one" size="MEDIUM" buttonFlavour="PRIMARY" v="v1">
                 <image src="suzi.jpeg" alt="Image of Suzi" title="Suzi Profile Picture" height="200px" width="300px"
                     v="v1"/>
+            </submit-button>
+
+            <submit-button workflow="workflow-one" size="MEDIUM" buttonFlavour="PRIMARY" v="v1">
+                <card type="page" page="style-guide-landing.html"
+                    width="300px" flexShrink="0" margin="0em 0em 0em 1em" v="v1">
+                    <image src="temp0.jpg" alt="Image of Suzi" title="Suzi Profile Picture" height="200px"
+                        width="300px" v="v1"/>
+                    <card-body orientation="COLUMN">
+                        <title size="SMALLER" v="v1">
+                            <textual>Lorem Ipsum</textual>
+                        </title>
+                        <text paragraphStyle="PLAIN" v="v1">
+                            <textual>
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                                veritatis.
+                            </textual>
+                        </text>
+                    </card-body>
+                </card>
             </submit-button>
 
         </div>

@@ -229,12 +229,30 @@
                 <row>
                     <cell>
                         <text v="v1">
+                            <textual>btnClasses</textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>A list of classes that should be applied to the button itself.</textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>class list</textual>
+                        </text>
+                    </cell>
+                </row>
+
+                <row>
+                    <cell>
+                        <text v="v1">
                             <textual>classes</textual>
                         </text>
                     </cell>
                     <cell>
                         <text v="v1">
-                            <textual>A list of classes that should be applied.</textual>
+                            <textual>A list of classes that should be applied to the outermost div.</textual>
                         </text>
                     </cell>
                     <cell>
@@ -275,6 +293,23 @@
                     <cell>
                         <text v="v1">
                             <textual>boolean</textual>
+                        </text>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <text v="v1">
+                            <textual>error</textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>The error message that should be displayed, if there is one.</textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>string</textual>
                         </text>
                     </cell>
                 </row>

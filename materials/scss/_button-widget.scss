@@ -1,12 +1,14 @@
 
 .button-widget {
+  display: flex;
+  flex-direction: column;
   margin: 4px;
 
-  & > .text-widget {
+  button > .text-widget {
     margin-bottom: unset;
   }
 
-  &:has(.card-widget, .icon-widget, .image-widget) {
+  button:has(.card-widget, .icon-widget, .image-widget) {
     display: flex;
     flex-direction: column;
     color: unset;

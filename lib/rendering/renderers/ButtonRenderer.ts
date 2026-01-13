@@ -40,9 +40,13 @@ export default class ButtonRenderer implements Renderer {
         data.testMode = Store.isTestContext();
         data.runningWizardTest = false;
 
+        const btnClassManager = new ClassManager(classMappings);
+        btnClassManager.append(element.attributes.size, 'btn-', '');
+        btnClassManager.append(element.attributes.buttonFlavour, 'btn-', 'btn-default');
+
+        data.btnClasses = btnClassManager.toString();
+
         const classManager = new ClassManager(classMappings);
-        classManager.append(element.attributes.size, 'btn-', '');
-        classManager.append(element.attributes.buttonFlavour, 'btn-', 'btn-default');
         flexItemSupport(data, classManager, element.attributes);
         data.classes = classManager.toString();
 

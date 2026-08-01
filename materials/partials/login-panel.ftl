@@ -4,7 +4,7 @@
     <input type="hidden" name="_checkpoint" value="${_checkpoint}">
     <div class="panel">
         <div class="panel-header header">
-            Customer Login
+            Login
         </div>
         <div class="panel-body">
             <div class="row">

@@ -25,7 +25,7 @@
             <label class="form-label label ${textualClasses} <#if hideLabel>sr-only</#if>" style="${textualStyles}"
                     for="${id}">${content}</label>
             <input id="${id}" class="form-control ${sizeCls} validate"
-                    type="<#if type == "PASSWORD">password<#else>text</#if>"
+                    type="<#if type == "PASSWORD" && !testMode>password<#else>text</#if>"
                     <#if maxlength??>maxlength="${maxlength}"</#if> <#if disabled??>disabled</#if> name="${name}"
                     <#if type == "INPUT">value="${value!}"</#if>
             />

@@ -11,6 +11,27 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link href="/public/css/main.css" rel="stylesheet">
     <script src="/public/js/main.js"></script>
+    <meta name="description" content="MATERIALS_BLURB_TOKEN">
+    <link rel="canonical" href="MATERIALS_CANONICAL_URL_TOKEN">
+    <meta property="og:url" content="MATERIALS_CANONICAL_URL_TOKEN" />
+    <meta property="og:site_name" content="MATERIALS_PAGE_TITLE_TOKEN" />
+    <meta property="og:locale" content="MATERIALS_LOCALE_TOKEN" />
+    <meta property="og:image" content="MATERIALS_OG_IMAGE_TOKEN" />
+    <meta property="og:image:width" content="MATERIALS_OG_IMAGE_WIDTH_TOKEN" />
+    <meta property="og:image:height" content="MATERIALS_OG_IMAGE_HEIGHT_TOKEN" />
+    <meta property="og:image:alt" content="MATERIALS_PAGE_TITLE_TOKEN" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="apple-touch-icon" sizes="180x180" href="MATERIALS_APPLE_TOUCH_ICON_TOKEN" />
+    <meta name="theme-color" content="MATERIALS_THEME_COLOR_TOKEN" />
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "MATERIALS_PAGE_TITLE_TOKEN",
+            "description": "MATERIALS_BLURB_TOKEN"
+        }
+    </script>
+    MATERIALS_ICON_LINKS_TOKEN
 </head>
 <body>
 

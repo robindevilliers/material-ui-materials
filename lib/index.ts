@@ -71,7 +71,16 @@ function processDirectory(dir: string, suffix: string, baseTemplate: string, new
             const body = renderingEngine.renderElement(dom.root as Element);
 
             const mainTemplate = fs.readFileSync(path.join(process.env.INIT_CWD!, options.dir, baseTemplate), 'utf8')
-                .replaceAll("MATERIALS_PAGE_TITLE_TOKEN", "Company Title");
+                .replaceAll("MATERIALS_PAGE_TITLE_TOKEN", "Company Title")
+                .replaceAll("MATERIALS_BLURB_TOKEN", "Company description.")
+                .replaceAll("MATERIALS_CANONICAL_URL_TOKEN", "https://www.maximillian-workflows.com")
+                .replaceAll("MATERIALS_OG_IMAGE_WIDTH_TOKEN", "1200")
+                .replaceAll("MATERIALS_OG_IMAGE_HEIGHT_TOKEN", "630")
+                .replaceAll("MATERIALS_OG_IMAGE_TOKEN", "/public/img/logo1200x630.svg")
+                .replaceAll("MATERIALS_APPLE_TOUCH_ICON_TOKEN", "/public/img/logo180x180.png")
+                .replaceAll("MATERIALS_ICON_LINKS_TOKEN", "<link rel=\"icon\" type=\"image/svg+xml\" href=\"/public/img/logo.svg\" />")
+                .replaceAll("MATERIALS_THEME_COLOR_TOKEN", "#81B1CC")
+                .replaceAll("MATERIALS_LOCALE_TOKEN", "en-GB");
 
             try {
                 const html = new TemplateEngine().render(mainTemplate, {

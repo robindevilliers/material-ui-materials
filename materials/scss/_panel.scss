@@ -15,6 +15,7 @@ $panel-inner-border-radius: 19px;
   border-radius: $panel-border-radius;
   align-self: stretch;
   flex-grow: 1;
+  max-height: 600px;
 }
 
 .panel-header {
@@ -34,7 +35,6 @@ $panel-inner-border-radius: 19px;
   @extend .card-body;
   background: #fff;
   padding: unset;
-  max-height: 600px;
   display: flex;
   flex-direction: column;
   overflow-y: auto;

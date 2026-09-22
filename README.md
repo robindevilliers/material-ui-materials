@@ -32,13 +32,13 @@ Every client's materials repo is a clone of this repo:
     https://github.com/robindevilliers/materials-toolkit.git
 ```
 
-It's easier to Fork the repo.  Then from time to time, you can follow  the usual procedures for updating the repo
+It's easier to Fork the repo. Then from time to time, you can follow the usual procedures for updating the repo
 and updating the repo against the materials-toolkit.
 
-However, you cannot fork within the same account.  For this to occur, we follow a different procedure.
+However, you cannot fork within the same account. For this to occur, we follow a different procedure.
 
 The first thing you will want to do is create a repo on github. When you do, do not specify any additional
-readme or licence files. The repo should be empty.  For example:  
+readme or licence files. The repo should be empty. For example:
 
 ```
     abc-materials
@@ -67,31 +67,13 @@ What you will end up with is a remote as so:
 
 And now you can make whatever changes are necessary.
 
-From time to time, you will want to update the current repo against the original materials toolkit repo.
-
-```
-    ./rebase_materials.sh
-```
-
-This will add the original repo as a new remote and will rebase against it.
-
-Remotes will look like this:
-
-```
-    $ git remote -v
-    max     https://github.com/robindevilliers/materials-toolkit.git (fetch)
-    max     https://github.com/robindevilliers/materials-toolkit.git (push)
-    origin  https://github.com/robindevilliers/abc-materials.git (fetch)
-    origin  https://github.com/robindevilliers/abc-materials.git (push)
-```
-
 ## Installation
 
-Once you have the repo cloned, you will  want to run up the toolkit.  First thing, install.
+Once you have the repo cloned, you will want to run up the toolkit. First thing, install.
 
 You must have npm installed.
 
-This command will download and install any dependencies. 
+This command will download and install any dependencies.
 
 ```
 npm install
@@ -120,3 +102,39 @@ This last command will setup a webserver that will serve the built assets on thi
 ## Materials
 
 The actual materials that are used by the platform are all in the materials directory.
+
+## Rebasing against the Maximillian Workflows Master
+
+From time to time, you will want to update the current repo against the original materials toolkit repo. This is to
+update this repo with bug fixes and new features.
+
+This is the script to do so.
+
+```
+    ./rebase_materials.sh
+```
+
+This will add the original repo as a new remote and will rebase against it.
+
+You will very likely experience a conflict of some kind. When this occurs you must:
+
+1. Fix the conflicts.
+2. Test the conflict, by running **npm run start**, and viewing the output, or if the conflict is not a presentational
+   artefact, resolve analytically.
+3. Resolve any conflict on main.css, or other generated files by running: **npm run build**
+4. Add these to the changes to accept: **git add --all**
+5. Then execute **rebase --continue**, to continue the rebasing process.
+6. And then push to your remote:  **git push -f**  (you will have to force push, as you have rebased)
+7. Once this is done, email us at **support@maximillian-workflows**, and we will update your materials on the
+   servers.
+
+Remotes will look like this:
+
+```
+    $ git remote -v
+    max     https://github.com/robindevilliers/materials-toolkit.git (fetch)
+    max     https://github.com/robindevilliers/materials-toolkit.git (push)
+    origin  https://github.com/robindevilliers/abc-materials.git (fetch)
+    origin  https://github.com/robindevilliers/abc-materials.git (push)
+```
+

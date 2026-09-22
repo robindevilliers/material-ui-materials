@@ -116,19 +116,7 @@ This is the script to do so.
 
 This will add the original repo as a new remote and will rebase against it.
 
-You will very likely experience a conflict of some kind. When this occurs you must:
-
-1. Fix the conflicts.
-2. Test the conflict, by running **npm run start**, and viewing the output, or if the conflict is not a presentational
-   artefact, resolve analytically.
-3. Resolve any conflict on main.css, or other generated files by running: **npm run build**
-4. Add these to the changes to accept: **git add --all**
-5. Then execute **rebase --continue**, to continue the rebasing process.
-6. And then push to your remote:  **git push -f**  (you will have to force push, as you have rebased)
-7. Once this is done, email us at **support@maximillian-workflows**, and we will update your materials on the
-   servers.
-
-Remotes will look like this:
+Remotes may look like this (origin urls will be your repo):
 
 ```
     $ git remote -v
@@ -138,3 +126,27 @@ Remotes will look like this:
     origin  https://github.com/robindevilliers/abc-materials.git (push)
 ```
 
+You will very likely experience a conflict of some kind. When this occurs you must:
+
+1. Fix the conflicts.
+2. Test the conflict, by running **npm run start**, and viewing the output, or if the conflict is not a presentational
+   artefact, resolve analytically.
+3. Resolve any conflict on main.css, or other generated files by running: **npm run build**
+4. Add these to the changes to accept: **git add --all**
+5. Then execute **rebase --continue**, to continue the rebasing process.
+
+You may from time to time rebase without experiencing an error. However, that does not mean you do not have a problem.
+If some scss changes have been brought down that affects a change to the generated css files, and this does not generate
+a conflict, then you will still have out-of-date css. You can test if this is the case by running **npm run build** and
+see if your **main.css** file has been updated. If this is the case then:
+
+1. Run **npm run build**.
+2. See if main.css has been updated.
+3. If main.css has been updated, **git add --all**
+4. Commit changes.
+
+After every rebase you will have to push the changes to your own repo and update the files on the servers.
+
+1. And then push to your remote:  **git push -f**  (you will have to force push, as you have rebased)
+2. Once this is done, email us at **support@maximillian-workflows**, and we will update your materials on the
+   servers.

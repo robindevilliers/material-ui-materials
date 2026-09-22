@@ -56,8 +56,8 @@
                     <div id="user-explorer-item-${val.username}" class="explorer-item " data-display="flex"
                             data-parent="#${id}">
                         <div class="explorer-title">${val.username}</div>
-                        <div class="explorer-content">
-                            <div class="explorer-group">
+                        <div class="explorer-content row">
+                            <div class="explorer-group col">
                                 <div class="explorer-line">
                                     <div class="explorer-key">Title</div>
                                     <div class="explorer-value">${val.title}</div>
@@ -77,7 +77,7 @@
                                     <div class="explorer-value">${val.lastLoggedIn}</div>
                                 </div>
                             </div>
-                            <div class="explorer-group">
+                            <div class="explorer-group col">
                                 <div class="explorer-line">
                                     <div class="explorer-key">Email</div>
                                     <div class="explorer-value">${val.email}</div>
@@ -96,7 +96,7 @@
                                 <div class="explorer-form">
 
                                     <#if lookupUserMode>
-                                        <form class="form-inline" method="get" action="${action}">
+                                        <form class="form-inline justify-content-end" method="get" action="${action}">
                                             <input type="hidden" name="principal" value="${val.username}"/>
                                             <div class="btn-group" role="group">
                                                 <button type="submit" aria-label="Select" class="btn btn-primary"
@@ -109,7 +109,7 @@
                                             </#list>
                                         </form>
                                     <#else >
-                                        <form class="form-inline" method="post" action="${executeWorkflow}">
+                                        <form class="form-inline justify-content-end" method="post" action="${executeWorkflow}">
                                             <input type="hidden" name="payload" value="${payload}"/>
                                             <input type="hidden" name="username" value="${val.username}"/>
                                             <div class="btn-group" role="group">
@@ -163,7 +163,8 @@
                     </button>
                 </div>
             </form>
-        <#else >
+        </#if>
+        <#if principalPickerMode>
             <form class="form-inline" method="post" action="${cancelExecuteWorkflow}">
                 <input type="hidden" name="payload" value="${payload}"/>
                 <div class="btn-group" role="group">

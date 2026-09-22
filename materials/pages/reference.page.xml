@@ -16657,6 +16657,28 @@
                 <row>
                     <cell>
                         <text v="v1">
+                            <textual>principalPickerMode</textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>The principalPickerMode token is a boolean value that indicates if the User
+                                Explorer should execute in support of initiating workflow. If this option is true,
+                                then the buttons that support user select will operate correctly within the Initiate
+                                Workflow Operation. This option should really only ever be set to true within the
+                                case-principal-picker-page.xml within these materials.
+                            </textual>
+                        </text>
+                    </cell>
+                    <cell>
+                        <text v="v1">
+                            <textual>boolean</textual>
+                        </text>
+                    </cell>
+                </row>
+                <row>
+                    <cell>
+                        <text v="v1">
                             <textual>testMode</textual>
                         </text>
                     </cell>

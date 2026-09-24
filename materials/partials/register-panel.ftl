@@ -110,7 +110,7 @@
             <#if errors.passwordOnce??>
                 <span class="error-message">${errors.passwordOnce}</span>
             <#else>
-                <span class="form-text text-muted">Please enter a password.</span>
+                <span class="form-text text-muted">Please enter a password. Please include at least an uppercase, lower case, and special character (#?!@$%^&*-) and a number.</span>
             </#if>
         </div>
         <div class="form-group col">
